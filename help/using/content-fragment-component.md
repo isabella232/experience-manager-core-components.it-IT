@@ -10,7 +10,7 @@ topic-tags: authoring
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: f 093 f 58 e -9755-4 a 4 f -803 a-ab 93 a 50 e 6870
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 51842e5b6a9d4491bd4088d30c0d8c3a502e9644
 
 ---
 
@@ -49,7 +49,7 @@ Per provare il componente Frammento di contenuto e vedere alcuni esempi delle op
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente [Frammento di contenuto è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment).
+La documentazione tecnica più recente sul componente [Frammento di contenuto è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/contentfragment/v1/contentfragment).
 
 Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
