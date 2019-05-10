@@ -4,7 +4,7 @@ product: componenti core adobe experience manager
 archtype: Amministratore
 user-guide-title: Componenti core AEM
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 51842e5b6a9d4491bd4088d30c0d8c3a502e9644
 
 ---
 
@@ -55,6 +55,6 @@ source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
          + [Opzioni modulo (v1)](form-options-v1.md)
 + Sviluppo {#developing}
    + [Sviluppo di componenti core](developing.md)
-   + [WKND Developer Tutorial](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/getting-started.html)
+   + [WKND Developer Tutorial](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
    + [Personalizzazione dei componenti core](customizing.md)
    + [Linee guida sui componenti](guidelines.md)
