@@ -10,7 +10,7 @@ topic-tags: authoring
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: a 4 a 31261-01 e 9-4 fda -8 d 1 b -7 cec 90 bb 6574
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
 
 ---
 

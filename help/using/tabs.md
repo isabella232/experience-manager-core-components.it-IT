@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: componenti core
 discoiquuid: 966 d 47 fb-d 35 d -4103-b 29 d -4 ef 0 aa 739 f 24
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 62643e5bd49ab006230f65004bb9374822dcc017
 
 ---
 

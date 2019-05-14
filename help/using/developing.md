@@ -10,7 +10,7 @@ topic-tags: sviluppo
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: 157 a 2 ec 3-9 fca -4 fad -977 a-d 93013 eeb 218
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 600aefa49d6247c290b8fb9f6acf5548126b3f61
 
 ---
 

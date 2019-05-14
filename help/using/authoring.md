@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: authoring
 discoiquuid: 8751 e 490-d 427-44 f 2-b 767-51935 afda 988
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 600aefa49d6247c290b8fb9f6acf5548126b3f61
 
 ---
 

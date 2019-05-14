@@ -9,7 +9,7 @@ products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: a 028 ebef -2957-410 c -9 bab-a 7040 c 350 f 2 f
 index: n
 translation-type: tm+mt
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 
 ---
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: c 44 bb 0 d 7-5 d 91-4659-878 e-a 0658 fe 29 aa 2
 translation-type: tm+mt
-source-git-commit: 51842e5b6a9d4491bd4088d30c0d8c3a502e9644
+source-git-commit: dde716ccb64c4c444ec0f6ad432fd1ea8d5fd9f2
 
 ---
 
