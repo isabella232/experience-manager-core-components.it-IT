@@ -10,7 +10,7 @@ topic-tags: authoring
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: f 093 f 58 e -9755-4 a 4 f -803 a-ab 93 a 50 e 6870
 translation-type: tm+mt
-source-git-commit: 40ce01fdb0f22e3ee3b376a3684a766bd7e7bc11
+source-git-commit: b464b49bc22573c24363da5a1d41baebd112368c
 
 ---
 
@@ -40,6 +40,18 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
+
+>[!NOTE]
+>
+>Prima della release 2.4.0, il componente Frammento di contenuto si trovava nella cartella delle estensioni.
+>
+> `apps/core/wcm/extension/components/contentfragment/v1/contentfragment`
+> 
+>Da 2.4.0 è stato spostato nel seguente percorso.
+>
+>`apps/core/wcm/components/contentfragment/v1/contentfragment`
+>
+>Anche se entrambi i componenti sono v 1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei componenti proxy correlati per l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
