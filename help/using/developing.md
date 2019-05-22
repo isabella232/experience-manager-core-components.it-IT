@@ -10,7 +10,7 @@ topic-tags: sviluppo
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: 157 a 2 ec 3-9 fca -4 fad -977 a-d 93013 eeb 218
 translation-type: tm+mt
-source-git-commit: 600aefa49d6247c290b8fb9f6acf5548126b3f61
+source-git-commit: 632d6abb1f13667cc0457152268d50af3bfabfc4
 
 ---
 
@@ -45,9 +45,9 @@ I componenti core forniscono componenti base affidabili ed estensibili e le rela
 
 >[!CAUTION]
 >
->I componenti core richiedono AEM 6.3 o versione successiva e Java 8.
+>I componenti core richiedono AEM 6.3 o versione successiva e Java 8 e richiedono l&#39;utilizzo di [modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 >
->I componenti core non funzionano con l&#39;interfaccia classica.
+>I componenti core non funzionano con l&#39;interfaccia classica né con i modelli statici.
 
 ## Panoramica della sessione Gems {#gems-session-overview}
 
@@ -57,7 +57,7 @@ Per un&#39;introduzione ai componenti core, alle funzioni che essi offrono e all
 
 ## WKND Developer Tutorial {#wknd-developer-tutorial}
 
-[Scopri come sviluppare AEM Sites con componenti core seguendo questa esercitazione.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+Scopri come sviluppare AEM Sites con componenti core seguendo [questa esercitazione passo-passo.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
 
 ## Consegnato tramite github {#delivered-over-github}
 
@@ -172,7 +172,22 @@ personalizzati** Valuta se un componente [di base esistente può essere personal
 personalizzati esistenti** Se i componenti funzionano come previsto, conservali così come sono.\
    In caso contrario, fai riferimento a «Nuovi componenti personalizzati» sopra.
 
-### Supporto per componente core {#core-component-support}
+## Migrazione ai componenti core
+
+Qualsiasi nuovo progetto deve essere implementato con Componenti core. Tuttavia, in genere i progetti esistenti saranno caratterizzati da ampie implementazioni dei componenti di base.
+
+Un lavoro più ampio su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) offre spesso la possibilità di passare ai componenti core. Per semplificare questa migrazione, Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l&#39;adozione dei componenti core e della tecnologia AEM più recente.
+
+[AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) consente di convertire facilmente:
+
+* Modelli statici a modelli modificabili
+* Configurazione delle configurazioni ai criteri
+* Componenti di base ai componenti core
+* Interfaccia classica nell&#39;interfaccia touch
+
+Per ulteriori informazioni sull&#39;utilizzo di questi strumenti, [consulta la relativa documentazione](https://www.adobe.com/go/aem_modernize_tools_en).
+
+## Supporto per componente core {#core-component-support}
 
 I componenti core sono parte integrante di AEM e sono supportati così come sono, con gli stessi termini e condizioni di questa distribuzione come parte della sezione Quickstart.
 
@@ -182,11 +197,11 @@ La versione di ciascun componente indica chiaramente le versioni AEM supportate.
 
 Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate [la pagina Personalizzazione componenti](customizing.md) core.
 
-### Supporto per componenti Foundation {#foundation-component-support}
+## Supporto per componenti Foundation {#foundation-component-support}
 
-Poiché i componenti di base sono stati gestiti come base per lo sviluppo di progetti in molte versioni, continueranno a essere supportati nel prossimo futuro.
+Poiché i componenti di base sono stati gestiti come base per lo sviluppo di progetti in molte versioni AEM, continueranno a essere supportati nel prossimo futuro.
 
-Tuttavia, l&#39;enfasi di sviluppo di Adobe è stata spostata sui componenti core e le nuove funzioni saranno aggiunte loro, mentre verranno applicate solo correzioni di bug ai componenti di base.
+Tuttavia, l&#39;enfasi di sviluppo di Adobe è stata spostata sui componenti core e le nuove funzioni saranno aggiunte a loro, mentre [quasi tutti i componenti di fondazione sono stati rimossi da AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) e verranno apportate solo correzioni ai componenti Foundation.
 
 **Leggi avanti:**
 
