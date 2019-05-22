@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: authoring
 discoiquuid: 8751 e 490-d 427-44 f 2-b 767-51935 afda 988
 translation-type: tm+mt
-source-git-commit: 600aefa49d6247c290b8fb9f6acf5548126b3f61
+source-git-commit: 632d6abb1f13667cc0457152268d50af3bfabfc4
 
 ---
 
@@ -19,25 +19,25 @@ In Adobe Experience Manager, i componenti sono gli elementi strutturali che cost
 
 I componenti core offrono funzionalità di authoring flessibili e avanzate. Il sito di riferimento [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) illustra come possono essere utilizzati i componenti core.
 
+Per provare i componenti core e vedere esempi di opzioni di configurazione e output HTML e JSON, visita la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html).
+
 >[!NOTE]
 >
->I componenti core non sono immediatamente disponibili per gli autori, il team [di sviluppo deve prima integrarli nell&#39;ambiente](using.md). Una volta integrati, possono essere resi disponibili e pre-configurati tramite l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) o in modalità [progettazione](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-designmode.html).
+>I componenti core non sono immediatamente disponibili per gli autori, il team [di sviluppo deve prima integrarli nell&#39;ambiente](using.md). Una volta integrati, possono essere resi disponibili e pre-configurati tramite l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html).
 
 >[!CAUTION]
 >
->I componenti core [richiedono AEM 6.3 o versione successiva](versions.md) e non funzionano con l&#39;interfaccia classica.
+>I componenti core [richiedono AEM 6.3 o versione successiva](versions.md) e richiedono l&#39;uso di [modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html). Non funzionano con l&#39;interfaccia classica né con i modelli statici.
 
 ## Authoring con i componenti core {#authoring-with-core-components}
-
-Per comprendere i componenti core, consulta la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library.html), che mostra i componenti core e fornisce esempi di utilizzo.
 
 In qualità di autore noterete diversi vantaggi dei componenti core, tra cui:
 
 * Semplice utilizzo e perfettamente integrato con l&#39;editor [pagina](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)
-* Funzionalità avanzate per contenere molti casi d&#39;uso [come illustrato in We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html)
-* [Preconfigurabile](#pre-configuring-core-components) per definire quali funzioni sono disponibili per gli autori delle pagine
-   * Tramite l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) per [modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html)
-   * Modalità [di progettazione](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-designmode.html) per [modelli statici](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-static.html)
+
+* Funzionalità avanzate per contenere molti casi d&#39;uso [come illustrato in We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) e nella libreria [Componenti](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html)
+
+* [Preconfigurabile](#pre-configuring-core-components) per definire quali funzioni sono disponibili per gli autori di pagine tramite l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 
 * Basato sulle [linee guida per l&#39;accessibilità](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
 
@@ -55,7 +55,7 @@ I componenti sono raggruppati in base alle categorie denominate gruppi di compon
 
 ## Preconfigurazione dei componenti core {#pre-configuring-core-components}
 
-Configuring Foundation Components was the job of a developer. Tuttavia, con i componenti core, l&#39;autore di un modello può configurare una serie di funzionalità tramite l&#39;editor modelli o in modalità progettazione.
+Configuring Foundation Components was the job of a developer. Tuttavia, con i componenti core, l&#39;autore di un modello ora può configurare una serie di funzionalità tramite l&#39;editor modelli.
 
 Ad esempio, se un componente immagine non consente il caricamento di immagini dal file system o se un componente di testo consenti solo determinate formattazioni, queste funzioni possono essere attivate o disattivate con un semplice clic.
 
