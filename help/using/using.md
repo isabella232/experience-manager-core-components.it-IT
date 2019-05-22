@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
+source-git-commit: 632d6abb1f13667cc0457152268d50af3bfabfc4
 
 ---
 
@@ -135,13 +135,13 @@ Accertatevi che i componenti proxy e le librerie client siano stati distribuiti 
 
 ## Consenti ai componenti {#allow-the-components}
 
-I passaggi seguenti vengono eseguiti in genere nell&#39;Editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html), per le configurazioni esistenti, che possono essere eseguite in modalità Progettazione:
+I seguenti passaggi vengono eseguiti nell&#39;Editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html).
 
-1. In Editor modelli (o modalità Progettazione), selezionate il Contenitore di layout (o parsys) e aprite il relativo criterio (o la configurazione di progettazione).
+1. Nell&#39;Editor modelli, selezionare il Contenitore di layout e aprire il criterio.
 1. Nell&#39;elenco dei componenti consentiti, selezionate i componenti proxy creati in precedenza, che dovrebbero essere visualizzati sotto il gruppo di componenti assegnato loro. Una volta apportate le modifiche, applicate le modifiche.
 1. Facoltativamente, per i componenti con una finestra di dialogo di progettazione, possono essere preconfigurati.
 
-Così facendo, nelle pagine create dal modello modificato, adesso dovreste essere in grado di utilizzare i componenti appena creati.
+Tutto qui! Nelle pagine create dal modello modificato, ora dovrebbe essere possibile utilizzare i componenti appena creati.
 
 **Leggi avanti:**
 
