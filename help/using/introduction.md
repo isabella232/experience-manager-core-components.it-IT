@@ -10,12 +10,12 @@ topic-tags: introduction
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: c 44 bb 0 d 7-5 d 91-4659-878 e-a 0658 fe 29 aa 2
 translation-type: tm+mt
-source-git-commit: 632d6abb1f13667cc0457152268d50af3bfabfc4
+source-git-commit: 7130f4ae8add8c8dc3cdfcc4addd0621722b89f7
 
 ---
 
 
-# Introduzione ai componenti core{#core-components-introduction}
+# Core Components Introduction{#core-components-introduction}
 
 In Adobe Experience Manager, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create. I componenti sono sempre stati un elemento fondamentale dell&#39;esperienza AEM, rendendo la creazione di pagine semplice ma potente per l&#39;autore e lo sviluppo di componenti flessibili e estensibili per lo sviluppatore.
 
@@ -23,15 +23,15 @@ Componenti core sono stati introdotti per fornire componenti base affidabili ed 
 
 ## Provate i componenti core
 
-Per iniziare subito a provare i componenti core, passa alla libreria [Componenti](http://opensource.adobe.com/aem-core-wcm-components/library.html). La Libreria componenti è una vetrina online della versione corrente della maggior parte dei componenti core, che consente di interagire con varianti dei componenti e visualizzare l&#39;output di esempio HTML e JSON.
+If you want to get started straight away trying out the Core Components, head over to the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library.html). La Libreria componenti è una vetrina online della versione corrente della maggior parte dei componenti core, che consente di interagire con varianti dei componenti e visualizzare l&#39;output di esempio HTML e JSON.
 
-Il sito di riferimento [We. Retail illustra](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html) anche come possono essere utilizzati i componenti core.
+The [We.Retail reference site](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html) also illustrates how the core components can be used.
 
-## Componenti core - Funzioni principali {#core-components-core-features}
+## Core Components - Core Features {#core-components-core-features}
 
 I componenti core sono:
 
-|  |
+|  |  |
 |--- |--- |
 | Pre-configurabile | I modelli possono definire in che modo gli autori delle pagine possono utilizzarli. |
 | Versatile | Gli autori possono creare più tipi di contenuto. |
@@ -45,16 +45,20 @@ I componenti core sono:
 | Open Source | Se non è così, contribuisci su github (Apache License). |
 | Versione | I componenti core non interrompono il sito quando si migliorano gli elementi che potrebbero avere impatto. |
 
-## Componenti disponibili {#available-components}
+## Available Components {#available-components}
 
 La versione corrente dei componenti core presenta i seguenti componenti.
 
+* [Accordion](accordion.md)
 * [Breadcrumb](breadcrumb.md)
-* [Pulsante modulo](form-button.md)
+* [Pulsante](button.md)
+* [Contenitore](container.md)
 * [Carosello](carousel.md)
-* [Contenitore modulo](form-container.md)
 * [Frammento di contenuto](content-fragment-component.md)
 * [Elenco frammenti di contenuto](content-fragment-list.md)
+* [Scarica](download.md)
+* [Pulsante modulo](form-button.md)
+* [Contenitore modulo](form-container.md)
 * [Nascosto per modulo](form-hidden.md)
 * [Opzioni modulo](form-options.md)
 * [Testo modulo](form-text.md)
@@ -72,31 +76,31 @@ La versione corrente dei componenti core presenta i seguenti componenti.
 
 >[!NOTE]
 >
->I componenti core non sono immediatamente disponibili per gli autori, il team [di sviluppo deve prima integrarli nell&#39;ambiente](using.md). Una volta integrati, possono essere resi disponibili e pre-configurati tramite l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) o in modalità [progettazione](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-designmode.html).
+>Core Components are not immediately available to authors, the [development team must first integrate them to your environment](using.md). Once integrated, they may be made available and pre-configured via the [template editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) or in [design mode](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-designmode.html).
 
 >[!CAUTION]
 >
 >Alcune versioni di singoli componenti core possono essere compatibili solo con determinate versioni di AEM.
 >
->Per ulteriori informazioni, consultate la pagina di aiuto (collegata a nell&#39;elenco precedente) per il componente specifico per informazioni sulla compatibilità o fate riferimento al [documento Versioni](versions.md) componenti principali.
+>See the individual help page (linked to in the previous list) for the specific component for compatibility information or reference the [Core Components Versions](versions.md) document for more information.
 
-## Quando utilizzare i componenti core {#when-to-use-core-components}
+## When to Use Core Components {#when-to-use-core-components}
 
 Poiché i componenti core sono completamente nuovi e offrono più vantaggi, è consigliabile utilizzare i nuovi progetti AEM. Per i progetti esistenti, una migrazione deve far parte di un&#39;attività di progetto più grande, ad esempio un rebranding o un refactoring complessivo.
 
-Per raccomandazioni specifiche, vedi [Quando utilizzare i componenti core?](developing.md) nel documento [Sviluppo componenti](developing.md) core.
+For specific use recommendations, see [When to Use the Core Components?](developing.md) nel documento [Sviluppo componenti](developing.md) core.
 
-## Panoramica della sessione Gems {#gems-session-overview}
+## Gems Session Overview {#gems-session-overview}
 
-Per un&#39;introduzione ai componenti core, alle funzioni che essi offrono e alle modalità di utilizzo in AEM, consulta i componenti core [AEM Gems Session AEM.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
+For an introduction to the Core Components, the features they offer, and how they are leveraged in AEM, check out the AEM Gems Session [AEM Core Components.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
 
 [Gems on Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici offerti dagli esperti Adobe. Questa serie integra la documentazione di prodotto e tutti gli altri canali tecnici, consentendo agli sviluppatori di mettersi in contatto con un argomento specifico.
 
 ## WKND Developer Tutorial {#wknd-developer-tutorial}
 
-Scopri come sviluppare AEM Sites con componenti core seguendo [questa esercitazione.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+Get started developing AEM Sites with Core Components by following [this step by step tutorial.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
 
-## Supporto componenti core {#core-components-support}
+## Core Components Support {#core-components-support}
 
 I componenti core sono parte integrante di AEM e sono supportati così come sono, con gli stessi termini e condizioni di questa distribuzione come parte della sezione Quickstart.
 
@@ -109,10 +113,10 @@ Questo offre ai clienti almeno un ciclo di rilascio per passare alla nuova versi
 
 La versione di ciascun componente indica chiaramente le versioni AEM supportate. Quando il supporto viene interrotto per una versione di AEM, questo supporta anche i componenti core per quella versione di AEM.
 
-Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate [la pagina Personalizzazione componenti](customizing.md) core della relativa versione Componenti core.
+For details about the support of component customizations, see the [Customizing Core Components](customizing.md) page of the relevant Core Components Version.
 
-## Supporto per componenti Foundation {#foundation-component-support}
+## Foundation Component Support {#foundation-component-support}
 
 Poiché i componenti Foundation sono serviti come base per lo sviluppo di progetti in molte versioni, continueranno a essere supportati nel prossimo futuro.
 
-Tuttavia, l&#39;enfasi di sviluppo di Adobe è stata spostata sui componenti core e le nuove funzioni saranno aggiunte a loro, mentre [quasi tutti i componenti di fondazione sono stati rimossi da AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) e verranno apportate solo correzioni ai componenti Foundation.
+However, Adobe&#39;s development emphasis has shifted to the Core Components and new features will be added to them, whereas [nearly all Foundation Components have been deprecated with AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) and only bug fixes will be made to the Foundation Components going forward.
