@@ -11,12 +11,12 @@ products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: ecd 237 df -08 b 8-4 deb -9881-66 a 1 f 0 d 65 ef 3
 modalsize: 426x240
 translation-type: tm+mt
-source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
+source-git-commit: c58826c133eb112b305fa4facbe2a81e577eb896
 
 ---
 
 
-# Componente Breadcrumb{#breadcrumb-component}
+# Breadcrumb Component{#breadcrumb-component}
 
 Il componente Breadcrumb di base è un componente di navigazione che genera un breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
 
@@ -24,9 +24,9 @@ Il componente Breadcrumb di base è un componente di navigazione che genera un b
 
 Il componente Breadcrumb visualizza la posizione della pagina corrente nella gerarchia del sito, consentendo ai visitatori della pagina di navigare nella gerarchia delle pagine dalla posizione corrente. Spesso si integra in intestazioni di pagina o piè di pagina.
 
-Le opzioni disponibili, ad esempio il livello di navigazione predefinito e la capacità di visualizzare la pagina o pagine nascoste, possono essere definite dall&#39;autore del modello nella finestra di dialogo [di progettazione](#design-dialog). L&#39;Editor di contenuto può quindi scegliere se mostrare o meno pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo [di modifica](#edit-dialog).
+Available options, such as the default navigation level and the ability to show the current page or hidden pages, can be defined by the template author in the [design dialog](#design-dialog). The content editor can then choose if hidden pages should be shown or not and the actual navigation level for the component in the [edit dialog](#edit-dialog).
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Version and Compatibility {#version-and-compatibility}
 
 La versione corrente del componente Breadcrumb è v 2, introdotta con la release 2.0.0 dei Componenti core a gennaio 2018, descritta in questo documento.
 
@@ -37,94 +37,23 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](breadcrumb-v1.md) | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
+For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
 
-## Output componente campione {#sample-component-output}
+## Sample Component Output {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
-
-### Schermata {#screenshot}
-
-![](assets/chlimage_1.png)
-
-### HTML {#html}
-
-```
-<nav class="cmp-breadcrumb">
-    <ol class="cmp-breadcrumb__list">
-        <li class="cmp-breadcrumb__item">
-            <a href="/content/we-retail/us.html" class="cmp-breadcrumb__item-link">
-                United States
-            </a>
-        </li>
-    
-        <li class="cmp-breadcrumb__item">
-            <a href="/content/we-retail/us/en.html" class="cmp-breadcrumb__item-link">
-                English
-            </a>
-        </li>
-    
-        <li class="cmp-breadcrumb__item cmp-breadcrumb__item--active">
-            
-                Experience
-            
-        </li>
-    </ol>
-</nav>
-```
-
-### JSON {#json}
-
-```
-"breadcrumb":{  
-                     "columnClassNames":"aem-GridColumn aem-GridColumn--default--12",
-                     "items":[  
-                        {  
-                           "page":{  
-                              "path":"/content/we-retail/us",
-                              "pageTitle":null,
-                              "name":"us",
-                              "description":null,
-                              "title":"United States"
-                           },
-                           "active":false
-                        },
-                        {  
-                           "page":{  
-                              "path":"/content/we-retail/us/en",
-                              "pageTitle":null,
-                              "name":"en",
-                              "description":null,
-                              "title":"English"
-                           },
-                           "active":false
-                        },
-                        {  
-                           "page":{  
-                              "path":"/content/we-retail/us/en/experience",
-                              "pageTitle":null,
-                              "name":"experience",
-                              "description":null,
-                              "title":"Experience"
-                           },
-                           "active":true
-                        }
-                     ],
-                     ":type":"weretail/components/content/breadcrumb"
-                  }
-```
+To experience the Breadcrumb Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/breadcrumb.html).
 
 >[!NOTE]
 >
->Dalla release dei componenti core 2.1.0, il componente Breadcrumb supporta [schema.org microdati](https://schema.org/BreadcrumbList).
+>As of Core Components release 2.1.0, the Breadcrumb Component supports [schema.org microdata](https://schema.org/BreadcrumbList).
 
-### Dettagli tecnici {#technical-details}
+## Technical Details {#technical-details}
 
-La documentazione tecnica più recente relativa al componente [Breadcrumb è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v2/breadcrumb).
+The latest technical documentation about the Breadcrumb Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v2/breadcrumb).
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
 
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
 La finestra di dialogo di modifica consente all&#39;autore del contenuto di disattivare le pagine nascoste e attive nelle breadcrumb, oltre alla profondità nella gerarchia da visualizzare.
 
@@ -132,19 +61,19 @@ La finestra di dialogo di modifica consente all&#39;autore del contenuto di disa
 
 * **Livello** iniziale di navigazione: dove nella gerarchia il componente breadcrumb deve iniziare a spostarsi verso il basso fino alla pagina corrente. Ad esempio in We. Retail:
 
-   * 0 inizia da `/content`
+   * 0 starts at `/content`
 
-   * 1 inizia da `/content/we-retail`
-   * 2 inizia da `/content/we-retail/<country>`
+   * 1 starts at `/content/we-retail`
+   * 2 starts at `/content/we-retail/<country>`
 
 * **Mostra elementi** di navigazione nascosti: mostra pagine contrassegnate come nascoste nella breadcrumb (per impostazione predefinita, non vengono visualizzate)
 * **Nascondi pagina corrente**- Elimina la pagina corrente nel percorso di navigazione (per impostazione predefinita, verrà visualizzata)
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Design Dialog {#design-dialog}
 
 La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i valori predefiniti da utilizzare per rimuovere le pagine nascoste e attive nelle breadcrumb e la profondità nella gerarchia da visualizzare.
 
-### Scheda Principale {#main-tab}
+### Main Tab {#main-tab}
 
 ![](assets/screen_shot_2018-01-12at124437.png)
 
@@ -157,6 +86,6 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
    * Non consente o disabilita l&#39;opzione per l&#39;autore. Imposta solo il valore predefinito.
 
-### Scheda Stili {#styles-tab}
+### Styles Tab {#styles-tab}
 
-Il componente Breadcrumb supporta il sistema [di stile AEM](authoring.md#component-styling).
+The Breadcrumb Component supports the AEM [Style System](authoring.md#component-styling).
