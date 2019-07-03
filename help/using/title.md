@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b179888d19a95257602656d456d5c6bfe82877af
+source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
 ---
 
@@ -24,9 +24,9 @@ Il componente Titolo componente core è un componente di intestazione della sezi
 
 ## Utilizzo {#usage}
 
-Il componente Titolo deve essere usato come titolo o intestazione di una sezione di contenuto. I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [di progettazione](#design-dialog). L&#39;Editor di contenuto può selezionare i livelli dei titoli disponibili nella finestra di dialogo [di modifica](#edit-dialog). Per maggiore praticità, è disponibile anche una semplice modifica diretta del testo dell&#39;intestazione.
+Il componente Titolo deve essere usato come titolo o intestazione di una sezione di contenuto. The available heading levels can be defined by the template author in the [design dialog](#design-dialog). The content editor can select from available headings levels in the [edit dialog](#edit-dialog). Per maggiore praticità, è disponibile anche una semplice modifica diretta del testo dell&#39;intestazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Version and Compatibility {#version-and-compatibility}
 
 La versione corrente del componente Titolo è v 2, introdotta con la release 2.0.0 dei Componenti core a gennaio 2018, descritta in questo documento.
 
@@ -37,27 +37,19 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](title-v1.md) | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
+For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
 
-## Output componente campione {#sample-component-output}
+## Sample Component Output {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+To experience the Title Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/title.html).
 
-### Schermata {#screenshot}
+### Technical Details {#technical-details}
 
-![](assets/chlimage_1-36.png)
+The latest technical documentation about the Title Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title).
 
-### Libreria componenti
+Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
 
-Per provare il componente Titolo e vedere alcuni esempi delle opzioni di configurazione e l&#39;output HTML e JSON, visita la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/title.html).
-
-### Dettagli tecnici {#technical-details}
-
-La documentazione tecnica più recente sul componente [Titolo è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title).
-
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
-
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
 La finestra di dialogo di modifica consente all&#39;autore del contenuto di definire il testo del titolo e di selezionare il livello di intestazione.
 
@@ -75,11 +67,11 @@ L&#39;editor locale può essere usato anche per modificare il testo del componen
 
 ![](assets/chlimage_1-37.png)
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Design Dialog {#design-dialog}
 
 La finestra di dialogo Progettazione consente all&#39;autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno quando creati dagli autori dei contenuti.
 
-### scheda Dimensioni {#sizes-tab}
+### Sizes Tab {#sizes-tab}
 
 ![](assets/screenshot_2018-10-19at110120.png)
 
@@ -91,6 +83,6 @@ La finestra di dialogo Progettazione consente all&#39;autore del modello di defi
 >
 >La capacità di definire un collegamento per il titolo è stata introdotta con la release 2.2.0 dei componenti core.
 
-### Scheda Stili {#styles-tab}
+### Styles Tab {#styles-tab}
 
-Il componente Titolo supporta il sistema [di stile AEM](authoring.md#component-styling).
+The Title Component supports the AEM [Style System](authoring.md#component-styling).
