@@ -7,7 +7,7 @@ contentOwner: bohnert
 content-type: riferimento
 topic-tags: componenti core
 translation-type: tm+mt
-source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
+source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
 ---
 
@@ -20,7 +20,7 @@ Il componente Separatore componenti core visualizza una regola orizzontale per l
 
 Il componente Separatore consente all&#39;autore del contenuto di creare facilmente una regola orizzontale come interruzioni tra contenuti per organizzare meglio le informazioni su una pagina.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Version and Compatibility {#version-and-compatibility}
 
 La versione corrente del componente Separatore è v 1, introdotta con la release 2.3.0 dei componenti core a febbraio 2019, descritta in questo documento.
 
@@ -30,32 +30,24 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 |---|---|---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-## Output componente campione {#sample-component-output}
+## Sample Component Output {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+To experience the Separator Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/separator.html).
 
-### Schermata {#screenshot}
+### Technical Details {#technical-details}
 
-![](assets/screen_shot_2019-02-07at09.38.58.png)
+The latest technical documentation about the Separator Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator).
 
-### Libreria componenti
+Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
 
-Per provare il componente Separatore e vedere alcuni esempi delle opzioni di configurazione e l&#39;output HTML e JSON, visitare la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/separator.html).
-
-### Dettagli tecnici {#technical-details}
-
-La documentazione tecnica più recente sul componente [Separatore è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator).
-
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
-
-## Configura finestra di dialogo {#configure-dialog}
+## Configure Dialog {#configure-dialog}
 
 Il componente Separatore non dispone di una finestra di dialogo configura.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Design Dialog {#design-dialog}
 
 La finestra di dialogo Progettazione consente all&#39;autore del modello di definire gli stili applicati al componente Separatore.
 
-### Scheda Stili {#styles-tab}
+### Styles Tab {#styles-tab}
 
-Il componente Separatore supporta il sistema [di stile AEM](authoring.md#component-styling).
+The Separator Component supports the AEM [Style System](authoring.md#component-styling).
