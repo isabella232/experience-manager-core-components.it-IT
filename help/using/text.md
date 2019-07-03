@@ -9,7 +9,7 @@ content-type: riferimento
 topic-tags: componenti core
 discoiquuid: 9 a 290584-565 e -4392-999 c -999 ee 4 a 93 da 1
 translation-type: tm+mt
-source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
+source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
 ---
 
@@ -22,9 +22,9 @@ Il componente Testo componente core è un componente Rich Text che consente di m
 
 Il componente Testo offre un editor Rich Text affidabile che semplifica la modifica del testo in un editor in linea, in-line e a schermo intero.
 
-La [finestra di dialogo](#edit-dialog) di modifica presenta funzioni di modifica in linea con opzioni limitate, disponibili nella finestra di dialogo di modifica a schermo intero. Utilizzando la [finestra di dialogo di progettazione](#design-dialog), le opzioni di formattazione del testo quali le intestazioni, i caratteri speciali e gli stili di paragrafo possono essere configurate per il modello relativo all&#39;autore del contenuto.
+The [edit dialog](#edit-dialog) features in-line editing with limited options with full functionality available in the full-screen edit dialog. Using the [design dialog](#design-dialog), text formatting options such as headings, special characters, and paragraph styles can be configured for the template for the content author.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Version and Compatibility {#version-and-compatibility}
 
 La versione corrente del componente Testo è v 2, introdotta con la release 2.0.0 dei Componenti core a gennaio 2018, descritta in questo documento.
 
@@ -35,37 +35,29 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](text-v1.md) | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
+For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
 
-## Output componente campione {#sample-component-output}
+## Sample Component Output {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+To experience the Text Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/text.html).
 
-### Schermata {#screenshot}
+### Technical Details {#technical-details}
 
-![](assets/chlimage_1-27.png)
+The latest technical documentation about the Text Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text).
 
-### Libreria componenti
+Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
 
-Per provare il componente Testo e vedere alcuni esempi delle opzioni di configurazione e l&#39;output HTML e JSON, visitare la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/text.html).
+## The Text Component and the Rich Text Editor {#the-text-component-and-the-rich-text-editor}
 
-### Dettagli tecnici {#technical-details}
-
-La documentazione tecnica più recente sul componente [Testo è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text).
-
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
-
-## Componente Testo e Editor Rich Text {#the-text-component-and-the-rich-text-editor}
-
-Il componente Testo componenti core sfrutta l&#39;editor Rich Text (Rich Text Editor) di AEM. L&#39;editor Rich Text offre agli autori dei contenuti un&#39;ampia gamma di funzionalità per modificare il contenuto del testo. L&#39;editor Rich Text è molto flessibile nella configurazione e offre diverse opzioni. Ulteriori dettagli su come l&#39;editor Rich Text può essere configurato negli articoli [Configurate l&#39;Editor Rich Text](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/rich-text-editor.html) e [Configurate i plug-in Editor Rich Text](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/configure-rich-text-editor-plug-ins.html).
+Il componente Testo componenti core sfrutta l&#39;editor Rich Text (Rich Text Editor) di AEM. L&#39;editor Rich Text offre agli autori dei contenuti un&#39;ampia gamma di funzionalità per modificare il contenuto del testo. L&#39;editor Rich Text è molto flessibile nella configurazione e offre diverse opzioni. Further details about how the RTE can be configured can be found in the articles [Configure the Rich Text Editor](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/rich-text-editor.html) and [Configure the Rich Text Editor plug-ins](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/configure-rich-text-editor-plug-ins.html).
 
 Il resto di questo articolo illustra la configurazione standard del componente Testo componenti core con la configurazione RTE out-of-the-box.
 
 >[!NOTE]
 >
->Nel componente Testo sono disponibili solo le opzioni abilitate dalle [configurazioni dell&#39;interfaccia utente dell&#39;editor Rich Text](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-5/sites/administering/using/rich-text-editor.html) .
+>Only options enabled by [UI configurations of the RTE](https://chl-author-preview.corp.adobe.com/content/help/en/experience-manager/6-5/sites/administering/using/rich-text-editor.html) are available by in the Text Component.
 
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
 La finestra di dialogo di modifica offre gli strumenti standard di formattazione RTF che l&#39;utente dovrà comporre.
 
@@ -159,9 +151,9 @@ Utilizzare questa opzione per cercare il testo per l&#39;occorrenza di una strin
 
 ![](assets/screen_shot_2018-01-11at130107.png)
 
-Inserite il testo per il quale desiderate cercare e toccate o fate clic su **Trova** per avviare la ricerca. Toccate o fate clic sul x per annullare.
-Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l&#39;opzione **Corrispondenza maiuscole/minuscole** prima di avviare la ricerca.
-Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate clic nuovamente sul **pulsante Trova** nella finestra di dialogo disattiva per cercare l&#39;occorrenza successiva.
+Enter the text for which you want to search and tap or click **Find** to begin the search. Toccate o fate clic sul x per annullare.
+If you wish to do an exact match according to the case, select the option **Match Case** before starting the search.
+Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Tap or click the **Find** button again in the dimmed dialog to search for the next occurrence.
 
 ![](assets/screen_shot_2018-01-11at130145.png)
 
@@ -179,13 +171,13 @@ Utilizzare questa opzione per cercare il testo per occorrenze di una stringa di 
 
 Inserite il testo da cercare e il testo da sostituire.
 
-Tocca o fai clic su **Trova** per avviare la ricerca. Tocca o fai clic sul segno x per annullare.
+Tap or click **Find** to begin the search. Tocca o fai clic sul segno x per annullare.
 
-Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l&#39;opzione **Corrispondenza maiuscole/minuscole** prima di avviare la ricerca.
+If you wish to do an exact match according to the case, select the option **Match Case** before starting the search.
 
-Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fare di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattiva per cercare l&#39;occorrenza successiva o fare clic sul **pulsante Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo quando viene effettuata una corrispondenza.
+Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Click the **Find** button again in the dimmed dialog to search for the next occurrence or select the **Replace** button to replace the highlighted, matched text. Note that the **Replace** button is only active once a match is made.
 
-Selezionare **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
+Select **Replace all** to replace all occurrences of the text at once.
 
 ### Allinea testo a sinistra
 
@@ -211,7 +203,7 @@ Utilizzato per allineare il testo al margine destro.
 
 Utilizzato per formattare il testo selezionato come elenco puntato o iniziare l&#39;inserimento di un elenco puntato dopo il cursore.
 
-Per terminare un elenco puntato, toccate o fate di nuovo clic sul pulsante **Bullet** oppure immettete due ritorni a capo.
+To end a bulleted list, tap or click the **Bullet** button again or enter two carriage returns.
 
 ### Numerato
 
@@ -219,7 +211,7 @@ Per terminare un elenco puntato, toccate o fate di nuovo clic sul pulsante **Bul
 
 Utilizzato per formattare il testo selezionato come elenco numerato o iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
 
-Per terminare un elenco numerato, toccare o fare di nuovo clic sul pulsante **Numerato** oppure immettere due ritorni a capo.
+To end a numbered list, tap or click the **Numbered** button again or enter two carriage returns.
 
 ### Rientro negativo
 
@@ -271,7 +263,7 @@ didascalia della tabella
 
 Utilizzato per controllare l&#39;ortografia del contenuto del testo. I possibili errori ortografici sono sottolineati con linee rosse interrotte.
 
-Ulteriori dettagli sul controllo ortografia e la personalizzazione dei dizionari controllo ortografia sono disponibili nel documento [Configura i plug-in Editor Rich Text](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/configure-rich-text-editor-plug-ins.html).
+Further details about spell checking and customizing spell check dictionaries can be found in the document [Configure the Rich Text Editor Plug-Ins](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/configure-rich-text-editor-plug-ins.html).
 
 ### Caratteri speciali {#special-characters}
 
@@ -289,17 +281,17 @@ Toccate o fate clic sul carattere desiderato per inserirlo nel testo dopo il cur
 
 Utilizzato per visualizzare e modificare l&#39;origine HTML del testo.
 
-Toccate o fate clic sull&#39; **icona Modifica** sorgente per modificare il contenuto del testo dalla visualizzazione formattata per visualizzare l&#39;HTML non elaborato. In questa modalità, tutte le altre opzioni di formattazione sono disattivate. Toccate o fate di nuovo **clic sull&#39;icona Modifica** sorgente per tornare alla visualizzazione formattata.
+Tap or click the **Source Edit** icon to change the content of the text from the formatted view to view the raw HTML. In questa modalità, tutte le altre opzioni di formattazione sono disattivate. Tap or click the **Source Edit** icon again to return to the formatted view.
 
 >[!CAUTION]
 >
->Come sempre con l&#39;accesso all&#39;HTML non elaborato, l&#39;attenzione deve essere esercitata quando si utilizza l&#39; **opzione Modifica** origine.
+>As always the case with access to raw HTML, care must be exercised when using the **Source Edit** option!
 >
->Il codice HTML immesso tramite **Modifica** origine viene analizzato per i rischi XSS e tutti gli script inseriti vengono rimossi e non verranno visualizzati nella pagina risultante. Tuttavia, l&#39;HTML corrotto immesso in **Modifica origine** può interrompere il modello per la pagina, determinando la formattazione imprevista o il rendering della pagina risultante.
+>HTML entered via **Source Edit** is scanned for XSS risks and any scripts that are inserted are removed and will not appear on the resulting page. However malformed HTML entered in **Source Edit** can break the template for the page resulting in unexpected formatting or rendering the resulting page unusable.
 
 >[!NOTE]
 >
->Poiché HTML immesso tramite **Modifica origine** viene analizzato per i rischi XSS ed eventuali script e rimuove quelli rilevati, il contenuto effettivo persistente può variare rispetto a quanto è stato immesso in **Modifica origine**. Per salvare le modifiche effettuate utilizzando Modifica **origine**, dovete prima uscire da Modifica **sorgente** per visualizzare il testo nell&#39;editor normale prima di salvare.
+>Because HTML entered via **Source Edit** is scanned for XSS risks and any scripts and automatically removes those found, the actual content persisted may vary from what was entered in **Source Edit**. For this reason, in order to save changes made using **Source Edit**, you must first exit **Source Edit** to view the text in the normal editor before saving.
 
 ### Formato paragrafo
 
@@ -313,11 +305,11 @@ Anche il componente Testo può essere modificato in linea, ma non tutte le opzio
 
 ![](assets/screen_shot_2018-01-11at142921.png)
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Design Dialog {#design-dialog}
 
 La finestra di dialogo di progettazione consente all&#39;autore del modello di definire le opzioni di formattazione del testo disponibili per gli autori dei contenuti.
 
-### Scheda Plug-in {#plugins-tab}
+### Plugins Tab {#plugins-tab}
 
 La scheda Plug-in consente di abilitare e disabilitare diverse opzioni di formattazione del testo disponibili per gli autori di contenuto.
 
@@ -352,22 +344,22 @@ Le seguenti opzioni di formattazione possono essere attivate o disattivate per i
 
 Gli stili di paragrafo possono essere attivati o disattivati per il componente. Quando è attivata, è possibile definire i formati consentiti.
 
-* Toccate o fate clic sul **pulsante Aggiungi** per inserire un nuovo stile.
+* Tap or click the **Add** button to insert a new style.
 * Inserite il codice dello stile e una descrizione che verrà visualizzata nella finestra di dialogo di modifica.
-* Per rimuovere un tocco di stile o fare clic sul **pulsante Elimina** .
+* To remove a style tap or click the **Delete** button.
 * Per riorganizzare l&#39;ordine dei formati toccate o fate clic e trascinate le maniglie.
 
-### Configurazione di caratteri speciali {#configuring-special-characters}
+### Configuring Special Characters {#configuring-special-characters}
 
 ![](assets/chlimage_1-31.png)
 
 L&#39;opzione per inserire caratteri speciali può essere attivata o disattivata per il componente. Quando è attivata, è possibile definire i caratteri consentiti.
 
-* Toccate o fate clic sul **pulsante Aggiungi** per inserire un nuovo carattere.
+* Tap or click the **Add** button to insert a new character.
 * Inserite il codice HTML del carattere e una descrizione che verrà visualizzata nella finestra di dialogo di modifica.
-* Per rimuovere un tocco di caratteri o fare clic sul **pulsante Elimina** .
+* To remove a character tap or click the **Delete** button.
 * Per riordinare l&#39;ordine dei caratteri toccate o fate clic e trascinate le maniglie.
 
-## Scheda Stili {#styles-tab}
+## Styles Tab {#styles-tab}
 
-Il componente Testo supporta il sistema [di stile AEM](authoring.md#component-styling).
+The Text Component supports the AEM [style system](authoring.md#component-styling).
