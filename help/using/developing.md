@@ -10,7 +10,7 @@ topic-tags: sviluppo
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: 157 a 2 ec 3-9 fca -4 fad -977 a-d 93013 eeb 218
 translation-type: tm+mt
-source-git-commit: bea783936100abe899f9b60e4a09522514755db2
+source-git-commit: f30a6a9f4d41c672472beb60767f3766479d9c16
 
 ---
 
@@ -143,12 +143,9 @@ Nella tabella seguente sono elencati i componenti core disponibili, che collegan
 | [Pulsante](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button) | Creare un pulsante su una pagina | `-` |
 | [Scarica](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download) | Aggiungere una risorsa scaricabile a una pagina | `-` |
 
-### Upcoming components {#upcoming-components}
+### Upcoming Components {#upcoming-components}
 
-Stiamo lavorando attivamente sui seguenti componenti core. They haven&#39;t been released yet, but can be previewed in the [development branch](https://github.com/adobe/aem-core-wcm-components/tree/development):
-
-* Incorpora
-* Finestra modale
+For an overview of the upcoming Core Componente roadmap see the [project wiki on GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
 
 ## Upgrade of Core Components {#upgrade-of-core-components}
 
