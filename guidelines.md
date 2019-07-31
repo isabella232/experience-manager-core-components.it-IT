@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1bbec9b1f109df88964dce051a58d111bf6cafaa
+source-git-commit: 1273505a2b00913a89606b856d2e7c3811a3bd72
 translation-type: tm+mt
 
 ---
@@ -9,11 +9,11 @@ translation-type: tm+mt
 
 Sappiamo che gli utenti di Adobe Experience Manager lavorano in ambienti altamente competitivi, cercando di creare esperienze digitali che li distingueranno dai loro concorrenza. È quindi essenziale che, quando Adobe offre nuovi strumenti avanzati in AEM, questi strumenti dispongano di documentazione precisa e chiara per consentire al cliente di sfruttare immediatamente il proprio investimento AEM e massimizzare il ROI.
 
-L&#39;obiettivo della documentazione di AEM è quello di mettere la documentazione nelle mani degli utenti di AEM il prima possibile. Per questo motivo, abbiamo priorità a una documentazione accurata e utilizzabile e stiamo cercando di aggiornarla costantemente e di migliorarla.
+L'obiettivo della documentazione di AEM è quello di mettere la documentazione nelle mani degli utenti di AEM il prima possibile. Per questo motivo, abbiamo priorità a una documentazione accurata e utilizzabile e stiamo cercando di aggiornarla costantemente e di migliorarla.
 
 ## Contributi alla documentazione AEM
 
-Al fine di migliorare costantemente la documentazione di AEM, l&#39;intera community di utenti AEM ha il benvenuto per contribuire alla documentazione. Grazie a richieste o problemi estesi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni e altri esempi.
+Al fine di migliorare costantemente la documentazione di AEM, l'intera community di utenti AEM ha il benvenuto per contribuire alla documentazione. Grazie a richieste o problemi estesi, i miglioramenti alla documentazione possono essere correzioni, chiarimenti, espansioni e altri esempi.
 
 ## Standard documentazione
 
@@ -21,9 +21,9 @@ Mentre apprezziamo i contributi alla nostra documentazione, qualsiasi contributo
 
 I contributi che non soddisfano questi standard possono essere rifiutati.
 
-### I casi d&#39;uso standard sono i documenti.
+### I casi d'uso standard sono i documenti.
 
-La documentazione di AEM copre i casi d&#39;uso standard. I casi d&#39;uso oltre l&#39;ambito dell&#39;installazione e dell&#39;utilizzo standard del prodotto non fanno parte della documentazione di AEM.
+La documentazione di AEM copre i casi d'uso standard. I casi d'uso oltre l'ambito dell'installazione e dell'utilizzo standard del prodotto non fanno parte della documentazione di AEM.
 
 ### Non si verificano bug né soluzioni alternative.
 
@@ -31,15 +31,15 @@ Poiché la documentazione di AEM copre casi di utilizzo standard, bug, tali effe
 
 ### I contributi della documentazione non sono per rispondere alle domande tecniche.
 
-Qualsiasi idea che potrebbe essere necessaria per migliorare la documentazione di AEM è utile come contributo. Tuttavia, i contributi potrebbero non essere utilizzati per rispondere alle domande su come utilizzare AEM o risolvere problemi tecnici.
+Qualsiasi idea che potrebbe essere necessaria per migliorare la documentazione di AEM è utile come contributo. However comments, issues, and pull requests are intended for *contributions* only. Non devono essere utilizzati per rispondere alle domande su come utilizzare AEM o risolvere problemi tecnici.
 
-Qualsiasi quesito riguardante l&#39;utilizzo di AEM o di errori tecnici potrebbe essere segnalato mediante il normale processo di supporto o discusso nei forum degli utenti di AEM.
+Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Manager Support Portal](https://daycare.day.com/home.html) or discussed in the [Experience Manager community](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html).
 
-***I contributi della documentazione AEM non sostituiscono il supporto*** Adobe e tali contributi verranno rifiutati.
+***I contributi della documentazione AEM non sostituiscono il supporto Adobe*** e tutti questi contributi che richiedono risposte alle domande relative al supporto verranno rifiutati.
 
 ### I contributi devono fare riferimento chiaramente alle pagine della documentazione interessate.
 
-Se si crea un problema per suggerire miglioramenti alla documentazione, è necessario includere i collegamenti alle pagine interessate. Se create un problema utilizzando il collegamento **Modifica questo pagina** in una pagina della documentazione, il problema verrà creato automaticamente con un collegamento alla pagina.
+Se si crea un problema per suggerire miglioramenti alla documentazione, è necessario includere i collegamenti alle pagine interessate. If you create an issue by using the **Edit this page** link on a documentation page, the issue will be created with a link to the page automatically.
 
 Ciò non si applica alle richieste pull perché le richieste pull includono le pagine interessate per definizione.
 
@@ -47,7 +47,7 @@ Ciò non si applica alle richieste pull perché le richieste pull includono le p
 
 Chiediamo che i contributi alla documentazione seguano determinate linee guida sugli stili.
 
-Seguendo queste linee guida, la revisione del contributo risulta più semplice e, pertanto, l&#39;integrazione nella documentazione è più rapida. Tuttavia, non conformità o conformità a tali linee guida non significa che il contributo verrà rifiutato.
+Seguendo queste linee guida, la revisione del contributo risulta più semplice e, pertanto, l'integrazione nella documentazione è più rapida. Tuttavia, non conformità o conformità a tali linee guida non significa che il contributo verrà rifiutato.
 
 ### Lingua e stile
 
@@ -83,6 +83,6 @@ Cercate di evitare eventuali riferimenti diretti a una versione specifica nel co
 
 ### Utilizzo del giorno, AEM, CQ, CRX
 
-Per la prima volta in un articolo, il nome del prodotto deve essere sempre denominato **Adobe Experience Manager** e può quindi essere denominato **AEM**.
+The product should always be referred to by its full name **Adobe Experience Manager** for the first time in an article and can thereafter be referred to as **AEM**.
 
 Day, Day Software, CQ e CRX non devono essere utilizzati, ad eccezione dei casi in cui sono inevitabili, ad esempio nei nomi di classe o nella cronologia di AEM.
