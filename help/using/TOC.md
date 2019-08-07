@@ -1,15 +1,16 @@
 ---
 cloud: experience-cloud
-product: componenti core adobe experience manager
-archtype: Amministratore
+product: adobe experience manager
+sub-product: componenti core adobe experience manager
+archetype: Amministratore
 user-guide-title: Componenti core AEM
 translation-type: tm+mt
-source-git-commit: 330c0984d851ae4eac86e3423bb35edd8cfa644c
+source-git-commit: 427046cbfa4fed3735a7baf2aa7600f5a11851cd
 
 ---
 
 
-# AEM Core Components Help {#using}
+# Guida ai componenti di base di AEM {#using}
 
 + [Introduzione ai componenti core](introduction.md)
 + [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library.html)
@@ -17,7 +18,7 @@ source-git-commit: 330c0984d851ae4eac86e3423bb35edd8cfa644c
 + Get Started {#get-started}
    + [Authoring con i componenti core](authoring.md)
    + [Utilizzo dei componenti core](using.md)
-+ The Components {#components}
++ Componenti {#components}
    + [Accordion](accordion.md)
    + [Breadcrumb](breadcrumb.md)
    + [Pulsante](button.md)
@@ -38,20 +39,20 @@ source-git-commit: 330c0984d851ae4eac86e3423bb35edd8cfa644c
    + [Schede](tabs.md)
    + [Teaser](teaser.md)
    + [Titolo](title.md)
-   + Form Components {#forms}
+   + Componenti modulo {#forms}
       + [Pulsante modulo](form-button.md)
       + [Contenitore modulo](form-container.md)
       + [Nascosto per modulo](form-hidden.md)
       + [Opzioni modulo](form-options.md)
       + [Testo modulo](form-text.md)
-   + v1 Components {#v1-components}
+   + Componenti v 1 {#v1-components}
       + [Breadcrumb (v1)](breadcrumb-v1.md)
       + [Immagine (v1)](image-v1.md)
       + [Elenco (v1)](list-v1.md)
       + [Pagina (v1)](page-v1.md)
       + [Testo (v1)](text-v1.md)
       + [Titolo (v1)](title-v1.md)
-      + v1 Form Components {#v1-forms}
+      + Componenti per modulo v 1 {#v1-forms}
          + [Pulsante modulo (v1)](form-button-v1.md)
          + [Contenitore modulo (v1)](form-container-v1.md)
          + [Nascosto per modulo (v1)](form-hidden-v1.md)
