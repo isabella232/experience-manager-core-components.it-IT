@@ -10,7 +10,7 @@ topic-tags: authoring
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: d 4684 f 33-2 fb 5-4 f 32-866 f -7136 cf 1800 d 7
 translation-type: tm+mt
-source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
+source-git-commit: 34ae30ca8be3ad290924b986acfac11d960f2ee0
 
 ---
 
@@ -21,11 +21,17 @@ Il componente Immagine componente core è un componente immagine adattivo che fu
 
 ## Utilizzo {#usage}
 
-Il componente Immagine permette di posizionare facilmente risorse di immagini e offerte locali. Offre selezioni immagine adattive con caricamento lazy e ritaglio per l&#39;autore del contenuto.
+Il componente Immagine offre selezioni immagine adattive e comportamenti reattivi con caricamento lazy per il visitatore della pagina, nonché facile posizionamento delle immagini e ritaglio per l'autore del contenuto.
 
-The image widths as well as cropping and additional settings can be defined by the template author in the [design dialog](#design-dialog). The content editor can upload or select assets in the [configure dialog](#configure-dialog) and crop the image in the [edit dialog](#edit-dialog). Per maggiore praticità è disponibile anche una semplice modifica diretta dell&#39;immagine.
+Le larghezze delle immagini e il ritaglio e le impostazioni aggiuntive possono essere definiti dall'autore del modello nella finestra di dialogo [di progettazione](#design-dialog). L'editor di contenuto può caricare o selezionare le risorse nella finestra di dialogo [Configura](#configure-dialog) e ritagliare l'immagine nella finestra di dialogo [di modifica](#edit-dialog). Per maggiore praticità è disponibile anche una semplice modifica diretta dell'immagine.
 
-## Version and Compatibility {#version-and-compatibility}
+## Funzioni reattive {#responsive-features}
+
+Il componente Immagine viene fornito con solide funzioni reattive pronte all'esterno della casella. A livello di modello pagina, potete [usare la finestra di dialogo](#design-dialog) di progettazione per definire le larghezze predefinite della risorsa immagine. Il componente Immagine carica quindi automaticamente la larghezza corretta in base alle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Imaage carica in modo dinamico le dimensioni immagine corrette al momento. Non è necessario che gli sviluppatori di componenti siano in grado di definire le query di media media in quanto il componente Immagine è già ottimizzato per caricare i contenuti.
+
+Inoltre, il componente Immagine supporta il caricamento lazy per differire il caricamento della risorsa immagine effettiva finché non è visibile nel browser, aumentando la capacità di reindirizzamento delle pagine.
+
+## Versione e Compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Immagine è v 2, introdotta con la release 2.0.0 dei Componenti core a gennaio 2018, descritta in questo documento.
 
@@ -36,75 +42,75 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](image-v1.md) | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
-## SVG Support {#svg-support}
+## Supporto SVG {#svg-support}
 
 Il componente Immagine vettoriale scalabile (SVG) è supportato dal componente Immagine.
 
 * È supportata la funzione di trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale.
 * Nei flussi immagine adattiva viene trasmesso il file SVG originale (le trasformazioni vengono ignorate).
-* Per un&#39;immagine SVG, le «immagini sensibili» e le «dimensioni sensibili» sono impostate su un array vuoto nel modello di immagine.
+* Per un'immagine SVG, le «immagini sensibili» e le «dimensioni sensibili» sono impostate su un array vuoto nel modello di immagine.
 
 ### Protezione {#security}
 
-Per motivi di sicurezza, il formato SVG originale non viene mai chiamato direttamente dall&#39;Editor immagini. `<img src=“path-to-component”>`Viene richiamata. Tale browser impedisce l&#39;esecuzione di script incorporati nel file SVG.
+Per motivi di sicurezza, il formato SVG originale non viene mai chiamato direttamente dall'Editor immagini. `<img src=“path-to-component”>`Viene richiamata. In questo modo il browser non può eseguire alcuno script incorporato nel file SVG.
 
 >[!CAUTION]
 >
->SVG support requires release 2.1.0 of the Core Components or higher along with [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) for AEM 6.4 or [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) for AEM 6.3 or higher to support [new image editor features](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) within AEM.
+>Il supporto SVG richiede la versione 2.1.0 dei componenti core, oltre a [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) per AEM 6.4 o [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o service pack per supportare [nuove funzioni Editor immagini](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) in AEM.
 
-## Sample Component Output {#sample-component-output}
+## Output componente campione {#sample-component-output}
 
-To experience the Image Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/image.html).
+Per provare il componente Immagine e vedere alcuni esempi delle opzioni di configurazione e l'output HTML e JSON, visitare la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/image.html).
 
-### Technical Details {#technical-details}
+### Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Image Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image).
+La documentazione tecnica più recente sul componente [Immagine è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
 >[!NOTE]
 >
->As of Core Components release 2.1.0, the Image Component supports [schema.org microdata](https://schema.org).
+>Nella release 2.1.0 dei componenti core, il componente Immagine supporta [schema.org microdati](https://schema.org).
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-In addition to the standard [edit dialog](#edit-dialog) and [design dialog](#design-dialog), the image component offers a configure dialog where the image itself is defined along with its description and basic properties.
+Oltre alla finestra di dialogo di [modifica standard](#edit-dialog) e [alla finestra di dialogo di progettazione](#design-dialog), il componente Immagine offre una finestra di dialogo di configurazione in cui viene definito l'immagine stessa insieme alla descrizione e alle proprietà di base.
 
-### Asset Tab {#asset-tab}
+### Scheda Risorse {#asset-tab}
 
 ![](assets/screen_shot_2018-01-08at114245.png)
 
 * **Risorsa immagine**
-   * Drop an asset from the [asset browser](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) or tap the **browse** option to upload from a local file system.
-   * Tap or click **Clear** to de-select the currently selected image.
-   * Tap or click **Edit** to [mange the renditions of the asset](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) in the asset editor.
+   * Rilasciate una risorsa dal Browser [risorse](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) o toccate l'opzione **di ricerca** da caricare da un file system locale.
+   * Tocca o fai clic su **Cancella** per deselezionare l'immagine correntemente selezionata.
+   * Toccate o fate clic **su Modifica** per [gestire i rendering della risorsa](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) nell'editor risorse.
 
-### Metadata Tab {#metadata-tab}
+### Scheda Metadati {#metadata-tab}
 
 ![](assets/screen_shot_2018-01-08at114527.png)
 
-* **L&#39;immagine è decorativa**
-Se l&#39;immagine deve essere ignorata dalla tecnologia di accessibilità e quindi non richiede un testo alternativo. Ciò si applica solo alle immagini decorative.
+* **L'immagine è decorativa**
+Se l'immagine deve essere ignorata dalla tecnologia di accessibilità e quindi non richiede un testo alternativo. Ciò si applica solo alle immagini decorative.
 * **Alternative**testuali alternative
-rispetto al significato o alla funzione dell&#39;immagine, per i lettori ipovedenti.
-   * Get alternative text from DAM - When checked the image&#39;s alternative text will be populated with the value of the `dc:description` metadata in DAM.
+rispetto al significato o alla funzione dell'immagine, per i lettori ipovedenti.
+   * Ottieni testo alternativo da DAM - Se questa opzione è selezionata, il testo alternativo dell'immagine verrà popolato con il valore dei `dc:description` metadati in DAM.
 
 * **Didascalia**
-Ulteriori informazioni sull&#39;immagine, visualizzate sotto l&#39;immagine per impostazione predefinita.
+Ulteriori informazioni sull'immagine, visualizzate sotto l'immagine per impostazione predefinita.
    * **Ottieni didascalia da DAM**
-Quando questa opzione è selezionata, il testo della didascalia dell&#39;immagine verrà popolato con il valore dei `dc:title` metadati in DAM.
-   * **Visualizza didascalia come a comparsa** Quando questa opzione è selezionata, la didascalia non viene visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il mouse sull&#39;immagine.
+Quando questa opzione è selezionata, il testo della didascalia dell'immagine verrà popolato con il valore dei `dc:title` metadati in DAM.
+   * **Visualizza didascalia come a comparsa** Quando questa opzione è selezionata, la didascalia non viene visualizzata sotto l'immagine, ma come pop-up visualizzato da alcuni browser quando si passa il mouse sull'immagine.
 
 * **Collegamento**
-   * Collegate l&#39;immagine a un&#39;altra risorsa.
-   * Utilizza la finestra di dialogo di selezione per collegare un&#39;altra risorsa AEM.
-   * Se non collegate una risorsa AEM, immettete l&#39;URL assoluto. Gli URL non soliti verranno interpretati come relativi ad AEM.
+   * Collegate l'immagine a un'altra risorsa.
+   * Utilizza la finestra di dialogo di selezione per collegare un'altra risorsa AEM.
+   * Se non collegate una risorsa AEM, immettete l'URL assoluto. Gli URL non soliti verranno interpretati come relativi ad AEM.
 
 ## Edit Dialog {#edit-dialog}
 
-La finestra di dialogo di modifica consente all&#39;autore del contenuto di ritagliare, modificare la mappa di lancio e applicare lo zoom all&#39;immagine.
+La finestra di dialogo di modifica consente all'autore del contenuto di ritagliare, modificare la mappa di lancio e applicare lo zoom all'immagine.
 
 ![](assets/chlimage_1-8.png)
 
@@ -114,9 +120,9 @@ La finestra di dialogo di modifica consente all&#39;autore del contenuto di rita
 
    Selezionando questa opzione si apre un menu a discesa per le proporzioni di ritaglio predefinite.
 
-   * Choose the option **Free Hand** to define your own crop.
-   * Choose the option **Remove Crop** to display the original asset.
-   Una volta selezionata l&#39;opzione Ritaglio, usate le maniglie blu per ridimensionare il ritaglio sull&#39;immagine.
+   * Scegliete l'opzione **Mano libera** per definire il ritaglio.
+   * Scegliete l'opzione **Rimuovi ritaglio** per visualizzare la risorsa originale.
+   Una volta selezionata l'opzione Ritaglio, usate le maniglie blu per ridimensionare il ritaglio sull'immagine.
 
    ![](assets/chlimage_1-10.png)
 
@@ -124,43 +130,43 @@ La finestra di dialogo di modifica consente all&#39;autore del contenuto di rita
 
    ![](assets/chlimage_1-11.png)
 
-   Utilizzare questa opzione per ruotare l&#39;immagine di 90 ° a destra (in senso orario).
+   Utilizzare questa opzione per ruotare l'immagine di 90 ° a destra (in senso orario).
 
 * Rifletti in orizzontale
 
    ![](assets/screen_shot_2018-04-16at091404.png)
 
-   Usate questa opzione per riflettere l&#39;immagine in orizzontale o ruotare l&#39;immagine di 180 ° lungo l&#39;asse y.
+   Usate questa opzione per riflettere l'immagine in orizzontale o ruotare l'immagine di 180 ° lungo l'asse y.
 
 * Rifletti in verticale
 
    ![](assets/screen_shot_2018-04-16at091410.png)
 
-   Utilizzate questa opzione per riflettere l&#39;immagine in verticale o ruotare l&#39;immagine di 180 ° lungo l&#39;asse x.
+   Utilizzate questa opzione per riflettere l'immagine in verticale o ruotare l'immagine di 180 ° lungo l'asse x.
 
 * Mappa lancio
 
    >[!CAUTION]
    >
-   >The Launch Map feature requires release 2.1.0 of the Core Components or higher along with [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) for AEM 6.4 or [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) for AEM 6.3 or higher to support [new image editor features](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) within AEM.
+   >La funzione Mappa mappa richiede la versione 2.1.0 dei componenti core, oltre a [Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) per AEM 6.4 o [Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o service pack per supportare [nuove funzioni Editor immagini](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) in AEM.
 
    ![](assets/chlimage_1-12.png)
 
-   Utilizzate questa opzione per applicare una mappa di lancio all&#39;immagine. Selezionate questa opzione per aprire una nuova finestra che consente all&#39;utente di selezionare la forma della mappa:
+   Utilizzate questa opzione per applicare una mappa di lancio all'immagine. Selezionate questa opzione per aprire una nuova finestra che consente all'utente di selezionare la forma della mappa:
 
    * **Aggiungi mappa rettangolare**
    * **Aggiungi mappa circolare**
    * **Aggiungi mappa poligono**
       * Per impostazione predefinita, viene aggiunta una mappa triangolare. Fare doppio clic su una riga della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
-   Una volta selezionata la forma della mappa, questa viene sovrapposta all&#39;immagine che consente il ridimensionamento. Trascinare e rilasciare le maniglie di ridimensionamento blu per regolare la forma.
+   Una volta selezionata la forma della mappa, questa viene sovrapposta all'immagine che consente il ridimensionamento. Trascinare e rilasciare le maniglie di ridimensionamento blu per regolare la forma.
 
    ![](assets/chlimage_1-13.png)
 
    Dopo aver ridimensionato la mappa di avvio, fare clic su di essa per aprire una barra degli strumenti mobile per definire il percorso del collegamento.
 
    * **Percorso**
-      * Utilizzare l&#39;opzione Selettore percorso per selezionare un percorso in AEM
-      * Se il percorso non è in AEM, usate l&#39;URL assoluto. I percorsi non assoluti verranno interpretati in base ad AEM.
+      * Utilizzare l'opzione Selettore percorso per selezionare un percorso in AEM
+      * Se il percorso non è in AEM, usate l'URL assoluto. I percorsi non assoluti verranno interpretati in base ad AEM.
    * **Testo**
 Alt Descrizione alternativa della destinazione del percorso
    * **Destinazione**
@@ -176,17 +182,17 @@ Alt Descrizione alternativa della destinazione del percorso
 
    ![](assets/chlimage_1-15.png)
 
-   Se l&#39;immagine è già stata ingrandita, usate questa opzione per ripristinare il livello di zoom.
+   Se l'immagine è già stata ingrandita, usate questa opzione per ripristinare il livello di zoom.
 
 * Apri cursore zoom
 
    ![](assets/chlimage_1-16.png)
 
-   Usate questa opzione per visualizzare un cursore per controllare il livello di zoom dell&#39;immagine.
+   Usate questa opzione per visualizzare un cursore per controllare il livello di zoom dell'immagine.
 
    ![](assets/chlimage_1-17.png)
 
-L&#39;editor locale può essere usato anche per modificare l&#39;immagine. A causa di limiti di spazio, sono disponibili solo le opzioni di base. Per le opzioni di modifica complete, utilizzate la modalità schermo intero.
+L'editor locale può essere usato anche per modificare l'immagine. A causa di limiti di spazio, sono disponibili solo le opzioni di base. Per le opzioni di modifica complete, utilizzate la modalità schermo intero.
 
 ![](assets/chlimage_1-18.png)
 
@@ -194,70 +200,70 @@ L&#39;editor locale può essere usato anche per modificare l&#39;immagine. A cau
 >
 >Le operazioni di modifica delle immagini (ritaglio, capovolgimento, rotazione) non sono supportate per le immagini GIF. Tutte le modifiche apportate in modalità di modifica a GIF non saranno persistenti.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire il ritaglio, il caricamento e le opzioni di rotazione e caricamento che l&#39;autore del contenuto ha quando si utilizza questo componente.
+La finestra di dialogo Progettazione consente all'autore del modello di definire il ritaglio, il caricamento e le opzioni di rotazione e caricamento che l'autore del contenuto ha quando si utilizza questo componente.
 
-### Main Tab {#main-tab}
+### Scheda Principale {#main-tab}
 
-On the **Main** tab you can define a list of widths in pixels for the image to automatically load the most appropriate width from the list.
+Nella scheda **Principale** è possibile definire un elenco di larghezze in pixel per l'immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser. Questa è una parte importante delle funzioni [reattive](#responsive-features) del componente Immagine.
 
-Inoltre, è possibile definire quali opzioni generali vengono visualizzate o disattivate quando l&#39;autore aggiunge il componente a una pagina.
+Inoltre, è possibile definire quali opzioni generali vengono visualizzate o disattivate quando l'autore aggiunge il componente a una pagina.
 
 ![](assets/screenshot_2018-10-19at102756.png)
 
 * **Abilita caricamento
-lazy** Definisce se l&#39;opzione di caricamento lazy viene attivata automaticamente quando si aggiunge il componente Immagine a una pagina.
-* **L&#39;immagine è decorativa**
-se l&#39;opzione Immagine decorativa viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
+lazy** Definisce se l'opzione di caricamento lazy viene attivata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **L'immagine è decorativa**
+se l'opzione Immagine decorativa viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
 * **Ottenete testo alternativo da DAM**
-Definire se l&#39;opzione per recuperare il testo alternativo da DAM viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
+Definire se l'opzione per recuperare il testo alternativo da DAM viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
 * **Ottenere didascalia da DAM**
-Definire se l&#39;opzione per recuperare la didascalia dal DAM viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Visualizza didascalia come a comparsa** Definite se l&#39;opzione per visualizzare la didascalia immagine come pop-up viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
+Definire se l'opzione per recuperare la didascalia dal DAM viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
+* **Visualizza didascalia come a comparsa** Definite se l'opzione per visualizzare la didascalia immagine come pop-up viene attivata automaticamente quando si aggiunge il componente immagine a una pagina.
 * **Disabilita controllo tracciamento**
-UUID per disattivare il tracciamento dell&#39;UUID della risorsa immagine.
+UUID per disattivare il tracciamento dell'UUID della risorsa immagine.
 
 * **Larghezze**
-Consente di definire un elenco di larghezze in pixel affinché l&#39;immagine carichi automaticamente la larghezza più appropriata dall&#39;elenco.
-   * Tap or click the **Add** button to add another size.
-      * Utilizzare le maniglie di acquisizione per riordinare l&#39;ordine delle dimensioni.
-      * Use the **Delete** icon to remove a width.
+Definisce un elenco di larghezze in pixel per l'immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser.
+   * Toccate o fate clic sul **pulsante Aggiungi** per aggiungere un'altra dimensione.
+      * Utilizzare le maniglie di acquisizione per riordinare l'ordine delle dimensioni.
+      * Usate l'icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene eseguito fino a quando non diventa visibile.
-      * Select the option **Disable lazy loading** to load the images upon page load.
+      * Selezionate l'opzione **Disattiva caricamento lento** per caricare le immagini al caricamento della pagina.
 * **Qualità**
 JPEG Il fattore di qualità (in percentuale da 0 e 100) per le immagini JPEG trasformate (ad es. ridimensionate o ritagliate).
 
 >[!CAUTION]
 >
->L&#39;opzione Qualità JPEG è disponibile a partire dalla versione 2.2.0 dei componenti core.
+>L'opzione Qualità JPEG è disponibile a partire dalla versione 2.2.0 dei componenti core.
 
 >[!NOTE]
 >
->As of release 2.2.0 of the Core Components, the Image Component adds the unique UUID attribute `data-asset-id` to the image asset to allow tracking and analysis of the number of views that individual assets receive.
+>Dalla release 2.2.0 dei componenti core, il componente Immagine aggiunge l'attributo UUID univoco `data-asset-id` alla risorsa immagine per consentire il tracciamento e l'analisi del numero di visualizzazioni ricevute da singole risorse.
 
-### Features Tab {#features-tab}
+### Scheda Funzioni {#features-tab}
 
-On the **Features** tab you can define which options are available to the content authors when using the component including upload options, orientation, and cropping options.
+Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori di contenuto quando si utilizza il componente, quali opzioni di caricamento, orientamento e ritaglio.
 
 * Origine
 
    ![](assets/chlimage_1-19.png)
 
-   Select the option **Allow asset upload from file system** to allow content authors to upload images from his or her local computer. Per obbligare gli autori di contenuto a selezionare solo risorse da AEM, deselezionate questa opzione.
+   Selezionate l'opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuto di caricare le immagini dal proprio computer locale. Per obbligare gli autori di contenuto a selezionare solo risorse da AEM, deselezionate questa opzione.
 
 * Orientamento
 
    ![](assets/chlimage_1-20.png)
 
 * **Rotazione**
-Consente di utilizzare questa opzione per consentire all&#39;autore del contenuto di utilizzare l&#39;opzione **Ruota diritto.**
+Consente di utilizzare questa opzione per consentire all'autore del contenuto di utilizzare l'opzione **Ruota diritto.**
 * **Rifletti**
-Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
+Utilizzate questa opzione per consentire all'autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
 
    >[!CAUTION]
    >
-   >The **Flip** option is disabled by default. Enabling it will display the **Flip Vertically** and **Flip Horizontally** buttons in the edit dialog of the image component, however the feature is not currently supported by AEM and any changes made using these options will not be persisted.
+   >L'opzione **Rifletti** è disattivata per impostazione predefinita. Attivando i pulsanti **Rifletti in verticale** e **Capovolgi orizzontalmente** nella finestra di dialogo di modifica del componente Immagine, la funzione non è supportata da AEM e tutte le modifiche apportate utilizzando queste opzioni non vengono mantenute.
 
 <!-- 
 Comment Type: remark
@@ -271,16 +277,16 @@ Last Modified Date: 2017-11-20T05:51:34.378-0500
 
    ![](assets/chlimage_1-21.png)
 
-   Select the option **Allow crop** to allow the content author to crop the image in the component in the edit dialog.
-   * Click **Add** to add a pre-defined crop aspect ratio.
-   * Enter a descriptive name, which will be shown in the **Start Crop** dropdown.
-   * Inserite il rapporto numerico dell&#39;aspetto.
-   * Utilizzare le maniglie trascinate per riordinare l&#39;ordine delle proporzioni
-   * Usate l&#39;icona del cestino per eliminare le proporzioni.
+   Selezionate l'opzione **Consenti ritaglio** per consentire all'autore del contenuto di ritagliare l'immagine nel componente nella finestra di dialogo di modifica.
+   * Fate clic su **Aggiungi** per aggiungere proporzioni di ritaglio predefinite.
+   * Inserite un nome descrittivo che verrà mostrato nel menu a discesa **Avvia ritaglio** .
+   * Inserite il rapporto numerico dell'aspetto.
+   * Utilizzare le maniglie trascinate per riordinare l'ordine delle proporzioni
+   * Usate l'icona del cestino per eliminare le proporzioni.
    >[!CAUTION]
    >
-   >Note that in AEM, crop aspect ratios are defined as **height/width**. Ciò si differenzia dalla definizione convenzionale di larghezza/altezza e viene effettuata per motivi di compatibilità precedenti. Gli autori di contenuto non saranno a conoscenza di alcuna differenza purché sia indicato un nome chiaro del rapporto, in quanto il nome viene visualizzato nell&#39;interfaccia utente e non il rapporto stesso.
+   >Note that in AEM, crop aspect ratios are defined as **height/width**. Ciò si differenzia dalla definizione convenzionale di larghezza/altezza e viene effettuata per motivi di compatibilità precedenti. Gli autori di contenuto non saranno a conoscenza di alcuna differenza purché sia indicato un nome chiaro del rapporto, in quanto il nome viene visualizzato nell'interfaccia utente e non il rapporto stesso.
 
-### Styles Tab {#styles-tab-1}
+### Scheda Stili {#styles-tab-1}
 
-The Image Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Immagine supporta il sistema [di stile AEM](authoring.md#component-styling).
