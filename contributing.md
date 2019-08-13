@@ -1,5 +1,5 @@
 ---
-source-git-commit: 396d7c04712f575fd5ce67892448dedaab5dbd45
+source-git-commit: 3113ed985136880c33302d2ab3504be16c5ed963
 translation-type: tm+mt
 
 ---
@@ -11,11 +11,11 @@ Questo file descrive come è possibile contribuire e quali sono le linee guida d
 
 ## Adobe Open Source Code of Conduct
 
-This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct.md). Contribuendo alla documentazione di AEM, l'Utente accetta di aderire a questo codice di condotta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Questo progetto ha adottato [Adobe Open Source Code of Conduct](code-of-conduct.md). Contribuendo alla documentazione di AEM, l'Utente accetta di aderire a questo codice di condotta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Linee guida per contribuire alla documentazione di AEM
 
-Anche se apprezziamo qualsiasi contributo per migliorare la documentazione di AEM, chiediamo che i contributi siano conformi a determinate linee guida e standard. Please review the [Guidelines for Contributing to AEM Documentation](guidelines.md) for more information.
+Anche se apprezziamo qualsiasi contributo per migliorare la documentazione di AEM, chiediamo che i contributi siano conformi a determinate linee guida e standard. Per ulteriori informazioni, consulta [le Linee guida per contribuire alla documentazione](guidelines.md) AEM.
 
 ## Come fare per Contribute
 
@@ -27,19 +27,19 @@ Hai un suggerimento, un'osservazione sui documenti correnti o la domanda in che 
 
 ### Modifiche minori
 
-To submit minor updates, click the **Edit** link in an article, which opens the source article in GitHub. Utilizza l'interfaccia utente github per effettuare gli aggiornamenti. See the general [Adobe Docs contributor guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for more information.
+Per inviare aggiornamenti minori, fate clic sul **collegamento Modifica** in un articolo, che apre l'articolo sorgente in github. Utilizza l'interfaccia utente github per effettuare gli aggiornamenti. Per ulteriori informazioni, consultate la guida Collaboratore generale [di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Docs.
 
 Le correzioni o i chiarimenti minori inviati per la documentazione e gli esempi di codice in questo remix sono coperti dai termini d'uso Adobe.
 
 ### Modifiche principali o nuovi articoli dei membri della community
 
-If you're part of the Adobe community and want to create an article or submit major changes, click the **Issues** tab in the GitHub repository to submit an issue. Questo invio avvia una conversazione con il team della documentazione. Per pubblicare nuovi contenuti dovrete collaborare con l'autore (o altro dipendente Adobe).
+Se siete membri della community Adobe e desiderate creare un articolo o inviare modifiche principali, fate clic sulla **scheda Edizioni** nell'archivio github per inviare un'edizione. Questo invio avvia una conversazione con il team della documentazione. Per pubblicare nuovi contenuti dovrete collaborare con l'autore (o altro dipendente Adobe).
 
 Se inviate una richiesta di pull con modifiche significative alla documentazione e agli esempi di codice, vedrete un messaggio nella richiesta di pull che richiede di inviare un contratto di licenza online (CLA). Prima di poter rivedere la richiesta di pull, devi completare il modulo online.
 
 ### Modifiche principali da dipendenti Adobe
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution, and it's your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore, un responsabile del programma o sviluppatore tecnico di una soluzione Adobe Experience Cloud ed è il tuo lavoro a contribuire o creare articoli tecnici, devi utilizzare l'archivio privato in `https://git.corp.adobe.com/AdobeDocs`.
 
 I dipendenti Adobe di altre parti del mondo Adobe devono utilizzare il repo pubblico per aggiornamenti minori.
 
@@ -51,7 +51,7 @@ Tutti i contributi di terze parti a questo progetto devono essere accompagnati d
 
 I collaboratori della community possono utilizzare l'interfaccia utente github per la modifica di base o la foratura per eseguire i contributi principali.
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
+Per [una panoramica sull'utilizzo della piattaforma di authoring github, consulta la Guida](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) di Adobe Docs Collaboror.
 
 ## Come utilizzare la marcatura per formattare l'argomento
 
