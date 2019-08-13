@@ -18,22 +18,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
+source-git-commit: 8a34ecc432e489b8dc025aeda29d8eba9c788861
 
 ---
 
 
 # Language Navigation Component{#language-navigation-component}
 
-Il componente Navigazione lingua fornisce una navigazione lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina con un&#39;altra lingua.
+Il componente Navigazione lingua fornisce una navigazione lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina con un'altra lingua.
 
 ## Utilizzo {#usage}
 
-Spesso i siti Web sono forniti in più lingue per diverse aree. Il componente di navigazione lingua consente a un visitatore di visualizzare la stessa pagina in lingue/lingue diverse.
+I siti Web vengono spesso forniti in più lingue per diverse regioni. Il componente di navigazione lingua consente a un visitatore di visualizzare la stessa pagina in lingue/lingue diverse. Quindi, se siete un lettore della versione tedesca del sito Web, potete passare facilmente alla versione inglese statunitense della stessa pagina. Il componente Navigazione lingua gestisce l'aspetto della lingua del sito e trova automaticamente la pagina corrispondente.
 
-The [edit dialog](#edit-dialog) allows the definition of the global site navigation root as well as how deep into the structure the navigation should go. Using the [design dialog](#design-dialog), the template author can set the default values for the same options.
+La [finestra di dialogo](#edit-dialog) di modifica consente di definire la directory principale di navigazione globale del sito e di analizzare la struttura della navigazione. Mediante la finestra di dialogo [di progettazione](#design-dialog), l'autore del modello può impostare i valori predefiniti per le stesse opzioni.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e Compatibilità {#version-and-compatibility}
 
 La versione corrente del componente di navigazione lingua è v 1, introdotta con la release 2.0.0 dei componenti core a gennaio 2018, descritta in questo documento.
 
@@ -43,43 +43,68 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 |--- |--- |--- |--- |
 | v1 | Compatibile | Compatibile | Compatibile |
 
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+## Output componente campione {#sample-component-output}
 
-## Sample Component Output {#sample-component-output}
+Per provare il componente di navigazione lingua e vedere alcuni esempi delle opzioni di configurazione e l'output HTML e JSON, visitare la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/language-navigation/language-structure/us/en/language-navigation.html).
 
-To experience the Language Navigation Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/language-navigation/language-structure/us/en/language-navigation.html).
+## Dettagli tecnici {#technical-details}
 
-## Technical Details {#technical-details}
+In github è disponibile la documentazione tecnica più recente relativa al componente [di navigazione lingua](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/languagenavigation/v1/languagenavigation).
 
-The latest technical documentation about the Language Navigation Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/languagenavigation/v1/languagenavigation).
+Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
-
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
 La finestra di dialogo di modifica consente di definire la directory principale di navigazione globale del sito e di analizzare la struttura della navigazione.
 
-![](assets/screen_shot_2018-01-12at133353.png)
+In genere queste configurazioni devono essere eseguite solo nel modello di pagina. Tuttavia, possono essere modificati a livello di pagina tramite la finestra di dialogo [di modifica](#edit-dialog).
 
-* **Radice
-di navigazione** Definisce la pagina principale della struttura di navigazione.
-   * Use the **Open Selection Dialog** button to easily navigate the content structure and select the root.
-* **Profondità profondità** struttura della struttura globale della lingua rispetto alla radice di navigazione.
-
-## Design Dialog {#design-dialog}
-
-Mediante la finestra di dialogo di progettazione, l&#39;autore del modello può impostare i valori predefiniti per le stesse opzioni disponibili nella finestra di dialogo di modifica.
-
-### Properties Tab {#properties-tab}
+### Scheda Proprietà {#properties-tab}
 
 ![](assets/screen_shot_2018-01-12at133642.png)
 
-* **Valore predefinito di**navigazione della
-cartella principale di navigazione quando un autore inserisce il componente Commutatore lingua in una pagina di contenuto
-* **Valore predefinito Struttura**lingua Valore predefinito della
-struttura della struttura quando un autore di contenuto posiziona il componente Commutatore lingua in una pagina di contenuto
+* **Directory principale di navigazione**
+   * Da dove deve iniziare la navigazione langauge del sito.
+   * La struttura della lingua del sito inizia al livello successivo sotto questa radice.
+* **Annidamento struttura lingua**
+   * Questo è il numero di livelli della struttura ad albero del contenuto sotto la radice **di navigazione** , che rappresentano la struttura della lingua del sito. Esempi:
+      * `1` in genere è possibile scegliere solo la lingua desiderata.
+      * `2` consente di scegliere una lingua e un paese.
+      * `3` in genere è possibile scegliere tra lanci, Paese e regione.
 
-### Styles Tab {#styles-tab}
+#### Esempio {#example}
 
-The Language Navigation Component supports the AEM [Style System](authoring.md#component-styling).
+Supponiamo che il tuo contenuto abbia un aspetto simile al seguente:
+
+```
+/content
++-- we-retail
+   +-- language-masters
+   +-- us
+      +-- en
+      \-- es
+   +-- ch
+      +-- de
+      +-- fr
+      +-- it
++-- wknd-events
+\-- wknd-shop
+```
+
+Per il sito We. Retail, probabilmente desiderate inserire il componente Navigazione lingua in un modello di pagina come parte dell'intestazione. Una volta che è presente un modello, potete impostare la **radice** di navigazione del componente a `/content/we-retail` partire da dove inizia il contenuto localizzato per quel sito. Occorre anche impostare Profondità struttura **lingua** in `2` quanto la struttura è di due livelli (Paese e quindi laguage).
+
+Con il **valore Radice** di navigazione, il componente Lingua sa che dopo `/content/we-retail` l'inizio della navigazione è possibile generare le opzioni di navigazione della lingua riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione lingua del sito (come definito dal **valore Profondità** della struttura lingua).
+
+A prescindere dalla pagina visualizzata dall'utente, il componente Navigazione lingua è in grado di trovare la pagina corrispondente in un'altra lingua, conoscendo la posizione della pagina corrente e lavorando all'interno della pagina principale, e quindi in futuro.
+
+### Scheda Stili {#styles-tab}
+
+Il componente di navigazione lingua supporta il sistema [di stile AEM](authoring.md#component-styling).
+
+## Edit Dialog {#edit-dialog}
+
+In genere è necessario aggiungere e configurare il componente Navigazione Langauge nei modelli delle pagine di un sito. Tuttavia, se il componente Navigazione lingua deve essere aggiunto a una singola pagina di contenuto, la finestra di dialogo di modifica consente a un autore di contenuto di configurare gli stessi valori come descritto nella finestra di dialogo [Progettazione](#design-dialog).
+
+![](assets/screen_shot_2018-01-12at133353.png)
