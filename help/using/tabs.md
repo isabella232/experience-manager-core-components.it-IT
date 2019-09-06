@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: componenti core
 discoiquuid: 966 d 47 fb-d 35 d -4103-b 29 d -4 ef 0 aa 739 f 24
 translation-type: tm+mt
-source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
+source-git-commit: 48d23edbcdf4c4ed70d590cf6c6e4ac1db14f852
 
 ---
 
@@ -19,17 +19,17 @@ Il componente Tabella componenti core consente di organizzare il contenuto su pi
 
 ## Utilizzo {#usage}
 
-Il componente Schede consente all&#39;autore del contenuto di organizzare il contenuto della pagina all&#39;interno di più schede.
+Il componente Schede consente all'autore del contenuto di organizzare il contenuto della pagina all'interno di più schede.
 
-The [edit dialog](#edit-dialog) allows the content author to define multiple tabs as well as set the active tab. Using the [design dialog](#design-dialog), the template author can define which components can be added to tabs and customize the styles.
+La [finestra di dialogo](#edit-dialog) di modifica consente all'autore del contenuto di definire più schede e impostare la scheda attiva. Mediante la finestra di dialogo [](#design-dialog)di progettazione, l'autore del modello può definire quali componenti aggiungere alle schede e personalizzare gli stili.
 
 >[!NOTE]
 >
->Sono supportati i componenti di schede nidificati (schede all&#39;interno delle schede).
+>Sono supportati i componenti di schede nidificati (schede all'interno delle schede).
 >
->Simple (non-nested) tab components can be located/selected using the [content tree](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html), however nested tabs can not be.
+>I componenti semplici (non nidificati) possono essere posizionati/selezionati utilizzando la struttura ad albero [del contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html), ma le schede nidificate non possono esserlo.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e Compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Tabs è v 1, introdotta con la release 2.2.0 dei componenti core a ottobre 2018, descritta in questo documento.
 
@@ -39,69 +39,77 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 |--- |--- |--- |--- |
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
-## Sample Component Output {#sample-component-output}
+## Output componente campione {#sample-component-output}
 
-To experience the Tabs Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/tabs.html).
+Per provare il componente Schede e vedere alcuni esempi delle opzioni di configurazione e l'output HTML e JSON, visitare la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/tabs.html).
 
-### Technical Details {#technical-details}
+### Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Tabs Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs).
+La documentazione tecnica più recente sul componente [Tabs è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
 ## Edit Dialog {#edit-dialog}
 
-La finestra di dialogo di modifica consente all&#39;autore del contenuto di creare, rinominare e ridisporre le schede e definire la scheda attiva.
+La finestra di dialogo di modifica consente all'autore del contenuto di creare, rinominare e ridisporre le schede e definire la scheda attiva.
 
-### Items Tab {#items-tab}
+### Scheda Elementi {#items-tab}
 
-![](assets/screenshot_2018-10-11at153557.png)
+![](assets/screen-shot-2019-08-29-12.28.16.png)
 
-Use the **Add** button to open the component selector to choose which component to add as a tab. Una volta aggiunta, all&#39;elenco viene aggiunta una voce contenente le colonne seguenti:
+Per aprire il selettore componenti, usate il **pulsante Aggiungi** per scegliere quale componente aggiungere come scheda. Una volta aggiunta, all'elenco viene aggiunta una voce contenente le colonne seguenti:
 
-* **Icona** : l&#39;icona del tipo di componente della scheda per facilitarne l&#39;identificazione. Passate il mouse per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** : l'icona del tipo di componente della scheda per facilitarne l'identificazione. Passate il mouse per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione** : descrizione utilizzata come testo della scheda, in base al nome del componente selezionato per la scheda.
 * **Elimina** : toccate o fate clic per eliminare la scheda dal componente di tabulazione.
-* **Ridisponi** : tocca o fai clic e trascina per riordinare l&#39;ordine delle schede.
+* **Ridisponi** : tocca o fai clic e trascina per riordinare l'ordine delle schede.
 
-### Properties Tab {#properties-tab}
+### Scheda Proprietà {#properties-tab}
 
-![](assets/screenshot_2018-10-19at140646.png)
+![](assets/screen-shot-2019-08-29-12.28.32.png)
 
-On the **Properties** tab, the content author can define which tab is active when the page is loaded. With the **Default** option, the first tab will be selected.
+Nella scheda **Proprietà** , l'autore del contenuto può definire la scheda attiva quando la pagina viene caricata. Con l'opzione **Predefinito** , verrà selezionata la prima scheda.
+
+### Scheda Accessibilità {#accessibility-tab}
+
+![](assets/screen-shot-2019-08-29-12.28.40.png)
+
+Nella scheda **Accessibilità** , è possibile impostare i valori per [le etichette di accessibilità](https://www.w3.org/WAI/standards-guidelines/aria/) AIR per il componente.
+
+* **Etichetta** : valore di un attributo label AIR per il componente
 
 ## Select Panel {#select-panel}
 
-The content author can use the **Select Panel** option on the component toolbar to change to a different panel for editing as well as to easily rearrange the order of the tabs.
+L'autore del contenuto può utilizzare l'opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello per la modifica e per riorganizzare facilmente l'ordine delle schede.
 
 ![](assets/screenshot_2018-10-11at165417.png)
 
-Once selecting the **Select Panel** option in the component toolbar, the configured tabs are displayed as a drop-down.
+Una volta selezionata l'opzione **Seleziona pannello** nella barra degli strumenti del componente, le schede configurate vengono visualizzate come a discesa.
 
-* L&#39;elenco è ordinato dalla disposizione assegnata delle schede e si riflette nella numerazione.
+* L'elenco è ordinato dalla disposizione assegnata delle schede e si riflette nella numerazione.
 * Il tipo di componente della scheda viene visualizzato per primo, seguita dalla descrizione della scheda in font più chiaro.
 
 ![](assets/screenshot_2018-10-11at165154.png)
 
-* Toccando o facendo clic su una voce nel menu a discesa, passa alla scheda nell&#39;editor.
+* Toccando o facendo clic su una voce nel menu a discesa, passa alla scheda nell'editor.
 * Le schede possono essere ridisposte in posizione utilizzando le maniglie di trascinamento.
 
 >[!NOTE]
 >
->Tabs are not selectable by the author when in **Edit** mode. Use [**Preview** mode](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) or the **[View as Published](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** option to interact with the tabs as a reader of the published content would.
+>Le schede non sono selezionabili dall'autore in modalità **Modifica** . Utilizzate [**la modalità Anteprima**](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) o l'opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** per interagire con le schede come un lettore del contenuto pubblicato.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire quali componenti aggiungere come elementi al componente Schede e quali stili personalizzati sono disponibili per l&#39;autore del contenuto.
+La finestra di dialogo Progettazione consente all'autore del modello di definire quali componenti aggiungere come elementi al componente Schede e quali stili personalizzati sono disponibili per l'autore del contenuto.
 
-### Allowed Components Tab {#allowed-components-tab}
+### Scheda Componenti consentiti {#allowed-components-tab}
 
-The **Allowed Components** tab is used to define which components can be added as items to the tabs component by the content author.
+La **scheda Componenti** consentiti viene utilizzata per definire quali componenti possono essere aggiunti al componente tabulazioni dall'autore del contenuto.
 
-The Allowed Components tab functions in the same way as the tab of the same name when [defining the policy and properties of a Layout Container in the Template Editor.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+Le funzioni scheda Componenti consentiti funzionano come la scheda con lo stesso nome quando [si definisce il criterio e le proprietà di un Contenitore di layout nell'Editor modelli.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 
-### Styles Tab {#styles-tab}
+### Scheda Stili {#styles-tab}
 
-The Tabs Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Tabulazioni supporta il sistema [di stile AEM](authoring.md#component-styling).
