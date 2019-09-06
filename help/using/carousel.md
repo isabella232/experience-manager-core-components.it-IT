@@ -17,22 +17,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
+source-git-commit: d37cde072dea612ccb55ad31b4aaf42f17839cb4
 
 ---
 
 
-# Carousel Component{#carousel-component}
+# Componente Carosello{#carousel-component}
 
-Il componente Carosello componente core consente all&#39;autore del contenuto di presentare il contenuto in un carosello navigabile.
+Il componente Carosello componente core consente all'autore del contenuto di presentare il contenuto in un carosello navigabile.
 
 ## Utilizzo {#usage}
 
-Utilizzo del componente Carosello, l&#39;autore del contenuto per organizzare il contenuto in un carosello di diapositive.
+Utilizzo del componente Carosello, l'autore del contenuto per organizzare il contenuto in un carosello di diapositive.
 
-The [edit dialog](#edit-dialog) allows the content author to create, name, and order multiple slides as well as enable auto-transition with delay. Using the [design dialog](#design-dialog), the template author can define which components can be added to the carousel, enable or disable automatic transitions, and customize the styles.
+La [finestra di dialogo](#edit-dialog) di modifica consente all'autore del contenuto di creare, assegnare un nome e ordinare più diapositive, nonché di abilitare la transizione automatica con ritardo. Mediante la finestra di dialogo [](#design-dialog)di progettazione, l'autore del modello può definire quali componenti aggiungere al carosello, abilitare o disabilitare le transizioni automatiche e personalizzare gli stili.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e Compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Carosello è v 1, introdotta con la release 2.2.0 dei componenti core a ottobre 2018, descritta in questo documento.
 
@@ -42,38 +42,38 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 |--- |--- |--- |--- |
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
-## Sample Component Output {#sample-component-output}
+## Output componente campione {#sample-component-output}
 
-To experience the Carousel Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/carousel.html).
+Per provare il componente Carosello e vedere alcuni esempi delle opzioni di configurazione e l'output HTML e JSON, visita la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/carousel.html).
 
-### Technical Details {#technical-details}
+### Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Carousel Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel).
+La documentazione tecnica più recente sul componente [Carosello è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
 ## Edit Dialog {#edit-dialog}
 
-La finestra di dialogo di modifica consente all&#39;autore del contenuto di aggiungere, rinominare e ridisporre le diapositive e definire le impostazioni di transizione automatica.
+La finestra di dialogo di modifica consente all'autore del contenuto di aggiungere, rinominare e ridisporre le diapositive e definire le impostazioni di transizione automatica.
 
-### Items Tab {#items-tab}
+### Scheda Elementi {#items-tab}
 
-![](assets/screenshot_2018-10-12at102451.png)
+![](assets/screen-shot-2019-08-29-12.01.39.png)
 
-Use the **Add** button to open the component selector to choose which component to add as a tab. Una volta aggiunta, all&#39;elenco viene aggiunta una voce contenente le colonne seguenti:
+Per aprire il selettore componenti, usate il **pulsante Aggiungi** per scegliere quale componente aggiungere come scheda. Una volta aggiunta, all'elenco viene aggiunta una voce contenente le colonne seguenti:
 
-* **Icona** : l&#39;icona del tipo di componente della scheda per facilitarne l&#39;identificazione. Passate il mouse per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** : l'icona del tipo di componente della scheda per facilitarne l'identificazione. Passate il mouse per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione** : descrizione utilizzata come testo della scheda, in base al nome del componente selezionato per la scheda.
 * **Elimina** : toccate o fate clic per eliminare la scheda dal componente Schede.
 * **Riordina** : toccate o fate clic e trascinate per ordinare le schede.
 
-### Properties Tab {#properties-tab}
+### Scheda Proprietà {#properties-tab}
 
-![](assets/screenshot_2018-11-28at141054.png)
+![](assets/screen-shot-2019-08-29-12.01.57.png)
 
-On the **Properties** tab, the content author can set the slides to automatically transition.
+Nella scheda **Proprietà** , l'autore del contenuto può impostare le diapositive in modo che si transigano automaticamente.
 
 * **Transizione automatica delle diapositive** : quando è attiva, il componente avanza automaticamente alla diapositiva successiva dopo un ritardo specificato.
 * **Ritardo transizione -** Quando si seleziona automaticamente le diapositive, questo valore viene usato per definire il ritardo tra transizioni (in millisecondi).
@@ -81,46 +81,54 @@ On the **Properties** tab, the content author can set the slides to automaticall
 
 >[!NOTE]
 >
->The slide advance controls are not enabled when in **Edit** mode. Use [**Preview** mode](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) or the **[View as Published](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** option to interact with the carousel as a reader of the published content would.
+>I controlli progressivi delle diapositive non sono attivati in modalità **Modifica** . Utilizzare [**la modalità Anteprima**](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) o l'opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** per interagire con il carosello come un lettore del contenuto pubblicato.
 >
->The auto-advance feature is not enabled when in **Edit** mode. Use **[View as Published](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** option to see the auto-advance feature as a reader of the published content would.
+>La funzione Avanzamento automatico non è abilitata in modalità **Modifica** . L'opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** consente di visualizzare la funzione automatica come lettore del contenuto pubblicato.
+
+### Scheda Accessibilità {#accessibility-tab}
+
+![](assets/screen-shot-2019-08-29-12.02.22.png)
+
+Nella scheda **Accessibilità** , è possibile impostare i valori per [le etichette di accessibilità](https://www.w3.org/WAI/standards-guidelines/aria/) AIR per il componente.
+
+* **Etichetta** : valore di un attributo label AIR per il componente
 
 ## Select Panel {#select-panel}
 
-The content author can use the **Select Panel** option on the component toolbar to change to a different slide for editing as well as to easily rearrange the order of the slides.
+L'autore del contenuto può utilizzare l'opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a una diapositiva diversa e riorganizzare l'ordine delle diapositive.
 
 ![](assets/screenshot_2018-10-11at165417.png)
 
-Once selecting the **Select Panel** option in the component toolbar, the configured slides are displayed as a drop-down.
+Una volta selezionata l'opzione **Seleziona pannello** nella barra degli strumenti del componente, le diapositive configurate vengono visualizzate come a discesa.
 
-* L&#39;elenco è ordinato dalla disposizione assegnata delle diapositive e si riflette nella numerazione.
+* L'elenco è ordinato dalla disposizione assegnata delle diapositive e si riflette nella numerazione.
 * Il tipo di componente della diapositiva viene visualizzato per primo, seguita dalla descrizione della diapositiva in font più chiaro.
 
 ![](assets/opera_snapshot_2018-11-28141537localhost.png)
 
-* Toccando o facendo clic su una voce nel menu a discesa, viene attivata la visualizzazione nell&#39;editor a quella diapositiva.
+* Toccando o facendo clic su una voce nel menu a discesa, viene attivata la visualizzazione nell'editor a quella diapositiva.
 * La diapositiva può essere riorganizzata in locale utilizzando le maniglie di trascinamento.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all&#39;autore del modello di definire quali componenti aggiungere come diapositive al componente carosello, nonché definire i valori predefiniti di transizione automatica e gli stili personalizzati disponibili per l&#39;autore del contenuto.
+La finestra di dialogo di progettazione consente all'autore del modello di definire quali componenti aggiungere come diapositive al componente carosello, nonché definire i valori predefiniti di transizione automatica e gli stili personalizzati disponibili per l'autore del contenuto.
 
-### Properties Tab {#properties-tab-1}
+### Scheda Proprietà {#properties-tab-1}
 
-The **Properties** tab is used to define the default settings for the slide transitions when a content author adds the carousel component to a page.
+La **scheda Proprietà** viene utilizzata per definire le impostazioni predefinite per le transizioni delle diapositive quando un autore aggiunge il componente Carosello a una pagina.
 
 ![](assets/screenshot_2018-11-28at141824.png)
 
-* **Scorrimento automatico delle diapositive** - Definisce se per impostazione predefinita l&#39;opzione di avanzamento automatico della sequenza alla diapositiva successiva viene attivata quando l&#39;autore del contenuto aggiunge il componente carosello a una pagina.
+* **Scorrimento automatico delle diapositive** - Definisce se per impostazione predefinita l'opzione di avanzamento automatico della sequenza alla diapositiva successiva viene attivata quando l'autore del contenuto aggiunge il componente carosello a una pagina.
 * **Ritardo transizione** - Definisce il valore predefinito del ritardo di transizione tra le diapositive (in millisecondi) quando un autore aggiunge il componente carosello a una pagina.
-* **Disattiva pausa automatica al passaggio del mouse** - Definisce se per impostazione predefinita l&#39;opzione Disattiva la pausa automatica delle diapositive è abilitata quando **l&#39;autore del contenuto seleziona automaticamente le diapositive** .
+* **Disattiva pausa automatica al passaggio del mouse** - Definisce se per impostazione predefinita l'opzione Disattiva la pausa automatica delle diapositive è abilitata quando **l'autore del contenuto seleziona automaticamente le diapositive** .
 
-### Allowed Components Tab {#allowed-components-tab}
+### Scheda Componenti consentiti {#allowed-components-tab}
 
-The **Allowed Components** tab is used to define which components can be added as slides to the Carousel Component by the content author.
+La **scheda Componenti** consentiti viene utilizzata per definire quali componenti possono essere aggiunti come diapositive al componente Carosello dall'autore del contenuto.
 
-The Allowed Components tab functions in the same way as the tab of the same name when [defining the policy and properties of a Layout Container in the Template Editor.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+Le funzioni scheda Componenti consentiti funzionano come la scheda con lo stesso nome quando [si definisce il criterio e le proprietà di un Contenitore di layout nell'Editor modelli.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 
-### Styles Tab {#styles-tab}
+### Scheda Stili {#styles-tab}
 
-The Carousel Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Carosello supporta il sistema [di stile AEM](authoring.md#component-styling).
