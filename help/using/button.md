@@ -10,12 +10,12 @@ topic-tags: authoring
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: f 093 f 58 e -9755-4 a 4 f -803 a-ab 93 a 50 e 6870
 translation-type: tm+mt
-source-git-commit: 7d17d1ba5fcabac4361e24f60c91cd242367bba6
+source-git-commit: d37cde072dea612ccb55ad31b4aaf42f17839cb4
 
 ---
 
 
-# Button Component{#button-component}
+# Componente pulsante{#button-component}
 
 Il componente Pulsante componente core consente la configurazione e la visualizzazione di un elemento pulsante su una pagina.
 
@@ -23,10 +23,10 @@ Il componente Pulsante componente core consente la configurazione e la visualizz
 
 Il componente Pulsante componente core consente di includere un pulsante sulla pagina.
 
-* The button&#39;s properties can be selected in the [configure dialog](#configure-dialog).
-* Styles for the Button Component can be defined in the [design dialog](#design-dialog).
+* Le proprietà del pulsante possono essere selezionate nella finestra di dialogo [Configura](#configure-dialog).
+* Gli stili per il componente Pulsante possono essere definiti nella finestra di dialogo [di progettazione](#design-dialog).
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e Compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Button è v 1, introdotta con la release 2.5.0 dei componenti core a giugno 2019, descritta in questo documento.
 
@@ -36,31 +36,41 @@ Nella tabella seguente sono riportate tutte le versioni supportate del component
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
 
-## Sample Component Output {#sample-component-output}
+## Output componente campione {#sample-component-output}
 
-To experience the Button Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/button.html).
+Per provare il componente Pulsante e vedere alcuni esempi delle opzioni di configurazione e l'output HTML e JSON, visita la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/button.html).
 
-## Technical Details {#technical-details}
+## Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Button Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button).
+La documentazione tecnica più recente relativa al componente [Pulsante è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire il pulsante e di comprenderne il funzionamento e il relativo aspetto.
+La finestra di dialogo Configura consente all'autore del contenuto di definire il pulsante e di comprenderne il funzionamento e il relativo aspetto.
 
-![](assets/screen-shot-2019-06-17-11.26.13.png)
+### Scheda Proprietà {#properties-tab}
+
+![](assets/screen-shot-2019-08-29-12.19.32.png)
 
 * **Testo** : testo da visualizzare sul pulsante
 * **Collegamento** : collegamento a una pagina di contenuto in AEM, a una risorsa esterna o a un ancoraggio
-   * Use the **Selection Dialog** to choose a path within AEM.
-* **Icona** - Identificatore per visualizzare un&#39;icona nel pulsante
+   * Utilizzate la **finestra di dialogo di selezione** per scegliere un percorso all'interno di AEM.
+* **Icona** - Identificatore per visualizzare un'icona nel pulsante
 
-## Design Dialog {#design-dialog}
+### Scheda Accessibilità {#accessibility-tab}
 
-### Styles Tab {#styles-tab}
+![](assets/screen-shot-2019-08-29-12.19.43.png)
 
-The Image Component supports the AEM [Style System](authoring.md#component-styling).
+Nella scheda **Accessibilità** , è possibile impostare i valori per [le etichette di accessibilità](https://www.w3.org/WAI/standards-guidelines/aria/) AIR per il componente.
+
+* **Etichetta** : valore di un attributo label AIR per il componente
+
+## Finestra di dialogo Progettazione {#design-dialog}
+
+### Scheda Stili {#styles-tab}
+
+Il componente Immagine supporta il sistema [di stile AEM](authoring.md#component-styling).
