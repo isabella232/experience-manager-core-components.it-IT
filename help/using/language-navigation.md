@@ -18,7 +18,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8a34ecc432e489b8dc025aeda29d8eba9c788861
+source-git-commit: ee6976f39894b4e67b42503503a51589224583f5
 
 ---
 
@@ -85,15 +85,15 @@ Supponiamo che il tuo contenuto abbia un aspetto simile al seguente:
    +-- us
       +-- en
       \-- es
-   +-- ch
+   \-- ch
       +-- de
       +-- fr
-      +-- it
+      \-- it
 +-- wknd-events
 \-- wknd-shop
 ```
 
-Per il sito We. Retail, probabilmente desiderate inserire il componente Navigazione lingua in un modello di pagina come parte dell'intestazione. Una volta che è presente un modello, potete impostare la **radice** di navigazione del componente a `/content/we-retail` partire da dove inizia il contenuto localizzato per quel sito. Occorre anche impostare Profondità struttura **lingua** in `2` quanto la struttura è di due livelli (Paese e quindi laguage).
+Per il sito We. Retail, probabilmente desiderate inserire il componente Navigazione lingua in un modello di pagina come parte dell'intestazione. Una volta parte del modello, potete impostare la **radice** di navigazione del componente su `/content/we-retail` , da dove inizia il contenuto localizzato per quel sito. Occorre anche impostare Profondità struttura **lingua** in `2` quanto la struttura è di due livelli (Paese e quindi laguage).
 
 Con il **valore Radice** di navigazione, il componente Lingua sa che dopo `/content/we-retail` l'inizio della navigazione è possibile generare le opzioni di navigazione della lingua riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione lingua del sito (come definito dal **valore Profondità** della struttura lingua).
 
