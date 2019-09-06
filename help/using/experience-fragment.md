@@ -5,12 +5,11 @@ description: Il componente Frammenti esperienza consente all'autore del contenut
 seo-description: Il componente Frammenti esperienza consente all'autore del contenuto di aggiungere una variante di frammento esperienza a una pagina.
 content-type: riferimento
 topic-tags: componenti core
-index: y
-internal: n
 translation-type: tm+mt
-source-git-commit: c0827595a594779f48ba5e8770b804e574346647
+source-git-commit: 12d18a31c5507f5bbc713383f4d194d8ab8c4d58
 
 ---
+
 
 # Componente Frammento esperienza{#experience-fragment-component}
 
