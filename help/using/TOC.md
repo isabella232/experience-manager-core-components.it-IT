@@ -5,7 +5,7 @@ sub-product: componenti core adobe experience manager
 archetype: Amministratore
 user-guide-title: Componenti core AEM
 translation-type: tm+mt
-source-git-commit: 427046cbfa4fed3735a7baf2aa7600f5a11851cd
+source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
 
 ---
 
@@ -27,6 +27,7 @@ source-git-commit: 427046cbfa4fed3735a7baf2aa7600f5a11851cd
    + [Frammento di contenuto](content-fragment-component.md)
    + [Elenco frammenti di contenuto](content-fragment-list.md)
    + [Scarica](download.md)
+   + [Frammento esperienza](experience-fragment.md)
    + [Immagine](image.md)
    + [Navigazione lingua](language-navigation.md)
    + [Elenco](list.md)
