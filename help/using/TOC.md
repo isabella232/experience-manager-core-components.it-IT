@@ -5,7 +5,7 @@ sub-product: componenti core adobe experience manager
 archetype: Amministratore
 user-guide-title: Componenti core AEM
 translation-type: tm+mt
-source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
+source-git-commit: fb56cf9323ab0872c59563728f5947ced33c0658
 
 ---
 
@@ -18,6 +18,7 @@ source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
 + Get Started {#get-started}
    + [Authoring con i componenti core](authoring.md)
    + [Utilizzo dei componenti core](using.md)
+   + [Funzioni di localizzazione](localization.md)
 + Componenti {#components}
    + [Accordion](accordion.md)
    + [Breadcrumb](breadcrumb.md)
