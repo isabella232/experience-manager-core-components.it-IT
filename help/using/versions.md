@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: a 3 a 98 b 2 f -65 bf -4493-82 ad -01717938 fdbc
 translation-type: tm+mt
-source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
+source-git-commit: 9f4f97713d20b6343b78f8046d96752fa0b0a07d
 
 ---
 
@@ -63,7 +63,7 @@ La tabella seguente, il cui contenuto è [disponibile su github con i dettagli s
 
 | Rilascio | Descrizione | AEM 6.3 | AEM 6.4 | AEM 6.5 | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
-| [2.6.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.6.0) | Questa versione ha introdotto il nuovo componente Frammento esperienza | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8, 11 | Settembre 2019 |
+| [2.6.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.6.0) | Questa versione ha introdotto il nuovo componente Frammento esperienza | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8, 11 | 6 settembre 2019 |
 | [2.5.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.5.0) | Questa versione ha introdotto i nuovi componenti Accordion, Button, Container e Download. | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8, 11 | 25 giugno 2019 |
 | [2.4.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.4.0) | Questa versione ha introdotto il componente Elenco frammenti di contenuto | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8, 11 | 7 maggio 2019 |
 | [2.3.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.3.2) | Questa release è incentrata su miglioramenti alla libreria dei componenti, ma contiene anche alcuni miglioramenti delle funzioni per il componente Separatore | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8 | 14 marzo 2019 |
