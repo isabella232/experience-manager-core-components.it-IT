@@ -6,7 +6,7 @@ seo-description: Il componente Frammenti esperienza consente all'autore del cont
 content-type: riferimento
 topic-tags: componenti core
 translation-type: tm+mt
-source-git-commit: 12d18a31c5507f5bbc713383f4d194d8ab8c4d58
+source-git-commit: 9f4f97713d20b6343b78f8046d96752fa0b0a07d
 
 ---
 
@@ -90,7 +90,7 @@ Il componente Frammento esperienza tenterà di trovare un componente localizzato
 
 ## Versione e Compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento esperienza è v 1, introdotta con la release 2.6.0 dei componenti core nell'agosto 2019, descritta in questo documento.
+La versione corrente del componente Frammento esperienza è v 1, introdotta con la release 2.6.0 dei componenti core a settembre 2019, descritta in questo documento.
 
 Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
