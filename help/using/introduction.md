@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
 discoiquuid: c 44 bb 0 d 7-5 d 91-4659-878 e-a 0658 fe 29 aa 2
 translation-type: tm+mt
-source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
+source-git-commit: b6fbef1cff2908533df6573cd3a92266857ba93f
 
 ---
 
@@ -44,6 +44,7 @@ I componenti core sono:
 | Estensibile | Per soddisfare esigenze personalizzate, ma senza partire da zero, tutto può essere esteso. |
 | Open Source | Se non è così, contribuisci su github (Apache License). |
 | Versione | I componenti core non interrompono il sito quando si migliorano gli elementi che potrebbero avere impatto. |
+| [Localizzato](localization.md) | Resoltuion di riferimento avanzato consente a determinati componenti di trovare e rappresentare automaticamente il corrispondente contenuto localizzato |
 
 ## Componenti disponibili {#available-components}
 
