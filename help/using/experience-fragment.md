@@ -6,7 +6,7 @@ seo-description: Il componente Frammenti esperienza consente all'autore del cont
 content-type: riferimento
 topic-tags: componenti core
 translation-type: tm+mt
-source-git-commit: 9f4f97713d20b6343b78f8046d96752fa0b0a07d
+source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
 
 ---
 
@@ -33,6 +33,9 @@ Il componente Frammento esperienza è adattabile alle strutture localizzate del 
 In questo caso, il frammento con la stessa localizzazione (lingua, blueprint o Live Copy) sarà rappresentato come parte del modello.
 
 Questo comportamento è limitato ai componenti Frammento esperienza aggiunti ai modelli. Componenti frammento esperienza Aggiunti a singole pagine di contenuto renderanno disponibili le rappresentazioni esatte dei frammenti di esperienza configurate all'interno del componente.
+
+* Per un esempio di funzionamento delle funzioni di localizzazione del componente Frammento esperienza, consulta [la sezione di seguito](#example).
+* Per un esempio di funzionamento delle funzioni di localizzazione dei Componenti core, consultate le funzioni [di localizzazione della pagina Componenti principali](localization.md).
 
 ### Esempio {#example}
 
