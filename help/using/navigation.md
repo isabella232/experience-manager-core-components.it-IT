@@ -18,7 +18,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48d23edbcdf4c4ed70d590cf6c6e4ac1db14f852
+source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
 
 ---
 
@@ -38,6 +38,9 @@ La [finestra di dialogo](#edit-dialog) di modifica consente all'autore del conte
 ## Supporto struttura sito localizzato {#localized-site-structure}
 
 I siti Web vengono spesso forniti in più lingue per diverse regioni. In genere ciascuna pagina localizzata conterrà un elemento di navagation incluso nel modello della pagina. Il componente di navigazione consente di posizionarlo una volta su un modello per tutte le pagine del sito e si adatterà automaticamente per le singole pagine localizzate basate sulla struttura del sito globalizzata.
+
+* Per un esempio di funzionamento della funzione di localizzazione del componente di navigazione, consultate la [sezione di seguito](#example-localiatzion).
+* Per un esempio di funzionamento delle funzioni di localizzazione dei Componenti core, consultate le funzioni [di localizzazione della pagina Componenti principali](localization.md).
 
 ### Esempio {#example-localization}
 
