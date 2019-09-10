@@ -8,7 +8,7 @@ topic-tags: componenti core
 index: y
 internal: n
 translation-type: tm+mt
-source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
+source-git-commit: c8041e855386b7195fe32dd5dc53458f1d8270b8
 
 ---
 
@@ -23,7 +23,7 @@ La maggior parte dei siti richiede un piè di pagina da presentare a tutte le pa
 
 In genere, è necessario visualizzare in tutte le pagine un componente di navigazione. Tuttavia, sarà necessario riflettere anche il contenuto delle pagine localizzate.
 
-Utilizzando le funzioni di localizzazione del componente [di navigazione di navigazione e](navigation.md) del [componente core Esperienza](experience-fragment.md) insieme ai [modelli modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), diventa un'attività smiple.
+Utilizzando le funzioni di localizzazione del componente [di navigazione di navigazione e](navigation.md) del [componente core Esperienza](experience-fragment.md) insieme ai [modelli modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), diventa un'attività smiple. L'esempio può essere ulteriormente esteso anche per utilizzare il [componente](language-navigation.md) di navigazione lingua.
 
 ## Struttura contenuto {#content-structure}
 
