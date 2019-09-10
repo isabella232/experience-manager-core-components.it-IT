@@ -18,7 +18,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee6976f39894b4e67b42503503a51589224583f5
+source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
 
 ---
 
@@ -30,6 +30,9 @@ Il componente Navigazione lingua fornisce una navigazione lingua/paese per un si
 ## Utilizzo {#usage}
 
 I siti Web vengono spesso forniti in più lingue per diverse regioni. Il componente di navigazione lingua consente a un visitatore di visualizzare la stessa pagina in lingue/lingue diverse. Quindi, se siete un lettore della versione tedesca del sito Web, potete passare facilmente alla versione inglese statunitense della stessa pagina. Il componente Navigazione lingua gestisce l'aspetto della lingua del sito e trova automaticamente la pagina corrispondente.
+
+* Per un esempio di funzionamento della funzione di localizzazione del componente di navigazione lingua, consultate la [sezione di seguito](#example).
+* Per un esempio di funzionamento delle funzioni di localizzazione degli altri Componenti core, consultate le funzioni [di localizzazione della pagina Componenti principali](localization.md).
 
 La [finestra di dialogo](#edit-dialog) di modifica consente di definire la directory principale di navigazione globale del sito e di analizzare la struttura della navigazione. Mediante la finestra di dialogo [di progettazione](#design-dialog), l'autore del modello può impostare i valori predefiniti per le stesse opzioni.
 
