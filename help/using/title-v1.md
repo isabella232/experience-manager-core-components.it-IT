@@ -1,12 +1,12 @@
 ---
-title: Componente Titolo (v 1)
-seo-title: Componente Titolo (v 1)
-description: Il componente Titolo componente core è un componente di intestazione della sezione che offre funzioni di modifica locale.
-seo-description: Il componente Titolo componente core è un componente di intestazione della sezione che offre funzioni di modifica locale.
-uuid: 5 c 4 d 276 c-f 0 be -4122-a 15 e -3 f 7443 d 8 b 209
+title: Componente titolo (v1)
+seo-title: Componente titolo (v1)
+description: Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+seo-description: Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+uuid: 5c4d276c-f0be-4122-a15e-3f7443d8b209
 content-type: riferimento
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: a 028 ebef -2957-410 c -9 bab-a 7040 c 350 f 2 f
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: a028ebef-2957-410c-9bab-a7040c350f2f
 index: n
 translation-type: tm+mt
 source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
@@ -14,23 +14,23 @@ source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 ---
 
 
-# Componente Titolo (v 1){#title-component-v}
+# Componente titolo (v1){#title-component-v}
 
-Il componente Titolo componente core è un componente di intestazione della sezione che offre funzioni di modifica locale.
+Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
 
 ## Utilizzo {#usage}
 
-Il componente Titolo deve essere usato come titolo o intestazione di una sezione di contenuto.
+Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto.
 
-I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [di progettazione](title-v1.md#main-pars_title_1995166862). L&#39;Editor di contenuto può selezionare i livelli dei titoli disponibili nella finestra di dialogo [di modifica](title-v1.md#main-pars_title). Per maggiore praticità, è disponibile anche una semplice modifica diretta del testo dell&#39;intestazione.
+I livelli di intestazione disponibili possono essere definiti dall’autore del modello nella finestra di dialogo [di](title-v1.md#main-pars_title_1995166862)progettazione. L’editor del contenuto può selezionare i livelli di intestazione disponibili nella finestra di dialogo [di](title-v1.md#main-pars_title)modifica. Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive v 1 del componente Titolo, originariamente introdotto con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la v1 del componente Titolo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della release v 1 del componente Titolo.
+La tabella seguente elenca la compatibilità di v1 del componente Titolo.
 
-| Versione di AEM | Componente titolo v 1 |
+| Versione di AEM | Componente titolo v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
@@ -39,11 +39,11 @@ Nella tabella seguente è riportata la compatibilità della release v 1 del comp
 >
 >Questo documento descrive la versione 1 del componente Titolo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Titolo, [vedere](title.md) il documento Titolo titolo.
+>Per informazioni dettagliate sulla versione corrente del componente Titolo, consultare il documento [Titolo componente](title.md) .
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -70,32 +70,32 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 >[!NOTE]
 >
->L&#39;esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consultate le informazioni [di compatibilità per i componenti core v 1](versions.md#main-pars_title_236368006) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](versions.md#main-pars_title_236368006) .
 
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
-La finestra di dialogo di modifica consente all&#39;autore del contenuto di definire il testo del titolo e di selezionare il livello di intestazione.
+La finestra di dialogo di modifica consente all’autore del contenuto di definire il testo del titolo e selezionare il livello del titolo.
 
 >[!NOTE]
 >
->Un valore vuoto per il titolo causa la visualizzazione del titolo della pagina.
+>Un valore vuoto per il titolo causerà la visualizzazione del titolo della pagina.
 
 ![](assets/chlimage_1-91.png)
 
-L&#39;editor locale può essere usato anche per modificare il testo del componente Titolo.
+L’editor locale può essere utilizzato anche per modificare il testo del componente titolo.
 
 ![](assets/chlimage_1-37.png)
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno quando creati dagli autori dei contenuti.
+La finestra di dialogo di progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno al momento della creazione da parte degli autori dei contenuti.
 
 ![](assets/chlimage_1-92.png)
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente [Titolo è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v1/title).
+La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v1/title).
 
-L&#39;intero progetto componenti core può essere scaricato da github.
+L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
