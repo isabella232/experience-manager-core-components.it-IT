@@ -1,14 +1,14 @@
 ---
-title: Componente pulsante modulo
-seo-title: Componente pulsante modulo
+title: Componente Pulsante Modulo
+seo-title: Componente Pulsante Modulo
 description: 'null'
-seo-description: Il componente Modulo componente core consente l'inclusione di un campo nascosto in un modulo.
-uuid: 22 c 53 cd 0-d 0 bc -4 e 5 d -89 f 3-5 ac 4 f 61 a 9100
+seo-description: Il componente Principale Modulo nascosto consente di includere un campo nascosto in un modulo.
+uuid: 22c53cd0-d0bc-4e5d-89f3-5ac4f61a9100
 contentOwner: Utente
 content-type: riferimento
 topic-tags: authoring
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: a 6 e 2974 a -243 f -40 ab -903 c-c 7 d 3 e 8615 bcc
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: a6e2974a-243f-40ab-903c-c7d3e8615bcc
 disttype: dist5
 gnavtheme: chiaro
 groupsectionnavitems: 'no'
@@ -24,32 +24,32 @@ source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
 ---
 
 
-# Componente pulsante modulo{#form-button-component}
+# Componente Pulsante Modulo{#form-button-component}
 
-Il componente Pulsante modulo componente core consente l&#39;inclusione di un pulsante per attivare un&#39;azione su una pagina.
+Il componente di base Pulsante Modulo del componente permette di includere un pulsante per attivare un’azione su una pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Pulsante modulo componente di base consente la creazione di un campo pulsante, spesso per attivare l&#39;invio del modulo e può essere utilizzato insieme al [componente Contenitore modulo](form-container.md).
+Il componente Pulsante Modulo componente di base consente di creare un campo pulsante, spesso per attivare l’invio del modulo e deve essere utilizzato insieme al componente [Contenitore](form-container.md)modulo.
 
-Le proprietà del pulsante possono essere definite dall&#39;editor contenuto nella finestra di dialogo [Configura](form-button.md).
+Le proprietà del pulsante possono essere definite dall'editor del contenuto nella finestra di dialogo [di](form-button.md)configurazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Pulsante modulo è v 2, introdotta con la release 2.0.0 dei componenti core a gennaio 2018, descritta in questo documento.
+La versione corrente del componente Pulsante Modulo è v2, introdotto con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritto in questo documento.
 
-Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |--- |
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](form-button-v1.md) | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -85,13 +85,13 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente relativa al componente Pulsante modulo [è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v2/button).
+La documentazione tecnica più recente sul componente Pulsante Modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v2/button).
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire i parametri del pulsante.
+La finestra di dialogo di configurazione consente all'autore del contenuto di definire i parametri del pulsante.
 
 ### Scheda Proprietà {#properties-tab}
 
@@ -102,15 +102,15 @@ La finestra di dialogo Configura consente all&#39;autore del contenuto di defini
    * **Pulsante**
    * **Invia**
 
-* **Titolo** : testo visualizzato sul pulsante
+* **Titolo** - Testo visualizzato sul pulsante
 
-   * Se nessuno fornisce impostazioni predefinite, il tipo di pulsante
+   * Se non ne è stato fornito nessuno, per impostazione predefinita viene utilizzato il tipo di pulsante
 
-* **Nome** : il nome del pulsante, che viene inviato insieme ai dati del modulo
-* **Valore** : il valore del pulsante, che viene inviato insieme ai dati del modulo
+* **Nome** - Il nome del pulsante, inviato con i dati del modulo
+* **Valore** - Il valore del pulsante, inviato con i dati del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Pulsante modulo supporta il sistema [di stile AEM](authoring.md#component-styling).
+Il componente Pulsante Modulo supporta AEM [Style System](authoring.md#component-styling).
