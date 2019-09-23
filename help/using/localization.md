@@ -4,7 +4,7 @@ seo-title: Funzioni di localizzazione dei componenti core
 description: Funzioni di localizzazione dei componenti core
 seo-description: Funzioni di localizzazione dei componenti core
 content-type: riferimento
-topic-tags: componenti core
+topic-tags: core-components
 index: y
 internal: n
 translation-type: tm+mt
@@ -15,27 +15,27 @@ source-git-commit: c8041e855386b7195fe32dd5dc53458f1d8270b8
 
 # Funzioni di localizzazione dei componenti core {#localization-features-of-the-core-components}
 
-Molti siti Web richiedono la distribuzione del contenuto in un formato localizzato in più lingue e aree geografiche. Resoultion di riferimento avanzato delle funzionalità Componenti core selezionati, per semplificare la creazione di un modello unificato per tutto il contenuto localizzato che si adatta automaticamente in base alla struttura localizzata del sito.
+Molti siti Web richiedono la distribuzione di contenuti in un formato localizzato in più lingue e aree geografiche. I componenti core selezionati sono dotati di una soluzione di riferimento intelligente che semplifica la creazione di un modello unificato per tutti i contenuti localizzati che si adattano automaticamente in base alla struttura del sito localizzata.
 
-## Esempio - Pagina localizzata con Navigazione e piè di pagina {#example}
+## Esempio: pagina localizzata con navigazione e piè di pagina {#example}
 
-La maggior parte dei siti richiede un piè di pagina da presentare a tutte le pagine. Questi piè di pagina sono generalmente coerenti in tutto il contenuto della pagina. Tuttavia, per una pagina di contenuto localizzata è necessario visualizzare una versione localizzata dell'intestazione o del piè di pagina.
+La maggior parte dei siti richiede che un piè di pagina sia presente in tutte le pagine. Questi piè di pagina sono generalmente coerenti per tutto il contenuto della pagina. Tuttavia, per una pagina di contenuto localizzata, è necessario visualizzare una versione localizzata di tale intestazione o piè di pagina.
 
-In genere, è necessario visualizzare in tutte le pagine un componente di navigazione. Tuttavia, sarà necessario riflettere anche il contenuto delle pagine localizzate.
+Analogamente, un componente di navigazione in genere deve essere visualizzato su tutte le pagine. Tuttavia, dovrà riflettere anche il contenuto delle pagine localizzate.
 
-Utilizzando le funzioni di localizzazione del componente [di navigazione di navigazione e](navigation.md) del [componente core Esperienza](experience-fragment.md) insieme ai [modelli modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), diventa un'attività smiple. L'esempio può essere ulteriormente esteso anche per utilizzare il [componente](language-navigation.md) di navigazione lingua.
+Utilizzando le funzioni di localizzazione del componente [core di](navigation.md) navigazione e del componente [core del frammento](experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), si ottiene un’attività semplice. L'esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](language-navigation.md) lingua.
 
-## Struttura contenuto {#content-structure}
+## Struttura del contenuto {#content-structure}
 
 Tutte le funzioni di localizzazione di AEM e dei suoi componenti core si basano su una struttura di contenuto chiara e logica per il contenuto localizzato.
 
-Supponiamo che il tuo sito sia semplicemente chiamato `my-site` e che si trovi qui:
+Supponiamo che il sito sia semplicemente chiamato `my-site` e si trovi qui:
 
 ```
 /content/my-site
 ```
 
-Supponiamo anche di creare il sito in lingua inglese e di offrirlo in francese. Quindi, se disponete di una semplice pagina chiamata, `my-page` si troverebbe in due rami di localizzazione nella struttura del contenuto del sito:
+Diciamo anche che si crea il sito in inglese e lo si offre anche in francese. Se disponete di una pagina semplice chiamata `my-page` si trova in due rami di localizzazione nella struttura dei contenuti del sito:
 
 ```
 /content
@@ -46,9 +46,9 @@ Supponiamo anche di creare il sito in lingua inglese e di offrirlo in francese. 
        \-- my-page
 ```
 
-In questi rami di localizzazione verranno creati ulteriori pagine di siti.
+È sotto questi rami di localizzazione che si creano ulteriori pagine di siti.
 
-I piè di pagina delle pagine vengono in genere effettuati utilizzando frammenti esperienza, in modo da disporre di una versione inglese e francese come le pagine. Tuttavia, i frammenti esperienza non sono pagine, ma sono parti di pagine che possono essere riutilizzate su più pagine, in modo da non essere live direttamente `/content` nelle altre pagine. Al contrario, sono in diretta nella propria cartella, ma perché devono anche essere localizzati, la struttura deve rispecchiare la struttura di localizzazione del sito.
+I piè di pagina sono generalmente realizzati utilizzando i frammenti esperienza, per cui è necessaria una versione inglese e francese come le pagine. Tuttavia, i frammenti esperienza non sono pagine, ma parti di pagine che possono essere riutilizzate tra le pagine, in modo che non risiedano direttamente sotto `/content` come le altre pagine. Vivono invece sotto la propria cartella, ma poiché devono essere localizzati, la loro struttura deve rispecchiare la struttura di localizzazione del sito.
 
 ```
 /content
@@ -64,51 +64,51 @@ I piè di pagina delle pagine vengono in genere effettuati utilizzando frammenti
       \-- my-page
 ```
 
-È attraverso la struttura di localizzazione riflettente che i componenti core possono trovare il contenuto localizzato necessario per una pagina corrispondente.
+È attraverso la struttura di localizzazione speculare che i componenti core possono trovare il contenuto localizzato necessario per una pagina corrispondente.
 
-## Piè pagina pagina - Frammento esperienza {#xf-footer}
+## Piè di pagina - Frammento esperienza {#xf-footer}
 
-Il componente Frammento esperienza è molto flessibile ed è molto adatto per l'intestazione o il piè di pagina di una pagina.
+Il componente Frammento esperienza è molto flessibile ed è adatto per un'intestazione o un piè di pagina di pagina.
 
-Poiché il nostro sito Web ipotetico è offerto in inglese e francese, sarà necessario creare due frammenti esperienza, entrambi chiamati `footer`[nelle posizioni precedentemente descritte.](#content-structure)
+Poiché il nostro ipotetico sito Web è disponibile in inglese e francese, dovremo creare due frammenti esperienza, entrambi denominati `footer` nelle località descritte [in precedenza.](#content-structure)
 
 ![](assets/screen-shot-2019-09-09-11.08.28.png)
 
 ## Modello pagina {#template}
 
-Poiché il piè di pagina verrà visualizzato in ogni pagina, sarà necessario aggiungere il frammento esperienza al modello di pagina standard.
+Poiché il piè di pagina verrà visualizzato su ogni pagina, sarà necessario aggiungere il frammento esperienza al modello di pagina standard.
 
-Il nostro modello viene semplicemente chiamato `my-template` e si trova con gli altri modelli:
+Il nostro modello è semplicemente chiamato `my-template` e si trova con i nostri altri modelli:
 
 ```
 /conf/my-site/settings/wcm/templates/my-template
 ```
 
-A questo modello verranno aggiunti i componenti di base su cui si desidera basare le pagine.
+A questo modello aggiungeremo i componenti di base sui quali vogliamo basare le nostre pagine.
 
 * [Componente di navigazione](navigation.md)
-   * Il componente di navigazione viene visualizzato nella parte superiore di ogni pagina.
-   * Nel componente di navigazione definiamo la radice di navigazione, indicando al componente dove inizia la struttura di navigazione del sito.
-   * In base alla radice di navigazione, il componente può trovare automaticamente il contenuto localizzato corrispondente.
-* [Componente Contenitore](container.md)
-   * Ogni pagina conterrà un componente contenitore modificabile in modo che gli autori possano inserire altri contenuti nella pagina.
+   * Il componente Navigazione viene visualizzato nella parte superiore di ogni pagina.
+   * Nel componente di navigazione viene definito il livello principale di navigazione, indicando il componente da cui inizia la struttura di navigazione del sito.
+   * In base al livello principale di navigazione, il componente può trovare automaticamente il contenuto localizzato corrispondente.
+* [Componente contenitore](container.md)
+   * Ogni pagina conterrà un componente Contenitore modificabile in modo che gli autori possano inserire contenuto aggiuntivo nella pagina.
 * [Frammento esperienza](experience-fragment.md)
-   * Il componente Frammento di esperienza è indicato nel percorso di frammento del frammento che rappresenta il piè di pagina.
-   * In base al percorso del frammento e alla struttura dei frammenti esperienza che rispecchiano la struttura della pagina localizzata, il componente può trovare automaticamente il corrispondente contenuto localizzato.
+   * Il componente Frammento esperienza viene indirizzato al percorso del frammento nella lingua di creazione del frammento che rappresenta il piè di pagina.
+   * In base al percorso del frammento e alla struttura dei frammenti esperienza che rispecchia la struttura di pagina localizzata, il componente può trovare automaticamente il contenuto localizzato corrispondente.
    ![](assets/screen-shot-2019-09-09-11.20.10.png)
 
 ## Pagine {#pages}
 
-Eseguendo l'operazione di configurazione della struttura del sito e del modello, l'autore del contenuto deve semplicemente aggiungere il contenuto necessario alle pagine. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno aggiunti automaticamente alla pagina e localizzati.
+Durante il lavoro di configurazione della struttura e del modello del sito, l’autore del contenuto deve semplicemente aggiungere alle pagine il contenuto necessario. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno automaticamente aggiunti alla pagina e localizzati.
 
-Ad esempio, l'autore deve solo aggiungere contenuto come un componente di testo alle pagine inglese e francese (rappresentato in blu sotto).
+Ad esempio, l’autore deve solo aggiungere contenuto, ad esempio un componente di testo, alle pagine inglese e francese (rappresentato in blu sotto).
 
-Il componente di navigazione e il componente Frammenti esperienza provengono dal modello di pagina e sanno di visualizzare automaticamente il contenuto corretto in base alla struttura di localizzazione e alla posizione della pagina stessa (rappresentata in bianco sotto).
+Il componente Navigazione e il componente Frammento esperienza provengono dal modello di pagina e sono in grado di visualizzare automaticamente il contenuto corretto in base alla struttura di localizzazione e alla posizione della pagina stessa (rappresentata in bianco di seguito).
 
 ![](assets/screen-shot-2019-09-09-11.22.14.png)
 
-## Adattamento completo {#fitting-it-all-together}
+## Adatta tutto {#fitting-it-all-together}
 
-Ecco l'illustrazione completa su come questi elementi semplici ma potenti lavorano per distribuire pagine localizzate per gli autori di contenuto.
+Di seguito viene illustrato il funzionamento di questi elementi semplici e potenti per distribuire pagine localizzate agli autori dei contenuti.
 
 ![](assets/screen-shot-2019-09-09-11.27.58.png)
