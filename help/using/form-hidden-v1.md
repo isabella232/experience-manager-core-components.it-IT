@@ -1,12 +1,12 @@
 ---
-title: Componente nascosto modulo (v 1)
-seo-title: Componente nascosto modulo (v 1)
-description: Il componente Modulo componente core consente la visualizzazione di un campo nascosto.
-seo-description: Il componente Modulo componente core consente la visualizzazione di un campo nascosto.
-uuid: f 5005346-def 5-4 e 1 f -8 f 93-e 4 cfc 67 a 9329
+title: Componente nascosto modulo (v1)
+seo-title: Componente nascosto modulo (v1)
+description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
+seo-description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
+uuid: f5005346-def5-4e1f-8f93-e4cfc67a9329
 content-type: riferimento
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: d 35 f 4 e 71-ec 7 f -4128-9123-b 997 dbb 5 f 0 cf
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: d35f4e71-ec7f-4128-9123-b997dbb5f0cf
 index: n
 translation-type: tm+mt
 source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
@@ -14,36 +14,36 @@ source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 ---
 
 
-# Componente nascosto modulo (v 1){#form-hidden-component-v}
+# Form Hidden Component (v1){#form-hidden-component-v}
 
-Il componente Modulo componente core consente la visualizzazione di un campo nascosto.
+Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
 
 ## Utilizzo {#usage}
 
-Il componente Modulo di base modulo consente la creazione di campi nascosti per trasmettere nuovamente le informazioni sulla pagina corrente ad AEM, da utilizzare insieme al [componente Contenitore del modulo](form-container.md).
+Il componente di base Modulo nascosto consente la creazione di campi nascosti per riportare in AEM le informazioni sulla pagina corrente e deve essere utilizzato insieme al componente [Contenitore di](form-container.md)moduli.
 
-Le proprietà dei campi possono essere definite dall&#39;editor contenuto nella finestra di dialogo [Configura](#configure-dialog).
+Le proprietà del campo possono essere definite dall’editor del contenuto nella finestra di dialogo [di](#configure-dialog)configurazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive v 1 del componente nascosto modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la v1 del componente Nascosto modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della release v 1 del componente Nascosto modulo.
+La tabella seguente elenca la compatibilità di v1 del componente nascosto modulo.
 
-| Versione di AEM | Componente nascosto modulo v 1 |
+| Versione di AEM | Componente nascosto modulo v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la v 1 del componente Nascosto modulo.
+>In questo documento viene descritta la versione 1 del componente Nascosto modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Nascosto modulo, vedere [il documento Modulo](form-hidden.md) nascosto modulo.
+>Per informazioni dettagliate sulla versione corrente del componente Nascosto modulo, consultare il documento [Modulo nascosto componente](form-hidden.md) .
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 
@@ -83,26 +83,26 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 >[!NOTE]
 >
->L&#39;esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consultate le informazioni [di compatibilità per i componenti core v 1](versions.md#release-history-and-compatibility) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](versions.md#release-history-and-compatibility) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire i parametri del campo nascosto.
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del campo nascosto.
 
 ![](assets/chlimage_1-26.png)
 
-* **Nome** : nome del campo, inviato con i dati del modulo
-* **Valore** : valore del campo, inviato con i dati del modulo
-* **Identificatore** : l&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script con questo campo
+* **Nome** - Il nome del campo, inviato con i dati del modulo
+* **Valore** - Il valore del campo, inviato con i dati del modulo
+* **Identificatore** - L'identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Non esiste alcuna finestra di dialogo per il componente Nascosto modulo.
+Non è disponibile alcuna finestra di dialogo per il componente Nascosto modulo.
 
 ## Dettagli tecnici {#technical-details}
 
-In github è disponibile la documentazione tecnica più recente relativa al componente [Nascosto modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+La documentazione tecnica più recente sul componente Nascosto modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
-L&#39;intero progetto componenti core può essere scaricato da github.
+L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
