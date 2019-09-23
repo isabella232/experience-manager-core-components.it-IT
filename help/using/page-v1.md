@@ -1,12 +1,12 @@
 ---
-title: Componente pagina (v 1)
-seo-title: Componente pagina (v 1)
-description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l'editor modelli e consente la raccolta di componenti header/piè di pagina e struttura con l'editor modelli.
-seo-description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l'editor modelli e consente l'assemblaggio di componenti header/piè di pagina e struttura con l'editor modelli.
-uuid: dd 1 b 1 e 58-ae 14-4818-afbe -8 bcff 0 de 2 c 32
+title: Componente pagina (v1)
+seo-title: Componente pagina (v1)
+description: Il componente Pagina è un componente di pagina estensibile progettato per essere utilizzato con l’editor modelli e per consentire l’assemblaggio dell’intestazione e del piè di pagina e dei componenti struttura della pagina con l’editor modelli.
+seo-description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
+uuid: dd1b1e58-ae14-4818-afbe-8bcff0de2c32
 content-type: riferimento
-topic-tags: componenti core
-discoiquuid: b 3 f 1775 d -743 d -4 f 72-a 1 e 5-198303007 a 8 e
+topic-tags: core-components
+discoiquuid: b3f1775d-743d-4f72-a1e5-198303007a8e
 index: n
 translation-type: tm+mt
 source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
@@ -14,40 +14,40 @@ source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 ---
 
 
-# Componente pagina (v 1){#page-component-v}
+# Componente pagina (v1){#page-component-v}
 
-Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l&#39;editor [modelli](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) e consente l&#39;assemblaggio di componenti header/piè di pagina e struttura con l&#39;editor modelli.
+Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor [](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Pagina è la base di tutte le pagine progettate con i componenti core e i modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina è possibile definire un modello utilizzando gli altri componenti core.
+Il componente Pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
 
-Mediante la finestra di dialogo [Progettazione](page-v1.md#main-pars_title_1995166862), è possibile definire per la pagina librerie lato client personalizzate. A differenza degli altri componenti con finestra di dialogo di modifica accessibili direttamente dal componente, poiché il componente è la stessa pagina, la finestra di dialogo [di modifica](page-v1.md#main-pars_title) del componente pagina è la finestra delle proprietà della pagina.
+Utilizzando la finestra di dialogo [di](page-v1.md#main-pars_title_1995166862)progettazione, potete definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la finestra di dialogo [di](page-v1.md#main-pars_title) modifica del componente pagina è la finestra delle proprietà della pagina.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive v 1 del componente Pagina, originariamente introdotto con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la v1 del componente Pagina, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della release v 1 del componente Pagina.
+La tabella seguente elenca la compatibilità di v1 del componente Pagina.
 
-| Versione di AEM | Componente pagina v 1 |
+| Versione di AEM | Componente pagina v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la v 1 del componente Pagina.
+>Questo documento descrive la versione 1 del componente Pagina.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pagina, consultate [il documento Componente](page.md) pagina.
+>Per informazioni dettagliate sulla versione corrente del componente Pagina, vedere il documento del componente [](page.md) Pagina.
 
 >[!NOTE]
 >
->La versione v 1 del componente Pagina non supporta il reindirizzamento alla pagina. Utilizzate la versione [corrente del componente pagina](page.md) per il supporto della reindirizzamento delle pagine.
+>La versione 1 del componente pagina non supporta il reindirizzamento della pagina. Utilizzate la versione [corrente del componente](page.md) pagina per il supporto del reindirizzamento delle pagine.
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -681,32 +681,32 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 >[!NOTE]
 >
->L&#39;esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consultate le informazioni [di compatibilità per i componenti core v 1](versions.md#main-pars_title_236368006) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](versions.md#main-pars_title_236368006) .
 
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
-Poiché il componente rappresenta l&#39;intera pagina, le impostazioni che si trovano normalmente in una finestra di dialogo di modifica si trovano nella [finestra Proprietà](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html) pagina.
+Poiché il componente rappresenta l’intera pagina, le impostazioni che normalmente si trovano in una finestra di dialogo di modifica si trovano nella finestra Proprietà [](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html) pagina.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché il componente rappresenta l&#39;intera pagina, viene visualizzata la finestra di dialogo di progettazione tramite **Informazioni pagina -&gt; Progettazione pagina**.
+Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina &gt; Progettazione** pagina.
 
 ![](assets/chlimage_1-94.png)
 
-Utilizzando la finestra Progettazione pagina, potete definire librerie lato client da caricare con la pagina.
+La finestra Progettazione pagina consente di definire librerie lato client da caricare con la pagina.
 
-* Per aggiungere un nuovo campo, tocca o fai clic sul **pulsante Aggiungi** sotto i campi.
-* Per rimuovere un campo, tocca o fai clic sull&#39;icona del cestino accanto al campo da rimuovere.
-* Per ridisporre l&#39;ordine di caricamento, toccate o trascinate la maniglia accanto al campo da spostare.
+* Per aggiungere un nuovo campo, fare clic o toccare il pulsante **Aggiungi** sotto i campi.
+* Per rimuovere un campo, fare clic o toccare l'icona del cestino accanto al campo da rimuovere.
+* Per riordinare l'ordine di caricamento, fare clic o toccare e trascinare la maniglia accanto al campo da spostare.
 
-Per ulteriori informazioni sull&#39;uso delle librerie lato client, consultate [Utilizzo delle librerie lato client](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
+Per ulteriori informazioni sull'uso delle librerie lato client, consultate [Utilizzo delle librerie](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)lato client.
 
 ![](assets/chlimage_1-95.png)
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente [Pagina è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
+La documentazione tecnica più recente sul componente Pagina [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
 
-L&#39;intero progetto componenti core può essere scaricato da github.
+L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
