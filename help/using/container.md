@@ -1,103 +1,103 @@
 ---
-title: Componente Contenitore
-seo-title: Componente Contenitore
+title: Componente contenitore
+seo-title: Componente contenitore
 description: 'null'
-seo-description: Il componente Contenitore di componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
-uuid: ec 807 de 9-f 76 c -4850-9 ece-c 3 e 439 a 1 d 626
+seo-description: Il componente Contenitore componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
+uuid: ec807de9-f76c-4850-9ece-c3e439a1d626
 contentOwner: Utente
 content-type: riferimento
 topic-tags: authoring
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: f 093 f 58 e -9755-4 a 4 f -803 a-ab 93 a 50 e 6870
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: f093f58e-9755-4a4f-803a-ab93a50e6870
 translation-type: tm+mt
 source-git-commit: 3e2e7a297c6ee1d6c8d092c619df8febdc900e25
 
 ---
 
 
-# Container Component{#container-component}
+# Componente contenitore{#container-component}
 
-Il componente Contenitore di componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
+Il componente Contenitore componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Contenitore di componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina e può essere utilizzato per raggruppare altri componenti e applicare uno stile o layout comune.
+Il componente Contenitore componenti core consente di creare un contenitore per più componenti aggiuntivi su una pagina e può essere utilizzato per raggruppare altri componenti e applicare uno stile o un layout comune.
 
-* The container&#39;s properties can be selected in the [configure dialog](#configure-dialog).
-* Defaults for the Container Component when adding it to a page can be defined in the [design dialog](#design-dialog).
+* Le proprietà del contenitore possono essere selezionate nella finestra di dialogo [di](#configure-dialog)configurazione.
+* I valori predefiniti per il componente Contenitore quando viene aggiunto a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Contenitore è v 1, introdotta con la release 2.5.0 dei componenti core a giugno 2019, descritta in questo documento.
+La versione corrente del componente contenitore è v1, introdotto con la release 2.5.0 dei componenti core nel giugno 2019, ed è descritto in questo documento.
 
-Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
-## Sample Component Output {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-To experience the Container Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/container.html).
+Per provare il componente Contenitore ed esempi delle relative opzioni di configurazione, nonché dell’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/container.html)Componenti.
 
-## Technical Details {#technical-details}
+## Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Container Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container).
+La documentazione tecnica più recente sul componente contenitore [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire l&#39;elemento contenitore e di comprenderne il funzionamento e il relativo aspetto.
+La finestra di dialogo di configurazione consente all'autore del contenuto di definire l'elemento contenitore e il suo funzionamento e la sua visualizzazione sulla pagina da parte di un visitatore.
 
 ![](assets/screen-shot-2019-06-21-13.59.26.png)
 
-* **Layout** : questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore.
-   * **Semplice** - Definisce un contenitore come semplice raccolta di componenti
-   * **Griglia** reattiva: definisce un contenitore come griglia reattiva [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html)
-* **ID** - Utilizzate questa opzione per definire l&#39;attributo ID HTML da applicare al componente.
-* **Colore di sfondo** - Definibile come valori RGB a mano libera o utilizzando il selettore colore, [a seconda della configurazione](#background-tab)
-* **Immagine di sfondo** - Definisce un colore di sfondo per il contenitore, [a seconda della configurazione](#background-tab)
+* **Layout** - Questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore.
+   * **Semplice** - Definisce un contenitore come una semplice raccolta di componenti
+   * **Griglia** reattiva - Definisce un contenitore come griglia reattiva [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html)
+* **ID** - Utilizzate questa opzione per definire l'attributo ID HTML da applicare al componente.
+* **Colore** di sfondo - Definibile come valori RGB a forma libera o utilizzando il selettore colore, [a seconda della configurazione](#background-tab)
+* **Immagine** di sfondo - Definisce un colore di sfondo per il contenitore, [a seconda della configurazione](#background-tab)
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore di contenuto che utilizza il componente Contenitore.
+La finestra di dialogo di progettazione consente all'autore del modello di definire le opzioni disponibili per l'autore del contenuto che utilizza il componente Contenitore.
 
-### Allowed Components Tab {#allowed-components-tab}
+### Scheda Componenti consentiti {#allowed-components-tab}
 
-The **Allowed Components** tab is used to define which components can be added as items to the Container Component by the content author.
+La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti al componente Contenitore dall’autore del contenuto come elementi.
 
-The Allowed Components tab functions in the same way as the tab of the same name when [defining the policy and properties of a Layout Container in the Template Editor.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell'Editor modelli.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 
-### Default Components Tab {#default-components-tab}
+### Scheda Componenti predefiniti {#default-components-tab}
 
-The Default Components tab is used to define which component is added to the component when a particular asset type is dropped on the container, similar to [how default components are defined on the page template](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html#EditingTemplatesTemplateAuthors).
+La scheda Componenti predefiniti consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul contenitore, in modo simile alla [definizione dei componenti predefiniti nel modello](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html#EditingTemplatesTemplateAuthors)di pagina.
 
-### Responsive Settings Tab {#responsive-settings-tab}
+### Scheda Impostazioni reattive {#responsive-settings-tab}
 
 ![](assets/screen-shot-2019-06-21-09.33.03.png)
 
-* **Colonne** : definisce il numero di colonne nella griglia del contenitore risultante.
+* **Colonne** - Definisce il numero di colonne nella griglia del contenitore risultante.
 
-### Background Tab {#background-tab}
+### Scheda Sfondo {#background-tab}
 
 ![](assets/screen-shot-2019-06-21-09.42.42.png)
 
 * **Immagine di sfondo**
-   * **Abilita immagine** di sfondo: selezionate questa opzione per consentire all&#39;autore del contenuto di definire un&#39;immagine di sfondo per il contenitore.
+   * **Abilita immagine** di sfondo - Selezionate questa opzione per consentire all'autore del contenuto di definire un'immagine di sfondo per il contenitore.
 * **Colore di sfondo**
-   * **Abilita colore** di sfondo: selezionate questa opzione per consentire all&#39;autore del contenuto di definire un colore di sfondo per il contenitore.
-   * **Solo** campioni: selezionate questa opzione per consentire all&#39;autore del contenuto di selezionare solo i campioni di colore predefiniti per il colore dello sfondo del contenitore.
-      * Only available when **Enable background color** is selected
-* **Campioni consentiti** - Definire colori predefiniti da cui l&#39;autore del contenuto può selezionare il colore dello sfondo del contenitore
-   * Use the **Add** button to add a pre-defined color swatch. Una volta aggiunta, all&#39;elenco viene aggiunta una voce contenente le colonne seguenti:
-   * **Valore** - Definite manualmente il colore tramite i valori RGB
+   * **Attiva colore** di sfondo - Selezionate questa opzione per consentire all'autore del contenuto di definire un colore di sfondo per il contenitore.
+   * **Solo** campioni - Selezionate questa opzione per consentire all’autore del contenuto di selezionare solo i campioni colore predefiniti per il colore di sfondo del contenitore.
+      * Disponibile solo se **Attiva colore** di sfondo è selezionato
+* **Campioni consentiti** - Consente di definire i colori predefiniti da cui l'autore del contenuto può selezionare il colore di sfondo del contenitore
+   * Usate il pulsante **Aggiungi** per aggiungere un campione colore predefinito. Una volta aggiunta, una voce viene aggiunta all'elenco, che contiene le seguenti colonne:
+   * **Valore** - Definire manualmente il colore tramite i valori RGB
       * Toccate o fate clic sul selettore colore per selezionare più facilmente un colore regolando i singoli valori RGB o definendo un valore esadecimale.
-   * **Elimina** : toccate o fate clic per eliminare un campione.
-   * **Ridisponete** : toccate o fate clic e trascinate per riordinare l&#39;ordine dei campioni.
+   * **Elimina** - Toccate o fate clic per eliminare un campione.
+   * **Ridisponi** - Toccate o fate clic e trascinate per riordinare i campioni.
 
-### Styles Tab {#styles-tab}
+### Scheda Stili {#styles-tab}
 
-The Container Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Contenitore supporta AEM [Style System](authoring.md#component-styling).
