@@ -1,12 +1,12 @@
 ---
-title: Componente Pulsante modulo (v 1)
-seo-title: Componente Pulsante modulo (v 1)
+title: Componente pulsante modulo (v1)
+seo-title: Componente pulsante modulo (v1)
 description: 'null'
-seo-description: Il componente Modulo componente core consente l'inclusione di un campo nascosto in un modulo.
-uuid: 0525 e 70 f -294 f -4 d 35-bf 96-fc 0 e 4 ec 225 e 9
+seo-description: Il componente Principale Modulo nascosto consente di includere un campo nascosto in un modulo.
+uuid: 0525e70f-294f-4d35-bf96-fc0e4ec225e9
 content-type: riferimento
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: ea 06 acc 0-38 e 2-4252-ac 29-07332835 b 7 c 4
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: ea06acc0-38e2-4252-ac29-07332835b7c4
 disttype: dist5
 gnavtheme: chiaro
 groupsectionnavitems: 'no'
@@ -20,36 +20,36 @@ source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 ---
 
 
-# Componente Pulsante modulo (v 1){#form-button-component-v}
+# Form Button Component (v1){#form-button-component-v}
 
-Il componente Pulsante modulo componente core consente l&#39;inclusione di un campo pulsante in un modulo per attivare un&#39;azione.
+Il componente Pulsante Modulo componente di base consente di includere un campo pulsante in un modulo per attivare un’azione.
 
 ## Utilizzo {#usage}
 
-Il componente Pulsante modulo di base consente la creazione di un campo pulsante, spesso per attivare l&#39;invio del modulo e può essere utilizzato insieme al [componente Contenitore del modulo](form-container.md).
+Il componente Pulsante Modulo componente di base consente di creare un campo pulsante, spesso per attivare l’invio del modulo e deve essere utilizzato insieme al componente [Contenitore](form-container.md)modulo.
 
-Le proprietà del pulsante possono essere definite dall&#39;editor contenuto nella finestra di dialogo [Configura](form-button-v1.md#main-pars_title).
+Le proprietà del pulsante possono essere definite dall'editor del contenuto nella finestra di dialogo [di](form-button-v1.md#main-pars_title)configurazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive v 1 del componente Pulsante modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Pulsante modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della release v 1 del componente Pulsante modulo.
+La tabella seguente elenca la compatibilità di v1 del componente Pulsante modulo.
 
-| Versione di AEM | Componente pulsante modulo v 1 |
+| Versione di AEM | Componente pulsante modulo v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la v 1 del componente Pulsante modulo.
+>Questo documento descrive la versione 1 del componente Pulsante modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pulsante modulo, vedere [il documento Componente](form-button.md) Pulsante modulo.
+>Per informazioni dettagliate sulla versione corrente del componente Pulsante modulo, vedere il documento sul componente [Pulsante](form-button.md) modulo.
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -93,11 +93,11 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 >[!NOTE]
 >
->L&#39;esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consultate le informazioni [di compatibilità per i componenti core v 1](versions.md#main-pars_title_236368006) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](versions.md#main-pars_title_236368006) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire i parametri del pulsante.
+La finestra di dialogo di configurazione consente all'autore del contenuto di definire i parametri del pulsante.
 
 ![](assets/chlimage_1-49.png)
 
@@ -105,20 +105,20 @@ La finestra di dialogo Configura consente all&#39;autore del contenuto di defini
    * **Pulsante**
    * **Invia**
 
-* **Titolo** : testo visualizzato sul pulsante
-   * Se nessuno fornisce impostazioni predefinite, il tipo di pulsante
+* **Titolo** - Testo visualizzato sul pulsante
+   * Se non ne è stato fornito nessuno, per impostazione predefinita viene utilizzato il tipo di pulsante
 
-* **Nome** : il nome del pulsante, che viene inviato insieme ai dati del modulo
-* **Valore** : il valore del pulsante, che viene inviato insieme ai dati del modulo
+* **Nome** - Il nome del pulsante, inviato con i dati del modulo
+* **Valore** - Il valore del pulsante, inviato con i dati del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Non esiste alcuna finestra di dialogo per il componente Pulsante modulo.
+Non è disponibile alcuna finestra di dialogo per il componente Pulsante modulo.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente relativa al componente Pulsante modulo [è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
+La documentazione tecnica più recente sul componente Pulsante Modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
 
-L&#39;intero progetto componenti core può essere scaricato da github.
+L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
