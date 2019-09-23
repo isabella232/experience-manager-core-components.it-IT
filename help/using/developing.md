@@ -1,14 +1,14 @@
 ---
 title: Sviluppo di componenti core
 seo-title: Sviluppo di componenti core
-description: I componenti core offrono componenti base affidabili ed estensibili che offrono funzionalità ricche di funzioni, prestazioni continue, controllo delle versioni dei componenti, implementazione moderna, marcatura lean e esportazione JSON dei contenuti.
-seo-description: I componenti core offrono componenti base affidabili ed estensibili che offrono funzionalità ricche di funzioni, prestazioni continue, controllo delle versioni dei componenti, implementazione moderna, marcatura lean e esportazione JSON dei contenuti.
-uuid: 68569 da 2-9 bc 8-4 e 20-9 a 71-e 5816 ace 51 ce
+description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
+seo-description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
+uuid: 68569da2-9bc8-4e20-9a71-e5816ace51ce
 contentOwner: Utente
 content-type: riferimento
-topic-tags: sviluppo
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: 157 a 2 ec 3-9 fca -4 fad -977 a-d 93013 eeb 218
+topic-tags: development
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: 157a2ec3-9fca-4fad-977a-d93013eeb218
 translation-type: tm+mt
 source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
 
@@ -19,197 +19,193 @@ source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
 
 ## Panoramica {#overview}
 
-I componenti core forniscono componenti base affidabili ed estensibili e le relative evidenziazioni sono:
+I componenti core forniscono componenti di base affidabili ed estensibili e i loro elementi di rilievo sono:
 
 * Funzionalità avanzate
-   * [Opzioni](authoring.md) di configurazione flessibili per contenere molti casi d'uso
-   * [Funzionalità preconfigurabili](authoring.md#pre-configuring-core-components) per definire quali funzioni sono disponibili per gli autori delle pagine
-* Distribuzione continua
-   * Miglioramenti frequenti alle funzionalità incrementali
-   * Disponibilità del codice [sorgente su github](https://github.com/adobe/aem-core-wcm-components) per consentire alla comunità di sviluppatori di fornire feedback e contribuire
-   * Installazione tramite un [pacchetto di contenuto rilasciato separatamente](https://github.com/adobe/aem-core-wcm-components/releases) per gli aggiornamenti dei componenti che devono essere eseguiti in modo indipendente dagli aggiornamenti AEM
-* [Controllo delle versioni dei componenti](guidelines.md#component-versioning)
-   * [Garantire la compatibilità all'interno di una versione](#upgrade-of-core-components), ma consentire l'evoluzione dei componenti
-   * Consente la coesistere di più versioni di un componente nello stesso ambiente
+   * [Opzioni](authoring.md) di configurazione flessibili per molti casi di utilizzo
+   * [Funzionalità](authoring.md#pre-configuring-core-components) preconfigurabili per definire quali funzioni sono disponibili per gli autori delle pagine
+* Consegna continua
+   * Miglioramenti frequenti delle funzionalità incrementali
+   * Disponibilità del codice [sorgente su GitHub](https://github.com/adobe/aem-core-wcm-components) per consentire alla comunità di sviluppatori di fornire feedback e contribuire
+   * Installazione tramite un pacchetto [di contenuti rilasciato](https://github.com/adobe/aem-core-wcm-components/releases) separatamente per gli aggiornamenti dei componenti da eseguire indipendentemente dagli aggiornamenti di AEM
+* [Versione componente](guidelines.md#component-versioning)
+   * [Garantire la compatibilità all'interno di una versione](#upgrade-of-core-components), ma consentire ai componenti di evolversi
+   * Consentire la coesistenza di più versioni di un componente nello stesso ambiente
 * Implementazione moderna
-   * Marcatura definita in [HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/overview.html) (HTL)
-   * Logica del modello contenuto implementata con [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
-* Marcatura lean
-   * La notazione BEM ( [Block Element Modificator](https://getbem.com/) ) seguente a partire dalla release 2.0.0
-      * La versione precedente segue [le convenzioni](https://getbootstrap.com/css/) di denominazione di Bootstrap
+   * Markup definito in [HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/overview.html) (HTL)
+   * Logica del modello di contenuto implementata con i modelli [Sling](https://sling.apache.org/documentation/bundles/models.html)
+* Marcatura iniziale
+   * Seguente notazione del modificatore [elemento](https://getbem.com/) blocco (BEM) a partire dalla release 2.0.0
+      * Le versioni precedenti seguono le convenzioni di denominazione di [Bootstrap](https://getbootstrap.com/css/)
    * Built around [accessibility guidelines](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
-   * Può essere utilizzato per siti reattivi e mobili
-* Funzionalità per serializzare come JSON il modello di contenuto per i casi di utilizzo headless CMS
+   * Utilizzabile per siti reattivi e mobili
+* Possibilità di serializzare come JSON il modello di contenuto per i casi di utilizzo headless CMS
 * Accessibile
    * Conforme allo standard [WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
 
 >[!CAUTION]
 >
->I componenti core richiedono AEM 6.3 o versione successiva e Java 8 e richiedono l'utilizzo di [modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+>I componenti core richiedono AEM 6.3 o versione successiva e Java 8 e richiedono l’uso di modelli [modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 >
->I componenti core non funzionano con l'interfaccia classica né con i modelli statici.
+>I componenti core non funzionano né con l’interfaccia classica né con i modelli statici.
 
 ## Panoramica della sessione Gems {#gems-session-overview}
 
-Per un'introduzione ai componenti core, alle funzioni che essi offrono e alle modalità di utilizzo in AEM, consulta i componenti core [AEM Gems Session AEM.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
+Per un'introduzione ai componenti core, alle funzioni che offrono e alla modalità di utilizzo in AEM, consultate i componenti core di AEM Gems Session [AEM.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
 
-[Gems on Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici offerti dagli esperti Adobe. Questa serie integra la documentazione di prodotto e tutti gli altri canali tecnici, consentendo agli sviluppatori di mettersi in contatto con un argomento specifico.
+[Gems on Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici offerti dagli esperti Adobe. Questa serie integra la documentazione del prodotto e tutti gli altri canali tecnici, consentendo agli sviluppatori di mettersi in contatto e approfondire un argomento specifico.
 
-## WKND Developer Tutorial {#wknd-developer-tutorial}
+## Esercitazione per sviluppatori WKND {#wknd-developer-tutorial}
 
-Scopri come sviluppare AEM Sites con componenti core seguendo [questa esercitazione passo-passo.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+Inizia a sviluppare AEM Sites con i componenti core seguendo [questa esercitazione passo-passo.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
 
-## Consegnato tramite github {#delivered-over-github}
+## Consegnato su GitHub {#delivered-over-github}
 
-I componenti core vengono sviluppati e consegnati tramite github.
+I componenti core sono sviluppati e forniti tramite GitHub.
 
 CODICE SU GITHUB
 
-Potete trovare il codice di questa pagina su github
+Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto aem-core-wcm-components su github](https://github.com/adobe/aem-core-wcm-components)
-* Scaricare il progetto come [file ZIP](https://github.com/adobe/aem-core-wcm-components/archive/master.zip)
+* [Open aem-core-wcm-components project on GitHub](https://github.com/adobe/aem-core-wcm-components)
+* Scarica il progetto come [file ZIP](https://github.com/adobe/aem-core-wcm-components/archive/master.zip)
 
-Consulta la [pagina della](using.md) documentazione Utilizzo dei componenti core per apprendere come iniziare a utilizzarli nel progetto.
+Consultate la pagina della documentazione [Utilizzo dei componenti](using.md) core per apprendere come iniziare a utilizzarli nel progetto.
 
-La disponibilità dei componenti core su github consentirà di effettuare aggiornamenti frequenti e di ascoltare i commenti della community di sviluppatori AEM. Inoltre, questa funzione dovrebbe aiutare clienti e partner a seguire pattern simili durante la creazione di componenti personalizzati.
-
->[!NOTE]
->
->Per tenere aggiornato le modifiche più recenti apportate ai componenti core, puoi guardare l'archivio Componenti [core](https://github.com/adobe/aem-core-wcm-components) su github.
-
-## Libreria componenti
-
-Controllate la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library.html), che mostra la versione corrente dei componenti core e ne fornisce esempi di utilizzo.
-
-### Esempio di esecuzione contenuto {#sample-content-run-mode}
-
-I componenti core sono visibili nell'Avvio rapido quando il contenuto di esempio è presente, in quanto il sito di riferimento [We. Retail li](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) utilizza. Tuttavia, quando in fase di esecuzione (in `nosamplecontent` modalità runmode, senza contenuto di esempio abilitato), i componenti core non saranno più presenti e devono essere installati nelle istanze AEM dal team di sviluppo e/o operazioni.
+Disporre dei componenti core su GitHub consentirà di effettuare aggiornamenti frequenti e di ascoltare i commenti della comunità di sviluppatori AEM. Inoltre, questo dovrebbe aiutare clienti e partner a seguire pattern simili durante la creazione di componenti personalizzati.
 
 >[!NOTE]
 >
->In ambienti di produzione, eseguite sempre l'Avvio rapido in `nosamplecontent` modalità runmode. Per utilizzare i componenti core in `nosamplecontent` modalità runmode, seguite le istruzioni della pagina [della documentazione Utilizzo dei componenti](using.md) core.
+>Per essere aggiornati sulle ultime modifiche apportate ai componenti core, puoi vedere l’archivio [Componenti](https://github.com/adobe/aem-core-wcm-components) principali su GitHub.
+
+## Libreria dei componenti
+
+Consulta la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library.html)componenti, che presenta la versione corrente dei componenti core e ne illustra l’utilizzo.
+
+### Esempio di modalità esecuzione contenuto {#sample-content-run-mode}
+
+I componenti core sono visibili in Avvio rapido quando è presente il contenuto di esempio, in quanto vengono utilizzati dal sito [di riferimento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) We.Retail. Tuttavia, in fase di produzione (in `nosamplecontent` modalità di esecuzione, senza che sia abilitato il contenuto di esempio), i componenti core non saranno più presenti e dovranno essere installati nelle istanze di AEM dal team di sviluppo e/o dalle operazioni.
+
+>[!NOTE]
+>
+>Negli ambienti di produzione, esegui sempre il Quickstart in `nosamplecontent` modalità di esecuzione. Per utilizzare i componenti core in `nosamplecontent` modalità di esecuzione, segui le istruzioni della pagina della documentazione [Uso dei componenti](using.md) core.
 
 ## Funzionalità tecniche {#technical-capabilities}
 
-La tabella seguente fornisce una panoramica delle differenze tra componenti core e componenti di base.
+La tabella seguente fornisce una panoramica delle differenze tra i componenti core e i componenti di base.
 
-Per informazioni dettagliate sulle capacità e sulle opzioni di authoring per preconfigurarle, [fate riferimento alla pagina di authoring](authoring.md).
+Per informazioni dettagliate sulle funzionalità di authoring e sulle opzioni per la preconfigurazione, [consultare la pagina dedicata](authoring.md)all’authoring.
 
 | **Funzionalità** | **Componente core** | **Componente Foundation** |
 |-----|---|---|
-| Implementazione logica | Java pojos con [annotazioni per modelli](https://sling.apache.org/documentation/bundles/models.html) Sling | Codice JSP |
-| Definizione di marcatura | [Sintassi HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (HTML Template Language) | Codice JSP |
-| Pulizia XSS | Automatizzato per HTL | Più manuale |
-| Denominazione delle classi CSS | Convenzione di denominazione standardizzata basata [sulla notazione del modificatore](https://getbem.com/) elemento block (BEM) (a partire dalla release 2.0.0) | Schemi personalizzati |
-| Definizione finestra di dialogo | [Coral 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Interfaccia Coral 2 + Classic |
-| Output JSON | [Sling Models Exporter con serializzazione Jackson](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) | Servlet Sling predefinito |
+| Implementazione logica | Java POJO con annotazioni [Sling Models](https://sling.apache.org/documentation/bundles/models.html) | Codice JSP |
+| Definizione di markup | [Sintassi HTML Template Language](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (HTL) | Codice JSP |
+| Scarico XSS | Automatizzato da HTL | Principalmente manuale |
+| Denominazione delle classi CSS | Convenzione di denominazione standard basata sulla notazione [del modificatore](https://getbem.com/) di elementi di blocco (BEM) (dalla release 2.0.0) | Schemi personalizzati |
+| Definizione finestra di dialogo | [Corallo 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Corallo 2 + Interfaccia classica |
+| Uscita JSON | [Sling Models Exporter con serializzazione Jackson](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) | Servlet Sling predefinito |
 | Gestione versioni | [Per il modello e l'HTL](guidelines.md) | Nessuno |
-| Test | Test unità + Test integrazione | Test integrazione |
-| Consegna | [Tramite github pubblico](https://github.com/adobe/aem-core-wcm-components) | Tramite Avvio rapido |
-| Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) | Proprietario di Adobe |
-| Contributo | Tramite richiesta di pull | Non possibile |
-| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html) | Conforme solo parzialmente allo [standard WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html) |
+| Test | Test di unità + test di integrazione | Test di integrazione |
+| Consegna | [Tramite GitHub pubblico](https://github.com/adobe/aem-core-wcm-components) | Via Quickstart |
+| Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) | Proprietà Adobe |
+| Contributo | Tramite richiesta pull | Impossibile |
+| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html) |
 
 ## Elenco componenti {#component-list}
 
-Nella tabella seguente sono elencati i componenti core disponibili, che collegano all'API e indicano quali componenti di base sostituiscono.
+Nella tabella seguente sono elencati i componenti core disponibili, che si collegano all'API e indicano quali componenti di base sostituire.
 
-| Componente core | Descrizione | Sostituiti i componenti Foundation |
+| Componente core | Descrizione | Componenti di base sostituiti |
 |---|---|---|
-| [Pagina](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page) | Pagina reattiva con editor modelli | `/libs/foundation/components/page /libs/wcm/foundation/components/page` |
+| [Pagina](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page) | Pagina reattiva che utilizza l’editor modelli | `/libs/foundation/components/page /libs/wcm/foundation/components/page` |
 | [Breadcrumb](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v2/breadcrumb) | Navigazione gerarchica delle pagine | `/libs/foundation/components/breadcrumb` |
-| [Titolo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title) | Titolo H 1-H 6 | `/libs/foundation/components/title /libs/wcm/foundation/components/title` |
-| [Testo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text) | Testo RTF | `/libs/foundation/components/text /libs/foundation/components/table /libs/wcm/foundation/components/text` |
-| [Immagine](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image) | Caricamento intelligente e lazy di dimensioni di rappresentazione ottimali | `/libs/foundation/components/image /libs/foundation/components/adaptiveimage /libs/foundation/components/logo /libs/foundation/components/mobileimage  /libs/foundation/components/mobilelogo /libs/wcm/foundation/components/image` |
+| [Titolo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title) | Titolo H1-H6 | `/libs/foundation/components/title /libs/wcm/foundation/components/title` |
+| [Testo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text) | RTF | `/libs/foundation/components/text /libs/foundation/components/table /libs/wcm/foundation/components/text` |
+| [Immagine](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image) | Caricamento intelligente e pigro delle dimensioni di rappresentazione ottimali | `/libs/foundation/components/image /libs/foundation/components/adaptiveimage /libs/foundation/components/logo /libs/foundation/components/mobileimage  /libs/foundation/components/mobilelogo /libs/wcm/foundation/components/image` |
 | [Elenco](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/list/v2/list) | Elenco di pagine | `/libs/foundation/components/list /libs/foundation/components/mobilelist /libs/wcm/foundation/components/list` |
-| [Condivisione social media](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/sharing/v1/sharing) | Widget di condivisione Facebook e Pinterest | `-` |
+| [Condivisione social media](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/sharing/v1/sharing) | widget di condivisione Facebook e Pinterest | `-` |
 | [Contenitore modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/container/v2/container) | Sistema paragrafo modulo reattivo | `/libs/foundation/components/form/start /libs/foundation/components/form/end` |
 | [Testo modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/text/v2/text) | Campo di immissione testo | `/libs/foundation/components/form/text /libs/foundation/components/form/password` |
-| [Opzioni modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options) | Campo di immissione più opzioni | `/libs/foundation/components/form/checkbox /libs/foundation/components/form/radio /libs/foundation/components/form/dropdown` |
-| [Nascosto per modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v2/hidden) | Campo di immissione nascosto | `/libs/foundation/components/form/hidden` |
+| [Opzioni modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options) | Campo di immissione opzioni multiple | `/libs/foundation/components/form/checkbox /libs/foundation/components/form/radio /libs/foundation/components/form/dropdown` |
+| [Nascosto per modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v2/hidden) | Campo di input nascosto | `/libs/foundation/components/form/hidden` |
 | [Pulsante modulo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v2/button) | Pulsante Invia o personalizzato | `/libs/foundation/components/form/submit` |
-| [Navigazione](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/navigation/v1/navigation) | Componente di navigazione del sito che elenca la gerarchia di pagine nidificata | `/libs/foundation/components/topnav /libs/foundation/components/mobiletopnav` |
-| [Navigazione lingua](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/languagenavigation/v1/languagenavigation) | Una lingua e un commutatore per paese che elenca la struttura globale del linguaggio | `-` |
-| [Ricerca rapida](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/search/v1/search) | Componente ricerca che visualizza i risultati come suggerimenti interni in un menu a discesa | `/libs/foundation/components/search` |
-| [Teaser](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/teaser/v1/teaser) | Consente all'autore del contenuto di creare facilmente un teaser con un'immagine, un titolo o un testo RTF e il collegamento a un altro contenuto o ad altre azioni | `-` |
-| [Schede](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs) | Consente all'autore del contenuto di organizzare il contenuto della pagina all'interno di più schede | `-` |
-| [Carosello](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel) | Consente all'autore del contenuto di organizzare il contenuto in un carosello di diapositive | `/libs/foundation/components/carousel` |
+| [Navigazione](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/navigation/v1/navigation) | Un componente di navigazione del sito che elenca la gerarchia di pagine nidificata | `/libs/foundation/components/topnav /libs/foundation/components/mobiletopnav` |
+| [Navigazione lingua](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/languagenavigation/v1/languagenavigation) | Uno switcher di lingua e Paese che elenca la struttura globale della lingua | `-` |
+| [Ricerca rapida](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/search/v1/search) | Componente di ricerca che visualizza i risultati come suggerimenti inseriti in un menu a discesa | `/libs/foundation/components/search` |
+| [Teaser](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/teaser/v1/teaser) | Consente all’autore del contenuto di creare facilmente un teaser per l’ulteriore contenuto utilizzando un’immagine, un titolo o un RTF e collegando altri contenuti o altre azioni | `-` |
+| [Schede](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs) | Consente all’autore del contenuto di organizzare il contenuto della pagina all’interno di più schede | `-` |
+| [Carosello](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel) | Consente all’autore del contenuto di organizzare il contenuto in un carosello rotante di diapositive | `/libs/foundation/components/carousel` |
 | [Frammento di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment) | Consente la visualizzazione di un frammento di contenuto | `-` |
-| [Elenco frammenti di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragmentlist/v1/contentfragmentlist) | Consente la visualizzazione di un elenco di frammenti di contenuto | `-` |
+| [Elenco frammenti di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragmentlist/v1/contentfragmentlist) | Consente di visualizzare un elenco dei frammenti di contenuto | `-` |
 | [Separatore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator) | Separa il contenuto di una pagina | `-` |
-| [Accordion](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/accordion/v1/accordion) | Organizzare i pannelli dei contenuti in un pannello accordion comprimibile | `-` |
-| [Contenitore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container) | Organizzare i componenti all'interno di un contenitore | `-` |
+| [Accordion](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/accordion/v1/accordion) | Organizzare i pannelli dei contenuti in un ambiente comprimibile | `-` |
+| [Contenitore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container) | Organizzare i componenti all’interno di un contenitore | `-` |
 | [Pulsante](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button) | Creare un pulsante su una pagina | `-` |
-| [Scarica](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download) | Aggiungere una risorsa scaricabile a una pagina | `-` |
-| [Frammento esperienza](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/experience-fragment/v1/experience-fragment) | Aggiungere un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
+| [Scarica](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download) | Aggiunta di una risorsa scaricabile a una pagina | `-` |
+| [Frammento esperienza](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/experience-fragment/v1/experience-fragment) | Aggiunta di un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 
-### Componenti imminenti {#upcoming-components}
+### Componenti in arrivo {#upcoming-components}
 
-Per una panoramica della prossima roadmap Core Premium, vedi il [progetto wiki su github](https://github.com/adobe/aem-core-wcm-components/wiki/home).
+Per una panoramica della roadmap di Componente principale in arrivo, vedi il wiki di [progetto su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
 
 ## Aggiornamento dei componenti core {#upgrade-of-core-components}
 
-Un vantaggio dei componenti su versione è che consente di separare la migrazione a una nuova versione AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni dei componenti, consente la singola migrazione di ciascun componente alla nuova versione.
+Un vantaggio dei componenti con versione è rappresentato dal fatto che consente di separare la migrazione a una nuova versione di AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni di componenti, è possibile migrare singolarmente ogni componente alla nuova versione.
 
-Le migrazioni a una nuova versione AEM non influenzeranno l'utilizzo dei componenti core, a condizione che le loro versioni supportino anche la nuova versione AEM alla quale viene trasferito. Le personalizzazioni effettuate ai componenti core non devono essere interessate da alcuna modifica, purché non vengano utilizzate API che sono [state dichiarate obsoleto o rimosse](https://helpx.adobe.com/experience-manager/6-5/release-notes/deprecated-removed-features.html).
+Le migrazioni a una nuova versione di AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione di AEM in cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://helpx.adobe.com/experience-manager/6-5/release-notes/deprecated-removed-features.html).
 
-Le migrazioni a nuove versioni dei componenti core non influenzeranno l'utilizzo del componente, ma le nuove funzioni potrebbero essere introdotte agli autori delle pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe essere necessario adattare le personalizzazioni, per maggiori dettagli consultate [la pagina Personalizzazione componenti](customizing.md#upgrade-compatibility-of-customizations) core.
+Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe tuttavia essere necessario adattare le personalizzazioni, per ulteriori dettagli consultate la pagina [Personalizzazione dei componenti](customizing.md#upgrade-compatibility-of-customizations) core.
 
 ## Quando utilizzare i componenti core? {#when-to-use-the-core-components}
 
-Poiché i componenti core sono completamente nuovi e offrono più vantaggi, è consigliabile utilizzare i nuovi progetti AEM. Per i progetti esistenti, una migrazione deve far parte di un'attività di progetto più grande, ad esempio un rebranding o un refactoring complessivo.
+Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi, si consiglia di utilizzarli nei nuovi progetti AEM. Per i progetti esistenti, una migrazione dovrebbe essere parte di un progetto più ampio, ad esempio un rifacimento o un refactoring complessivo.
 
-Di conseguenza, Adobe fornisce le raccomandazioni seguenti:
+Di conseguenza, Adobe fornisce le seguenti raccomandazioni:
 
-* **Nuovi progetti**
-I nuovi progetti devono sempre tentare di utilizzare componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti di progetto, create un componente personalizzato dopo l'architettura dei componenti impostata nei componenti core. Eccetto ove non possibile, evitate di usare i [componenti di base](developing.md).
-* **La raccomandazione Progetti**
-esistenti continua a utilizzare i componenti [di base](developing.md), a meno che sia pianificato un sito o una funzione di reimpostazione del componente.\
-   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti [di base continueranno a essere supportati.](developing.md)
-* **Nuovi componenti
-personalizzati** Valuta se un componente [di base esistente può essere personalizzato](customizing.md).\
-   In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le Linee guida [sui componenti](guidelines.md).
-* **Componenti
-personalizzati esistenti** Se i componenti funzionano come previsto, conservali così come sono.\
-   In caso contrario, fai riferimento a «Nuovi componenti personalizzati» sopra.
+* **Nuovi progetti** I nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l’architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i componenti [](developing.md)di base.
+* **La** raccomandazione progetti [esistenti viene mantenuta utilizzando i componenti](developing.md)di base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
+   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere sostenuti.](developing.md)
+* **Nuovi componenti** personalizzati Se è possibile personalizzare [un componente](customizing.md)core esistente.\
+   In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le linee guida [sui](guidelines.md)componenti.
+* **Componenti** personalizzati esistenti Se i componenti funzionano come previsto, mantenerli come sono.\
+   In caso contrario, fare riferimento a "Nuovi componenti personalizzati" sopra.
 
 ## Migrazione ai componenti core
 
-Qualsiasi nuovo progetto deve essere implementato con Componenti core. Tuttavia, in genere i progetti esistenti saranno caratterizzati da ampie implementazioni dei componenti di base.
+Qualsiasi nuovo progetto deve essere implementato con i componenti core. Tuttavia, i progetti esistenti avranno generalmente ampie implementazioni dei componenti di base.
 
-Un lavoro più ampio su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) offre spesso la possibilità di passare ai componenti core. Per semplificare questa migrazione, Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l'adozione dei componenti core e della tecnologia AEM più recente.
+Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) spesso offre la possibilità di eseguire la migrazione ai componenti core. Per facilitare questa migrazione, Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l'adozione dei componenti core e della più recente tecnologia AEM.
 
-[Gli strumenti di modernizzazione di AEM](http://opensource.adobe.com/aem-modernize-tools/) consentono la conversione semplice di:
+[Gli strumenti](http://opensource.adobe.com/aem-modernize-tools/) di modernizzazione AEM consentono di convertire facilmente:
 
-* Modelli statici a modelli modificabili
-* Configurazione delle configurazioni ai criteri
-* Componenti di base ai componenti core
-* Interfaccia classica nell'interfaccia touch
+* Modelli statici per modelli modificabili
+* Progettare configurazioni per i criteri
+* Componenti di base per componenti core
+* Interfaccia classica per interfaccia touch
 
-Per ulteriori informazioni sull'utilizzo di questi strumenti, [consulta la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
+Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
->Gli strumenti di modernizzazione AEM sono sforzi della community e non sono supportati o controllati da Adobe.
+>Gli strumenti AEM Modernize sono uno sforzo della community e non sono supportati o giustificati da Adobe.
 
-## Supporto per componente core {#core-component-support}
+## Supporto dei componenti core {#core-component-support}
 
-I componenti core sono parte integrante di AEM e sono supportati così come sono, con gli stessi termini e condizioni di questa distribuzione come parte della sezione Quickstart.
+I componenti core sono parte integrante di AEM e sono supportati così come lo sono, secondo gli stessi termini e condizioni come se fossero stati consegnati come parte del Quickstart.
 
-Come per le altre funzionalità del prodotto AEM, la regola generale è: I componenti vengono inizialmente dichiarati obsoleti e il primo viene rimosso per la seguente release AEM. Questo offre ai clienti almeno un processo di rilascio per passare alla nuova versione del componente, prima di rilasciare il supporto.
+Come per le altre funzioni del prodotto AEM, la regola generale è: I componenti vengono inizialmente dichiarati obsoleti e i primi rimossi per la seguente release di AEM. Questo consente ai clienti di passare alla nuova versione del componente almeno un ciclo di rilascio prima di lasciarne indietro il supporto.
 
-La versione di ciascun componente indica chiaramente le versioni AEM supportate. Quando il supporto viene interrotto per una versione di AEM, questo supporta anche i componenti core per quella versione di AEM.
+La versione di ciascun componente indica chiaramente le versioni AEM supportate. Quando il supporto per una versione di AEM cessa, viene utilizzato anche il supporto dei componenti core per tale versione di AEM.
 
-Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate [la pagina Personalizzazione componenti](customizing.md) core.
+Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate la pagina [Personalizzazione dei componenti](customizing.md) core.
 
-## Supporto per componenti Foundation {#foundation-component-support}
+## Supporto dei componenti di base {#foundation-component-support}
 
-Poiché i componenti di base sono stati gestiti come base per lo sviluppo di progetti in molte versioni AEM, continueranno a essere supportati nel prossimo futuro.
+Poiché i componenti di base sono stati utilizzati come base per lo sviluppo di molti progetti in molte versioni di AEM, continueranno a essere supportati nel prossimo futuro.
 
-Tuttavia, l'enfasi di sviluppo di Adobe è stata spostata sui componenti core e le nuove funzioni saranno aggiunte a loro, mentre [quasi tutti i componenti di fondazione sono stati rimossi da AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) e verranno apportate solo correzioni ai componenti Foundation.
+Tuttavia, l'enfasi di sviluppo di Adobe si è spostata sui componenti core e le nuove funzioni verranno aggiunte a tali componenti, mentre [quasi tutti i componenti di base sono stati dichiarati obsoleti con AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) e solo le correzioni di bug verranno apportate ai componenti di base in futuro.
 
-**Leggi avanti:**
+**Ulteriori informazioni:**
 
-* [Utilizzo dei componenti](using.md) core: diventa disponibile con componenti core nel tuo progetto.
-* [Linee guida sui componenti](guidelines.md) - per apprendere i pattern di implementazione dei componenti core.
+* [Utilizzo dei componenti](using.md) di base: per iniziare a usare i componenti di base nel tuo progetto.
+* [Linee guida](guidelines.md) per i componenti - per apprendere i pattern di implementazione dei componenti core.
