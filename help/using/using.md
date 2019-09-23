@@ -2,45 +2,45 @@
 title: Utilizzo dei componenti core
 seo-title: Utilizzo dei componenti core
 description: 'null'
-seo-description: '" Per rendere disponibili i componenti core nel tuo progetto, sono disponibili tre passaggi: scaricare e installare, creare componenti proxy, caricare gli stili di base e consentire i componenti nei modelli. "'
-uuid: a 1 ef 2 acf -8226-4510-838 b-f 5 fae 196 f 9 f 1
+seo-description: '"Per iniziare a utilizzare i componenti core nel tuo progetto, devi seguire tre passaggi: scaricate e installate, create componenti proxy, caricate gli stili di base e consentite i componenti nei modelli."'
+uuid: a1ef2acf-8226-4510-838b-f5fae196f9f1
 contentOwner: Utente
 content-type: riferimento
-topic-tags: sviluppo
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: 1703 a 171-830 c -477 e-a 34 f -99 caba 841 ec 4
+topic-tags: development
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: 1703a171-830c-477e-a34f-99caba841ec4
 disttype: dist5
 gnavtheme: chiaro
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 632d6abb1f13667cc0457152268d50af3bfabfc4
+source-git-commit: a1d725b6fc32112323e9939e8870922410a6c4f3
 
 ---
 
 
 # Utilizzo dei componenti core{#using-core-components}
 
-Per essere in esecuzione con [Componenti core](developing.md) nel tuo progetto, sono disponibili quattro passaggi, descritti singolarmente nelle sezioni seguenti:
+Per iniziare a utilizzare i componenti [](developing.md) core nel progetto, sono disponibili quattro passaggi, descritti singolarmente nelle sezioni seguenti:
 
 1. [Download e installazione](#download-and-install)
 1. [Creare componenti proxy](#create-proxy-components)
-1. [Carica stili di base](#load-the-core-styles)
-1. [Abilitare i componenti](#allow-the-components)
+1. [Caricare gli stili di base](#load-the-core-styles)
+1. [Attivare i componenti](#allow-the-components)
 
 >[!NOTE]
 >
->In alternativa, per istruzioni più ampie su come iniziare da zero con la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti, la seguente esercitazione su più parti potrebbe interessare:\
+>In alternativa, per istruzioni più ampie su come iniziare da zero con la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti, potrebbe essere interessante la seguente esercitazione multiparte:\
 >[Guida introduttiva ad AEM Sites - Esercitazione WKND](wknd-tutorial.md)
 
 ## Download e installazione {#download-and-install}
 
-Una delle idee guidate dietro i componenti core è la flessibilità. Il rilascio di nuove versioni dei Componenti core consente più spesso ad Adobe di essere più flessibile nella distribuzione delle nuove funzioni. Gli sviluppatori possono, a loro volta, essere flessibili nei componenti che desiderano integrare nei loro progetti e con la frequenza con cui desiderano aggiornarli.
+Una delle idee che stanno dietro ai componenti core è la flessibilità. Rilasciando nuove versioni dei componenti core più spesso, Adobe è più flessibile nel fornire nuove funzioni. Gli sviluppatori possono a loro volta essere flessibili in base ai componenti che scelgono di integrare nei loro progetti e alla frequenza con cui desiderano aggiornarli.
 
-Per questo motivo, i componenti core non fanno parte del rapido avvio in modalità di produzione (senza contenuto di esempio). Pertanto, il primo passaggio consiste [nel scaricare l&#39;ultimo pacchetto di contenuto rilasciato da github](https://github.com/adobe/aem-core-wcm-components/releases/latest) e per installarlo nei tuoi ambienti AEM.
+Per questo motivo, i componenti core non fanno parte del lancio rapido quando si avvia in modalità di produzione (senza contenuti di esempio). Pertanto, il primo passaggio consiste nel [scaricare l’ultimo pacchetto di contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei vostri ambienti AEM.
 
-Esistono diversi modi per automatizzare il contenuto, ma il modo più semplice per installare rapidamente un pacchetto di contenuti su un&#39;istanza è utilizzare Gestione pacchetti; consultate [Installare pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html). Inoltre, una volta eseguita l&#39;istanza di pubblicazione, sarà necessario replicare il pacchetto all&#39;editore; consultate [Replica dei pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+Esistono diversi modi per automatizzare questo processo, ma il modo più semplice per installare rapidamente un pacchetto di contenuti in un'istanza è utilizzare Gestione pacchetti; consultate [Installare i pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html). Inoltre, una volta eseguita un'istanza di pubblicazione, dovrete replicare il pacchetto all'editore; consultate [Replica dei pacchetti](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 <!-- 
 
@@ -54,27 +54,24 @@ Should we be promoting embedding the core-component package as an artifact in a 
 
 ## Creare componenti proxy {#create-proxy-components}
 
-Per motivi illustrati nella [sezione Pattern](guidelines.md#proxy-component-pattern) di componente proxy, i componenti core non devono essere indirizzati direttamente dal contenuto. Per evitare tale situazione, tutti appartengono a un gruppo di componenti nascosto ( `.core-wcm` o `.core-wcm-form`), che ne impedirà la visualizzazione direttamente nell&#39;editor.
+Per motivi illustrati nella sezione Pattern [componente](guidelines.md#proxy-component-pattern) proxy, i componenti core non devono essere direttamente citati dal contenuto. Per evitare che ciò accada, appartengono tutti a un gruppo di componenti nascosto ( `.core-wcm` o `.core-wcm-form`), il che ne impedisce la visualizzazione diretta nell’editor.
 
-Al contrario, devono essere creati componenti specifici per il sito, che definiscono il nome e il gruppo di componenti desiderati per visualizzare gli autori delle pagine e fare riferimento a un componente core come super type. Questi componenti specifici per il sito sono talvolta denominati &quot;componenti proxy&quot;, perché non devono contenere nulla e servono principalmente per definire la versione di un componente da utilizzare per il sito. Tuttavia, quando si personalizzano i componenti [core](customizing.md), questi componenti proxy riproducono un ruolo essenziale per la personalizzazione logica e logica.
+Occorre invece creare componenti specifici per il sito, che definiscano il nome e il gruppo del componente desiderato da visualizzare agli autori della pagina, e che facciano riferimento a ciascun componente core come super-tipo. Questi componenti specifici del sito sono talvolta denominati "componenti proxy", perché non devono contenere nulla e servono principalmente a definire la versione di un componente da utilizzare per il sito. Tuttavia, quando si personalizzano i componenti [](customizing.md)core, questi componenti proxy svolgono un ruolo essenziale per la marcatura e la personalizzazione logica.
 
-Pertanto, per ogni componente core che è necessario utilizzare per un sito, devi:
+Pertanto, per ogni componente core che si desidera utilizzare per un sito, è necessario:
 
-1. Create un componente proxy corrispondente nella cartella dei componenti del sito.
+1. Create un componente proxy corrispondente nella cartella Components del sito.
 
-   **Esempio**
-in `/apps/my-site/components` Creazione di un nodo titolo di tipo `cq:Component`
+   **Esempio** In `/apps/my-site/components` creare un nodo titolo di tipo `cq:Component`
 
-1. Point to the corresponding Core Component version with the super-type.
+1. Puntare alla versione del componente core corrispondente con il super-tipo.
 
-   **Esempio**
-Aggiungi seguente proprietà:\
+   **Esempio** Aggiungi la seguente proprietà:\
    `sling:resourceSuperType="core/wcm/components/title/v1/title"`
 
-1. Definite il gruppo, il titolo e facoltativamente la descrizione del componente. Questi valori sono specifici del progetto e stabiliscono la modalità di esposizione del componente agli autori.
+1. Definire il gruppo, il titolo e, facoltativamente, la descrizione del componente. Questi valori sono specifici del progetto e determinano in che modo il componente viene esposto agli autori.
 
-   **Esempio**
-Aggiungi le seguenti proprietà:
+   **Esempio**: aggiungere le seguenti proprietà:
 
    ```shell
    componentGroup="My Site"
@@ -82,9 +79,9 @@ Aggiungi le seguenti proprietà:
    jcr:description="Section Heading"
    ```
 
-Ad esempio, osservate il [componente Titolo del sito](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/content/title/.content.xml)di riferimento We. Retail, un esempio di componente proxy creato in questo modo.
+Ad esempio, guardate il componente [titolo del sito](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/content/title/.content.xml)di riferimento We.Retail, che è un buon esempio di un componente proxy creato in quel modo.
 
-## Carica stili di base {#load-the-core-styles}
+## Caricare gli stili di base {#load-the-core-styles}
 
 <!-- 
 
@@ -116,10 +113,10 @@ Load the Core Client Libraries sounds way better
 
  -->
 
-1. Se non lo avete ancora fatto, create una [libreria](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html) client contenente tutti i file CSS e JS richiesti per il sito.
-1. Nella libreria client del sito, aggiungi le dipendenze ai componenti core necessari. Questa operazione viene eseguita aggiungendo una `embed` proprietà.
+1. Se non ancora, create una libreria [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html) client che contenga tutti i file CSS e JS necessari per il sito.
+1. Nella libreria client del sito, aggiungere le dipendenze ai componenti core eventualmente necessari. Questa operazione viene eseguita aggiungendo una `embed` proprietà.
 
-   Ad esempio, per includere le librerie client di tutti i componenti core v 1, la proprietà da aggiungere sarà:
+   Ad esempio, per includere le librerie client di tutti i componenti core v1, la proprietà da aggiungere sarà:
 
    ```shell
    embed="[  
@@ -131,19 +128,19 @@ Load the Core Client Libraries sounds way better
    ]"
    ```
 
-Accertatevi che i componenti proxy e le librerie client siano stati distribuiti nell&#39;ambiente AEM prima di passare alla sezione successiva.
+Prima di passare alla sezione successiva, accertati che i componenti proxy e le librerie client siano stati distribuiti nell’ambiente AEM.
 
-## Consenti ai componenti {#allow-the-components}
+## Consenti componenti {#allow-the-components}
 
-I seguenti passaggi vengono eseguiti nell&#39;Editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html).
+La procedura seguente viene eseguita nell'Editor [](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)modelli.
 
-1. Nell&#39;Editor modelli, selezionare il Contenitore di layout e aprire il criterio.
-1. Nell&#39;elenco dei componenti consentiti, selezionate i componenti proxy creati in precedenza, che dovrebbero essere visualizzati sotto il gruppo di componenti assegnato loro. Una volta apportate le modifiche, applicate le modifiche.
-1. Facoltativamente, per i componenti con una finestra di dialogo di progettazione, possono essere preconfigurati.
+1. Nell'Editor modelli, selezionare il Contenitore di layout e aprire il relativo criterio.
+1. Nell’elenco Componenti consentiti, selezionare i componenti proxy creati in precedenza, che devono essere visualizzati sotto il gruppo di componenti assegnato. Al termine, applicate le modifiche.
+1. Facoltativamente, per i componenti che dispongono di una finestra di dialogo di progettazione possono essere preconfigurati.
 
-Tutto qui! Nelle pagine create dal modello modificato, ora dovrebbe essere possibile utilizzare i componenti appena creati.
+È tutto! Nelle pagine create dal modello modificato, è ora possibile utilizzare i componenti appena creati.
 
-**Leggi avanti:**
+**Ulteriori informazioni:**
 
-* [Personalizzazione dei componenti](customizing.md) core - per apprendere come formattare e personalizzare i componenti core.
-* [Linee guida sui componenti](guidelines.md) - per apprendere i pattern di implementazione dei componenti core.
+* [Personalizzazione dei componenti](customizing.md) di base: per informazioni su come definire lo stile e personalizzare i componenti di base.
+* [Linee guida](guidelines.md) per i componenti - per apprendere i pattern di implementazione dei componenti core.
