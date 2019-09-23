@@ -1,12 +1,12 @@
 ---
-title: Componente immagine (v 1)
-seo-title: Componente immagine (v 1)
-description: Il componente Immagine componente core è una funzione di modifica locale delle funzioni dei componenti immagine.
-seo-description: Il componente Immagine componente core è una funzione di modifica locale delle funzioni dei componenti immagine.
-uuid: 20 ea 7921-511 d -4 d 3 a-b 3 df-c 2 f 2 c 1 d 8455 d
+title: Componente immagine (v1)
+seo-title: Componente immagine (v1)
+description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
+seo-description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
+uuid: 20ea7921-511d-4d3a-b3df-c2f2c1d8455d
 content-type: riferimento
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: ab 9041 ab-e 29 e -4277-b 326-85 ab 37 df 8413
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: ab9041ab-e29e-4277-b326-85ab37df8413
 index: n
 translation-type: tm+mt
 source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
@@ -14,36 +14,36 @@ source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
 ---
 
 
-# Componente immagine (v 1){#image-component-v}
+# Componente immagine (v1){#image-component-v}
 
-Il componente Immagine componente core è una funzione di modifica locale delle funzioni dei componenti immagine.
+Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 
 ## Utilizzo {#usage}
 
-Il componente Immagine permette di posizionare facilmente risorse di immagini e offerte locali. Offre selezioni immagine adattive con caricamento lazy e ritaglio per l&#39;autore del contenuto.
+Il componente Immagine consente di posizionare facilmente le risorse di immagine e offre funzioni di modifica diretta. Offre selezione adattiva delle immagini con caricamento lento e ritaglio per l’autore del contenuto.
 
-Le larghezze delle immagini consentite e il ritaglio e le impostazioni aggiuntive possono essere definiti dall&#39;autore del modello nella finestra di dialogo [di progettazione](image-v1.md#main-pars_title_1995166862). L&#39;editor di contenuto può caricare o selezionare le risorse nella finestra di dialogo [Configura](image-v1.md#main-pars_title_55926120) e ritagliare l&#39;immagine nella finestra di dialogo [di modifica](image-v1.md#main-pars_title). Per maggiore praticità è disponibile anche una semplice modifica diretta dell&#39;immagine.
+Le larghezze di immagine consentite, il ritaglio e impostazioni aggiuntive possono essere definiti dall’autore del modello nella finestra di dialogo [](image-v1.md#main-pars_title_1995166862)della progettazione. L’editor del contenuto può caricare o selezionare le risorse nella finestra di dialogo [di](image-v1.md#main-pars_title_55926120) configurazione e ritagliare l’immagine nella finestra di dialogo [di](image-v1.md#main-pars_title)modifica. Per maggiore comodità, è disponibile anche una semplice modifica locale dell’immagine.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive v 1 del componente Immagine, originariamente introdotto con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Immagine, introdotta originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della release v 1 del componente Immagine.
+Nella tabella seguente è elencata la compatibilità di v1 del componente Immagine.
 
-| Versione di AEM | Componente immagine v 1 |
+| Versione di AEM | Componente immagine v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la v 1 del componente Immagine.
+>Questo documento descrive la versione 1 del componente Immagine.
 >
->Per informazioni dettagliate sulla versione corrente del componente Immagine, consultate [il documento Componente](image.md) Immagine.
+>Per informazioni dettagliate sulla versione corrente del componente Immagine, consultate il documento sul componente [](image.md) Immagine.
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -76,32 +76,32 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 >[!NOTE]
 >
->L&#39;esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consultate le informazioni [di compatibilità per i componenti core v 1](versions.md#main-pars_title_236368006) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](versions.md#main-pars_title_236368006) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-Oltre alla finestra di dialogo di [modifica standard](image-v1.md#main-pars_title) e [alla finestra di dialogo di progettazione](image-v1.md#main-pars_title_1995166862), il componente Immagine offre una finestra di dialogo di configurazione in cui viene definito l&#39;immagine stessa insieme alla descrizione e alle proprietà di base.
+Oltre alla finestra di dialogo [standard per la](image-v1.md#main-pars_title) modifica e la [](image-v1.md#main-pars_title_1995166862)progettazione, il componente Immagine offre una finestra di dialogo di configurazione in cui l’immagine stessa è definita insieme alla descrizione e alle proprietà di base.
 
 ![](assets/chlimage_1-50.png)
 
 * **Risorsa immagine**
-   * Rilasciate una risorsa dal Browser [risorse](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) o toccate l&#39;opzione **di ricerca** da caricare da un file system locale.
-   * Tocca o fai clic su **Cancella** per deselezionare l&#39;immagine correntemente selezionata.
-   * Toccate o fate clic **su Modifica** per [gestire i rendering della risorsa](https://helpx.adobe.com/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) nell&#39;editor risorse.
+   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) risorse o toccate l'opzione **Sfoglia** per caricarla da un file system locale.
+   * Toccate o fate clic su **Cancella** per deselezionare l'immagine attualmente selezionata.
+   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://helpx.adobe.com/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) nell’editor risorse.
 
-* **L&#39;immagine è decorativa** - Controlla se l&#39;immagine deve essere ignorata dalla tecnologia di accessibilità e quindi non richiede un testo alternativo. Ciò si applica solo alle immagini decorative.
-* **Testo alternativo** - Alternative testuali rispetto al significato o alla funzione dell&#39;immagine, per i lettori ipovedenti.
+* **L'immagine è decorativa** - Verificare se l'immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+* **Testo** alternativo: alternativa testuale al significato o alla funzione dell'immagine, per lettori ipovedenti.
 * **Collegamento**
-   * Collegate l&#39;immagine a un&#39;altra risorsa.
-   * Utilizza la finestra di dialogo di selezione per collegare un&#39;altra risorsa AEM.
-   * Se non collegate una risorsa AEM, immettete l&#39;URL assoluto. Gli URL non soliti verranno interpretati come relativi ad AEM.
+   * Collegare l’immagine a un’altra risorsa.
+   * Utilizzate la finestra di dialogo di selezione per collegarvi a un’altra risorsa AEM.
+   * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi ad AEM.
 
-* **Didascalia** : le informazioni aggiuntive sull&#39;immagine visualizzate sotto l&#39;immagine sono predefinite.
-* **Visualizza didascalia come pop-up** - Quando questa opzione è selezionata, la didascalia non viene visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il mouse sull&#39;immagine.
+* **Didascalia** - Per impostazione predefinita, sotto l’immagine vengono visualizzate ulteriori informazioni sull’immagine.
+* **Visualizza la didascalia come pop-up** - Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l'immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull'immagine.
 
-## Finestra di dialogo di modifica {#edit-dialog}
+## Edit Dialog {#edit-dialog}
 
-La finestra di dialogo di modifica consente all&#39;autore del contenuto di ritagliare, modificare la mappa di lancio e applicare lo zoom all&#39;immagine.
+La finestra di dialogo di modifica consente all’autore del contenuto di ritagliare, modificare la mappa del lancio e ingrandire l’immagine.
 
 ![](assets/chlimage_1-8.png)
 
@@ -109,11 +109,11 @@ La finestra di dialogo di modifica consente all&#39;autore del contenuto di rita
 
    ![](assets/chlimage_1-9.png)
 
-   Selezionando questa opzione si apre un menu a discesa per le proporzioni di ritaglio predefinite.
+   Selezionando questa opzione si apre un elenco a discesa per le proporzioni di ritaglio predefinite.
 
-   * Scegliete l&#39;opzione **Mano libera** per definire il ritaglio.
-   * Scegliete l&#39;opzione **Rimuovi ritaglio** per visualizzare la risorsa originale.
-   Una volta selezionata l&#39;opzione Ritaglio, usate le maniglie blu per ridimensionare il ritaglio sull&#39;immagine.
+   * Scegliete l’opzione Mano **** libera per definire il ritaglio personalizzato.
+   * Scegliete l’opzione **Rimuovi ritaglio** per visualizzare la risorsa originale.
+   Una volta selezionata l’opzione di ritaglio, usate le maniglie blu per ridimensionare il ritaglio sull’immagine.
 
    ![](assets/chlimage_1-10.png)
 
@@ -121,37 +121,36 @@ La finestra di dialogo di modifica consente all&#39;autore del contenuto di rita
 
    ![](assets/chlimage_1-11.png)
 
-   Utilizzare questa opzione per ruotare l&#39;immagine di 90 ° a destra (in senso orario).
+   Usate questa opzione per ruotare l’immagine di 90° verso destra (in senso orario).
 
-* Mappa lancio
+* Avvia mappa
 
    ![](assets/chlimage_1-12.png)
 
-   Utilizzate questa opzione per applicare una mappa di lancio all&#39;immagine. Selezionate questa opzione per aprire una nuova finestra che consente all&#39;utente di selezionare la forma della mappa:
+   Utilizzate questa opzione per applicare una mappa di lancio all'immagine. Selezionando questa opzione si apre una nuova finestra che consente all'utente di selezionare la forma della mappa:
 
    * **Aggiungi mappa rettangolare**
    * **Aggiungi mappa circolare**
    * **Aggiungi mappa poligono**
 
-      * Per impostazione predefinita, viene aggiunta una mappa triangolare. Fare doppio clic su una riga della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
-   Una volta selezionata la forma della mappa, questa viene sovrapposta all&#39;immagine che consente il ridimensionamento. Trascinare e rilasciare le maniglie di ridimensionamento blu per regolare la forma.
+      * Per impostazione predefinita, aggiunge una mappa a triangolo. Fare doppio clic su una linea della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
+   Una volta selezionata, la forma mappa viene sovrapposta all'immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
 
    ![](assets/chlimage_1-13.png)
 
-   Dopo aver ridimensionato la mappa di avvio, fare clic su di essa per aprire una barra degli strumenti mobile per definire il percorso del collegamento.
+   Dopo aver ridimensionato la mappa del lancio, fate clic su di essa per aprire una barra degli strumenti mobile e definire il percorso del collegamento.
 
    * **Percorso**
-      * Utilizzare l&#39;opzione Selettore percorso per selezionare un percorso in AEM
-      * Se il percorso non è in AEM, usate l&#39;URL assoluto. I percorsi non assoluti verranno interpretati in base ad AEM.
+      * Utilizzate l'opzione Selettore percorso per selezionare un percorso in AEM
+      * Se il percorso non è in AEM, usate l’URL assoluto. I percorsi non assoluti verranno interpretati in relazione ad AEM.
 
-      * **Testo**
-Alt Descrizione alternativa della destinazione del percorso
+      * **Testo** Alt Descrizione alternativa della destinazione del percorso
       * **Destinazione**
          * **Stessa scheda**
          * **Nuova scheda**
          * **Frame principale**
          * **Frame superiore**
-   Toccate o fate clic sulla spunta blu da salvare, sulla x nera da annullare e sul cestino rosso per eliminare la mappa.
+   Toccate o fate clic sul segno di spunta blu per salvare, sulla x nera per annullare e sul cestino rosso per eliminare la mappa.
 
    ![](assets/chlimage_1-14.png)
 
@@ -159,61 +158,60 @@ Alt Descrizione alternativa della destinazione del percorso
 
    ![](assets/chlimage_1-15.png)
 
-   Se l&#39;immagine è già stata ingrandita, usate questa opzione per ripristinare il livello di zoom.
+   Se l’immagine è già stata ingrandita, usate questa opzione per ripristinare il livello di zoom.
 
 * Apri cursore zoom
 
    ![](assets/chlimage_1-16.png)
 
-   Usate questa opzione per visualizzare un cursore per controllare il livello di zoom dell&#39;immagine.
+   Usate questa opzione per visualizzare un cursore per controllare il livello di zoom dell’immagine.
 
    ![](assets/chlimage_1-17.png)
 
-L&#39;editor locale può essere usato anche per modificare l&#39;immagine. A causa di limiti di spazio, sono disponibili solo le opzioni di base. Per le opzioni di modifica complete, utilizzate la modalità schermo intero.
+L’editor locale può anche essere usato per modificare l’immagine. A causa di limiti di spazio, sono disponibili solo opzioni di base in linea. Per le opzioni di modifica completa, utilizzate la modalità a schermo intero.
 
 ![](assets/chlimage_1-18.png)
 
 >[!NOTE]
 >
->Le operazioni di modifica delle immagini (ritaglio, capovolgimento, rotazione) non sono supportate per le immagini GIF. Tutte le modifiche apportate in modalità di modifica a GIF non saranno persistenti.
+>Le operazioni di modifica delle immagini (ritaglio, capovolgimento, rotazione) non sono supportate per le immagini GIF. Eventuali modifiche apportate in modalità di modifica ai GIF non verranno mantenute.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i caricamenti di ritaglio, caricamento e rotazione con il componente.
+La finestra di dialogo Progettazione consente all’autore del modello di definire i caricamenti di ritaglio, caricamento e rotazione eseguiti dall’autore del contenuto quando utilizza questo componente.
 
 ### Principale {#main}
 
-Nella scheda **Principale** è possibile definire un elenco di larghezze consentite in pixel affinché l&#39;immagine carichi automaticamente la larghezza più appropriata dall&#39;elenco.
+On the **Main** tab you can define a list of allowed widths in pixels for the image to automatically load the most appropriate width from the list.
 
 ![](assets/chlimage_1-51.png)
 
-Toccate o fate clic sul pulsante Aggiungi per aggiungere un&#39;altra dimensione.
+Toccate o fate clic sul pulsante Aggiungi per aggiungere un’altra dimensione.
 
-* Utilizzare le maniglie di acquisizione per riordinare l&#39;ordine delle dimensioni.
-* Usate l&#39;icona Elimina per rimuovere una larghezza.
+* Utilizzare le maniglie per riordinare l'ordine delle dimensioni.
+* Utilizzate l'icona delete per rimuovere una larghezza.
 
-Per impostazione predefinita, il caricamento delle immagini viene differito finché non diventa visibile. Selezionate l&#39;opzione **Disattiva caricamento lento** per caricare le immagini al caricamento della pagina.
+Per impostazione predefinita, il caricamento delle immagini viene differito finché non diventano visibili. Selezionate l’opzione **Disattiva caricamento** lento per caricare le immagini al caricamento della pagina.
 
 ### Funzioni {#features}
 
-Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori di contenuto quando si utilizza il componente, quali opzioni di caricamento, orientamento e ritaglio.
+Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori dei contenuti quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
 
 * Origine
 
    ![](assets/chlimage_1-19.png)
 
-   Selezionate l&#39;opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuto di caricare le immagini dal proprio computer locale. Per obbligare gli autori di contenuto a selezionare solo risorse da AEM, deselezionate questa opzione.
+   Selezionate l’opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuti di caricare immagini dal computer locale. Per obbligare gli autori di contenuti a selezionare solo le risorse da AEM, deselezionate questa opzione.
 
 * Orientamento
 
    ![](assets/chlimage_1-20.png)
 
-   * **Rotate** - Use this option to allow the content author to use the **Rotate Right** option.
-   * **Rifletti**
-Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
+   * **Ruota** - Utilizzate questa opzione per consentire all'autore del contenuto di utilizzare l'opzione **Ruota a destra** .
+   * **Capovolgi** Utilizzate questa opzione per consentire all’autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
    >[!CAUTION]
    >
-   >L&#39;opzione **Rifletti** è disattivata per impostazione predefinita. Attivando i pulsanti **Rifletti in verticale** e **Capovolgi orizzontalmente** nella finestra di dialogo di modifica del componente Immagine, la funzione non è supportata da AEM e tutte le modifiche apportate utilizzando queste opzioni non vengono mantenute.
+   >Per impostazione predefinita, l’opzione **Rifletti** è disattivata. Attivando questa opzione, i pulsanti **Rifletti in verticale** e **Rifletti in orizzontale** vengono visualizzati nella finestra di dialogo di modifica del componente immagine. Tuttavia, al momento la funzione non è supportata da AEM e le modifiche apportate con queste opzioni non vengono mantenute.
 
 <!-- 
 Comment Type: remark
@@ -227,20 +225,20 @@ Last Modified Date: 2017-11-20T05:51:34.378-0500
 
    ![](assets/chlimage_1-21.png)
 
-   Selezionate l&#39;opzione **Consenti ritaglio** per consentire all&#39;autore del contenuto di ritagliare l&#39;immagine nel componente nella finestra di dialogo di modifica.
+   Selezionate l’opzione **Consenti ritaglio** per consentire all’autore del contenuto di ritagliare l’immagine nel componente nella finestra di dialogo di modifica.
    * Fate clic su **Aggiungi** per aggiungere proporzioni di ritaglio predefinite.
-   * Inserite un nome descrittivo che verrà mostrato nel menu a discesa **Avvia ritaglio** .
-   * Inserite il rapporto numerico dell&#39;aspetto.
-   * Utilizzare le maniglie trascinate per riordinare l&#39;ordine delle proporzioni
-   * Usate l&#39;icona del cestino per eliminare le proporzioni.
+   * Immettete un nome descrittivo che verrà visualizzato nel menu a discesa **Avvia ritaglio** .
+   * Immettete il rapporto numerico dell’aspetto.
+   * Usate le maniglie di trascinamento per riordinare l’ordine delle proporzioni
+   * Usate l’icona del cestino per eliminare le proporzioni.
    >[!CAUTION]
    >
-   >In AEM, le proporzioni ritagliate sono definite **come altezza/larghezza**. Ciò si differenzia dalla definizione convenzionale di larghezza/altezza e viene effettuata per motivi di compatibilità precedenti. Gli autori di contenuto non saranno a conoscenza di alcuna differenza purché sia indicato un nome chiaro del rapporto, in quanto il nome viene visualizzato nell&#39;interfaccia utente e non il rapporto stesso.
+   >Note that in AEM, crop aspect ratios are defined as **height/width**. Ciò è diverso dalla definizione convenzionale di larghezza/altezza ed è fatto per motivi di compatibilità legacy. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia indicato un nome chiaro del rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non il rapporto stesso.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente [Immagine è disponibile su github](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/image/v1/image).
+La documentazione tecnica più recente sul componente Immagine [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/image/v1/image).
 
-L&#39;intero progetto componenti core può essere scaricato da github.
+L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
