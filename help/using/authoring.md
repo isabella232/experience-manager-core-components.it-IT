@@ -1,27 +1,27 @@
 ---
 title: Authoring con i componenti core
 seo-title: Authoring con i componenti core
-description: In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine create - Componenti core offrono funzionalità di authoring flessibili e ricche di funzionalità.
-seo-description: In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine create - Componenti core offrono funzionalità di authoring flessibili e ricche di funzionalità.
-uuid: 4 a 54 cd 4 c -3 d 89-4683-8301-bf 1 e 634736 e 3
+description: In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine create. I componenti core offrono funzionalità di authoring flessibili e avanzate.
+seo-description: In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine create. I componenti core offrono funzionalità di authoring flessibili e avanzate.
+uuid: 4a54cd4c-3d89-4683-8301-bf1e634736e3
 content-type: riferimento
 topic-tags: authoring
-discoiquuid: 8751 e 490-d 427-44 f 2-b 767-51935 afda 988
+discoiquuid: 8751e490-d427-44f2-b767-51935afda988
 translation-type: tm+mt
 source-git-commit: b6fbef1cff2908533df6573cd3a92266857ba93f
 
 ---
 
 
-# Autore con componenti core
+# Creazione con componenti core
 
 In Adobe Experience Manager, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create.
 
 I componenti core offrono funzionalità di authoring flessibili e avanzate. The [We.Retail reference site](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) illustrates how the core components can be used.
 
-Per provare i componenti core e vedere esempi di opzioni di configurazione e output HTML e JSON, visita la [Libreria componenti](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html).
+Per conoscere i componenti core e vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html)componenti.
 
-Per un'introduzione dettagliata agli sviluppatori per l'implementazione dei componenti core su un progetto AEM, [consulta l'esercitazione WKND.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+Per un’introduzione più dettagliata e orientata agli sviluppatori all’implementazione dei componenti core in un progetto AEM, consultate [l’esercitazione WKND.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
 
 >[!NOTE]
 >
@@ -29,69 +29,69 @@ Per un'introduzione dettagliata agli sviluppatori per l'implementazione dei comp
 
 >[!CAUTION]
 >
->I componenti core [richiedono AEM 6.3 o versione successiva](versions.md) e richiedono l'uso di [modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html). Non funzionano con l'interfaccia classica né con i modelli statici.
+>I componenti core [richiedono AEM 6.3 o versione successiva](versions.md) e richiedono l’uso di modelli [](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)modificabili. Non funzionano né con l’interfaccia classica né con modelli statici.
 
 ## Authoring con i componenti core {#authoring-with-core-components}
 
-In qualità di autore noterete diversi vantaggi dei componenti core, tra cui:
+Come autore, noterete diversi vantaggi dei componenti core, tra cui:
 
 * Simple to use and well-integrated with the [page editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)
 
-* Funzionalità avanzate per contenere molti casi d'uso [come illustrato in We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) e nella libreria [Componenti](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html)
+* Funzionalità avanzate per soddisfare molti casi di utilizzo, come [illustrato in We.Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html) e nella libreria [di componenti](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html)
 
-* [Preconfigurabile](#pre-configuring-core-components) per definire quali funzioni sono disponibili per gli autori di pagine tramite l'editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+* [Possibilità di pre-configurazione](#pre-configuring-core-components) per definire le funzioni disponibili per gli autori di pagine tramite l’editor [modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
 
 * Built around [accessibility guidelines](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
 
 * Built to support [responsive layout](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html)
 
-* Creato per supportare [facilmente la localizzazione](localization.md)
+* Progettato per supportare una localizzazione [semplice](localization.md)
 
 Components are available on the **Components** tab of the side panel of the page editor when [editing a page](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html).
 
-I componenti sono raggruppati in base alle categorie denominate gruppi di componenti per organizzare e filtrare i componenti in modo semplice. Il nome del gruppo di componenti viene visualizzato con il componente nel browser [Componenti](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) ed è anche possibile filtrare per gruppo per trovare facilmente il componente giusto.
+I componenti sono raggruppati in base alle categorie denominate gruppi di componenti per organizzare e filtrare facilmente i componenti. Il nome del gruppo di componenti viene visualizzato con il componente nel browser [dei](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) componenti ed è anche possibile filtrare per gruppo per trovare facilmente il componente corretto.
 
 >[!NOTE]
 >
->I componenti core sono per impostazione predefinita parte di un gruppo nascosto e non sono visibili nel browser Componenti.
+>Per impostazione predefinita, i componenti core fanno parte di un gruppo nascosto e non sono visibili nel browser dei componenti.
 >
 >Aggiungete i componenti richiesti a un gruppo visibile o personalizzateli affinché siano disponibili per gli autori.
 
-## Preconfigurazione dei componenti core {#pre-configuring-core-components}
+## Pre-configurazione dei componenti core {#pre-configuring-core-components}
 
-Configuring Foundation Components was the job of a developer. Tuttavia, con i componenti core, l'autore di un modello ora può configurare una serie di funzionalità tramite l'editor modelli.
+La configurazione dei componenti di base era il lavoro di uno sviluppatore. Tuttavia, con i componenti core, un autore di modelli può ora configurare diverse funzionalità tramite l'editor modelli.
 
-Ad esempio, se un componente immagine non consente il caricamento di immagini dal file system o se un componente di testo consenti solo determinate formattazioni, queste funzioni possono essere attivate o disattivate con un semplice clic.
+Ad esempio, se un componente immagine non deve consentire il caricamento di immagini dal file system, o se un componente di testo deve consentire solo la formattazione di alcuni paragrafi, queste funzioni possono essere attivate o disattivate con un semplice clic.
 
 Per ulteriori informazioni, consultate [Creazione di modelli](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) di pagina.
 
-### Modifica e progettazione di finestre di dialogo {#edit-and-design-dialogs}
+### Finestre di dialogo Modifica e Progettazione {#edit-and-design-dialogs}
 
-Poiché i componenti core possono essere preconfigurati dagli autori dei modelli per definire le opzioni consentite come parte di un modello e quindi configurate dall'autore della pagina per definire il contenuto effettivo della pagina, ogni componente può avere opzioni in due finestre di dialogo diverse.
+Poiché i componenti core possono essere preconfigurati dagli autori dei modelli per definire le opzioni consentite come parte di un modello, e successivamente configurati dall'autore della pagina per definire il contenuto effettivo della pagina, ciascun componente può avere opzioni in due diverse finestre di dialogo.
 
 |  | Descrizione | Controlli | Esempi |
 |--- |--- |--- |--- |
-| **Finestra di dialogo di modifica** | Opzioni che possono essere modificate dall **'autore** di una pagina durante la modifica normale delle pagine per i componenti inseriti | Contenuto visualizzato dal componente e aspetto finale sulla pagina. | Formattazione del testo del contenuto, rotazione di un'immagine su una pagina |
-| **Finestra di dialogo Progettazione** | Opzioni che possono essere modificate da un **autore** di modelli durante la configurazione di un modello di pagina. | Opzioni disponibili nell'autore della pagina per la modifica del componente | Opzioni di formattazione del testo disponibili, opzioni disponibili per l'immagine |
+| **Finestra di dialogo Modifica** | Opzioni che un autore **di** pagina può modificare durante la normale modifica della pagina per i componenti inseriti | Il contenuto visualizzato dal componente e la relativa visualizzazione finale sulla pagina. | Formattazione del testo del contenuto, rotazione di un'immagine su una pagina |
+| **Finestra di dialogo Progettazione** | Opzioni che un autore **del** modello può modificare durante la configurazione di un modello di pagina. | Opzioni disponibili per l’autore della pagina durante la modifica del componente | Quali opzioni di formattazione del testo sono disponibili, quali opzioni di formattazione dell'immagine sono disponibili |
 
-### Attribuzione stile dei componenti {#component-styling}
+### Attribuzione stile componente {#component-styling}
 
-Gli stili della maggior parte dei componenti core possono essere definiti mediante il sistema di stile AEM.
+Gli stili della maggior parte dei componenti core possono essere definiti utilizzando il sistema di stile di AEM.
 
-* Un autore può definire gli stili disponibili per un particolare componente nella finestra di dialogo Progettazione di tale componente.
-* L'autore del contenuto può quindi scegliere gli stili da applicare quando si aggiunge il componente e si crea un contenuto.
+* Un autore di un modello può definire gli stili disponibili per un particolare componente nella finestra di dialogo Progettazione del componente.
+* L’autore del contenuto può quindi scegliere quali stili applicare quando aggiunge il componente e crea il contenuto.
 
-Per ulteriori dettagli, consultate [la documentazione di Sistema](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html) di stile.
+Per ulteriori dettagli, consulta la documentazione [Style System](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html) .
 
 >[!NOTE]
 >
->In AEM 6.3, service pack 2 (6.3.2.0) o più recente è richiesto per abilitare la funzionalità del sistema di stile.
+>In AEM 6.3, per abilitare la funzione del sistema di stile è necessario Service Pack 2 (6.3.2.0) o successivo.
 
 ## Elenco dei componenti core disponibili {#list-of-core-components-available}
 
-Di seguito è riportato un elenco dei componenti core disponibili collegati alle pagine che descrivono in dettaglio le capacità della finestra di dialogo di modifica e progettazione.
+Di seguito è riportato un elenco dei componenti core disponibili collegati alle pagine che descrivono nel dettaglio le funzionalità di modifica e di progettazione della finestra di dialogo.
 
-La versione corrente dei componenti core presenta i seguenti componenti.
+La versione corrente di Core Components include i seguenti componenti.
 
 * [Accordion](accordion.md)
 * [Breadcrumb](breadcrumb.md)
@@ -123,7 +123,7 @@ La versione corrente dei componenti core presenta i seguenti componenti.
 >
 >Alcune versioni di singoli componenti core possono essere compatibili solo con determinate versioni di AEM.
 >
->Per ulteriori informazioni, consultate la pagina di aiuto (collegata a nell'elenco precedente) per il componente specifico per informazioni sulla compatibilità o fate riferimento al [documento Versioni](versions.md) componenti principali.
+>Per informazioni sulla compatibilità, consultate la singola pagina della guida (collegata all’elenco precedente) per il componente specifico oppure fate riferimento al documento Versioni [dei componenti](versions.md) core per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -132,4 +132,4 @@ La versione corrente dei componenti core presenta i seguenti componenti.
 
 ## Riferimenti per sviluppatori {#developer-resources}
 
-Per informazioni tecniche sui componenti core, consultate [la documentazione sullo](developing.md) sviluppo dei componenti core Sviluppo.
+Per informazioni tecniche sui componenti di base, consulta la documentazione per gli sviluppatori [Sviluppo di componenti](developing.md) di base.
