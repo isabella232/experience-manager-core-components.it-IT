@@ -1,14 +1,14 @@
 ---
-title: Componente condivisione social network
-seo-title: Componente condivisione social network
-description: Il componente Condivisione social network per componente core è un widget di condivisione Facebook e Pinterest.
-seo-description: Il componente Condivisione social network per componente core è un widget di condivisione Facebook e Pinterest.
-uuid: a 75 aeca 9-f 055-429 b-a 128-7 d 4 a 1 e 5 ab 21 e
+title: Componente Condivisione social network
+seo-title: Componente Condivisione social network
+description: Il componente core Condivisione social network è un widget di condivisione Facebook e Pinterest.
+seo-description: Il componente core Condivisione social network è un widget di condivisione Facebook e Pinterest.
+uuid: a75aeca9-f055-429b-a128-7d4a1e5ab21e
 contentOwner: Utente
 content-type: riferimento
 topic-tags: authoring
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: a 4 a 31261-01 e 9-4 fda -8 d 1 b -7 cec 90 bb 6574
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: a4a31261-01e9-4fda-8d1b-7verso90bb6574
 translation-type: tm+mt
 source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
@@ -17,41 +17,41 @@ source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
 # Social Sharing Component{#social-sharing-component}
 
-Il componente Condivisione social network per componente core è un widget di condivisione Facebook e Pinterest.
+Il componente core Condivisione social network è un widget di condivisione Facebook e Pinterest.
 
 ## Utilizzo {#usage}
 
-Il componente Condivisione social network aggiunge Facebook e Pinterest alla condivisione di collegamenti alla pagina. Spesso viene incluso nelle intestazioni di pagina o piè di pagina.
+Il componente Condivisione social network aggiunge alla pagina i collegamenti di condivisione Facebook e Pinterest. Spesso è inclusa nelle intestazioni o nei piè di pagina della pagina.
 
-Unlike other components, the settings for the Social Sharing Component is done by the template author via [Initial Page properties](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) and by the content author via [Page Properties](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-page-properties.html).
+A differenza di altri componenti, le impostazioni per il componente Condivisione social network vengono eseguite dall’autore del modello tramite le proprietà [Pagina](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) iniziale e dall’autore del contenuto tramite Proprietà [](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-page-properties.html)pagina.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Condivisione social network è v 1, introdotta con la release 1.0.0 dei componenti core con AEM 6.3, descritta in questo documento.
+La versione corrente del componente Condivisione social network è v1, introdotto con la release 1.0.0 dei componenti core con AEM 6.3, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente e delle versioni AEM con le quali le versioni del componente sono compatibili.
+La tabella seguente elenca tutte le versioni supportate del componente e le versioni AEM con cui sono compatibili le versioni del componente.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |--- |
 | v1 | Compatibile | Compatibile | Compatibile |
 
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
-## Sample Component Output {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-To experience the Social Sharing Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/social-sharing.html).
+Per provare il componente Condivisione social network e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitate la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/social-sharing.html)componenti.
 
-### Technical Details {#technical-details}
+### Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Sharing Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/sharing/v1/sharing).
+La documentazione tecnica più recente sul componente Condivisione [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/sharing/v1/sharing).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
 ## Edit Dialog {#edit-dialog}
 
-Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Therefore, for the content author the edit options for the sharing component are available through the sharing tab the [page properties](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-page-properties.html).
+Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del contenuto le opzioni di modifica per il componente Condivisione sono disponibili tramite la scheda Condivisione nelle proprietà [della](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-page-properties.html)pagina.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Therefore, for the template author the design options for the sharing component are available through the [initial page properties](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html).
+Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili tramite le proprietà [di pagina](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)iniziali.
