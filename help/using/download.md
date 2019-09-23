@@ -2,99 +2,99 @@
 title: Scarica componente
 seo-title: Scarica componente
 description: 'null'
-seo-description: Il componente Download componente core consente di creare un'opzione di download su una pagina.
-uuid: ec 807 de 9-f 76 c -4850-9 ece-c 3 e 439 a 1 d 626
+seo-description: Il componente per il download dei componenti core consente di creare un’opzione di download su una pagina.
+uuid: ec807de9-f76c-4850-9ece-c3e439a1d626
 contentOwner: Utente
 content-type: riferimento
 topic-tags: authoring
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: f 093 f 58 e -9755-4 a 4 f -803 a-ab 93 a 50 e 6870
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: f093f58e-9755-4a4f-803a-ab93a50e6870
 translation-type: tm+mt
 source-git-commit: 88bc68b60e5de247fe800ac041ffefdf9238cce1
 
 ---
 
 
-# Download Component{#download-component}
+# Scarica componente{#download-component}
 
-Il componente Download componente core consente di creare un&#39;opzione di download su una pagina.
+Il componente per il download dei componenti core consente di creare un’opzione di download su una pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Download componente core consente di includere un&#39;opzione di download e la relativa risorsa associata su una pagina.
+Il componente Download del componente core consente di includere in una pagina un’opzione di download e la risorsa associata.
 
-* The download option&#39;s properties can be selected in the [configure dialog](#configure-dialog).
-* Defaults for the download component can be defined in the [design dialog](#design-dialog).
+* Le proprietà dell'opzione di download possono essere selezionate nella finestra di dialogo [di](#configure-dialog)configurazione.
+* I valori predefiniti per il componente Download possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Download è v 1, introdotta con la release 2.5.0 dei Componenti core a giugno 2019, descritta in questo documento.
+La versione corrente del componente Download è v1, introdotto con la release 2.5.0 dei componenti core a giugno 2019, ed è descritto in questo documento.
 
-Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document [Core Components Versions](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
-## Sample Component Output {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-To experience the Download Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/download.html).
+Per provare il componente Download ed esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la libreria [dei](http://opensource.adobe.com/aem-core-wcm-components/library/download.html)componenti.
 
-## Technical Details {#technical-details}
+## Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Download Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download).
+La documentazione tecnica più recente sul componente Download [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire l&#39;elemento di download e di verificare come si presenterà e si presenterà per un visitatore alla pagina.
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento da scaricare e come si presenterà e come verrà visualizzato da un visitatore alla pagina.
 
 ![](assets/screen-shot-2019-06-17-09.49.14.png)
 
-### Asset Tab {#asset-tab}
+### Scheda Risorsa {#asset-tab}
 
-The selection of a download asset is very similar to the functionality of the [Image Component](image.md) and likewise leverages AEM&#39;s DAM.
+La selezione di una risorsa per il download è molto simile alla funzionalità del componente [](image.md) immagine e sfrutta allo stesso modo DAM di AEM.
 
 * **Scarica risorsa**
-   * Drop an asset from the [asset browser](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) or tap the **browse** option to upload from a local file system.
-   * Tap or click **Clear** to de-select the currently selected image.
-   * Tap or click **Edit** to [mange the renditions of the asset](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) in the asset editor.
+   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) risorse o toccate l'opzione **Sfoglia** per caricarla da un file system locale.
+   * Toccate o fate clic su **Cancella** per deselezionare l'immagine attualmente selezionata.
+   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) nell’editor risorse.
 
-### Properties Tab {#properties-tab}
+### Scheda Proprietà {#properties-tab}
 
 ![](assets/screen-shot-2019-06-17-09.49.51.png)
 
-* **Titolo** : viene visualizzato come intestazione per l&#39;elemento di download
-   * **Ottenere il titolo dalla risorsa** DAM - Se selezionato, il titolo viene automaticamente popolato con il titolo della risorsa DAM.
-* **Descrizione** : viene visualizzato come sottotitoli descrittivi dell&#39;elemento di download
-   * **Ottieni descrizione dalla risorsa** DAM - Se selezionata, la descrizione viene compilata automaticamente con la descrizione della risorsa DAM.
-* **Testo** azione: visualizzato come testo dell&#39;azione per l&#39;elemento download
+* **Titolo** - Visualizzato come titolo per l’elemento di download
+   * **Ottieni titolo dalla risorsa** DAM: se questa opzione è selezionata, il titolo viene popolato automaticamente con il titolo della risorsa DAM.
+* **Descrizione** - Visualizzato come sottotitolo descrittivo dell'elemento di download
+   * **Ottieni una descrizione dalla risorsa** DAM: se questa opzione è selezionata, la descrizione della risorsa DAM viene compilata automaticamente con la relativa descrizione.
+* **Testo** azione - Visualizzato come testo di azione per l'elemento di download
    * Questo campo è richiesto quando si carica una risorsa dal file system.
-   * **Visualizza in linea** : quando viene selezionato il testo **dell&#39;azione fornito** verrà visualizzato in linea.
+   * **Visualizza in linea** - Se selezionata, il testo **dell'** azione fornito verrà visualizzato in linea.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore di contenuto che utilizza il componente Scarica.
+La finestra di dialogo Progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente Download.
 
-### Properties Tab {#properties-tab-design}
+### Scheda Proprietà {#properties-tab-design}
 
 ![](assets/screen-shot-2019-06-17-10.04.31.png)
 
-* **Testo azione predefinito** - Definisce il testo **azione predefinito** fornito quando un autore aggiunge il componente Scarica componente a una pagina.
-* **Consenti caricamento dal file system** - Consente all&#39;autore del contenuto di caricare una risorsa dal proprio file system locale come risorsa di download.
+* **Testo** azione predefinito - Definisce il testo **predefinito per le** azioni fornito quando un autore aggiunge il componente Download a una pagina.
+* **Consenti caricamento dal file system** - Consente all'autore del contenuto di caricare una risorsa dal file system locale come risorsa da scaricare.
    * Il valore predefinito è deselezionato.
-* **Tipo titolo** - L&#39;elemento HTML utilizzato per il titolo del componente Scarica.
-   * Se non è selezionato alcun valore, il valore predefinito è H 3.
-* **Visualizza dimensione** file: quando selezionate la dimensione del file, verrà visualizzata nel componente di download.
+* **Tipo** titolo - L'elemento HTML utilizzato per il titolo del componente Download.
+   * Se non è selezionato alcun valore, il valore predefinito è H3.
+* **Visualizza dimensioni** file: se è selezionata, le dimensioni del file della risorsa vengono visualizzate nel componente Download.
    * Il valore predefinito è selezionato.
-* **Visualizza formato file** - Quando selezionate il formato di file della risorsa, verrà visualizzato nel componente Download.
+* **Visualizza formato** file: quando viene selezionato, il formato file della risorsa verrà visualizzato nel componente Download.
    * Il valore predefinito è selezionato.
-* **Visualizza nome file** : quando viene selezionato il nome file della risorsa, verrà visualizzato nel componente Download.
+* **Nome** file visualizzato: se selezionato, il nome del file della risorsa verrà visualizzato nel componente Download.
    * Il valore predefinito è selezionato.
 
-### Styles Tab {#styles-tab}
+### Scheda Stili {#styles-tab}
 
-The Image Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Immagine supporta AEM [Style System](authoring.md#component-styling).
