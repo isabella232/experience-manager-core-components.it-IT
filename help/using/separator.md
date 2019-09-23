@@ -1,11 +1,11 @@
 ---
 title: Componente separatore
 seo-title: Componente separatore
-description: Il componente separatore crea un'interruzione tra i componenti di una pagina
-seo-description: Il componente separatore crea un'interruzione tra i componenti di una pagina
+description: Il componente separatore crea un’interruzione tra i componenti di una pagina
+seo-description: Il componente separatore crea un’interruzione tra i componenti di una pagina
 contentOwner: bohnert
 content-type: riferimento
-topic-tags: componenti core
+topic-tags: core-components
 translation-type: tm+mt
 source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
 
@@ -18,36 +18,36 @@ Il componente Separatore componenti core visualizza una regola orizzontale per l
 
 ## Utilizzo {#usage}
 
-Il componente Separatore consente all&#39;autore del contenuto di creare facilmente una regola orizzontale come interruzioni tra contenuti per organizzare meglio le informazioni su una pagina.
+Il componente Separatore consente all'autore del contenuto di creare facilmente una regola orizzontale come interruzione tra i contenuti per organizzare meglio le informazioni su una pagina.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Separatore è v 1, introdotta con la release 2.3.0 dei componenti core a febbraio 2019, descritta in questo documento.
+La versione corrente del componente Separatore è v1, introdotto con la release 2.3.0 dei componenti core nel febbraio 2019, ed è descritto in questo documento.
 
-Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |---|---|---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-## Sample Component Output {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-To experience the Separator Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](http://opensource.adobe.com/aem-core-wcm-components/library/separator.html).
+Per provare il componente Separatore e per visualizzare esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/separator.html)Componenti.
 
-### Technical Details {#technical-details}
+### Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Separator Component [can be found on GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator).
+La documentazione tecnica più recente sul componente Separatore [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator).
 
-Further details about developing Core Components can be found in the [Core Components developer documentation](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-Il componente Separatore non dispone di una finestra di dialogo configura.
+Il componente Separatore non dispone di una finestra di dialogo di configurazione.
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all&#39;autore del modello di definire gli stili applicati al componente Separatore.
+La finestra di dialogo di progettazione consente all'autore del modello di definire gli stili applicati al componente Separatore.
 
-### Styles Tab {#styles-tab}
+### Scheda Stili {#styles-tab}
 
-The Separator Component supports the AEM [Style System](authoring.md#component-styling).
+Il componente Separatore supporta AEM [Style System](authoring.md#component-styling).
