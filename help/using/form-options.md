@@ -1,14 +1,14 @@
 ---
 title: Componente Opzioni modulo
 seo-title: Componente Opzioni modulo
-description: Il componente Opzioni modulo di base consente la selezione da opzioni predefinite in vari formati.
-seo-description: Il componente Opzioni modulo di base consente la selezione da opzioni predefinite in vari formati.
-uuid: 7 e 8714 df -75 d 1-4 bb 0-b 1 ee-b 7 c 7450 d 806 a
+description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
+seo-description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
+uuid: 7e8714df-75d1-4bb0-b1ee-b7c7450d806a
 contentOwner: Utente
 content-type: riferimento
 topic-tags: authoring
-products: SG_ EXPERIENCEMANAGER/CORECOMPONENTS-NEW
-discoiquuid: 42289 c 2 b -1671-463 a-ac 1 d -457 aa 9 aefa 2 a
+products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
+discoiquuid: 42289c2b-1671-463a-ac1d-457aa9aefa2a
 translation-type: tm+mt
 source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
 
@@ -17,30 +17,30 @@ source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
 
 # Componente Opzioni modulo{#form-options-component}
 
-Il componente Opzioni modulo componente core consente la selezione da opzioni predefinite in vari formati.
+Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
 
 ## Utilizzo {#usage}
 
-Il componente Opzioni modulo componente core consente di inviare diversi tipi di opzioni presentate in vari modi e di essere utilizzati insieme al [componente Contenitore modulo](form-container.md).
+Il componente Opzioni modulo per componenti core consente di inviare diversi tipi di opzioni presentate in diversi modi e deve essere utilizzato insieme al componente [Contenitore](form-container.md)modulo.
 
-La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor contenuto nella finestra di dialogo [Configura](#configure-dialog).
+La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall'editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
 
-## Versione e Compatibilità {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Opzioni modulo è v 2, introdotta con la release 2.0.0 dei Componenti core a gennaio 2018, descritta in questo documento.
+La versione corrente del componente Opzioni modulo è v2, introdotto con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritto in questo documento.
 
-Nella tabella seguente sono riportate tutte le versioni supportate del componente, le versioni AEM con le quali le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |--- |
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](form-options-v1.md) | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, vedi Versioni componenti [core del documento](versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
-## Output componente campione {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -139,13 +139,13 @@ Esempio di esempio prelevato da [We. Retail](https://helpx.adobe.com/experience-
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente relativa al componente Opzioni modulo [è disponibile su github](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options).
+La documentazione tecnica più recente sul componente Opzioni modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options).
 
-Ulteriori dettagli sullo sviluppo di componenti core si trovano nella documentazione per sviluppatori [di componenti core](developing.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo Configura consente all&#39;autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
 
 ![](assets/screen_shot_2018-01-12at113153.png)
 
@@ -154,37 +154,24 @@ La finestra di dialogo Configura consente all&#39;autore del contenuto di defini
    * **Pulsanti di scelta**
    * **A discesa**
    * **Menu a discesa a selezione multipla**
-* **Titolo Titolo**
-visualizzato come etichetta per le opzioni
-* **Nome Nome**
-del campo inviato con i dati del modulo
-* **Sorgente**
-Dove vengono definite le opzioni
-   * **Locale**
-definito all&#39;interno del componente
-      * Toccate o fate clic sul **pulsante Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore**
-Il valore salvato quando questa opzione è selezionata all&#39;invio del modulo
-      * **Testo**
-L&#39;etichetta dell&#39;opzione visualizzata nel modulo
-      * **Attivo**
-L&#39;opzione è contrassegnata come selezionata al momento del caricamento del modulo
-      * **Disattivato**
-L&#39;opzione non è selezionabile ma resta visualizzata
-      * **List**
-A static list defined elsewhere in AEM is used for the options
-         * **Elenca**
-il percorso dell&#39;elenco statico in AEM
-            * Usare il pulsante Sfoglia per individuare la risorsa elenco
-      * **Origine
-dati** Un&#39;origine dati viene utilizzata per le opzioni
-         * **Tipo**di risorsa Origine
-dati dell&#39;origine dati
-* **Messaggio**
-di Aiuto Un suggerimento per l&#39;utente che può inserire il campo
+* **Titolo** Titolo che verrà visualizzato come etichetta per le opzioni
+* **Nome** Il nome del campo inviato con i dati del modulo
+* **Origine** Dove sono definite le opzioni
+   * **Locale** definito nel componente
+      * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
+      * **Valore** Il valore salvato quando l'opzione viene selezionata all'invio del modulo
+      * **Testo** Etichetta per l'opzione visualizzata sul modulo
+      * **Attivo** L'opzione è contrassegnata come selezionata al caricamento del modulo
+      * **Disattivato** L'opzione non è selezionabile ma continua a essere visualizzata
+      * **Elenco** Per le opzioni viene utilizzato un elenco statico definito altrove in AEM
+         * **Elenco** Percorso dell’elenco statico in AEM
+            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell'elenco
+      * **Origine** dati Un'origine dati viene utilizzata per le opzioni
+         * **Origine** dati Tipo di risorsa dell'origine dati
+* **Messaggio** della Guida Un suggerimento per l'utente di ciò che può essere immesso nel campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Opzioni modulo supporta il sistema [di stile AEM](authoring.md#component-styling).
+Il componente Opzioni modulo supporta AEM [Style System](authoring.md#component-styling).
