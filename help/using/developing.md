@@ -10,7 +10,7 @@ topic-tags: development
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 157a2ec3-9fca-4fad-977a-d93013eeb218
 translation-type: tm+mt
-source-git-commit: 63e75079e41d3091ca57bfc3129e700675bf4939
+source-git-commit: bf1993085c4cd95121cb6d78be8c52934802b645
 
 ---
 
@@ -143,6 +143,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Pulsante](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button) | Creare un pulsante su una pagina | `-` |
 | [Scarica](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download) | Aggiunta di una risorsa scaricabile a una pagina | `-` |
 | [Frammento esperienza](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/experience-fragment/v1/experience-fragment) | Aggiunta di un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
+| [Incorpora](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed) | Incorporare una risorsa esterna in una pagina | - |
 
 ### Componenti in arrivo {#upcoming-components}
 
