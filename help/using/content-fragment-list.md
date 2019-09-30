@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: authoring
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 translation-type: tm+mt
-source-git-commit: d683f8110b514860bba11e08e6923be49e92652f
+source-git-commit: 6882a0d8247328c403dc11a25ed9d079aefede69
 
 ---
 
@@ -54,27 +54,35 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 La scheda **Proprietà** definisce i frammenti di contenuto inclusi nell'elenco. Si basa principalmente su un modello di frammento di contenuto selezionato, ma sono disponibili altre opzioni di filtro.
 
-![](assets/screen-shot-2019-05-08-10.47.19.png)
+![](assets/screen-shot-2019-09-25-10.32.10.png)
 
 * **Modello** - Percorso del modello di frammento di contenuto su cui si basa l'elenco.
    * Per impostazione predefinita, tutti i frammenti di contenuto del modello definito come Percorso **** modello sono inclusi nell'elenco.
 * **Percorso** padre - Percorso padre da cui creare l'elenco.
    * I frammenti di contenuto basati sul percorso **del** modello selezionato verranno filtrati in base a quelli presenti nel percorso **** principale specificato.
-   * Tocca o fai clic sul pulsante **Apri finestra di dialogo** selezione a destra del campo per specificare il percorso.
+      * Tocca o fai clic sul pulsante **Apri finestra di dialogo** selezione a destra del campo per specificare il percorso.
 * **Tag** - Solo i frammenti di contenuto con i tag specificati saranno inclusi nell'elenco.
    * Tocca o fai clic sul pulsante **Apri finestra di dialogo** selezione a destra del campo per specificare i tag.
    * Tocca o fai clic sulla X accanto ai tag selezionati per rimuoverli.
+* **Ordina per** - Campo del modello di frammento di contenuto per il quale verrà ordinato l'elenco
+   * È possibile selezionare solo i campi di testo (inclusi numeri, date e ora).
+* **Ordina ordine** - Ordine dell'elenco in base al campo **Ordina per**
+   * Crescente o discendente
+* **Numero massimo elementi** - Numero massimo di elementi da visualizzare nell'elenco
+   * Nessun valore restituirà tutti gli elementi.
 
+>[!NOTE]
+>Le opzioni **Ordina per**, **Ordina ordine** e **Max elementi** sono state introdotte con la release 2.7.0 dei componenti core.
 
 ### Scheda Elementi
 
-Per impostazione predefinita, tutti gli elementi del modello di frammento di contenuto saranno inclusi nell'elenco. Gli **elementi** consentono di specificare solo elementi specifici da includere.
+Per impostazione predefinita, tutti gli elementi del modello di frammento di contenuto saranno inclusi nell'elenco (a meno che non siano limitati dal campo **Max elementi** ). La scheda **Elementi** consente di specificare solo elementi specifici da includere.
 
 ![](assets/screen-shot-2019-05-08-10.47.34.png)
 
 * **Elementi** - Vengono visualizzati solo gli elementi dei frammenti di contenuto nell'elenco specificato.
-   * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un nuovo elemento
-   * Tocca o fai clic sul pulsante **Elimina** per rimuovere un elemento selezionato
+   * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un nuovo elemento.
+   * Tocca o fai clic sul pulsante **Elimina** per rimuovere un elemento selezionato.
    * Trascinate la maniglia **Ordine** per riordinare gli elementi.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
