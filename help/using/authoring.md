@@ -8,7 +8,7 @@ content-type: riferimento
 topic-tags: authoring
 discoiquuid: 8751e490-d427-44f2-b767-51935afda988
 translation-type: tm+mt
-source-git-commit: b6fbef1cff2908533df6573cd3a92266857ba93f
+source-git-commit: bf1993085c4cd95121cb6d78be8c52934802b645
 
 ---
 
@@ -101,6 +101,7 @@ La versione corrente di Core Components include i seguenti componenti.
 * [Frammento di contenuto](content-fragment-component.md)
 * [Elenco frammenti di contenuto](content-fragment-list.md)
 * [Scarica](download.md)
+* [Incorpora](embed.md)
 * [Frammento esperienza](experience-fragment.md)
 * [Pulsante modulo](form-button.md)
 * [Contenitore modulo](form-container.md)
