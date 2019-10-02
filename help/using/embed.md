@@ -1,12 +1,12 @@
 ---
-title: Incorpora componente
-seo-title: Incorpora componente
-description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
+title: Embed Component
+seo-title: Embed Component
+description: The Embed Component enables embedding external content in an AEM content page.
 seo-description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 content-type: riferimento
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 6882a0d8247328c403dc11a25ed9d079aefede69
+source-git-commit: 97f1461b57079806f9f96d325d9b763538e32127
 
 ---
 
@@ -17,22 +17,22 @@ Il componente Incorpora componenti core consente di incorporare contenuto estern
 
 ## Utilizzo {#usage}
 
-Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare in una pagina di contenuto AEM. È inoltre disponibile un’opzione per definire anche l’HTML a forma libera da incorporare.
+Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare in una pagina di contenuto AEM. In addition, there is an option to define free-form HTML to be embedded as well.
 
-* The components's properties can be defined in the [configure dialog](#configure-dialog).
-* Defaults for the component when adding it to a page can be defined in the design dialog.[](#design-dialog)
+* Le proprietà del componente possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
+* I valori predefiniti per il componente quando lo si aggiunge a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
 
-## Version and Compatibility {#version-and-compatibility}
+## Versione e compatibilità {#version-and-compatibility}
 
-The current version of the Embed Component is v1, which was introduced with release 2.7.0 of the Core Components in September 2019, and is described in this document.
+La versione corrente del componente Incorpora è v1, introdotto con la release 2.7.0 dei componenti core a settembre 2019, ed è descritto in questo documento.
 
-The following table details all supported versions of the component, the AEM versions with which the versions of the component is compatible, and links to documentation for previous versions.
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Component Version | AEM 6.3 | AEM 6.4 | AEM 6.5 |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-For more information about Core Component versions and releases, see the document Core Components Versions.[](versions.md)
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
@@ -61,22 +61,22 @@ Gli sviluppatori possono aggiungere altri processori URL [seguendo la documentaz
 
 ![](assets/screen-shot-2019-09-25-10.08.29.png)
 
-### Incorporabile {#embeddable}
+### Contenuto incorporabile {#embeddable}
 
-Le variabili da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra file incorporati attendibili preconfigurati e il componente viene fornito con un processore Youtube out-of-the-box.
+Le variabili da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra file da incorporare affidabili preconfigurati e i componenti vengono forniti con un out-of-the-box YouTube incorporato.
 
-Il campo **Incorporabile** definisce il tipo di processore da utilizzare. Nel caso del processore YouTube è possibile definire:
+The **Embeddable** field defines the type of processor you want to use. Nel caso di YouTube embedable potete quindi definire:
 
-* **ID** video - ID video univoco da YouTube della risorsa da incorporare
-* **Width** - The width of the embedded video
-* **Height** - The height of the embedded video
+* **Video ID - The unique video ID from YouTube of the resource you want to embed**
+* **Width - The width of the embedded video**
+* **Height - The height of the embedded video**
 
-Other processors would offer similar fields and can be defined by a developer by following the developer documentation of the Embed Component.[](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
+Other embeddables would offer similar fields and can be defined by a developer by following the developer documentation of the Embed Component.[](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![](assets/screen-shot-2019-09-25-10.15.00.png)
 
 >[!NOTE]
->Embedded processors must be enabled at the template level via the [Design Dialog](#design-dialog) to be avaialble to the page author.
+>Embeddables must be enabled at the template level via the [Design Dialog](#design-dialog) to be available to the page author.
 
 ### HTML {#html}
 
@@ -87,13 +87,13 @@ You can add free-form HTML to your page using the Embed Component.
 >[!NOTE]
 >Any unsafe tags such as scripts will be filtered from the entered HTML and will not be rendered on the resulting page.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Design Dialog {#design-dialog}
 
-La finestra di dialogo Progettazione consente all'autore del modello di definire le opzioni disponibili per l'autore del contenuto che utilizza il componente Incorpora e le impostazioni predefinite impostate al momento del posizionamento del componente Incorpora.
+The design dialog allows the template author to define the options available to the content author who uses the Embed Component and the defaults set when placing the Embed Component.
 
 ![](assets/screen-shot-2019-09-25-10.25.28.png)
 
-* **Disattiva URL** - Disattiva l'opzione **URL** per l'autore del contenuto selezionato
-* **Disattiva incorporabili** - Disattiva l'opzione **Incorporabile** per l'autore del contenuto selezionato, indipendentemente dai processori incorporabili consentiti.
-* **Disattiva HTML** - Disattiva l'opzione **HTML** per l'autore del contenuto selezionato.
-* **Embeddables consentiti** - Multisello che definisce quali processori incorporabili sono disponibili per l'autore del contenuto, a condizione che sia attiva l'opzione **Incorporabile** .
+* **Disable URL - Disables the URL option for the content author when selected******
+* **Disable Embeddables - Disables the Embeddable option for the content author when selected, regardless of which embeddable processors are allowed.******
+* **Disable HTML - Disables the HTML option for the content author when selected.******
+* **Allowed Embeddables - Multislect that defines which embeddable processors are available to the content author, provided that the Embeddable option is active.******
