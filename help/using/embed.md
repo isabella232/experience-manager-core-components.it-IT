@@ -1,12 +1,12 @@
 ---
-title: Embed Component
-seo-title: Embed Component
-description: The Embed Component enables embedding external content in an AEM content page.
+title: Incorpora componente
+seo-title: Incorpora componente
+description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 seo-description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 content-type: riferimento
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 97f1461b57079806f9f96d325d9b763538e32127
+source-git-commit: d748bf211ec36d12cac016ca9bf707f24db1ce48
 
 ---
 
@@ -17,7 +17,7 @@ Il componente Incorpora componenti core consente di incorporare contenuto estern
 
 ## Utilizzo {#usage}
 
-Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare in una pagina di contenuto AEM. In addition, there is an option to define free-form HTML to be embedded as well.
+Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare in una pagina di contenuto AEM. È inoltre disponibile un’opzione per definire anche l’HTML a forma libera da incorporare.
 
 * Le proprietà del componente possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
 * I valori predefiniti per il componente quando lo si aggiunge a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
@@ -54,7 +54,7 @@ L’incorporamento più semplice è l’URL. È sufficiente incollare l’URL de
 
 Il componente Incorpora viene fornito con processori per i seguenti tipi di risorse:
 
-* Risorse conformi allo standard [](https://oembed.com/) oEmbed, inclusi Facebook Post, Instagram, SoundCloud, Twitter e YouTube
+* Resources that comply with the oEmbed standard including Facebook Post, Instagram, SoundCloud, Twitter, and YouTube[](https://oembed.com/)
 * Pinterest
 
 Gli sviluppatori possono aggiungere altri processori URL [seguendo la documentazione per gli sviluppatori del componente Incorpora.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
@@ -63,11 +63,11 @@ Gli sviluppatori possono aggiungere altri processori URL [seguendo la documentaz
 
 ### Contenuto incorporabile {#embeddable}
 
-Le variabili da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra file da incorporare affidabili preconfigurati e i componenti vengono forniti con un out-of-the-box YouTube incorporato.
+Embeddables allow for more customization of the embedded resource, which can be parameterized and include additional information. An author is able to select from pre-configured trusted embeddables and the component ships with a Youtube embeddable out-of-the-box.
 
-The **Embeddable** field defines the type of processor you want to use. Nel caso di YouTube embedable potete quindi definire:
+The **Embeddable** field defines the type of processor you want to use. In the case of the YouTube embeddable you can then define:
 
-* **Video ID - The unique video ID from YouTube of the resource you want to embed**
+* **ID** video - ID video univoco da YouTube della risorsa da incorporare
 * **Width - The width of the embedded video**
 * **Height - The height of the embedded video**
 
@@ -94,6 +94,6 @@ The design dialog allows the template author to define the options available to 
 ![](assets/screen-shot-2019-09-25-10.25.28.png)
 
 * **Disable URL - Disables the URL option for the content author when selected******
-* **Disable Embeddables - Disables the Embeddable option for the content author when selected, regardless of which embeddable processors are allowed.******
-* **Disable HTML - Disables the HTML option for the content author when selected.******
+* **Disattiva incorporabili** - Disattiva l'opzione **Incorporabile** per l'autore del contenuto selezionato, indipendentemente dai processori incorporabili consentiti.
+* **Disattiva HTML** - Disattiva l'opzione **HTML** per l'autore del contenuto selezionato.
 * **Allowed Embeddables - Multislect that defines which embeddable processors are available to the content author, provided that the Embeddable option is active.******
