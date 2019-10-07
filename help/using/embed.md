@@ -6,7 +6,7 @@ seo-description: Il componente Incorpora consente di incorporare contenuto ester
 content-type: reference
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: e4fdefd392281f4f9101b28a15846c922e3a52c1
+source-git-commit: 648a54d3ab76ec9a9dee10dc97a3f91e6b7509df
 
 ---
 
@@ -95,12 +95,14 @@ Altri elementi da incorporare offrirebbero campi simili e possono essere definit
 
 La marcatura HTML che l'autore può immettere viene filtrata a scopo di sicurezza per evitare attacchi di script tra siti che potrebbero, ad esempio, consentire agli autori di ottenere diritti amministrativi.
 
-In generale, tutti gli script e `style` gli elementi, nonché tutti `on*` e `style` gli attributi, verranno rimossi dall'output.
+*In generale,* tutti gli elementi e `style` gli script, nonché tutti `on*` e `style` gli attributi, verranno rimossi dall'output.
 
-Tuttavia, le regole sono più complicate di così perché il componente Incorpora segue il set di regole di filtro HTML AntiSami globale di AEM, che si trova in `/libs/cq/xssprotection/config.xml`. Se necessario, questo può essere sovrapposto a una configurazione specifica per il progetto da parte di uno sviluppatore.
+Tuttavia, le regole sono più complicate perché il componente Incorpora segue l’insieme di regole di filtraggio del framework HTML antiSamy di AEM, che è possibile trovare in `/libs/cq/xssprotection/config.xml`. Se necessario, questo può essere sovrapposto a una configurazione specifica per il progetto da parte di uno sviluppatore.
+
+Ulteriori informazioni sulla sicurezza sono disponibili nella documentazione per gli sviluppatori di [AEM.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/security.html)
 
 >[!NOTE]
->Anche se le regole anti-Samy possono essere configurate tramite sovrapposizione `/libs/cq/xssprotection/config.xml`, queste modifiche influiscono su tutti i comportamenti HTL e JSP e non solo sul componente core da incorporare.
+>Anche se le regole del framework di sanificazione anti-Samy possono essere configurate tramite sovrapposizione `/libs/cq/xssprotection/config.xml`, queste modifiche influiscono su tutti i comportamenti HTL e JSP e non solo sul componente core di incorporamento.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
