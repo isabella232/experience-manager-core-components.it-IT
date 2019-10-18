@@ -1,32 +1,32 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
-sub-product: componenti core di Adobe Experience Manager
-archetype: Amministratore
-user-guide-title: Componenti core AEM
+sub-product: adobe experience manager core components
+archetype: Administrator
+user-guide-title: AEM Core Components
 translation-type: tm+mt
-source-git-commit: bf1993085c4cd95121cb6d78be8c52934802b645
+source-git-commit: 2a1b149226e1025d116cabde8c9d477f8dadca4c
 
 ---
 
 
-# Guida ai componenti core di AEM {#using}
+# Aiuto dei componenti core di AEM {#using}
 
 + [Introduzione ai componenti core](introduction.md)
 + [Libreria dei componenti](http://opensource.adobe.com/aem-core-wcm-components/library.html)
 + [Versioni dei componenti core](versions.md)
-+ Get Started {#get-started}
++ Introduzione {#get-started}
    + [Authoring con i componenti core](authoring.md)
    + [Utilizzo dei componenti core](using.md)
    + [Funzioni di localizzazione](localization.md)
 + Componenti {#components}
-   + [Accordion](accordion.md)
+   + [Pannello a soffietto](accordion.md)
    + [Breadcrumb](breadcrumb.md)
    + [Pulsante](button.md)
    + [Carosello](carousel.md)
    + [Contenitore](container.md)
    + [Frammento di contenuto](content-fragment-component.md)
-   + [Elenco frammenti di contenuto](content-fragment-list.md)
+   + [Elenco di frammenti di contenuto](content-fragment-list.md)
    + [Scarica](download.md)
    + [Incorpora](embed.md)
    + [Frammento esperienza](experience-fragment.md)
@@ -65,4 +65,10 @@ source-git-commit: bf1993085c4cd95121cb6d78be8c52934802b645
    + [Sviluppo di componenti core](developing.md)
    + [Esercitazione per sviluppatori WKND](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
    + [Personalizzazione dei componenti core](customizing.md)
-   + [Linee guida sui componenti](guidelines.md)
+   + [Linee guida per i componenti](guidelines.md)
+   + [Archetipo] progetto AEM {#archetype}
+      + [Panoramica di Archetype](archetype.md)
+      + [Modulo core](core.md)
+      + [modulo ui.apps](uiapps.md)
+      + [modulo ui.content](uicontent.md)
+      + [Processo di compilazione front-end](front-end-build.md)
