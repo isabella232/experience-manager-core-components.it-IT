@@ -4,13 +4,13 @@ seo-title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 seo-description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 uuid: 68569da2-9bc8-4e20-9a71-e5816ace51ce
-contentOwner: Utente
-content-type: riferimento
+contentOwner: User
+content-type: reference
 topic-tags: development
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 157a2ec3-9fca-4fad-977a-d93013eeb218
 translation-type: tm+mt
-source-git-commit: bf1993085c4cd95121cb6d78be8c52934802b645
+source-git-commit: cbfc96bd215260e902f96c035a7889c968814e39
 
 ---
 
@@ -40,7 +40,7 @@ I componenti core forniscono componenti di base affidabili ed estensibili e i lo
    * Built around [accessibility guidelines](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
    * Utilizzabile per siti reattivi e mobili
 * Possibilità di serializzare come JSON il modello di contenuto per i casi di utilizzo headless CMS
-* Accessibile
+* Accessibili
    * Conforme allo standard [WCAG 2.0 AA](https://helpx.adobe.com/experience-manager/6-5/managing/using/web-accessibility.html)
 
 >[!CAUTION]
@@ -49,15 +49,19 @@ I componenti core forniscono componenti di base affidabili ed estensibili e i lo
 >
 >I componenti core non funzionano né con l’interfaccia classica né con i modelli statici.
 
-## Panoramica della sessione Gems {#gems-session-overview}
+## Panoramica - Sessione Gems {#gems-session-overview}
 
-Per un'introduzione ai componenti core, alle funzioni che offrono e alla modalità di utilizzo in AEM, consultate i componenti core di AEM Gems Session [AEM.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
+Per un’introduzione ai componenti core, alle funzionalità offerte e alla modalità di utilizzo in AEM, vedi la pagina della sessione Gems di AEM dedicata ai [componenti core di AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)
 
-[Gems on Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici offerti dagli esperti Adobe. Questa serie integra la documentazione del prodotto e tutti gli altri canali tecnici, consentendo agli sviluppatori di mettersi in contatto e approfondire un argomento specifico.
+[Gems on Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) è una serie di approfondimenti tecnici offerti dagli esperti Adobe. Questa serie integra la documentazione di prodotto e di tutti gli altri canali tecnici, e consente agli sviluppatori di entrare in contatto e approfondire un argomento specifico.
 
 ## Esercitazione per sviluppatori WKND {#wknd-developer-tutorial}
 
-Inizia a sviluppare AEM Sites con i componenti core seguendo [questa esercitazione passo-passo.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+Get started developing AEM Sites with Core Components by following [this step-by-step tutorial.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
+
+## Archetipo progetto AEM {#aem-project-archetype}
+
+[AEM Project Archetype](archetype.md) crea un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componente HTL personalizzato con SlingModels per la logica e la corretta implementazione dei componenti core con il pattern proxy consigliato.
 
 ## Consegnato su GitHub {#delivered-over-github}
 
@@ -138,7 +142,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Frammento di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment) | Consente la visualizzazione di un frammento di contenuto | `-` |
 | [Elenco frammenti di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragmentlist/v1/contentfragmentlist) | Consente di visualizzare un elenco dei frammenti di contenuto | `-` |
 | [Separatore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator) | Separa il contenuto di una pagina | `-` |
-| [Accordion](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/accordion/v1/accordion) | Organizzare i pannelli dei contenuti in un ambiente comprimibile | `-` |
+| [Pannello a soffietto](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/accordion/v1/accordion) | Organizzare i pannelli dei contenuti in un ambiente comprimibile | `-` |
 | [Contenitore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container) | Organizzare i componenti all’interno di un contenitore | `-` |
 | [Pulsante](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button) | Creare un pulsante su una pagina | `-` |
 | [Scarica](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/download/v1/download) | Aggiunta di una risorsa scaricabile a una pagina | `-` |
@@ -157,9 +161,9 @@ Le migrazioni a una nuova versione di AEM non avranno alcun impatto sul funziona
 
 Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe tuttavia essere necessario adattare le personalizzazioni, per ulteriori dettagli consultate la pagina [Personalizzazione dei componenti](customizing.md#upgrade-compatibility-of-customizations) core.
 
-## Quando utilizzare i componenti core? {#when-to-use-the-core-components}
+## When to Use the Core Components? {#when-to-use-the-core-components}
 
-Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi, si consiglia di utilizzarli nei nuovi progetti AEM. Per i progetti esistenti, una migrazione dovrebbe essere parte di un progetto più ampio, ad esempio un rifacimento o un refactoring complessivo.
+Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi, si consiglia di utilizzarli nei nuovi progetti AEM. Per i progetti esistenti, la migrazione dei componenti dovrà essere eseguita nell’ambito di un’attività più ampia, ad esempio in occasione di un progetto di rebranding o riformattazione generale.
 
 Di conseguenza, Adobe fornisce le seguenti raccomandazioni:
 
@@ -192,21 +196,21 @@ Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la rel
 
 ## Supporto dei componenti core {#core-component-support}
 
-I componenti core sono parte integrante di AEM e sono supportati così come lo sono, secondo gli stessi termini e condizioni come se fossero stati consegnati come parte del Quickstart.
+I componenti core sono parte integrante di AEM e sono supportati così come sono. Sono soggetti agli stessi termini e condizioni dei prodotti forniti con Quickstart.
 
 Come per le altre funzioni del prodotto AEM, la regola generale è: I componenti vengono inizialmente dichiarati obsoleti e i primi rimossi per la seguente release di AEM. Questo consente ai clienti di passare alla nuova versione del componente almeno un ciclo di rilascio prima di lasciarne indietro il supporto.
 
-La versione di ciascun componente indica chiaramente le versioni AEM supportate. Quando il supporto per una versione di AEM cessa, viene utilizzato anche il supporto dei componenti core per tale versione di AEM.
+La versione di ogni componente indica chiaramente le versioni di AEM che supporta. Quando cessa il supporto per una versione di AEM, cessa anche il supporto dei componenti core per tale versione di AEM.
 
 Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate la pagina [Personalizzazione dei componenti](customizing.md) core.
 
-## Supporto dei componenti di base {#foundation-component-support}
+## Supporto dei componenti di base (“foundation”) {#foundation-component-support}
 
 Poiché i componenti di base sono stati utilizzati come base per lo sviluppo di molti progetti in molte versioni di AEM, continueranno a essere supportati nel prossimo futuro.
 
-Tuttavia, l'enfasi di sviluppo di Adobe si è spostata sui componenti core e le nuove funzioni verranno aggiunte a tali componenti, mentre [quasi tutti i componenti di base sono stati dichiarati obsoleti con AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) e solo le correzioni di bug verranno apportate ai componenti di base in futuro.
+However, Adobe's development emphasis has shifted to the Core Components and new features will be added to them, whereas [nearly all Foundation Components have been deprecated with AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-foundation.html) and only bug fixes will be made to the Foundation Components going forward.
 
-**Ulteriori informazioni:**
+**Articolo successivo:**
 
 * [Utilizzo dei componenti](using.md) di base: per iniziare a usare i componenti di base nel tuo progetto.
 * [Linee guida](guidelines.md) per i componenti - per apprendere i pattern di implementazione dei componenti core.
