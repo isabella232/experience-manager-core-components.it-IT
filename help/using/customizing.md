@@ -4,13 +4,13 @@ seo-title: Personalizzazione dei componenti core
 description: I componenti core implementano diversi pattern che consentono una facile personalizzazione, dallo stile semplice al riutilizzo avanzato delle funzionalità.
 seo-description: I componenti core di AEM implementano diversi pattern che consentono una facile personalizzazione, dallo stile semplice al riutilizzo avanzato delle funzionalità.
 uuid: 38d22b85-4867-4716-817a-10ee2f8de6f5
-contentOwner: Utente
-content-type: riferimento
+contentOwner: User
+content-type: reference
 topic-tags: development
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 3c9e0ade-1ce0-4e34-ae04-8da63f9b6c4f
 translation-type: tm+mt
-source-git-commit: 62643e5bd49ab006230f65004bb9374822dcc017
+source-git-commit: e3b5eb14a8172c2172b936dd8713befd17f17524
 
 ---
 
@@ -34,6 +34,10 @@ I componenti core sono stati progettati fin dall'inizio per essere flessibili ed
 
 E tutti i componenti core implementano [Style System](customizing.md).
 
+## Archetipo progetto AEM {#aem-project-archetype}
+
+[AEM Project Archetype](archetype.md) crea un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componente HTL personalizzato con SlingModels per la logica e la corretta implementazione dei componenti core con il pattern proxy consigliato.
+
 ## Pattern di personalizzazione {#customization-patterns}
 
 ### Personalizzazione delle finestre di dialogo {#customizing-dialogs}
@@ -45,25 +49,6 @@ Ogni finestra di dialogo ha una struttura di nodi coerente. È consigliabile che
 Per essere pienamente compatibile con qualsiasi modifica apportata a una finestra di dialogo sulla versione corrente, è molto importante che le strutture al di sotto del livello dell'elemento tabulazione non vengano toccate (nascoste, aggiunte, sostituite, riordinate, ecc.). Al contrario, un elemento scheda dell'elemento padre deve essere nascosto tramite la `sling:hideResource` proprietà (vedere Proprietà [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/sling-resource-merger.html)fusione risorsa Sling), e nuovi elementi scheda aggiunti che contengono i campi di configurazione personalizzati. `sling:orderBefore` può essere utilizzato per riordinare gli elementi tabulazione, se necessario.
 
 La finestra di dialogo seguente illustra la struttura di dialogo consigliata e come nascondere e sostituire una scheda ereditata come descritto in precedenza:
-
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T17:43:20.265-0400
-
-Should we provide guidance on how to name their CSS classes, etc. to align to component re-usability best-practices? We tout that we follow bootstrap css naming, should we be counseling customers to align similarly? .cmp- 
-<component name="">
-  -- 
- <element>
-   - 
-  <element descriptor="">
-    ? 
-  </element> 
- </element> 
-</component>
-
- -->
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -128,25 +113,6 @@ Questo può essere fatto facilmente copiando i file HTL che devono essere modifi
 
 Riprendendo l’esempio del componente Breadcrumb di base, per personalizzare l’output del codice, il `breadcrumb.html` file deve essere copiato nel componente specifico del sito con un componente `sling:resourceSuperTypes` che punta al componente Breadcrumb di base.
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T17:43:20.265-0400
-
-Should we provide guidance on how to name their CSS classes, etc. to align to component re-usability best-practices? We tout that we follow bootstrap css naming, should we be counseling customers to align similarly? .cmp- 
-<component name="">
-  -- 
- <element>
-   - 
-  <element descriptor="">
-    ? 
-  </element> 
- </element> 
-</component>
-
- -->
-
 ### Attribuzione dello stile ai componenti {#styling-the-components}
 
 La prima forma di personalizzazione consiste nell'applicare stili CSS.
@@ -195,7 +161,7 @@ Come per qualsiasi componente di AEM, è necessario essere consapevoli di una se
 
 Vedere anche la sezione [Supporto](developing.md#core-component-support) dei componenti core.
 
-**Ulteriori informazioni:**
+**Articolo successivo:**
 
 * [Utilizzo dei componenti](using.md) di base: per iniziare a usare i componenti di base nel tuo progetto.
 * [Linee guida](guidelines.md) per i componenti - per apprendere i pattern di implementazione dei componenti core.
