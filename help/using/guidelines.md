@@ -1,21 +1,21 @@
 ---
-title: Linee guida sui componenti
-seo-title: Linee guida sui componenti
+title: Linee guida per i componenti
+seo-title: Linee guida per i componenti
 description: I componenti core seguono modelli di implementazione moderni che sono molto diversi dai componenti di base.
 seo-description: I componenti core seguono modelli di implementazione moderni che sono molto diversi dai componenti di base.
 uuid: b1daea89-da3c-454f-8ab5-d75a19412954
-contentOwner: Utente
-content-type: riferimento
+contentOwner: User
+content-type: reference
 topic-tags: development
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 170dba8f-a2ed-442e-a56e-1126b338c36e
 translation-type: tm+mt
-source-git-commit: 62643e5bd49ab006230f65004bb9374822dcc017
+source-git-commit: e3b5eb14a8172c2172b936dd8713befd17f17524
 
 ---
 
 
-# Linee guida sui componenti {#component-guidelines}
+# Linee guida per i componenti {#component-guidelines}
 
 I componenti [](developing.md) core seguono modelli di implementazione moderni che sono molto diversi dai componenti di base.
 
@@ -110,7 +110,11 @@ La `cq:allowedTemplates` proprietà indica quali modelli possono essere utilizza
 
 ![Modelli e panoramica dei criteri](assets/screen_shot_2018-12-07at093102.png)
 
-**Ulteriori informazioni:**
+## Archetipo progetto AEM {#aem-project-archetype}
+
+[AEM Project Archetype](archetype.md) crea un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componente HTL personalizzato con SlingModels per la logica e la corretta implementazione dei componenti core con il pattern proxy consigliato.
+
+**Articolo successivo:**
 
 * [Utilizzo dei componenti](using.md) di base: per iniziare a usare i componenti di base nel tuo progetto.
 * [Personalizzazione dei componenti](customizing.md) di base: per informazioni su come definire lo stile e personalizzare i componenti di base.
