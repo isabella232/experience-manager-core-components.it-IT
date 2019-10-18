@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: c44bb0d7-5d91-4659-878e-a0658fe29aa2
 translation-type: tm+mt
-source-git-commit: cbfc96bd215260e902f96c035a7889c968814e39
+source-git-commit: 683b4f4705c226275439a408423cbf1b23bea66f
 
 ---
 
@@ -105,7 +105,7 @@ I componenti core forniscono componenti di base affidabili ed estensibili che im
 
 Per iniziare a sviluppare un sito con AEM Sites e i componenti core, segui questa esercitazione passo passo.[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/getting-started.html)
 
-Non dimenticare di avviare il tuo progetto AEM sfruttando l’archetipo [del progetto](archetype.md) AEM con i componenti core più recenti incorporati!
+Non dimenticare di avviare il tuo progetto AEM sfruttando l’archetipo [del progetto](overview.md) AEM con i componenti core più recenti incorporati!
 
 ## Supporto per i componenti core {#core-components-support}
 
