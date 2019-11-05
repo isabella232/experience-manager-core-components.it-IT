@@ -2,15 +2,15 @@
 title: Componente immagine
 seo-title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
-seo-description: Il componente di base per immagini è un componente di immagine adattivo che si occupa della modifica locale.
+seo-description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 uuid: 1a229d42-2428-43aa-895a-9b7c1bf02834
-contentOwner: Utente
-content-type: riferimento
+contentOwner: User
+content-type: reference
 topic-tags: authoring
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: d4684f33-2fb5-4f32-866f-7136cf1800d7
 translation-type: tm+mt
-source-git-commit: 34ae30ca8be3ad290924b986acfac11d960f2ee0
+source-git-commit: ddc970cc3ca21fac5d1f0078837cfd091ec0dccb
 
 ---
 
@@ -60,7 +60,7 @@ Per motivi di sicurezza, l’SVG originale non viene mai chiamato direttamente d
 >
 >Il supporto per SVG richiede la release 2.1.0 dei componenti core o versioni successive insieme al [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versioni successive per supportare le [nuove funzioni](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) dell’editor di immagini in AEM.
 
-## Sample Component Output {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
 Per provare il componente Immagine e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/image.html)Componenti.
 
@@ -271,8 +271,18 @@ Last Modified Date: 2017-11-20T05:51:34.378-0500
    * Usate l’icona del cestino per eliminare le proporzioni.
    >[!CAUTION]
    >
-   >Note that in AEM, crop aspect ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia indicato un nome chiaro del rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non il rapporto stesso.
+   >Note that in AEM, crop aspect ratios are defined as **height/width**. Ciò è diverso dalla definizione convenzionale di larghezza/altezza ed è fatto per motivi di compatibilità legacy. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia indicato un nome chiaro del rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non il rapporto stesso.
 
 ### Scheda Stili {#styles-tab-1}
 
 Il componente Immagine supporta AEM [Style System](authoring.md#component-styling).
+
+## Servlet immagine adattiva {#adaptive-image-servlet}
+
+Il componente Immagine utilizza il servlet immagine adattivo del componente principale. [Il Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) immagine adattivo è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle [personalizzazioni dei componenti](customizing.md)core.
+
+>[!NOTE]
+>
+>Le richieste condizionali tramite l’ `Last-Modified` intestazione sono supportate dal servlet immagine adattivo, ma la memorizzazione nella cache dell’ `Last-Modified` intestazione [deve essere abilitata nel dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
+>
+>[La configurazione del Dispatcher di esempio di AEM Project Archetype](overview.md)contiene già questa configurazione.
