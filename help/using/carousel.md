@@ -4,7 +4,7 @@ seo-title: Componente carosello
 description: 'null'
 seo-description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello a rotazione.
 uuid: 34934491-bd85-4f1e-ae22-bb48ed4dbd5c
-content-type: riferimento
+content-type: reference
 topic-tags: core-components
 discoiquuid: 3510812b-9d3e-40fe-b986-0f15d40b42ad
 disttype: dist5
@@ -17,7 +17,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d37cde072dea612ccb55ad31b4aaf42f17839cb4
+source-git-commit: da404fff6c6e934bbe06a5c4d441d89281ed0c54
 
 ---
 
@@ -68,6 +68,10 @@ Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e sceglier
 * **Descrizione** - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
 * **Elimina** - Toccate o fate clic per eliminare la scheda dal componente Tabulazioni.
 * **Riordina** - Toccate o fate clic e trascinate per ordinare le schede.
+
+>[!TIP]
+>
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Carosello, [trascinateli dal Browser componenti e trascinateli sul componente Carosello nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
 
 ### Scheda Proprietà {#properties-tab}
 
