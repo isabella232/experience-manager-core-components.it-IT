@@ -4,11 +4,11 @@ seo-title: Componente Schede
 description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
 seo-description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
 uuid: 46f71233-8b12-4887-a0c6-ad24dc469cb1
-content-type: riferimento
+content-type: reference
 topic-tags: core-components
 discoiquuid: 966d47fb-d35d-4103-b29d-4ef0aa739f24
 translation-type: tm+mt
-source-git-commit: 48d23edbcdf4c4ed70d590cf6c6e4ac1db14f852
+source-git-commit: da404fff6c6e934bbe06a5c4d441d89281ed0c54
 
 ---
 
@@ -65,6 +65,10 @@ Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e sceglier
 * **Descrizione** - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
 * **Elimina** - Toccate o fate clic per eliminare la scheda dal componente scheda.
 * **Ridisponi** - Toccate o fate clic e trascinate per riordinare l'ordine delle schede.
+
+>[!TIP]
+>
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Tabulazioni, [trascinateli dal Browser componenti e trascinateli sul componente Tabulazioni nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
 
 ### Scheda Proprietà {#properties-tab}
 
