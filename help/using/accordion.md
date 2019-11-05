@@ -4,13 +4,13 @@ seo-title: Componente Accordion
 description: 'null'
 seo-description: Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
 uuid: ec807de9-f76c-4850-9ece-c3e439a1d626
-contentOwner: Utente
-content-type: riferimento
+contentOwner: User
+content-type: reference
 topic-tags: authoring
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: f093f58e-9755-4a4f-803a-ab93a50e6870
 translation-type: tm+mt
-source-git-commit: bbd54d433cbeee5395dc8b90bc47f9b44747e25b
+source-git-commit: da404fff6c6e934bbe06a5c4d441d89281ed0c54
 
 ---
 
@@ -72,6 +72,10 @@ Usate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere
 * **Elementi** espansi - Questa opzione definisce gli elementi che vengono espansi per impostazione predefinita quando la pagina viene caricata.
    * Quando è selezionata l’espansione **di un elemento** singolo, è necessario selezionare un pannello. Per impostazione predefinita, è selezionato il primo pannello.
    * Se l'espansione **di un elemento** singolo non è selezionata, questa opzione è una selezione multipla ed è facoltativa.
+
+>[!TIP]
+>
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Accordion, [trascinateli dal Browser componenti e trascinateli sul componente Accordion nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
 
 ## Selezione del puntatore del pannello {#seelct-panel-popover}
 
