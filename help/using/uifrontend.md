@@ -7,7 +7,7 @@ contentOwner: bohnert
 content-type: reference
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 5f905b0231b5f07924a55dd3d79d347e019f76f4
+source-git-commit: ac1bcbdedd1567ed44809da8d78a7c8a5bd9156d
 
 ---
 
@@ -88,6 +88,10 @@ Il tipo di archivio dei progetti AEM include un meccanismo opzionale per la crea
    * Fornitori (dipendenze js/css)
 * Supporto Sass/Scss completo (Sass viene compilato in CSS tramite Webpack)
 * Server di sviluppo webpack statico con proxy integrato in un’istanza locale di AEM
+
+>[!NOTE]
+>
+>Per ulteriori informazioni tecniche sul modulo ui.frontend, consulta la [documentazione su GitHub](https://github.com/adobe/aem-project-archetype/blob/master/src/main/archetype/ui.frontend/README.md).
 
 ## Installazione {#installation}
 
