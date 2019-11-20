@@ -7,7 +7,7 @@ contentOwner: bohnert
 content-type: reference
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 683b4f4705c226275439a408423cbf1b23bea66f
+source-git-commit: ca7a47d8ac91516659c115a3f27c09f0ee4b8b33
 
 ---
 
@@ -24,4 +24,4 @@ Anche se è raro che il bundle principale debba essere distribuito indipendentem
 mvn -PautoInstallBundle clean install
 ```
 
-Una volta eseguita correttamente, dovreste essere in grado di visualizzare la console Bundels all'indirizzo `http://<host>:<port>/system/console/bundles`.
+Una volta eseguita correttamente, dovreste essere in grado di visualizzare la console Bundles in `http://<host>:<port>/system/console/bundles`.
