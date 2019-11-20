@@ -7,7 +7,7 @@ contentOwner: bohnert
 content-type: reference
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 488132fdc077985cdc3f369e1e127e8bff8e80c7
+source-git-commit: 69e9b6c9c1154f4af8ab98e86ed6aba13164a1de
 
 ---
 
@@ -22,7 +22,7 @@ AEM Project Archetype crea un progetto Adobe Experience Manager minimo basato su
 
 >[!NOTE]
 >
->Consulta la [Guida introduttiva ad AEM Sites - WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) nella documentazione di AEM per un esempio pratico che illustra come utilizzare l’archetipo per implementare un progetto semplice.
+>Consulta la [Guida introduttiva ad AEM Sites - Esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND nella documentazione di AEM per un esempio pratico che illustra come utilizzare l’archetipo per implementare un progetto semplice.
 
 ## Funzioni {#features}
 
@@ -53,11 +53,11 @@ AEM Archetype è composto da moduli:
 * **[ui.content](uicontent.md)**: contiene contenuto di esempio utilizzando i componenti del modulo ui.apps.
 * **ui.test**: è un pacchetto Java contenente test JUnit eseguiti sul lato server. Questo bundle non deve essere distribuito in produzione.
 * **ui.launcher**: contiene codice colla che distribuisce il bundle ui.test (e i bundle dipendenti) al server e attiva l'esecuzione JUnit remota.
-* **[ui.frontend](front-end-build.md)**: **(facoltativo)** contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack.
+* **[ui.frontend](uifrontend.md)**: **(facoltativo)** contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack.
 
 ![](assets/project-pom.png)
 
-I moduli dell’archivio AEM rappresentati in Paradiso vengono distribuiti in AEM come pacchetti di contenuti che rappresentano l’applicazione, il contenuto e i bundle OSGi necessari.
+I moduli di AEM Archetype rappresentati in Maven sono distribuiti in AEM come pacchetti di contenuto che rappresentano l’applicazione, il contenuto e i bundle OSGi necessari.
 
 ## Requisiti {#requirements}
 
@@ -117,7 +117,7 @@ Le seguenti proprietà sono disponibili quando si crea un progetto utilizzando a
 | `optionAemVersion` | 6.5.0 | Versione di destinazione AEM |
 | `optionIncludeExamples` | y | Includi un sito di esempio nella libreria [di](http://opensource.adobe.com/aem-core-wcm-components/library.html) componenti |
 | `optionIncludeErrorHandler` | n | Includi una pagina di risposta personalizzata 404 |
-| `optionIncludeFrontendModule` | n | [Includere un modulo front-end dedicato](front-end-build.md) |
+| `optionIncludeFrontendModule` | n | [Includere un modulo front-end dedicato](uifrontend.md) |
 
 >[!NOTE]
 > Se l'archetype viene eseguito in modalità interattiva la prima volta, le proprietà con valori predefiniti non possono essere modificate (per ulteriori dettagli, vedere [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Il valore può essere modificato quando la conferma della proprietà alla fine viene negata e il questionario viene ripetuto, o passando il parametro nella riga di comando (ad es. `-DoptionIncludeExamples=n`).
@@ -231,9 +231,9 @@ Il progetto contiene tre livelli di test e, poiché sono tipi diversi di test, v
 
 ## Passaggi successivi {#next-steps}
 
-Quindi hai creato e installato AEM Project Archteype. E adesso? Il tipo archetipo è piccolo, ma è costituito da molti esempi di potenti funzioni di AEM configurate in base alle best practice consigliate. Utilizzate queste opzioni per indicare come sfruttare queste funzionalità nel progetto. Per qualsiasi progetto è probabilmente necessario:
+Quindi hai creato e installato AEM Project Archetype. E adesso? Il tipo archetipo è piccolo, ma è costituito da molti esempi di potenti funzioni di AEM configurate in base alle best practice consigliate. Utilizzate queste opzioni per indicare come sfruttare queste funzionalità nel progetto. Per qualsiasi progetto è probabilmente necessario:
 
-* [Personalizzare i componenti per estendere i componenti core esistenti](customizing.md)
+* [Personalizzare i componenti estendendo i componenti core esistenti](customizing.md)
 * [Aggiungere altri modelli](https://helpx.adobe.com/content/help/en/experience-manager/6-5/sites/authoring/using/templates.html)
 * [Adattare la struttura di localizzazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-prep.html)
-* [Informazioni sul modulo di build front-end](front-end-build.md)
+* [Informazioni sul modulo di build front-end](uifrontend.md)
