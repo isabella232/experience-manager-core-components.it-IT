@@ -6,11 +6,11 @@ seo-description: I componenti core forniscono componenti di base affidabili ed e
 uuid: 68569da2-9bc8-4e20-9a71-e5816ace51ce
 contentOwner: User
 content-type: reference
-topic-tags: development
+topic-tags: developing
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 157a2ec3-9fca-4fad-977a-d93013eeb218
 translation-type: tm+mt
-source-git-commit: 683b4f4705c226275439a408423cbf1b23bea66f
+source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
 
 ---
 
@@ -140,7 +140,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Schede](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs) | Consente all’autore del contenuto di organizzare il contenuto della pagina all’interno di più schede | `-` |
 | [Carosello](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel) | Consente all’autore del contenuto di organizzare il contenuto in un carosello rotante di diapositive | `/libs/foundation/components/carousel` |
 | [Frammento di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment) | Consente la visualizzazione di un frammento di contenuto | `-` |
-| [Elenco frammenti di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragmentlist/v1/contentfragmentlist) | Consente di visualizzare un elenco dei frammenti di contenuto | `-` |
+| [Elenco di frammenti di contenuto](https://github.com/adobe/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragmentlist/v1/contentfragmentlist) | Consente di visualizzare un elenco dei frammenti di contenuto | `-` |
 | [Separatore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/separator/v1/separator) | Separa il contenuto di una pagina | `-` |
 | [Pannello a soffietto](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/accordion/v1/accordion) | Organizzare i pannelli dei contenuti in un ambiente comprimibile | `-` |
 | [Contenitore](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/container/v1/container) | Organizzare i componenti all’interno di un contenitore | `-` |
@@ -151,7 +151,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 
 ### Componenti in arrivo {#upcoming-components}
 
-Per una panoramica della roadmap di Componente principale in arrivo, vedi il wiki di [progetto su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
+Per una panoramica della road map dei componenti core, consulta il [progetto wiki su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
 
 ## Aggiornamento dei componenti core {#upgrade-of-core-components}
 
