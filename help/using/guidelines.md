@@ -6,11 +6,11 @@ seo-description: I componenti core seguono modelli di implementazione moderni ch
 uuid: b1daea89-da3c-454f-8ab5-d75a19412954
 contentOwner: User
 content-type: reference
-topic-tags: development
+topic-tags: developing
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: 170dba8f-a2ed-442e-a56e-1126b338c36e
 translation-type: tm+mt
-source-git-commit: 683b4f4705c226275439a408423cbf1b23bea66f
+source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
 
 ---
 
@@ -37,7 +37,7 @@ Per fare un passo avanti, se i componenti vengono riutilizzati tra siti o proget
 
 In genere è consigliabile tenere separata la logica (o il modello) di un componente dal modello (o dalla vista) di marcatura. Esistono diversi modi per ottenere questo risultato, tuttavia quello consigliato è quello di utilizzare i modelli [](https://sling.apache.org/documentation/bundles/models.html) Sling per la logica e il linguaggio [HTL (](https://helpx.adobe.com/experience-manager/htl/using/overview.html) HTML Template Language) per la marcatura, come fanno anche i componenti core.
 
-Sling Models è una serie di annotazioni Java per accedere facilmente alle variabili necessarie dai POJO, e quindi offre un modo semplice, potente e performante per implementare la logica Java per i componenti.
+Sling Models è una serie di annotazioni Java per accedere facilmente alle variabili necessarie dai POJO, e quindi offre un modo semplice, potente ed efficiente per implementare la logica Java per i componenti.
 
 HTL è stato progettato per essere un linguaggio di modello semplice e sicuro, personalizzato per AEM. Può chiamare molte forme di logica, che la rende molto flessibile.
 
@@ -50,16 +50,6 @@ Le linee guida di questa sezione possono essere utilizzate anche per qualsiasi t
 Oltre alla finestra di dialogo di modifica utilizzata dagli autori delle pagine, i componenti possono anche avere una finestra di dialogo di progettazione per consentire agli autori dei modelli di preconfigurarli. L'Editor [](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html) modelli consente di impostare tutte queste preconfigurazioni, che sono denominate "Criteri".
 
 Per rendere i componenti il più possibile riutilizzabili, è necessario fornire loro opzioni significative per la preconfigurazione. Questo consente di abilitare o disabilitare le funzioni dei componenti per soddisfare le esigenze specifiche dei diversi siti.
-
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T17:49:04.584-0400
-
-Unclear how I can add my own capability toggle (for example, if i extend a component and want to toggle that extended functionality ... )
-
- -->
 
 ### Pattern componente proxy {#proxy-component-pattern}
 
@@ -104,9 +94,9 @@ Di seguito è riportata un'altra panoramica, che non mostra i dettagli dell'impl
 
 La `cq:allowedTemplates` proprietà indica quali modelli possono essere utilizzati per un sito e `cq:template` indica per ciascuna pagina quale sia il modello associato. Ogni modello è costituito da tre parti:
 
-* **struttura** Contiene le risorse che verranno forzate a essere presenti su ciascuna pagina e che l’autore della pagina non potrà eliminare, come ad esempio i componenti dell’intestazione e del piè di pagina.
-* **initial** Contiene il contenuto iniziale che verrà duplicato nella pagina al momento della creazione.
-* **policy** Contiene per ciascun componente la mappatura a un criterio, ovvero la preconfigurazione del componente. Questa mappatura consente di riutilizzare i criteri tra i modelli, e quindi di essere gestiti a livello centrale.
+* **struttura** - Contiene le risorse che verranno forzate a essere presenti su ciascuna pagina e che l'autore della pagina non potrà eliminare, come ad esempio i componenti dell'intestazione e del piè di pagina.
+* **initial** - Contiene il contenuto iniziale che verrà duplicato nella pagina al momento della creazione.
+* **criteri** - Contiene per ciascun componente la mappatura a un criterio, ovvero la preconfigurazione del componente. Questa mappatura consente di riutilizzare i criteri tra i modelli, e quindi di essere gestiti a livello centrale.
 
 ![Modelli e panoramica dei criteri](assets/screen_shot_2018-12-07at093102.png)
 
