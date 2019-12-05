@@ -4,21 +4,21 @@ seo-title: Componente di navigazione
 description: 'null'
 seo-description: Il componente Navigazione consente agli utenti di spostarsi facilmente in una struttura del sito globalizzata.
 uuid: 616c03fb-39b3-402a-b990-f56c87bc6df4
-content-type: riferimento
+content-type: reference
 topic-tags: authoring
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
 discoiquuid: da8d67d7-b65e-4041-bc0e-e998f24a68f9
 disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
+gnavtheme: light
+groupsectionnavitems: false
+hidemerchandisingbar: inherit
+hidepromocomponent: inherit
 modalsize: 426x240
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
+source-git-commit: 9718a1075b5789db9b71d25b3146f9643bb69ad0
 
 ---
 
@@ -31,7 +31,7 @@ Il componente Navigazione consente agli utenti di spostarsi facilmente in una st
 
 Il componente di navigazione elenca una struttura di pagine che consente agli utenti di un sito di navigare facilmente nella struttura del sito.
 
-Il componente Navigazione è in grado di rilevare automaticamente la struttura del sito globalizzata e di [adattarsi automaticamente a una pagina localizzata.](#localized-site-strucutre) Inoltre, può supportare qualsiasi struttura arbitraria del sito utilizzando pagine [di reindirizzamento](#shadow-structure) shadow per rappresentare un'altra struttura diversa dalla struttura di contenuto principale.
+Il componente Navigazione è in grado di rilevare automaticamente la struttura del sito globalizzata e di [adattarsi automaticamente a una pagina localizzata.](#localized-site-structure) Inoltre, può supportare qualsiasi struttura arbitraria del sito utilizzando pagine [di reindirizzamento](#shadow-structure) shadow per rappresentare un'altra struttura diversa dalla struttura di contenuto principale.
 
 La finestra di dialogo [di](#edit-dialog) modifica consente all’autore del contenuto di definire la pagina principale di navigazione insieme alla profondità della navigazione. La finestra di dialogo [di](#design-dialog) progettazione consente all'autore del modello di definire i valori predefiniti per la radice e la profondità di navigazione.
 
@@ -39,7 +39,7 @@ La finestra di dialogo [di](#edit-dialog) modifica consente all’autore del con
 
 I siti Web sono spesso disponibili in più lingue per diverse aree geografiche. In genere, ogni pagina localizzata contiene un elemento di navigazione incluso nel modello di pagina. Il componente Navigazione consente di inserirlo una volta in un modello per tutte le pagine del sito e quindi si adatta automaticamente alle singole pagine localizzate in base alla struttura globalizzata del sito.
 
-* Per un esempio del funzionamento della funzione di localizzazione del componente di navigazione, vedere [la sezione seguente](#example-localiatzion).
+* Per un esempio del funzionamento della funzione di localizzazione del componente di navigazione, vedere [la sezione seguente](#example-localization).
 * Per un esempio di come le funzioni di localizzazione dei componenti core funzionano insieme, consultate le funzioni di [localizzazione della pagina](localization.md)Componenti principali.
 
 ### Esempio {#example-localization}
@@ -88,15 +88,15 @@ A volte è necessario creare un menu di navigazione per il visitatore diverso da
 
 A tal fine, è necessario:
 
-1. Create pagine ombreggiate come pagine vuote che rappresentano la struttura del sito desiderata. Questo viene spesso definito come struttura del sito ombra.
-1. Impostate i valori **Redirect** nelle proprietà della pagina su queste pagine in modo che puntino alle pagine di contenuto effettive.
+1. Create pagine ombreggiate come pagine vuote che rappresentino la struttura del sito desiderata. Questo viene spesso definito come struttura del sito ombra.
+1. Impostate i valori di **reindirizzamento** nelle proprietà della pagina su queste pagine in modo che puntino alle pagine di contenuto effettive.
 1. Impostare l'opzione **Nascondi in navigazione** nelle proprietà della pagina delle pagine shadow.
 1. Impostare il valore **Navigation Root** del componente di navigazione in modo che punti alla radice della nuova struttura del sito shadow.
 
 Il componente di navigazione eseguirà quindi il rendering del menu in base alla struttura del sito ombra. I collegamenti di cui viene eseguito il rendering dal componente sono alle pagine di contenuto effettive a cui le pagine ombra reindirizzano e non alle pagine ombra stesse. Inoltre, il componente visualizza i nomi delle pagine effettive e evidenzia correttamente la pagina attiva, anche quando la navigazione è basata su pagine ombra. Il componente Navigazione rende le pagine shadow completamente trasparenti per il visitatore.
 
 >[!NOTE]
->Le pagine ombreggiate rendono le opzioni di navigazione molto più flessibili, ma tenete presente che la manutenzione di questa struttura è quindi completamente manuale. Se ridisponete il contenuto effettivo del sito o aggiungete/rimuovete contenuto, dovrete aggiornare manualmente la struttura ombreggiata secondo le necessità.
+>Le pagine ombreggiate rendono le opzioni di navigazione molto più flessibili, ma ricordate che la manutenzione di questa struttura è quindi completamente manuale. Se ridisponete il contenuto effettivo del sito o aggiungete/rimuovete contenuto, dovrete aggiornare manualmente la struttura ombreggiata secondo le necessità.
 
 >[!NOTE]
 >Durante il rendering di una struttura del sito ombreggiata, solo le pagine ombra vengono ricorse dalla logica di navigazione. La logica non ricorre alla struttura delle destinazioni di reindirizzamento.
@@ -133,12 +133,16 @@ Nella finestra di dialogo di modifica, l’autore del contenuto può definire la
 
 ### Scheda Proprietà {#properties-tab}
 
-![](assets/screen-shot-2019-08-29-12.23.45.png)
+![](assets/screen-shot-2019-12-04at12.50.51.png)
 
-* **Radice** di navigazione La pagina principale, che verrà utilizzata per generare la struttura ad albero.
-* **Escludi radice** di navigazione Escludi la radice di navigazione nella struttura risultante, includi solo i relativi discendenti.
-* **Raccogli tutte le pagine** figlie Raccogliere tutte le pagine discendenti della radice di navigazione.
-* **Profondità** struttura di navigazione Definisce il numero di livelli sotto la struttura di navigazione che il componente deve visualizzare rispetto al livello principale di navigazione (disponibile solo se **Raccolta di tutte le pagine** figlie non è selezionata).
+* **Radice** di navigazione - La pagina principale, che verrà utilizzata per generare la struttura ad albero.
+* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero di livelli rispetto al livello principale da escludere. Esempio:
+   * 0 = mostra il livello principale
+   * 1 = escludere il livello principale
+   * 2 = escludere la radice e 1 altro livello verso l'alto
+   * etc.
+* **Raccolta di tutte le pagine** figlie - Raccolta di tutte le pagine discendenti della radice di navigazione.
+* **Profondità** struttura di navigazione - Definisce il numero di livelli sotto la struttura di navigazione che il componente deve visualizzare rispetto al livello principale di navigazione (disponibile solo se **Raccoglie tutte le pagine** figlie non è selezionata).
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -154,12 +158,16 @@ La finestra di dialogo di progettazione consente all'autore del modello di impos
 
 ### Scheda Proprietà {#properties-tab-design}
 
-![](assets/screen_shot_2018-04-03at112357.png)
+![](assets/screen-shot-2019-12-04at12.53.32.png)
 
-* **Radice** di navigazione Il valore predefinito della pagina principale della struttura di navigazione, che verrà utilizzato per generare la struttura di navigazione e predefinito quando l'autore del contenuto aggiunge il componente alla pagina.
-* **Escludi radice** di navigazione Il valore predefinito dell'opzione per escludere la radice di navigazione nella struttura ad albero risultante.
-* **Raccogli tutte le pagine** figlie Il valore predefinito dell'opzione per raccogliere tutte le pagine discendenti della radice di navigazione.
-* **Profondità** struttura di navigazione Il valore predefinito della profondità della struttura di navigazione.
+* **Radice** di navigazione - Il valore predefinito della pagina principale della struttura di navigazione, che verrà utilizzato per generare la struttura di navigazione e predefinito quando l'autore del contenuto aggiunge il componente alla pagina.
+* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero predefinito di livelli rispetto al livello principale da escludere. Esempio:
+   * 0 = mostra il livello principale
+   * 1 = escludere il livello principale
+   * 2 = escludere la radice e 1 altro livello verso l'alto
+   * etc.
+* **Raccogli tutte le pagine** figlie - Il valore predefinito dell'opzione per raccogliere tutte le pagine discendenti della radice di navigazione.
+* **Profondità** struttura di navigazione - Il valore predefinito della profondità della struttura di navigazione.
 
 ### Scheda Stili {#styles-tab}
 
