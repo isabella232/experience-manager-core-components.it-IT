@@ -7,7 +7,7 @@ contentOwner: bohnert
 content-type: reference
 topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 6616db2e76d35716cb37052afca8ca2cc2379548
+source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
 
 ---
 
@@ -207,7 +207,7 @@ Pertanto, al fine di sfruttare i componenti core in tutte le distribuzioni, è c
 
 >[!NOTE]
 >
->A ogni versione dei componenti core segue generalmente una release dell’archivio dei progetti AEM, in modo che l’ultimo archivio utilizzi la versione più recente dei componenti core.
+>A ogni versione dei componenti core segue generalmente una release dell’archivio dei progetti AEM, in modo che l’ultimo archetipo utilizzi la versione più recente dei componenti core.
 >
 >Tuttavia, una nuova versione dell'archetipo potrebbe non seguire direttamente una nuova versione dei componenti core, pertanto è possibile aggiornare la dipendenza dai componenti core alla versione più recente.
 
