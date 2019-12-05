@@ -3,19 +3,19 @@ title: Funzioni di localizzazione dei componenti core
 seo-title: Funzioni di localizzazione dei componenti core
 description: Funzioni di localizzazione dei componenti core
 seo-description: Funzioni di localizzazione dei componenti core
-content-type: riferimento
+content-type: reference
 topic-tags: core-components
 index: y
 internal: n
 translation-type: tm+mt
-source-git-commit: c8041e855386b7195fe32dd5dc53458f1d8270b8
+source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
 
 ---
 
 
 # Funzioni di localizzazione dei componenti core {#localization-features-of-the-core-components}
 
-Molti siti Web richiedono la distribuzione di contenuti in un formato localizzato in più lingue e aree geografiche. I componenti core selezionati sono dotati di una soluzione di riferimento intelligente che semplifica la creazione di un modello unificato per tutti i contenuti localizzati che si adattano automaticamente in base alla struttura del sito localizzata.
+Molti siti Web richiedono la distribuzione di contenuti in un formato localizzato in più lingue e aree geografiche. I componenti core selezionati offrono una risoluzione intelligente dei riferimenti che semplifica la creazione di un modello unificato per tutti i contenuti localizzati che si adattano automaticamente in base alla struttura del sito localizzata.
 
 ## Esempio: pagina localizzata con navigazione e piè di pagina {#example}
 
@@ -23,7 +23,7 @@ La maggior parte dei siti richiede che un piè di pagina sia presente in tutte l
 
 Analogamente, un componente di navigazione in genere deve essere visualizzato su tutte le pagine. Tuttavia, dovrà riflettere anche il contenuto delle pagine localizzate.
 
-Utilizzando le funzioni di localizzazione del componente [core di](navigation.md) navigazione e del componente [core del frammento](experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), si ottiene un’attività semplice. L'esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](language-navigation.md) lingua.
+Utilizzando le funzioni di localizzazione del componente [core di](navigation.md) navigazione e del componente [core del frammento](experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), si tratta di un’attività semplice. L'esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](language-navigation.md) lingua.
 
 ## Struttura del contenuto {#content-structure}
 
@@ -93,13 +93,13 @@ A questo modello aggiungeremo i componenti di base sui quali vogliamo basare le 
 * [Componente contenitore](container.md)
    * Ogni pagina conterrà un componente Contenitore modificabile in modo che gli autori possano inserire contenuto aggiuntivo nella pagina.
 * [Frammento esperienza](experience-fragment.md)
-   * Il componente Frammento esperienza viene indirizzato al percorso del frammento nella lingua di creazione del frammento che rappresenta il piè di pagina.
+   * Il componente Frammento esperienza viene indirizzato al percorso del frammento nella lingua di authoring del frammento che rappresenta il piè di pagina.
    * In base al percorso del frammento e alla struttura dei frammenti esperienza che rispecchia la struttura di pagina localizzata, il componente può trovare automaticamente il contenuto localizzato corrispondente.
    ![](assets/screen-shot-2019-09-09-11.20.10.png)
 
 ## Pagine {#pages}
 
-Durante il lavoro di configurazione della struttura e del modello del sito, l’autore del contenuto deve semplicemente aggiungere alle pagine il contenuto necessario. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno automaticamente aggiunti alla pagina e localizzati.
+Durante il lavoro di configurazione della struttura del sito e del modello, l’autore del contenuto deve semplicemente aggiungere alle pagine il contenuto necessario. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno automaticamente aggiunti alla pagina e localizzati.
 
 Ad esempio, l’autore deve solo aggiungere contenuto, ad esempio un componente di testo, alle pagine inglese e francese (rappresentato in blu sotto).
 
