@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/CORECOMPONENTS
 discoiquuid: a3a98b2f-65bf-4493-82ad-01717938fdbc
 translation-type: tm+mt
-source-git-commit: b1b69e9e1ba18dd0f9d8059a79537ad2bf7db066
+source-git-commit: 1a78794d95b9fb4932c9560c167cf41d9b17470b
 
 ---
 
@@ -63,7 +63,7 @@ La seguente tabella, il cui contenuto è [disponibile su GitHub con i dettagli](
 
 | Release | Descrizione | AEM 6.3 | AEM 6.4 | AEM 6.5 | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
-| [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Questa release era incentrata sulle correzioni con piccoli miglioramenti al componente di navigazione | 6.3.3.4+ | 6.4.4.0+ | 6.5.0.0+ | 8, 11 | 5 dicembre 2019 |
+| [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Questa release era incentrata sulle correzioni con piccoli miglioramenti. | 6.3.3.4+ | 6.4.4.0+ | 6.5.0.0+ | 8, 11 | 5 dicembre 2019 |
 | [2.7.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.7.0) | Questa versione ha introdotto il nuovo componente Incorpora | 6.3.3.4+ | 6.4.4.0+ | 6.5.0.0+ | 8, 11 | 25 settembre 2019 |
 | [2.6.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.6.0) | Questa versione ha introdotto il nuovo componente Frammento esperienza | 6.3.3.4+ | 6.4.4.0+ | 6.5.0.0+ | 8, 11 | 6 settembre 2019 |
 | [2.5.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.5.0) | Questa versione ha introdotto i nuovi componenti Accordion, Button, Container e Download. | 6.3.3.0+ | 6.4.2.0+ | 6.5.0.0+ | 8, 11 | 25 giugno 2019 |
