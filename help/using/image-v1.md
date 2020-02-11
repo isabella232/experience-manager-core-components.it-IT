@@ -1,15 +1,9 @@
 ---
 title: Componente immagine (v1)
-seo-title: Componente immagine (v1)
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
-seo-description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
-uuid: 20ea7921-511d-4d3a-b3df-c2f2c1d8455d
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: ab9041ab-e29e-4277-b326-85ab37df8413
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -85,19 +79,19 @@ Oltre alla finestra di dialogo [standard per la](image-v1.md#main-pars_title) mo
 ![](assets/chlimage_1-50.png)
 
 * **Risorsa immagine**
-   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) risorse o toccate l'opzione **Sfoglia** per caricarla da un file system locale.
-   * Toccate o fate clic su **Cancella** per deselezionare l'immagine attualmente selezionata.
+   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) risorse o toccate l&#39;opzione **Sfoglia** per caricarla da un file system locale.
+   * Toccate o fate clic su **Cancella** per deselezionare l&#39;immagine attualmente selezionata.
    * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://helpx.adobe.com/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) nell’editor risorse.
 
-* **L'immagine è decorativa** - Verificare se l'immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
-* **Testo** alternativo: alternativa testuale al significato o alla funzione dell'immagine, per lettori ipovedenti.
+* **L&#39;immagine è decorativa** - Verificare se l&#39;immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+* **Testo** alternativo: alternativa testuale al significato o alla funzione dell&#39;immagine, per lettori ipovedenti.
 * **Collegamento**
    * Collegare l’immagine a un’altra risorsa.
    * Utilizzate la finestra di dialogo di selezione per collegarvi a un’altra risorsa AEM.
    * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi ad AEM.
 
 * **Didascalia** - Per impostazione predefinita, sotto l’immagine vengono visualizzate ulteriori informazioni sull’immagine.
-* **Visualizza la didascalia come pop-up** - Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l'immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull'immagine.
+* **Visualizza la didascalia come pop-up** - Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
 
 ## Edit Dialog {#edit-dialog}
 
@@ -127,21 +121,21 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
    ![](assets/chlimage_1-12.png)
 
-   Utilizzate questa opzione per applicare una mappa di lancio all'immagine. Selezionando questa opzione si apre una nuova finestra che consente all'utente di selezionare la forma della mappa:
+   Utilizzate questa opzione per applicare una mappa di lancio all&#39;immagine. Selezionando questa opzione si apre una nuova finestra che consente all&#39;utente di selezionare la forma della mappa:
 
    * **Aggiungi mappa rettangolare**
    * **Aggiungi mappa circolare**
    * **Aggiungi mappa poligono**
 
       * Per impostazione predefinita, aggiunge una mappa a triangolo. Fare doppio clic su una linea della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
-   Una volta selezionata, la forma mappa viene sovrapposta all'immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
+   Una volta selezionata, la forma mappa viene sovrapposta all&#39;immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
 
    ![](assets/chlimage_1-13.png)
 
    Dopo aver ridimensionato la mappa del lancio, fate clic su di essa per aprire una barra degli strumenti mobile e definire il percorso del collegamento.
 
    * **Percorso**
-      * Utilizzate l'opzione Selettore percorso per selezionare un percorso in AEM
+      * Utilizzate l&#39;opzione Selettore percorso per selezionare un percorso in AEM
       * Se il percorso non è in AEM, usate l’URL assoluto. I percorsi non assoluti verranno interpretati in relazione ad AEM.
 
       * **Testo** Alt Descrizione alternativa della destinazione del percorso
@@ -188,8 +182,8 @@ On the **Main** tab you can define a list of allowed widths in pixels for the im
 
 Toccate o fate clic sul pulsante Aggiungi per aggiungere un’altra dimensione.
 
-* Utilizzare le maniglie per riordinare l'ordine delle dimensioni.
-* Utilizzate l'icona delete per rimuovere una larghezza.
+* Utilizzare le maniglie per riordinare l&#39;ordine delle dimensioni.
+* Utilizzate l&#39;icona delete per rimuovere una larghezza.
 
 Per impostazione predefinita, il caricamento delle immagini viene differito finché non diventano visibili. Selezionate l’opzione **Disattiva caricamento** lento per caricare le immagini al caricamento della pagina.
 
@@ -207,7 +201,7 @@ Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori 
 
    ![](assets/chlimage_1-20.png)
 
-   * **Ruota** - Utilizzate questa opzione per consentire all'autore del contenuto di utilizzare l'opzione **Ruota a destra** .
+   * **Ruota** - Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare l&#39;opzione **Ruota a destra** .
    * **Capovolgi** Utilizzate questa opzione per consentire all’autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
    >[!CAUTION]
    >
