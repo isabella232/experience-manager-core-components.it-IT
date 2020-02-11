@@ -1,23 +1,15 @@
 ---
 title: Componente frammento di contenuto
-seo-title: Componente frammento di contenuto
-description: 'null'
-seo-description: Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di contenuto.
-uuid: ec807de9-f76c-4850-9ece-c3e439a1d626
-contentOwner: Utente
-content-type: riferimento
-topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: f093f58e-9755-4a4f-803a-ab93a50e6870
+description: Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di contenuto.
 translation-type: tm+mt
-source-git-commit: 548972c65751b594cd62234d4681634a60fa41e2
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
 
 # Componente frammento di contenuto{#content-fragment-component}
 
-Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di [contenuto](https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments.html).
+Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 >[!NOTE]
 >
@@ -25,11 +17,11 @@ Il componente Frammento di contenuto del componente principale consente la visua
 
 ## Utilizzo {#usage}
 
-Il componente di base Frammento di contenuto del componente consente di includere un frammento di [contenuto](https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments.html) in una pagina.
+Il componente di base Frammento di contenuto del componente consente di includere un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
 
 * È possibile selezionare il frammento e le relative proprietà nella finestra di dialogo [di](#configure-dialog)configurazione.
 * I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella finestra di dialogo [di](#design-dialog)progettazione.
-* L'opzione Modifica consente di aprire il frammento selezionato nell'editor [frammento di](https://helpx.adobe.com/content/help/en/experience-manager/6-5/assets/using/content-fragments.html)contenuto.
+* L&#39;opzione Modifica consente di aprire il frammento selezionato nell&#39;editor [frammento di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)contenuto.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -37,9 +29,9 @@ La versione corrente del componente Frammento di contenuto è v1, introdotto con
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 >[!NOTE]
 >
@@ -51,23 +43,23 @@ La tabella seguente elenca tutte le versioni supportate del componente, le versi
 >
 >`apps/core/wcm/components/contentfragment/v1/contentfragment`
 >
->Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei componenti proxy correlati per utilizzare il nuovo tipo di risorsa quando si esegue l'aggiornamento alla release 2.4.0 o successiva dei componenti core.
+>Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei componenti proxy correlati per utilizzare il nuovo tipo di risorsa quando si esegue l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Frammento di contenuto e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/content-fragment.html)componenti.
+Per provare il componente Frammento di contenuto e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_cf)componenti.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Frammento di contenuto [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/contentfragment/v1/contentfragment).
+La documentazione tecnica più recente sul componente Frammento di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all'autore del contenuto di definire il frammento di contenuto e gli elementi del frammento da includere.
+La finestra di dialogo di configurazione consente all&#39;autore del contenuto di definire il frammento di contenuto e gli elementi del frammento da includere.
 
 ![](assets/chlimage_1-87.png)
 
@@ -76,7 +68,7 @@ La finestra di dialogo di configurazione consente all'autore del contenuto di de
    * Percorso del frammento di contenuto desiderato
    * La finestra di dialogo **** Selezione consente di individuare il frammento
 
-* **Elemento** - L'elemento del frammento di contenuto da includere
+* **Elemento** - L&#39;elemento del frammento di contenuto da includere
 * **Variazione** - Variazione del frammento di contenuto da utilizzare (impostazione predefinita: **Master**)
 
 * **Paragrafi**
@@ -102,3 +94,4 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 * **Griglia reattiva interna**
 
    * Tipo di risorsa Sling utilizzato per la griglia reattiva interna
+
