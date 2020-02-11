@@ -1,21 +1,9 @@
 ---
 title: Componente pulsante modulo (v1)
-seo-title: Componente pulsante modulo (v1)
-description: 'null'
-seo-description: Il componente Principale Modulo nascosto consente di includere un campo nascosto in un modulo.
-uuid: 0525e70f-294f-4d35-bf96-fc0e4ec225e9
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: ea06acc0-38e2-4252-ac29-07332835b7c4
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
+description: Il componente Principale Modulo nascosto consente di includere un campo nascosto in un modulo.
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -28,7 +16,7 @@ Il componente Pulsante Modulo componente di base consente di includere un campo 
 
 Il componente Pulsante Modulo componente di base consente di creare un campo pulsante, spesso per attivare l’invio del modulo e deve essere utilizzato insieme al componente [Contenitore](form-container.md)modulo.
 
-Le proprietà del pulsante possono essere definite dall'editor del contenuto nella finestra di dialogo [di](form-button-v1.md#main-pars_title)configurazione.
+Le proprietà del pulsante possono essere definite dall&#39;editor del contenuto nella finestra di dialogo [di](form-button-v1.md#main-pars_title)configurazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -97,7 +85,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all'autore del contenuto di definire i parametri del pulsante.
+La finestra di dialogo di configurazione consente all&#39;autore del contenuto di definire i parametri del pulsante.
 
 ![](assets/chlimage_1-49.png)
 
