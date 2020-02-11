@@ -1,12 +1,8 @@
 ---
 title: Incorpora componente
-seo-title: Incorpora componente
 description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
-seo-description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
-content-type: reference
-topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 648a54d3ab76ec9a9dee10dc97a3f91e6b7509df
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
@@ -28,19 +24,19 @@ La versione corrente del componente Incorpora è v1, introdotto con la release 2
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Incorpora e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/embed.html)componenti.
+Per provare il componente Incorpora e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_embed)componenti.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Embed [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed).
+La documentazione tecnica più recente sul componente Embed [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_embed_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -73,14 +69,14 @@ Il campo **Incorporabile** definisce il tipo di processore da utilizzare. Nel ca
 
 * **ID** video - ID video univoco da YouTube della risorsa da incorporare
 * **Larghezza** - La larghezza del video incorporato
-* **Altezza** - L'altezza del video incorporato
+* **Altezza** - L&#39;altezza del video incorporato
 
 Altri elementi da incorporare offrirebbero campi simili e possono essere definiti da uno sviluppatore [seguendo la documentazione sviluppatore del componente Incorpora.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![](assets/screen-shot-2019-09-25-10.15.00.png)
 
 >[!NOTE]
->Per essere disponibili per l'autore della pagina, le [schede di incorporamento devono essere abilitate a livello di modello tramite la finestra di dialogo](#design-dialog) Progettazione.
+>Per essere disponibili per l&#39;autore della pagina, le [schede di incorporamento devono essere abilitate a livello di modello tramite la finestra di dialogo](#design-dialog) Progettazione.
 
 ### HTML {#html}
 
@@ -89,28 +85,28 @@ Altri elementi da incorporare offrirebbero campi simili e possono essere definit
 ![](assets/screen-shot-2019-09-25-10.20.00.png)
 
 >[!NOTE]
->Eventuali tag non sicuri, come gli script, verranno filtrati dall'HTML immesso e non verranno rappresentati nella pagina risultante.
+>Eventuali tag non sicuri, come gli script, verranno filtrati dall&#39;HTML immesso e non verranno rappresentati nella pagina risultante.
 
-#### Protezione {#security}
+#### Sicurezza {#security}
 
-La marcatura HTML che l'autore può immettere viene filtrata a scopo di sicurezza per evitare attacchi di script tra siti che potrebbero, ad esempio, consentire agli autori di ottenere diritti amministrativi.
+La marcatura HTML che l&#39;autore può immettere viene filtrata a scopo di sicurezza per evitare attacchi di script tra siti che potrebbero, ad esempio, consentire agli autori di ottenere diritti amministrativi.
 
-*In generale,* tutti gli elementi e `style` gli script, nonché tutti `on*` e `style` gli attributi, verranno rimossi dall'output.
+*In generale,* tutti gli elementi e `style` gli script, nonché tutti `on*` e `style` gli attributi, verranno rimossi dall&#39;output.
 
 Tuttavia, le regole sono più complicate perché il componente Incorpora segue l’insieme di regole di filtraggio del framework HTML antiSamy di AEM, che è possibile trovare in `/libs/cq/xssprotection/config.xml`. Se necessario, questo può essere sovrapposto a una configurazione specifica per il progetto da parte di uno sviluppatore.
 
-Ulteriori informazioni sulla sicurezza sono disponibili nella documentazione per gli sviluppatori di [AEM.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/security.html)
+Ulteriori informazioni sulla sicurezza sono disponibili nella documentazione per gli sviluppatori di [AEM per le installazioni](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) locali e per le installazioni di [AEM come servizio cloud.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
 >Anche se le regole del framework di sanificazione anti-Samy possono essere configurate tramite sovrapposizione `/libs/cq/xssprotection/config.xml`, queste modifiche influiscono su tutti i comportamenti HTL e JSP e non solo sul componente core di incorporamento.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all'autore del modello di definire le opzioni disponibili per l'autore del contenuto che utilizza il componente Incorpora e le impostazioni predefinite impostate al momento del posizionamento del componente Incorpora.
+La finestra di dialogo Progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore del contenuto che utilizza il componente Incorpora e le impostazioni predefinite impostate al momento del posizionamento del componente Incorpora.
 
 ![](assets/screen-shot-2019-09-25-10.25.28.png)
 
-* **Disattiva URL** - Disattiva l'opzione **URL** per l'autore del contenuto selezionato
-* **Disattiva incorporabili** - Disattiva l'opzione **Incorporabile** per l'autore del contenuto selezionato, indipendentemente dai processori incorporabili consentiti.
-* **Disattiva HTML** - Disattiva l'opzione **HTML** per l'autore del contenuto selezionato.
-* **Embeddables** consentiti - Multilegge che definisce quali processori incorporabili sono disponibili per l'autore del contenuto, a condizione che l'opzione **Embedable** sia attiva.
+* **Disattiva URL** - Disattiva l&#39;opzione **URL** per l&#39;autore del contenuto selezionato
+* **Disattiva incorporabili** - Disattiva l&#39;opzione **Incorporabile** per l&#39;autore del contenuto selezionato, indipendentemente dai processori incorporabili consentiti.
+* **Disattiva HTML** - Disattiva l&#39;opzione **HTML** per l&#39;autore del contenuto selezionato.
+* **Embeddables** consentiti - Multilegge che definisce quali processori incorporabili sono disponibili per l&#39;autore del contenuto, a condizione che l&#39;opzione **Embedable** sia attiva.
