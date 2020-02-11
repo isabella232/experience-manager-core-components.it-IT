@@ -1,33 +1,27 @@
 ---
 title: Componente Schede
-seo-title: Componente Schede
 description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
-seo-description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
-uuid: 46f71233-8b12-4887-a0c6-ad24dc469cb1
-content-type: reference
-topic-tags: core-components
-discoiquuid: 966d47fb-d35d-4103-b29d-4ef0aa739f24
 translation-type: tm+mt
-source-git-commit: da404fff6c6e934bbe06a5c4d441d89281ed0c54
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
 
 # Componente Schede
 
-Il componente core Tabs Component consente l'organizzazione del contenuto su più schede.
+Il componente core Tabs Component consente l&#39;organizzazione del contenuto su più schede.
 
 ## Utilizzo {#usage}
 
 Il componente Tabulazioni consente all’autore del contenuto di organizzare il contenuto della pagina all’interno di più schede.
 
-La finestra di dialogo [di](#edit-dialog) modifica consente all’autore del contenuto di definire più schede e di impostare la scheda attiva. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, l'autore del modello può definire quali componenti possono essere aggiunti alle schede e personalizzare gli stili.
+La finestra di dialogo [di](#edit-dialog) modifica consente all’autore del contenuto di definire più schede e di impostare la scheda attiva. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, l&#39;autore del modello può definire quali componenti possono essere aggiunti alle schede e personalizzare gli stili.
 
 >[!NOTE]
 >
 >Sono supportati i componenti scheda nidificati (schede all’interno delle schede).
 >
->È possibile individuare/selezionare componenti scheda semplici (non nidificati) utilizzando la struttura [del](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html)contenuto, ma non è possibile utilizzare schede nidificate.
+>È possibile individuare/selezionare componenti scheda semplici (non nidificati) utilizzando la struttura [del](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree)contenuto, ma non è possibile utilizzare schede nidificate.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -35,19 +29,19 @@ La versione corrente del componente Tabs è v1, introdotto con la release 2.2.0 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |--- |
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Tabs e per vedere esempi delle relative opzioni di configurazione, nonché l'output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/tabs.html)Componenti.
+Per provare il componente Tabs e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_tabs)Componenti.
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Tabs [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/tabs/v1/tabs).
+La documentazione tecnica più recente sul componente Tabs [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_tabs_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -59,22 +53,22 @@ La finestra di dialogo di modifica consente all’autore del contenuto di creare
 
 ![](assets/screen-shot-2019-08-29-12.28.16.png)
 
-Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all'elenco, che contiene le seguenti colonne:
+Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
-* **Icona** - L'icona del tipo di componente della scheda per una facile identificazione nell'elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** - L&#39;icona del tipo di componente della scheda per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione** - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
 * **Elimina** - Toccate o fate clic per eliminare la scheda dal componente scheda.
-* **Ridisponi** - Toccate o fate clic e trascinate per riordinare l'ordine delle schede.
+* **Ridisponi** - Toccate o fate clic e trascinate per riordinare l&#39;ordine delle schede.
 
 >[!TIP]
 >
->Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Tabulazioni, [trascinateli dal Browser componenti e trascinateli sul componente Tabulazioni nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Tabulazioni, [trascinateli dal Browser componenti e trascinateli sul componente Tabulazioni nell’editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component)di pagina.
 
 ### Scheda Proprietà {#properties-tab}
 
 ![](assets/screen-shot-2019-08-29-12.28.32.png)
 
-Nella scheda **Proprietà** , l'autore del contenuto può definire quale scheda è attiva al caricamento della pagina. Con l'opzione **Predefinito** , verrà selezionata la prima scheda.
+Nella scheda **Proprietà** , l&#39;autore del contenuto può definire quale scheda è attiva al caricamento della pagina. Con l&#39;opzione **Predefinito** , verrà selezionata la prima scheda.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -92,7 +86,7 @@ L’autore del contenuto può usare l’opzione **Seleziona pannello** nella bar
 
 Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, le schede configurate vengono visualizzate come un elenco a discesa.
 
-* L'elenco è ordinato dalla disposizione assegnata delle schede e si riflette nella numerazione.
+* L&#39;elenco è ordinato dalla disposizione assegnata delle schede e si riflette nella numerazione.
 * Il tipo di componente della scheda viene visualizzato per primo, seguito dalla descrizione della scheda con un carattere più chiaro.
 
 ![](assets/screenshot_2018-10-11at165154.png)
@@ -102,17 +96,17 @@ Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strum
 
 >[!NOTE]
 >
->Le schede non sono selezionabili dall'autore in modalità **Modifica** . Utilizzate la modalità [**Anteprima**](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) o l'opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** per interagire con le schede come lettori del contenuto pubblicato.
+>Le schede non sono selezionabili dall&#39;autore in modalità **Modifica** . Utilizzate la modalità **[Anteprima](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)**o l&#39;opzione**[ Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come lettori del contenuto pubblicato.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all'autore del modello di definire quali componenti possono essere aggiunti al componente Tabulazioni, nonché definire quali stili personalizzati sono disponibili per l'autore del contenuto.
+La finestra di dialogo Progettazione consente all&#39;autore del modello di definire quali componenti possono essere aggiunti al componente Tabulazioni, nonché definire quali stili personalizzati sono disponibili per l&#39;autore del contenuto.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
-La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti al componente Tabulazioni dall'autore del contenuto come elementi.
+La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti al componente Tabulazioni dall&#39;autore del contenuto come elementi.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell'Editor modelli.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Scheda Stili {#styles-tab}
 
