@@ -1,31 +1,15 @@
 ---
 title: Componente navigazione lingua
-seo-title: Componente navigazione lingua
-description: 'null'
-seo-description: Il componente di navigazione della lingua fornisce una navigazione tra la lingua e il paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un'impostazione internazionale diversa.
-uuid: ce736458-9cdf-4bc2-b90f-9c5a62fe1ca0
-content-type: riferimento
-topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: 8f232eb0-65d5-4075-8668-75f1366882c8
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
-index: y
-internal: n
-snippet: y
+description: Il componente di navigazione della lingua fornisce una navigazione tra la lingua e il paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un'impostazione internazionale diversa.
 translation-type: tm+mt
-source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
 
 # Language Navigation Component{#language-navigation-component}
 
-Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un'altra lingua.
+Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un&#39;altra lingua.
 
 ## Utilizzo {#usage}
 
@@ -34,7 +18,7 @@ I siti Web sono spesso disponibili in più lingue per diverse aree geografiche. 
 * Per un esempio del funzionamento della funzione di localizzazione del componente Navigazione lingua, vedere [la sezione seguente](#example).
 * Per un esempio di come le funzioni di localizzazione degli altri componenti core funzionano insieme, consultate la pagina [Caratteristiche di](localization.md)localizzazione dei componenti core.
 
-La finestra di dialogo [di](#edit-dialog) modifica consente di definire la radice di navigazione del sito globale e di definire la profondità della struttura di navigazione. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, l'autore del modello può impostare i valori predefiniti per le stesse opzioni.
+La finestra di dialogo [di](#edit-dialog) modifica consente di definire la radice di navigazione del sito globale e di definire la profondità della struttura di navigazione. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, l&#39;autore del modello può impostare i valori predefiniti per le stesse opzioni.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -42,19 +26,19 @@ La versione corrente del componente Navigazione lingua è v1, introdotto con la 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |--- |
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Navigazione lingua e per vedere esempi delle relative opzioni di configurazione, nonché l'output HTML e JSON, visitare la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/language-navigation/language-structure/us/en/language-navigation.html)componenti.
+Per provare il componente Navigazione lingua e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_langnav)componenti.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Navigazione lingua [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/languagenavigation/v1/languagenavigation).
+La documentazione tecnica più recente sul componente Navigazione lingua [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
