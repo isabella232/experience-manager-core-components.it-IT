@@ -1,24 +1,9 @@
 ---
 title: Componente elenco (v1)
-seo-title: Componente elenco (v1)
-description: 'null'
-seo-description: Il componente Elenco componenti core consente di creare facilmente elenchi dinamici e statici.
-uuid: 06658c9d-cbf2-4bfe-b425-d980d1181908
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: 7c130ccc-83ff-464d-b58f-d581f4365dbd
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
-noindex: vero
+description: Il componente Elenco componenti core consente di creare facilmente elenchi dinamici e statici.
 index: n
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -31,7 +16,7 @@ Il componente Elenco componenti core consente di creare facilmente elenchi dinam
 
 Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco dinamico di pagine figlie o un elenco statico di elementi definiti arbitrariamente.
 
-Il tipo di elenchi disponibili e le opzioni di formattazione possono essere definite dall'autore del modello nella finestra di dialogo [della](list-v1.md#main-pars_title_1995166862)progettazione. L'editor dei contenuti può selezionare tra i tipi di elenco disponibili e come formattare gli elementi dell'elenco nella finestra di dialogo [di](list-v1.md#main-pars_title)modifica.
+Il tipo di elenchi disponibili e le opzioni di formattazione possono essere definite dall&#39;autore del modello nella finestra di dialogo [della](list-v1.md#main-pars_title_1995166862)progettazione. L&#39;editor dei contenuti può selezionare tra i tipi di elenco disponibili e come formattare gli elementi dell&#39;elenco nella finestra di dialogo [di](list-v1.md#main-pars_title)modifica.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -154,14 +139,14 @@ La finestra di dialogo di modifica consente all’autore del contenuto di config
 
 ### Impostazioni elenco {#list-settings}
 
-L'elenco può essere creato in diversi modi.
+L&#39;elenco può essere creato in diversi modi.
 
 * [Pagine figlie](list-v1.md#main-pars_title_1861279796)
 * [Elenco fisso](list-v1.md#main-pars_title_1227896889)
 * [Ricerca](list-v1.md#main-pars_title_1224003560)
 * [Tag](list-v1.md#main-pars_title_700759533)
 
-Indipendentemente dalla modalità di creazione dell'elenco, è sempre possibile configurare le opzioni [di](list-v1.md#main-pars_title_1568376452) ordinamento.
+Indipendentemente dalla modalità di creazione dell&#39;elenco, è sempre possibile configurare le opzioni [di](list-v1.md#main-pars_title_1568376452) ordinamento.
 
 ![](assets/chlimage_1-38.png)
 
@@ -169,7 +154,7 @@ A seconda di come l’autore del contenuto sceglie di generare l’elenco, le op
 
 #### Pagine figlie {#child-pages}
 
-È possibile creare l'elenco delle pagine figlie della pagina corrente o di un'altra pagina.
+È possibile creare l&#39;elenco delle pagine figlie della pagina corrente o di un&#39;altra pagina.
 
 ![](assets/chlimage_1-39.png)
 
@@ -180,7 +165,7 @@ A seconda di come l’autore del contenuto sceglie di generare l’elenco, le op
 
 #### Fixed List {#fixed-list}
 
-L'elenco può essere creato utilizzando un elenco fisso di elementi.
+L&#39;elenco può essere creato utilizzando un elenco fisso di elementi.
 
 ![](assets/chlimage_1-40.png)
 
@@ -188,11 +173,11 @@ Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo elemento nel
 
 * Immettete il testo per l’elemento nell’elenco o utilizzate la finestra di dialogo **di** selezione per scegliere un elemento da AEM.
 * Usate la maniglia di trascinamento per ridisporre gli elementi nell’elenco.
-* Utilizzate l'icona del cestino per eliminare gli elementi nell'elenco.
+* Utilizzate l&#39;icona del cestino per eliminare gli elementi nell&#39;elenco.
 
 #### Ricerca {#search}
 
-L'elenco può essere creato utilizzando i risultati di una ricerca di contenuto AEM.
+L&#39;elenco può essere creato utilizzando i risultati di una ricerca di contenuto AEM.
 
 ![](assets/chlimage_1-41.png)
 
@@ -203,7 +188,7 @@ L'elenco può essere creato utilizzando i risultati di una ricerca di contenuto 
 
 #### Tag {#tags}
 
-L'elenco può essere creato utilizzando pagine che corrispondono a determinati tag presenti in una determinata posizione.
+L&#39;elenco può essere creato utilizzando pagine che corrispondono a determinati tag presenti in una determinata posizione.
 
 ![](assets/chlimage_1-42.png)
 
@@ -212,7 +197,7 @@ L'elenco può essere creato utilizzando pagine che corrispondono a determinati t
    * Usa pagina corrente se lasciata vuota
 * **Tag** - Quali tag devono corrispondere
    * Utilizzare la finestra di dialogo **Sfoglia** per selezionare i tag
-* **Corrispondenza** : consente di definire il tipo di corrispondenza da applicare a una pagina da includere nell'elenco.
+* **Corrispondenza** : consente di definire il tipo di corrispondenza da applicare a una pagina da includere nell&#39;elenco.
    * **qualsiasi tag**
    * **tutti i tag**
 
@@ -225,15 +210,15 @@ Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibil
 * **Ordina per** - Modalità di ordinamento degli elementi
    * **Titolo**
    * **Data ultima modifica**
-* **Ordina ordine** - L'ordine in cui devono essere ordinati gli articoli
+* **Ordina ordine** - L&#39;ordine in cui devono essere ordinati gli articoli
    * **crescente**
    * **decrescente**
-* **Numero massimo elementi** - Numero massimo di elementi visualizzati nell'elenco.
+* **Numero massimo elementi** - Numero massimo di elementi visualizzati nell&#39;elenco.
    * Lasciate vuoto per restituire tutti gli elementi.
 
 ### Impostazioni elemento {#item-settings}
 
-Utilizzando la scheda Impostazioni **** elemento, è possibile configurare la formattazione degli elementi dell'elenco.
+Utilizzando la scheda Impostazioni **** elemento, è possibile configurare la formattazione degli elementi dell&#39;elenco.
 
 ![](assets/chlimage_1-44.png)
 
@@ -251,7 +236,7 @@ Nella scheda Impostazioni **** elenco, è possibile definire il formato della da
 
 ![](assets/chlimage_1-45.png)
 
-* **Formato** data - Formato da utilizzare per la visualizzazione dell'ultima data di modifica
+* **Formato** data - Formato da utilizzare per la visualizzazione dell&#39;ultima data di modifica
 * **Disattiva elementi figlio** - Disattiva il tipo di elenco degli elementi figlio nel componente
 * **Disattiva statico** - Disattiva il tipo di elenco statico nel componente
 * **Disattiva ricerca** - Disattiva il tipo di elenco di ricerca nel componente
@@ -259,7 +244,7 @@ Nella scheda Impostazioni **** elenco, è possibile definire il formato della da
 
 ### Impostazioni elemento {#item-settings-1}
 
-Nella scheda Impostazioni **** elemento è possibile definire le opzioni di formattazione per i singoli elementi dell'elenco che dovrebbero essere disponibili nel componente per gli autori dei contenuti.
+Nella scheda Impostazioni **** elemento è possibile definire le opzioni di formattazione per i singoli elementi dell&#39;elenco che dovrebbero essere disponibili nel componente per gli autori dei contenuti.
 
 ![](assets/chlimage_1-46.png)
 
