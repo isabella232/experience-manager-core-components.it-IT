@@ -1,13 +1,8 @@
 ---
 title: ui.apps Modulo dell’archivio progetti AEM
-seo-title: ui.apps Modulo dell’archivio progetti AEM
 description: ui.apps Modulo dell’archivio progetti AEM
-seo-description: ui.apps Modulo dell’archivio progetti AEM
-contentOwner: bohnert
-content-type: reference
-topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 683b4f4705c226275439a408423cbf1b23bea66f
+source-git-commit: 945381996db443c227aa31f0aacb963071165681
 
 ---
 
@@ -30,7 +25,7 @@ ui.apps pom (`<src>/<project>/ui.apps/pom.xml`) fornisce i `embedded` tag per il
 
 I pacchetti core.wcm.components.all e core.wcm.components.example sono inclusi come sottopacchetto. Questo distribuirà il pacchetto Componenti di base insieme al codice WKND ogni volta.
 
-Gli esempi core.wcm.components.all e core.wcm.components.examples sono inclusi come dipendenze nell'elenco delle dipendenze. Tuttavia, come procedura ottimale, le versioni per le dipendenze vengono omesse qui e gestite nel file pom [principale](overview.md#core-components).
+Gli esempi core.wcm.components.all e core.wcm.components.examples sono inclusi come dipendenze nell&#39;elenco delle dipendenze. Tuttavia, come procedura ottimale, le versioni per le dipendenze vengono omesse qui e gestite nel file pom [principale](overview.md#core-components).
 
 ## filter.xml {#filter}
 
