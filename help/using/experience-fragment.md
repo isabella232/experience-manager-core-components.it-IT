@@ -1,26 +1,22 @@
 ---
-title: Experience Fragment Component
-seo-title: Experience Fragment Component
-description: The Experience Fragment Component allows the content author to add an experience fragment variation to a page.
-seo-description: The Experience Fragment Component allows the content author to add an experience fragment variation to a page.
-content-type: riferimento
-topic-tags: core-components
+title: Componente frammento esperienza
+description: Il componente Frammento esperienza consente all’autore del contenuto di aggiungere a una pagina una variante di frammento esperienza.
 translation-type: tm+mt
-source-git-commit: c4e86960ec271464661193f6409cd93d1b9ec51b
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
 
-# Experience Fragment Component{#experience-fragment-component}
+# Componente frammento esperienza{#experience-fragment-component}
 
-The Core Component Experience Fragment Component allows the content author to place an experience fragment variation on a page while supporting a localized site structure.
+Il componente di base Frammento esperienza del componente consente all’autore del contenuto di inserire una variante del frammento esperienza in una pagina, mentre supporta una struttura del sito localizzata.
 
 ## Utilizzo {#usage}
 
-The Core Component Experience Fragment Component allows the content author to select from existing experience fragment varations and place one on the content page. The Experience Fragment component also supports a localized site structure.
+Il componente di base Frammento esperienza del componente permette all’autore del contenuto di selezionare le varianti di frammento esperienza esistenti e di inserirne una nella pagina del contenuto. Il componente Frammento esperienza supporta anche una struttura del sito localizzata.
 
-* Le proprietà dei componenti possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
-* Defaults for the component when adding it to a page can be defined in the design dialog.[](#design-dialog)
+* Le proprietà del componente possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
+* I valori predefiniti per il componente quando lo si aggiunge a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
 
 ## Supporto struttura sito localizzata {#localized-site-structure}
 
@@ -28,7 +24,7 @@ Il componente Frammento esperienza si adatta alle strutture del sito localizzate
 
 * Il componente Frammento esperienza viene aggiunto a un modello.
 * Tale modello viene utilizzato per creare una nuova pagina di contenuto che fa parte di una struttura localizzata di seguito `/content/<site>`.
-* Il frammento esperienza a cui si fa riferimento in una pagina di contenuto fa parte di una struttura di frammento esperienza localizzata sotto `/content/experience-fragments` che segue gli stessi pattern del sito sottostante, `/content/<site>` compreso l'utilizzo degli stessi nomi di componente.
+* Il frammento esperienza a cui si fa riferimento in una pagina di contenuto fa parte di una struttura di frammento esperienza localizzata sotto `/content/experience-fragments` che segue gli stessi pattern del sito sottostante, `/content/<site>` compreso l&#39;utilizzo degli stessi nomi di componente.
 
 In questo caso, il frammento con la stessa localizzazione (lingua, blueprint o Live Copy) della pagina corrente verrà rappresentato come parte del modello.
 
@@ -97,36 +93,36 @@ La versione corrente del componente Frammento esperienza è v1, introdotto con l
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Frammento esperienza e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/experience-fragment.html)componenti.
+Per provare il componente Frammento esperienza e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_xf)componenti.
 
-## Technical Details {#technical-details}
+## Dettagli tecnici {#technical-details}
 
-The latest technical documentation about the Experience Fragment Component can be found on GitHub.[](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/experience-fragment/v1/experience-fragment)
+La documentazione tecnica più recente sul componente Frammento esperienza [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_xf_v1).
 
-Further details about developing Core Components can be found in the Core Components developer documentation.[](developing.md)
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
-## Configure Dialog {#configure-dialog}
+## Configura finestra di dialogo {#configure-dialog}
 
-The configure dialog allows the content author to select the experience fragment variation that should be rendered on the page.
+La finestra di dialogo di configurazione consente all&#39;autore del contenuto di selezionare la variante del frammento esperienza da visualizzare sulla pagina.
 
 ![](assets/screen-shot-2019-08-23-10.49.21.png)
 
-Use the Open Selection Dialog button to open the component selector to choose which experience fragment component variation to add to the content page.****
+Utilizzate il pulsante **Apri finestra di dialogo** di selezione per aprire il selettore dei componenti e scegliere quale variante del componente del frammento esperienza aggiungere alla pagina del contenuto.
 
-If you add the Experience Fragment Component to a template, note that it will be automatically localized provided that the Experience Fragments are localized, so what is rendered on the page may vary from the component you explicitly select. [See the example above for more information.](#example)
+Se aggiungete il componente Frammento esperienza a un modello, tenete presente che verrà localizzato automaticamente a condizione che i frammenti esperienza siano localizzati, pertanto il rendering sulla pagina potrebbe variare a seconda del componente selezionato in modo esplicito. [Per ulteriori informazioni, consulta l’esempio precedente](#example) .
 
-## Design Dialog {#design-dialog}
+## Finestra di dialogo Progettazione {#design-dialog}
 
-The design dialog allows the template author to define the options available to the content author who uses the Experience Fragment Component and the defaults set when placing the Experience Fragment Component.
+La finestra di dialogo di progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente Frammento esperienza e le impostazioni predefinite al momento dell’inserimento del componente Frammento esperienza.
 
 ![](assets/screen-shot-2019-08-23-10.48.36.png)
 
-The Experience Fragment Component supports the AEM Style System.[](authoring.md#component-styling)
+Il componente Frammento esperienza supporta AEM [Style System](authoring.md#component-styling).
