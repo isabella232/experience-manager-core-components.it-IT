@@ -1,18 +1,13 @@
 ---
-title: Archetipo progetto AEM
-seo-title: Archetipo progetto AEM
+title: AEM Project Archetype
 description: Un modello di progetto per le applicazioni basate su AEM
-seo-description: Un modello di progetto per le applicazioni basate su AEM
-contentOwner: bohnert
-content-type: reference
-topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
 
-# Archetipo progetto AEM {#aem-project-archetype}
+# AEM Project Archetype {#aem-project-archetype}
 
 AEM Project Archetype crea un progetto Adobe Experience Manager minimo basato su best practice, come punto di partenza per i progetti AEM. Le proprietà che devono essere fornite quando si utilizza questo archetype consentono di specificare i nomi di tutte le parti del progetto e di controllare alcune funzioni facoltative.
 
@@ -49,11 +44,11 @@ Naturalmente sono molti gli elementi che entrano in un progetto AEM di successo,
 AEM Archetype è composto da moduli:
 
 * **[core](core.md)**: è un pacchetto Java contenente tutte le funzionalità di base come servizi OSGi, listener e pianificatori, nonché il codice Java relativo ai componenti, come servlet e filtri di richiesta.
-* **[ui.apps](uiapps.md)**: contiene le `/apps` e `/etc` parti del progetto, ad esempio clientlibs JS e CSS, componenti, modelli, configurazioni specifiche per la modalità di esecuzione e test Hobbes.
+* **[ui.apps](uiapps.md)**: contiene le`/apps`e`/etc`parti del progetto, ad esempio clientlibs JS e CSS, componenti, modelli, configurazioni specifiche per la modalità di esecuzione e test Hobbes.
 * **[ui.content](uicontent.md)**: contiene contenuto di esempio utilizzando i componenti del modulo ui.apps.
 * **ui.test**: è un pacchetto Java contenente test JUnit eseguiti sul lato server. Questo bundle non deve essere distribuito in produzione.
-* **ui.launcher**: contiene codice colla che distribuisce il bundle ui.test (e i bundle dipendenti) al server e attiva l'esecuzione JUnit remota.
-* **[ui.frontend](uifrontend.md)**: **(facoltativo)** contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack.
+* **ui.launcher**: contiene codice colla che distribuisce il bundle ui.test (e i bundle dipendenti) al server e attiva l&#39;esecuzione JUnit remota.
+* **[ui.frontend](uifrontend.md)**:**(facoltativo)**contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack.
 
 ![](assets/archetype-structure.png)
 
@@ -71,13 +66,13 @@ Per un elenco delle versioni AEM supportate delle versioni precedenti di archeti
 
 ## Come utilizzare Archetype {#how-to-use-the-archetype}
 
-Per utilizzare l'archetipo, è innanzitutto necessario creare un progetto, che genera i moduli in una struttura di file locale come [precedentemente descritto](#what-you-get). Durante la generazione del progetto, è possibile definire diverse proprietà per il progetto, ad esempio nome, versione e così via.
+Per utilizzare l&#39;archetipo, è innanzitutto necessario creare un progetto, che genera i moduli in una struttura di file locale come [precedentemente descritto](#what-you-get). Durante la generazione del progetto, è possibile definire diverse proprietà per il progetto, ad esempio nome, versione e così via.
 
 La creazione del progetto con Maven crea gli artefatti (pacchetti e pacchetti OSGi) che possono essere distribuiti in AEM. Per distribuire gli artifact del progetto a un’istanza di AEM è possibile utilizzare ulteriori comandi e profili Maven.
 
 ### Creazione di un progetto {#create-project}
 
-Per iniziare, puoi semplicemente utilizzare l’estensione [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/aem-eclipse.html) AEM Eclipse e seguire la procedura guidata Nuovo progetto e scegliere **AEM Sample Multi-Module Project** per utilizzare una versione rilasciata dell’archetipo.
+Per iniziare, puoi semplicemente utilizzare l’estensione [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/aem-eclipse.html) AEM Eclipse e seguire la procedura guidata Nuovo progetto e scegliere **AEM Sample Multi-Module Project** per utilizzare una versione rilasciata dell’archetipo.
 
 Naturalmente si può anche invocare direttamente Maven.
 
@@ -120,17 +115,17 @@ Le seguenti proprietà sono disponibili quando si crea un progetto utilizzando a
 | `optionIncludeFrontendModule` | n | [Includere un modulo front-end dedicato](uifrontend.md) |
 
 >[!NOTE]
-> Se l'archetype viene eseguito in modalità interattiva la prima volta, le proprietà con valori predefiniti non possono essere modificate (per ulteriori dettagli, vedere [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Il valore può essere modificato quando la conferma della proprietà alla fine viene negata e il questionario viene ripetuto, o passando il parametro nella riga di comando (ad es. `-DoptionIncludeExamples=n`).
+> Se l&#39;archetype viene eseguito in modalità interattiva la prima volta, le proprietà con valori predefiniti non possono essere modificate (per ulteriori dettagli, vedere [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Il valore può essere modificato quando la conferma della proprietà alla fine viene negata e il questionario viene ripetuto, o passando il parametro nella riga di comando (ad es. `-DoptionIncludeExamples=n`).
 
 ### Profili {#profiles}
 
-Il progetto generato maven supporta profili di distribuzione diversi durante l'esecuzione `mvn install`.
+Il progetto generato maven supporta profili di distribuzione diversi durante l&#39;esecuzione `mvn install`.
 
 | ID profilo | Descrizione |
 --------------------------|------------------------------
 | `autoInstallBundle` | Installa il pacchetto di base con il plugin maven-sling in OSGi |
-| `autoInstallPackage` | Installa il pacchetto di contenuto ui.content e ui.apps con il plug-in content-package-maven-in nel gestore pacchetti fino all'istanza di creazione predefinita sull'host locale, porta 4502. Il nome host e la porta possono essere modificati con le proprietà `aem.host` e definite dall' `aem.port` utente. |
-| `autoInstallPackagePublish` | Installate il pacchetto di contenuto ui.content e ui.apps con il plug-in content-package-maven-in nel gestore pacchetti per impostare l'istanza di pubblicazione predefinita su localhost, porta 4503. Il nome host e la porta possono essere modificati con le proprietà `aem.host` e definite dall' `aem.port` utente. |
+| `autoInstallPackage` | Installa il pacchetto di contenuto ui.content e ui.apps con il plug-in content-package-maven-in nel gestore pacchetti fino all&#39;istanza di creazione predefinita sull&#39;host locale, porta 4502. Il nome host e la porta possono essere modificati con le proprietà `aem.host` e definite dall&#39; `aem.port` utente. |
+| `autoInstallPackagePublish` | Installate il pacchetto di contenuto ui.content e ui.apps con il plug-in content-package-maven-in nel gestore pacchetti per impostare l&#39;istanza di pubblicazione predefinita su localhost, porta 4503. Il nome host e la porta possono essere modificati con le proprietà `aem.host` e definite dall&#39; `aem.port` utente. |
 | `integrationTests` | Esegue i test di integrazione forniti sull’istanza di AEM (solo per la `verify` fase) |
 
 ### Creazione e installazione {#building-and-installing}
@@ -147,19 +142,19 @@ Se disponete di un’istanza AEM in esecuzione, potete creare e creare un pacche
 mvn clean install -PautoInstallPackage
 ```
 
-Per distribuirlo in un'istanza pubblicata, eseguite questo comando.
+Per distribuirlo in un&#39;istanza pubblicata, eseguite questo comando.
 
 ```
 mvn clean install -PautoInstallPackagePublish
 ```
 
-In alternativa, per distribuire in un'istanza di pubblicazione, eseguite questo comando.
+In alternativa, per distribuire in un&#39;istanza di pubblicazione, eseguite questo comando.
 
 ```
 mvn clean install -PautoInstallPackage -Daem.port=4503
 ```
 
-Oppure, per distribuire solo il bundle all'autore, eseguite questo comando.
+Oppure, per distribuire solo il bundle all&#39;autore, eseguite questo comando.
 
 ```
 mvn clean install -PautoInstallBundle
@@ -183,7 +178,7 @@ mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.pa
 
 ### Struttura del modulo {#module-structure}
 
-La `<modules>` sezione del POM padre definisce i moduli che il progetto genererà. Per impostazione predefinita, il progetto crea [i moduli standard precedentemente definiti](#what-you-get): core, ui.apps, ui.content, ui.test e it.launcher. È sempre possibile aggiungere più moduli con l'evoluzione di un progetto.
+La `<modules>` sezione del POM padre definisce i moduli che il progetto genererà. Per impostazione predefinita, il progetto crea [i moduli standard precedentemente definiti](#what-you-get): core, ui.apps, ui.content, ui.test e it.launcher. È sempre possibile aggiungere più moduli con l&#39;evoluzione di un progetto.
 
 ### Dipendenze {#dependencies}
 
@@ -191,7 +186,7 @@ La `<dependencyManagement>` sezione del POM principale definisce tutte le dipend
 
 #### Uber-Jar {#uber-jar}
 
-Una delle dipendenze chiave è l’URL di [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html#ExperienceManagerAPIDependencies). Questo includerà tutte le API AEM con una sola voce di dipendenza per la versione di AEM.
+Una delle dipendenze chiave è l’URL di [AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#ExperienceManagerAPIDependencies). Questo includerà tutte le API AEM con una sola voce di dipendenza per la versione di AEM.
 
 >[!NOTE]
 >
@@ -201,7 +196,7 @@ Una delle dipendenze chiave è l’URL di [AEM](https://helpx.adobe.com/experien
 
 Il tipo di archivio dei progetti AEM sfrutta ovviamente i componenti core.
 
-I componenti core vengono installati automaticamente in AEM in modalità di esecuzione predefinita e utilizzati dal sito Web di esempio We.Retail. In una modalità [di esecuzione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) di produzione (`nosamplecontent`) i componenti core non sono disponibili.
+I componenti core vengono installati automaticamente in AEM in modalità di esecuzione predefinita e utilizzati dal sito Web di esempio We.Retail. In una modalità [di esecuzione](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/production-ready.html) di produzione (`nosamplecontent`) i componenti core non sono disponibili.
 
 Pertanto, al fine di sfruttare i componenti core in tutte le distribuzioni, è consigliabile includerli come parte del progetto Maven.
 
@@ -209,11 +204,11 @@ Pertanto, al fine di sfruttare i componenti core in tutte le distribuzioni, è c
 >
 >A ogni versione dei componenti core segue generalmente una release dell’archivio dei progetti AEM, in modo che l’ultimo archetipo utilizzi la versione più recente dei componenti core.
 >
->Tuttavia, una nuova versione dell'archetipo potrebbe non seguire direttamente una nuova versione dei componenti core, pertanto è possibile aggiornare la dipendenza dai componenti core alla versione più recente.
+>Tuttavia, una nuova versione dell&#39;archetipo potrebbe non seguire direttamente una nuova versione dei componenti core, pertanto è possibile aggiornare la dipendenza dai componenti core alla versione più recente.
 
 >[!NOTE]
 >
->Gli esempi core.wcm.components.example sono una serie di pagine di esempio che illustrano esempi dei componenti core. Come procedura ottimale, quando si distribuisce un progetto per la produzione è necessario rimuovere questa dipendenza e l'inclusione del sottopacchetto.
+>Gli esempi core.wcm.components.example sono una serie di pagine di esempio che illustrano esempi dei componenti core. Come procedura ottimale, quando si distribuisce un progetto per la produzione è necessario rimuovere questa dipendenza e l&#39;inclusione del sottopacchetto.
 
 ## Test {#testing}
 
@@ -225,7 +220,7 @@ Il progetto contiene tre livelli di test e, poiché sono tipi diversi di test, v
    * `mvn clean verify -PintegrationTests`
 * Test Hobbes.js lato client: Si tratta di test basati su JavaScript sul browser per verificare il comportamento sul lato browser. Per eseguire il test:
    1. Caricate AEM nel browser come fareste per creare una pagina.
-   1. Open the page in [Developer mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/developer-mode.html)
+   1. Open the page in [Developer mode](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developer-mode.html)
    1. Aprite il pannello a sinistra e passate alla scheda **Test** .
    1. Individuare e eseguire i test **MyName generati** .
 
@@ -234,6 +229,6 @@ Il progetto contiene tre livelli di test e, poiché sono tipi diversi di test, v
 Quindi hai creato e installato AEM Project Archetype. E adesso? Il tipo archetipo è piccolo, ma è costituito da molti esempi di potenti funzioni di AEM configurate in base alle best practice consigliate. Utilizzate queste opzioni per indicare come sfruttare queste funzionalità nel progetto. Per qualsiasi progetto è probabilmente necessario:
 
 * [Personalizzare i componenti estendendo i componenti core esistenti](customizing.md)
-* [Aggiungere altri modelli](https://helpx.adobe.com/content/help/en/experience-manager/6-5/sites/authoring/using/templates.html)
-* [Adattare la struttura di localizzazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-prep.html)
+* [Aggiungere altri modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+* [Adattare la struttura di localizzazione](https://docs.adobe.com/content/help/en/experience-manager-65/administering/introduction/tc-prep.html)
 * [Informazioni sul modulo di build front-end](uifrontend.md)
