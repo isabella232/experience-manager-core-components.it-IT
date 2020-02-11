@@ -1,15 +1,8 @@
 ---
 title: Componente teaser
-seo-title: Componente teaser
 description: Il componente teaser può visualizzare un’immagine, un titolo, un testo RTF ed eventualmente un collegamento ad altri contenuti.
-seo-description: Il componente teaser può visualizzare un’immagine, un titolo, un testo RTF ed eventualmente un collegamento ad altri contenuti.
-uuid: 46989314-df37-448b-8562-c707043f2160
-contentOwner: bohnert
-content-type: riferimento
-topic-tags: core-components
-discoiquuid: e597c18e-3643-41be-9878-4a7872f1ab90
 translation-type: tm+mt
-source-git-commit: eef608fb06001485aa2c2c0b574af412ed7f15a4
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
@@ -30,17 +23,17 @@ La versione corrente del componente Teaser è v1, introdotto con la release 2.1.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|---|---|---|---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|---|---|---|---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Teaser e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la libreria [dei](http://opensource.adobe.com/aem-core-wcm-components/library/teaser.html)componenti.
+Per provare il componente Teaser e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la libreria [dei](https://adobe.com/go/aem_cmp_library_teaser)componenti.
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Teaser [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/teaser/v1/teaser).
+La documentazione tecnica più recente sul componente Teaser [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_teaser_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -53,9 +46,9 @@ L’autore del contenuto può utilizzare la finestra di dialogo di configurazion
 ![](assets/screen_shot_2018-07-03at104125.png)
 
 * **Risorsa immagine**
-   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) risorse o toccate l'opzione **Sfoglia** per caricarla da un file system locale.
-   * Toccate o fate clic su **Cancella** per deselezionare l'immagine attualmente selezionata.
-   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) nell’editor risorse.
+   * Trascinate una risorsa dal browser [delle](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) risorse o toccate l&#39;opzione **Sfoglia** per caricarla da un file system locale.
+   * Toccate o fate clic su **Cancella** per deselezionare l&#39;immagine attualmente selezionata.
+   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
 
 ### Testo {#text}
 
@@ -85,7 +78,7 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 ![](assets/screen_shot_2018-07-03at105958.png)
 
-* **Inviti all'azione**
+* **Inviti all&#39;azione**
    * **Disattiva Call-To-Actions** Nascondi l’opzione **Call-To-Actions** per gli autori dei contenuti
 * **Elementi**
    * **Nascondi titolo**
