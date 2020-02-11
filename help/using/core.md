@@ -1,20 +1,15 @@
 ---
 title: Modulo di base dell’archivio del progetto AEM
-seo-title: Modulo di base dell’archivio del progetto AEM
 description: Modulo di base dell’archivio del progetto AEM
-seo-description: Modulo di base dell’archivio del progetto AEM
-contentOwner: bohnert
-content-type: reference
-topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: ca7a47d8ac91516659c115a3f27c09f0ee4b8b33
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
 
 # Modulo di base dell’archivio del progetto AEM {#core-module}
 
-Il modulo core maven (`<src-directory>/<project>/core`) include tutto il codice Java necessario per l'implementazione. Il modulo crea un pacchetto con tutto il codice Java e distribuisce nell’istanza AEM come un pacchetto OSGi.
+Il modulo core maven (`<src-directory>/<project>/core`) include tutto il codice Java necessario per l&#39;implementazione. Il modulo crea un pacchetto con tutto il codice Java e distribuisce nell’istanza AEM come un pacchetto OSGi.
 
 Il plug-in Maven Bundle definito in `<src-directory>/<project>/core/pom.xml` è responsabile della compilazione del codice Java in un bundle OSGi che può essere riconosciuto dal contenitore OSGi di AEM. Tenere presente che in questo punto è definita la posizione di Sling Models.
 
