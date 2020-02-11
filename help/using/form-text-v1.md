@@ -1,15 +1,9 @@
 ---
 title: Componente testo modulo (v1)
-seo-title: Componente testo modulo (v1)
-description: 'null'
-seo-description: Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
-uuid: 30123aba-57a8-4ed4-93cb-6a3d2edff9a7
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: bd4e9930-4d81-49ae-a3d1-9a8740418dae
+description: Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -22,7 +16,7 @@ Il componente Testo modulo componente principale consente l’immissione di test
 
 Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [Contenitore di](form-container.md)moduli.
 
-Il tipo di convalida del testo, etichette e messaggi di aiuto può essere definito dall'editor di contenuti nella finestra di dialogo [di](form-text-v1.md#main-pars_title)configurazione.
+Il tipo di convalida del testo, etichette e messaggi di aiuto può essere definito dall&#39;editor di contenuti nella finestra di dialogo [di](form-text-v1.md#main-pars_title)configurazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -111,10 +105,10 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * **Numero**
    * **Password**
 
-* **Righe** di testo - Numero di righe da visualizzare nell'area di testo (solo se **Vincolo** è impostato su **Area** di testo)
+* **Righe** di testo - Numero di righe da visualizzare nell&#39;area di testo (solo se **Vincolo** è impostato su **Area** di testo)
 
 * **Etichetta** - Etichetta che verrà visualizzata per il campo
-* **Nascondere l'etichetta per la visualizzazione** - Necessario se l'etichetta è necessaria solo a scopo di accessibilità e non immette ulteriori informazioni visive sul campo
+* **Nascondere l&#39;etichetta per la visualizzazione** - Necessario se l&#39;etichetta è necessaria solo a scopo di accessibilità e non immette ulteriori informazioni visive sul campo
 * **Nome** elemento - Il nome del campo inviato con i dati del modulo
 * **Valore** - Valore predefinito precompilato nel campo
 
@@ -122,8 +116,8 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](assets/chlimage_1-24.png)
 
-* **Messaggio** della Guida - Suggerimento per l'utente di ciò che può essere immesso nel campo
-* **Visualizza messaggio di aiuto come segnaposto** - Per visualizzare il messaggio di aiuto all'interno del modulo di input quando è vuoto e non è attivo
+* **Messaggio** della Guida - Suggerimento per l&#39;utente di ciò che può essere immesso nel campo
+* **Visualizza messaggio di aiuto come segnaposto** - Per visualizzare il messaggio di aiuto all&#39;interno del modulo di input quando è vuoto e non è attivo
 
 ### Vincoli {#constraints}
 
@@ -134,8 +128,8 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * Messaggio visualizzato come descrizione comando quando si invia il modulo, se il valore non convalida il tipo scelto
    * Non visualizzato per i tipi di vincolo **Testo** e Area **di** testo
 
-* **Obbligatorio** - Se selezionato, l'utente deve compilare un valore prima di inviare il modulo
-* **Rendi sola** lettura - Se selezionato, l'utente non può modificare il valore del campo
+* **Obbligatorio** - Se selezionato, l&#39;utente deve compilare un valore prima di inviare il modulo
+* **Rendi sola** lettura - Se selezionato, l&#39;utente non può modificare il valore del campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
