@@ -1,14 +1,8 @@
 ---
 title: Funzioni di localizzazione dei componenti core
-seo-title: Funzioni di localizzazione dei componenti core
 description: Funzioni di localizzazione dei componenti core
-seo-description: Funzioni di localizzazione dei componenti core
-content-type: reference
-topic-tags: core-components
-index: y
-internal: n
 translation-type: tm+mt
-source-git-commit: 0f84eb6d52b9d6d76a4347d371367acf3d34e58e
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -23,7 +17,7 @@ La maggior parte dei siti richiede che un piè di pagina sia presente in tutte l
 
 Analogamente, un componente di navigazione in genere deve essere visualizzato su tutte le pagine. Tuttavia, dovrà riflettere anche il contenuto delle pagine localizzate.
 
-Utilizzando le funzioni di localizzazione del componente [core di](navigation.md) navigazione e del componente [core del frammento](experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/siteandpage/templates.html), si tratta di un’attività semplice. L'esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](language-navigation.md) lingua.
+Utilizzando le funzioni di localizzazione del componente [core di](navigation.md) navigazione e del componente [core del frammento](experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html), si tratta di un’attività semplice. L&#39;esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](language-navigation.md) lingua.
 
 ## Struttura del contenuto {#content-structure}
 
@@ -68,7 +62,7 @@ I piè di pagina sono generalmente realizzati utilizzando i frammenti esperienza
 
 ## Piè di pagina - Frammento esperienza {#xf-footer}
 
-Il componente Frammento esperienza è molto flessibile ed è adatto per un'intestazione o un piè di pagina di pagina.
+Il componente Frammento esperienza è molto flessibile ed è adatto per un&#39;intestazione o un piè di pagina di pagina.
 
 Poiché il nostro ipotetico sito Web è disponibile in inglese e francese, dovremo creare due frammenti esperienza, entrambi denominati `footer` nelle località descritte [in precedenza.](#content-structure)
 
@@ -99,7 +93,7 @@ A questo modello aggiungeremo i componenti di base sui quali vogliamo basare le 
 
 ## Pagine {#pages}
 
-Durante il lavoro di configurazione della struttura del sito e del modello, l’autore del contenuto deve semplicemente aggiungere alle pagine il contenuto necessario. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno automaticamente aggiunti alla pagina e localizzati.
+Durante il lavoro di configurazione della struttura e del modello del sito, l’autore del contenuto deve semplicemente aggiungere alle pagine il contenuto necessario. Grazie ai modelli e alla logica di localizzazione dei componenti, la navigazione e i piè di pagina verranno automaticamente aggiunti alla pagina e localizzati.
 
 Ad esempio, l’autore deve solo aggiungere contenuto, ad esempio un componente di testo, alle pagine inglese e francese (rappresentato in blu sotto).
 
