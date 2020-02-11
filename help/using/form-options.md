@@ -1,16 +1,8 @@
 ---
 title: Componente Opzioni modulo
-seo-title: Componente Opzioni modulo
 description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
-seo-description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
-uuid: 7e8714df-75d1-4bb0-b1ee-b7c7450d806a
-contentOwner: Utente
-content-type: riferimento
-topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: 42289c2b-1671-463a-ac1d-457aa9aefa2a
 translation-type: tm+mt
-source-git-commit: 1243d6cc1b0b015ee2f37ae89d0e2e42d366cc02
+source-git-commit: 60df01ca9efe59b67bad57610d04496a2cdded9e
 
 ---
 
@@ -23,7 +15,7 @@ Il componente Opzioni modulo per componenti core consente la selezione da opzion
 
 Il componente Opzioni modulo per componenti core consente di inviare diversi tipi di opzioni presentate in diversi modi e deve essere utilizzato insieme al componente [Contenitore](form-container.md)modulo.
 
-La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall'editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
+La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -31,16 +23,16 @@ La versione corrente del componente Opzioni modulo è v2, introdotto con la rele
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |--- |
-| v2 | Compatibile | Compatibile | Compatibile |
-| [v1](form-options-v1.md) | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| [v1](form-options-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/we-retail.html).
+Esempio tratto da [We.Retail](https://docs.adobe.com/content/help/en/experience-manager-65/developing/bestpractices/we-retail/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -139,7 +131,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-5/sit
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Opzioni modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options).
+La documentazione tecnica più recente sul componente Opzioni modulo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_form_options_v2).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -159,16 +151,16 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 * **Origine** Dove sono definite le opzioni
    * **Locale** definito nel componente
       * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore** Il valore salvato quando l'opzione viene selezionata all'invio del modulo
-      * **Testo** Etichetta per l'opzione visualizzata sul modulo
-      * **Attivo** L'opzione è contrassegnata come selezionata al caricamento del modulo
-      * **Disattivato** L'opzione non è selezionabile ma continua a essere visualizzata
+      * **Valore** Il valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
+      * **Testo** Etichetta per l&#39;opzione visualizzata sul modulo
+      * **Attivo** L&#39;opzione è contrassegnata come selezionata al caricamento del modulo
+      * **Disattivato** L&#39;opzione non è selezionabile ma continua a essere visualizzata
       * **Elenco** Per le opzioni viene utilizzato un elenco statico definito altrove in AEM
          * **Elenco** Percorso dell’elenco statico in AEM
-            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell'elenco
-      * **Origine** dati Un'origine dati viene utilizzata per le opzioni
-         * **Origine** dati Tipo di risorsa dell'origine dati
-* **Messaggio** della Guida Un suggerimento per l'utente di ciò che può essere immesso nel campo
+            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell&#39;elenco
+      * **Origine** dati Un&#39;origine dati viene utilizzata per le opzioni
+         * **Origine** dati Tipo di risorsa dell&#39;origine dati
+* **Messaggio** della Guida Un suggerimento per l&#39;utente di ciò che può essere immesso nel campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
