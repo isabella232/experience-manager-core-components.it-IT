@@ -1,24 +1,9 @@
 ---
 title: Componente testo (v1)
-seo-title: Componente testo (v1)
-description: 'null'
-seo-description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
-uuid: b787ebac-fa85-416a-b96b-9d2ee85428ec
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: d5e37dc7-dfd4-4a44-89b6-c15651472c43
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
-noindex: vero
+description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
 index: n
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 945381996db443c227aa31f0aacb963071165681
 
 ---
 
@@ -31,7 +16,7 @@ Il componente Testo è un componente per la modifica e composizione di testo RTF
 
 Il componente Testo offre un potente editor Rich Text che consente di modificare facilmente il testo in un editor semplificato e in linea e in un formato a schermo intero.
 
-La finestra di dialogo [di](text-v1.md#main-pars_title) modifica offre funzioni di modifica in linea con opzioni limitate e funzionalità complete disponibili nella finestra di dialogo di modifica a schermo intero. Utilizzando la finestra di dialogo [di](text-v1.md#main-pars_title_1995166862)progettazione, le opzioni di formattazione del testo, come titoli, caratteri speciali e stili di paragrafo, possono essere configurate per il modello per l'autore del contenuto.
+La finestra di dialogo [di](text-v1.md#main-pars_title) modifica offre funzioni di modifica in linea con opzioni limitate e funzionalità complete disponibili nella finestra di dialogo di modifica a schermo intero. Utilizzando la finestra di dialogo [di](text-v1.md#main-pars_title_1995166862)progettazione, le opzioni di formattazione del testo, come titoli, caratteri speciali e stili di paragrafo, possono essere configurate per il modello per l&#39;autore del contenuto.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -128,9 +113,9 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](assets/chlimage_1-58.png)
 
-   Pastes any copied text as plain text without any formatting.
+   Incolla tutto il testo copiato come testo normale senza formattazione.
 
-   When selecting this option a window opens where the text can be pasted as plain text with no formatting as a preview before it is inserted into the text. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
+   Quando si seleziona questa opzione, si apre una finestra in cui il testo può essere incollato come testo normale senza formattazione come anteprima prima di essere inserito nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
    ![](assets/chlimage_1-59.png)
 
@@ -182,11 +167,11 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
 
-   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l'occorrenza successiva.
+   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva.
 
    ![](assets/chlimage_1-67.png)
 
-   Se non vengono trovate altre occorrenze, verrà visualizzato un messaggio e la ricerca verrà riavviata dall'inizio del testo.
+   Se non vengono trovate altre occorrenze, verrà visualizzato un messaggio e la ricerca verrà riavviata dall&#39;inizio del testo.
 
    ![](assets/chlimage_1-68.png)
 
@@ -194,17 +179,17 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](assets/chlimage_1-69.png)
 
-   Utilizzare questa opzione per cercare nel testo le occorrenze di una stringa di testo specificata e sostituire le corrispondenze con un'altra stringa. Selezionando questa opzione si apre una finestra in cui specificare le opzioni di ricerca e sostituzione.
+   Utilizzare questa opzione per cercare nel testo le occorrenze di una stringa di testo specificata e sostituire le corrispondenze con un&#39;altra stringa. Selezionando questa opzione si apre una finestra in cui specificare le opzioni di ricerca e sostituzione.
 
    ![](assets/chlimage_1-70.png)
 
    Immettere il testo per il quale si desidera eseguire la ricerca e il testo con cui sostituire il testo.
 
-   Toccate o fate clic su **Trova** per iniziare la ricerca. Tocca o fai clic sulla X per annullare.
+   Toccate o fate clic su **Trova** per iniziare la ricerca. Tocca o fai clic sulla x per annullare.
 
    Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
 
-   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l'occorrenza successiva oppure fate clic sul pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo una volta raggiunta una corrispondenza.
+   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva oppure fate clic sul pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo una volta raggiunta una corrispondenza.
 
    Selezionate **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
 
@@ -230,15 +215,15 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](assets/chlimage_1-74.png)
 
-   Consente di formattare il testo selezionato come elenco puntato o di iniziare l'inserimento di un elenco puntato dopo il cursore.
+   Consente di formattare il testo selezionato come elenco puntato o di iniziare l&#39;inserimento di un elenco puntato dopo il cursore.
 
    Per terminare un elenco puntato, toccate o fate di nuovo clic sul pulsante **Bullet** oppure immettete due ritorni a capo.
 
-* Numbered
+* Numerato
 
    ![](assets/chlimage_1-75.png)
 
-   Consente di formattare il testo selezionato come elenco numerato o di iniziare l'inserimento di un elenco numerato dopo il cursore.
+   Consente di formattare il testo selezionato come elenco numerato o di iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
 
    Per terminare un elenco numerato, toccate o fate di nuovo clic sul pulsante **Numerato** oppure immettete due ritorni a capo.
 
@@ -267,7 +252,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
    * **Colonne** - Il numero di colonne della tabella (obbligatorio)
    * **Righe** - Il numero di righe della tabella (obbligatorio)
    * **Larghezza** - La larghezza della tabella
-   * **Altezza** - L'altezza della tabella
+   * **Altezza** - L&#39;altezza della tabella
    * **Margine celle -** Spazio intorno al contenuto della cella
    * **Spaziatura** celle - Spazio tra celle
    * **Bordo** - Lo spessore delle linee dei bordi della tabella
@@ -284,7 +269,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](assets/chlimage_1-80.png)
 
-   Utilizzato per il controllo dell'ortografia del contenuto di testo. Eventuali errori ortografici sono sottolineati con linee rosse rotte.
+   Utilizzato per il controllo dell&#39;ortografia del contenuto di testo. Eventuali errori ortografici sono sottolineati con linee rosse rotte.
 
 * Caratteri speciali
 
@@ -300,16 +285,16 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](assets/chlimage_1-83.png)
 
-   Utilizzato per visualizzare e modificare l'origine HTML del testo.
+   Utilizzato per visualizzare e modificare l&#39;origine HTML del testo.
 
    Toccate o fate clic sull’icona Modifica **** sorgente per cambiare il contenuto del testo dalla visualizzazione formattata per visualizzare l’HTML non elaborato. In questa modalità, tutte le altre opzioni di formattazione sono disattivate. Toccate o fate di nuovo clic sull’icona **Sorgente modifica** per tornare alla visualizzazione formattata.
 
    >[!CAUTION]
    >
-   >Come sempre con l'accesso a HTML non elaborato, occorre prestare attenzione quando si utilizza l'opzione di modifica **** origine!
+   >Come sempre con l&#39;accesso a HTML non elaborato, occorre prestare attenzione quando si utilizza l&#39;opzione di modifica **** origine!
    >
    >
-   >L'HTML immesso tramite Modifica **** origine viene analizzato per rilevare i rischi XSS e gli script inseriti vengono rimossi e non verranno visualizzati nella pagina risultante. Tuttavia, l’HTML con formato non corretto immesso in **Modifica** origine può interrompere il modello per la pagina, dando luogo a una formattazione imprevista o rendendo la pagina risultante inutilizzabile.
+   >L&#39;HTML immesso tramite Modifica **** origine viene analizzato per rilevare i rischi XSS e gli script inseriti vengono rimossi e non verranno visualizzati nella pagina risultante. Tuttavia, l’HTML con formato non corretto immesso in **Modifica** origine può interrompere il modello per la pagina, dando luogo a una formattazione imprevista o rendendo la pagina risultante inutilizzabile.
 
 * Formato paragrafo
 
@@ -325,7 +310,7 @@ Anche il componente di testo può essere modificato in linea, ma a causa dei lim
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all'autore del modello di definire le opzioni di formattazione del testo disponibili per gli autori del contenuto.
+La finestra di dialogo Progettazione consente all&#39;autore del modello di definire le opzioni di formattazione del testo disponibili per gli autori del contenuto.
 
 ### Funzioni {#features}
 
@@ -361,7 +346,7 @@ Gli stili di paragrafo possono essere attivati o disattivati per il componente. 
 * Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo stile.
 * Immettete il codice dello stile e una descrizione che verrà visualizzata nella finestra di dialogo di modifica.
 * Per rimuovere uno stile, toccate o fate clic sul pulsante **Elimina** .
-* Per ridisporre l'ordine dei formati, toccate o fate clic e trascinate le maniglie.
+* Per ridisporre l&#39;ordine dei formati, toccate o fate clic e trascinate le maniglie.
 
 ### Caratteri speciali {#special-characters}
 
