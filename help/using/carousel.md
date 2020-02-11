@@ -1,23 +1,8 @@
 ---
 title: Componente carosello
-seo-title: Componente carosello
-description: 'null'
-seo-description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello a rotazione.
-uuid: 34934491-bd85-4f1e-ae22-bb48ed4dbd5c
-content-type: reference
-topic-tags: core-components
-discoiquuid: 3510812b-9d3e-40fe-b986-0f15d40b42ad
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
-index: y
-internal: n
-snippet: y
+description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello a rotazione.
 translation-type: tm+mt
-source-git-commit: da404fff6c6e934bbe06a5c4d441d89281ed0c54
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
@@ -38,19 +23,19 @@ La versione corrente del componente Carosello è v1, introdotto con la release 2
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |--- |
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Carosello ed esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/carousel.html)componenti.
+Per provare il componente Carosello ed esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_carousel)componenti.
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Carosello [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel).
+La documentazione tecnica più recente sul componente Carosello [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_carousel_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -62,32 +47,32 @@ La finestra di dialogo di modifica consente all’autore del contenuto di aggiun
 
 ![](assets/screen-shot-2019-08-29-12.01.39.png)
 
-Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all'elenco, che contiene le seguenti colonne:
+Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
-* **Icona** - L'icona del tipo di componente della scheda per una facile identificazione nell'elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** - L&#39;icona del tipo di componente della scheda per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione** - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
 * **Elimina** - Toccate o fate clic per eliminare la scheda dal componente Tabulazioni.
 * **Riordina** - Toccate o fate clic e trascinate per ordinare le schede.
 
 >[!TIP]
 >
->Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Carosello, [trascinateli dal Browser componenti e trascinateli sul componente Carosello nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Carosello, [trascinateli dal Browser componenti e trascinateli sul componente Carosello nell’editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component-from-the-components-browser)di pagina.
 
 ### Scheda Proprietà {#properties-tab}
 
 ![](assets/screen-shot-2019-08-29-12.01.57.png)
 
-Nella scheda **Proprietà** , l'autore del contenuto può impostare le diapositive per la transizione automatica.
+Nella scheda **Proprietà** , l&#39;autore del contenuto può impostare le diapositive per la transizione automatica.
 
 * **Transizione automatica delle diapositive** - Quando è attiva, il componente passa automaticamente alla diapositiva successiva dopo un ritardo specificato.
-* **Ritardo** transizione: quando è selezionata l'opzione Transizione automatica diapositive, questo valore viene utilizzato per definire il ritardo tra le transizioni (in millisecondi).
+* **Ritardo** transizione: quando è selezionata l&#39;opzione Transizione automatica diapositive, questo valore viene utilizzato per definire il ritardo tra le transizioni (in millisecondi).
 * **Disattiva pausa automatica al passaggio del mouse** : quando si selezionano le diapositive **di transizione** automatica, la transizione del carosello si interrompe automaticamente ogni volta che il cursore passa sul carosello. Selezionate questa opzione per evitare che la transizione venga messa in pausa.
 
 >[!NOTE]
 >
->I controlli di avanzamento delle diapositive non sono attivati in modalità **Modifica** . Per interagire con il carosello come lettore del contenuto pubblicato, utilizzate la modalità [**** Anteprima](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html) o l’opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** .
+>I controlli di avanzamento delle diapositive non sono attivati in modalità **Modifica** . Per interagire con il carosello come lettore del contenuto pubblicato, utilizzate la modalità [****Anteprima](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)o l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)**.
 >
->La funzione di avanzamento automatico non è abilitata in modalità **Modifica** . Usate l’opzione **[Visualizza come pubblicato](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)** per visualizzare la funzione di avanzamento automatico come lettore del contenuto pubblicato.
+>La funzione di avanzamento automatico non è abilitata in modalità **Modifica** . Usate l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)**per visualizzare la funzione di avanzamento automatico come lettore del contenuto pubblicato.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -105,7 +90,7 @@ L’autore del contenuto può usare l’opzione **Seleziona pannello** nella bar
 
 Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, le diapositive configurate vengono visualizzate come un elenco a discesa.
 
-* L'elenco è ordinato dalla disposizione assegnata delle diapositive e si riflette nella numerazione.
+* L&#39;elenco è ordinato dalla disposizione assegnata delle diapositive e si riflette nella numerazione.
 * Il tipo di componente della diapositiva viene visualizzato per primo, seguito dalla descrizione della diapositiva con il carattere più chiaro.
 
 ![](assets/opera_snapshot_2018-11-28141537localhost.png)
@@ -125,13 +110,13 @@ La scheda **Proprietà** consente di definire le impostazioni predefinite per le
 
 * **Transizione automatica diapositive** - Definisce se per impostazione predefinita l’opzione per spostare automaticamente il carosello nella diapositiva successiva è abilitata quando l’autore del contenuto aggiunge il componente carosello a una pagina.
 * **Ritardo** transizione - Definisce il valore predefinito del ritardo di transizione tra le diapositive (in millisecondi) quando un autore di contenuto aggiunge il componente carosello a una pagina.
-* **Disattiva pausa automatica al passaggio del mouse** - Definisce se per impostazione predefinita l'opzione per disattivare la pausa automatica delle diapositive è abilitata quando l'autore del contenuto seleziona le diapositive **di transizione** automatica.
+* **Disattiva pausa automatica al passaggio del mouse** - Definisce se per impostazione predefinita l&#39;opzione per disattivare la pausa automatica delle diapositive è abilitata quando l&#39;autore del contenuto seleziona le diapositive **di transizione** automatica.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
 La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti dall’autore del contenuto al componente Carosello come diapositive.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell'Editor modelli.](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Scheda Stili {#styles-tab}
 
