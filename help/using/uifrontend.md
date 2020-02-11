@@ -1,13 +1,8 @@
 ---
 title: Creazione front-end tipo di archivio AEM
-seo-title: Creazione front-end tipo di archivio AEM
 description: Un modello di progetto per le applicazioni basate su AEM
-seo-description: Un modello di progetto per le applicazioni basate su AEM
-contentOwner: bohnert
-content-type: reference
-topic-tags: core-components
 translation-type: tm+mt
-source-git-commit: 277359d2c0ba624353d5cf4addc6fe0d8dfdf2d0
+source-git-commit: 0e1f26e1032812a36ea6a30532ce40dafa903536
 
 ---
 
@@ -29,12 +24,12 @@ Poiché questi due processi di sviluppo si concentrano su parti diverse del prog
 
 Tuttavia, qualsiasi progetto risultante deve utilizzare il risultato di entrambi questi sforzi di sviluppo, sia back-end che front-end.
 
-L'esecuzione `npm run dev` avvia il processo di compilazione front-end che raccoglie i file JavaScript e CSS memorizzati nel modulo ui.frontend e produce due librerie client o clientlibs minificati chiamati `clientlib-site` e `clientlib-dependencies` li deposita nel modulo ui.apps. clientlibs possono essere distribuiti in AEM e consentono di archiviare il codice lato client nell’archivio.
+L&#39;esecuzione `npm run dev` avvia il processo di compilazione front-end che raccoglie i file JavaScript e CSS memorizzati nel modulo ui.frontend e produce due librerie client o clientlibs minificati chiamati `clientlib-site` e `clientlib-dependencies` li deposita nel modulo ui.apps. clientlibs possono essere distribuiti in AEM e consentono di archiviare il codice lato client nell’archivio.
 
 Quando l’intero archetipo del progetto AEM viene eseguito utilizzando `mvn clean install -PautoInstallPackage` tutti gli artefatti del progetto, inclusi i clientlibs, viene quindi inviato all’istanza di AEM.
 
 >[!TIP]
->Ulteriori informazioni sui clientlibs sono disponibili nella documentazione [di sviluppo di](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html) AEM e [come il modulo ui.frontend li utilizza di seguito](#clientlib-generation).
+>Ulteriori informazioni sui clientlibs sono disponibili nella documentazione [di sviluppo di](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) AEM e [come il modulo ui.frontend li utilizza di seguito](#clientlib-generation).
 
 ## Possibili flussi di lavoro di sviluppo front-end {#possible-workflows}
 
@@ -45,7 +40,7 @@ Il modulo di compilazione front-end è uno strumento utile e molto flessibile, m
 Webpack consente di progettare e sviluppare contenuti basati sull’output statico delle pagine Web AEM nel modulo ui.frontend.
 
 1. Anteprima pagina in AEM tramite la modalità di anteprima pagina o passaggio `wcmmode=disabled` nell’URL
-1. Visualizzare l'origine della pagina e salvare come HTML statico nel modulo ui.frontend
+1. Visualizzare l&#39;origine della pagina e salvare come HTML statico nel modulo ui.frontend
 1. [Avviare il webpack](#webpack-dev-server) e iniziare a creare lo stile e generare i JavaScript e CSS necessari
 1. Eseguire `npm run dev` per generare i clientlibs
 
@@ -53,7 +48,7 @@ In questo flusso, uno sviluppatore AEM può eseguire i passaggi uno e due e tras
 
 >[!TIP]
 >
->È inoltre possibile utilizzare la libreria [](https://opensource.adobe.com/aem-core-wcm-components/library.html) dei componenti per acquisire esempi dell'output di markup di ciascun componente per lavorare a livello di componente anziché a livello di pagina.
+>È inoltre possibile utilizzare la libreria [](https://adobe.com/go/aem_cmp_library) dei componenti per acquisire esempi dell&#39;output di markup di ciascun componente per lavorare a livello di componente anziché a livello di pagina.
 
 ### Utilizzo di Storybook {#using-storybook}
 
@@ -65,7 +60,7 @@ Utilizzando [Storybook](https://storybook.js.org) è possibile eseguire più svi
 
 ### Determinazione della marcatura {#determining-markup}
 
-Indipendentemente dal flusso di lavoro di sviluppo front-end che decidete di implementare per il progetto, gli sviluppatori back-end e gli sviluppatori front-end devono prima accordarsi sulla marcatura. In genere, AEM definisce la marcatura, fornita dai componenti core. [Tuttavia, se necessario](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup), questo può essere personalizzato.
+Indipendentemente dal flusso di lavoro di sviluppo front-end che decidete di implementare per il progetto, gli sviluppatori back-end e gli sviluppatori front-end devono prima accordarsi sulla marcatura. In genere, AEM definisce la marcatura, fornita dai componenti core. [Tuttavia, se necessario](customizing.md#customizing-the-markup), questo può essere personalizzato.
 
 ## Modulo ui.frontend {#ui-frontend-module}
 
@@ -91,7 +86,7 @@ Il tipo di archivio dei progetti AEM include un meccanismo opzionale per la crea
 
 >[!NOTE]
 >
->Per ulteriori informazioni tecniche sul modulo ui.frontend, consulta la [documentazione su GitHub](https://github.com/adobe/aem-project-archetype/blob/master/src/main/archetype/ui.frontend/README.md).
+>Per ulteriori informazioni tecniche sul modulo ui.frontend, consulta la [documentazione su GitHub](https://github.com/adobe/aem-project-archetype/blob/master/src/main/archetype/ui.frontend.general/README.md).
 
 ## Installazione {#installation}
 
@@ -100,7 +95,7 @@ Il tipo di archivio dei progetti AEM include un meccanismo opzionale per la crea
 
 >[!NOTE]
 >
->È necessario aver [eseguito archetype](overview.md) con l'opzione `-DoptionIncludeFrontendModule=y` per compilare la cartella ui.frontend.
+>È necessario aver [eseguito archetype](overview.md) con l&#39;opzione `-DoptionIncludeFrontendModule=y` per compilare la cartella ui.frontend.
 
 ## Utilizzo {#usage}
 
@@ -125,20 +120,20 @@ Il modulo ui.frontend compila il codice sotto la `ui.frontend/src` cartella e pr
 
 * Prefisso automatico - Tutti i CSS vengono eseguiti tramite un prefissatore e tutte le proprietà che richiedono il prefissaggio avranno automaticamente quelle aggiunte nel CSS.
 * Ottimizzazione - Al momento del post, tutto il CSS viene eseguito tramite un ottimizzatore (cssnano) che lo normalizza in base alle seguenti regole predefinite:
-   * Riduce l'espressione CSS calc laddove possibile, garantendo sia la compatibilità del browser che la compressioneEffettua la conversione tra valori di lunghezza, tempo e angolatura equivalenti. Per impostazione predefinita, i valori di lunghezza non vengono convertiti.
+   * Riduce l&#39;espressione CSS calc laddove possibile, garantendo sia la compatibilità del browser che la compressioneEffettua la conversione tra valori di lunghezza, tempo e angolatura equivalenti. Per impostazione predefinita, i valori di lunghezza non vengono convertiti.
    * Rimuove i commenti da regole, selettori e dichiarazioni
    * Rimuove regole, regole e dichiarazioni duplicate
       * Questo funziona solo per i duplicati esatti.
-   * Rimuove regole vuote, query multimediali e regole con selettori vuoti, in quanto non influiscono sull'output
+   * Rimuove regole vuote, query multimediali e regole con selettori vuoti, in quanto non influiscono sull&#39;output
    * Unisce regole adiacenti tramite selettori e coppie proprietà/valore sovrapposte
    * Assicurarsi che nel file CSS sia presente un solo @charset e spostarlo nella parte superiore del documento
-   * Sostituisce la parola chiave iniziale CSS con il valore effettivo, quando l'output risultante è minore
+   * Sostituisce la parola chiave iniziale CSS con il valore effettivo, quando l&#39;output risultante è minore
    * Comprime le definizioni SVG in linea con SVGO
-* Pulizia - Include un'attività di pulizia esplicita per eliminare i file CSS, JS e Mappa generati su richiesta.
+* Pulizia - Include un&#39;attività di pulizia esplicita per eliminare i file CSS, JS e Mappa generati su richiesta.
 * Mappatura origine - solo build di sviluppo
 
 >[!NOTE]
->L'opzione front-end build utilizza file di configurazione di webpack solo per dev e solo per prod che condividono un file di configurazione comune. In questo modo le impostazioni di sviluppo e produzione possono essere modificate in modo indipendente.
+>L&#39;opzione front-end build utilizza file di configurazione di webpack solo per dev e solo per prod che condividono un file di configurazione comune. In questo modo le impostazioni di sviluppo e produzione possono essere modificate in modo indipendente.
 
 ### Generazione libreria client {#clientlib-generation}
 
@@ -149,9 +144,9 @@ Il processo di compilazione del modulo ui.frontend si basa sul plug-in [aem-clie
 
 ### Inclusione di librerie client nelle pagine {#clientlib-inclusion}
 
-`clientlib-site` e `clientlib-dependencies` le categorie sono incluse nelle pagine tramite la configurazione [Criteri di](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html#TemplateDefinitions) pagina come parte del modello predefinito. Per visualizzare il criterio, modificate il modello di pagina **Contenuto &gt; Informazioni pagina &gt; Criteri** pagina.
+`clientlib-site` e `clientlib-dependencies` le categorie sono incluse nelle pagine tramite la configurazione [Criteri di](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#template-definitions) pagina come parte del modello predefinito. Per visualizzare il criterio, modificate il modello di pagina **Contenuto > Informazioni pagina > Criteri** pagina.
 
-L'inclusione finale delle librerie client nella pagina dei siti è la seguente:
+L&#39;inclusione finale delle librerie client nella pagina dei siti è la seguente:
 
 ```
 <HTML>
@@ -169,7 +164,7 @@ L'inclusione finale delle librerie client nella pagina dei siti è la seguente:
 </HTML>
 ```
 
-L'inclusione di cui sopra può ovviamente essere modificata aggiornando i Criteri pagina e/o modificando le categorie e le proprietà di incorporamento delle rispettive librerie client.
+L&#39;inclusione di cui sopra può ovviamente essere modificata aggiornando i Criteri pagina e/o modificando le categorie e le proprietà di incorporamento delle rispettive librerie client.
 
 ### Server di sviluppo webpack statico {#webpack-dev-server}
 
@@ -186,7 +181,7 @@ Incluso nel modulo ui.frontend è un webpack-dev-server che fornisce il ricarica
    * Si presume che la marcatura inserita in questo file rifletta accuratamente la marcatura generata dai componenti AEM.
    * Il markup in questo file non viene sincronizzato automaticamente con il markup del componente AEM.
    * Questo file contiene anche riferimenti alle librerie client memorizzate in AEM, come i componenti core CSS e i CSS griglia reattiva.
-   * Il server di sviluppo del webpack è configurato per il proxy che questi CSS/JS include da un'istanza AEM locale in esecuzione, in base alla configurazione trovata in `ui.frontend/webpack.dev.js`.
+   * Il server di sviluppo del webpack è configurato per il proxy che questi CSS/JS include da un&#39;istanza AEM locale in esecuzione, in base alla configurazione trovata in `ui.frontend/webpack.dev.js`.
 
 #### Utilizzando {#using-webpack-server}
 
