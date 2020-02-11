@@ -1,20 +1,9 @@
 ---
 title: Componente Breadcrumb (v1)
-seo-title: Componente Breadcrumb (v1)
 description: Il componente di base Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
-seo-description: Il componente di navigazione AEM Core Component Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
-uuid: c1f20a82-b6ff-4a3c-920a-6710084a69f2
-content-type: riferimento
-topic-tags: core-components
-discoiquuid: 0b3a7d8f-d110-424f-b531-ff88c9a09128
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -27,7 +16,7 @@ Il componente di base Breadcrumb è un componente di navigazione che crea una br
 
 Il componente Breadcrumb visualizza la posizione della pagina corrente all’interno della gerarchia del sito, consentendo ai visitatori della pagina di spostarsi nella gerarchia di pagina dalla posizione corrente. Questa funzione è spesso integrata nelle intestazioni o nei piè di pagina della pagina.
 
-Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di visualizzare la pagina corrente o le pagine nascoste, possono essere definite dall'autore del modello nella finestra di dialogo [](breadcrumb-v1.md#main-pars_title_1995166862)della progettazione. L’editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo [di](breadcrumb-v1.md#main-pars_title)modifica.
+Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di visualizzare la pagina corrente o le pagine nascoste, possono essere definite dall&#39;autore del modello nella finestra di dialogo [](breadcrumb-v1.md#main-pars_title_1995166862)della progettazione. L’editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo [di](breadcrumb-v1.md#main-pars_title)modifica.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -110,7 +99,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di elimin
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all'autore del modello di definire i valori predefiniti per le opzioni che consentono di eliminare le pagine nascoste e attive nelle breadcrumb, nonché la profondità nella gerarchia che dovrebbe visualizzare.
+La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i valori predefiniti per le opzioni che consentono di eliminare le pagine nascoste e attive nelle breadcrumb, nonché la profondità nella gerarchia che dovrebbe visualizzare.
 
 ![](assets/chlimage_1-35.png)
 
@@ -119,7 +108,7 @@ La finestra di dialogo di progettazione consente all'autore del modello di defin
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
-* **Nascondi corrente** - Definisce il valore predefinito dell'opzione **Nascondi corrente** quando il componente breadcrumb viene aggiunto a una pagina.
+* **Nascondi corrente** - Definisce il valore predefinito dell&#39;opzione **Nascondi corrente** quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
