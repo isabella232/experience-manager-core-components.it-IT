@@ -1,24 +1,9 @@
 ---
 title: Componente Opzioni modulo (v1)
-seo-title: Componente Opzioni modulo (v1)
-description: 'null'
-seo-description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
-uuid: a22ed77c-c9f3-46f4-8afe-e478383c1251
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: e1975bfe-2bda-409a-998e-1ff4f9f23b94
-disttype: dist5
-gnavtheme: chiaro
-groupsectionnavitems: 'no'
-hidemerchandisingbar: eredita
-hidepromocomponent: eredita
-modalsize: 426x240
-noindex: vero
+description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
 index: n
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -31,7 +16,7 @@ Il componente Opzioni modulo per componenti core consente la selezione da opzion
 
 Il componente Opzioni modulo per componenti core consente di inviare diversi tipi di opzioni presentate in molti modi diversi e deve essere utilizzato insieme al componente [contenitore del](form-container.md)modulo.
 
-La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall'editor di contenuti nella finestra di dialogo [di](form-options-v1.md#main-pars_title)configurazione.
+La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor di contenuti nella finestra di dialogo [di](form-options-v1.md#main-pars_title)configurazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -143,16 +128,16 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
    * **Locale** - Definito all’interno del componente
       * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore** : valore salvato quando l'opzione viene selezionata all'invio del modulo
-      * **Testo** - Etichetta per l'opzione visualizzata sul modulo
-      * **Attivo** : l'opzione è contrassegnata come selezionata al caricamento del modulo
-      * **Disattivato** - L'opzione non è selezionabile ma continua a essere visualizzata
+      * **Valore** : valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
+      * **Testo** - Etichetta per l&#39;opzione visualizzata sul modulo
+      * **Attivo** : l&#39;opzione è contrassegnata come selezionata al caricamento del modulo
+      * **Disattivato** - L&#39;opzione non è selezionabile ma continua a essere visualizzata
       * **Elenco** - Per l’opzione viene utilizzato un elenco statico definito altrove in AEM
          * **Elenco** - Percorso dell’elenco statico in AEM
-            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell'elenco
-      * **Origine** dati - Per le opzioni viene utilizzata un'origine dati
-         * **Origine** dati - tipo di risorsa dell'origine dati
-* **Messaggio** della Guida - Suggerimento per l'utente di ciò che può essere immesso nel campo
+            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell&#39;elenco
+      * **Origine** dati - Per le opzioni viene utilizzata un&#39;origine dati
+         * **Origine** dati - tipo di risorsa dell&#39;origine dati
+* **Messaggio** della Guida - Suggerimento per l&#39;utente di ciò che può essere immesso nel campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
