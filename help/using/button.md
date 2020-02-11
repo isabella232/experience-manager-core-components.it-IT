@@ -1,16 +1,8 @@
 ---
 title: Componente pulsante
-seo-title: Componente pulsante
-description: 'null'
-seo-description: Il componente Pulsante componente core consente di creare e visualizzare un pulsante.
-uuid: ec807de9-f76c-4850-9ece-c3e439a1d626
-contentOwner: Utente
-content-type: riferimento
-topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: f093f58e-9755-4a4f-803a-ab93a50e6870
+description: Il componente Pulsante componente core consente di creare e visualizzare un pulsante.
 translation-type: tm+mt
-source-git-commit: d37cde072dea612ccb55ad31b4aaf42f17839cb4
+source-git-commit: 65f900ad6759206a13f2bda6169900f62d968d8d
 
 ---
 
@@ -32,19 +24,19 @@ La versione corrente del componente Pulsante è v1, introdotto con la release 2.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Pulsante e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/button.html)Componenti.
+Per provare il componente Pulsante e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_button)Componenti.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Button [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/button/v1/button).
+La documentazione tecnica più recente sul componente Button [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_button_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -57,9 +49,9 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 ![](assets/screen-shot-2019-08-29-12.19.32.png)
 
 * **Testo** - Testo da visualizzare sul pulsante
-* **Collegamento** : collegamento a una pagina di contenuto in AEM, una risorsa esterna o un ancoraggio
+* **Collegamento** : collegamento a una pagina di contenuto all’interno di AEM, una risorsa esterna o un ancoraggio
    * Utilizzate la finestra di dialogo **di** selezione per scegliere un percorso in AEM.
-* **Icona** - Identificatore per la visualizzazione di un'icona nel pulsante
+* **Icona** - Identificatore per la visualizzazione di un&#39;icona nel pulsante
 
 ### Scheda Accessibilità {#accessibility-tab}
 
