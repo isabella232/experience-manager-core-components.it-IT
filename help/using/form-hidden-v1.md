@@ -1,15 +1,9 @@
 ---
 title: Componente nascosto modulo (v1)
-seo-title: Componente nascosto modulo (v1)
 description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
-seo-description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
-uuid: f5005346-def5-4e1f-8f93-e4cfc67a9329
-content-type: riferimento
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: d35f4e71-ec7f-4128-9123-b997dbb5f0cf
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -93,7 +87,7 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 * **Nome** - Il nome del campo, inviato con i dati del modulo
 * **Valore** - Il valore del campo, inviato con i dati del modulo
-* **Identificatore** - L'identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
+* **Identificatore** - L&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
