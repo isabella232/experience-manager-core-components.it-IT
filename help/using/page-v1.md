@@ -1,15 +1,9 @@
 ---
 title: Componente pagina (v1)
-seo-title: Componente pagina (v1)
 description: Il componente Pagina è un componente di pagina estensibile progettato per essere utilizzato con l’editor modelli e per consentire l’assemblaggio dell’intestazione e del piè di pagina e dei componenti struttura della pagina con l’editor modelli.
-seo-description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
-uuid: dd1b1e58-ae14-4818-afbe-8bcff0de2c32
-content-type: riferimento
-topic-tags: core-components
-discoiquuid: b3f1775d-743d-4f72-a1e5-198303007a8e
 index: n
 translation-type: tm+mt
-source-git-commit: 4e74f10e2a4119484a597178dc4577b399833dbf
+source-git-commit: 5439f90faef28c72367419bb7429a3a880b65229
 
 ---
 
@@ -689,17 +683,17 @@ Poiché il componente rappresenta l’intera pagina, le impostazioni che normalm
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina &gt; Progettazione** pagina.
+Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina > Progettazione** pagina.
 
 ![](assets/chlimage_1-94.png)
 
 La finestra Progettazione pagina consente di definire librerie lato client da caricare con la pagina.
 
 * Per aggiungere un nuovo campo, fare clic o toccare il pulsante **Aggiungi** sotto i campi.
-* Per rimuovere un campo, fare clic o toccare l'icona del cestino accanto al campo da rimuovere.
-* Per riordinare l'ordine di caricamento, fare clic o toccare e trascinare la maniglia accanto al campo da spostare.
+* Per rimuovere un campo, fare clic o toccare l&#39;icona del cestino accanto al campo da rimuovere.
+* Per riordinare l&#39;ordine di caricamento, fare clic o toccare e trascinare la maniglia accanto al campo da spostare.
 
-Per ulteriori informazioni sull'uso delle librerie lato client, consultate [Utilizzo delle librerie](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)lato client.
+Per ulteriori informazioni sull&#39;uso delle librerie lato client, consultate [Utilizzo delle librerie](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)lato client.
 
 ![](assets/chlimage_1-95.png)
 
