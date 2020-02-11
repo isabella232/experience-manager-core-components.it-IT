@@ -1,16 +1,8 @@
 ---
 title: Componente immagine
-seo-title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
-seo-description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
-uuid: 1a229d42-2428-43aa-895a-9b7c1bf02834
-contentOwner: User
-content-type: reference
-topic-tags: authoring
-products: SG_EXPERIENCEMANAGER/CORECOMPONENTS-new
-discoiquuid: d4684f33-2fb5-4f32-866f-7136cf1800d7
 translation-type: tm+mt
-source-git-commit: ddc970cc3ca21fac5d1f0078837cfd091ec0dccb
+source-git-commit: 60df01ca9efe59b67bad57610d04496a2cdded9e
 
 ---
 
@@ -27,7 +19,7 @@ Le larghezze delle immagini, il ritaglio e altre impostazioni possono essere def
 
 ## Funzioni reattive {#responsive-features}
 
-Il componente Immagine è dotato di robuste funzioni reattive pronte all'uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare, a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, poiché il componente Immagine è già ottimizzato per caricare il contenuto.
+Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare, a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, poiché il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
@@ -37,10 +29,10 @@ La versione corrente del componente Immagine è v2, introdotta con la release 2.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 |
-|--- |--- |--- |--- |
-| v2 | Compatibile | Compatibile | Compatibile |
-| [v1](image-v1.md) | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| [v1](image-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](versions.md)core.
 
@@ -50,23 +42,23 @@ La grafica vettoriale scalabile (SVG) è supportata dal componente Immagine.
 
 * Sono supportati il trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale.
 * Il Servlet immagine adattivo trasmette in streaming il file SVG originale (le trasformazioni vengono ignorate).
-* Per un’immagine SVG, le "immagini intelligenti" e le "dimensioni avanzate" sono impostate su un array vuoto nel modello di immagine.
+* Per un’immagine SVG, le &quot;immagini intelligenti&quot; e le &quot;dimensioni avanzate&quot; sono impostate su un array vuoto nel modello di immagine.
 
-### Protezione {#security}
+### Sicurezza {#security}
 
 Per motivi di sicurezza, l’SVG originale non viene mai chiamato direttamente dall’Editor immagine. Viene chiamato attraverso `<img src=“path-to-component”>`. Ciò impedisce al browser di eseguire eventuali script incorporati nel file SVG.
 
 >[!CAUTION]
 >
->Il supporto per SVG richiede la release 2.1.0 dei componenti core o versioni successive insieme al [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versioni successive per supportare le [nuove funzioni](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) dell’editor di immagini in AEM.
+>Il supporto per SVG richiede la release 2.1.0 dei componenti core o versioni successive insieme al [service pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versioni successive per supportare le [nuove funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html) dell’editor di immagini in AEM.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Immagine e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](http://opensource.adobe.com/aem-core-wcm-components/library/image.html)Componenti.
+Per provare il componente Immagine e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_image)Componenti.
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Immagine [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image).
+La documentazione tecnica più recente sul componente Immagine [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_image_v2).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](developing.md)core.
 
@@ -83,21 +75,21 @@ Oltre alla finestra di dialogo [standard per la](#edit-dialog) modifica e la [](
 ![](assets/screen_shot_2018-01-08at114245.png)
 
 * **Risorsa immagine**
-   * Trascinate una risorsa dal browser [delle](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/author-environment-tools.html) risorse o toccate l'opzione **Sfoglia** per caricarla da un file system locale.
-   * Toccate o fate clic su **Cancella** per deselezionare l'immagine attualmente selezionata.
-   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html) nell’editor risorse.
+   * Trascinate una risorsa dal browser [delle](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) risorse o toccate l&#39;opzione **Sfoglia** per caricarla da un file system locale.
+   * Toccate o fate clic su **Cancella** per deselezionare l&#39;immagine attualmente selezionata.
+   * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
 
 ### Scheda Metadati {#metadata-tab}
 
 ![](assets/screen_shot_2018-01-08at114527.png)
 
-* **L'immagine è decorativa** Controllare se l'immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
-* **Testo** alternativo Alternativo testuale del significato o della funzione dell'immagine per lettori ipovedenti.
-   * Ottieni testo alternativo da DAM: se questa opzione è attivata, il testo alternativo dell'immagine verrà popolato con il valore dei `dc:description` metadati in DAM.
+* **L&#39;immagine è decorativa** Controllare se l&#39;immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+* **Testo** alternativo Alternativo testuale del significato o della funzione dell&#39;immagine per lettori ipovedenti.
+   * Ottieni testo alternativo da DAM: se questa opzione è attivata, il testo alternativo dell&#39;immagine verrà popolato con il valore dei `dc:description` metadati in DAM.
 
 * **Didascalia** Ulteriori informazioni sull’immagine, visualizzate per impostazione predefinita sotto l’immagine.
    * **Ottieni didascalia da DAM** Se questa opzione è selezionata, il testo della didascalia dell’immagine verrà popolato con il valore dei `dc:title` metadati in DAM.
-   * **Visualizza la didascalia come pop-up** Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l'immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull'immagine.
+   * **Visualizza la didascalia come pop-up** Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
 
 * **Collegamento**
    * Collegare l’immagine a un’altra risorsa.
@@ -144,24 +136,24 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
    >[!CAUTION]
    >
-   >La funzione Mappa di avvio richiede la release 2.1.0 dei componenti core o successiva insieme al [service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versione successiva per supportare le [nuove funzioni](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/image-editor.html) di editor di immagini in AEM.
+   >La funzione Mappa di avvio richiede la release 2.1.0 dei componenti core o successiva insieme al [service pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versione successiva per supportare le [nuove funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html) di editor di immagini in AEM.
 
    ![](assets/chlimage_1-12.png)
 
-   Utilizzate questa opzione per applicare una mappa di lancio all'immagine. Selezionando questa opzione si apre una nuova finestra che consente all'utente di selezionare la forma della mappa:
+   Utilizzate questa opzione per applicare una mappa di lancio all&#39;immagine. Selezionando questa opzione si apre una nuova finestra che consente all&#39;utente di selezionare la forma della mappa:
 
    * **Aggiungi mappa rettangolare**
    * **Aggiungi mappa circolare**
    * **Aggiungi mappa poligono**
       * Per impostazione predefinita, aggiunge una mappa a triangolo. Fare doppio clic su una linea della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
-   Una volta selezionata, la forma mappa viene sovrapposta all'immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
+   Una volta selezionata, la forma mappa viene sovrapposta all&#39;immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
 
    ![](assets/chlimage_1-13.png)
 
    Dopo aver ridimensionato la mappa del lancio, fate clic su di essa per aprire una barra degli strumenti mobile e definire il percorso del collegamento.
 
    * **Percorso**
-      * Utilizzate l'opzione Selettore percorso per selezionare un percorso in AEM
+      * Utilizzate l&#39;opzione Selettore percorso per selezionare un percorso in AEM
       * Se il percorso non è in AEM, usate l’URL assoluto. I percorsi non assoluti verranno interpretati in relazione ad AEM.
    * **Testo** Alt Descrizione alternativa della destinazione del percorso
    * **Destinazione**
@@ -216,8 +208,8 @@ Nella scheda **Principale** potete definire un elenco di larghezze in pixel per 
 
 * **Larghezza** Definisce un elenco di larghezze in pixel per l’immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser.
    * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un’altra dimensione.
-      * Utilizzare le maniglie per riordinare l'ordine delle dimensioni.
-      * Utilizzate l'icona **Elimina** per rimuovere una larghezza.
+      * Utilizzare le maniglie per riordinare l&#39;ordine delle dimensioni.
+      * Utilizzate l&#39;icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene differito fino a quando non diventano visibili.
       * Selezionate l’opzione **Disattiva caricamento** lento per caricare le immagini al caricamento della pagina.
 * **Qualità** JPEG Fattore di qualità (in percentuale da 0 e 100) per le immagini JPEG trasformate (ad es. ridimensionate o ritagliate).
@@ -244,20 +236,12 @@ Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori 
 
    ![](assets/chlimage_1-20.png)
 
-* **Ruota** Utilizzate questa opzione per consentire all'autore del contenuto di utilizzare l'opzione **Ruota a destra** .
+* **Ruota** Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare l&#39;opzione **Ruota a destra** .
 * **Capovolgi** Utilizzate questa opzione per consentire all’autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
 
    >[!CAUTION]
    >
    >Per impostazione predefinita, l’opzione **Rifletti** è disattivata. Attivando questa opzione, i pulsanti **Rifletti in verticale** e **Rifletti in orizzontale** vengono visualizzati nella finestra di dialogo di modifica del componente immagine. Tuttavia, al momento la funzione non è supportata da AEM e le modifiche apportate con queste opzioni non vengono mantenute.
-
-<!-- 
-Comment Type: remark
-Last Modified By: Chris Bohnert (bohnert)
-Last Modified Date: 2017-11-20T05:51:34.378-0500
-
-<p>Added caution based on CQDOC-11457. Hid the flip options in the procedure using the <strong>Draft</strong> option so that when this feature is implemented in CQ-4221539, the <strong>Draft</strong> property can simply be removed along with the caution.</p>
- -->
 
 * Ritaglio
 
