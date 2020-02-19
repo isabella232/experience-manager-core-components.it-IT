@@ -1,0 +1,106 @@
+---
+title: Componente Accordion
+description: Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
+translation-type: tm+mt
+source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+
+---
+
+
+# Componente Accordion{#accordion-component}
+
+Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
+
+## Utilizzo {#usage}
+
+Il componente Core Component Accordion consente di creare una raccolta di componenti, composti come pannelli, e disposti in un pannello a soffietto su una pagina, simile al componente [](tabs.md)Tabulazioni, ma consente di espandere e comprimere i pannelli.
+
+* Le proprietà del pannello di controllo possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
+* L’ordine dei pannelli del pannello a soffietto può essere definito nella finestra di dialogo di configurazione e nel contenitore del pannello di [selezione](#select-panel-popover).
+* I valori predefiniti per il componente Accordion quando viene aggiunto a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
+
+## Versione e compatibilità {#version-and-compatibility}
+
+La versione corrente del componente Accordion è v1, introdotto con la release 2.5.0 dei componenti core a giugno 2019, ed è descritto in questo documento.
+
+La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+|--- |--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+
+## Output componente di esempio {#sample-component-output}
+
+Per provare il componente Accordion e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_accordion)componenti.
+
+## Dettagli tecnici {#technical-details}
+
+La documentazione tecnica più recente sul componente Accordion [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
+
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+
+## Configura finestra di dialogo {#configure-dialog}
+
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento Accordion, i relativi pannelli e come si presenterà e come verrà visualizzato da un visitatore alla pagina.
+
+### Scheda Articoli {#items-tab}
+
+![](/help/assets/screen-shot-2019-06-21-08.26.38.png)
+
+Usate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere quale componente aggiungere come pannello. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
+
+* **Icona** - L&#39;icona del tipo di componente del pannello per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
+* **Descrizione** - Descrizione utilizzata come testo del pannello, con impostazione predefinita sul nome del componente selezionato per il pannello.
+* **Elimina** - Toccate o fate clic per eliminare il pannello dal componente Accordion.
+* **Ridisponi** - Toccate o fate clic e trascinate per riordinare i pannelli.
+
+>[!TIP]
+>
+>Se la vista della pagina viene ridotta e la finestra di dialogo di modifica diventa a schermo intero, il pulsante **Aggiungi** viene nascosto. Per aggiungere i componenti al componente Accordion, [trascinateli dal Browser componenti e trascinateli sul componente Accordion nell’editor](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent)di pagina.
+
+### Scheda Proprietà {#properties-tab}
+
+![](/help/assets/screen-shot-2019-06-21-08.26.53.png)
+
+* **Espansione** elemento singolo - Se selezionata, questa opzione forza l&#39;espansione di un singolo elemento a soffietto alla volta. Se si espande un elemento, verranno compressi tutti gli altri.
+* **Elementi** espansi - Questa opzione definisce gli elementi che vengono espansi per impostazione predefinita quando la pagina viene caricata.
+   * Quando è selezionata l’espansione **di un elemento** singolo, è necessario selezionare un pannello. Per impostazione predefinita, è selezionato il primo pannello.
+   * Se l&#39;espansione **di un elemento** singolo non è selezionata, questa opzione è una selezione multipla ed è facoltativa.
+
+## Selezione del puntatore del pannello {#select-panel-popover}
+
+L’autore del contenuto può usare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello e ridisporre facilmente l’ordine dei pannelli all’interno della struttura di navigazione.
+
+![](/help/assets/screen-shot-2019-06-21-08.49.36.png)
+
+Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, i pannelli a soffietto configurati vengono visualizzati come un elenco a discesa.
+
+![](/help/assets/screen-shot-2019-06-21-08.52.14.png)
+
+* L&#39;elenco è ordinato in base alla disposizione assegnata dei pannelli e si riflette nella numerazione.
+* Il tipo di componente del pannello viene visualizzato per primo, seguito dalla descrizione del pannello con un carattere più chiaro.
+* Toccando o facendo clic su una voce nel menu a discesa, la vista nell’editor viene sostituita da tale pannello.
+* I pannelli possono essere ridisposti in posizione mediante le maniglie di trascinamento.
+
+## Finestra di dialogo Progettazione {#design-dialog}
+
+La finestra di dialogo di progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore del contenuto che utilizza il componente Accordion e le impostazioni predefinite al momento del posizionamento del componente Accordion.
+
+### Scheda Proprietà {#properties-tab-design}
+
+![](/help/assets/screen-shot-2019-06-21-08.58.11.png)
+
+* **Elementi** titolo consentiti - Questo elenco a discesa con più selezioni definisce l&#39;intestazione dell&#39;elemento Accordion gli elementi HTML che possono essere selezionati da un autore.
+* **Elemento** titolo predefinito - Questo elenco a discesa definisce l&#39;elemento Accordion predefinito dell&#39;elemento HTML.
+
+### Scheda Componenti consentiti {#allowed-components-tab}
+
+La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti ai pannelli del componente Accordion dall’autore del contenuto come elementi.
+
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+
+### Scheda Stili {#styles-tab}
+
+Il componente Accordion supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
