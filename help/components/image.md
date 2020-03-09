@@ -2,7 +2,7 @@
 title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 6be0028c45ce9f8b36ea278f8e569f3d6a626ae2
 
 ---
 
@@ -19,7 +19,7 @@ Le larghezze delle immagini, il ritaglio e altre impostazioni possono essere def
 
 ## Funzioni reattive {#responsive-features}
 
-Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare, a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, poiché il componente Immagine è già ottimizzato per caricare il contenuto.
+Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
@@ -29,7 +29,7 @@ La versione corrente del componente Immagine è v2, introdotta con la release 2.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile | Compatibile |
 | [v1](v1/image-v1.md) | Compatibile | Compatibile | Compatibile | - |
@@ -41,7 +41,7 @@ Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, 
 La grafica vettoriale scalabile (SVG) è supportata dal componente Immagine.
 
 * Sono supportati il trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale.
-* Il server immagini adattivo trasferisce in streaming il file SVG originale (le trasformazioni vengono ignorate).
+* Il Servlet immagine adattivo trasferisce in streaming il file SVG originale (le trasformazioni vengono ignorate).
 * Per un’immagine SVG, le &quot;immagini intelligenti&quot; e le &quot;dimensioni avanzate&quot; sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
@@ -92,7 +92,7 @@ Oltre alla finestra di dialogo [standard per la](#edit-dialog) modifica e la [](
    * **Visualizza la didascalia come pop-up** Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
 
 * **Collegamento**
-   * Collegare l’immagine a un’altra risorsa.
+   * Collegate l’immagine a un’altra risorsa.
    * Utilizzate la finestra di dialogo di selezione per collegarvi a un’altra risorsa AEM.
    * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi ad AEM.
 
@@ -144,7 +144,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
    * **Aggiungi mappa rettangolare**
    * **Aggiungi mappa circolare**
-   * **Aggiungi mappa poligono**
+   * **Aggiungi mappa poligonale**
       * Per impostazione predefinita, aggiunge una mappa a triangolo. Fare doppio clic su una linea della forma per aggiungere una nuova maniglia di ridimensionamento blu su un nuovo lato.
    Una volta selezionata, la forma mappa viene sovrapposta all&#39;immagine per il ridimensionamento. Trascinate e rilasciate le maniglie di ridimensionamento blu per regolare la forma.
 
@@ -195,7 +195,7 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 Nella scheda **Principale** potete definire un elenco di larghezze in pixel per l’immagine e il componente caricherà automaticamente la larghezza più appropriata in base alle dimensioni del browser. Si tratta di una parte importante delle funzioni [](#responsive-features) reattive del componente Immagine.
 
-È inoltre possibile definire quali opzioni generali del componente vengono automaticamente o disattivate quando l’autore aggiunge il componente a una pagina.
+Inoltre, è possibile definire quali opzioni generali del componente vengono automaticamente o disattivate quando l’autore aggiunge il componente a una pagina.
 
 ![](/help/assets/screenshot_2018-10-19at102756.png)
 
@@ -222,9 +222,9 @@ Nella scheda **Principale** potete definire un elenco di larghezze in pixel per 
 >
 >A partire dalla release 2.2.0 dei componenti core, il componente Immagine aggiunge alla risorsa immagine l’attributo UUID univoco `data-asset-id` per consentire il tracciamento e l’analisi del numero di visualizzazioni ricevute dalle singole risorse.
 
-### Scheda Funzioni {#features-tab}
+### Features Tab {#features-tab}
 
-Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori dei contenuti quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
+Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli autori dei contenuti quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
 
 * Origine
 
@@ -255,18 +255,18 @@ Nella scheda **Funzioni** potete definire le opzioni disponibili per gli autori 
    * Usate l’icona del cestino per eliminare le proporzioni.
    >[!CAUTION]
    >
-   >Note that in AEM, crop aspect ratios are defined as **height/width**. Ciò è diverso dalla definizione convenzionale di larghezza/altezza ed è fatto per motivi di compatibilità legacy. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia indicato un nome chiaro del rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non il rapporto stesso.
+   >Note that in AEM, crop aspect ratios are defined as **height/width**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia stato specificato un nome chiaro per il rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non per il rapporto stesso.
 
 ### Scheda Stili {#styles-tab-1}
 
 Il componente Immagine supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Server immagini adattivo {#adaptive-image-servelet}
+## Servlet immagine adattiva {#adaptive-image-servlet}
 
-Il componente Immagine utilizza il server immagini adattivo del componente principale. [Il Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) immagine adattivo è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle [personalizzazioni dei componenti](/help/developing/customizing.md)core.
+Il componente Immagine utilizza il servlet immagine adattivo del componente principale. [Il Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) immagine adattivo è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle [personalizzazioni dei componenti](/help/developing/customizing.md)core.
 
 >[!NOTE]
 >
->Le richieste condizionali effettuate tramite l’ `Last-Modified` intestazione sono supportate dal server immagini adattivo, ma la memorizzazione nella cache dell’ `Last-Modified` intestazione [deve essere abilitata nel dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
+>Le richieste condizionali effettuate tramite l’ `Last-Modified` intestazione sono supportate dal servlet immagine adattivo, ma la memorizzazione nella cache dell’ `Last-Modified` intestazione [deve essere abilitata nel dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
 >
 >[La configurazione del Dispatcher di esempio di AEM Project Archetype](/help/developing/archetype/overview.md)contiene già questa configurazione.
