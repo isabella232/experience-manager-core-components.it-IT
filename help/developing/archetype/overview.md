@@ -2,7 +2,7 @@
 title: AEM Project Archetype
 description: Un modello di progetto per le applicazioni basate su AEM
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 6be0028c45ce9f8b36ea278f8e569f3d6a626ae2
 
 ---
 
@@ -26,7 +26,7 @@ L’archetype offre diverse funzioni che rappresentano un punto di partenza conv
 * Esempi di componenti [modulo](/help/components/forms/form-container.md)
 * Configurazioni per emulatori dispositivo, configurazione tramite trascinamento e internazionalizzazione
 * Librerie client che seguono le convenzioni di denominazione di BEM e gli stili specifici dei componenti
-* Esempi di bundle con modelli di esempio, servelet, filtri e pianificatori
+* Esempi di bundle con modelli di esempio, servlet, filtri e pianificatori
 * Unità, integrazione e test sul lato client
 * Esempi di implementazioni SPA in React o Angular (facoltativo)
 
@@ -34,11 +34,11 @@ L’archetype offre diverse funzioni che rappresentano un punto di partenza conv
 
 L’utilizzo di AEM Project Archetype consente di creare un progetto AEM basato su procedure ottimali con pochi tasti. Utilizzando l’archetipo, tutti i pezzi saranno già in funzione in modo che, mentre il progetto risultante è minimo, implementa già tutte le caratteristiche [](#features) chiave di AEM, in modo che tutto ciò che devi fare è costruire sopra ed estendere.
 
-Naturalmente sono molti gli elementi che entrano in un progetto AEM di successo, ma l’utilizzo di AEM Project Archetype è una solida base ed è vivamente consigliato per qualsiasi progetto AEM.
+Naturalmente, ci sono molti elementi che entrano in un progetto AEM di successo, ma l’utilizzo di AEM Project Archetype è una solida base ed è vivamente consigliato per qualsiasi progetto AEM.
 
 ## Guida introduttiva {#getting-started}
 
-L’archetipo del progetto facilita lo sviluppo su AEM. Puoi fare i primi passi in molti modi.
+L’archetipo del progetto facilita lo sviluppo su AEM. I primi passi possono essere effettuati in diversi modi.
 
 * Esercitazione WKND - Per un&#39;ottima introduzione allo sviluppo su AEM, che include informazioni su come sfruttare l&#39;archetipo, consulta la [Guida introduttiva a AEM Sites - Esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND per un esempio pratico che illustra come utilizzare l&#39;archetipo per implementare un progetto semplice.
 * Esercitazione sugli eventi WKND - Se siete particolarmente interessati allo sviluppo di applicazioni a pagina singola (SPA) in AEM, controllate l’esercitazione [dedicata agli eventi](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)WKND.
@@ -77,7 +77,7 @@ Per utilizzare l&#39;archetipo, è innanzitutto necessario creare un progetto, c
 
 La creazione del progetto con Maven crea gli artefatti (pacchetti e pacchetti OSGi) che possono essere distribuiti in AEM. Per distribuire gli artifact del progetto a un’istanza di AEM è possibile utilizzare ulteriori comandi e profili Maven.
 
-### Creazione di un progetto {#create-project}
+### Creazione di un progetto   {#create-project}
 
 Per iniziare, puoi semplicemente utilizzare l’estensione [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/aem-eclipse.html) AEM Eclipse e seguire la procedura guidata Nuovo progetto e scegliere **AEM Sample Multi-Module Project** per utilizzare una versione rilasciata dell’archetipo.
 
@@ -152,7 +152,7 @@ Se disponete di un’istanza AEM in esecuzione, potete creare e creare un pacche
 mvn clean install -PautoInstallPackage
 ```
 
-Per distribuirlo in un&#39;istanza pubblicata, eseguite questo comando.
+Per distribuirlo in un&#39;istanza di pubblicazione, eseguite questo comando.
 
 ```
 mvn clean install -PautoInstallPackagePublish
@@ -188,7 +188,7 @@ mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.pa
 
 ### Struttura del modulo {#module-structure}
 
-La `<modules>` sezione del POM padre definisce i moduli che il progetto genererà. Per impostazione predefinita, il progetto crea [i moduli standard precedentemente definiti](#what-you-get): core, ui.apps, ui.content, ui.test e it.launcher. È sempre possibile aggiungere più moduli con l&#39;evoluzione di un progetto.
+La `<modules>` sezione del POM padre definisce i moduli che il progetto genererà. Per impostazione predefinita, il progetto crea [i moduli standard precedentemente definiti](#what-you-get): core, ui.apps, ui.content, ui.test e it.launcher. È sempre possibile aggiungere più moduli man mano che un progetto si evolve.
 
 ### Dipendenze {#dependencies}
 
@@ -232,7 +232,7 @@ Il progetto contiene tre livelli di test e, poiché sono tipi diversi di test, v
    1. Caricate AEM nel browser come fareste per creare una pagina.
    1. Open the page in [Developer mode](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developer-mode.html)
    1. Aprite il pannello a sinistra e passate alla scheda **Test** .
-   1. Individuare e eseguire i test **MyName generati** .
+   1. Trovare i test **MyName generati** ed eseguirli.
 
 ## Passaggi successivi {#next-steps}
 
