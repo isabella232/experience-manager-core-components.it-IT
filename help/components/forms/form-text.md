@@ -2,7 +2,7 @@
 title: Componente testo modulo
 description: Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
 
 ---
 
@@ -13,7 +13,7 @@ Il componente Testo modulo componente principale consente l’immissione di test
 
 ## Utilizzo {#usage}
 
-Il componente Testo modulo consente di inviare diversi tipi di testo e deve essere utilizzato insieme al componente [Contenitore di](form-container.md)moduli. Il tipo di convalida del testo, etichette e messaggi di aiuto può essere definito dall&#39;editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
+Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [Contenitore di](form-container.md)moduli. Il tipo di convalida del testo, etichette e messaggi di aiuto può essere definito dall&#39;editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -21,7 +21,7 @@ La versione corrente del componente Testo modulo è v2, introdotto con la releas
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-text-v1.md) | Compatibile | Compatibile | Compatibile | - |
@@ -30,44 +30,7 @@ Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, 
 
 ## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://docs.adobe.com/content/help/en/experience-manager-65/developing/bestpractices/we-retail/we-retail.html).
-
-### Schermata {#screenshot}
-
-![](/help/assets/chlimage_1-22.png)
-
-### HTML {#html}
-
-```
-<div class="text aem-GridColumn aem-GridColumn--default--12">
-   <div class="cmp-form-text">
-      <label for="form-text-2146967">How many pieces of toast would you like?
-      </label>
-   <input class="cmp-form-text__text" type="number" id="form-text-2146967" name="pieces">
-   </div>
-</div>
-```
-
-### JSON {#json}
-
-```
-"text":{  
-                     "columnClassNames":"aem-GridColumn aem-GridColumn--default--12",
-                     "id":"form-text-2146967",
-                     "title":"How many pieces of toast would you like?",
-                     "name":"pieces",
-                     "value":"",
-                     "helpMessage":"",
-                     "type":"number",
-                     "readOnly":false,
-                     "required":false,
-                     "requiredMessage":"",
-                     "constraintMessage":"",
-                     "rows":2,
-                     "defaultValue":"",
-                     ":type":"core/wcm/components/form/text/v2/text"
-                  }
-```
+Per provare il componente Testo modulo e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_form_text)componenti.
 
 ### Dettagli tecnici {#technical-details}
 
@@ -112,7 +75,7 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * Messaggio visualizzato come descrizione comando quando si invia il modulo, se il valore non convalida il tipo scelto
    * Non visualizzato per i tipi di vincolo **Testo** e Area **di** testo
 * **Obbligatorio** Se selezionato, l&#39;utente deve compilare un valore prima di inviare il modulo
-* **Rendi sola** lettura Se selezionata, l&#39;utente non può modificare il valore del campo
+* **Rendi sola** lettura Se questa opzione è selezionata, l&#39;utente non può modificare il valore del campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
