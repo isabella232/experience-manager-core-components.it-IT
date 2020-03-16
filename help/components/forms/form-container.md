@@ -2,7 +2,7 @@
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
 
 ---
 
@@ -27,12 +27,16 @@ La versione corrente del componente Contenitore modulo è v2, introdotta con la 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-container-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+
+## Output componente di esempio {#sample-component-output}
+
+Per provare il componente Contenitore di moduli e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_form_container)componenti.
 
 ## Dettagli tecnici {#technical-details}
 
@@ -63,7 +67,7 @@ Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e
 
 * **Oggetto** L&#39;oggetto dell&#39;e-mail che verrà inviata all&#39;invio del modulo
 * **Da** L&#39;indirizzo e-mail del messaggio e-mail che verrà inviato all&#39;invio del modulo
-* **A** Gli indirizzi dei destinatari che riceveranno un&#39;e-mail all&#39;invio del modulo
+* **A** Gli indirizzi dei destinatari che riceveranno un messaggio e-mail al momento dell&#39;invio del modulo
 
    * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
    * Toccate o fate clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
