@@ -2,7 +2,7 @@
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: 4df8e147fc9d0151c3a211473b067c78b807e52e
 
 ---
 
@@ -23,7 +23,7 @@ La versione corrente del componente Testo è v2, introdotta con la release 2.0.0
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|---|
 | v2 | Compatibile | Compatibile | Compatibile | Compatibile |
 | [v1](v1/text-v1.md) | Compatibile | Compatibile | Compatibile | - |
@@ -42,9 +42,9 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 ## Il componente Testo e l’Editor Rich Text {#the-text-component-and-the-rich-text-editor}
 
-Il componente di testo Componenti di base sfrutta l’editor Rich Text (RTE) di AEM. L’editor Rich Text offre agli autori dei contenuti un’ampia gamma di funzionalità per la modifica del contenuto testuale. L&#39;editor Rich Text è molto flessibile nella configurazione e offre una serie di opzioni. Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consultate gli articoli [Configurare l’editor](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/rich-text-editor.html) Rich Text e [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
+Il componente di testo Componenti di base sfrutta l’editor Rich Text (RTE) di AEM. L’editor Rich Text offre agli autori dei contenuti un’ampia gamma di funzionalità per la modifica del contenuto testuale. L&#39;editor Rich Text è molto flessibile nella sua configurazione e offre una serie di opzioni. Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consultate gli articoli [Configurare l’editor](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/rich-text-editor.html) Rich Text e [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
 
-Il resto di questo articolo illustra la configurazione standard del componente di testo Componenti di base con la configurazione standard RTE.
+Il resto di questo articolo illustra la configurazione standard del componente di testo Componenti di base con la configurazione standard dell’editor Rich Text.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Utilizzato per formattare il testo o il testo selezionato immesso dopo il cursor
 
 ![](/help/assets/screen_shot_2018-01-11at125713.png)
 
-Incolla tutto il testo copiato come testo normale senza formattazione.
+Incolla tutto il testo copiato come testo normale senza alcuna formattazione.
 
 Quando si seleziona questa opzione, si apre una finestra in cui il testo può essere incollato come testo normale senza formattazione come anteprima prima di essere inserito nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
@@ -106,7 +106,7 @@ Quando si seleziona questa opzione, si apre una finestra in cui il testo può es
 
 ![](/help/assets/screen_shot_2018-01-11at125717.png)
 
-Quando si seleziona questa opzione, si apre una finestra in cui è possibile incollare il testo mantenendo la formattazione come anteprima prima di inserirlo nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
+Quando si seleziona questa opzione, si apre una finestra in cui è possibile incollare il testo, mantenendo la formattazione come anteprima prima di inserirlo nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
 ![](/help/assets/screen_shot_2018-01-11at143250.png)
 
@@ -120,7 +120,7 @@ Utilizzare questa opzione per convertire il testo selezionato in un collegamento
 
 * Immettere la posizione
    * Utilizzare la finestra di dialogo Apri selezione per scegliere un percorso in AEM
-   * Se il collegamento non è in AEM, inserite l’URL assoluto (i percorsi non assoluti vengono interpretati come relativi ad AEM)
+   * Se il collegamento non si trova in AEM, inserite l’URL assoluto (i percorsi non assoluti vengono interpretati come relativi ad AEM)
 * Immettere testo descrittivo alternativo per il collegamento
 * Seleziona il comportamento del collegamento
    * Destinazione
@@ -146,7 +146,7 @@ Utilizzare questa opzione per cercare nel testo l&#39;occorrenza di una stringa 
 
 Immettere il testo per il quale si desidera eseguire la ricerca e toccare o fare clic su **Trova** per iniziare la ricerca. Toccate o fate clic sulla x per annullare.
 Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
-Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva.
+Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo attenuata per cercare l&#39;occorrenza successiva.
 
 ![](/help/assets/screen_shot_2018-01-11at130145.png)
 
@@ -171,6 +171,10 @@ Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l�
 Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva oppure fate clic sul pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo una volta raggiunta una corrispondenza.
 
 Selezionate **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
+
+Quando si utilizza la funzionalità replace, la stringa replace da sostituire deve essere immessa contemporaneamente alla stringa find. È comunque possibile fare clic su find per cercare la stringa prima di sostituirla. Se la stringa di sostituzione viene immessa dopo aver fatto clic su Trova, la ricerca viene reimpostata all’inizio del testo.
+
+La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore.
 
 ### Allinea testo a sinistra
 
@@ -202,7 +206,7 @@ Per terminare un elenco puntato, toccate o fate di nuovo clic sul pulsante **Bul
 
 ![](/help/assets/screen_shot_2018-01-11at142030.png)
 
-Consente di formattare il testo selezionato come elenco numerato o di iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
+Utilizzato per formattare il testo selezionato come elenco numerato o per iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
 
 Per terminare un elenco numerato, toccate o fate di nuovo clic sul pulsante **Numerato** oppure immettete due ritorni a capo.
 
@@ -296,7 +300,7 @@ La finestra di dialogo Progettazione consente all&#39;autore del modello di defi
 
 ### Scheda Plugin {#plugins-tab}
 
-La scheda Plug-in consente di abilitare e disabilitare le varie opzioni di formattazione del testo disponibili per gli autori del contenuto.
+La scheda Plugins viene utilizzata per attivare e disattivare le varie opzioni di formattazione del testo disponibili per gli autori del contenuto.
 
 ### Funzioni {#features}
 
