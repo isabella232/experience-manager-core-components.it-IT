@@ -2,7 +2,7 @@
 title: Utilizzo di AEM Project Archetype
 description: Istruzioni d’uso dettagliate per il tipo di archivio del progetto AEM
 translation-type: tm+mt
-source-git-commit: 477a1774a856725f52b9db7a978c534de4700661
+source-git-commit: 0d8089c53d2ef95e88379e6f381738cd137e6b33
 
 ---
 
@@ -35,8 +35,8 @@ AEM Archetype è composto da moduli:
 * **[ui.test](uitests.md)**: è un pacchetto Java contenente test JUnit eseguiti sul lato server. Questo bundle non deve essere distribuito in produzione.
 * **ui.launcher**: contiene codice colla che distribuisce il bundle ui.test (e i bundle dipendenti) al server e attiva l&#39;esecuzione JUnit remota.
 * **[ui.frontend.general](uifrontend.md)**:**(facoltativo)**contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack generale.
-* **[ui.frontend.response](uifrontend-react.md)**:**(facoltativo)**contiene gli artefatti richiesti quando si utilizza archetype per creare un progetto SPA basato su React.
-* **[ui.frontend.angular](uifrontend-angular.md)**:**(facoltativo)**contiene gli artefatti richiesti quando si utilizza archetype per creare un progetto SPA basato su Angular.
+* **[ui.frontend.response](uifrontend-react.md)**:**(Facoltativo)**contiene gli artefatti necessari per creare un progetto SPA basato su React utilizzando archetype.
+* **[ui.frontend.angular](uifrontend-angular.md)**:**(facoltativo)**contiene gli artefatti necessari per creare un progetto SPA basato su Angular utilizzando l’archetipo.
 
 ![](/help/assets/archetype-structure.png)
 
@@ -166,9 +166,9 @@ Queste proprietà sono configurate per la distribuzione in un’istanza AEM loca
 
 Queste proprietà sono configurate in modo che possano essere sostituite durante la distribuzione in ambienti di livello superiore. In questo modo i file POM non devono essere modificati, ma le variabili come `aem.host` e `sling.password` possono essere sostituite tramite gli argomenti della riga di comando:
 
-````
+```
 mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.password=productionpasswd
-````
+```
 
 ### Struttura del modulo {#module-structure}
 
