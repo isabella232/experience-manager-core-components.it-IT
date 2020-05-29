@@ -2,9 +2,9 @@
 title: Introduzione ai componenti core
 description: 'I componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: c07dc21b1973ec541a1d96047f8a30aca8cfb886
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '841'
 ht-degree: 28%
 
 ---
@@ -20,6 +20,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 
 * **[Libreria dei componenti:](https://www.adobe.com/go/aem_cmp_library)**Una raccolta di esempi per visualizzare i componenti nelle rispettive configurazioni.
 * **Documentazione del componente (questo documento):** Per sviluppatori e autori, con dettagli su ciascun componente.
+* **[Repository GitHub dei componenti core:](https://github.com/adobe/aem-core-wcm-components)**Per informazioni sullo sviluppo di ciascun componente e di ciascun progetto, scaricate.
 * Introduzione:
    * **[Successo con i componenti core:](/help/developing/success.md)**Linee guida da prendere in considerazione prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
    * **[Esercitazione WKND:](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**Esercitazione di due giorni per la creazione di un nuovo sito.
@@ -43,6 +44,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 | Gestione versioni | La politica [di controllo delle](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) versioni garantisce che i componenti core non interrompano il sito quando migliorano gli elementi che potrebbero avere un impatto sull&#39;utente. |
 | Localizzabile | Smart reference resolution allows certain components to find and [render corresponding localized content automatically](get-started/localization.md). |
 | Apri origine | Se qualcosa non è come dovrebbe, [contribuire i vostri miglioramenti!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
+| Tracciabile | I componenti principali sono [integrati con Adobe Client Data Layer.](/help/developing/data-layer/overview.md) |
 
 ## Componenti {#the-components}
 
