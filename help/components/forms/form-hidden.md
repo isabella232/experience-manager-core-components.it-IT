@@ -2,7 +2,10 @@
 title: Componente nascosto modulo
 description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 3%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Nascosto modulo è v2, introdotto con la rel
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-hidden-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -44,16 +47,21 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del campo nascosto.
 
-![](/help/assets/chlimage_1-26.png)
+![Finestra di dialogo di modifica nascosta al modulo](/help/assets/form-hidden-edit.png)
 
-* **Nome** Il nome del campo, inviato con i dati del modulo
-* **Valore** Il valore del campo, inviato con i dati del modulo
-* **Identificatore** L&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
+* **Nome** - Il nome del campo, inviato con i dati del modulo
+* **Valore** - Il valore del campo, inviato con i dati del modulo
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 Poiché in genere il componente Nascosto modulo non ha attributi visibili, il segnaposto del componente nell’editor visualizza i valori dei campi **Nome** e **Valore** , se assegnati per consentire all’autore di identificare il componente Nascosto modulo appropriato.
 
-![](/help/assets/screenshot_2018-10-19at094927.png)
+![Esempio di componente nascosto del modulo](/help/assets/form-hidden-example.png)
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Non è disponibile alcuna finestra di dialogo per il componente Nascosto modulo.
+### Scheda Stili {#styles-tab}
+
+Il componente Nascosto modulo supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
