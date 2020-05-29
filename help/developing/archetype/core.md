@@ -2,7 +2,10 @@
 title: Modulo di base dell’archivio del progetto AEM
 description: Modulo di base dell’archivio del progetto AEM
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ Il modulo core maven (`<src-directory>/<project>/core`) include tutto il codice 
 
 Il plug-in Maven Bundle definito in `<src-directory>/<project>/core/pom.xml` è responsabile della compilazione del codice Java in un bundle OSGi che può essere riconosciuto dal contenitore OSGi di AEM. Tenere presente che in questo punto è definita la posizione di Sling Models.
 
-Anche se è raro che il bundle principale debba essere distribuito indipendentemente dal modulo ui.apps negli ambienti di livello superiore, la distribuzione diretta del bundle principale è utile durante lo sviluppo e il test locali. Il plug-in Maven Sling consente di distribuire il bundle core ad AEM sfruttando direttamente il `autoInstallBundle` profilo come definito nel POM [](overview.md#parent-pom)padre.
+Anche se è raro che il bundle principale debba essere distribuito indipendentemente dal modulo ui.apps negli ambienti di livello superiore, la distribuzione diretta del bundle principale è utile durante lo sviluppo e il test locali. Il plug-in Maven Sling consente di distribuire il bundle core ad AEM sfruttando direttamente il `autoInstallBundle` profilo come definito nel POM [](/help/developing/archetype/using.md#parent-pom)padre.
 
 ```
 mvn -PautoInstallBundle clean install
