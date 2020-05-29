@@ -2,7 +2,10 @@
 title: Elenca componente
 description: Il componente Elenco componenti core consente di creare facilmente elenchi dinamici e statici.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 4%
 
 ---
 
@@ -21,9 +24,9 @@ La versione corrente del componente Elenco è v2, introdotto con la release 2.0.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](v1/list-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -51,9 +54,9 @@ L&#39;elenco può essere creato in diversi modi.
 * [Ricerca](#search-options)
 * [Tag](#tags)
 
-Indipendentemente dalla modalità di creazione dell&#39;elenco, è sempre possibile configurare le opzioni [di](#sort-options) ordinamento.
+Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibile configurare le opzioni [](#sort-options) Ordina e ID.
 
-![](/help/assets/chlimage_1-38.png)
+![Finestra di dialogo di modifica del componente Elenco](/help/assets/list-edit.png)
 
 A seconda di come l’autore del contenuto sceglie di generare l’elenco, le opzioni di configurazione aggiuntive cambieranno.
 
@@ -61,10 +64,10 @@ A seconda di come l’autore del contenuto sceglie di generare l’elenco, le op
 
 È possibile creare l&#39;elenco delle pagine figlie della pagina corrente o di un&#39;altra pagina.
 
-![](/help/assets/chlimage_1-39.png)
+![Opzioni pagina figlia](/help/assets/list-edit-child-pages.png)
 
 * **Pagina padre**
-   * Pagina di cui devono essere elencate le pagine figlie
+   * La pagina di cui devono essere elencate le pagine figlie
    * Lascia vuoto per utilizzare la pagina corrente
 
 * **Profondità figlio** Quanti livelli della gerarchia devono essere utilizzati
@@ -73,7 +76,7 @@ A seconda di come l’autore del contenuto sceglie di generare l’elenco, le op
 
 L&#39;elenco può essere creato utilizzando un elenco fisso di elementi.
 
-![](/help/assets/chlimage_1-40.png)
+![Opzioni elenco fisso](/help/assets/list-edit-fixed.png)
 
 Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo elemento nell’elenco.
 
@@ -85,7 +88,7 @@ Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo elemento nel
 
 L&#39;elenco può essere creato utilizzando i risultati di una ricerca di contenuto AEM.
 
-![](/help/assets/chlimage_1-41.png)
+![Opzioni elenco di ricerca](/help/assets/list-edit-search.png)
 
 * **Query** di ricerca Stringa per la quale verrà eseguita una ricerca full-text per generare gli elementi elenco
 * **Cerca nella** posizione in cui eseguire la ricerca
@@ -96,14 +99,14 @@ L&#39;elenco può essere creato utilizzando i risultati di una ricerca di conten
 
 L&#39;elenco può essere creato utilizzando pagine che corrispondono a determinati tag presenti in una determinata posizione.
 
-![](/help/assets/chlimage_1-42.png)
+![Opzioni elenco dei tag](/help/assets/list-edit-tags.png)
 
 * **Pagina** padre da cui deve iniziare la corrispondenza del tag
    * Utilizzare la finestra di dialogo **** Selezione per scegliere il percorso in AEM
    * Usa pagina corrente se lasciata vuota
 * **Tag** per i tag da associare
    * Utilizzare la finestra di dialogo **Sfoglia** per selezionare i tag
-* **Corrispondenza** Consente di definire il tipo di corrispondenza da applicare alla pagina da includere nell&#39;elenco.
+* **Corrispondenza** Consente di definire il tipo di corrispondenza da applicare a una pagina da includere nell&#39;elenco.
    * **qualsiasi tag**
    * **tutti i tag**
 
@@ -111,7 +114,7 @@ L&#39;elenco può essere creato utilizzando pagine che corrispondono a determina
 
 Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibile definire alcune opzioni di ordinamento.
 
-![](/help/assets/chlimage_1-43.png)
+![Opzioni di ordinamento](/help/assets/list-edit-sort-options.png)
 
 * **Ordina per** modalità di ordinamento degli elementi
    * **Titolo**
@@ -121,12 +124,16 @@ Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibil
    * **decrescente**
 * **Numero massimo elementi** Numero massimo di elementi visualizzati nell&#39;elenco.
    * Lasciate vuoto per restituire tutti gli elementi.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ### Scheda Impostazioni elemento {#item-settings-tab}
 
 Utilizzando la scheda Impostazioni elemento, è possibile configurare la formattazione degli elementi dell&#39;elenco.
 
-![](/help/assets/chlimage_1-44.png)
+![Impostazioni degli elementi](/help/assets/list-edit-items.png)
 
 * **Collega elementi** Collega elementi alla pagina corrispondente
 * **Mostra descrizione** Mostra descrizioni dell’elemento di collegamento
@@ -140,22 +147,22 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 
 Nella scheda Impostazioni **** elenco, è possibile definire il formato della data e il tipo di elenchi da rendere disponibili nel componente per gli autori del contenuto.
 
-![](/help/assets/chlimage_1-45.png)
+![Elenca le impostazioni dell&#39;elenco delle finestre di dialogo del componente](/help/assets/list-design-list-settings.png)
 
 * **Formato** data Formato da utilizzare per la visualizzazione dell&#39;ultima data di modifica
 * **Disabilita elementi figlio** Disattiva il tipo di elenco figli nel componente
 * **Disabilita statica** Disattiva il tipo di elenco statico nel componente
-* **Disattiva ricerca** Disattiva il tipo di elenco di ricerca nel componente
-* **Disabilita tag** Disattiva il tipo di elenco dei tag nel componente
+* **Disabilita ricerca** Disattiva il tipo di elenco di ricerca nel componente
+* **Disattivazione dei tag** Disattivazione del tipo di elenco dei tag nel componente
 
 ### Impostazioni elemento {#item-settings}
 
 Nella scheda Impostazioni **** elemento è possibile definire le opzioni di formattazione per i singoli elementi dell&#39;elenco che dovrebbero essere disponibili nel componente per gli autori dei contenuti.
 
-![](/help/assets/chlimage_1-46.png)
+![Elenca le impostazioni della finestra di dialogo del componente](/help/assets/list-design-item-settings.png)
 
 * **Collega elementi** Abilita collegamenti elementi nella finestra di dialogo di [modifica](#edit-dialog)
-* **Mostra descrizioni** Abilita Mostra descrizioni opzione nella finestra di dialogo di [modifica](#edit-dialog)
+* **Mostra descrizioni** Opzione Mostra descrizioni nella finestra di dialogo di [modifica](#edit-dialog)
 * **Mostra data** Abilita data opzione Mostra data nella finestra di dialogo di [modifica](#edit-dialog)
 
 ### Scheda Stili {#styles-tab}
