@@ -2,7 +2,10 @@
 title: Utilizzo di AEM Project Archetype
 description: Istruzioni d’uso dettagliate per il tipo di archivio del progetto AEM
 translation-type: tm+mt
-source-git-commit: 0d8089c53d2ef95e88379e6f381738cd137e6b33
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '2057'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +16,7 @@ AEM Project Archetype crea un progetto Adobe Experience Manager minimo basato su
 
 ## Perché utilizzare Archetype {#why-use-the-archetype}
 
-L’utilizzo di AEM Project Archetype consente di creare un progetto AEM basato su procedure ottimali con pochi tasti. Utilizzando l’archetipo, tutti i pezzi saranno già in funzione in modo che, mentre il progetto risultante è minimo, implementa già tutte le caratteristiche [](#features) chiave di AEM, in modo che tutto ciò che devi fare è costruire sopra ed estendere.
+L’utilizzo di AEM Project Archetype consente di creare un progetto AEM basato su procedure ottimali con pochi tasti. Utilizzando l’archetipo, tutti i pezzi saranno già in funzione in modo che, mentre il progetto risultante è minimo, implementa già tutte le caratteristiche [](#what-you-get) chiave di AEM, in modo che tutto ciò che devi fare è costruire sopra ed estendere.
 
 Naturalmente, ci sono molti elementi che entrano in un progetto AEM di successo, ma l’utilizzo di AEM Project Archetype è una solida base ed è vivamente consigliato per qualsiasi progetto AEM.
 
@@ -21,7 +24,7 @@ Naturalmente, ci sono molti elementi che entrano in un progetto AEM di successo,
 
 L’archetipo del progetto facilita lo sviluppo su AEM. I primi passi possono essere effettuati in diversi modi.
 
-* Esercitazione WKND - Per un&#39;ottima introduzione allo sviluppo su AEM, che include informazioni su come sfruttare l&#39;archetipo, consulta la [Guida introduttiva a AEM Sites - Esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND per un esempio pratico che illustra come utilizzare l&#39;archetipo per implementare un progetto semplice.
+* Esercitazione WKND - Per un&#39;ottima introduzione allo sviluppo su AEM, che include informazioni su come sfruttare l&#39;archetipo, consulta la [Guida introduttiva a AEM Sites - Esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND per un esempio pratico che illustra come utilizzare l&#39;archetipo per implementare un progetto semplice.
 * Esercitazione sugli eventi WKND - Se siete particolarmente interessati allo sviluppo di applicazioni a pagina singola (SPA) in AEM, controllate l’esercitazione [dedicata agli eventi](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)WKND.
 * Scarica e inizia da solo! - È possibile scaricare facilmente l&#39;archetipo di progetto corrente disponibile su GitHub e creare il primo progetto [seguendo i semplici passaggi indicati di seguito](#how-to-use-the-archetype).
 
