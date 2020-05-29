@@ -2,12 +2,15 @@
 title: Componente contenitore
 description: Il componente Contenitore componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 2%
 
 ---
 
 
-# Componente contenitore{#container-component}
+# Container Component{#container-component}
 
 Il componente Contenitore componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
 
@@ -24,9 +27,9 @@ La versione corrente del componente contenitore è v1, introdotto con la release
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -44,38 +47,41 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all&#39;autore del contenuto di definire l&#39;elemento contenitore e il suo funzionamento e la sua visualizzazione sulla pagina da parte di un visitatore.
 
-![](/help/assets/screen-shot-2019-06-21-13.59.26.png)
+![Finestra di dialogo di modifica del componente contenitore](/help/assets/container-edit.png)
 
 * **Layout** - Questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore.
    * **Semplice** - Definisce un contenitore come una semplice raccolta di componenti
    * **Griglia** reattiva - Definisce un contenitore come layout reattivo [AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
-* **ID** - Utilizzate questa opzione per definire l&#39;attributo ID HTML da applicare al componente.
 * **Colore** di sfondo - Definibile come valori RGB a forma libera o utilizzando il selettore colore, [a seconda della configurazione](#background-tab)
 * **Immagine** di sfondo - Definisce un colore di sfondo per il contenitore, [a seconda della configurazione](#background-tab)
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 La finestra di dialogo di progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore del contenuto che utilizza il componente Contenitore.
 
-### Scheda Componenti consentiti {#allowed-components-tab}
+### Allowed Components Tab {#allowed-components-tab}
 
 La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti al componente Contenitore dall’autore del contenuto come elementi.
 
 La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
-### Scheda Componenti predefiniti {#default-components-tab}
+### Default Components Tab {#default-components-tab}
 
 La scheda Componenti predefiniti consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul contenitore, in modo simile alla [definizione dei componenti predefiniti nel modello](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)di pagina.
 
 ### Scheda Impostazioni reattive {#responsive-settings-tab}
 
-![](/help/assets/screen-shot-2019-06-21-09.33.03.png)
+![Scheda Impostazioni reattive della finestra di dialogo di progettazione del componente Contenitore](/help/assets/container-design-responsive.png)
 
 * **Colonne** - Definisce il numero di colonne nella griglia del contenitore risultante.
 
 ### Scheda Sfondo {#background-tab}
 
-![](/help/assets/screen-shot-2019-06-21-09.42.42.png)
+![Scheda Sfondo della finestra di dialogo di progettazione del componente Contenitore](/help/assets/container-design-background.png)
 
 * **Immagine di sfondo**
    * **Abilita immagine** di sfondo - Selezionate questa opzione per consentire all&#39;autore del contenuto di definire un&#39;immagine di sfondo per il contenitore.
