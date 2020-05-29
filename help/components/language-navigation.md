@@ -2,7 +2,10 @@
 title: Componente navigazione lingua
 description: Il componente di navigazione della lingua fornisce una navigazione tra la lingua e il paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un'impostazione internazionale diversa.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +19,7 @@ Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un
 I siti Web sono spesso disponibili in più lingue per diverse aree geografiche. Il componente di navigazione della lingua consente a un visitatore di visualizzare la stessa pagina in diverse lingue/lingue. Se si è lettori della versione svizzera tedesca del sito, è possibile passare facilmente alla versione inglese USA della stessa pagina. Il componente Navigazione lingua gestisce la comprensione della struttura della lingua del sito e trova automaticamente la pagina corrispondente.
 
 * Per un esempio del funzionamento della funzione di localizzazione del componente Navigazione lingua, vedere [la sezione seguente](#example).
-* Per un esempio di come le funzioni di localizzazione degli altri componenti core funzionano insieme, consultate la pagina [Caratteristiche di](/help/get-started/localization.md)localizzazione dei componenti core.
+* Per un esempio di come le funzioni di localizzazione degli altri componenti core funzionano insieme, consulta la pagina [Caratteristiche di](/help/get-started/localization.md)localizzazione dei componenti core.
 
 La finestra di dialogo [di](#edit-dialog) modifica consente di definire la radice di navigazione del sito globale e di definire la profondità della struttura di navigazione. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, l&#39;autore del modello può impostare i valori predefiniti per le stesse opzioni.
 
@@ -26,9 +29,9 @@ La versione corrente del componente Navigazione lingua è v1, introdotto con la 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -50,7 +53,7 @@ In genere queste configurazioni devono essere eseguite solo a livello di modello
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen_shot_2018-01-12at133642.png)
+![Finestra di dialogo Progettazione del componente Navigazione lingua](/help/assets/language-navigation-design.png)
 
 * **Directory principale di navigazione**
    * Qui è dove dovrebbe iniziare la navigazione della lingua del sito.
@@ -67,7 +70,7 @@ Supponiamo che il contenuto sia simile al seguente:
 
 ```
 /content
-+-- we-retail
++-- wknd
    +-- language-masters
    +-- us
       +-- en
@@ -80,9 +83,9 @@ Supponiamo che il contenuto sia simile al seguente:
 \-- wknd-shop
 ```
 
-Per il sito We.Retail, è probabile che si desideri inserire il componente Navigazione lingua in un modello di pagina come parte dell’intestazione. Una volta fatto parte del modello, è possibile impostare la directory principale **di** navigazione del componente su `/content/we-retail` tale posizione, in quanto il contenuto localizzato per tale sito ha inizio. È inoltre necessario impostare la profondità **della struttura della** lingua in modo che sia `2` di due livelli (paese e lingua).
+Per il WKND del sito, è consigliabile inserire il componente Navigazione lingua in un modello di pagina come parte dell’intestazione. Una volta fatto parte del modello, è possibile impostare la directory principale **di** navigazione del componente su `/content/wknd` tale posizione, in quanto il contenuto localizzato per tale sito ha inizio. È inoltre necessario impostare la profondità **della struttura della** lingua in modo che sia `2` di due livelli (paese e lingua).
 
-Con il valore Radice **di** navigazione, il componente Lingua sa che dopo `/content/we-retail` che la navigazione ha inizio e può generare opzioni di navigazione nella lingua riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione della lingua del sito (come definito dal valore Profondità **struttura della** lingua).
+Con il valore Radice **di** navigazione, il componente Lingua sa che dopo `/content/wknd` che la navigazione ha inizio e può generare opzioni di navigazione nella lingua riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione della lingua del sito (come definito dal valore Profondità **struttura della** lingua).
 
 Indipendentemente dalla pagina visualizzata dall’utente, il componente Navigazione lingua è in grado di trovare la pagina corrispondente in un’altra lingua, conoscendo la posizione della pagina corrente e lavorando all’indietro fino al livello principale, quindi inoltrando la pagina corrispondente.
 
@@ -94,4 +97,10 @@ Il componente Navigazione lingua supporta AEM [Style System](/help/get-started/a
 
 In genere il componente Navigazione lingua deve essere aggiunto e configurato solo nei modelli di pagina di un sito. Tuttavia, se il componente Navigazione lingua deve essere aggiunto a una singola pagina di contenuto, la finestra di dialogo di modifica consente a un autore di contenuto di configurare gli stessi valori come descritto nella finestra di dialogo [](#design-dialog)della progettazione.
 
-![](/help/assets/screen_shot_2018-01-12at133353.png)
+Inoltre puoi impostare un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+
+* Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+* La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+
+![Finestra di dialogo di modifica del componente Navigazione lingua](/help/assets/language-navigation-edit.png)
