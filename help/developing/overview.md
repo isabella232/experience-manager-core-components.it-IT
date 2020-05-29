@@ -2,7 +2,10 @@
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 translation-type: tm+mt
-source-git-commit: c338428a681f652d17bb972fb6a2abf216a338c3
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -15,9 +18,9 @@ Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi
 
 Di conseguenza, Adobe fornisce le seguenti raccomandazioni:
 
-* **Nuovi progetti** I nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l’architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i componenti [](#foundation-component-support)di base.
-* **La** raccomandazione progetti [esistenti viene mantenuta utilizzando i componenti](#foundation-component-support)di base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
-   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere sostenuti.](#foundation-component-support)
+* **Nuovi progetti** I nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l’architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i componenti [](/help/versions.md#foundation-component-support)di base.
+* **La** raccomandazione progetti [esistenti viene mantenuta utilizzando i componenti](/help/versions.md#foundation-component-support)di base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
+   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere sostenuti.](/help/versions.md#foundation-component-support)
 * **Nuovi componenti** personalizzati Se è possibile personalizzare [un componente](customizing.md)core esistente.\
    In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le linee guida [sui](guidelines.md)componenti.
 * **Componenti** personalizzati esistenti Se i componenti funzionano come previsto, mantenerli come sono.\
@@ -111,6 +114,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Scarica](https://adobe.com/go/aem_cmp_tech_download_v1) | Aggiunta di una risorsa scaricabile a una pagina | `-` |
 | [Frammento esperienza](https://adobe.com/go/aem_cmp_tech_xf_v1) | Aggiunta di un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 | [Incorpora](https://adobe.com/go/aem_cmp_tech_embed_v1) | Incorporare una risorsa esterna in una pagina | - |
+| [Barra di avanzamento](https://adobe.com/go/aem_cmp_tech_progress_v1) | Fornire una rappresentazione visiva del progresso verso un obiettivo | - |
 
 ### Componenti in arrivo {#upcoming-components}
 
