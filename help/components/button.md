@@ -2,7 +2,10 @@
 title: Componente pulsante
 description: Il componente Pulsante componente core consente di creare e visualizzare un pulsante.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 4%
 
 ---
 
@@ -24,9 +27,9 @@ La versione corrente del componente Pulsante è v1, introdotto con la release 2.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -46,16 +49,20 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.19.32.png)
+![scheda Proprietà della finestra di dialogo di modifica del componente Pulsante](/help/assets/button-edit-properties.png)
 
 * **Testo** - Testo da visualizzare sul pulsante
 * **Collegamento** : collegamento a una pagina di contenuto all’interno di AEM, una risorsa esterna o un ancoraggio
    * Utilizzate la finestra di dialogo **di** selezione per scegliere un percorso in AEM.
 * **Icona** - Identificatore per la visualizzazione di un&#39;icona nel pulsante
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.19.43.png)
+![Scheda Accessibilità della finestra di dialogo di modifica del componente Pulsante](/help/assets/button-edit-accessibility.png)
 
 Nella scheda **Accessibilità** , è possibile impostare i valori per le etichette di accessibilità [](https://www.w3.org/WAI/standards-guidelines/aria/) ARIA per il componente.
 
