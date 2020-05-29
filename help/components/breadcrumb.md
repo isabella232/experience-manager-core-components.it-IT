@@ -2,7 +2,10 @@
 title: Componente Breadcrumb
 description: Il componente di base Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -23,16 +26,16 @@ La versione corrente del componente Breadcrumb è v2, introdotta con la release 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](v1/breadcrumb-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Breadcrumb e per visualizzare esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la libreria [](https://adobe.com/go/aem_cmp_library_breadcrumb)dei componenti.
+Per provare il componente Breadcrumb e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la libreria [](https://adobe.com/go/aem_cmp_library_breadcrumb)dei componenti.
 
 >[!NOTE]
 >
@@ -48,16 +51,21 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di modifica consente all’autore del contenuto di eliminare le pagine nascoste e attive nelle breadcrumb e la profondità nella gerarchia che dovrebbe visualizzare.
 
-![](/help/assets/screen_shot_2018-01-12at124250.png)
+![Finestra di dialogo di modifica del componente Breadcrumb](/help/assets/breadcrumb-edit.png)
 
 * **Livello** iniziale navigazione - Punto della gerarchia in cui il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente. Ad esempio in We.Retail:
 
    * 0 inizia da `/content`
-   * 1 inizia a `/content/we-retail`
-   * 2 inizia a `/content/we-retail/<country>`
+   * 1 inizia a `/content/<yourSite>`
+   * 2 inizia a `/content/<yourSite>/<country>`
 
-* **Mostra elementi** di navigazione nascosti - Mostra pagine contrassegnate come nascoste nel percorso di navigazione (per impostazione predefinita non vengono visualizzate)
+* **Mostra elementi** di navigazione nascosti - Mostra pagine contrassegnate come nascoste nel breadcrumb (per impostazione predefinita non vengono visualizzate)
 * **Nascondi pagina** corrente - Elimina la pagina corrente nel percorso di navigazione (per impostazione predefinita verrà visualizzata)
+* **Disattiva ombreggiatura** : se la pagina nella gerarchia è un reindirizzamento, il nome della pagina di reindirizzamento verrà visualizzato al posto della destinazione. Per ulteriori informazioni, consulta Supporto [struttura del sito](navigation.md#shadow-structure) shadow del componente Navigazione.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -65,7 +73,7 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 ### Scheda Principale {#main-tab}
 
-![](/help/assets/screen_shot_2018-01-12at124437.png)
+![](/help/assets/breadcrumb-design.png)
 
 * **Livello** iniziale navigazione - Definisce il valore predefinito per la posizione nella gerarchia in cui il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente quando il componente breadcrumb viene aggiunto a una pagina.
 * **Mostra elementi** di navigazione nascosti - Definisce il valore predefinito dell&#39;opzione **Mostra elementi** di navigazione nascosti quando il componente breadcrumb viene aggiunto a una pagina.
@@ -75,6 +83,8 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 * **Nascondi pagina** corrente - Definisce il valore predefinito dell’opzione **Nascondi pagina** corrente quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
+
+* **Disattiva ombreggiatura** - Definisce il valore predefinito dell’opzione **Disattiva ombreggiatura** quando il componente breadcrumb viene aggiunto a una pagina.
 
 ### Scheda Stili {#styles-tab}
 
