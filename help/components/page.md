@@ -2,7 +2,10 @@
 title: Componente pagina
 description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Pagina è v2, introdotta con la release 2.0.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](v1/page-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -33,14 +36,6 @@ Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, 
 >[!NOTE]
 >
 >Per abilitare il reindirizzamento a `cq:Page` livello per la versione 2 del componente della pagina e AEM 6.3, è necessario [Service Pack 2](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp2-release-notes.html) o successivo. Tale reindirizzamento non era disponibile nelle versioni precedenti.
-
-## Output componente di esempio {#sample-component-output}
-
-Esempio tratto da [We.Retail](https://docs.adobe.com/content/help/en/experience-manager-65/developing/bestpractices/we-retail/we-retail.html).
-
-### Schermata {#screenshot}
-
-![](/help/assets/chlimage_1.png)
 
 ### Dettagli tecnici {#technical-details}
 
@@ -56,7 +51,7 @@ Poiché il componente rappresenta l’intera pagina, le impostazioni che normalm
 
 Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina > Criteri** pagina durante la modifica del modello di pagina.
 
-![](/help/assets/screen_shot_2018-04-03at113410.png)
+![Criterio pagina](/help/assets/page-policy.png)
 
 >[!NOTE]
 >
@@ -66,14 +61,16 @@ Poiché il componente rappresenta l’intera pagina, la finestra di dialogo dell
 
 La finestra Progettazione pagina consente di definire le librerie client da caricare, nonché la libreria delle risorse Web per la pagina.
 
-* **Librerie** client Definisce le categorie della libreria client da caricare. JavaScript viene aggiunto alla fine del corpo e il CSS viene aggiunto all&#39;intestazione della pagina.
-* **Intestazione** pagina JavaScript delle librerie client Definisce le categorie di libreria client JavaScript da caricare nell&#39;intestazione della pagina.
+* **Librerie** client - Definisce le categorie della libreria client da caricare. JavaScript viene aggiunto alla fine del corpo e il CSS viene aggiunto all&#39;intestazione della pagina.
+* **Intestazione** pagina JavaScript delle librerie client - Definisce le categorie della libreria client JavaScript da caricare nell&#39;intestazione della pagina.
    * Le categorie qui definite che sono presenti anche nel campo **Client Libraries** avranno JavaScript caricato nell&#39;intestazione della pagina invece che all&#39;estremità del corpo.
    * Non verrà caricato alcun CSS a meno che la categoria non sia presente anche nel campo **Client Libraries** .
 
-* **Libreria** client risorse Web La categoria della libreria client utilizzata per distribuire risorse Web come favicons.
+* **Libreria** client risorse Web - La categoria della libreria client utilizzata per distribuire risorse Web come favicons.
 
-![](/help/assets/screenshot_2018-10-19at104949.png)
+* **Passa al selettore** principale degli elementi di contenuto: utilizzato come funzione di accessibilità per passare direttamente al contenuto principale della pagina
+
+![Finestra di dialogo Progettazione componenti pagina](/help/assets/page-design.png)
 
 Le librerie possono essere configurate per i campi Head **di pagina JavaScript delle librerie** client e delle librerie **** client, come indicato di seguito:
 
