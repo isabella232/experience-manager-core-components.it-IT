@@ -2,7 +2,10 @@
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
 translation-type: tm+mt
-source-git-commit: 4df8e147fc9d0151c3a211473b067c78b807e52e
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '2202'
+ht-degree: 3%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Testo è v2, introdotta con la release 2.0.0
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](v1/text-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -54,11 +57,11 @@ Il resto di questo articolo illustra la configurazione standard del componente d
 
 La finestra di dialogo di modifica offre gli strumenti di formattazione RTF standard che l’utente si aspetta di utilizzare per comporre del testo.
 
-![](/help/assets/screen_shot_2018-01-11at143025.png)
+![Finestra di dialogo di modifica del componente Testo](/help/assets/text-edit.png)
 
 ### Grassetto
 
-![](/help/assets/screen_shot_2018-01-11at125602.png)
+![Icona Grassetto](/help/assets/text-bold.png)
 
 Utilizzato per applicare la formattazione in grassetto al testo selezionato o per formattare il testo in grassetto immesso dopo il cursore.
 
@@ -66,7 +69,7 @@ Utilizzato per applicare la formattazione in grassetto al testo selezionato o pe
 
 ### Corsivo
 
-![](/help/assets/screen_shot_2018-01-11at125609.png)
+![Icona Corsivo](/help/assets/text-italic.png)
 
 Utilizzato per applicare la formattazione in corsivo al testo selezionato o per personalizzare il testo immesso dopo il cursore.
 
@@ -74,7 +77,7 @@ Utilizzato per applicare la formattazione in corsivo al testo selezionato o per 
 
 ### Sottolineato
 
-![](/help/assets/screen_shot_2018-01-11at125615.png)
+![Icona Sottolineato](/help/assets/text-underline.png)
 
 Utilizzato per applicare la formattazione sottolineata al testo selezionato o al testo sottolineato immesso dopo il cursore.
 
@@ -82,45 +85,46 @@ Utilizzato per applicare la formattazione sottolineata al testo selezionato o al
 
 ### Pedice
 
-![](/help/assets/screen_shot_2018-01-11at125703.png)
+![Icona Pedice](/help/assets/text-subscript.png)
 
 Utilizzato per formattare il testo o il testo selezionato immesso dopo il cursore come pedice.
 
 ### Apice
 
-![](/help/assets/screen_shot_2018-01-11at125708.png)
+![Icona Apice](/help/assets/text-superscript.png)
 
 Utilizzato per formattare il testo o il testo selezionato immesso dopo il cursore come apice.
 
 ### Incolla come testo
 
-![](/help/assets/screen_shot_2018-01-11at125713.png)
+![Icona Incolla come testo](/help/assets/text-paste-text.png)
 
 Incolla tutto il testo copiato come testo normale senza alcuna formattazione.
 
 Quando si seleziona questa opzione, si apre una finestra in cui il testo può essere incollato come testo normale senza formattazione come anteprima prima di essere inserito nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
-![](/help/assets/screen_shot_2018-01-11at143234.png)
+![Incolla come esempio di testo](/help/assets/text-paste-text-example.png)
 
 ### Incolla da Word
 
-![](/help/assets/screen_shot_2018-01-11at125717.png)
+![Icona Incolla da Word](/help/assets/text-paste-word.png)
 
 Quando si seleziona questa opzione, si apre una finestra in cui è possibile incollare il testo, mantenendo la formattazione come anteprima prima di inserirlo nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
-![](/help/assets/screen_shot_2018-01-11at143250.png)
+![Incolla da esempio di Word](/help/assets/text-paste-word-example.png)
 
 ### Collegamento ipertestuale
 
-![](/help/assets/screen_shot_2018-01-11at125839.png)
+![Icona Collegamento ipertestuale](/help/assets/text-hyperlink.png)
 
 Utilizzare questa opzione per convertire il testo selezionato in un collegamento ipertestuale o per modificare un collegamento già definito. Questa opzione è attiva solo quando il testo è già selezionato e apre una finestra con opzioni aggiuntive per impostare il collegamento.
 
-![](/help/assets/screen_shot_2018-01-11at130003.png)
+![Esempio di collegamento ipertestuale](/help/assets/text-hyperlink-example.png)
 
-* Immettere la posizione
+* Immettere il percorso
    * Utilizzare la finestra di dialogo Apri selezione per scegliere un percorso in AEM
-   * Se il collegamento non si trova in AEM, inserite l’URL assoluto (i percorsi non assoluti vengono interpretati come relativi ad AEM)
+   * Se il collegamento non è in AEM, immettete l’URL assoluto
+      * I percorsi non assoluti vengono interpretati come relativi ad AEM
 * Immettere testo descrittivo alternativo per il collegamento
 * Seleziona il comportamento del collegamento
    * Destinazione
@@ -132,71 +136,72 @@ Utilizzare questa opzione per convertire il testo selezionato in un collegamento
 
 ### Scollega
 
-![](/help/assets/screen_shot_2018-01-11at125901.png)
+![Icona Scollega](/help/assets/text-unlink.png)
 
 Utilizzare questa opzione per rimuovere un collegamento già applicato al testo selezionato. Questa opzione è attiva solo se è già selezionato un collegamento.
 
 ### Trova
 
-![](/help/assets/screen_shot_2018-01-11at125906.png)
+![Icona Trova](/help/assets/text-find.png)
 
 Utilizzare questa opzione per cercare nel testo l&#39;occorrenza di una stringa di testo specificata. Selezionando questa opzione si apre una finestra per specificare le opzioni di ricerca.
 
-![](/help/assets/screen_shot_2018-01-11at130107.png)
+![Trova esempio](/help/assets/text-find-example.png)
 
 Immettere il testo per il quale si desidera eseguire la ricerca e toccare o fare clic su **Trova** per iniziare la ricerca. Toccate o fate clic sulla x per annullare.
 Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
 Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo attenuata per cercare l&#39;occorrenza successiva.
 
-![](/help/assets/screen_shot_2018-01-11at130145.png)
+![Trova esempio trovato](/help/assets/text-find-example-found.png)
 
 Se non vengono trovate altre occorrenze, verrà visualizzato un messaggio e la ricerca verrà riavviata dall&#39;inizio del testo.
 
-![](/help/assets/screen_shot_2018-01-11at130241.png)
+![Trova esempio nessun&#39;altra occorrenza](/help/assets/text-find-example-found-end.png)
 
 ### Sostituisci
 
-![](/help/assets/screen_shot_2018-01-11at125910.png)
+![Icona Sostituisci](/help/assets/text-replace.png)
 
 Utilizzare questa opzione per cercare nel testo le occorrenze di una stringa di testo specificata e sostituire le corrispondenze con un&#39;altra stringa. Selezionando questa opzione si apre una finestra in cui specificare le opzioni di ricerca e sostituzione.
 
-![](/help/assets/screen_shot_2018-01-11at130441.png)
+![Replace example](/help/assets/text-replace-example.png)
 
 Immettere il testo per il quale si desidera eseguire la ricerca e il testo con cui sostituire il testo.
 
-Toccate o fate clic su **Trova** per iniziare la ricerca. Tocca o fai clic sulla x per annullare.
-
-Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
+* Toccate o fate clic su **Trova** per iniziare la ricerca. Tocca o fai clic sulla x per annullare.
+* Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
+* Selezionate **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
 
 Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva oppure fate clic sul pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo una volta raggiunta una corrispondenza.
 
-Selezionate **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
-
-Quando si utilizza la funzionalità replace, la stringa replace da sostituire deve essere immessa contemporaneamente alla stringa find. È comunque possibile fare clic su find per cercare la stringa prima di sostituirla. Se la stringa di sostituzione viene immessa dopo aver fatto clic su Trova, la ricerca viene reimpostata all’inizio del testo.
-
 La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Questo consente all’autore di rivedere il testo che verrà sostituito dall’autore.
+
+>[!NOTE]
+>
+>Quando si utilizza la funzionalità replace, la stringa replace da sostituire deve essere immessa contemporaneamente alla stringa find. È comunque possibile fare clic su find per cercare la stringa prima di sostituirla. Se la stringa di sostituzione viene immessa dopo aver fatto clic su Trova, la ricerca viene reimpostata all’inizio del testo.
+
 
 ### Allinea testo a sinistra
 
-![](/help/assets/screen_shot_2018-01-11at142012.png)
+![Allinea a sinistra, icona](/help/assets/text-left.png)
 
 Utilizzato per allineare il testo al margine sinistro.
 
 ### Testo centrato
 
-![](/help/assets/screen_shot_2018-01-11at142017.png)
+![Centra l&#39;icona del testo](/help/assets/text-center.png)
 
 Utilizzato per centrare il testo.
 
 ### Allinea testo a destra
 
-![](/help/assets/screen_shot_2018-01-11at142021.png)
+![Allinea a destra, icona](/help/assets/text-right.png)
 
 Utilizzato per allineare il testo al margine destro.
 
 ### Proiettile
 
-![](/help/assets/screen_shot_2018-01-11at142025.png)
+![Icona Bullet](/help/assets/text-bullet.png)
 
 Consente di formattare il testo selezionato come elenco puntato o di iniziare l&#39;inserimento di un elenco puntato dopo il cursore.
 
@@ -204,7 +209,7 @@ Per terminare un elenco puntato, toccate o fate di nuovo clic sul pulsante **Bul
 
 ### Numerato
 
-![](/help/assets/screen_shot_2018-01-11at142030.png)
+![Icona elenco numerato](/help/assets/text-numbered.png)
 
 Utilizzato per formattare il testo selezionato come elenco numerato o per iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
 
@@ -212,7 +217,7 @@ Per terminare un elenco numerato, toccate o fate di nuovo clic sul pulsante **Nu
 
 ### Rientro negativo
 
-![](/help/assets/screen_shot_2018-01-11at141917.png)
+![Icona Rientro](/help/assets/text-outdent.png)
 
 Consente di ridurre il livello di rientro del testo o del testo selezionato immesso dopo il cursore.
 
@@ -220,35 +225,35 @@ Attiva solo se il testo o la posizione selezionati del cursore sono già rientra
 
 ### Rientro
 
-![](/help/assets/screen_shot_2018-01-11at141922.png)
+![Icona Rientro](/help/assets/text-outdent.png)
 
 Utilizzato per aumentare il livello di rientro del testo o del testo selezionato immesso dopo il cursore.
 
 ### Tabella
 
-![](/help/assets/screen_shot_2018-01-11at141928.png)
+![Icona Tabella](/help/assets/text-table.png)
 
 Utilizzato per inserire una tabella nel testo. Selezionando questa opzione si apre una finestra per specificare i dettagli della tabella.
 
-![](/help/assets/screen_shot_2018-01-11at142405.png)
+![Esempio di tabella](/help/assets/text-table-example.png)
 
-* **Colonne** Il numero di colonne della tabella (obbligatorio)
-* **Righe** Il numero di righe della tabella (obbligatorio)
-* **Larghezza** La larghezza della tabella
-* **Altezza** L&#39;altezza della tabella
-* **Margine** celle Spazio intorno al contenuto della cella
-* **Spaziatura** celle Lo spazio tra le celle
-* **Bordo** Lo spessore delle linee dei bordi della tabella
-* Se per l’intestazione della tabella:
-   * La prima riga deve essere utilizzata
-   * Utilizzare la prima colonna
-   * Utilizzare la prima riga e la prima colonna
-   * Oppure non utilizzare alcuna intestazione.
-* **Didascalia** La didascalia della tabella
+* **Colonne** - Il numero di colonne della tabella (obbligatorio)
+* **Righe** - Il numero di righe della tabella (obbligatorio)
+* **Larghezza** - La larghezza della tabella
+* **Altezza** - L&#39;altezza della tabella
+* **Margine** celle - Spazio intorno al contenuto della cella
+* **Spaziatura** celle - Spazio tra celle
+* **Bordo** - Lo spessore delle linee dei bordi della tabella
+   * Se per l’intestazione della tabella:
+      * La prima riga deve essere utilizzata
+      * Utilizzare la prima colonna
+      * Utilizzare la prima riga e la prima colonna
+      * Oppure non utilizzare alcuna intestazione.
+* **Didascalia** - La didascalia della tabella
 
 ### Controllo ortografia
 
-![](/help/assets/screen_shot_2018-01-11at141935.png)
+![Icona Controllo ortografia](/help/assets/text-spellcheck.png)
 
 Utilizzato per il controllo dell&#39;ortografia del contenuto di testo. Eventuali errori ortografici sono sottolineati con linee rosse rotte.
 
@@ -256,17 +261,17 @@ Ulteriori dettagli sul controllo ortografia e la personalizzazione dei dizionari
 
 ### Caratteri speciali {#special-characters}
 
-![](/help/assets/screen_shot_2018-01-11at142600.png)
+![Icona caratteri speciali](/help/assets/text-special-characters.png)
 
 Utilizzato per inserire caratteri speciali nel testo. Selezionando questa opzione si apre una finestra in cui vengono visualizzati i caratteri disponibili.
 
-![](/help/assets/screen_shot_2018-01-11at142635.png)
+![Esempio di caratteri speciali](/help/assets/text-special-characters-example.png)
 
 Toccate o fate clic sul carattere desiderato per inserirlo nel testo dopo il cursore. È possibile inserire più caratteri. Toccate o fate clic sulla x per chiudere la finestra di selezione.
 
 ### Modifica origine
 
-![](/help/assets/screen_shot_2018-01-11at142746.png)
+![Icona modifica sorgente](/help/assets/text-source.png)
 
 Utilizzato per visualizzare e modificare l&#39;origine HTML del testo.
 
@@ -284,15 +289,25 @@ Toccate o fate clic sull’icona Modifica **** sorgente per cambiare il contenut
 
 ### Formato paragrafo
 
-![](/help/assets/screen_shot_2018-01-11at142752.png)
+![Icona formato paragrafo](/help/assets/text-paragraph.png)
 
 Utilizzato per applicare la formattazione del paragrafo al testo selezionato o al testo inserito dopo il cursore. Selezionando questa opzione si apre un menu a discesa dal quale è selezionato il formato del paragrafo.
 
-![](/help/assets/screen_shot_2018-01-11at142828.png)
+![Esempio di formato paragrafo](/help/assets/text-paragraph-example.png)
+
+### Modifica in linea {#in-line-editing}
 
 Anche il componente di testo può essere modificato in linea, ma a causa dei limiti di spazio, non tutte le opzioni di formattazione sono disponibili in linea. Per visualizzare tutte le opzioni, passare alla modalità a schermo intero.
 
-![](/help/assets/screen_shot_2018-01-11at142921.png)
+![Esempio di modifica in linea](/help/assets/text-edit-inline-example.png)
+
+### Impostazione e ID {#setting-id}
+
+Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+
+* Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+* La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -304,7 +319,7 @@ La scheda Plugins viene utilizzata per attivare e disattivare le varie opzioni d
 
 ### Funzioni {#features}
 
-![](/help/assets/chlimage_1-28.png)
+![Funzioni della finestra di dialogo Progettazione](/help/assets/text-design-features.png)
 
 Le seguenti funzioni possono essere attivate o disattivate per il componente.
 
@@ -312,24 +327,25 @@ Le seguenti funzioni possono essere attivate o disattivate per il componente.
 * Passato da parola
 * Trova e sostituisci
 * Controllo ortografia
-* Modifica origine
+* Opzioni di modifica delle immagini inserite
+* Modifica sorgente HTML
 
 ### Formattazione {#formatting}
 
-![](/help/assets/chlimage_1-29.png)
+![Formattazione della finestra di dialogo Progettazione](/help/assets/text-design-formatting.png)
 
 Le seguenti opzioni di formattazione possono essere attivate o disattivate per il componente.
 
 * Tabella
-* Elenchi
-* Allineamento
+* Elenchi (elenco, numero, rientro, rientro)
+* Allineamento (sinistra, destra, centrato)
 * Grassetto, corsivo, sottolineato
-* Collegamenti
+* Collegamento (e scollegamento)
 * Pedice
 
 ### Stili paragrafo {#paragraph-styles}
 
-![](/help/assets/chlimage_1-30.png)
+![Finestra di dialogo Progettazione, stili di paragrafo](/help/assets/text-design-paragraph.png)
 
 Gli stili di paragrafo possono essere attivati o disattivati per il componente. Quando attivato, è possibile definire i formati consentiti.
 
@@ -338,9 +354,9 @@ Gli stili di paragrafo possono essere attivati o disattivati per il componente. 
 * Per rimuovere uno stile, toccate o fate clic sul pulsante **Elimina** .
 * Per ridisporre l&#39;ordine dei formati, toccate o fate clic e trascinate le maniglie.
 
-### Configurazione di caratteri speciali {#configuring-special-characters}
+### Caratteri speciali {#configuring-special-characters}
 
-![](/help/assets/chlimage_1-31.png)
+![Caratteri speciali della finestra di dialogo Progettazione](/help/assets/text-design-special-characters.png)
 
 L’opzione per l’inserimento di caratteri speciali può essere attivata o disattivata per il componente. Se attivati, i caratteri consentiti possono essere definiti.
 
