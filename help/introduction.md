@@ -2,7 +2,10 @@
 title: Introduzione ai componenti core
 description: 'I componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: 1c6e27c163f72fd66336e8db883144dc4dd60510
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 28%
 
 ---
 
@@ -19,7 +22,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 * **Documentazione del componente (questo documento):** Per sviluppatori e autori, con dettagli su ciascun componente.
 * Introduzione:
    * **[Successo con i componenti core:](/help/developing/success.md)**Linee guida da prendere in considerazione prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
-   * **[Esercitazione WKND:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**Un’esercitazione di due giorni per la creazione di un nuovo sito.
+   * **[Esercitazione WKND:](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**Esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Esercitazione Summit:](https://expleague.azureedge.net/labs/L767/index.html)**Un&#39;esercitazione di due ore per la costruzione di un nuovo sito (da un laboratorio al Summit degli Stati Uniti 2019).
    * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)**Visita guidata dei componenti core (registrata il dicembre 2018).
 
@@ -27,7 +30,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 
 |  |  |
 |---|---|
-| Pronti per la produzione | I componenti core sono 27 componenti robusti che sono ben testati, ampiamente utilizzati e che funzionano bene. |
+| Pronti per la produzione | I componenti core sono 28 componenti robusti che sono ben testati, ampiamente utilizzati e che funzionano bene. |
 | Pronto per il cloud | Sia che si tratti di [AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)Cloud, di servizi [gestiti](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)Adobe o in sede, funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare praticamente qualsiasi layout. |
 | Configurabile | I criteri [per il](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) contenuto a livello di modello definiscono le funzioni che gli autori delle pagine possono utilizzare o meno. |
@@ -68,6 +71,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 * [Incorpora](components/embed.md)
 * [Condivisione social media](components/sharing.md)
 * [Separatore](components/separator.md)
+* [Barra di avanzamento](components/progress-bar.md)
 
 ### Componenti contenitore {#container-components}
 
@@ -96,9 +100,9 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 ## Requisiti di sistema {#system-requirements}
 
-| Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | AEM 6.3 | Java SE | Paradiso |
----------|---------|---------|---------|---------|---------|---------
-| [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Continuo | 6.5.0.0+ | 6.4.4.0+ | 6.3.3.4+ | 8, 11 | 3.3.9+ |
+| Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4   | Java SE | Paradiso |
+---------|---------|---------|---------|---------|---------
+| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Continuo | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
 
 Per i requisiti delle precedenti versioni dei componenti core, consulta Versioni [dei componenti](versions.md)core.
 
