@@ -2,7 +2,10 @@
 title: Componente carosello
 description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello a rotazione.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Carosello è v1, introdotto con la release 2
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -45,11 +48,11 @@ La finestra di dialogo di modifica consente all’autore del contenuto di aggiun
 
 ### Scheda Articoli {#items-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.01.39.png)
+![Scheda Elementi della finestra di dialogo di modifica del componente Carosello](/help/assets/carousel-edit-items.png)
 
 Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
-* **Icona** - L&#39;icona del tipo di componente della scheda per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** - L&#39;icona del tipo di componente della scheda per facilitarne l&#39;identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come una descrizione comando.
 * **Descrizione** - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
 * **Elimina** - Toccate o fate clic per eliminare la scheda dal componente Tabulazioni.
 * **Riordina** - Toccate o fate clic e trascinate per ordinare le schede.
@@ -60,13 +63,17 @@ Usate il pulsante **Aggiungi** per aprire il selettore dei componenti e sceglier
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.01.57.png)
+![scheda Proprietà della finestra di dialogo di modifica del componente Carosello](/help/assets/carousel-edit-properties.png)
 
 Nella scheda **Proprietà** , l&#39;autore del contenuto può impostare le diapositive per la transizione automatica.
 
 * **Transizione automatica delle diapositive** - Quando è attiva, il componente passa automaticamente alla diapositiva successiva dopo un ritardo specificato.
 * **Ritardo** transizione: quando è selezionata l&#39;opzione Transizione automatica diapositive, questo valore viene utilizzato per definire il ritardo tra le transizioni (in millisecondi).
 * **Disattiva pausa automatica al passaggio del mouse** : quando si selezionano le diapositive **di transizione** automatica, la transizione del carosello si interrompe automaticamente ogni volta che il cursore passa sul carosello. Selezionate questa opzione per evitare che la transizione venga messa in pausa.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 >[!NOTE]
 >
@@ -76,7 +83,7 @@ Nella scheda **Proprietà** , l&#39;autore del contenuto può impostare le diapo
 
 ### Scheda Accessibilità {#accessibility-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.02.22.png)
+![Scheda Accessibilità della finestra di dialogo di modifica del componente Carosello](/help/assets/carousel-edit-accessibility.png)
 
 Nella scheda **Accessibilità** , è possibile impostare i valori per le etichette di accessibilità [](https://www.w3.org/WAI/standards-guidelines/aria/) ARIA per il componente.
 
@@ -86,17 +93,17 @@ Nella scheda **Accessibilità** , è possibile impostare i valori per le etichet
 
 L’autore del contenuto può usare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un’altra diapositiva da modificare e per riordinare facilmente l’ordine delle diapositive.
 
-![](/help/assets/screenshot_2018-10-11at165417.png)
+![Seleziona l’icona del pannello](/help/assets/select-panel-icon.png)
 
 Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, le diapositive configurate vengono visualizzate come un elenco a discesa.
 
 * L&#39;elenco è ordinato dalla disposizione assegnata delle diapositive e si riflette nella numerazione.
 * Il tipo di componente della diapositiva viene visualizzato per primo, seguito dalla descrizione della diapositiva con il carattere più chiaro.
 
-![](/help/assets/opera_snapshot_2018-11-28141537localhost.png)
+![Seleziona pannello](/help/assets/select-panel-popover.png)
 
 * Toccando o facendo clic su una voce nel menu a discesa, passa alla diapositiva la vista nell’editor.
-* La diapositiva può essere riordinata in posizione utilizzando le maniglie di trascinamento.
+* La diapositiva può essere riordinata nella stessa posizione utilizzando le maniglie di trascinamento.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -106,13 +113,13 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 
 La scheda **Proprietà** consente di definire le impostazioni predefinite per le transizioni di diapositiva quando un autore di contenuto aggiunge il componente carosello a una pagina.
 
-![](/help/assets/screenshot_2018-11-28at141824.png)
+![Finestra di dialogo Progettazione del componente Carosello](/help/assets/carousel-design.png)
 
 * **Transizione automatica diapositive** - Definisce se per impostazione predefinita l’opzione per spostare automaticamente il carosello nella diapositiva successiva è abilitata quando l’autore del contenuto aggiunge il componente carosello a una pagina.
 * **Ritardo** transizione - Definisce il valore predefinito del ritardo di transizione tra le diapositive (in millisecondi) quando un autore di contenuto aggiunge il componente carosello a una pagina.
 * **Disattiva pausa automatica al passaggio del mouse** - Definisce se per impostazione predefinita l&#39;opzione per disattivare la pausa automatica delle diapositive è abilitata quando l&#39;autore del contenuto seleziona le diapositive **di transizione** automatica.
 
-### Scheda Componenti consentiti {#allowed-components-tab}
+### Allowed Components Tab {#allowed-components-tab}
 
 La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti dall’autore del contenuto al componente Carosello come diapositive.
 
