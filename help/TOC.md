@@ -2,7 +2,10 @@
 sub-product: AEM Core Components
 user-guide-title: AEM Core Components
 translation-type: tm+mt
-source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
+source-git-commit: afd846b1f124ac9b326e59ff71b145f7b9efeb11
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 70%
 
 ---
 
@@ -33,6 +36,7 @@ source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
    + [Elenco](components/list.md)
    + [Navigazione](components/navigation.md)
    + [Pagina](components/page.md)
+   + [Barra di avanzamento](components/progress-bar.md)
    + [Ricerca rapida](components/quick-search.md)
    + [Separatore](components/separator.md)
    + [Condivisione social media](components/sharing.md)
@@ -62,9 +66,13 @@ source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
 + Sviluppo {#developing}
    + [Sviluppo di componenti core](developing/overview.md)
    + [Percorsi per il successo](developing/success.md)
-   + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Personalizzazione dei componenti core](developing/customizing.md)
    + [Linee guida per i componenti](developing/guidelines.md)
+   + [Utilizzo di Adobe Client Data Layer]{#data-layer}
+      + [Componenti di base e livello dati client Adobe](developing/data-layer/overview.md)
+      + [Integrazione con Adobe Launch](developing/data-layer/launch-integration.md)
+      + [Integrazione con Adobe Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Panoramica di Archetype](developing/archetype/overview.md)
       + [Utilizzo di Archetype](developing/archetype/using.md)
