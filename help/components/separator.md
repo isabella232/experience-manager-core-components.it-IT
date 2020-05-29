@@ -2,7 +2,10 @@
 title: Componente separatore
 description: Il componente separatore crea un’interruzione tra i componenti di una pagina
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -21,9 +24,9 @@ La versione corrente del componente Separatore è v1, introdotto con la release 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|---|---|---|---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 ## Output componente di esempio {#sample-component-output}
 
@@ -37,7 +40,12 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-Il componente Separatore non dispone di una finestra di dialogo di configurazione.
+![Finestra di dialogo di modifica del componente Separatore](/help/assets/separator-edit.png)
+
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
