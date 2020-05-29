@@ -1,15 +1,18 @@
 ---
 title: Componente frammento di contenuto
-description: Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di contenuto.
+description: Il componente Frammento di contenuto del componente di base consente la visualizzazione di un frammento di contenuto.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 5%
 
 ---
 
 
 # Componente frammento di contenuto{#content-fragment-component}
 
-Il componente Frammento di contenuto del componente principale consente la visualizzazione di un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente Frammento di contenuto del componente di base consente la visualizzazione di un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 >[!NOTE]
 >
@@ -29,9 +32,9 @@ La versione corrente del componente Frammento di contenuto è v1, introdotto con
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 >[!NOTE]
 >
@@ -61,14 +64,19 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all&#39;autore del contenuto di definire il frammento di contenuto e gli elementi del frammento da includere.
 
-![](/help/assets/chlimage_1-87.png)
+### Scheda Proprietà {#properties-tab}
+
+![Componente frammento di contenuto](/help/assets/content-fragment-edit-properties.png)
 
 * **Frammento di contenuto**
 
    * Percorso del frammento di contenuto desiderato
    * La finestra di dialogo **** Selezione consente di individuare il frammento
 
-* **Elemento** - L&#39;elemento del frammento di contenuto da includere
+* **Modalità di visualizzazione**
+   * **Singolo elemento** di testo - Abilita la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
+   * **Più elementi** - Consente di selezionare uno o più elementi del frammento di contenuto selezionato
+* **Elemento** - L&#39;elemento o gli elementi del frammento di contenuto da includere
 * **Variazione** - Variazione del frammento di contenuto da utilizzare (impostazione predefinita: **Master**)
 
 * **Paragrafi**
@@ -77,19 +85,26 @@ La finestra di dialogo di configurazione consente all&#39;autore del contenuto d
    * **Intervallo**
 
       * Specificare intervalli di paragrafi da visualizzare, separati da punto e virgola
-      * Ad esempio, `1;3-5;7;9-*` per includere il primo, il terzo e il quinto, il settimo e il nono ai paragrafi finali
+      * Ad esempio, `1;3-5;7;9-*` per includere il primo, il terzo e il quinto, il settimo e il nono fino agli ultimi paragrafi
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
+### Scheda Controllo paragrafo {#paragraph-control-tab}
+
+Questa scheda non è disponibile quando è selezionata la modalità **Più elementi** .
+
+![Componente frammento di contenuto](/help/assets/content-fragment-edit-paragraph.png)
+
+* **Paragrafi** - Consenti selezione di tutti i paragrafi o di un intervallo
 * **Tratta il titolo come paragrafi propri**
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 La finestra di dialogo di progettazione consente all’autore del modello di definire i tipi di risorse utilizzati per gestire le immagini multimediali e le griglie reattive.
 
-![](/help/assets/chlimage_1-88.png)
-
-* **Tipo di immagine da file multimediali diversi**
-
-   * Tipo di risorse Sling utilizzato per il rendering di immagini da file multimediali diversi
+![Finestra di dialogo Progettazione del componente Frammento di contenuto](/help/assets/content-fragment-design.png)
 
 * **Griglia reattiva interna**
 
