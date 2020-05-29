@@ -2,7 +2,10 @@
 title: Componente Accordion
 description: Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '1051'
+ht-degree: 1%
 
 ---
 
@@ -19,15 +22,29 @@ Il componente Core Component Accordion consente di creare una raccolta di compon
 * L’ordine dei pannelli del pannello a soffietto può essere definito nella finestra di dialogo di configurazione e nel contenitore del pannello di [selezione](#select-panel-popover).
 * I valori predefiniti per il componente Accordion quando viene aggiunto a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
 
+## Collegamento diretto a un pannello {#deep-linking}
+
+I componenti [Accordion e](tabs.md) Tabs supportano il collegamento diretto a un pannello all’interno del componente.
+
+Per effettuare ciò:
+
+1. Visualizzare la pagina con il componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html#view-as-published)**nell’editor pagina.
+1. Esaminate il contenuto della pagina e identificate l’ID del pannello.
+   * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
+1. L’ID diventa l’ancoraggio che potete aggiungere all’URL utilizzando un hash (`#`).
+   * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
+
+Passando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e visualizza il pannello specificato. Se il pannello non è configurato per impostazione predefinita, viene espanso automaticamente.
+
 ## Versione e compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Accordion è v1, introdotto con la release 2.5.0 dei componenti core a giugno 2019, ed è descritto in questo documento.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -47,11 +64,11 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ### Scheda Articoli {#items-tab}
 
-![](/help/assets/screen-shot-2019-06-21-08.26.38.png)
+![scheda Elementi della finestra di dialogo di modifica del componente Accordion](/help/assets/accordion-edit-items.png)
 
 Usate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere quale componente aggiungere come pannello. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
-* **Icona** - L&#39;icona del tipo di componente del pannello per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come descrizione comando.
+* **Icona** - L&#39;icona del tipo di componente del pannello per una facile identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come una descrizione comando.
 * **Descrizione** - Descrizione utilizzata come testo del pannello, con impostazione predefinita sul nome del componente selezionato per il pannello.
 * **Elimina** - Toccate o fate clic per eliminare il pannello dal componente Accordion.
 * **Ridisponi** - Toccate o fate clic e trascinate per riordinare i pannelli.
@@ -62,22 +79,26 @@ Usate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen-shot-2019-06-21-08.26.53.png)
+![scheda Proprietà della finestra di dialogo di modifica del componente Accordion](/help/assets/accordion-edit-properties.png)
 
 * **Espansione** elemento singolo - Se selezionata, questa opzione forza l&#39;espansione di un singolo elemento a soffietto alla volta. Se si espande un elemento, verranno compressi tutti gli altri.
 * **Elementi** espansi - Questa opzione definisce gli elementi che vengono espansi per impostazione predefinita quando la pagina viene caricata.
    * Quando è selezionata l’espansione **di un elemento** singolo, è necessario selezionare un pannello. Per impostazione predefinita, è selezionato il primo pannello.
    * Se l&#39;espansione **di un elemento** singolo non è selezionata, questa opzione è una selezione multipla ed è facoltativa.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Selezione del puntatore del pannello {#select-panel-popover}
 
 L’autore del contenuto può usare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello e ridisporre facilmente l’ordine dei pannelli all’interno della struttura di navigazione.
 
-![](/help/assets/screen-shot-2019-06-21-08.49.36.png)
+![Seleziona l’icona del pannello](/help/assets/select-panel-icon.png)
 
 Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, i pannelli a soffietto configurati vengono visualizzati come un elenco a discesa.
 
-![](/help/assets/screen-shot-2019-06-21-08.52.14.png)
+![Selezione del puntatore del pannello](/help/assets/select-panel-popover.png)
 
 * L&#39;elenco è ordinato in base alla disposizione assegnata dei pannelli e si riflette nella numerazione.
 * Il tipo di componente del pannello viene visualizzato per primo, seguito dalla descrizione del pannello con un carattere più chiaro.
@@ -90,12 +111,12 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 ### Scheda Proprietà {#properties-tab-design}
 
-![](/help/assets/screen-shot-2019-06-21-08.58.11.png)
+![scheda Proprietà della finestra di dialogo Progettazione](/help/assets/accordion-design-properties.png)
 
 * **Elementi** titolo consentiti - Questo elenco a discesa con più selezioni definisce l&#39;intestazione dell&#39;elemento Accordion gli elementi HTML che possono essere selezionati da un autore.
 * **Elemento** titolo predefinito - Questo elenco a discesa definisce l&#39;elemento Accordion predefinito dell&#39;elemento HTML.
 
-### Scheda Componenti consentiti {#allowed-components-tab}
+### Allowed Components Tab {#allowed-components-tab}
 
 La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti ai pannelli del componente Accordion dall’autore del contenuto come elementi.
 
