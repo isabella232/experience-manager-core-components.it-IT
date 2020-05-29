@@ -2,7 +2,10 @@
 title: Componente Pulsante Modulo
 description: Il componente Principale Modulo nascosto consente di includere un campo nascosto in un modulo.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 4%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Pulsante Modulo è v2, introdotto con la rel
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-button-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -46,7 +49,7 @@ La finestra di dialogo di configurazione consente all&#39;autore del contenuto d
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen_shot_2018-01-12at120433.png)
+![Finestra di dialogo di modifica del componente Pulsante Modulo](/help/assets/form-button-edit.png)
 
 * **Tipo**
 
@@ -59,6 +62,11 @@ La finestra di dialogo di configurazione consente all&#39;autore del contenuto d
 
 * **Nome** - Il nome del pulsante, inviato con i dati del modulo
 * **Valore** - Il valore del pulsante, inviato con i dati del modulo
+
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
