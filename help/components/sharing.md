@@ -2,7 +2,10 @@
 title: Componente Condivisione social network
 description: Il componente core Condivisione social network è un widget di condivisione Facebook e Pinterest.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Condivisione social network è v1, introdott
 
 La tabella seguente elenca tutte le versioni supportate del componente e le versioni AEM con cui sono compatibili le versioni del componente.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -41,8 +44,15 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 ## Edit Dialog {#edit-dialog}
 
-Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del contenuto le opzioni di modifica per il componente Condivisione sono disponibili tramite la scheda Condivisione nelle proprietà [della](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html)pagina.
+![Finestra di dialogo di modifica del componente Condivisione](/help/assets/sharing-edit.png)
+
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+
+Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del contenuto ulteriori opzioni di modifica per il componente Condivisione sono disponibili tramite la scheda Condivisione nelle proprietà [della](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html)pagina.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili tramite le proprietà [di pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)iniziali.
+Poiché la condivisione richiede intestazioni di pagina speciali, qualsiasi condivisione deve essere abilitata a livello di pagina. Di conseguenza, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili tramite le proprietà [di pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)iniziali.
