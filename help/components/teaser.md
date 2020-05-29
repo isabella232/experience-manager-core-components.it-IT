@@ -2,7 +2,10 @@
 title: Componente teaser
 description: Il componente teaser può visualizzare un’immagine, un titolo, un testo RTF ed eventualmente un collegamento ad altri contenuti.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Teaser è v1, introdotto con la release 2.1.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|---|---|---|---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 ## Output componente di esempio {#sample-component-output}
 
@@ -43,7 +46,7 @@ L’autore del contenuto può utilizzare la finestra di dialogo di configurazion
 
 ### Immagine {#image}
 
-![](/help/assets/screen_shot_2018-07-03at104125.png)
+![Scheda immagine della finestra di dialogo di modifica del componente teaser](/help/assets/teaser-edit-image.png)
 
 * **Risorsa immagine**
    * Trascinate una risorsa dal browser [delle](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) risorse o toccate l&#39;opzione **Sfoglia** per caricarla da un file system locale.
@@ -52,19 +55,24 @@ L’autore del contenuto può utilizzare la finestra di dialogo di configurazion
 
 ### Testo {#text}
 
-![](/help/assets/screen_shot_2018-07-03at104138.png)
+![Scheda di testo della finestra di dialogo di modifica del componente teaser](/help/assets/teaser-edit-text.png)
 
-* **Titolo** Definisce un titolo da visualizzare come titolo del teaser.
-* **Ottieni titolo dalla pagina** collegata Se questa opzione è selezionata, il titolo verrà popolato con il titolo della pagina collegata.
-* **Descrizione** Definisce una descrizione da visualizzare come sottovoce del teaser.
-* **Ottieni descrizione dalla pagina** collegata Se questa opzione è selezionata, la descrizione della pagina collegata verrà compilata con la relativa descrizione.
+* **Predefinito** : il titolo viene visualizzato prima del titolo del teaser.
+* **Titolo** - Definisce un titolo da visualizzare come titolo del teaser.
+   * **Ottieni titolo dalla pagina** collegata: se questa opzione è selezionata, il titolo verrà popolato con il titolo della pagina collegata.
+* **Descrizione** - Definisce una descrizione da visualizzare come sottovoce del teaser.
+   * **Ottieni descrizione dalla pagina** collegata: se questa opzione è selezionata, la descrizione della pagina collegata verrà compilata con la relativa descrizione.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ### Collegamenti e azioni {#links-actions}
 
-![](/help/assets/screen_shot_2018-07-03at104146.png)
+![Scheda collegamento della finestra di dialogo di modifica del componente teaser](/help/assets/teaser-edit-link.png)
 
-* **Collegamento** Collegamento applicato al teaser. Utilizza il browser dei percorsi per selezionare la destinazione del collegamento.
-* **Abilita Call-To-Actions** Se questa opzione è selezionata, abilita la definizione di Call-To-Actions. Il primo collegamento Invito all’azione nell’elenco viene usato come collegamento per altri elementi teaser.
+* **Collegamento** - Collegamento applicato al teaser. Utilizza il browser dei percorsi per selezionare la destinazione del collegamento.
+* **Abilita Call-To-Actions** : se questa opzione è selezionata, abilita la definizione delle Call-To-Actions. Il primo collegamento Invito all’azione nell’elenco viene usato come collegamento per altri elementi teaser.
 
 ## Edit Dialog {#edit-dialog}
 
@@ -76,19 +84,20 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 ### Scheda teaser {#teaser-tab}
 
-![](/help/assets/screen_shot_2018-07-03at105958.png)
+![Finestra di dialogo di progettazione del componente teaser](/help/assets/teaser-design.png)
 
 * **Inviti all&#39;azione**
-   * **Disattiva Call-To-Actions** Nascondi l’opzione **Call-To-Actions** per gli autori dei contenuti
+   * **Disattiva Call-To-Actions** - Nascondi l’opzione **Call-To-Actions** per gli autori dei contenuti
 * **Elementi**
-   * **Nascondi titolo**
-      * Nasconde l’opzione **Titolo** per gli autori di contenuti
+   * **Nascondi predefinito** - Nasconde l&#39;opzione **Predefinito** per gli autori del contenuto
+   * **Nascondi titolo** - Nasconde l’opzione **Titolo** per gli autori del contenuto
       * Quando è selezionato il tipo **di** titolo è nascosto
-   * **Nascondi descrizione** Nascondi l’opzione **Descrizione** per gli autori del contenuto
-* **Tipo** titolo Definisce il tag H da utilizzare per il titolo del teaser.
+   * **Nascondi descrizione** : opzione **Descrizione** per gli autori di contenuti
+* **Tipo** titolo - Definisce il tag H da utilizzare per il titolo del teaser.
 * **Collegamenti**
-   * **Non collegare l’immagine** Se selezionata, l’immagine teaser non è collegata
-   * **Non collegare il titolo** Quando è selezionato, il titolo del teaser non è collegato
+   * **Non collegare l’immagine** : se selezionata, l’immagine teaser non è collegata
+   * **Non collegare il titolo** : se questa opzione è selezionata, il titolo del teaser non è collegato
+* **Delegato** immagini - Visualizzazione informativa che indica a quale componente il teaser delega la gestione delle immagini.
 
 ### Scheda Stili {#styles-tab}
 
