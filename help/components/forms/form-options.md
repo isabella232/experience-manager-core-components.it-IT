@@ -2,7 +2,10 @@
 title: Componente Opzioni modulo
 description: Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 4%
 
 ---
 
@@ -23,9 +26,9 @@ La versione corrente del componente Opzioni modulo è v2, introdotto con la rele
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-options-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -44,28 +47,32 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
 
-![](/help/assets/screen_shot_2018-01-12at113153.png)
+![Opzioni modulo Finestra di dialogo di modifica del componente](/help/assets/form-options-edit.png)
 
 * **Tipi** - Modalità di presentazione delle opzioni
    * **Caselle di controllo**
    * **Pulsanti di scelta**
    * **A discesa**
    * **Menu a discesa a selezione multipla**
-* **Titolo** Titolo che verrà visualizzato come etichetta per le opzioni
-* **Nome** Il nome del campo inviato con i dati del modulo
-* **Origine** Dove sono definite le opzioni
-   * **Locale** definito nel componente
+* **Titolo** - Titolo che verrà visualizzato come etichetta per le opzioni
+* **Nome** - Il nome del campo inviato con i dati del modulo
+* **Origine** - Posizione di definizione delle opzioni
+   * **Locale** - Definito all’interno del componente
       * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore** Il valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
-      * **Testo** Etichetta per l&#39;opzione visualizzata sul modulo
-      * **Attivo** L&#39;opzione è contrassegnata come selezionata al caricamento del modulo
-      * **Disattivato** L&#39;opzione non è selezionabile ma continua a essere visualizzata
-      * **Elenco** Per le opzioni viene utilizzato un elenco statico definito altrove in AEM
-         * **Elenco** Percorso dell’elenco statico in AEM
-            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell&#39;elenco
-      * **Origine** dati Un&#39;origine dati viene utilizzata per le opzioni
-         * **Origine** dati Tipo di risorsa dell&#39;origine dati
-* **Messaggio** della Guida Un suggerimento per l&#39;utente di ciò che può essere immesso nel campo
+         * **Valore** : valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
+         * **Testo** - Etichetta per l&#39;opzione visualizzata sul modulo
+         * **Attivo** : l&#39;opzione è contrassegnata come selezionata al caricamento del modulo
+         * **Disattivato** - L&#39;opzione non è selezionabile ma continua a essere visualizzata
+   * **Elenco** - Per le opzioni viene utilizzato un elenco statico definito altrove in AEM
+      * **Elenco** - Percorso dell’elenco statico in AEM
+         * Utilizzare il pulsante Sfoglia per individuare la risorsa dell&#39;elenco
+   * **Origine** dati - Per le opzioni viene utilizzata un&#39;origine dati
+      * **Origine** dati - Tipo di risorsa dell&#39;origine dati
+* **Messaggio** della Guida - Suggerimento per l&#39;utente di ciò che può essere immesso nel campo
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
