@@ -2,7 +2,10 @@
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 3%
 
 ---
 
@@ -27,9 +30,9 @@ La versione corrente del componente Contenitore modulo è v2, introdotta con la 
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Compatibile | Compatibile | Compatibile | Compatibile |
+| v2 | - | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-container-v1.md) | Compatibile | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
@@ -48,14 +51,10 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire le azioni da eseguire quando il componente viene inviato.
 
-![](/help/assets/screen_shot_2018-01-12at122046.png)
-
 A seconda del tipo **di** azione selezionato, le opzioni disponibili all&#39;interno del contenitore cambiano. I tipi di azione disponibili sono:
 
 * [E-mail](#mail)
 * [Contenuto store](#store-content)
-* [Invia ordine](#submit-order)
-* [Aggiorna ordine](#update-order)
 
 Indipendentemente dal tipo, esistono impostazioni [](#general-settings) generali applicabili a ogni azione.
 
@@ -63,15 +62,14 @@ Indipendentemente dal tipo, esistono impostazioni [](#general-settings) generali
 
 Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e-mail ai destinatari designati.
 
-![](/help/assets/screen_shot_2018-01-12at122554.png)
+![Opzioni e-mail nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-mail.png)
 
-* **Oggetto** L&#39;oggetto dell&#39;e-mail che verrà inviata all&#39;invio del modulo
-* **Da** L&#39;indirizzo e-mail del messaggio e-mail che verrà inviato all&#39;invio del modulo
-* **A** Gli indirizzi dei destinatari che riceveranno un messaggio e-mail al momento dell&#39;invio del modulo
-
+* **Oggetto** - Oggetto dell&#39;e-mail che verrà inviata all&#39;invio del modulo
+* **Da** - L&#39;indirizzo e-mail del messaggio e-mail che verrà inviato all&#39;invio del modulo
+* **A** - Gli indirizzi dei destinatari che riceveranno un&#39;e-mail all&#39;invio del modulo
    * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
    * Toccate o fate clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
-* **CC** Gli indirizzi dei destinatari che riceveranno una copia in carbonio dell&#39;e-mail inviata al momento dell&#39;invio del modulo
+* **CC** - Gli indirizzi dei destinatari che riceveranno una copia in carbonio dell&#39;e-mail inviata al momento dell&#39;invio del modulo
    * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
    * Toccate o fate clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
 
@@ -79,36 +77,31 @@ Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e
 
 Quando il modulo viene inviato, il contenuto del modulo viene memorizzato in una posizione archivio designata.
 
-![](/help/assets/screen_shot_2018-01-12at122538.png)
+![Opzioni di memorizzazione del contenuto nella finestra di dialogo di modifica del contenitore del modulo](/help/assets/form-container-edit-store.png)
 
-* **Percorso** contenuto Percorso archivio Contenuto percorso in cui viene memorizzato il contenuto inviato
-* **Visualizza dati** Tocca o fai clic per visualizzare i dati inviati memorizzati come JSON
-* **Avvia flusso di lavoro** Configura per avviare un flusso di lavoro con il contenuto memorizzato come payload al momento dell’invio del modulo
-
-### Invia ordine {#submit-order}
-
-Quando il modulo viene inviato, l&#39;ordine viene inviato.
-
-![](/help/assets/chlimage_1-3.png)
-
-### Aggiorna ordine {#update-order}
-
-Quando il modulo viene inviato, l&#39;ordine viene aggiornato.
-
-![](/help/assets/chlimage_1-4.png)
+* **Percorso** contenuto - Percorso dell&#39;archivio dei contenuti in cui è memorizzato il contenuto inviato
+* **Visualizza dati** - Toccate o fate clic per visualizzare i dati inviati memorizzati come JSON
+* **Avvia flusso di lavoro** - Configura l&#39;avvio di un flusso di lavoro con il contenuto memorizzato come payload al momento dell&#39;invio del modulo
 
 ### Impostazioni generali {#general-settings}
 
 Indipendentemente dal tipo di azione selezionato, è sempre possibile definire una pagina di ringraziamento.
 
-![](/help/assets/chlimage_1-5.png)
+![Opzioni generali nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-general.png)
 
-L&#39;utente verrà reindirizzato alla pagina specificata dopo il completamento dell&#39;invio del modulo.
-
-* Utilizzate la finestra di dialogo di selezione per selezionare una risorsa in AEM.
-* Se la pagina di ringraziamento non è in AEM, specificate l’URL assoluto. Gli URL non assoluti verranno interpretati in relazione ad AEM.
-* Lasciare vuoto per visualizzare nuovamente il modulo dopo l&#39;invio.
+* **Pagina** di ringraziamento: l’utente verrà reindirizzato alla pagina specificata dopo il completamento dell’invio del modulo.
+   * Utilizzate la finestra di dialogo di selezione per selezionare una risorsa in AEM.
+   * Se la pagina di ringraziamento non è in AEM, specificate l’URL assoluto. Gli URL non assoluti verranno interpretati in relazione ad AEM.
+   * Lasciare vuoto per visualizzare nuovamente il modulo dopo l&#39;invio.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i componenti consentiti e le relative mappature per il contenitore, in modo simile alla finestra di dialogo di progettazione per il contenitore di layout [standard nell&#39;editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)modelli.
+
+### Scheda Stili {#styles-tab}
+
+Il componente Contenitore modulo supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
