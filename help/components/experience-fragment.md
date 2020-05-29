@@ -2,7 +2,10 @@
 title: Componente frammento esperienza
 description: Il componente Frammento esperienza consente all’autore del contenuto di aggiungere a una pagina una variante di frammento esperienza.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '816'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +16,7 @@ Il componente di base Frammento esperienza del componente consente all’autore 
 
 ## Utilizzo {#usage}
 
-Il componente di base Frammento esperienza del componente permette all’autore del contenuto di selezionare le varianti di frammento esperienza esistenti e di inserirne una nella pagina del contenuto. Il componente Frammento esperienza supporta anche una struttura del sito localizzata.
+Il componente di base Frammento esperienza del componente permette all’autore del contenuto di selezionare tra le varianti di frammento esperienza esistenti e di inserirne una nella pagina del contenuto. Il componente Frammento esperienza supporta anche una struttura del sito localizzata.
 
 * Le proprietà del componente possono essere definite nella finestra di dialogo [di](#configure-dialog)configurazione.
 * I valori predefiniti per il componente quando lo si aggiunge a una pagina possono essere definiti nella finestra di dialogo [](#design-dialog)della progettazione.
@@ -40,7 +43,7 @@ Supponiamo che il contenuto sia simile al seguente:
 ```
 /content
 +-- experience-fragments
-   \-- we-retail
+   \-- wknd
       +-- language-masters
       +-- us
          +-- en
@@ -59,7 +62,7 @@ Supponiamo che il contenuto sia simile al seguente:
          \-- it
             +-- footerTextXf
             \-- headerTextXf
-+-- we-retail
++-- wknd
    +-- language-masters
    +-- us
       +-- en
@@ -72,11 +75,11 @@ Supponiamo che il contenuto sia simile al seguente:
 \-- wknd-shop
 ```
 
-Notate che la struttura sottostante `/content/experience-fragments/we-retail` rispecchia la struttura di `/content/we-retail`.
+Notate che la struttura sottostante `/content/experience-fragments/wknd` rispecchia la struttura di `/content/wknd`.
 
-In questo caso, se il componente Frammento esperienza `/content/experience-fragments/we-retail/us/en/footerTextXf` viene inserito in un modello, le pagine localizzate create in base a tale modello eseguiranno automaticamente il rendering del frammento esperienza localizzato che corrisponde alla pagina di contenuto localizzata.
+In questo caso, se il componente Frammento esperienza `/content/experience-fragments/wknd/us/en/footerTextXf` viene inserito in un modello, le pagine localizzate create in base a tale modello eseguiranno automaticamente il rendering del frammento esperienza localizzato che corrisponde alla pagina di contenuto localizzata.
 
-Pertanto, se andate a una pagina di contenuto sotto `/content/we-retail/ch/de` che utilizza lo stesso modello, `/content/experience-fragments/we-retail/ch/de/footerTextXf` verrà eseguito il rendering invece di `/content/experience-fragments/we-retail/us/en/footerTextXf`.
+Pertanto, se andate a una pagina di contenuto sotto `/content/wknd/ch/de` che utilizza lo stesso modello, `/content/experience-fragments/wknd/ch/de/footerTextXf` verrà eseguito il rendering invece di `/content/experience-fragments/wknd/us/en/footerTextXf`.
 
 ### Fallback {#fallback}
 
@@ -93,9 +96,9 @@ La versione corrente del componente Frammento esperienza è v1, introdotto con l
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -113,16 +116,22 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 La finestra di dialogo di configurazione consente all&#39;autore del contenuto di selezionare la variante del frammento esperienza da visualizzare sulla pagina.
 
-![](/help/assets/screen-shot-2019-08-23-10.49.21.png)
+![Finestra di dialogo di modifica del componente Frammento esperienza](/help/assets/experience-fragment-edit.png)
 
 Utilizzate il pulsante **Apri finestra di dialogo** di selezione per aprire il selettore dei componenti e scegliere quale variante del componente del frammento esperienza aggiungere alla pagina del contenuto.
 
 Se aggiungete il componente Frammento esperienza a un modello, tenete presente che verrà localizzato automaticamente a condizione che i frammenti esperienza siano localizzati, pertanto il rendering sulla pagina potrebbe variare a seconda del componente selezionato in modo esplicito. [Per ulteriori informazioni, consulta l’esempio precedente](#example) .
 
+Puoi anche definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+
+* Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+* La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 La finestra di dialogo di progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente Frammento esperienza e le impostazioni predefinite al momento dell’inserimento del componente Frammento esperienza.
 
-![](/help/assets/screen-shot-2019-08-23-10.48.36.png)
+### Scheda Stili {#styles-tab}
 
 Il componente Frammento esperienza supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
