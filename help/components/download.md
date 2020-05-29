@@ -2,7 +2,10 @@
 title: Scarica componente
 description: Il componente per il download dei componenti core consente di creare un’opzione di download su una pagina.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +27,9 @@ La versione corrente del componente Download è v1, introdotto con la release 2.
 
 La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM come servizio cloud |
-|--- |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile | Compatibile |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -42,9 +45,9 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento da scaricare e come si presenterà e come verrà visualizzato da un visitatore alla pagina.
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento da scaricare e il suo funzionamento e la sua visualizzazione sulla pagina da parte di un visitatore.
 
-![](/help/assets/screen-shot-2019-06-17-09.49.14.png)
+![Scheda Risorsa della finestra di dialogo di modifica del componente Download](/help/assets/download-edit-asset.png)
 
 ### Scheda Risorsa {#asset-tab}
 
@@ -57,7 +60,7 @@ La selezione di una risorsa per il download è molto simile alla funzionalità d
 
 ### Scheda Proprietà {#properties-tab}
 
-![](/help/assets/screen-shot-2019-06-17-09.49.51.png)
+![scheda Proprietà della finestra di dialogo di modifica del componente Download](/help/assets/download-edit-properties.png)
 
 * **Titolo** - Visualizzato come titolo per l’elemento di download
    * **Ottieni titolo dalla risorsa** DAM: se questa opzione è selezionata, il titolo viene popolato automaticamente con il titolo della risorsa DAM.
@@ -66,6 +69,10 @@ La selezione di una risorsa per il download è molto simile alla funzionalità d
 * **Testo** azione - Visualizzato come testo di azione per l&#39;elemento di download
    * Questo campo è richiesto quando si carica una risorsa dal file system.
    * **Visualizza in linea** - Se selezionata, il testo **dell&#39;** azione fornito verrà visualizzato in linea.
+* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -73,9 +80,8 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 ### Scheda Proprietà {#properties-tab-design}
 
-![](/help/assets/screen-shot-2019-06-17-10.04.31.png)
+![Finestra di dialogo Progettazione del componente Download](/help/assets/download-design.png)
 
-* **Testo** azione predefinito - Definisce il testo **predefinito per le** azioni fornito quando un autore aggiunge il componente Download a una pagina.
 * **Consenti caricamento dal file system** - Consente all&#39;autore del contenuto di caricare una risorsa dal file system locale come risorsa da scaricare.
    * Il valore predefinito è deselezionato.
 * **Tipo** titolo - L&#39;elemento HTML utilizzato per il titolo del componente Download.
