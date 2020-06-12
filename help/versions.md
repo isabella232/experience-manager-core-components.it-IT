@@ -2,7 +2,7 @@
 title: Versioni dei componenti core
 description: I componenti core sono pubblicati come versioni che possono contenere più versioni degli stessi componenti core. Questo documento spiega cosa sono le versioni e come comprendere la compatibilità con i componenti core e AEM.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 448a2d31c27869b257ea694dc06fabca903c30b1
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 25%
@@ -12,7 +12,7 @@ ht-degree: 25%
 
 # Versioni dei componenti core {#core-components-versions}
 
-La versione corrente dei componenti core è 2.8.0 ed è compatibile con [AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) cloud e con le installazioni [locali di AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) . È stato rilasciato nel dicembre 2019 come un aggiornamento importante per la release 2.0.0. La release 2.0.0 ha introdotto nuovi componenti insieme agli aggiornamenti v2 dei componenti esistenti.
+La versione corrente dei componenti core è 2.9.0 ed è compatibile con [AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) cloud e con le installazioni [locali di AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) . È stato rilasciato nel maggio 2020 come un aggiornamento importante alla release 2.0.0. La release 2.0.0 ha introdotto nuovi componenti insieme agli aggiornamenti v2 dei componenti esistenti.
 
 ## Cronologia rilascio e compatibilità {#release-history-and-compatibility}
 
