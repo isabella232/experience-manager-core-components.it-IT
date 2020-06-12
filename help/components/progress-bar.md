@@ -2,7 +2,7 @@
 title: Componente barra di avanzamento
 description: Il componente della barra di avanzamento rappresenta visivamente il progresso verso un obiettivo
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: cba1d898d7789af7f4045ef9aa052b4da6a6b33a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 3%
@@ -30,7 +30,7 @@ La tabella seguente elenca tutte le versioni supportate del componente, le versi
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Barra di avanzamento e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_progress)componenti.
+Per provare il componente Barra di avanzamento e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_progressbar)componenti.
 
 ### Dettagli tecnici {#technical-details}
 
