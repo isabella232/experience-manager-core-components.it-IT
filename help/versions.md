@@ -2,9 +2,9 @@
 title: Versioni dei componenti core
 description: I componenti core sono pubblicati come versioni che possono contenere più versioni degli stessi componenti core. Questo documento spiega cosa sono le versioni e come comprendere la compatibilità con i componenti core e AEM.
 translation-type: tm+mt
-source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
+source-git-commit: cef65c3fdf99130086136fe9019ca759bbf1926c
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1717'
 ht-degree: 25%
 
 ---
@@ -85,6 +85,7 @@ Nella tabella seguente sono illustrate le versioni dei componenti in cui sono co
 | **[Frammento esperienza](components/experience-fragment.md)** |  |  |  |  |  |  |  |  | v1 | v1 | v1 |
 | **[Incorpora](components/embed.md)** |  |  |  |  |  |  |  |  |  | v1 | v1 |
 | **[Barra di avanzamento](components/progress-bar.md)** |  |  |  |  |  |  |  |  |  |  | v1 |
+| **[Visualizzatore PDF](components/pdf-viewer.md)** |  |  |  |  |  |  |  |  |  |  | v1 |
 
 ## Versioni e release {#versions-and-releases}
 
