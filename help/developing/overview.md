@@ -2,9 +2,9 @@
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 translation-type: tm+mt
-source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1443'
 ht-degree: 12%
 
 ---
@@ -23,7 +23,8 @@ Di conseguenza, Adobe fornisce le seguenti raccomandazioni:
    Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere sostenuti.](/help/versions.md#foundation-component-support)
 * **Nuovi componenti** personalizzati Se è possibile personalizzare [un componente](customizing.md)core esistente.\
    In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le linee guida [sui](guidelines.md)componenti.
-* **Componenti** personalizzati esistenti Se i componenti funzionano come previsto, mantenerli come sono.\
+* **Componenti** personalizzati esistenti Se i componenti funzionano come previsto, mantenerli come sono.
+\
    In caso contrario, fare riferimento a &quot;Nuovi componenti personalizzati&quot; sopra.
 
 ## Come ottenere successo con i componenti core {#how-to-succeed}
@@ -115,6 +116,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Frammento esperienza](https://adobe.com/go/aem_cmp_tech_xf_v1) | Aggiunta di un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 | [Incorpora](https://adobe.com/go/aem_cmp_tech_embed_v1) | Incorporare una risorsa esterna in una pagina | - |
 | [Barra di avanzamento](https://adobe.com/go/aem_cmp_tech_progress_v1) | Fornire una rappresentazione visiva del progresso verso un obiettivo | - |
+| [Visualizzatore PDF](https://adobe.com/go/aem_cmp_tech_pdf_viewer_v1) | Presenta un documento PDF su una pagina | - |
 
 ### Componenti in arrivo {#upcoming-components}
 
