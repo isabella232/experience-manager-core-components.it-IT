@@ -2,9 +2,9 @@
 title: Introduzione ai componenti core
 description: 'I componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: b7e864686f31be8c0342b3f16750d276f554d219
+source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '848'
 ht-degree: 28%
 
 ---
@@ -32,7 +32,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 |  |  |
 |---|---|
 | Pronti per la produzione | I componenti core sono 28 componenti robusti che sono ben testati, ampiamente utilizzati e che funzionano bene. |
-| Pronto per il cloud | Sia che si tratti di [AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)Cloud, di servizi [gestiti](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)Adobe o in sede, funzionano. |
+| Pronto per il cloud | Sia che si tratti di [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), di [Adobi Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) o in sede, funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare praticamente qualsiasi layout. |
 | Configurabile | I criteri [per il](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) contenuto a livello di modello definiscono le funzioni che gli autori delle pagine possono utilizzare o meno. |
 | Tracciabile | L&#39;integrazione [di](/help/developing/data-layer/overview.md) Adobe Client Data Layer consente di tenere traccia di tutti gli aspetti dell&#39;esperienza del visitatore. |
@@ -74,6 +74,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 * [Condivisione social media](components/sharing.md)
 * [Separatore](components/separator.md)
 * [Barra di avanzamento](components/progress-bar.md)
+* [Visualizzatore PDF](components/pdf-viewer.md)
 
 ### Componenti contenitore {#container-components}
 
@@ -104,10 +105,10 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 | Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4   | Java SE | Paradiso |
 ---------|---------|---------|---------|---------|---------
-| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Continuo | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
+| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Continuo | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
 
 Per i requisiti delle precedenti versioni dei componenti core, consulta Versioni [dei componenti](versions.md)core.
 
 I componenti core richiedono l’uso di modelli [](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) modificabili e non supportano l’interfaccia classica né i modelli statici. Se necessario, controllate [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il progetto con queste moderne funzioni AEM.
 
-Per configurare l’ambiente di sviluppo locale, consultate [questa panoramica per AEM come SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) del servizio cloud o questo documento [per le versioni precedenti di AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Per configurare l’ambiente di sviluppo locale, consultate [questa panoramica per AEM come Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) oppure questo documento [per le versioni precedenti di AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
