@@ -2,10 +2,10 @@
 sub-product: AEM Core Components
 user-guide-title: AEM Core Components
 translation-type: tm+mt
-source-git-commit: c07dc21b1973ec541a1d96047f8a30aca8cfb886
+source-git-commit: d344b5bf90099f9df6284cb097e006feac4973a3
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 70%
+source-wordcount: '183'
+ht-degree: 69%
 
 ---
 
@@ -36,6 +36,7 @@ ht-degree: 70%
    + [Elenco](components/list.md)
    + [Navigazione](components/navigation.md)
    + [Pagina](components/page.md)
+   + [Visualizzatore PDF](components/pdf-viewer.md)
    + [Barra di avanzamento](components/progress-bar.md)
    + [Ricerca rapida](components/quick-search.md)
    + [Separatore](components/separator.md)
@@ -72,7 +73,7 @@ ht-degree: 70%
    + Adobe Client Data Layer {#data-layer}
       + [Componenti di base e livello dati client Adobe](developing/data-layer/overview.md)
       + [Integrazione con Adobe Launch](developing/data-layer/launch-integration.md)
-      + [Integrazione con Adobe Analytics](developing/data-layer/analytics-integration.md)
+      + [Integrazione con Adobe  Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Panoramica di Archetype](developing/archetype/overview.md)
       + [Utilizzo di Archetype](developing/archetype/using.md)
