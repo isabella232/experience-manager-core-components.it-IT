@@ -2,9 +2,9 @@
 title: Componente visualizzatore PDF
 description: Il componente Visualizzatore PDF consente la visualizzazione di un documento PDF.
 translation-type: tm+mt
-source-git-commit: 0df759a020020c21d776eb8f45d40cb7aff45cea
+source-git-commit: b08fc5ec49126f7be19b7433a3d71de877d9e442
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
@@ -33,11 +33,11 @@ Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, 
 
 ## Output componente di esempio {#sample-component-output}
 
-Per provare il componente visualizzatore PDF e per vedere alcuni esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_pdf_viewer)componenti.
+Per provare il componente visualizzatore PDF e per vedere alcuni esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_pdfviewer)componenti.
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente visualizzatore PDF [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_pdf-viewer_v1).
+La documentazione tecnica più recente sul componente visualizzatore PDF [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
 
