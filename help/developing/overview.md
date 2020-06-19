@@ -2,10 +2,10 @@
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 translation-type: tm+mt
-source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
+source-git-commit: b08fc5ec49126f7be19b7433a3d71de877d9e442
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 12%
+source-wordcount: '1442'
+ht-degree: 13%
 
 ---
 
@@ -39,10 +39,10 @@ Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refa
 
 [Gli strumenti](http://opensource.adobe.com/aem-modernize-tools/) di modernizzazione AEM consentono di convertire facilmente:
 
-* Modelli statici per modelli modificabili
-* Progettare configurazioni per i criteri
-* Componenti di base per componenti core
-* Interfaccia classica per interfaccia touch
+* Modelli statici in modelli modificabili
+* Configurazioni di progettazione in policy
+* Componenti di base in componenti core
+* Interfaccia classica in interfaccia touch
 
 Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
 
@@ -116,7 +116,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 | [Frammento esperienza](https://adobe.com/go/aem_cmp_tech_xf_v1) | Aggiunta di un frammento esperienza a una pagina | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 | [Incorpora](https://adobe.com/go/aem_cmp_tech_embed_v1) | Incorporare una risorsa esterna in una pagina | - |
 | [Barra di avanzamento](https://adobe.com/go/aem_cmp_tech_progress_v1) | Fornire una rappresentazione visiva del progresso verso un obiettivo | - |
-| [Visualizzatore PDF](https://adobe.com/go/aem_cmp_tech_pdf_viewer_v1) | Presenta un documento PDF su una pagina | - |
+| [Visualizzatore PDF](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1) | Presenta un documento PDF su una pagina | - |
 
 ### Componenti in arrivo {#upcoming-components}
 
@@ -126,6 +126,6 @@ Per una panoramica della road map dei componenti core, consulta il [progetto wik
 
 Un vantaggio dei componenti con versione è rappresentato dal fatto che consente di separare la migrazione a una nuova versione di AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni di componenti, è possibile migrare singolarmente ogni componente alla nuova versione.
 
-Le migrazioni a una nuova versione di AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione di AEM in cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Le migrazioni a una nuova versione di AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione di AEM in cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe tuttavia essere necessario adattare le personalizzazioni, per ulteriori dettagli consultate la pagina [Personalizzazione dei componenti](customizing.md#upgrade-compatibility-of-customizations) core.
