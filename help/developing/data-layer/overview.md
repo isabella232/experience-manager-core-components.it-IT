@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client Adobe con i componenti core
 description: Utilizzo del livello dati client Adobe con i componenti core
 translation-type: tm+mt
-source-git-commit: 539a4250c954ac830731a9ecf010e129b2cf9c3a
+source-git-commit: 57116fa8f8a71259400881609775af4047cd2225
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 4%
 
 ---
 
@@ -33,6 +33,7 @@ Tuttavia, il livello dati non è attivato per impostazione predefinita. Per atti
 
 1. Crea la struttura seguente sotto il `/conf` nodo:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
+   * Tipo di nodo: `nt:unstructured`
 1. Aggiungete una proprietà booleana chiamata `enabled` e impostatela su `true`.
 1. Aggiungi una `sling:configRef` proprietà al `jcr:content` nodo del sito `/content` (ad es. `/content/<mySite>/jcr:content`) e impostarla su `/conf/<mySite>`.
 
