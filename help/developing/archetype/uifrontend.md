@@ -2,7 +2,10 @@
 title: Creazione front-end tipo di archivio AEM
 description: Un modello di progetto per le applicazioni basate su AEM
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 55b4dde320dcb38935b55b273d4df8d0cc2f16e6
+workflow-type: tm+mt
+source-wordcount: '1613'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,12 @@ Poiché questi due processi di sviluppo si concentrano su parti diverse del prog
 
 Tuttavia, qualsiasi progetto risultante deve utilizzare il risultato di entrambi questi sforzi di sviluppo, sia back-end che front-end.
 
-L&#39;esecuzione `npm run dev` avvia il processo di compilazione front-end che raccoglie i file JavaScript e CSS memorizzati nel modulo ui.frontend e produce due librerie client minificate o ClientLibs richiamati `clientlib-site` e `clientlib-dependencies` li deposita nel modulo ui.apps. ClientLibs possono essere distribuiti in AEM e consentono di archiviare il codice lato client nell&#39;archivio.
+L&#39;esecuzione `npm run dev` avvia il processo di compilazione front-end che raccoglie i file JavaScript e CSS memorizzati nel modulo ui.frontend e produce due librerie client ridotte o ClientLibs richiamati `clientlib-site` e `clientlib-dependencies` li deposita nel modulo ui.apps. ClientLibs possono essere distribuiti in AEM e consentono di archiviare il codice lato client nell&#39;archivio.
 
-Quando l’intero archetipo del progetto AEM viene eseguito utilizzando `mvn clean install -PautoInstallPackage` tutti gli artefatti del progetto, inclusi ClientLibs, viene quindi inviato all’istanza AEM.
+Quando l’intero archetipo del progetto AEM viene eseguito utilizzando `mvn clean install -PautoInstallPackage` tutti gli artefatti del progetto, inclusi ClientLibs, viene quindi inviato all’istanza di AEM.
 
 >[!TIP]
+>
 >Ulteriori informazioni su ClientLibs nella documentazione [di sviluppo di](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) AEM e [come il modulo ui.frontend li utilizza di seguito](#clientlib-generation).
 
 ## Panoramica di ClientLibs {#clientlibs}
@@ -60,7 +64,7 @@ In questo flusso, uno sviluppatore AEM può eseguire i passaggi uno e due e tras
 
 >[!TIP]
 >
->È inoltre possibile utilizzare la libreria [](https://adobe.com/go/aem_cmp_library) dei componenti per acquisire esempi dell&#39;output di markup di ciascun componente per lavorare a livello di componente anziché a livello di pagina.
+>È inoltre possibile utilizzare la libreria [](https://adobe.com/go/aem_cmp_library) dei componenti per acquisire esempi dell&#39;output di markup di ciascun componente al fine di funzionare a livello di componente anziché a livello di pagina.
 
 ### Utilizzo di Storybook {#using-storybook}
 
@@ -137,7 +141,7 @@ Il modulo ui.frontend compila il codice sotto la `ui.frontend/src` cartella e pr
    * Rimuove regole, regole e dichiarazioni duplicate
       * Questo funziona solo per i duplicati esatti.
    * Rimuove regole vuote, query multimediali e regole con selettori vuoti, in quanto non influiscono sull&#39;output
-   * Unisce regole adiacenti tramite selettori e coppie proprietà/valore sovrapposte
+   * Unisce le regole adiacenti tramite selettori e coppie proprietà/valore sovrapposte
    * Assicurarsi che nel file CSS sia presente un solo @charset e spostarlo nella parte superiore del documento
    * Sostituisce la parola chiave iniziale CSS con il valore effettivo, quando l&#39;output risultante è minore
    * Comprime le definizioni SVG in linea con SVGO
@@ -145,6 +149,7 @@ Il modulo ui.frontend compila il codice sotto la `ui.frontend/src` cartella e pr
 * Mappatura origine - solo build di sviluppo
 
 >[!NOTE]
+>
 >L&#39;opzione front-end build utilizza file di configurazione di webpack solo per dev e solo per prod che condividono un file di configurazione comune. In questo modo le impostazioni di sviluppo e produzione possono essere modificate in modo indipendente.
 
 ### Generazione libreria client {#clientlib-generation}
@@ -185,7 +190,7 @@ Incluso nel modulo ui.frontend è un webpack-dev-server che fornisce il ricarica
 #### File importanti {#important-files}
 
 * `ui.frontend/webpack.dev.js`
-   * Contiene la configurazione del webpack-dev-serve e punta al modello html da utilizzare.
+   * Contiene la configurazione per il webpack-dev-serve e punta al modello html da utilizzare.
    * Contiene inoltre una configurazione proxy per un’istanza di AEM in esecuzione su localhost:4502.
 * `ui.frontend/src/main/webpack/static/index.html`
    * Si tratta dell’HTML statico con cui verrà eseguito il server.
