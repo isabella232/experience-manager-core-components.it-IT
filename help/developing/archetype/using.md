@@ -2,7 +2,7 @@
 title: Utilizzo di AEM Project Archetype
 description: Istruzioni d’uso dettagliate per il tipo di archivio del progetto AEM
 translation-type: tm+mt
-source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+source-git-commit: 55b4dde320dcb38935b55b273d4df8d0cc2f16e6
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # AEM Project Archetype {#aem-project-archetype}
 
-AEM Project Archetype crea un progetto Adobe Experience Manager minimo basato su best practice, come punto di partenza per i progetti AEM. Le proprietà che devono essere fornite quando si utilizza questo archetype consentono di specificare i nomi di tutte le parti del progetto e di controllare alcune funzioni facoltative.
+AEM Project Archetype crea un progetto  Adobe Experience Manager minimo basato su best practice, come punto di partenza per i progetti AEM. Le proprietà che devono essere fornite quando si utilizza questo archetype consentono di specificare i nomi di tutte le parti del progetto e di controllare alcune funzioni facoltative.
 
 ## Perché utilizzare Archetype {#why-use-the-archetype}
 
@@ -24,7 +24,7 @@ Naturalmente, ci sono molti elementi che entrano in un progetto AEM di successo,
 
 L’archetipo del progetto facilita lo sviluppo su AEM. I primi passi possono essere effettuati in diversi modi.
 
-* Esercitazione WKND - Per un&#39;ottima introduzione allo sviluppo su AEM, che include informazioni su come sfruttare l&#39;archetipo, consulta la [Guida introduttiva a AEM Sites - Esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND per un esempio pratico che illustra come utilizzare l&#39;archetipo per implementare un progetto semplice.
+* Esercitazione WKND - Per un&#39;ottima introduzione allo sviluppo su AEM, che include informazioni su come sfruttare l&#39;archetipo, consulta la [Guida introduttiva agli AEM Sites - Esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND per un esempio pratico che illustra come utilizzare l&#39;archetipo per implementare un progetto semplice.
 * Esercitazione sugli eventi WKND - Se siete particolarmente interessati allo sviluppo di applicazioni a pagina singola (SPA) in AEM, controllate l’esercitazione [dedicata agli eventi](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)WKND.
 * Scarica e inizia da solo! - È possibile scaricare facilmente l&#39;archetipo di progetto corrente disponibile su GitHub e creare il primo progetto [seguendo i semplici passaggi indicati di seguito](#how-to-use-the-archetype).
 
@@ -51,7 +51,7 @@ Per utilizzare l&#39;archetipo, è innanzitutto necessario creare un progetto, c
 
 La creazione del progetto con Maven crea gli artefatti (pacchetti e pacchetti OSGi) che possono essere distribuiti in AEM. Per distribuire gli artifact del progetto a un’istanza di AEM è possibile utilizzare ulteriori comandi e profili Maven.
 
-### Creazione di un progetto   {#create-project}
+### Creazione di un progetto  {#create-project}
 
 Per iniziare, puoi semplicemente utilizzare l’estensione [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/aem-eclipse.html) AEM Eclipse e seguire la procedura guidata Nuovo progetto e scegliere **AEM Sample Multi-Module Project** per utilizzare una versione rilasciata dell’archetipo.
 
@@ -71,8 +71,8 @@ mvn -B archetype:generate \
 ```
 
 * Impostate `XX` il numero [di](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) versione dell’ultimo tipo di archivio progetti AEM.
-* Set `aemVersion=cloud` for [AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
-   Impostato `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)o locale.
+* Impostato `aemVersion=cloud` per [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
+   Impostato `aemVersion=6.5.0` per [Adobi Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)o locali.
 La dipendenza Componenti di base viene aggiunta solo per le versioni Aem non cloud, in quanto i Componenti di base vengono forniti come servizio Cloud per AEM.
 * Regolate `appTitle="My Site"` per definire il titolo del sito Web e i gruppi di componenti.
 * Regolate `appId="mysite"` per definire il Maven artifactId, i nomi delle cartelle dei componenti, delle configurazioni e dei contenuti, nonché i nomi delle librerie dei client.
@@ -97,7 +97,7 @@ Le seguenti proprietà sono disponibili quando si crea un progetto utilizzando a
 | `groupId` |  | ID gruppo Base Paradiso (ad es. `"com.mysite"`). |
 | `package` | *`${groupId}`* | Pacchetto di origine Java (ad esempio `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Versione del progetto (ad es. `1.0-SNAPSHOT`). |
-| `aemVersion` | `6.5.0` | versione di destinazione di AEM (può essere `cloud` per [AEM come servizio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)cloud); oppure `6.5.0`, `6.4.4`, o `6.3.3` per i servizi [gestiti](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) Adobe o locali). |
+| `aemVersion` | `6.5.0` | Versione Target AEM (può essere `cloud` per [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html); oppure `6.5.0`, `6.4.4`, o `6.3.3` per [Adobi Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) o locali). |
 | `sdkVersion` | `latest` | Quando è possibile specificare `aemVersion=cloud` una versione [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) (ad es. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Include una configurazione dispatcher sia per il cloud che per AMS/locale, a seconda del valore di `aemVersion` (può essere `y` o `n`). |
 | `frontendModule` | `none` | Include un modulo di generazione frontale Webpack che genera le librerie client (può essere `general` o `none` per siti regolari); può essere `angular` o `react` per un&#39;app a pagina singola che implementa l&#39;Editor [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-overview.html)SPA). |
@@ -107,9 +107,11 @@ Le seguenti proprietà sono disponibili quando si crea un progetto utilizzando a
 | `includeErrorHandler` | `n` | Include una pagina di risposta personalizzata 404 che sarà globale per l&#39;intera istanza (può essere `y` o `n`). |
 
 >[!NOTE]
+>
 > Se l&#39;archetype viene eseguito in modalità interattiva la prima volta, le proprietà con valori predefiniti non possono essere modificate (per ulteriori dettagli, vedere [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Il valore può essere modificato quando la conferma della proprietà alla fine viene negata e il questionario viene ripetuto, o passando il parametro nella riga di comando (ad es. `-DoptionIncludeExamples=n`).
 
 >[!NOTE]
+>
 >Quando si esegue in Windows e si genera la configurazione del dispatcher, è necessario eseguire un prompt di comando elevato o il sottosistema Windows per Linux (vedere [il numero 329](https://github.com/adobe/aem-project-archetype/issues/329)).
 
 ### Profili {#profiles}
