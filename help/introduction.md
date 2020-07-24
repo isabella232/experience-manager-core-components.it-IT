@@ -2,10 +2,10 @@
 title: Introduzione ai componenti core
 description: 'I componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: 5a953588f83e13e50924a2bd9afa2466e3ef6f4d
+source-git-commit: 6d21773dbf09b5e6622c51c662c4070e0242b7d6
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 29%
+source-wordcount: '863'
+ht-degree: 28%
 
 ---
 
@@ -39,6 +39,7 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 | Accessibili | They comply [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), provide ARIA labels, and support keyboard navigation ([known issues](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-Friendly | The HTML output is semantic and provides [schema.org](https://schema.org) microdata annotations. |
 | WebApp-Ready | L&#39;output [JSON](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) ottimizzato consente il rendering lato client, pur con la possibilità di effettuare modifiche [contestuali](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
+| Supporto AMP | I componenti dispongono del [supporto integrato per lo standard AMP,](/help/developing/amp.md) che consente di accelerare le esperienze mobili. |
 | Kit di progettazione | Un kit di [interfaccia utente per Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) consente ai designer di creare wireframe che potranno quindi [definire in base alle esigenze](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_WKND.xd). |
 | Tema | The components implement the [Style System](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html), and the markup follows [BEM CSS conventions](http://getbem.com/). |
 | Personalizzabile | Diversi pattern consentono [una facile personalizzazione](developing/customizing.md), dalla regolazione dell’HTML al riutilizzo avanzato delle funzionalità. |
@@ -105,7 +106,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 | Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4   | Java SE | Paradiso |
 ---------|---------|---------|---------|---------|---------
-| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Continuo | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
+| [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | Continuo | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
 
 Per i requisiti delle precedenti versioni dei componenti core, consulta Versioni [dei componenti](versions.md)core.
 
