@@ -3,10 +3,10 @@ sub-product: AEM Core Components
 user-guide-title: AEM Core Components
 user-guide-description: Use the extensible Core Components to let authors easily create content.
 translation-type: tm+mt
-source-git-commit: dc8d63bca14996f230d4f8e68b7706d315955e06
+source-git-commit: 77123951c73f41f1673c7ca04f3af87f08e73775
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 70%
+source-wordcount: '191'
+ht-degree: 68%
 
 ---
 
@@ -68,14 +68,16 @@ ht-degree: 70%
 + Sviluppo {#developing}
    + [Sviluppo di componenti core](developing/overview.md)
    + [Percorsi per il successo](developing/success.md)
-   + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Personalizzazione dei componenti core](developing/customizing.md)
    + [Linee guida per i componenti](developing/guidelines.md)
    + [Supporto AMP](developing/amp.md)
-   + Adobe Client Data Layer {#data-layer}
-      + [Componenti di base e livello dati client Adobe](developing/data-layer/overview.md)
-      + [Integrazione con Adobe Launch](developing/data-layer/launch-integration.md)
-      + [Integrazione con Adobe Analytics](developing/data-layer/analytics-integration.md)
+   + [Configurazioni basate sul contesto](developing/context-aware-configs.md)
+   + Livello dati client Adobe  {#data-layer}
+      + [Componenti di base e livello dati client del Adobe](developing/data-layer/overview.md)
+      + [Integrazione con  lancio Adobe](developing/data-layer/launch-integration.md)
+      + [Integrazione con  Adobe Analytics](developing/data-layer/analytics-integration.md)
+      + [Estensione del livello dati](developing/data-layer/extending.md)
    + AEM Project Archetype {#archetype}
       + [Panoramica di Archetype](developing/archetype/overview.md)
       + [Utilizzo di Archetype](developing/archetype/using.md)
