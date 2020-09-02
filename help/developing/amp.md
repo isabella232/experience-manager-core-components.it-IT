@@ -2,9 +2,9 @@
 title: Supporto AMP per i componenti core
 description: I componenti core supportano AMP - Pagine mobili con accelerazione
 translation-type: tm+mt
-source-git-commit: 905096d909d4fbf624152ba3b5cbc1d80637245f
+source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -26,26 +26,18 @@ Il supporto per AMP nei componenti core è [completamente configurabile.](#enabl
 
 I componenti core vengono utilizzati `amp` come selettore Sling per eseguire il rendering di una pagina AMP. Ad esempio, `example.html` eseguirebbe il rendering della pagina normale e `example.amp.html` sarebbe la versione AMP.
 
-### Requisiti {#requirements}
-
-Quando si utilizza AMP con i componenti core, la differenza principale è che AMP richiede che tutti i CSS siano allineati nell&#39; `<head>` elemento e ottimizzati.
-
-A questo scopo, viene utilizzato un componente pagina personalizzato, che carica solo il CSS specifico di AMP per i componenti presenti sulla pagina.
-
-Per ulteriori requisiti e dettagli tecnici, consulta la documentazione per gli sviluppatori [GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
-
-### Utilizzo di AMP nei componenti core {#using-amp}
-
 I singoli progetti possono decidere se utilizzare o meno AMP. Infatti, poiché AMP e pagine HTML standard possono essere distribuite in parallelo, un progetto può scegliere di utilizzare AMP solo su determinate pagine del progetto.
 
-### Installazione del supporto AMP {#installing-amp}
+## Guida introduttiva al supporto AMP nel progetto {#getting-started}
 
-Poiché AMP è opzionale, viene distribuito come estensione ai componenti core.
+Sebbene il supporto AMP offra una grande flessibilità, per iniziare a utilizzarlo rapidamente è necessario solo qualche semplice passo:
 
-* Per AEM come progetto Cloud Service, l&#39;estensione è automaticamente disponibile.
-* Per i progetti in sede e AMS, l’estensione deve essere installata in modo esplicito durante l’installazione dei componenti core.
-
-Una volta installata l’estensione, l’autore del componente deve semplicemente puntare i supertipi di componente a quelli presenti nell’estensione.
+1. Se necessario, installate l&#39;estensione del supporto AMP.
+   * Per AEM come progetto di Cloud Service, l&#39;estensione è disponibile automaticamente con i componenti core e non è necessaria alcuna installazione.
+   * Per i progetti in sede e AMS, l’estensione deve essere installata in modo esplicito durante l’installazione dei componenti core.
+1. Una volta installata l’estensione AMP, l’autore del componente deve semplicemente puntare i supertipi di componente a quelli presenti nell’estensione.
+1. [Abilita il supporto](#enabling-amp) AMP a livello di modello o sulle singole pagine.
+1. [Implementate i CSS](#css-requirements) in linea come necessario.
 
 ### Abilitazione di AMP per le pagine {#enabling-amp}
 
@@ -65,3 +57,11 @@ Le impostazioni AMP per una pagina possono anche essere sostituite in Proprietà
 * **Nessuna AMP** - La pagina viene distribuita solo come HTML standard.
 * **Coppia AMP** - La pagina viene distribuita sia in formato AMP che HTML.
 * **Solo** AMP - La pagina viene consegnata solo come AMP.
+
+### Requisiti CSS {#css-requirements}
+
+Quando si utilizza AMP con i componenti core, la differenza principale è che AMP richiede che tutti i CSS siano allineati nell&#39; `<head>` elemento e ottimizzati.
+
+A questo scopo, viene utilizzato un componente pagina personalizzato, che carica solo il CSS specifico di AMP per i componenti presenti sulla pagina.
+
+Per ulteriori requisiti e dettagli tecnici, consulta la documentazione per gli sviluppatori [GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
