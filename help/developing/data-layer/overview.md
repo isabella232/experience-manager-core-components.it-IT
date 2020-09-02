@@ -1,35 +1,34 @@
 ---
-title: Utilizzo del livello dati client Adobe con i componenti core
-description: Utilizzo del livello dati client Adobe con i componenti core
+title: Utilizzo del livello dati client del Adobe  con i componenti core
+description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 57116fa8f8a71259400881609775af4047cd2225
+source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 4%
 
 ---
 
 
-# Utilizzo del livello dati client Adobe con i componenti core {#data-layer-core-components}
+# Utilizzo del livello dati client del Adobe  con i componenti core {#data-layer-core-components}
 
-L&#39;obiettivo di Adobe Client Data Layer è quello di ridurre lo sforzo di utilizzare i siti Web fornendo un metodo standardizzato per esporre e accedere a qualsiasi tipo di dati per qualsiasi script.
+L&#39;obiettivo di  Client Data Layer del Adobe è quello di ridurre lo sforzo di strumentalizzare i siti Web fornendo un metodo standardizzato per esporre e accedere a qualsiasi tipo di dati per qualsiasi script.
 
-Adobe Client Data Layer è agnostico della piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
+Il livello dati client del Adobe  è agnostico della piattaforma, ma è completamente integrato nei componenti core per l&#39;utilizzo con AEM.
 
-Come per i componenti core, il codice per Adobe Client Data Layer è disponibile su GitHub con la relativa documentazione per gli sviluppatori. Questo documento fornisce una panoramica di come i componenti core interagiscono con il livello dati, ma i dettagli tecnici completi sono differiti alla documentazione GitHub.
+Come per i componenti core, il codice per  Client Data Layer è disponibile su GitHub con la relativa documentazione per lo sviluppo. Questo documento fornisce una panoramica di come i componenti core interagiscono con il livello dati, ma i dettagli tecnici completi sono differiti alla documentazione GitHub.
 
 >[!TIP]
 >
->Per ulteriori informazioni su Adobe Client Data Layer, [fare riferimento alle risorse presenti nell&#39;archivio GitHub.](https://github.com/adobe/adobe-client-data-layer)
+>Per ulteriori informazioni sul livello dati client del Adobe , [fare riferimento alle risorse presenti nel repository GitHub.](https://github.com/adobe/adobe-client-data-layer)
 >
->Per ulteriori informazioni tecniche sull&#39;integrazione del livello dati client Adobe con i componenti core, vedere il [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) file nell&#39;archivio Componenti principali.
-
+>Per ulteriori dettagli tecnici sull&#39;integrazione del livello dati client del Adobe  con i componenti core, vedere il [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) file nell&#39;archivio Componenti di base.
 
 ## Installazione e attivazione {#installation-activation}
 
 A partire dalla release 2.9.0 dei componenti core, il livello dati è distribuito con i componenti core come clientlib. Non è necessaria alcuna installazione.
 
-Tuttavia, il livello dati non è attivato per impostazione predefinita. Per attivare il livello dati
+Tuttavia, il livello dati non è attivato per impostazione predefinita. Per attivare il Livello dati è necessario creare una configurazione [](/help/developing/context-aware-configs.md) contestuale per tale livello:
 
 1. Crea la struttura seguente sotto il `/conf` nodo:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
@@ -37,7 +36,7 @@ Tuttavia, il livello dati non è attivato per impostazione predefinita. Per atti
 1. Aggiungete una proprietà booleana chiamata `enabled` e impostatela su `true`.
 1. Aggiungi una `sling:configRef` proprietà al `jcr:content` nodo del sito `/content` (ad es. `/content/<mySite>/jcr:content`) e impostarla su `/conf/<mySite>`.
 
-Una volta attivata questa opzione, potete verificare l’attivazione caricando una pagina del sito all’esterno dell’editor. Quando ispezionate la pagina vedrete che è caricato il Livello dati client Adobe.
+Una volta attivata questa opzione, potete verificare l’attivazione caricando una pagina del sito all’esterno dell’editor. Quando ispezionate la pagina vedrete che è stato caricato il Livello dati client del Adobe .
 
 ## Schemi di dati dei componenti core {#data-schemas}
 
