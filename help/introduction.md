@@ -1,11 +1,11 @@
 ---
 title: Introduzione ai componenti core
-description: 'I componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
+description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e sulle best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: 4e68b1c293f4e6553aa5888ac26ee76c1a569ff3
+source-git-commit: f94b9e8757295ba25f11a0e60fc864a85db5c765
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 30%
+source-wordcount: '861'
+ht-degree: 28%
 
 ---
 
