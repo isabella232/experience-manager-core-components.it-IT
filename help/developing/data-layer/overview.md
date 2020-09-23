@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client del Adobe  con i componenti core
 description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
+source-git-commit: 4a44a5f584efa736320556f6b4e2f4126d058a48
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 4%
+source-wordcount: '575'
+ht-degree: 5%
 
 ---
 
@@ -57,7 +57,7 @@ Lo schema Componente/Elemento contenitore è utilizzato nei seguenti componenti:
 
 Lo schema Componente/Elemento contenitore è definito come segue.
 
-```
+```javascript
 id: {                   // component ID
     @type               // resource type
     repo:modifyDate     // last modified date
@@ -69,6 +69,9 @@ id: {                   // component ID
 }
 ```
 
+L&#39; [evento](#events) seguente è pertinente allo schema Componente/Elemento contenitore:
+
+* `cmp:click`
 
 ### Schema pagina {#page}
 
@@ -78,7 +81,7 @@ Lo schema Pagina è utilizzato dal componente seguente:
 
 Lo schema Pagina è definito come segue.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -104,7 +107,7 @@ Lo schema Contenitore è utilizzato dai seguenti componenti:
 
 Lo schema Contenitore è definito come segue.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -117,6 +120,12 @@ id: {
 }
 ```
 
+Gli [eventi](#events) seguenti sono pertinenti allo schema Contenitore:
+
+* `cmp:click`
+* `cmp:show`
+* `cmp:hide`
+
 ### Schema immagini {#image}
 
 Lo schema immagine è utilizzato dal componente seguente:
@@ -125,7 +134,7 @@ Lo schema immagine è utilizzato dal componente seguente:
 
 Lo schema immagine è definito come segue.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -138,13 +147,17 @@ id: {
 }
 ```
 
+L’ [evento](#events) seguente è relativo allo schema immagine:
+
+* `cmp:click`
+
 ### Schema risorse {#asset}
 
 Lo schema delle risorse viene utilizzato all’interno del componente [Immagine.](/help/components/image.md)
 
 Lo schema della risorsa è definito come segue.
 
-```
+```javascript
 id: {
     repo:id             // asset UUID
     repo:path           // asset path
@@ -154,3 +167,28 @@ id: {
 }
 ```
 
+Il seguente [evento](#events) è pertinente allo schema delle risorse:
+
+* `cmp:click`
+
+## Eventi {#events}
+
+Esistono diversi eventi attivati dal livello dati.
+
+* **`cmp:click`** - Facendo clic su un elemento selezionabile (un elemento con un `data-cmp-clickable` attributo) il livello dati attiva un `cmp:click` evento.
+* **`cmp:show`** e **`cmp:hide`** - La manipolazione del pannello a soffietto (espandi/comprimi), del carosello (pulsanti Successivo/Precedente) e delle schede (selezione scheda) determina l&#39;attivazione del livello dati `cmp:show` e di un `cmp:hide` evento.
+* **`cmp:loaded`** - Non appena il livello dati viene popolato con i componenti core sulla pagina, il livello dati attiva un `cmp:loaded` evento.
+
+### Eventi attivati dal componente {#events-components}
+
+Le tabelle seguenti elencano i componenti core standard che attivano gli eventi insieme a tali eventi.
+
+| Componente | Eventi |
+|---|---|
+| [Navigazione](/help/components/navigation.md) | `cmp:click` |
+| [Navigazione lingua](/help/components/language-navigation.md) | `cmp:click` |
+| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
+| [Pulsante](/help/components/button.md) | `cmp:click` |
+| [Carosello](/help/components/carousel.md) | `cmp:show` e `cmp:hide` |
+| [Schede](/help/components/tabs.md) | `cmp:show` e `cmp:hide` |
+| [Pannello a soffietto](/help/components/accordion.md) | `cmp:show` e `cmp:hide` |
