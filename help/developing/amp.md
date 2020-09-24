@@ -2,7 +2,7 @@
 title: Supporto AMP per i componenti core
 description: I componenti core supportano AMP - Pagine mobili con accelerazione
 translation-type: tm+mt
-source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
+source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Le impostazioni AMP per una pagina possono anche essere sostituite in Proprietà
 
 ### Requisiti CSS {#css-requirements}
 
-Quando si utilizza AMP con i componenti core, la differenza principale è che AMP richiede che tutti i CSS siano allineati nell&#39; `<head>` elemento e ottimizzati.
+Quando si utilizza AMP con i componenti core, la differenza principale è che AMP richiede che tutti i [CSS siano allineati](including-clientlibs.md#inlining) nell&#39; `<head>` elemento e ottimizzati.
 
 A questo scopo, viene utilizzato un componente pagina personalizzato, che carica solo il CSS specifico di AMP per i componenti presenti sulla pagina.
 
