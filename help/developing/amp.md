@@ -2,9 +2,9 @@
 title: Supporto AMP per i componenti core
 description: I componenti core supportano AMP - Pagine mobili con accelerazione
 translation-type: tm+mt
-source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Sebbene il supporto AMP offra una grande flessibilità, per iniziare a utilizzar
 
 ### Abilitazione di AMP per le pagine {#enabling-amp}
 
-Per abilitare AMP per una pagina, la modalità **** AMP deve essere selezionata nel criterio [pagina.](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html#editingatemplatepagepolicies)
+Per abilitare AMP per una pagina, la modalità **** AMP deve essere selezionata nel criterio [pagina.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
 
 ![Opzioni criteri pagina AMP](/help/assets/amp-policy.png)
 
@@ -49,7 +49,7 @@ Per abilitare AMP per una pagina, la modalità **** AMP deve essere selezionata 
 * **Coppia AMP** - La pagina viene distribuita sia in formato AMP che HTML.
 * **Solo** AMP - La pagina viene consegnata solo come AMP.
 
-Le impostazioni AMP per una pagina possono anche essere sostituite in Proprietà [](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html) pagina per una singola pagina.
+Le impostazioni AMP per una pagina possono anche essere sostituite in Proprietà [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) pagina per una singola pagina.
 
 ![Proprietà pagina AMP](/help/assets/amp-page-properties.png)
 
