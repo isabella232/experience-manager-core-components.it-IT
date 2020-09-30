@@ -2,10 +2,10 @@
 title: Componente Condivisione social network
 description: Il componente core Condivisione social network è un widget di condivisione Facebook e Pinterest.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +22,9 @@ A differenza di altri componenti, le impostazioni per il componente Condivisione
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Condivisione social network è v1, introdotto con la release 1.0.0 dei componenti core con AEM 6.3, ed è descritto in questo documento.
+La versione corrente del componente Condivisione social network è v1, introdotto con la release 1.0.0 dei componenti core, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente e le versioni AEM con cui sono compatibili le versioni del componente.
+Nella tabella seguente sono illustrate tutte le versioni supportate del componente e le versioni AEM con cui sono compatibili le versioni del componente.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
