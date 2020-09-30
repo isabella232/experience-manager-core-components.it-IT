@@ -2,10 +2,10 @@
 title: Componente pagina
 description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,24 +18,20 @@ Il componente Pagina è un componente di pagina estensibile progettato per funzi
 
 Il componente pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
 
-Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, potete definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la finestra di dialogo [di](#edit-dialog) modifica del componente pagina è la finestra delle proprietà della pagina.
+Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la finestra di dialogo [di](#edit-dialog) modifica del componente pagina è la finestra delle proprietà della pagina.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Pagina è v2, introdotta con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](v1/page-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](v1/page-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
-
->[!NOTE]
->
->Per abilitare il reindirizzamento a `cq:Page` livello per la versione 2 del componente della pagina e AEM 6.3, è necessario [Service Pack 2](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp2-release-notes.html) o successivo. Tale reindirizzamento non era disponibile nelle versioni precedenti.
 
 ### Dettagli tecnici {#technical-details}
 
@@ -55,7 +51,7 @@ Poiché il componente rappresenta l’intera pagina, la finestra di dialogo dell
 
 >[!NOTE]
 >
->Nelle versioni precedenti di AEM, i criteri **** pagina erano denominati Progettazione **** pagina.
+>Nelle versioni precedenti di AEM, Criteri **** pagina era denominata Struttura **** pagina.
 
 ### Scheda Proprietà {#properties-tab}
 
