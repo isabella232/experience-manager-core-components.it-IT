@@ -2,10 +2,10 @@
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,12 +28,12 @@ Utilizzando la finestra di dialogo [di](#configure-dialog) configurazione, l&#39
 
 La versione corrente del componente Contenitore modulo è v2, introdotta con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](/help/components/v1/form-container-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](/help/components/v1/form-container-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -90,8 +90,8 @@ Indipendentemente dal tipo di azione selezionato, è sempre possibile definire u
 ![Opzioni generali nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-general.png)
 
 * **Pagina** di ringraziamento: l’utente verrà reindirizzato alla pagina specificata dopo il completamento dell’invio del modulo.
-   * Utilizzate la finestra di dialogo di selezione per selezionare una risorsa in AEM.
-   * Se la pagina di ringraziamento non è in AEM, specificate l’URL assoluto. Gli URL non assoluti verranno interpretati in relazione ad AEM.
+   * Utilizzare la finestra di dialogo di selezione per selezionare una risorsa all&#39;interno di AEM.
+   * Se la pagina di ringraziamento non è AEM, specificate l’URL assoluto. Gli URL non assoluti verranno interpretati in relazione ai AEM.
    * Lasciare vuoto per visualizzare nuovamente il modulo dopo l&#39;invio.
 * **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
