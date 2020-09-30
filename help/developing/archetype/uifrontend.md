@@ -2,9 +2,9 @@
 title: AEM Project Archetype Front-End Build
 description: Un modello di progetto per applicazioni basate su AEM
 translation-type: tm+mt
-source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Quando l&#39;intero archetipo AEM progetto viene eseguito utilizzando `mvn clean
 
 ## Panoramica di ClientLibs {#clientlibs}
 
-Il modulo frontend è reso disponibile tramite ClientLib [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)AEM. Durante l&#39;esecuzione dello script di build NPM, l&#39;app viene creata e il pacchetto aem-clientlib-generator prende l&#39;output di build risultante e lo trasforma in tale clientLib.
+Il modulo frontend è reso disponibile tramite ClientLib [](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html)AEM. Durante l&#39;esecuzione dello script di build NPM, l&#39;app viene creata e il pacchetto aem-clientlib-generator prende l&#39;output di build risultante e lo trasforma in tale clientLib.
 
 ClientLib sarà costituito dai file e dalle directory seguenti:
 
@@ -161,7 +161,7 @@ Il processo di compilazione del modulo ui.frontend si basa sul plug-in [aem-clie
 
 ### Inclusione di librerie client nelle pagine {#clientlib-inclusion}
 
-`clientlib-site` e `clientlib-dependencies` le categorie sono incluse nelle pagine tramite la configurazione [Criteri di](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#template-definitions) pagina come parte del modello predefinito. Per visualizzare il criterio, modificate il modello di pagina **Contenuto > Informazioni pagina > Criteri** pagina.
+`clientlib-site` e `clientlib-dependencies` le categorie sono incluse nelle pagine tramite la configurazione [Criteri di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) pagina come parte del modello predefinito. Per visualizzare il criterio, modificate il modello di pagina **Contenuto > Informazioni pagina > Criteri** pagina.
 
 L&#39;inclusione finale delle librerie client nella pagina dei siti è la seguente:
 
