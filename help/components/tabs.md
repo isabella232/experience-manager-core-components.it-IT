@@ -2,10 +2,10 @@
 title: Componente Tabulazioni
 description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,8 +32,8 @@ Le schede e i componenti [Accordion](accordion.md) supportano il collegamento di
 
 Per effettuare ciò:
 
-1. Visualizzare la pagina con il componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html#view-as-published)**nell’editor pagina.
-1. Esaminate il contenuto della pagina e identificate l’ID del pannello.
+1. Visualizzare la pagina con il componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor pagina.
+1.  Inspect il contenuto della pagina e identificare l’ID del pannello.
    * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che potete aggiungere all’URL utilizzando un hash (`#`).
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
@@ -44,7 +44,7 @@ Passando all’URL con l’ID del pannello come ancoraggio, il browser scorre di
 
 La versione corrente del componente Tabs è v1, introdotto con la release 2.2.0 dei componenti core a ottobre 2018, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
@@ -118,7 +118,7 @@ Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strum
 
 >[!NOTE]
 >
->Le schede non sono selezionabili dall&#39;autore in modalità **Modifica** . Utilizzate la modalità **[Anteprima](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)**o l&#39;opzione**[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come lettori del contenuto pubblicato.
+>Le schede non sono selezionabili dall&#39;autore in modalità **Modifica** . Utilizzate la modalità **[Anteprima](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** o l&#39;opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come lettori del contenuto pubblicato.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
