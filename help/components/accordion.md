@@ -2,10 +2,10 @@
 title: Componente Accordion
 description: Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,8 +28,8 @@ I componenti [Accordion e](tabs.md) Tabs supportano il collegamento diretto a un
 
 Per effettuare ciò:
 
-1. Visualizzare la pagina con il componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html#view-as-published)**nell’editor pagina.
-1. Esaminate il contenuto della pagina e identificate l’ID del pannello.
+1. Visualizzare la pagina con il componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor pagina.
+1.  Inspect il contenuto della pagina e identificare l’ID del pannello.
    * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che potete aggiungere all’URL utilizzando un hash (`#`).
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
@@ -40,7 +40,7 @@ Passando all’URL con l’ID del pannello come ancoraggio, il browser scorre di
 
 La versione corrente del componente Accordion è v1, introdotto con la release 2.5.0 dei componenti core a giugno 2019, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
@@ -120,7 +120,7 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 La scheda Componenti **** consentiti viene utilizzata per definire quali componenti possono essere aggiunti ai pannelli del componente Accordion dall’autore del contenuto come elementi.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si [definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
 
 ### Scheda Stili {#styles-tab}
 
