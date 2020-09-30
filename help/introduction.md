@@ -2,10 +2,10 @@
 title: Introduzione ai componenti core
 description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e sulle best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: f94b9e8757295ba25f11a0e60fc864a85db5c765
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 28%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,14 +34,14 @@ I componenti core sono una serie di componenti Web Content Management (WCM) stan
 | Pronti per la produzione | I componenti core sono 28 componenti robusti che sono ben testati, ampiamente utilizzati e che funzionano bene. |
 | Pronto per il cloud | Sia [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams), sia in sede, funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare praticamente qualsiasi layout. |
-| Configurabile | I criteri [per il](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) contenuto a livello di modello definiscono le funzioni che gli autori delle pagine possono utilizzare o meno. |
+| Configurabile | I criteri [per il](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) contenuto a livello di modello definiscono le funzioni che gli autori delle pagine possono utilizzare o meno. |
 | Tracciabile | L&#39;integrazione [](/help/developing/data-layer/overview.md) Client Data Layer di Adobe consente di tenere traccia di tutti gli aspetti dell&#39;esperienza del visitatore. |
 | Accessibili | They comply [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), provide ARIA labels, and support keyboard navigation ([known issues](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-Friendly | The HTML output is semantic and provides [schema.org](https://schema.org) microdata annotations. |
 | WebApp-Ready | L&#39;output [JSON](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) ottimizzato consente il rendering lato client, pur con la possibilità di effettuare modifiche [contestuali](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Supporto AMP | I componenti dispongono del [supporto integrato per lo standard AMP,](/help/developing/amp.md) che consente di accelerare le esperienze mobili. |
 | Kit di progettazione | Un kit di [interfaccia utente per  Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) consente ai designer di creare wireframe che potranno quindi [definire in base alle esigenze](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_WKND.xd). |
-| Tema | The components implement the [Style System](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/components/style-system.html), and the markup follows [BEM CSS conventions](http://getbem.com/). |
+| Tema | The components implement the [Style System](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/style-system.html), and the markup follows [BEM CSS conventions](http://getbem.com/). |
 | Personalizzabile | Diversi pattern consentono [una facile personalizzazione](developing/customizing.md), dalla regolazione dell’HTML al riutilizzo avanzato delle funzionalità. |
 | Gestione versioni | La politica [di controllo delle](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) versioni garantisce che i componenti core non interrompano il sito quando migliorano gli elementi che potrebbero avere un impatto sull&#39;utente. |
 | Localizzabile | Smart reference resolution allows certain components to find and [render corresponding localized content automatically](get-started/localization.md). |
