@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client del Adobe  con i componenti core
 description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 4a44a5f584efa736320556f6b4e2f4126d058a48
+source-git-commit: 7b0edac1b5ffd068443cc4805a0fa97d243b6e9e
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 5%
+source-wordcount: '868'
+ht-degree: 4%
 
 ---
 
@@ -26,17 +26,42 @@ Come per i componenti core, il codice per  Client Data Layer è disponibile su G
 
 ## Installazione e attivazione {#installation-activation}
 
-A partire dalla release 2.9.0 dei componenti core, il livello dati è distribuito con i componenti core come clientlib. Non è necessaria alcuna installazione.
+A partire dalla release 2.9.0 dei componenti core, il livello dati è distribuito con i componenti core come libreria client AEM e non è necessaria alcuna installazione. Tutti i progetti generati dall&#39; [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) includono per impostazione predefinita un livello dati attivato.
 
-Tuttavia, il livello dati non è attivato per impostazione predefinita. Per attivare il Livello dati è necessario creare una configurazione [](/help/developing/context-aware-configs.md) contestuale per tale livello:
+Per attivare manualmente il Livello dati è necessario creare una configurazione [](/help/developing/context-aware-configs.md) contestuale per tale livello:
 
-1. Crea la struttura seguente sotto il `/conf` nodo:
+1. Create la struttura seguente sotto la `/conf/<mySite>` cartella, dove `<mySite>` è il nome del progetto del sito:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
-   * Tipo di nodo: `nt:unstructured`
+   * Dove ogni nodo ha un `jcr:primaryType` valore impostato su `nt:unstructured`.
 1. Aggiungete una proprietà booleana chiamata `enabled` e impostatela su `true`.
-1. Aggiungi una `sling:configRef` proprietà al `jcr:content` nodo del sito `/content` (ad es. `/content/<mySite>/jcr:content`) e impostarla su `/conf/<mySite>`.
 
-Una volta attivata questa opzione, potete verificare l’attivazione caricando una pagina del sito all’esterno dell’editor. Quando ispezionate la pagina vedrete che è stato caricato il Livello dati client del Adobe .
+   ![Posizione di DataLayerConfig nel sito di riferimento WKND](../../assets/datalayer-contextaware-sling-config.png)
+
+   *Posizione di DataLayerConfig nel sito di riferimento WKND*
+
+1. Aggiungi una `sling:configRef` proprietà al `jcr:content` nodo del sito `/content` (ad es. `/content/<mySite>/jcr:content`) e impostarla su `/conf/<mySite>` dal passaggio precedente.
+
+1. Una volta attivata questa opzione, potete verificare l’attivazione caricando una pagina del sito all’esterno dell’editor.  Inspect l&#39;origine della pagina e il `<body>` tag devono includere un attributo `data-cmp-data-layer-enabled`
+
+   ```html
+   <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
+       <script>
+         window.adobeDataLayer = window.adobeDataLayer || [];
+         adobeDataLayer.push({
+             page: JSON.parse("{\x22page\u002D6c5d4b9fdd\x22:{\x22xdm:language\x22:\x22en\x22,\x22repo:path\x22:\x22\/content\/wknd\/language\u002Dmasters\/en.html\x22,\x22xdm:tags\x22:[],\x22xdm:template\x22:\x22\/conf\/wknd\/settings\/wcm\/templates\/landing\u002Dpage\u002Dtemplate\x22,\x22@type\x22:\x22wknd\/components\/page\x22,\x22dc:description\x22:\x22WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.\x22,\x22dc:title\x22:\x22WKND Adventures and Travel\x22,\x22repo:modifyDate\x22:\x222020\u002D09\u002D29T07:50:13Z\x22}}"),
+             event:'cmp:show',
+             eventInfo: {
+                 path: 'page.page\u002D6c5d4b9fdd'
+             }
+         });
+       </script>
+   ```
+
+1. È inoltre possibile aprire gli strumenti di sviluppo del browser e nella console l&#39;oggetto `adobeDataLayer` JavaScript dovrebbe essere disponibile. Digita il comando seguente per ottenere lo stato Livello dati della pagina corrente:
+
+   ```js
+   window.adobeDataLayer.getState();
+   ```
 
 ## Schemi di dati dei componenti core {#data-schemas}
 
@@ -96,6 +121,8 @@ id: {
     xdm:language        // page language
 }
 ```
+
+Un `cmp:show` evento viene attivato al caricamento della pagina. Questo evento viene inviato da JavaScript in linea immediatamente sotto il `<body>` tag di apertura, rendendolo il primo evento nella coda di eventi Livello dati.
 
 ### Schema contenitore {#container}
 
@@ -171,13 +198,15 @@ Il seguente [evento](#events) è pertinente allo schema delle risorse:
 
 * `cmp:click`
 
-## Eventi {#events}
+## Eventi componenti core {#events}
 
-Esistono diversi eventi attivati dal livello dati.
+Esistono diversi eventi attivati da Componenti di base tramite il Livello dati. La procedura ottimale per interagire con il Livello dati consiste nel [registrare un listener](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) di eventi e *quindi* intervenire in base al tipo di evento e/o al componente che ha attivato l&#39;evento. In questo modo si evitano potenziali condizioni di gara con gli script asincroni.
+
+Di seguito sono riportati gli eventi forniti dai componenti core AEM:
 
 * **`cmp:click`** - Facendo clic su un elemento selezionabile (un elemento con un `data-cmp-clickable` attributo) il livello dati attiva un `cmp:click` evento.
-* **`cmp:show`** e **`cmp:hide`** - La manipolazione del pannello a soffietto (espandi/comprimi), del carosello (pulsanti Successivo/Precedente) e delle schede (selezione scheda) determina l&#39;attivazione del livello dati `cmp:show` e di un `cmp:hide` evento.
-* **`cmp:loaded`** - Non appena il livello dati viene popolato con i componenti core sulla pagina, il livello dati attiva un `cmp:loaded` evento.
+* **`cmp:show`** e **`cmp:hide`** - La manipolazione del pannello a soffietto (espandi/comprimi), del carosello (pulsanti Successivo/Precedente) e delle schede (selezione scheda) determina l&#39;attivazione del livello dati `cmp:show` e di un `cmp:hide` evento. Un `cmp:show` evento viene inviato anche al caricamento della pagina e dovrebbe essere il primo evento.
+* **`cmp:loaded`** - Non appena il Livello dati viene popolato con i componenti core sulla pagina, il Livello dati attiva un `cmp:loaded` evento.
 
 ### Eventi attivati dal componente {#events-components}
 
@@ -185,10 +214,45 @@ Le tabelle seguenti elencano i componenti core standard che attivano gli eventi 
 
 | Componente | Eventi |
 |---|---|
-| [Navigazione](/help/components/navigation.md) | `cmp:click` |
-| [Navigazione lingua](/help/components/language-navigation.md) | `cmp:click` |
-| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
-| [Pulsante](/help/components/button.md) | `cmp:click` |
-| [Carosello](/help/components/carousel.md) | `cmp:show` e `cmp:hide` |
-| [Schede](/help/components/tabs.md) | `cmp:show` e `cmp:hide` |
 | [Pannello a soffietto](/help/components/accordion.md) | `cmp:show` e `cmp:hide` |
+| [Pulsante](/help/components/button.md) | `cmp:click` |
+| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
+| [Carosello](/help/components/carousel.md) | `cmp:show` e `cmp:hide` |
+| [Navigazione lingua](/help/components/language-navigation.md) | `cmp:click` |
+| [Navigazione](/help/components/navigation.md) | `cmp:click` |
+| [Pagina](/help/components/page.md) | `cmp:show` |
+| [Schede](/help/components/tabs.md) | `cmp:show` e `cmp:hide` |
+| [Teaser](/help/components/teaser.md) | `cmp:click` |
+
+### Informazioni percorso evento {#event-path-info}
+
+Ogni evento Livello dati attivato da un componente core AEM includerà un payload con il seguente oggetto JSON:
+
+```json
+eventInfo: {
+    path: '<component-path>'
+}
+```
+
+Dove `<component-path>` è il percorso JSON del componente nel livello dati che ha attivato l’evento.  Il valore, disponibile tramite `event.eventInfo.path`, è importante in quanto può essere utilizzato come parametro per recuperare lo stato corrente del componente che ha attivato l’evento, `adobeDataLayer.getState(<component-path>)` consentendo al codice personalizzato di accedere a dati aggiuntivi e aggiungerlo al Livello dati.
+
+Esempio:
+
+```js
+function logEventObject(event) {
+    if(event.hasOwnProperty("eventInfo") && event.eventInfo.hasOwnProperty("path")) {
+        var dataObject = window.adobeDataLayer.getState(event.eventInfo.path);
+        console.debug("The component that triggered this event: ");
+        console.log(dataObject);
+    }
+}
+
+window.adobeDataLayer = window.adobeDataLayer || [];
+window.adobeDataLayer.push(function (dl) {
+     dl.addEventListener("cmp:show", logEventObject);
+});
+```
+
+## Esercitazione
+
+Vuoi esplorare più in dettaglio il Livello dati e i Componenti di base? [Guardate questa esercitazione pratica](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
