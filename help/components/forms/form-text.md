@@ -2,10 +2,10 @@
 title: Componente testo modulo
 description: Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,12 +22,12 @@ Il componente Testo modulo consente l’invio di diversi tipi di testo e deve es
 
 La versione corrente del componente Testo modulo è v2, introdotto con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](/help/components/v1/form-text-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](/help/components/v1/form-text-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -89,4 +89,4 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Testo modulo supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
+Il componente Testo modulo supporta il sistema [](/help/get-started/authoring.md#component-styling)Stile AEM.
