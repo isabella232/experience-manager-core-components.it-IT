@@ -1,8 +1,11 @@
 ---
 title: Utilizzo dei componenti core
-description: '"Per iniziare a utilizzare i componenti core nel tuo progetto, devi seguire tre passaggi: scaricate e installate, create componenti proxy, caricate gli stili di base e consentite i componenti nei modelli."'
+description: '"Per iniziare a usare i componenti core nel tuo progetto, devi seguire tre passaggi: scaricate e installate, create componenti proxy, caricate gli stili di base e consentite i componenti nei modelli."'
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 78202dc777b90f795f66873921c55e21ef8a239c
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,38 +17,28 @@ Per iniziare a utilizzare i componenti core nel tuo progetto, sono disponibili q
 1. [Download e installazione](#download-and-install)
 1. [Creare componenti proxy](#create-proxy-components)
 1. [Caricare gli stili di base](#load-the-core-styles)
-1. [Attivare i componenti](#allow-the-components)
+1. [Abilitare i componenti](#allow-the-components)
 
 >[!NOTE]
 >
 >In alternativa, per istruzioni più ampie su come iniziare da zero con la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti, potrebbe essere interessante la seguente esercitazione multiparte:\
->[Guida introduttiva ad AEM Sites - Esercitazione WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+>[Guida introduttiva ad  AEM Sites - Esercitazione WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## Download e installazione {#download-and-install}
 
-Una delle idee che stanno dietro ai componenti core è la flessibilità. Rilasciando nuove versioni dei componenti core più spesso, Adobe è più flessibile nel fornire nuove funzioni. Gli sviluppatori possono a loro volta essere flessibili in base ai componenti che scelgono di integrare nei loro progetti e alla frequenza con cui desiderano aggiornarli.
+Una delle idee che stanno dietro ai componenti core è la flessibilità. Rilasciando nuove versioni dei componenti core più spesso,  Adobe è più flessibile nel fornire nuove funzioni. Gli sviluppatori possono a loro volta essere flessibili in base ai componenti che scelgono di integrare nei loro progetti e alla frequenza con cui desiderano aggiornarli.
 
-Per questo motivo, i componenti core non fanno parte del lancio rapido quando si avvia in modalità di produzione (senza contenuti di esempio). Pertanto, il primo passaggio consiste nel [scaricare l’ultimo pacchetto di contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei vostri ambienti AEM.
+Per questo motivo, i componenti core non fanno parte del lancio rapido quando si avvia in modalità di produzione (senza contenuti di esempio). Pertanto, il primo passaggio consiste nel [scaricare l&#39;ultimo pacchetto di contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei vostri ambienti AEM.
 
 Esistono diversi modi per automatizzare questo processo, ma il modo più semplice per installare rapidamente un pacchetto di contenuti in un&#39;istanza è utilizzare Gestione pacchetti; consultate [Installare i pacchetti](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). Inoltre, una volta eseguita un&#39;istanza di pubblicazione, dovrete replicare il pacchetto all&#39;editore; consultate [Replica dei pacchetti](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
-
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T16:42:59.142-0400
-
-Should we be promoting embedding the core-component package as an artifact in a customer application, reasoning as follows: 1) a customer application is required to leverage core components (at a minimum, proxy components must be defined) 2) a customer application must be updated to leverage new versions of core components (since it requires adjusting the sling:resourceSuperType to point at the new version of the component) It seems the only time theres an advantage to installing a release directly is if a bug-fix (non version-changing) release of core-components is cut, and it doesnt coincide with an application deployment. WDYT? For example, recommend doing this for ACS Commons which has a similar use-case (https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) We can of course keep the instructions for manually deploying, since some will want to do this, or the bug-fix use-case will appear.
-
- -->
 
 ## Creare componenti proxy {#create-proxy-components}
 
 Per motivi illustrati nella sezione Pattern [componente](/help/developing/guidelines.md#proxy-component-pattern) proxy, i componenti core non devono essere direttamente citati dal contenuto. Per evitare che ciò accada, appartengono tutti a un gruppo di componenti nascosto ( `.core-wcm` o `.core-wcm-form`), il che ne impedisce la visualizzazione diretta nell’editor.
 
-Occorre invece creare componenti specifici per il sito, che definiscano il nome e il gruppo del componente desiderato da visualizzare agli autori della pagina, e che facciano riferimento a ciascun componente core come super-tipo. Questi componenti specifici del sito sono talvolta denominati &quot;componenti proxy&quot;, perché non devono contenere nulla e servono principalmente a definire la versione di un componente da utilizzare per il sito. Tuttavia, quando si personalizzano i componenti [](/help/developing/customizing.md)core, questi componenti proxy svolgono un ruolo essenziale per la marcatura e la personalizzazione logica.
+Occorre invece creare componenti specifici per il sito, che definiscano il nome e il gruppo del componente desiderato da visualizzare agli autori della pagina, e che facciano riferimento a ciascun componente di base come super-tipo. Questi componenti specifici del sito sono talvolta denominati &quot;componenti proxy&quot;, perché non devono contenere nulla e servono principalmente a definire la versione di un componente da utilizzare per il sito. Tuttavia, quando si personalizzano i componenti [](/help/developing/customizing.md)core, questi componenti proxy svolgono un ruolo essenziale per la marcatura e la personalizzazione logica.
 
-Pertanto, per ogni componente core che si desidera utilizzare per un sito, è necessario:
+Pertanto, per ogni componente di base che si desidera utilizzare per un sito, è necessario:
 
 1. Create un componente proxy corrispondente nella cartella Components del sito.
 
@@ -66,41 +59,11 @@ Pertanto, per ogni componente core che si desidera utilizzare per un sito, è ne
    jcr:description="Section Heading"
    ```
 
-Ad esempio, guardate il componente [titolo del sito](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/content/title/.content.xml)di riferimento We.Retail, che è un buon esempio di un componente proxy creato in quel modo.
+Ad esempio, guardate il componente [titolo del sito](https://github.com/adobe/aem-guides-wknd/blob/master/ui.apps/src/main/content/jcr_root/apps/wknd/components/title/.content.xml)WKND, che è un buon esempio di un componente proxy creato in quel modo.
 
 ## Caricare gli stili di base {#load-the-core-styles}
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T16:57:16.414-0400
-
-Styles is odd in that most Core Components do not have CSS; very few even have structural CSS (breadcrumbs, list) It may be more apt to title this section: Load the Core JavaScript and CSS or Load the Core Client Libraries ?
-
- -->
-
-<!-- 
-
-Comment Type: annotation
-Last Modified By: ims-author-CE1E2CE451D1F0680A490D45@AdobeID
-Last Modified Date: 2017-04-17T17:41:37.115-0400
-
-This section seems to cover the "sites" clientlibs for core components; Do we need a section for ensuring the editor clientlibs are loaded in the Page Editor? Pending: https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/issues/15
-
- -->
-
-<!-- 
-
-Comment Type: annotation
-Last Modified By: cotescu
-Last Modified Date: 2018-03-09T10:45:52.812-0500
-
-Load the Core Client Libraries sounds way better
-
- -->
-
-1. Se non ancora, create una libreria [](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) client che contenga tutti i file CSS e JS necessari per il sito.
+1. Se non ancora, create una libreria [](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) client che contenga tutti i file CSS e JS necessari per il sito.
 1. Nella libreria client del sito, aggiungere le dipendenze ai componenti core eventualmente necessari. Questa operazione viene eseguita aggiungendo una `embed` proprietà.
 
    Ad esempio, per includere le librerie client di tutti i componenti core v1, la proprietà da aggiungere sarà:
@@ -115,7 +78,7 @@ Load the Core Client Libraries sounds way better
    ]"
    ```
 
-Prima di passare alla sezione successiva, accertati che i componenti proxy e le librerie client siano stati distribuiti nell’ambiente AEM.
+Accertatevi che i componenti proxy e le librerie client siano stati distribuiti nell&#39;ambiente AEM prima di passare alla sezione successiva.
 
 ## Consenti componenti {#allow-the-components}
 
@@ -123,7 +86,7 @@ La procedura seguente viene eseguita nell&#39;Editor [](https://docs.adobe.com/c
 
 1. Nell&#39;Editor modelli, selezionare il Contenitore di layout e aprire il relativo criterio.
 1. Nell’elenco Componenti consentiti, selezionare i componenti proxy creati in precedenza, che devono essere visualizzati sotto il gruppo di componenti assegnato. Al termine, applicate le modifiche.
-1. Facoltativamente, per i componenti che dispongono di una finestra di dialogo di progettazione possono essere preconfigurati.
+1. Facoltativamente, per i componenti che dispongono di una finestra di dialogo di progettazione, possono essere preconfigurati.
 
 È tutto! Nelle pagine create dal modello modificato, è ora possibile utilizzare i componenti appena creati.
 
