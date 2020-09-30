@@ -2,10 +2,10 @@
 title: Componente di navigazione
 description: Il componente Navigazione consente agli utenti di navigare facilmente in una struttura del sito globalizzata.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,7 @@ Supponiamo che il contenuto sia simile al seguente:
 \-- wknd-shop
 ```
 
-Per il sito We.Retail, è probabile che si desideri inserire il componente di navigazione in un modello di pagina come parte dell&#39;intestazione. Una volta fatto parte del modello, è possibile impostare la directory principale **di** navigazione del componente su `/content/wknd/language-masters/en` tale posizione, dal momento che il contenuto principale per tale sito ha inizio. È possibile impostare anche Profondità **struttura di** navigazione in modo che `2` non venga visualizzata l’intera struttura del contenuto dal componente, ma piuttosto i primi due livelli in modo che funga da panoramica.
+Per il WKND del sito, è consigliabile inserire il componente di navigazione in un modello di pagina come parte dell&#39;intestazione. Una volta fatto parte del modello, è possibile impostare la directory principale **di** navigazione del componente su `/content/wknd/language-masters/en` tale posizione, dal momento che il contenuto principale per tale sito ha inizio. È possibile impostare anche Profondità **struttura di** navigazione in modo che `2` non venga visualizzata l’intera struttura del contenuto dal componente, ma piuttosto i primi due livelli in modo che funga da panoramica.
 
 Con il valore Radice **di** navigazione, il componente di navigazione sa che dopo `/content/wknd/language-masters/en` che la navigazione ha inizio e può generare opzioni di navigazione eseguendo la ricorsione verso il basso della struttura del sito di due livelli (come definito dal valore Profondità **della struttura di** navigazione).
 
@@ -92,7 +92,7 @@ Il componente di navigazione eseguirà quindi il rendering del menu in base alla
 
 La versione corrente del componente di navigazione è v1, introdotto con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
@@ -123,13 +123,13 @@ Nella finestra di dialogo di modifica, l’autore del contenuto può definire la
 ![Scheda delle proprietà della finestra di dialogo di modifica del componente di navigazione](/help/assets/navigation-edit-properties.png)
 
 * **Radice** di navigazione - La pagina principale, che verrà utilizzata per generare la struttura ad albero.
-* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero di livelli rispetto al livello principale da escludere. Ad esempio:
+* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero di livelli rispetto al livello principale da escludere. Esempio:
    * 0 = mostra il livello principale
    * 1 = escludere il livello principale
    * 2 = escludere la radice e 1 altro livello verso l&#39;alto
    * etc.
 * **Raccolta di tutte le pagine** figlie - Raccolta di tutte le pagine discendenti della radice di navigazione.
-* **Profondità** struttura di navigazione - Definisce il numero di livelli sotto la struttura di navigazione che il componente deve visualizzare rispetto al livello principale di navigazione (disponibile solo se **Raccolta di tutte le pagine** figlie non è selezionata).
+* **Profondità** struttura di navigazione - Definisce il numero di livelli sotto la struttura di navigazione che il componente deve visualizzare rispetto al livello principale di navigazione (disponibile solo se **Raccoglie tutte le pagine** figlie non è selezionata).
 * **Disattiva ombreggiatura** : se la pagina nella gerarchia è un reindirizzamento, il nome della pagina di reindirizzamento verrà visualizzato al posto della destinazione. Per ulteriori informazioni, consulta [Supporto](#shadow-structure) struttura del sito ombreggiata.
 * **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
@@ -153,7 +153,7 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di i
 ![Finestra di dialogo Progettazione del componente di navigazione](/help/assets/navigation-design.png)
 
 * **Radice** di navigazione - Il valore predefinito della pagina principale della struttura di navigazione, che verrà utilizzato per generare la struttura di navigazione e predefinito quando l&#39;autore del contenuto aggiunge il componente alla pagina.
-* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero predefinito di livelli rispetto al livello principale da escludere. Ad esempio:
+* **Escludi livelli** di radice: spesso la radice non deve essere inclusa nella navigazione. Questa opzione consente di specificare il numero predefinito di livelli rispetto al livello principale da escludere. Esempio:
    * 0 = mostra il livello principale
    * 1 = escludere il livello principale
    * 2 = escludere la radice e 1 altro livello verso l&#39;alto
@@ -164,4 +164,4 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di i
 
 ### Scheda Stili {#styles-tab}
 
-Il componente di navigazione supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
+Il componente Navigazione supporta il sistema [](/help/get-started/authoring.md#component-styling)Stile AEM.
