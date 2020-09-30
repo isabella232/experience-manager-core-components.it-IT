@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client del Adobe  con i componenti core
 description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 7b0edac1b5ffd068443cc4805a0fa97d243b6e9e
+source-git-commit: 79a063951a790261e2f00c33d8a76f31f781da0c
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Per attivare manualmente il Livello dati è necessario creare una configurazione
    * Dove ogni nodo ha un `jcr:primaryType` valore impostato su `nt:unstructured`.
 1. Aggiungete una proprietà booleana chiamata `enabled` e impostatela su `true`.
 
-   ![Posizione di DataLayerConfig nel sito di riferimento WKND](../../assets/datalayer-contextaware-sling-config.png)
+   ![Posizione di DataLayerConfig nel sito di riferimento WKND](/help/assets/datalayer-contextaware-sling-config.png)
 
    *Posizione di DataLayerConfig nel sito di riferimento WKND*
 
@@ -59,7 +59,7 @@ Per attivare manualmente il Livello dati è necessario creare una configurazione
 
 1. È inoltre possibile aprire gli strumenti di sviluppo del browser e nella console l&#39;oggetto `adobeDataLayer` JavaScript dovrebbe essere disponibile. Digita il comando seguente per ottenere lo stato Livello dati della pagina corrente:
 
-   ```js
+   ```javascript
    window.adobeDataLayer.getState();
    ```
 
@@ -238,7 +238,7 @@ Dove `<component-path>` è il percorso JSON del componente nel livello dati che 
 
 Esempio:
 
-```js
+```javascript
 function logEventObject(event) {
     if(event.hasOwnProperty("eventInfo") && event.eventInfo.hasOwnProperty("path")) {
         var dataObject = window.adobeDataLayer.getState(event.eventInfo.path);
