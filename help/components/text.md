@@ -2,10 +2,10 @@
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +24,12 @@ La finestra di dialogo [di](#edit-dialog) modifica offre funzioni di modifica in
 
 La versione corrente del componente Testo è v2, introdotta con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](v1/text-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](v1/text-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -45,13 +45,13 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la docum
 
 ## Il componente Testo e l’Editor Rich Text {#the-text-component-and-the-rich-text-editor}
 
-Il componente di testo Componenti di base sfrutta l’editor Rich Text (RTE) di AEM. L’editor Rich Text offre agli autori dei contenuti un’ampia gamma di funzionalità per la modifica del contenuto testuale. L&#39;editor Rich Text è molto flessibile nella sua configurazione e offre una serie di opzioni. Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consultate gli articoli [Configurare l’editor](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/rich-text-editor.html) Rich Text e [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
+Il componente di testo Componenti di base sfrutta l’editor Rich Text (RTE) AEM. L’editor Rich Text offre agli autori dei contenuti un’ampia gamma di funzionalità per la modifica del contenuto testuale. L&#39;editor Rich Text è molto flessibile nella sua configurazione e offre una serie di opzioni. Per ulteriori informazioni sulla configurazione dell’editor Rich Text, consultate gli articoli [Configurare l’editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) Rich Text e [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
 
 Il resto di questo articolo illustra la configurazione standard del componente di testo Componenti di base con la configurazione standard dell’editor Rich Text.
 
 >[!NOTE]
 >
->Solo le opzioni abilitate dalle configurazioni [dell’interfaccia utente dell’editor Rich Text](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html) sono disponibili nel componente Testo.
+>Solo le opzioni abilitate dalle configurazioni [dell’interfaccia utente dell’editor Rich Text](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) sono disponibili nel componente Testo.
 
 ## Edit Dialog {#edit-dialog}
 
@@ -123,8 +123,8 @@ Utilizzare questa opzione per convertire il testo selezionato in un collegamento
 
 * Immettere il percorso
    * Utilizzare la finestra di dialogo Apri selezione per scegliere un percorso in AEM
-   * Se il collegamento non è in AEM, immettete l’URL assoluto
-      * I percorsi non assoluti vengono interpretati come relativi ad AEM
+   * Se il collegamento non è all’interno di AEM, immettete l’URL assoluto
+      * I percorsi non assoluti vengono interpretati come relativi a AEM
 * Immettere testo descrittivo alternativo per il collegamento
 * Seleziona il comportamento del collegamento
    * Destinazione
@@ -132,6 +132,7 @@ Utilizzare questa opzione per convertire il testo selezionato in un collegamento
    * Nuova scheda
    * Frame principale
    * Frame superiore
+
    Toccate o fate clic sul segno di spunta per applicare il collegamento o sulla x per annullare.
 
 ### Scollega
@@ -257,7 +258,7 @@ Utilizzato per inserire una tabella nel testo. Selezionando questa opzione si ap
 
 Utilizzato per il controllo dell&#39;ortografia del contenuto di testo. Eventuali errori ortografici sono sottolineati con linee rosse rotte.
 
-Ulteriori dettagli sul controllo ortografia e la personalizzazione dei dizionari di controllo ortografia sono disponibili nel documento [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
+Ulteriori dettagli sul controllo ortografia e la personalizzazione dei dizionari di controllo ortografia sono disponibili nel documento [Configurare i plug-in](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html)Editor Rich Text.
 
 ### Caratteri speciali {#special-characters}
 
@@ -367,4 +368,4 @@ L’opzione per l’inserimento di caratteri speciali può essere attivata o dis
 
 ## Scheda Stili {#styles-tab}
 
-Il componente Testo supporta il sistema [di](/help/get-started/authoring.md#component-styling)stile di AEM.
+Il componente Testo supporta il sistema [](/help/get-started/authoring.md#component-styling)di stile AEM.
