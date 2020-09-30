@@ -2,10 +2,10 @@
 title: Elenca componente
 description: Il componente Elenco componenti core consente di creare facilmente elenchi dinamici e statici.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,12 +22,12 @@ Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco di
 
 La versione corrente del componente Elenco è v2, introdotto con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](v1/list-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](v1/list-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -80,19 +80,19 @@ L&#39;elenco può essere creato utilizzando un elenco fisso di elementi.
 
 Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo elemento nell’elenco.
 
-* Immettete il testo per l’elemento nell’elenco o utilizzate la finestra di dialogo **di** selezione per scegliere un elemento da AEM.
+* Immettete il testo per l’elemento nell’elenco o utilizzate la finestra di dialogo **di** selezione per scegliere un elemento dall’AEM.
 * Usate la maniglia di trascinamento per ridisporre gli elementi nell’elenco.
 * Utilizzate l&#39;icona del cestino per eliminare gli elementi nell&#39;elenco.
 
 #### Ricerca {#search-options}
 
-L&#39;elenco può essere creato utilizzando i risultati di una ricerca di contenuto AEM.
+L&#39;elenco può essere creato utilizzando i risultati di una ricerca di AEM contenuto.
 
 ![Opzioni elenco di ricerca](/help/assets/list-edit-search.png)
 
 * **Query** di ricerca Stringa per la quale verrà eseguita una ricerca full-text per generare gli elementi elenco
 * **Cerca nella** posizione in cui eseguire la ricerca
-   * Utilizzare la finestra di dialogo **** Selezione per scegliere il percorso in AEM
+   * Utilizzare la finestra di dialogo **di** selezione per scegliere la posizione in AEM
    * Usa pagina corrente se lasciata vuota
 
 #### Tag {#tags}
@@ -102,7 +102,7 @@ L&#39;elenco può essere creato utilizzando pagine che corrispondono a determina
 ![Opzioni elenco dei tag](/help/assets/list-edit-tags.png)
 
 * **Pagina** padre da cui deve iniziare la corrispondenza del tag
-   * Utilizzare la finestra di dialogo **** Selezione per scegliere il percorso in AEM
+   * Utilizzare la finestra di dialogo **di** selezione per scegliere la posizione in AEM
    * Usa pagina corrente se lasciata vuota
 * **Tag** per i tag da associare
    * Utilizzare la finestra di dialogo **Sfoglia** per selezionare i tag
