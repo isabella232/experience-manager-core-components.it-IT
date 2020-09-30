@@ -2,10 +2,10 @@
 title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Le larghezze delle immagini, il ritaglio e altre impostazioni possono essere def
 
 ## Funzioni reattive {#responsive-features}
 
-Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
+Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo [di](#design-dialog) progettazione può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare, a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
@@ -30,12 +30,12 @@ Inoltre, il componente Immagine supporta il caricamento lento per posticipare il
 
 La versione corrente del componente Immagine è v2, introdotta con la release 2.0.0 dei componenti core a gennaio 2018, ed è descritta in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.3 | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Compatibile | Compatibile | Compatibile |
-| [v1](v1/image-v1.md) | Compatibile | Compatibile | Compatibile | - |
+| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Compatibile | Compatibile | Compatibile |
+| [v1](v1/image-v1.md) | Compatibile | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
 
@@ -53,7 +53,7 @@ Per motivi di sicurezza, l’SVG originale non viene mai chiamato direttamente d
 
 >[!CAUTION]
 >
->Il supporto per SVG richiede la release 2.1.0 dei componenti core o versioni successive insieme al [service pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o al [service pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) per AEM 6.3 o versioni successive per supportare le [nuove funzioni](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html) dell’editor di immagini in AEM.
+>Il supporto per SVG richiede la release 2.1.0 dei componenti core o versioni successive insieme al [service pack 2](https://docs.adobe.com/content/help/it-IT/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o versioni successive per supportare le funzioni [dell’editor di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) immagini all’interno di AEM.
 
 ## Output componente di esempio {#sample-component-output}
 
@@ -91,13 +91,14 @@ Oltre alla finestra di dialogo [standard per la](#edit-dialog) modifica e la [](
    * Ottieni testo alternativo da DAM: se questa opzione è attivata, il testo alternativo dell&#39;immagine verrà popolato con il valore dei `dc:description` metadati in DAM.
 
 * **Didascalia** Ulteriori informazioni sull’immagine, visualizzate per impostazione predefinita sotto l’immagine.
-   * **Ottieni didascalia da DAM** Se questa opzione è selezionata, il testo della didascalia dell’immagine verrà popolato con il valore dei `dc:title` metadati in DAM.
+   * **Ottieni didascalia da DAM** Se questa opzione è selezionata, il testo della didascalia dell&#39;immagine verrà popolato con il valore 
+`dc:title` in DAM.
    * **Visualizza la didascalia come pop-up** Se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
 
 * **Collegamento**
    * Collegate l’immagine a un’altra risorsa.
-   * Utilizzate la finestra di dialogo di selezione per collegarvi a un’altra risorsa AEM.
-   * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi ad AEM.
+   * Utilizzare la finestra di dialogo di selezione per collegarsi a un&#39;altra risorsa AEM.
+   * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi a AEM.
 
 * **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
@@ -118,6 +119,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
    * Scegliete l’opzione Mano **** libera per definire il ritaglio personalizzato.
    * Scegliete l’opzione **Rimuovi ritaglio** per visualizzare la risorsa originale.
+
    Una volta selezionata l’opzione di ritaglio, usate le maniglie blu per ridimensionare il ritaglio sull’immagine.
 
    ![Opzioni di ritaglio](/help/assets/image-crop-options.png)
@@ -205,14 +207,16 @@ Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli a
 
    ![Scheda Funzioni della finestra di dialogo Progettazione del componente Immagine](/help/assets/image-design-features-source.png)
 
-   Selezionate l’opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuti di caricare immagini dal computer locale. Per obbligare gli autori di contenuti a selezionare solo le risorse da AEM, deselezionate questa opzione.
+   Selezionate l’opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuti di caricare immagini dal computer locale. Per obbligare gli autori del contenuto a selezionare solo le risorse da AEM, deselezionate questa opzione.
 
 * Orientamento
 
    ![Scheda Funzioni della finestra di dialogo Progettazione del componente Immagine](/help/assets/image-design-features-orientation.png)
 
-* **Ruota** Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare l&#39;opzione **Ruota a destra** .
-* **Capovolgi** Utilizzate questa opzione per consentire all’autore del contenuto di utilizzare le opzioni **Rifletti in orizzontale** e **Rifletti in verticale** .
+* **Ruota** Utilizzate questa opzione per consentire all&#39;autore del contenuto di utilizzare il pulsante 
+**Ruota a destra** .
+* **Capovolgi** Utilizzate questa opzione per consentire all’autore del contenuto di utilizzare la funzione 
+**Opzioni Rifletti in orizzontale** e **Rifletti in verticale** .
 
    >[!CAUTION]
    >
@@ -228,6 +232,7 @@ Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli a
    * Immettete il rapporto numerico dell’aspetto.
    * Usate le maniglie di trascinamento per riordinare l’ordine delle proporzioni
    * Usate l’icona del cestino per eliminare le proporzioni.
+
    >[!CAUTION]
    >
    >Note that in AEM, crop aspect ratios are defined as **height/width**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli autori dei contenuti non saranno a conoscenza di alcuna differenza, purché sia stato specificato un nome chiaro per il rapporto, dal momento che il nome viene visualizzato nell’interfaccia utente e non per il rapporto stesso.
