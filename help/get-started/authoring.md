@@ -2,10 +2,10 @@
 title: Authoring con i componenti core
 description: In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine create. I componenti core offrono funzionalità di authoring flessibili e avanzate.
 translation-type: tm+mt
-source-git-commit: 4281f6421482682f603f6a7f5e18df61f9a6d98c
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ I componenti core offrono funzionalità di authoring flessibili e avanzate. Il s
 
 Per conoscere i componenti core e vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library)componenti.
 
-Per un’introduzione più dettagliata e orientata agli sviluppatori all’implementazione dei componenti core in un progetto AEM, utilizzate l’archetipo [di progetto](/help/developing/archetype/overview.md) AEM e controllate [l’esercitazione WKND.](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Per un&#39;introduzione più dettagliata e orientata agli sviluppatori all&#39;implementazione dei componenti core in un progetto AEM, utilizzate l&#39; [AEM Project Archetype](/help/developing/archetype/overview.md) , controllate [l&#39;esercitazione WKND.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Per un’introduzione più dettagliata e orientata agli sviluppatori all’imple
 
 >[!CAUTION]
 >
->I componenti core [richiedono AEM 6.3 o versione successiva](/help/versions.md) e richiedono l’uso di modelli [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)modificabili. Non funzionano né con l’interfaccia classica né con modelli statici.
+>I componenti core [richiedono AEM 6.4 o versioni successive](/help/versions.md) e richiedono l’uso di modelli [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)modificabili. Non funzionano né con l’interfaccia classica né con modelli statici.
 
 ## Authoring con i componenti core {#authoring-with-core-components}
 
@@ -73,16 +73,12 @@ Poiché i componenti core possono essere preconfigurati dagli autori dei modelli
 
 ### Attribuzione stile componente {#component-styling}
 
-Gli stili della maggior parte dei componenti core possono essere definiti utilizzando il sistema di stile di AEM.
+Gli stili della maggior parte dei componenti core possono essere definiti utilizzando il sistema di stile AEM.
 
 * Un autore di un modello può definire gli stili disponibili per un particolare componente nella finestra di dialogo Progettazione del componente.
 * L’autore del contenuto può quindi scegliere quali stili applicare quando aggiunge il componente e crea il contenuto.
 
 Per ulteriori dettagli, consulta la documentazione [Style System](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/style-system.html) .
-
->[!NOTE]
->
->In AEM 6.3, per abilitare la funzione del sistema di stile è necessario Service Pack 2 (6.3.2.0) o successivo.
 
 ## Riferimenti per sviluppatori {#developer-resources}
 
