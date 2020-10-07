@@ -2,10 +2,10 @@
 title: Incluse le librerie client
 description: Esistono diversi modi per includere le librerie client, a seconda del caso di utilizzo.
 translation-type: tm+mt
-source-git-commit: 24f718be2ba66113eda970c213c6ce4baec51752
+source-git-commit: 87e39566617f64b91bd8e98b3779b9b5c426c31c
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -49,7 +49,7 @@ Per fare lo stesso per più categorie di libreria client contemporaneamente, è 
 ## Solo CSS o JS {#css-js-only}
 
 Spesso, si desidera inserire i CSS inclusi nell&#39; `head` elemento HTML, e il JS include appena prima della chiusura dell&#39; `body` elemento.
-&#x200B;
+
 Per `head`includere solo il CSS e non il JS, utilizzate `cssIncludes`:
 
 ```html
@@ -84,7 +84,9 @@ Per applicare gli attributi agli `link` elementi CSS e/o agli `script` elementi 
 
 Attributi CSS `link` che possono essere passati a `jsAndCssIncludes` e `cssIncludes`:
 
-* `media`: stringa &#x200B; attributi JS `script` che possono essere passati a `jsAndCssIncludes` e `jsIncludes`:
+* `media`: stringa
+
+Attributi JS `script` che possono essere passati a `jsAndCssIncludes` e `jsIncludes`:
 
 * `async`: booleano
 * `defer`: booleano
@@ -94,7 +96,7 @@ Attributi CSS `link` che possono essere passati a `jsAndCssIncludes` e `cssInclu
 ## Indesign {#inlining}
 
 In alcuni casi, per l’ottimizzazione o per e-mail o [AMP,](amp.md) potrebbe essere necessario allineare CSS o JS nell’output dell’HTML.
-&#x200B;
+
 Per agganciare il CSS, `cssInline` potete utilizzarlo, nel qual caso dovete scrivere l&#39; `style` elemento circostante:
 
 ```html
