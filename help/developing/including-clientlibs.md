@@ -2,10 +2,10 @@
 title: Incluse le librerie client
 description: Esistono diversi modi per includere le librerie client, a seconda del caso di utilizzo.
 translation-type: tm+mt
-source-git-commit: 87e39566617f64b91bd8e98b3779b9b5c426c31c
+source-git-commit: f74883359561e5ff6ca679d58bedbdeb100f7b0b
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -84,10 +84,7 @@ Per applicare gli attributi agli `link` elementi CSS e/o agli `script` elementi 
 
 Attributi CSS `link` che possono essere passati a `jsAndCssIncludes` e `cssIncludes`:
 
-* `media`: stringa
-
-Attributi JS `script` che possono essere passati a `jsAndCssIncludes` e `jsIncludes`:
-
+* `media`: gli attributi JS `script` stringa che possono essere passati a `jsAndCssIncludes` e `jsIncludes`:
 * `async`: booleano
 * `defer`: booleano
 * `onload`: stringa
