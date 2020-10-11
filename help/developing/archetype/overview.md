@@ -2,10 +2,10 @@
 title: AEM Project Archetype
 description: Un modello di progetto per applicazioni basate su AEM
 translation-type: tm+mt
-source-git-commit: 8b8f0ad528c77cfb6080981438786275bd9fbef1
+source-git-commit: 52f2c4dbba54261863a98fa2b992fe4690da3511
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 9%
+source-wordcount: '1035'
+ht-degree: 10%
 
 ---
 
@@ -41,6 +41,7 @@ AEM Project Archetype è un modello Maven che crea un progetto Adobe Experience 
 * **Sistema di stile:** Evitate di creare componenti personalizzati consentendo agli autori di [applicare stili](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) diversi.
 * **Build front-end:** Gli sviluppatori front-end possono [mascherare AEM pagine](uifrontend.md#webpack-dev-server) e [creare librerie](uifrontend.md) client con Webpack, TypeScript e SASS.
 * **WebApp-Ready:** Per i siti che utilizzano [React](uifrontend-react.md) o [Angular](uifrontend-angular.md), utilizzate [SPA SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/developing.html) per mantenere la creazione [contestuale dell’app](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
+* **Commerce abilitato:** Per progetti che desiderano integrare [AEM Commerce](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/commerce/home.html) con soluzioni di commercio come [Magento](https://magento.com/) utilizzando i componenti [core di](https://github.com/adobe/aem-core-cif-components)Commerce.
 * **Esempio di codice:** Estrarre il componente HelloWorld e i modelli, servlet, filtri e pianificatori di esempio.
 * **Apri origine:** Se qualcosa non è come dovrebbe, [contribuire](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) ai vostri miglioramenti!
 
