@@ -2,9 +2,9 @@
 title: Configurazione e componenti core in base al contesto Sling
 description: I componenti core sfruttano le configurazioni basate sul contesto Sling per alcune funzioni
 translation-type: tm+mt
-source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
+source-git-commit: 11e2c6da0fa93084b601437fd45fd65dd8d73231
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Le configurazioni basate sul contesto sono una funzione di Sling e sono configur
 
 ## Configurazione Sling in base al contesto {#context-aware-configurations}
 
-Il sito potrebbe richiedere configurazioni diverse per diverse aree del sito, ad esempio dove alcuni parametri possono essere condivisi e richiedere l&#39;ereditarietà per i contesti nidificati e i valori di fallback globali. Le configurazioni basate sul contesto Sling lo consentono.
+Il sito potrebbe richiedere configurazioni diverse per diverse aree del sito, ad esempio dove alcuni parametri possono essere condivisi e richiedere l&#39;ereditarietà per i contesti nidificati e i valori di fallback globali. AEM utilizza le configurazioni basate sul contesto Sling, che consentono questa possibilità.
 
-Per informazioni dettagliate sulle configurazioni basate sul contesto Sling, [consultate la documentazione Apache.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Per informazioni dettagliate sulle configurazioni in AEM, [consultate la documentazione Configurations and Configuration Browser (Configurazioni e browser di configurazione).](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 ## Uso nei componenti core {#core-components}
 
