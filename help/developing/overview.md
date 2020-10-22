@@ -2,10 +2,10 @@
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, marcatura snella ed esportazione JSON di contenuti.
 translation-type: tm+mt
-source-git-commit: b08fc5ec49126f7be19b7433a3d71de877d9e442
+source-git-commit: d2e69e5657ed32cc0579579df49ee083212b9333
 workflow-type: tm+mt
 source-wordcount: '1442'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi, si consiglia di utilizzarli nei nuovi progetti AEM. Per i progetti esistenti, la migrazione dei componenti dovrà essere eseguita nell’ambito di un’attività più ampia, ad esempio in occasione di un progetto di rebranding o riformattazione generale.
 
-Di conseguenza, Adobe fornisce le seguenti raccomandazioni:
+Pertanto,  Adobe formula le seguenti raccomandazioni:
 
 * **Nuovi progetti** I nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l’architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i componenti [](/help/versions.md#foundation-component-support)di base.
 * **La** raccomandazione progetti [esistenti viene mantenuta utilizzando i componenti](/help/versions.md#foundation-component-support)di base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
@@ -35,9 +35,9 @@ I componenti core sono potenti, flessibili e facili da usare e personalizzare. [
 
 Eventuali nuovi progetti devono essere implementati con i componenti core. Tuttavia, i progetti esistenti avranno in genere ampie implementazioni dei componenti di base.
 
-Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) spesso offre la possibilità di eseguire la migrazione ai componenti core. Per facilitare questa migrazione, Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l&#39;adozione dei componenti core e della più recente tecnologia AEM.
+Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) spesso offre la possibilità di eseguire la migrazione ai componenti core. Per facilitare questa migrazione,  Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l&#39;adozione dei componenti core e della tecnologia AEM più recente.
 
-[Gli strumenti](http://opensource.adobe.com/aem-modernize-tools/) di modernizzazione AEM consentono di convertire facilmente:
+[Gli AEM Strumenti](http://opensource.adobe.com/aem-modernize-tools/) di Modernizzazione consentono una facile conversione di:
 
 * Modelli statici in modelli modificabili
 * Configurazioni di progettazione in policy
@@ -48,13 +48,13 @@ Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la rel
 
 >[!NOTE]
 >
->Gli strumenti AEM Modernize sono uno sforzo della community e non sono supportati o giustificati da Adobe.
+>Gli strumenti AEM Modernizza sono uno sforzo della comunità e non sono supportati o giustificati dal Adobe .
 
 ## Supporto dei componenti core {#core-component-support}
 
 I componenti core sono parte integrante di AEM e sono supportati così come sono. Sono soggetti agli stessi termini e condizioni dei prodotti forniti con Quickstart.
 
-Come per le altre funzioni del prodotto AEM, la regola generale è: I componenti vengono inizialmente dichiarati obsoleti e i primi rimossi per la seguente release di AEM. Questo consente ai clienti di passare alla nuova versione del componente almeno un ciclo di rilascio prima di lasciarne indietro il supporto.
+Come per altre funzionalità AEM prodotto, la regola generale è: I componenti vengono inizialmente dichiarati obsoleti e i primi rimossi per la release AEM successiva. Questo consente ai clienti di passare alla nuova versione del componente almeno un ciclo di rilascio prima di lasciarne indietro il supporto.
 
 La versione di ogni componente indica chiaramente le versioni di AEM che supporta. Quando cessa il supporto per una versione di AEM, cessa anche il supporto dei componenti core per tale versione di AEM.
 
@@ -78,9 +78,9 @@ Per informazioni dettagliate sulle funzionalità di authoring e sulle opzioni pe
 | Gestione versioni | [Per il modello e l&#39;HTL](guidelines.md) | Nessuno |
 | Test | Prove di unità + Test di integrazione | Test di integrazione |
 | Consegna | [Tramite GitHub pubblico](https://github.com/adobe/aem-core-wcm-components) | Via Quickstart |
-| Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) | Proprietà Adobe |
+| Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) |  Adobe proprietario |
 | Contributo | Tramite richiesta pull | Impossibile |
-| Accessibilità | Completamente conforme allo standard []WCAG 2.0 AA (https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Elenco componenti {#component-list}
 
@@ -124,8 +124,8 @@ Per una panoramica della road map dei componenti core, consulta il [progetto wik
 
 ## Aggiornamento dei componenti core {#upgrade-of-core-components}
 
-Un vantaggio dei componenti con versione è rappresentato dal fatto che consente di separare la migrazione a una nuova versione di AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni di componenti, è possibile migrare singolarmente ogni componente alla nuova versione.
+Un vantaggio dei componenti con versione è rappresentato dal fatto che consente di separare la migrazione a una nuova versione AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni di componenti, è possibile migrare singolarmente ogni componente alla nuova versione.
 
-Le migrazioni a una nuova versione di AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione di AEM in cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Le migrazioni a una nuova versione AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione AEM a cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe tuttavia essere necessario adattare le personalizzazioni, per ulteriori dettagli consultate la pagina [Personalizzazione dei componenti](customizing.md#upgrade-compatibility-of-customizations) core.
