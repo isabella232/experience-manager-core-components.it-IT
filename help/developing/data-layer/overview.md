@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client del Adobe  con i componenti core
 description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 79a063951a790261e2f00c33d8a76f31f781da0c
+source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '893'
+ht-degree: 3%
 
 ---
 
@@ -256,3 +256,7 @@ window.adobeDataLayer.push(function (dl) {
 ## Esercitazione
 
 Vuoi esplorare più in dettaglio il Livello dati e i Componenti di base? [Guardate questa esercitazione pratica](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+
+>[!TIP]
+>
+>Per scoprire ulteriormente la flessibilità del Livello dati, consulta le opzioni di integrazione, tra cui come abilitare il Livello dati per i componenti personalizzati.
