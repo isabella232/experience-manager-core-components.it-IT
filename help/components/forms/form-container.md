@@ -2,10 +2,10 @@
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: 499047a8c15a6423a56b370f41fd020740481f80
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Il componente Contenitore di moduli per componenti core consente la creazione di
 
 Il componente Contenitore modulo consente di creare moduli e funzioni semplici per l&#39;invio di informazioni, mediante il supporto di semplici moduli WCM e l&#39;uso di una struttura nidificata per consentire l&#39;aggiunta di altri componenti modulo.
 
-Utilizzando la finestra di dialogo [di](#configure-dialog) configurazione, l&#39;Editor contenuto può definire l&#39;azione attivata dall&#39;invio del modulo, dove memorizzare il contenuto inviato e se avviare un flusso di lavoro. L’autore del modello può utilizzare la finestra di dialogo [di](#design-dialog) progettazione per definire i componenti consentiti e le relative mappature in modo simile alla finestra di dialogo di progettazione per il contenitore di layout [standard nell’editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)modelli.
+Utilizzando la finestra di dialogo [di](#configure-dialog) configurazione, l&#39;Editor contenuto può definire l&#39;azione attivata dall&#39;invio del modulo, l&#39;URL che deve gestire l&#39;invio e se è necessario avviare un flusso di lavoro. L’autore del modello può utilizzare la finestra di dialogo [di](#design-dialog) progettazione per definire i componenti consentiti e le relative mappature in modo simile alla finestra di dialogo di progettazione per il contenitore di layout [standard nell’editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)modelli.
 
 >[!NOTE]
 >
@@ -53,10 +53,23 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 A seconda del tipo **di** azione selezionato, le opzioni disponibili all&#39;interno del contenitore cambiano. I tipi di azione disponibili sono:
 
+* [Pubblica dati modulo](#post-data)
 * [E-mail](#mail)
 * [Contenuto store](#store-content)
 
 Indipendentemente dal tipo, esistono impostazioni [](#general-settings) generali applicabili a ogni azione.
+
+### Pubblica dati modulo {#post-data}
+
+Quando il modulo viene inviato, il tipo di azione dei dati del modulo di posta passa i dati inviati a terzi come JSON per l&#39;elaborazione.
+
+![Opzioni di inserimento dati modulo nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-post.png)
+
+* **Endpoint** - Il servizio HTTPS completo che elaborerà i dati
+* **Messaggio** di errore - Messaggio da visualizzare se l&#39;invio non ha esito positivo
+
+>[!TIP]
+>Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l&#39;elaborazione dei dati del modulo inoltrato. [Per ulteriori informazioni, consulta la documentazione tecnica su GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
 ### E-mail {#mail}
 
@@ -82,6 +95,12 @@ Quando il modulo viene inviato, il contenuto del modulo viene memorizzato in una
 * **Percorso** contenuto - Percorso dell&#39;archivio dei contenuti in cui è memorizzato il contenuto inviato
 * **Visualizza dati** - Toccate o fate clic per visualizzare i dati inviati memorizzati come JSON
 * **Avvia flusso di lavoro** - Configura l&#39;avvio di un flusso di lavoro con il contenuto memorizzato come payload al momento dell&#39;invio del modulo
+
+>[!NOTE]
+>
+>Al fine di semplificare la gestione dei dati utente e di garantire la separazione delle preoccupazioni, si sconsiglia in genere di archiviare contenuti generati dagli utenti all’interno del repository.
+>
+>Utilizzate invece il tipo di azione [Pubblica dati](#post-data) modulo per trasmettere il contenuto dell&#39;utente a un provider di servizi dedicato.
 
 ### Impostazioni generali {#general-settings}
 
