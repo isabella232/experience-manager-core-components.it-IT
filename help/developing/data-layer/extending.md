@@ -2,9 +2,9 @@
 title: 'Estensione del livello dati client del Adobe '
 description: Il livello dati client del Adobe  può essere esteso in base ad alcuni pattern di base
 translation-type: tm+mt
-source-git-commit: 896ed679ed3351cb309a34b38bf97fe81adc2cfe
+source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ Un componente di base come il componente [](https://github.com/adobe/aem-core-wc
 Pertanto, il modello Sling personalizzato potrebbe avere un `getData` metodo che restituisce un oggetto che si estende `ComponentData` per restituire altri campi.
 
 In questo modo, verrà aggiunto un `data-cmp-data-layer` attributo all’elemento HTML del componente con il JSON dei dati che verranno popolati nel livello dati. A questo punto, è possibile implementare script che ascoltino questi dati o gli eventi correlati.
+
+>[!TIP]
+>
+>Per scoprire ulteriormente la flessibilità del Livello dati, consulta le opzioni di integrazione, tra cui come abilitare il Livello dati per i componenti personalizzati.
