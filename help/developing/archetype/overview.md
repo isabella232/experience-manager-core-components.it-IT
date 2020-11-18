@@ -2,10 +2,10 @@
 title: AEM Project Archetype
 description: Un modello di progetto per applicazioni basate su AEM
 translation-type: tm+mt
-source-git-commit: 52f2c4dbba54261863a98fa2b992fe4690da3511
+source-git-commit: c9ec069a9eb12b8625be09d1c38dcaaf437bd5cb
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 10%
+source-wordcount: '1280'
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ AEM Project Archetype è un modello Maven che crea un progetto Adobe Experience 
 * **Intestazione e piè di pagina:** Assemblate e localizzate i componenti senza codice, utilizzando le funzioni di [localizzazione dei componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/get-started/localization.html).
 * **Sistema di stile:** Evitate di creare componenti personalizzati consentendo agli autori di [applicare stili](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) diversi.
 * **Build front-end:** Gli sviluppatori front-end possono [mascherare AEM pagine](uifrontend.md#webpack-dev-server) e [creare librerie](uifrontend.md) client con Webpack, TypeScript e SASS.
-* **WebApp-Ready:** Per i siti che utilizzano [React](uifrontend-react.md) o [Angular](uifrontend-angular.md), utilizzate [SPA SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/developing.html) per mantenere la creazione [contestuale dell’app](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
+* **WebApp-Ready:** Per i siti che utilizzano [React](uifrontend-react.md) o [Angular](uifrontend-angular.md), utilizzate l’SDK [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/developing.html) SPA per conservare la creazione [contestuale dell’app](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
 * **Commerce abilitato:** Per progetti che desiderano integrare [AEM Commerce](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/commerce/home.html) con soluzioni di commercio come [Magento](https://magento.com/) utilizzando i componenti [core di](https://github.com/adobe/aem-core-cif-components)Commerce.
 * **Esempio di codice:** Estrarre il componente HelloWorld e i modelli, servlet, filtri e pianificatori di esempio.
 * **Apri origine:** Se qualcosa non è come dovrebbe, [contribuire](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) ai vostri miglioramenti!
@@ -59,7 +59,7 @@ mvn -B archetype:generate \
  -D groupId="com.mysite" \
 ```
 
-* Impostare `aemVersion=cloud` per [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
+* Set `aemVersion=cloud` for [AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
    Impostato `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)o locale.
 La dipendenza Componenti di base viene aggiunta solo per le versioni Aem non cloud, in quanto i Componenti di base vengono forniti come Cloud Service OOOTB per AEM.
 * Regolate `appTitle="My Site"` per definire il titolo del sito Web e i gruppi di componenti.
@@ -80,7 +80,7 @@ La dipendenza Componenti di base viene aggiunta solo per le versioni Aem non clo
 | `aemVersion` | `cloud` | AEM versione di destinazione (può essere `cloud` AEM come [Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html); oppure `6.5.0`, `6.4.4` per i servizi [gestiti](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) Adobe o locali). |
 | `sdkVersion` | `latest` | Quando è possibile specificare `aemVersion=cloud` una versione [SDK](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) (ad es. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Include una configurazione dispatcher sia per il cloud che per AMS/locale, a seconda del valore di `aemVersion` (può essere `y` o `n`). |
-| `frontendModule` | `general` | Include un modulo di generazione frontale Webpack che genera le librerie client (può essere `general` o `none` per siti regolari); può essere `angular` o `react` per un&#39;app a pagina singola che implementa l&#39;Editor [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)SPA). |
+| `frontendModule` | `general` | Include un modulo di generazione frontale Webpack che genera le librerie client (può essere `general` o `none` per siti regolari); può essere `angular` o `react` per un&#39;app a pagina singola che implementa l&#39;Editor [di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)SPA). |
 | `language` | `en` | Codice della lingua (ISO 639-1) per creare la struttura del contenuto da (ad esempio `en`, `deu`). |
 | `country` | `us` | Codice del paese (ISO 3166-1) per creare la struttura del contenuto da (ad esempio `US`). |
 | `singleCountry` | `y` | Include una struttura del contenuto master del linguaggio (può essere `y`o `n`). |
@@ -90,6 +90,21 @@ La dipendenza Componenti di base viene aggiunta solo per le versioni Aem non clo
 | `commerceEndpoint` |  | Obbligatorio solo per CIF. Endpoint opzionale del servizio GraphQL del sistema commerciale da utilizzare (ad esempio `https://hostname.com/grapql`). |
 | `datalayer` | `y` | Attiva l&#39;integrazione con [livello](/help/developing/data-layer/overview.md)dati client Adobe. |
 | `amp` | `n` | Abilita il supporto [AMP](/help/developing/amp.md) per i modelli di progetto generati. |
+
+## Modulo di analisi {#analyzer-module}
+
+Il plugin AEM analizzatore Maven analizza la struttura dei vari progetti di pacchetti di contenuto.
+
+Per informazioni su come includerlo in un progetto di [AEM Maven, consulta la documentazione](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) di Analytics Maven. Il plugin è incluso in AEM Maven archetype versione 25 e superiore.
+
+Di seguito è riportata una tabella che descrive gli analizzatori eseguiti come parte di questo passaggio. Alcuni vengono eseguiti nell’SDK locale, mentre altri vengono eseguiti solo durante la distribuzione della pipeline di Cloud Manager.
+
+| Modulo | Funzione, esempio e risoluzione dei problemi | SDK locale | Cloud Manager |
+|---|---|---|---|
+| `api-regions-exportsimports` | Controlla se tutti i bundle OSGI presentano dichiarazioni Import-Package soddisfatte dalla dichiarazione Export-Package di altri pacchetti inclusi nel progetto Maven. <p> </p> Per risolvere i problemi, controllate il manifesto del bundle che si prevede di esportare per determinare se è stato utilizzato il nome errato o la versione errata. | Sì | Sì |
+| `requirements-capabilities` | Controlla se tutte le dichiarazioni di requisiti effettuate nei bundle OSGI sono soddisfatte dalle dichiarazioni di capacità di altri bundle inclusi nel progetto Maven. <p> </p> Per risolvere i problemi, controllate il manifesto del bundle che si prevede di dichiarare una funzionalità per determinare il motivo della sua assenza. | Sì | Sì |
+| `bundle-content` | Visualizza un avviso se un bundle contiene il contenuto iniziale specificato con Sling-Initial-Content, che è problematico in AEM come ambiente cluster di Cloud Service. | Sì | Sì |
+| `api-regions-crossfeature-dups` | Verifica che i bundle OSGI del cliente non abbiano dichiarazioni di pacchetto di esportazione che ignorano AEM come API pubblica  Cloud Service | Sì | Sì |
 
 ## Requisiti di sistema
 
