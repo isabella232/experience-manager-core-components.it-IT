@@ -2,7 +2,7 @@
 title: Versioni dei componenti core
 description: I componenti core sono pubblicati come versioni che possono contenere più versioni degli stessi componenti core. In questo documento vengono illustrati i rilasci e le versioni e viene illustrato come comprendere la compatibilità con i componenti core e i AEM.
 translation-type: tm+mt
-source-git-commit: 850fbeec3cb31f4ea6873daa2555953684fd5a8d
+source-git-commit: 2f3d2499e9f6c88453b633c20e49703eac25eff4
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 22%
@@ -26,9 +26,9 @@ La seguente tabella, il cui contenuto è [disponibile su GitHub con i dettagli](
 
 | Release | Descrizione | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
-| [2.12.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.2) | Questa era una patch release per 2.12.0 con correzioni secondarie. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 11 novembre 2020 |
-| [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.1) | Questa è una patch release per 2.12.0 che risolve un bug principale nel componente [immagine.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 5 novembre 2020 |
-| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | Questa versione ha introdotto [un nuovo gestore di moduli POST;](/help/components/forms/form-container.md#post-data) la possibilità di includere [tag CSS, Javascript e metadati personalizzati mediante la configurazione in base al contesto;](/help/developing/including-clientlibs.md#context-aware-loading) e un&#39; `DataLayerBuilder` utility per [semplificare l&#39;integrazione del livello dati nei componenti personalizzati.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 29 ottobre 2020 |
+| [2.12.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.2) | Questa era una patch release per 2.12.0 con correzioni secondarie. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 11 novembre 2020 |
+| [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.1) | Questa è una patch release per 2.12.0 che risolve un bug principale nel componente [immagine.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 5 novembre 2020 |
+| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) | Questa versione ha introdotto [un nuovo gestore di moduli POST;](/help/components/forms/form-container.md#post-data) la possibilità di includere [tag CSS, Javascript e metadati personalizzati mediante la configurazione in base al contesto;](/help/developing/including-clientlibs.md#context-aware-loading) e un&#39; `DataLayerBuilder` utility per [semplificare l&#39;integrazione del livello dati nei componenti personalizzati.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 29 ottobre 2020 |
 | [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | Questa versione ha introdotto il supporto [AMP.](/help/developing/amp.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 20 luglio 2020 |
 | [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Questa versione ha introdotto il componente Visualizzatore [PDF.](/help/components/pdf-viewer.md) | 6.4.8.1+ | 6.5.5.0+ | Continuo | 8, 11 | 17 giugno 2020 |
 | [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Questa release ha consentito l’integrazione con il [Livello](/help/developing/data-layer/overview.md) dati client Adobe e ha introdotto il componente Barra di [avanzamento.](/help/components/progress-bar.md) | 6.4.8.0+ | 6.5.4.0+ | Continuo | 8, 11 | 29 maggio 2020 |
