@@ -21,15 +21,15 @@ Il livello dati client del Adobe  può essere integrato con i componenti persona
 Per aggiungere automaticamente un componente personalizzato al livello dati:
 
 1. Definire le proprietà del modello di componente personalizzato da tenere traccia.
-1. Aggiungete l’ `data-cmp-data-layer` attributo al componente personalizzato HTL. Ad esempio `data-cmp-data-layer="${mycomponent.data.json}"`.
+1. Aggiungete l&#39;attributo `data-cmp-data-layer` al componente personalizzato HTL. Ad esempio `data-cmp-data-layer="${mycomponent.data.json}"`.
 
-Per attivare automaticamente un `cmp:click` evento nel livello dati ogni volta che si fa clic su un elemento specifico del componente personalizzato, aggiungere l’ `data-cmp-clickable` attributo all’elemento da tracciare nel componente HTL personalizzato.
+Per fare in modo che il livello dati attivi automaticamente un evento `cmp:click` ogni volta che si fa clic su un elemento specifico del componente personalizzato, aggiungete l&#39;attributo `data-cmp-clickable` all&#39;elemento da tracciare nel componente personalizzato HTL.
 
-È possibile interrogare `data-cmp-data-layer-enabled` l&#39;attributo sul lato client per verificare se il livello dati è attivato.
+È possibile interrogare l&#39;attributo `data-cmp-data-layer-enabled` sul lato client per verificare se il livello dati è abilitato.
 
 >[!TIP]
 >
->Per ulteriori informazioni tecniche sull&#39;integrazione del livello dati client del Adobe  con i componenti core e su come abilitare il livello dati sui componenti personalizzati, vedere il [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) file nell&#39;archivio Componenti principali.
+>Per ulteriori informazioni tecniche sull&#39;integrazione del livello dati client del Adobe  con i componenti core e su come abilitare il livello dati sui componenti personalizzati, vedere il file [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) nell&#39;archivio dei componenti core.
 
 ## Integrazione con  Adobe Analytics e  Adobe Target {#analytics-target}
 
