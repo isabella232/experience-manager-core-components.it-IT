@@ -4,19 +4,22 @@ description: Il componente Testo modulo componente principale consente l’immis
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 8%
 
 ---
 
 
-# Form Text Component (v1) {#form-text-component-v}
+# Componente testo modulo (v1) {#form-text-component-v}
 
 Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
 
 ## Utilizzo {#usage}
 
-Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [Contenitore di](form-container-v1.md)moduli.
+Il componente Testo modulo consente l&#39;invio di diversi tipi di testo e deve essere utilizzato insieme al componente contenitore [modulo](form-container-v1.md).
 
-Il tipo di convalida del testo, etichette e messaggi di aiuto può essere definito dall&#39;editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
+Il tipo di convalida del testo, etichette e messaggi della guida può essere definito dall&#39;editor di contenuti nella finestra di dialogo [configura](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente Testo modulo.
 >
 >Questo documento descrive la versione 1 del componente Testo modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Testo modulo, vedere il documento del componente [Testo](/help/components/forms/form-text.md) modulo.
+>Per informazioni dettagliate sulla versione corrente del componente Testo modulo, vedere il documento [Componente Testo modulo](/help/components/forms/form-text.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -85,7 +88,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -95,7 +98,7 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](/help/assets/chlimage_1-23.png)
 
-* **Vincolo** - Il tipo di testo da inserire e su cui verrà convalidato il comando
+* **Vincolo** : il tipo di testo da inserire e su cui verrà convalidato il comando
 
    * **Testo**
    * **Area testo**
@@ -105,19 +108,19 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * **Numero**
    * **Password**
 
-* **Righe** di testo - Numero di righe da visualizzare nell&#39;area di testo (solo se **Vincolo** è impostato su **Area** di testo)
+* **Righe**  di testo - Numero di righe da visualizzare nell&#39;area di testo (visualizzate solo se  **** Limite è impostata su Area **di** testo)
 
-* **Etichetta** - Etichetta che verrà visualizzata per il campo
-* **Nascondere l&#39;etichetta per la visualizzazione** - Necessario se l&#39;etichetta è necessaria solo a scopo di accessibilità e non immette ulteriori informazioni visive sul campo
-* **Nome** elemento - Il nome del campo inviato con i dati del modulo
-* **Valore** - Valore predefinito precompilato nel campo
+* **Etichetta**  - Etichetta che verrà visualizzata per il campo
+* **Nascondere l&#39;etichetta per la visualizzazione**  - Necessario se l&#39;etichetta è necessaria solo a scopo di accessibilità e non invia ulteriori informazioni visive sul campo
+* **Nome**  elemento: il nome del campo inviato con i dati del modulo
+* **Valore**  - Valore predefinito precompilato nel campo
 
 ### Informazioni su {#about}
 
 ![](/help/assets/chlimage_1-24.png)
 
-* **Messaggio** della Guida - Suggerimento per l&#39;utente di ciò che può essere immesso nel campo
-* **Visualizza messaggio di aiuto come segnaposto** - Per visualizzare il messaggio di aiuto all&#39;interno del modulo di input quando è vuoto e non è attivo
+* **Messaggio**  della Guida: un suggerimento per l&#39;utente sulle informazioni che è possibile immettere nel campo
+* **Visualizza messaggio di aiuto come segnaposto** : per visualizzare il messaggio di aiuto all&#39;interno del modulo di input quando è vuoto e non è attivo
 
 ### Vincoli {#constraints}
 
@@ -126,10 +129,10 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 * **Messaggio vincolo**
 
    * Messaggio visualizzato come descrizione comando quando si invia il modulo, se il valore non convalida il tipo scelto
-   * Non visualizzato per i tipi di vincolo **Testo** e Area **di** testo
+   * Non visualizzato per i tipi di vincolo **Testo** e **Area di testo**
 
-* **Obbligatorio** - Se selezionato, l&#39;utente deve compilare un valore prima di inviare il modulo
-* **Rendi sola** lettura - Se selezionato, l&#39;utente non può modificare il valore del campo
+* **Obbligatorio** : se selezionato, l&#39;utente deve compilare un valore prima di inviare il modulo
+* **Rendi sola**  lettura - Se selezionato, l&#39;utente non può modificare il valore del campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -141,4 +144,4 @@ La documentazione tecnica più recente sul componente Testo modulo [è disponibi
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
