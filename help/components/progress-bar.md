@@ -22,28 +22,28 @@ Il componente Barra di avanzamento consente all’autore del contenuto di creare
 
 La versione corrente del componente Barra di avanzamento è v1, introdotto con la release 2.9.0 dei componenti core a maggio 2020, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente Barra di avanzamento e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_progressbar)componenti.
+Per provare il componente Barra di avanzamento e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_progressbar).
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Barra di avanzamento [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_progress_v1).
+La documentazione tecnica più recente sul componente della barra di avanzamento [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_progress_v1).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
 ![Finestra di dialogo di modifica del componente della barra di avanzamento](/help/assets/progress-bar-edit.png)
 
-* **Completamento** - L&#39;avanzamento come rappresentato da una percentuale
-* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+* **Completamento**  - L&#39;avanzamento come rappresentato da una percentuale
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
@@ -54,4 +54,4 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Barra di avanzamento supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
+Il componente Barra di avanzamento supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
