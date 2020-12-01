@@ -4,19 +4,22 @@ description: Il componente Opzioni modulo per componenti core consente la selezi
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 3%
 
 ---
 
 
-# Form Options Component (v1) {#form-options-component-v}
+# Componente Opzioni modulo (v1) {#form-options-component-v}
 
 Il componente Opzioni modulo per componenti core consente la selezione da opzioni predefinite in vari formati.
 
 ## Utilizzo {#usage}
 
-Il componente Opzioni modulo per componenti core consente di inviare diversi tipi di opzioni presentate in molti modi diversi e deve essere utilizzato insieme al componente [contenitore del](form-container-v1.md)modulo.
+Il componente Opzioni modulo componente di base consente l&#39;invio di diversi tipi di opzioni presentate in molti modi diversi ed è destinato all&#39;utilizzo con il componente contenitore [modulo](form-container-v1.md).
 
-La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor di contenuti nella finestra di dialogo [di](#configure-dialog)configurazione.
+La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor del contenuto nella finestra di dialogo [configura](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -24,7 +27,7 @@ Questo documento descrive la v1 del componente Opzioni modulo, introdotto origin
 
 La tabella seguente elenca la compatibilità di v1 del componente Opzioni modulo.
 
-| Versione componente | AEM 6.3 | AEM 6.4 |
+| Versione componente | AEM 6.3 | AEM 6.4   |
 |--- |--- |--- |
 | v2 | Compatibile | Compatibile |
 | v1 | Compatibile | Compatibile |
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente Opzioni modulo
 >
 >Questo documento descrive la versione 1 del componente Opzioni modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Opzioni modulo, vedere il documento del componente [Opzioni](/help/components/forms/form-options.md) modulo.
+>Per informazioni dettagliate sulla versione corrente del componente Opzioni modulo, vedere il documento [Componente Opzioni modulo](/help/components/forms/form-options.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -107,7 +110,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -115,29 +118,30 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](/help/assets/chlimage_1-90.png)
 
-* **Tipi** Modalità di presentazione delle opzioni
+* ****
+TipiModalità di presentazione delle opzioni
 
    * **Caselle di controllo**
    * **Pulsanti di scelta**
    * **A discesa**
    * **Menu a discesa a selezione multipla**
 
-* **Titolo** - Titolo che verrà visualizzato come etichetta per le opzioni
-* **Nome** - Il nome del campo inviato con i dati del modulo
-* **Origine** - Posizione di definizione delle opzioni
+* **Titolo**  - Titolo che verrà visualizzato come etichetta per le opzioni
+* **Nome** : il nome del campo inviato con i dati del modulo
+* **Origine**  - Posizione di definizione delle opzioni
 
-   * **Locale** - Definito all’interno del componente
+   * **Locale**  - Definito all’interno del componente
       * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore** : valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
-      * **Testo** - Etichetta per l&#39;opzione visualizzata sul modulo
+      * **Valore** : il valore salvato quando l&#39;opzione viene selezionata all&#39;invio del modulo
+      * **Testo**  - Etichetta per l&#39;opzione visualizzata sul modulo
       * **Attivo** : l&#39;opzione è contrassegnata come selezionata al caricamento del modulo
-      * **Disattivato** - L&#39;opzione non è selezionabile ma continua a essere visualizzata
-      * **Elenco** - Per l’opzione viene utilizzato un elenco statico definito altrove in AEM
-         * **Elenco** - Percorso dell’elenco statico in AEM
+      * **Disattivato** : l&#39;opzione non è selezionabile ma continua a essere visualizzata
+      * **Elenco** : per l&#39;opzione viene utilizzato un elenco statico definito in un altro punto della AEM
+         * **Elenco**  - Percorso dell&#39;elenco statico in AEM
             * Utilizzare il pulsante Sfoglia per individuare la risorsa dell&#39;elenco
-      * **Origine** dati - Per le opzioni viene utilizzata un&#39;origine dati
-         * **Origine** dati - tipo di risorsa dell&#39;origine dati
-* **Messaggio** della Guida - Suggerimento per l&#39;utente di ciò che può essere immesso nel campo
+      * **Origine**  dati: per le opzioni viene utilizzata un&#39;origine dati
+         * **Origine**  dati - tipo di risorsa dell&#39;origine dati
+* **Messaggio**  della Guida: un suggerimento per l&#39;utente di ciò che può essere immesso nel campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -149,4 +153,4 @@ La documentazione tecnica più recente sul componente Opzioni modulo [è disponi
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
