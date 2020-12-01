@@ -4,21 +4,21 @@ description: Il componente Pagina è un componente di pagina estensibile progett
 translation-type: tm+mt
 source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '631'
+ht-degree: 2%
 
 ---
 
 
 # Componente pagina{#page-component}
 
-Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
+Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l&#39; [editor modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) e consente di assemblare con l&#39;editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 
 ## Utilizzo {#usage}
 
 Il componente pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
 
-Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la finestra di dialogo [di](#edit-dialog) modifica del componente pagina è la finestra delle proprietà della pagina.
+Utilizzando la finestra di dialogo [progettazione](#design-dialog), è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la [finestra di dialogo di modifica](#edit-dialog) del componente pagina è la finestra delle proprietà della pagina.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -31,50 +31,50 @@ Nella tabella seguente sono elencate tutte le versioni supportate del componente
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](v1/page-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
 
 ### Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Pagina [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_page_v2).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
-Poiché il componente rappresenta l’intera pagina, le impostazioni che normalmente si trovano in una finestra di dialogo di modifica si trovano nella finestra Proprietà [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) pagina.
+Poiché il componente rappresenta l’intera pagina, le impostazioni che normalmente si trovano in una finestra di dialogo di modifica si trovano nella finestra [Proprietà pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina > Criteri** pagina durante la modifica del modello di pagina.
+Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite **Informazioni pagina -> Criteri pagina** quando si modifica il modello di pagina.
 
 ![Criterio pagina](/help/assets/page-policy.png)
 
 >[!NOTE]
 >
->Nelle versioni precedenti di AEM, Criteri **** pagina era denominata Struttura **** pagina.
+>Nelle versioni precedenti di AEM, **Page Policy** era denominata **Page Design**.
 
 ### Scheda Proprietà {#properties-tab}
 
 La finestra Progettazione pagina consente di definire le librerie client da caricare, nonché la libreria delle risorse Web per la pagina.
 
-* **Librerie** client - Definisce le categorie della libreria client da caricare. JavaScript viene aggiunto alla fine del corpo e il CSS viene aggiunto all&#39;intestazione della pagina.
-* **Intestazione** pagina JavaScript delle librerie client - Definisce le categorie della libreria client JavaScript da caricare nell&#39;intestazione della pagina.
+* **Librerie**  client - Definisce le categorie della libreria client da caricare. JavaScript viene aggiunto alla fine del corpo e il CSS viene aggiunto all&#39;intestazione della pagina.
+* **Intestazione**  pagina JavaScript delle librerie client: definisce le categorie della libreria client JavaScript da caricare nell&#39;intestazione della pagina.
    * Le categorie qui definite che sono presenti anche nel campo **Client Libraries** avranno JavaScript caricato nell&#39;intestazione della pagina invece che all&#39;estremità del corpo.
-   * Non verrà caricato alcun CSS a meno che la categoria non sia presente anche nel campo **Client Libraries** .
+   * Non verrà caricato alcun CSS a meno che la categoria non sia presente anche nel campo **Client Libraries**.
 
-* **Libreria** client risorse Web - La categoria della libreria client utilizzata per distribuire risorse Web come favicons.
+* **Libreria**  client risorse Web - La categoria della libreria client utilizzata per distribuire risorse Web come favicons.
 
-* **Passa al selettore** principale degli elementi di contenuto: utilizzato come funzione di accessibilità per passare direttamente al contenuto principale della pagina
+* **Passa al selettore**  principale degli elementi di contenuto: utilizzato come funzione di accessibilità per passare direttamente al contenuto principale della pagina
 
 ![Finestra di dialogo Progettazione componenti pagina](/help/assets/page-design.png)
 
-Le librerie possono essere configurate per i campi Head **di pagina JavaScript delle librerie** client e delle librerie **** client, come indicato di seguito:
+Le librerie possono essere configurate per i campi **Client Libraries** e **Client Libraries testina pagina JavaScript** come segue:
 
 * Per aggiungere un nuovo campo, fare clic o toccare il pulsante **Aggiungi** sotto i campi.
 * Per rimuovere un campo, fare clic o toccare l&#39;icona del cestino accanto al campo da rimuovere.
 * Per riordinare l&#39;ordine di caricamento, fare clic o toccare e trascinare la maniglia accanto al campo da spostare.
 
-Per ulteriori informazioni sull&#39;uso delle librerie lato client, consultate [Utilizzo delle librerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)lato client.
+Per ulteriori informazioni sull&#39;utilizzo delle librerie lato client, vedere [Utilizzo delle librerie lato client](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >
@@ -82,4 +82,4 @@ Per ulteriori informazioni sull&#39;uso delle librerie lato client, consultate [
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Pagina supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
+Il componente Pagina supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
