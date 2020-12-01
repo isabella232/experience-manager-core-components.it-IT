@@ -4,6 +4,9 @@ description: Il componente Testo è un componente per la modifica e composizione
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '1657'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +19,11 @@ Il componente Testo è un componente per la modifica e composizione di testo RTF
 
 Il componente Testo offre un potente editor Rich Text che consente di modificare facilmente il testo in un editor semplificato e in linea e in un formato a schermo intero.
 
-La finestra di dialogo [di](#edit-dialog) modifica offre funzioni di modifica in linea con opzioni limitate e funzionalità complete disponibili nella finestra di dialogo di modifica a schermo intero. Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, le opzioni di formattazione del testo, come titoli, caratteri speciali e stili di paragrafo, possono essere configurate per il modello per l&#39;autore del contenuto.
+La [finestra di dialogo di modifica](#edit-dialog) offre funzioni di editing in linea con opzioni limitate e funzionalità complete disponibili nella finestra di dialogo di modifica a schermo intero. Utilizzando la finestra di dialogo di progettazione [progettazione](#design-dialog), è possibile configurare per il modello le opzioni di formattazione del testo come titoli, caratteri speciali e stili di paragrafo.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v1 del componente Testo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la v1 del componente di testo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
 La tabella seguente elenca la compatibilità di v1 del componente Testo.
 
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente Testo.
 >
 >Questo documento descrive la versione 1 del componente Testo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Testo, consultare il documento [Componente](/help/components/text.md) testo.
+>Per informazioni dettagliate sulla versione corrente del componente Testo, consultare il documento [Componente testo](/help/components/text.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -65,9 +68,9 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica offre gli strumenti di formattazione RTF standard che l’utente si aspetta di utilizzare per comporre del testo.
 
@@ -79,7 +82,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Utilizzato per applicare la formattazione in grassetto al testo selezionato o per formattare il testo in grassetto immesso dopo il cursore.
 
-   **Ctrl+B** può essere utilizzato come scelta rapida da tastiera.
+   **Ctrl+** B può essere utilizzato come scelta rapida da tastiera.
 
 * Corsivo
 
@@ -87,7 +90,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Utilizzato per applicare la formattazione in corsivo al testo selezionato o per personalizzare il testo immesso dopo il cursore.
 
-   **Ctrl+I** può essere utilizzato come scelta rapida da tastiera.
+   **Ctrl+** I può essere utilizzato come scelta rapida da tastiera.
 
 * Sottolineato
 
@@ -95,7 +98,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Utilizzato per applicare la formattazione sottolineata al testo selezionato o al testo sottolineato immesso dopo il cursore.
 
-   **Ctrl+U** può essere utilizzato come scelta rapida da tastiera.
+   **Ctrl+** Ucan può essere utilizzato come scelta rapida da tastiera.
 
 * Pedice
 
@@ -113,7 +116,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](/help/assets/chlimage_1-58.png)
 
-   Incolla tutto il testo copiato come testo normale senza formattazione.
+   Incolla tutto il testo copiato come testo normale senza alcuna formattazione.
 
    Quando si seleziona questa opzione, si apre una finestra in cui il testo può essere incollato come testo normale senza formattazione come anteprima prima di essere inserito nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
@@ -123,7 +126,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](/help/assets/chlimage_1-60.png)
 
-   Quando si seleziona questa opzione, si apre una finestra in cui è possibile incollare il testo mantenendo la formattazione come anteprima prima di inserirlo nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
+   Quando si seleziona questa opzione, si apre una finestra in cui è possibile incollare il testo, mantenendo la formattazione come anteprima prima di inserirlo nel testo. Accetta toccando o facendo clic sul segno di spunta, annulla toccando o facendo clic sulla x.
 
    ![](/help/assets/chlimage_1-61.png)
 
@@ -138,7 +141,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
    * Immettere la posizione
 
       * Utilizzare la finestra di dialogo Apri selezione per scegliere un percorso in AEM
-      * Se il collegamento non è in AEM, inserite l’URL assoluto (i percorsi non assoluti vengono interpretati come relativi ad AEM)
+      * Se il collegamento non è all&#39;interno di AEM, immettete l&#39;URL assoluto (i percorsi non assoluti vengono interpretati come relativi a AEM)
    * Immettere testo descrittivo alternativo per il collegamento
    * Seleziona il comportamento del collegamento
 
@@ -147,6 +150,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
       * Nuova scheda
       * Frame principale
       * Frame superiore
+
    Toccate o fate clic sul segno di spunta per applicare il collegamento o sulla x per annullare.
 
 * Scollega
@@ -165,7 +169,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Immettere il testo per il quale si desidera eseguire la ricerca e toccare o fare clic su **Trova** per iniziare la ricerca. Toccate o fate clic sulla x per annullare.
 
-   Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
+   Se si desidera eseguire una corrispondenza esatta in base al caso, selezionare l&#39;opzione **Maiuscole/minuscole** prima di avviare la ricerca.
 
    Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Toccate o fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva.
 
@@ -187,11 +191,11 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Toccate o fate clic su **Trova** per iniziare la ricerca. Tocca o fai clic sulla x per annullare.
 
-   Se desiderate eseguire una corrispondenza esatta in base al caso, selezionate l’opzione **Maiuscole/minuscole** prima di avviare la ricerca.
+   Se si desidera eseguire una corrispondenza esatta in base al caso, selezionare l&#39;opzione **Maiuscole/minuscole** prima di avviare la ricerca.
 
-   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fate di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva oppure fate clic sul pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Il pulsante **Sostituisci** è attivo solo una volta raggiunta una corrispondenza.
+   Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene disattivata. Fare di nuovo clic sul pulsante **Trova** nella finestra di dialogo disattivata per cercare l&#39;occorrenza successiva oppure selezionare il pulsante **Sostituisci** per sostituire il testo evidenziato e corrispondente. Tenere presente che il pulsante **Replace** è attivo solo una volta raggiunta una corrispondenza.
 
-   Selezionate **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
+   Selezionare **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
 
 * Allinea testo a sinistra
 
@@ -223,7 +227,7 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](/help/assets/chlimage_1-75.png)
 
-   Consente di formattare il testo selezionato come elenco numerato o di iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
+   Utilizzato per formattare il testo selezionato come elenco numerato o per iniziare l&#39;inserimento di un elenco numerato dopo il cursore.
 
    Per terminare un elenco numerato, toccate o fate di nuovo clic sul pulsante **Numerato** oppure immettete due ritorni a capo.
 
@@ -249,20 +253,20 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    ![](/help/assets/chlimage_1-79.png)
 
-   * **Colonne** - Il numero di colonne della tabella (obbligatorio)
-   * **Righe** - Il numero di righe della tabella (obbligatorio)
-   * **Larghezza** - La larghezza della tabella
-   * **Altezza** - L&#39;altezza della tabella
+   * **Colonne**  - Il numero di colonne della tabella (obbligatorio)
+   * **Righe**  - Il numero di righe della tabella (obbligatorio)
+   * **Larghezza**  - La larghezza della tabella
+   * **Altezza**  - L&#39;altezza della tabella
    * **Margine celle -** Spazio intorno al contenuto della cella
-   * **Spaziatura** celle - Spazio tra celle
-   * **Bordo** - Lo spessore delle linee dei bordi della tabella
+   * **Spaziatura**  celle - Lo spazio tra le celle
+   * **Bordo**  - Lo spessore delle linee dei bordi della tabella
    * Se per l’intestazione della tabella:
 
       * La prima riga deve essere utilizzata
       * Utilizzare la prima colonna
       * Utilizzare la prima riga e la prima colonna
       * Oppure non utilizzare alcuna intestazione.
-   * **Didascalia** - La didascalia della tabella
+   * **Didascalia**  - La didascalia della tabella
 
 
 * Controllo ortografia
@@ -287,14 +291,14 @@ La finestra di dialogo di modifica offre gli strumenti di formattazione RTF stan
 
    Utilizzato per visualizzare e modificare l&#39;origine HTML del testo.
 
-   Toccate o fate clic sull’icona Modifica **** sorgente per cambiare il contenuto del testo dalla visualizzazione formattata per visualizzare l’HTML non elaborato. In questa modalità, tutte le altre opzioni di formattazione sono disattivate. Toccate o fate di nuovo clic sull’icona **Sorgente modifica** per tornare alla visualizzazione formattata.
+   Toccate o fate clic sull&#39;icona **Modifica origine** per cambiare il contenuto del testo dalla visualizzazione formattata per visualizzare l&#39;HTML non elaborato. In questa modalità, tutte le altre opzioni di formattazione sono disattivate. Toccate o fate di nuovo clic sull&#39;icona **Modifica origine** per tornare alla visualizzazione formattata.
 
    >[!CAUTION]
    >
-   >Come sempre con l&#39;accesso a HTML non elaborato, occorre prestare attenzione quando si utilizza l&#39;opzione di modifica **** origine!
+   >Come sempre con l&#39;accesso all&#39;HTML non elaborato, occorre prestare attenzione quando si utilizza l&#39;opzione **Source Edit**!
    >
    >
-   >L&#39;HTML immesso tramite Modifica **** origine viene analizzato per rilevare i rischi XSS e gli script inseriti vengono rimossi e non verranno visualizzati nella pagina risultante. Tuttavia, l’HTML con formato non corretto immesso in **Modifica** origine può interrompere il modello per la pagina, dando luogo a una formattazione imprevista o rendendo la pagina risultante inutilizzabile.
+   >L&#39;HTML immesso tramite **Modifica origine** viene analizzato per rilevare i rischi XSS e tutti gli script inseriti vengono rimossi e non verranno visualizzati nella pagina risultante. Tuttavia, l&#39;HTML con formato non corretto immesso in **Modifica origine** può interrompere il modello per la pagina, dando luogo a una formattazione imprevista o rendendo la pagina risultante inutilizzabile.
 
 * Formato paragrafo
 
@@ -345,7 +349,7 @@ Gli stili di paragrafo possono essere attivati o disattivati per il componente. 
 
 * Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo stile.
 * Immettete il codice dello stile e una descrizione che verrà visualizzata nella finestra di dialogo di modifica.
-* Per rimuovere uno stile, toccate o fate clic sul pulsante **Elimina** .
+* Per rimuovere uno stile, toccate o fate clic sul pulsante **Elimina**.
 * Per ridisporre l&#39;ordine dei formati, toccate o fate clic e trascinate le maniglie.
 
 ### Caratteri speciali {#special-characters}
@@ -356,7 +360,7 @@ L’opzione per l’inserimento di caratteri speciali può essere attivata o dis
 
 * Toccate o fate clic sul pulsante **Aggiungi** per inserire un nuovo carattere.
 * Immettete il codice HTML del carattere e una descrizione che verrà visualizzata nella finestra di dialogo di modifica.
-* Per rimuovere un carattere toccate o fate clic sul pulsante **Elimina** .
+* Per rimuovere un carattere toccate o fate clic sul pulsante **Elimina**.
 * Per riordinare i caratteri, toccate o fate clic e trascinate le maniglie.
 
 ## Dettagli tecnici {#technical-details}
@@ -365,4 +369,4 @@ La documentazione tecnica più recente sul componente Testo [è disponibile su G
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
