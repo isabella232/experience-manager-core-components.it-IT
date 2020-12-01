@@ -4,6 +4,9 @@ description: Il componente di base Breadcrumb è un componente di navigazione ch
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ Il componente di base Breadcrumb è un componente di navigazione che crea una br
 
 Il componente Breadcrumb visualizza la posizione della pagina corrente all’interno della gerarchia del sito, consentendo ai visitatori della pagina di spostarsi nella gerarchia di pagina dalla posizione corrente. Questa funzione è spesso integrata nelle intestazioni o nei piè di pagina della pagina.
 
-Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di visualizzare la pagina corrente o le pagine nascoste, possono essere definite dall&#39;autore del modello nella finestra di dialogo [](#design-dialog)della progettazione. L’editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo [di](#edit-dialog)modifica.
+Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di mostrare la pagina corrente o le pagine nascoste, possono essere definite dall&#39;autore del modello nella finestra di dialogo di progettazione [](#design-dialog). L&#39;editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo di [modifica](#edit-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -32,9 +35,9 @@ Nella tabella seguente è elencata la compatibilità di v1 del componente Breadc
 >[!CAUTION]
 >
 >Questo documento descrive la versione 1 del componente Breadcrumb.
->Per informazioni dettagliate sulla versione corrente del componente Breadcrumb, consultate il documento del componente [](/help/components/breadcrumb.md) Breadcrumb.
+>Per informazioni dettagliate sulla versione corrente del componente Breadcrumb, consultare il documento [Breadcrumb Component](/help/components/breadcrumb.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -81,20 +84,20 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica consente all’autore del contenuto di eliminare le pagine nascoste e attive nelle breadcrumb e la profondità nella gerarchia che dovrebbe visualizzare.
 
 ![](/help/assets/chlimage_1-34.png)
 
-* **Livello di navigazione per iniziare** - Punto della gerarchia in cui il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente. Ad esempio in We.Retail:
+* **Livello di navigazione per iniziare**  - Punto della gerarchia in cui il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente. Ad esempio in We.Retail:
 
    * 1 inizia a `/content/we-retail`
-   * 2 inizia a `/content/we-retail/<country>`
+   * 2 inizia da `/content/we-retail/<country>`
 
-* **Mostra nascosto** - Mostra pagine contrassegnate come nascoste nel breadcrumb (per impostazione predefinita non vengono visualizzate)
+* **Mostra nascosto** : mostra le pagine contrassegnate come nascoste nel percorso di navigazione (per impostazione predefinita non vengono visualizzate)
 * **Nascondi corrente**: elimina la pagina corrente nel percorso di navigazione (per impostazione predefinita verrà visualizzata)
 
 ## Finestra di dialogo Progettazione {#design-dialog}
@@ -103,12 +106,12 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 ![](/help/assets/chlimage_1-35.png)
 
-* **Livello di navigazione per iniziare** - Definisce il valore predefinito per dove nella gerarchia il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente quando il componente breadcrumb viene aggiunto a una pagina.
-* **Mostra nascosto** - Definisce il valore predefinito dell’opzione **Mostra nascosto** quando il componente breadcrumb viene aggiunto a una pagina.
+* **Livello di navigazione per iniziare**  - Definisce il valore predefinito per dove nella gerarchia il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente quando il componente breadcrumb viene aggiunto a una pagina.
+* **Mostra nascosto**  - Definisce il valore predefinito dell’opzione  **Mostra** nascosto quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
-* **Nascondi corrente** - Definisce il valore predefinito dell&#39;opzione **Nascondi corrente** quando il componente breadcrumb viene aggiunto a una pagina.
+* **Nascondi corrente** : definisce il valore predefinito dell&#39;opzione  **Nascondi** corrente quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
@@ -118,4 +121,4 @@ La documentazione tecnica più recente sul componente Breadcrumb [è disponibile
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
