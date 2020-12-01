@@ -4,6 +4,9 @@ description: Il componente Titolo componente di base è un componente di intesta
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +19,7 @@ Il componente Titolo componente di base è un componente di intestazione di sezi
 
 Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto.
 
-I livelli di intestazione disponibili possono essere definiti dall’autore del modello nella finestra di dialogo [di](#design-dialog)progettazione. L’editor del contenuto può selezionare i livelli di intestazione disponibili nella finestra di dialogo [di](#edit-dialog)modifica. Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
+I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo di [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente Titolo.
 >
 >Questo documento descrive la versione 1 del componente Titolo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Titolo, consultare il documento [Titolo componente](/help/components/title.md) .
+>Per informazioni dettagliate sulla versione corrente del componente Titolo, vedere il documento [Componente titolo](/help/components/title.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -64,9 +67,9 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica consente all’autore del contenuto di definire il testo del titolo e selezionare il livello del titolo.
 
@@ -92,4 +95,4 @@ La documentazione tecnica più recente sul componente Titolo [è disponibile su 
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
