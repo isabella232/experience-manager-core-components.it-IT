@@ -12,24 +12,28 @@ ht-degree: 14%
 
 # Sviluppo di componenti core {#developing-core-components}
 
-## When to Use the Core Components? {#when-to-use-the-core-components}
+## Quando utilizzare i componenti core? {#when-to-use-the-core-components}
 
 Poiché i componenti core sono completamente nuovi e offrono molteplici vantaggi, si consiglia di utilizzarli nei nuovi progetti AEM. Per i progetti esistenti, la migrazione dei componenti dovrà essere eseguita nell’ambito di un’attività più ampia, ad esempio in occasione di un progetto di rebranding o riformattazione generale.
 
 Pertanto,  Adobe formula le seguenti raccomandazioni:
 
-* **Nuovi progetti** I nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l’architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i componenti [](/help/versions.md#foundation-component-support)di base.
-* **La** raccomandazione progetti [esistenti viene mantenuta utilizzando i componenti](/help/versions.md#foundation-component-support)di base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
-   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere sostenuti.](/help/versions.md#foundation-component-support)
-* **Nuovi componenti** personalizzati Se è possibile personalizzare [un componente](customizing.md)core esistente.\
-   In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le linee guida [sui](guidelines.md)componenti.
-* **Componenti** personalizzati esistenti Se i componenti funzionano come previsto, mantenerli come sono.
+* **Nuovi**
+progettiI nuovi progetti devono sempre tentare di utilizzare i componenti core. Se i componenti core non possono essere utilizzati direttamente o [estesi](customizing.md) per soddisfare i requisiti del progetto, create un componente personalizzato seguendo l&#39;architettura dei componenti impostata nei componenti core. Eccetto dove non altrimenti possibile, evitare di utilizzare i [componenti di base](/help/versions.md#foundation-component-support).
+* ****
+Progetti esistentiLa raccomandazione continua a utilizzare i componenti [ di ](/help/versions.md#foundation-component-support)base, a meno che non sia pianificato il refactoring di un sito o di un componente.\
+   Poiché sono ampiamente utilizzati dalla maggior parte dei progetti esistenti, i componenti di base [continueranno ad essere supportati.](/help/versions.md#foundation-component-support)
+* **Nuovi**
+componenti personalizzatiValutare se è possibile personalizzare [ un componente ](customizing.md)core esistente.\
+   In caso contrario, si consiglia di creare un nuovo componente personalizzato seguendo le [Linee guida sui componenti](guidelines.md).
+* **Componenti personalizzati esistentiSe i componenti funzionano come previsto, mantenerli come sono.**
+
 \
    In caso contrario, fare riferimento a &quot;Nuovi componenti personalizzati&quot; sopra.
 
-## Come ottenere successo con i componenti core {#how-to-succeed}
+## Come eseguire correttamente i componenti core {#how-to-succeed}
 
-I componenti core sono potenti, flessibili e facili da usare e personalizzare. [Seguendo alcune linee guida](success.md) chiave, il progetto con i componenti core avrà successo.
+I componenti core sono potenti, flessibili e facili da usare e personalizzare. [Seguendo alcune ](success.md) linee guida chiave, il progetto con i componenti core avrà successo.
 
 ## Migrazione ai componenti core
 
@@ -37,14 +41,14 @@ Eventuali nuovi progetti devono essere implementati con i componenti core. Tutta
 
 Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) spesso offre la possibilità di eseguire la migrazione ai componenti core. Per facilitare questa migrazione,  Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l&#39;adozione dei componenti core e della tecnologia AEM più recente.
 
-[Gli AEM Strumenti](http://opensource.adobe.com/aem-modernize-tools/) di Modernizzazione consentono una facile conversione di:
+[Il ](http://opensource.adobe.com/aem-modernize-tools/) Salotto AEM Modernizzazione per la facile conversione di:
 
 * Modelli statici in modelli modificabili
 * Configurazioni di progettazione in policy
 * Componenti di base in componenti core
 * Interfaccia classica in interfaccia touch
 
-Per ulteriori informazioni sull’utilizzo di questi strumenti, [consulta la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
+Per ulteriori informazioni sull&#39;utilizzo di questi strumenti, [consultare la relativa documentazione](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
@@ -58,21 +62,21 @@ Come per altre funzionalità AEM prodotto, la regola generale è: I componenti v
 
 La versione di ogni componente indica chiaramente le versioni di AEM che supporta. Quando cessa il supporto per una versione di AEM, cessa anche il supporto dei componenti core per tale versione di AEM.
 
-Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate la pagina [Personalizzazione dei componenti](customizing.md) core.
+Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti, consultate la pagina [Customizing Core Components](customizing.md) (Personalizzazione dei componenti core).
 
 
-## Funzionalità tecniche {#technical-capabilities}
+## Capacità tecniche {#technical-capabilities}
 
 La tabella seguente fornisce una panoramica delle differenze tra i componenti core e i componenti di base.
 
-Per informazioni dettagliate sulle funzionalità di authoring e sulle opzioni per la preconfigurazione, [consultare la pagina dedicata](/help/get-started/authoring.md)all’authoring.
+Per informazioni dettagliate sulle funzionalità di authoring e sulle opzioni per la preconfigurazione, consultare la [pagina di authoring relativa a tali funzionalità](/help/get-started/authoring.md).
 
 | **Funzionalità** | **Componente core** | **Componente Foundation** |
 |-----|---|---|
-| Implementazione logica | Java POJO con annotazioni [Sling Models](https://sling.apache.org/documentation/bundles/models.html) | Codice JSP |
+| Implementazione logica | Java POJO con [Sling Models](https://sling.apache.org/documentation/bundles/models.html) annotazioni | Codice JSP |
 | Definizione di markup | [Sintassi HTML Template Language](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) (HTL) | Codice JSP |
 | Scarico XSS | Automatizzato da HTL | Principalmente manuale |
-| Denominazione delle classi CSS | Convenzione di denominazione standard basata sulla notazione [del modificatore](https://getbem.com/) di elementi di blocco (BEM) (a partire dalla release 2.0.0) | Schemi personalizzati |
+| Denominazione delle classi CSS | Convenzione di denominazione standardizzata basata sulla notazione [Modificatore elemento blocco](https://getbem.com/) (BEM) (dalla release 2.0.0) | Schemi personalizzati |
 | Definizione finestra di dialogo | [Corallo 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Corallo 2 + Interfaccia classica |
 | Uscita JSON | [Sling Models Exporter con serializzazione Jackson](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) | Servlet Sling predefinito |
 | Gestione versioni | [Per il modello e l&#39;HTL](guidelines.md) | Nessuno |
@@ -80,7 +84,7 @@ Per informazioni dettagliate sulle funzionalità di authoring e sulle opzioni pe
 | Consegna | [Tramite GitHub pubblico](https://github.com/adobe/aem-core-wcm-components) | Via Quickstart |
 | Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) |  Adobe proprietario |
 | Contributo | Tramite richiesta pull | Impossibile |
-| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme con lo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Elenco componenti {#component-list}
 
@@ -120,12 +124,12 @@ Nella tabella seguente sono elencati i componenti core disponibili, che si colle
 
 ### Componenti in arrivo {#upcoming-components}
 
-Per una panoramica della road map dei componenti core, consulta il [progetto wiki su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
+Per una panoramica della road map dei componenti core, vedi il progetto wiki [su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
 
 ## Aggiornamento dei componenti core {#upgrade-of-core-components}
 
 Un vantaggio dei componenti con versione è rappresentato dal fatto che consente di separare la migrazione a una nuova versione AEM dalla migrazione alle nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni di componenti, è possibile migrare singolarmente ogni componente alla nuova versione.
 
-Le migrazioni a una nuova versione AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione AEM a cui viene eseguita la migrazione. Le personalizzazioni effettuate sui componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Le migrazioni a una nuova versione AEM non avranno alcun impatto sul funzionamento dei componenti core, a condizione che le loro versioni supportino anche la nuova versione AEM a cui viene eseguita la migrazione. Le personalizzazioni effettuate ai componenti core non devono essere influenzate, a condizione che non utilizzino API che sono state [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
-Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Potrebbe tuttavia essere necessario adattare le personalizzazioni, per ulteriori dettagli consultate la pagina [Personalizzazione dei componenti](customizing.md#upgrade-compatibility-of-customizations) core.
+Le migrazioni a nuove versioni dei componenti core non influiranno neanche sul funzionamento del componente, ma potrebbero essere introdotte nuove funzionalità agli autori di pagine, che potrebbero richiedere alcune configurazioni da parte di un editor modelli, nel caso in cui il comportamento predefinito non sia desiderato. Le personalizzazioni possono tuttavia essere adattate. Per ulteriori dettagli, vedere la pagina [Customizing Core Components](customizing.md#upgrade-compatibility-of-customizations) (Personalizzazione dei componenti core).
