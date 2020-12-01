@@ -4,8 +4,8 @@ description: Il componente Titolo componente di base è un componente di intesta
 translation-type: tm+mt
 source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ Il componente Titolo componente di base è un componente di intestazione di sezi
 
 ## Utilizzo {#usage}
 
-Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto. I livelli di intestazione disponibili possono essere definiti dall’autore del modello nella finestra di dialogo [di](#design-dialog)progettazione. L’editor del contenuto può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo [di](#edit-dialog)modifica. Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
+Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto. I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo di [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -29,26 +29,26 @@ Nella tabella seguente sono elencate tutte le versioni supportate del componente
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](v1/title-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente Titolo e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_title)Componenti.
+Per provare il componente Titolo e vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_title).
 
 ### Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_title_v2).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica consente all’autore del contenuto di definire il testo del titolo e selezionare il livello del titolo.
 
-* **Titolo** - Se vuoto, verrà utilizzato il titolo della pagina
-* **Tipo/Dimensione** - Definisce il livello di intestazione del titolo
-* **Collegamento** - Definisce il contenuto a cui verrà collegato il titolo. Può essere un percorso a una pagina di contenuto, un URL esterno o un ancoraggio di pagina.
-* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+* **Titolo**  - Se vuoto, verrà utilizzato il titolo della pagina
+* **Tipo/Dimensione**  - Definisce il livello del titolo del titolo
+* **Collegamento**  - Definisce il contenuto a cui verrà collegato il titolo. Può essere un percorso a una pagina di contenuto, un URL esterno o un ancoraggio di pagina.
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
@@ -73,7 +73,7 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 
 * **Tipi/dimensioni consentiti per gli autori** - Abilitare o disabilitare i tipi di intestazione che saranno disponibili per gli autori di contenuti quando utilizzano il componente Titolo.
 * **Tipo/Dimensione** predefinita: consente di definire il tipo di intestazione che verrà assegnato automaticamente quando un autore di contenuto aggiunge il componente Titolo a una pagina.
-* **Disattiva collegamento**- Disattiva il supporto per i collegamenti nel componente titolo per impedire agli autori di contenuti di collegare i titoli.
+* **Disattiva collegamento** - Disattiva il supporto per i collegamenti nel componente titolo per impedire agli autori di contenuti di collegare i titoli.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Titolo supporta AEM [Style System](/help/get-started/authoring.md#component-styling).
+Il componente Titolo supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
