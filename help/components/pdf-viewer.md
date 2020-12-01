@@ -28,43 +28,43 @@ Nella tabella seguente sono elencate tutte le versioni supportate del componente
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente visualizzatore PDF e per vedere alcuni esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visitare la Libreria [](https://adobe.com/go/aem_cmp_library_pdfviewer)componenti.
+Per provare il componente visualizzatore PDF e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_pdfviewer).
 
 ## Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente visualizzatore PDF [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
 >[!NOTE]
 >
->Il componente visualizzatore PDF sfrutta [API](https://www.adobe.io/apis/documentcloud/dcsdk.html)  Document Services e richiede all’amministratore di configurare una configurazione [in base al](/help/developing/context-aware-configs.md) contesto per l’utilizzo di tali servizi. Per [informazioni dettagliate su questa configurazione, consulta la documentazione tecnica del componente.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)
+>Il componente visualizzatore PDF utilizza [ API di Document Services](https://www.adobe.io/apis/documentcloud/dcsdk.html) e richiede all&#39;amministratore di configurare una [configurazione sensibile al contesto](/help/developing/context-aware-configs.md) per l&#39;utilizzo di tali servizi. Per informazioni dettagliate su questa configurazione, consultare la documentazione tecnica del componente.[](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)
 
 ## Configura finestra di dialogo {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il visualizzatore e il suo funzionamento e la sua visualizzazione sulla pagina da parte di un visitatore.
 
-### Configuration Tab {#configuration-tab}
+### Scheda Configurazione {#configuration-tab}
 
 La scheda Configurazione consente all’autore di definire il PDF da visualizzare. Il percorso può essere definito come una risorsa in AEM o come percorso assoluto verso un’altra risorsa.
 
 ![Scheda Configurazione della finestra di dialogo di modifica del componente Visualizzatore PDF](/help/assets/pdf-viewer-edit-configuration.png)
 
-### Personalizza, scheda {#customize-tab}
+### Personalizza scheda {#customize-tab}
 
 La scheda Personalizza consente all’autore di definire le opzioni disponibili nel visualizzatore per il lettore e la modalità di presentazione del visualizzatore.
 
 ![Scheda Personalizza della finestra di dialogo di modifica del componente Visualizzatore PDF](/help/assets/pdf-viewer-edit-customize.png)
 
-Il numero di opzioni disponibili dipende dal **tipo** selezionato.
+Il numero di opzioni disponibili dipende dal **Tipo** selezionato.
 
-* [Finestra](#full-window) completa - L&#39;area di visualizzazione viene riprodotta nel browser completo. Questa funzione è ideale per applicazioni di storage e produttività.
-* [Contenitore](#sized-container) dimensioni - L&#39;area di visualizzazione viene riprodotta nel browser completo. Questa funzione è ideale per applicazioni di storage e produttività.
-* [In-Line](#in-line) - Viene eseguito il rendering di tutte le pagine PDF allineate all’interno di una pagina Web. Questa funzione è ideale per le applicazioni di lettura.
+* [Finestra](#full-window)  completa - L&#39;area di visualizzazione viene riprodotta nel browser completo. Questa funzione è ideale per applicazioni di storage e produttività.
+* [Contenitore](#sized-container)  dimensioni: l&#39;area di visualizzazione viene riprodotta nel browser completo. Questa funzione è ideale per applicazioni di storage e produttività.
+* [In-Line](#in-line)  - Viene eseguito il rendering di tutte le pagine PDF allineate all’interno di una pagina Web. Questa funzione è ideale per le applicazioni di lettura.
 
 #### Finestra intera {#full-window}
 
@@ -72,15 +72,15 @@ L’area di visualizzazione viene riprodotta nel browser completo. Questa funzio
 
 ![Personalizza scheda finestra completa opzione della finestra di dialogo di modifica del componente Visualizzatore PDF](/help/assets/pdf-viewer-edit-customize-full.png)
 
-* **Modalità** di visualizzazione predefinita: l&#39;adattamento del visualizzatore alla pagina in cui è visualizzato
+* **Modalità**  di visualizzazione predefinita: adattamento del visualizzatore alla pagina in cui è visualizzato
    * Adatta a pagina
    * Adatta a larghezza
-* **Schermo** intero: se attivato, il visualizzatore occupa l&#39;intera altezza/larghezza della finestra.
-* **Strumenti** di annotazione - Quando abilitata, sono disponibili gli strumenti di annotazione.
-* **Pannello** mano sinistra - Se attivato, viene visualizzato il pannello a sinistra.
-* **Scarica PDF** - Quando attivato, viene visualizzato il pulsante di download.
-* **Stampa PDF** - Se abilitata, viene visualizzato il pulsante Stampa.
-* **Controlli** pagina - Attiva/disattiva il comportamento dei controlli di pagina.
+* **Schermo**  intero: se attivato, il visualizzatore occupa l&#39;intera altezza/larghezza della finestra.
+* **Strumenti**  di annotazione: se abilitata, sono disponibili gli strumenti di annotazione.
+* **Pannello**  mano sinistra - Se attivato, viene visualizzato il pannello a sinistra.
+* **Scarica PDF**  - Quando attivato, viene visualizzato il pulsante di download.
+* **Stampa PDF**  - Se abilitata, viene visualizzato il pulsante Stampa.
+* **Controlli**  pagina - Attiva o disattiva il funzionamento dei controlli di pagina.
    * Àncora
    * Disancora
 
@@ -90,10 +90,10 @@ L’area di visualizzazione viene riprodotta nel browser completo. Questa funzio
 
 ![Personalizzare l’opzione di un contenitore di dimensioni tabulazione della finestra di dialogo di modifica del componente visualizzatore PDF](/help/assets/pdf-viewer-edit-customize-sized-container.png)
 
-* **Schermo** intero: se attivato, il visualizzatore occupa l&#39;intera altezza/larghezza della finestra.
-* **Scarica PDF** - Quando attivato, viene visualizzato il pulsante di download.
-* **Stampa PDF** - Se abilitata, viene visualizzato il pulsante Stampa.
-* **Controlli** pagina - Attiva/disattiva il comportamento dei controlli di pagina.
+* **Schermo**  intero: se attivato, il visualizzatore occupa l&#39;intera altezza/larghezza della finestra.
+* **Scarica PDF**  - Quando attivato, viene visualizzato il pulsante di download.
+* **Stampa PDF**  - Se abilitata, viene visualizzato il pulsante Stampa.
+* **Controlli**  pagina - Attiva o disattiva il funzionamento dei controlli di pagina.
    * Àncora
    * Disancora
 
@@ -103,8 +103,8 @@ Viene eseguito il rendering di tutte le pagine PDF allineate all’interno di un
 
 ![Personalizzare l’opzione di un contenitore di dimensioni tabulazione della finestra di dialogo di modifica del componente visualizzatore PDF](/help/assets/pdf-viewer-edit-customize-inline.png)
 
-* **Scarica PDF** - Quando attivato, viene visualizzato il pulsante di download.
-* **Stampa PDF** - Se abilitata, viene visualizzato il pulsante Stampa.
+* **Scarica PDF**  - Quando attivato, viene visualizzato il pulsante di download.
+* **Stampa PDF**  - Se abilitata, viene visualizzato il pulsante Stampa.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
