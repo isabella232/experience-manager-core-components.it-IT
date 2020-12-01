@@ -18,13 +18,13 @@ Per includere questi campi nel Livello dati fornito dai Componenti principali, �
 
 ## Esempio: Componente titolo {#example}
 
-Un componente di base come il componente [](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) Titolo estende [il componente](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) , che dispone di un `getData` metodo che per impostazione predefinita restituisce [`ComponentData`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/datalayer/ComponentData.java)
+Un componente di base come il componente [Titolo](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) estende [Componente](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) che dispone di un metodo `getData` che per impostazione predefinita restituisce [`ComponentData`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/datalayer/ComponentData.java)
 
-`ComponentData` serializza i campi predefiniti che il componente può implementare, come `getDataLayerLinkUrl` e `getDataLayerTitle` per il [`TitleImpl`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/TitleImpl.java)
+`ComponentData` serializza i campi predefiniti che il componente può implementare, come  `getDataLayerLinkUrl` e  `getDataLayerTitle` per il  [`TitleImpl`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/TitleImpl.java)
 
-Pertanto, il modello Sling personalizzato potrebbe avere un `getData` metodo che restituisce un oggetto che si estende `ComponentData` per restituire altri campi.
+Pertanto, il modello Sling personalizzato potrebbe avere un metodo `getData` che restituisce un oggetto che si estende `ComponentData` per restituire altri campi.
 
-In questo modo, verrà aggiunto un `data-cmp-data-layer` attributo all’elemento HTML del componente con il JSON dei dati che verranno popolati nel livello dati. A questo punto, è possibile implementare script che ascoltino questi dati o gli eventi correlati.
+In questo modo, verrà aggiunto un attributo `data-cmp-data-layer` all&#39;elemento HTML del componente con il JSON dei dati che verranno compilati nel livello dati. A questo punto, è possibile implementare script che ascoltino questi dati o gli eventi correlati.
 
 >[!TIP]
 >
