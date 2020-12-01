@@ -1,6 +1,6 @@
 ---
 sub-product: AEM Core Components
-user-guide-title: AEM Core Components
+user-guide-title: Componenti di base AEM
 breadcrumb-title: Guida ai componenti core
 user-guide-description: Utilizza i componenti core estensibili per consentire agli autori di creare facilmente contenuti.
 translation-type: tm+mt
@@ -75,7 +75,7 @@ ht-degree: 69%
    + [Supporto AMP](developing/amp.md)
    + [Configurazioni basate sul contesto](developing/context-aware-configs.md)
    + [Incluse le librerie client](developing/including-clientlibs.md)
-   + Livello dati client Adobe  {#data-layer}
+   + Livello dati client  Adobe {#data-layer}
       + [Panoramica del livello dati](developing/data-layer/overview.md)
       + [Integrazioni con il livello dati](developing/data-layer/integrations.md)
       + [Estensione del livello dati](developing/data-layer/extending.md)
