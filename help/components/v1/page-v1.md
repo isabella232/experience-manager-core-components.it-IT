@@ -4,19 +4,22 @@ description: Il componente Pagina è un componente di pagina estensibile progett
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
 
 # Componente pagina (v1) {#page-component-v}
 
-Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor [](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
+Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l&#39; [editor modelli](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) e consente di assemblare con l&#39;editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 
 ## Utilizzo {#usage}
 
 Il componente Pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
 
-Utilizzando la finestra di dialogo [di](#design-dialog)progettazione, potete definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la finestra di dialogo [di](#edit-dialog) modifica del componente pagina è la finestra delle proprietà della pagina.
+Utilizzando la finestra di dialogo [progettazione](#design-dialog), è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la [finestra di dialogo di modifica](#edit-dialog) del componente pagina è la finestra delle proprietà della pagina.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -33,13 +36,13 @@ La tabella seguente elenca la compatibilità di v1 del componente Pagina.
 >
 >Questo documento descrive la versione 1 del componente Pagina.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pagina, vedere il documento del componente [](/help/components/page.md) Pagina.
+>Per informazioni dettagliate sulla versione corrente del componente Pagina, vedere il documento [Page Component](/help/components/page.md).
 
 >[!NOTE]
 >
->La versione 1 del componente pagina non supporta il reindirizzamento della pagina. Utilizzate la versione [corrente del componente](/help/components/page.md) pagina per il supporto del reindirizzamento delle pagine.
+>La versione 1 del componente pagina non supporta il reindirizzamento della pagina. Utilizzare la [versione corrente del componente pagina](/help/components/page.md) per il supporto del reindirizzamento delle pagine.
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -675,15 +678,15 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
-## Edit Dialog {#edit-dialog}
+## Finestra di dialogo Modifica {#edit-dialog}
 
-Poiché il componente rappresenta l’intera pagina, le impostazioni che normalmente si trovano in una finestra di dialogo di modifica si trovano nella finestra Proprietà [](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html) pagina.
+Poiché il componente rappresenta l’intera pagina, le impostazioni che normalmente si trovano in una finestra di dialogo di modifica si trovano nella finestra [Proprietà pagina](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html).
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite Informazioni **pagina > Progettazione** pagina.
+Poiché il componente rappresenta l’intera pagina, la finestra di dialogo della progettazione è accessibile tramite **Informazioni pagina -> Progettazione pagina**.
 
 ![](/help/assets/chlimage_1-94.png)
 
@@ -693,7 +696,7 @@ La finestra Progettazione pagina consente di definire librerie lato client da ca
 * Per rimuovere un campo, fare clic o toccare l&#39;icona del cestino accanto al campo da rimuovere.
 * Per riordinare l&#39;ordine di caricamento, fare clic o toccare e trascinare la maniglia accanto al campo da spostare.
 
-Per ulteriori informazioni sull&#39;uso delle librerie lato client, consultate [Utilizzo delle librerie](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)lato client.
+Per ulteriori informazioni sull&#39;utilizzo delle librerie lato client, vedere [Utilizzo delle librerie lato client](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
 ![](/help/assets/chlimage_1-95.png)
 
@@ -703,4 +706,4 @@ La documentazione tecnica più recente sul componente Pagina [è disponibile su 
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
