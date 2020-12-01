@@ -4,19 +4,22 @@ description: Il componente Principale Modulo nascosto consente la visualizzazion
 index: n
 translation-type: tm+mt
 source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
 
-# Form Hidden Component (v1) {#form-hidden-component-v}
+# Componente nascosto modulo (v1) {#form-hidden-component-v}
 
 Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
 
 ## Utilizzo {#usage}
 
-Il componente di base Modulo nascosto consente la creazione di campi nascosti per riportare in AEM le informazioni sulla pagina corrente e deve essere utilizzato insieme al componente [Contenitore di](form-container-v1.md)moduli.
+Il componente di base Modulo nascosto consente la creazione di campi nascosti per riportare in AEM le informazioni sulla pagina corrente e deve essere utilizzato insieme al componente contenitore [modulo](form-container-v1.md).
 
-Le proprietà del campo possono essere definite dall’editor del contenuto nella finestra di dialogo [di](#configure-dialog)configurazione.
+Le proprietà del campo possono essere definite dall&#39;editor del contenuto nella finestra di dialogo di [configurazione](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente nascosto modul
 >
 >In questo documento viene descritta la versione 1 del componente Nascosto modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Nascosto modulo, consultare il documento [Modulo nascosto componente](/help/components/forms/form-hidden.md) .
+>Per informazioni dettagliate sulla versione corrente del componente Nascosto modulo, vedere il documento [Componente nascosto modulo](/help/components/forms/form-hidden.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -77,7 +80,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md#release-history-and-compatibility) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md#release-history-and-compatibility).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -85,9 +88,9 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](/help/assets/chlimage_1-26.png)
 
-* **Nome** - Il nome del campo, inviato con i dati del modulo
-* **Valore** - Il valore del campo, inviato con i dati del modulo
-* **Identificatore** - L&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
+* **Nome** : il nome del campo, inviato con i dati del modulo
+* **Valore**  - Il valore del campo, inviato con i dati del modulo
+* **Identificatore** : l&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -99,4 +102,4 @@ La documentazione tecnica più recente sul componente Nascosto modulo [è dispon
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
