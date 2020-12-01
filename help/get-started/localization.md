@@ -3,6 +3,9 @@ title: Funzioni di localizzazione dei componenti core
 description: Funzioni di localizzazione dei componenti core
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -11,25 +14,25 @@ source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
 
 Molti siti Web richiedono la distribuzione di contenuti in un formato localizzato in più lingue e aree geografiche. I componenti core selezionati offrono una risoluzione intelligente dei riferimenti che semplifica la creazione di un modello unificato per tutti i contenuti localizzati che si adattano automaticamente in base alla struttura del sito localizzata.
 
-## Esempio: pagina localizzata con navigazione e piè di pagina {#example}
+## Esempio - Pagina localizzata con navigazione e piè di pagina {#example}
 
 La maggior parte dei siti richiede che un piè di pagina sia presente in tutte le pagine. Questi piè di pagina sono generalmente coerenti per tutto il contenuto della pagina. Tuttavia, per una pagina di contenuto localizzata, è necessario visualizzare una versione localizzata di tale intestazione o piè di pagina.
 
 Analogamente, un componente di navigazione in genere deve essere visualizzato su tutte le pagine. Tuttavia, dovrà riflettere anche il contenuto delle pagine localizzate.
 
-Utilizzando le funzioni di localizzazione del componente [core di](/help/components/navigation.md) navigazione e del componente [core del frammento](/help/components/experience-fragment.md) esperienza, insieme ai modelli [modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html), si tratta di un’attività semplice. L&#39;esempio potrebbe essere ulteriormente esteso per utilizzare anche il componente [Navigazione](/help/components/language-navigation.md) lingua.
+Utilizzando le funzioni di localizzazione del [componente core di navigazione](/help/components/navigation.md) e del [componente principale frammento esperienza](/help/components/experience-fragment.md) insieme ai [modelli modificabili di AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html), si tratta di un&#39;attività semplice. L&#39;esempio potrebbe essere ulteriormente esteso per utilizzare anche il [Componente di navigazione della lingua](/help/components/language-navigation.md).
 
 ## Struttura del contenuto {#content-structure}
 
-Tutte le funzioni di localizzazione di AEM e dei suoi componenti core si basano su una struttura di contenuto chiara e logica per il contenuto localizzato.
+Tutte le funzioni di localizzazione di AEM e dei relativi componenti core si basano su una struttura di contenuto chiara e logica per i contenuti localizzati.
 
-Supponiamo che il sito sia semplicemente chiamato `my-site` e si trovi qui:
+Supponiamo che il tuo sito sia semplicemente chiamato `my-site` e si trovi qui:
 
 ```
 /content/my-site
 ```
 
-Diciamo anche che si crea il sito in inglese e lo si offre anche in francese. Se disponete di una pagina semplice chiamata `my-page` si trova in due rami di localizzazione nella struttura dei contenuti del sito:
+Diciamo anche che si crea il sito in inglese e lo si offre anche in francese. Se disponete di una semplice pagina denominata `my-page`, la potete trovare in due rami di localizzazione nella struttura dei contenuti del sito:
 
 ```
 /content
@@ -42,7 +45,7 @@ Diciamo anche che si crea il sito in inglese e lo si offre anche in francese. Se
 
 È sotto questi rami di localizzazione che si creano ulteriori pagine di siti.
 
-I piè di pagina sono generalmente realizzati utilizzando i frammenti esperienza, per cui è necessaria una versione inglese e francese come le pagine. Tuttavia, i frammenti esperienza non sono pagine, ma parti di pagine che possono essere riutilizzate tra le pagine, in modo che non risiedano direttamente sotto `/content` come le altre pagine. Vivono invece sotto la propria cartella, ma poiché devono essere localizzati, la loro struttura deve rispecchiare la struttura di localizzazione del sito.
+I piè di pagina sono generalmente realizzati utilizzando i frammenti esperienza, per cui è necessaria una versione inglese e francese come le pagine. Tuttavia, i frammenti esperienza non sono pagine, ma parti di pagine che possono essere riutilizzate tra le pagine, pertanto non vivono direttamente sotto `/content` come le altre pagine. Vivono invece sotto la propria cartella, ma poiché devono essere localizzati, la loro struttura deve rispecchiare la struttura di localizzazione del sito.
 
 ```
 /content
@@ -64,7 +67,7 @@ I piè di pagina sono generalmente realizzati utilizzando i frammenti esperienza
 
 Il componente Frammento esperienza è molto flessibile ed è adatto per un&#39;intestazione o un piè di pagina di pagina.
 
-Poiché il nostro ipotetico sito Web è disponibile in inglese e francese, dovremo creare due frammenti esperienza, entrambi denominati `footer` nelle località descritte [in precedenza.](#content-structure)
+Poiché il nostro sito ipotetico è disponibile in inglese e francese, sarà necessario creare due frammenti esperienza, entrambi denominati `footer` [nelle posizioni precedentemente descritte.](#content-structure)
 
 ![](/help/assets/screen-shot-2019-09-09-11.08.28.png)
 
@@ -72,7 +75,7 @@ Poiché il nostro ipotetico sito Web è disponibile in inglese e francese, dovre
 
 Poiché il piè di pagina verrà visualizzato su ogni pagina, sarà necessario aggiungere il frammento esperienza al modello di pagina standard.
 
-Il nostro modello è semplicemente chiamato `my-template` e si trova con i nostri altri modelli:
+Il nostro modello si chiama semplicemente `my-template` e si trova con i nostri altri modelli:
 
 ```
 /conf/my-site/settings/wcm/templates/my-template
@@ -89,6 +92,7 @@ A questo modello aggiungeremo i componenti di base sui quali vogliamo basare le 
 * [Frammento esperienza](/help/components/experience-fragment.md)
    * Il componente Frammento esperienza viene indirizzato al percorso del frammento nella lingua di authoring del frammento che rappresenta il piè di pagina.
    * In base al percorso del frammento e alla struttura dei frammenti esperienza che rispecchia la struttura di pagina localizzata, il componente può trovare automaticamente il contenuto localizzato corrispondente.
+
    ![](/help/assets/screen-shot-2019-09-09-11.20.10.png)
 
 ## Pagine {#pages}
