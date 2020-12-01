@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Componente frammento di contenuto{#content-fragment-component}
 
-Il componente Frammento di contenuto del componente di base consente la visualizzazione di un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente Frammento di contenuto del componente principale consente la visualizzazione di un [frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 >[!NOTE]
 >
@@ -20,17 +20,17 @@ Il componente Frammento di contenuto del componente di base consente la visualiz
 
 ## Utilizzo {#usage}
 
-Il componente di base Frammento di contenuto del componente consente di includere un frammento di [contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
+Il componente di base Frammento di contenuto del componente consente di includere in una pagina un [frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
-* È possibile selezionare il frammento e le relative proprietà nella finestra di dialogo [di](#configure-dialog)configurazione.
-* I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella finestra di dialogo [di](#design-dialog)progettazione.
-* L&#39;opzione Modifica consente di aprire il frammento selezionato nell&#39;editor [frammento di](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)contenuto.
+* È possibile selezionare il frammento e le relative proprietà nella finestra di dialogo [Configura](#configure-dialog).
+* I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella finestra di dialogo [progettazione](#design-dialog).
+* L&#39;opzione di modifica consente di aprire il frammento selezionato all&#39;interno dell&#39;editor [frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
 La versione corrente del componente Frammento di contenuto è v1, introdotto con la release 1.1.0 dei componenti core a ottobre 2017, ed è descritto in questo documento.
 
-La tabella seguente elenca tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
@@ -46,19 +46,19 @@ La tabella seguente elenca tutte le versioni supportate del componente, le versi
 >
 >`apps/core/wcm/components/contentfragment/v1/contentfragment`
 >
->Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei componenti proxy correlati per utilizzare il nuovo tipo di risorsa quando si esegue l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
+>Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei relativi componenti proxy per utilizzare il nuovo tipo di risorsa quando si esegue l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento Versioni [dei componenti](/help/versions.md)core.
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente Frammento di contenuto e per vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la Libreria [](https://adobe.com/go/aem_cmp_library_cf)componenti.
+Per provare il componente frammento di contenuto e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visita la [Libreria componenti](https://adobe.com/go/aem_cmp_library_cf).
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Frammento di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
+La documentazione tecnica più recente sul componente frammento di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -71,33 +71,33 @@ La finestra di dialogo di configurazione consente all&#39;autore del contenuto d
 * **Frammento di contenuto**
 
    * Percorso del frammento di contenuto desiderato
-   * La finestra di dialogo **** Selezione consente di individuare il frammento
+   * Per individuare il frammento è possibile utilizzare la finestra di dialogo **Selezione**
 
 * **Modalità di visualizzazione**
-   * **Singolo elemento** di testo - Abilita la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
-   * **Più elementi** - Consente di selezionare uno o più elementi del frammento di contenuto selezionato
-* **Elemento** - L&#39;elemento o gli elementi del frammento di contenuto da includere
-* **Variazione** - Variazione del frammento di contenuto da utilizzare (impostazione predefinita: **Master**)
+   * **Singolo elemento**  di testo - Abilita la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
+   * **Più elementi**  - Consente di selezionare uno o più elementi del frammento di contenuto selezionato
+* **Elemento** : elemento o elementi del frammento di contenuto da includere
+* **Variazione**  - Variazione del frammento di contenuto da utilizzare (impostazione predefinita:  **Master**)
 
 * **Paragrafi**
 
-   * **Tutto** - Visualizza tutti i paragrafi
+   * **All** - Visualizza tutti i paragrafi
    * **Intervallo**
 
       * Specificare intervalli di paragrafi da visualizzare, separati da punto e virgola
-      * Ad esempio, `1;3-5;7;9-*` per includere il primo, il terzo e il quinto, il settimo e il nono fino agli ultimi paragrafi
-* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [](/help/developing/data-layer/overview.md)dati.
+      * Ad esempio `1;3-5;7;9-*` per includere il primo, il terzo il quinto, il settimo e il nono ai paragrafi finali
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ### Scheda Controllo paragrafo {#paragraph-control-tab}
 
-Questa scheda non è disponibile quando è selezionata la modalità **Più elementi** .
+Questa scheda non è disponibile se è selezionata la modalità **Elementi multipli**.
 
 ![Componente frammento di contenuto](/help/assets/content-fragment-edit-paragraph.png)
 
-* **Paragrafi** - Consenti selezione di tutti i paragrafi o di un intervallo
+* **Paragrafi** : consente la selezione di tutti i paragrafi o di un intervallo
 * **Tratta il titolo come paragrafi propri**
 
 ## Finestra di dialogo Progettazione {#design-dialog}
