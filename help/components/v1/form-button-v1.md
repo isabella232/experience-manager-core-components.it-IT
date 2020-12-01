@@ -4,23 +4,26 @@ description: Il componente Principale Modulo nascosto consente di includere un c
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 3%
 
 ---
 
 
-# Form Button Component (v1) {#form-button-component-v}
+# Componente pulsante modulo (v1) {#form-button-component-v}
 
 Il componente Pulsante Modulo componente di base consente di includere un campo pulsante in un modulo per attivare un’azione.
 
 ## Utilizzo {#usage}
 
-Il componente Pulsante Modulo componente di base consente di creare un campo pulsante, spesso per attivare l’invio del modulo e deve essere utilizzato insieme al componente [Contenitore](form-container-v1.md)modulo.
+Il componente Pulsante Modulo componente di base consente la creazione di un campo pulsante, spesso per attivare l’invio del modulo e deve essere utilizzato insieme al componente [contenitore modulo](form-container-v1.md).
 
-Le proprietà del pulsante possono essere definite dall&#39;editor del contenuto nella finestra di dialogo [di](#configure-dialog)configurazione.
+Le proprietà del pulsante possono essere definite dall&#39;editor del contenuto nella finestra di dialogo di [configurazione](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente Pulsante modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la v1 del componente Pulsante Modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
 
 La tabella seguente elenca la compatibilità di v1 del componente Pulsante modulo.
 
@@ -33,9 +36,9 @@ La tabella seguente elenca la compatibilità di v1 del componente Pulsante modul
 >
 >Questo documento descrive la versione 1 del componente Pulsante modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pulsante modulo, vedere il documento sul componente [Pulsante](/help/components/forms/form-button.md) modulo.
+>Per informazioni dettagliate sulla versione corrente del componente Pulsante modulo, vedere il documento [Componente pulsante modulo](/help/components/forms/form-button.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
 Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -81,7 +84,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le informazioni sulla [compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -93,11 +96,11 @@ La finestra di dialogo di configurazione consente all&#39;autore del contenuto d
    * **Pulsante**
    * **Invia**
 
-* **Titolo** - Testo visualizzato sul pulsante
+* **Titolo**  - Testo visualizzato sul pulsante
    * Se non ne è stato fornito nessuno, per impostazione predefinita viene utilizzato il tipo di pulsante
 
-* **Nome** - Il nome del pulsante, inviato con i dati del modulo
-* **Valore** - Il valore del pulsante, inviato con i dati del modulo
+* **Nome** : il nome del pulsante che viene inviato insieme ai dati del modulo
+* **Valore**  - Il valore del pulsante, inviato con i dati del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
@@ -109,4 +112,4 @@ La documentazione tecnica più recente sul componente Pulsante Modulo [è dispon
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la documentazione [per lo sviluppatore di componenti](/help/developing/overview.md)core.
+Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
