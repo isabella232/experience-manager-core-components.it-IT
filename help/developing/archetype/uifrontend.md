@@ -33,7 +33,7 @@ Quando l&#39;intero archetipo AEM progetto viene eseguito utilizzando `mvn clean
 
 >[!TIP]
 >
->Scoprite come AEM gestire ClientLibs nella [AEM documentazione di sviluppo](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html), come includerli [o vedete di seguito [come il modulo ui.frontend li utilizza.](#clientlib-generation)](/help/developing/including-clientlibs.md)
+>Scoprite come AEM gestire ClientLibs nella [AEM documentazione di sviluppo](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html), come [includerli](/help/developing/including-clientlibs.md) o vedete di seguito [come il modulo ui.frontend li utilizza.](#clientlib-generation)
 
 ## Panoramica di ClientLibs {#clientlibs}
 
