@@ -2,9 +2,9 @@
 title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: c20d02aa93cce60b583a2d22c77b08ca7eb9b765
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '2157'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,12 @@ Le larghezze delle immagini, il ritaglio e impostazioni aggiuntive possono esser
 Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo di progettazione [può essere utilizzata per definire le larghezze predefinite della risorsa immagine. ](#design-dialog) Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
+
+## Supporto per contenuti multimediali dinamici {#dynamic-media}
+
+Il componente Immagine (a partire da [release 2.13.0](/help/versions.md)) supporta le risorse [Contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia). [Quando questa opzione è attivata, ](#design-dialog) queste funzioni consentono di aggiungere risorse di immagini per file multimediali dinamici con un semplice trascinamento o tramite il browser delle risorse, esattamente come per qualsiasi altra immagine. Sono inoltre supportati i modificatori di immagini, i predefiniti per immagini e le colture intelligenti.
+
+Le esperienze Web create con i componenti core non possono includere funzionalità avanzate, potenti, robuste, ad alte prestazioni e multipiattaforma per le immagini multimediali dinamiche.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -65,9 +71,7 @@ La documentazione tecnica più recente sul componente Immagine [è disponibile s
 
 Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
 
->[!NOTE]
->
->Dalla release 2.1.0 dei componenti core, il componente immagine supporta i microdati [schema.org](https://schema.org).
+Il componente Immagine supporta [schema.org microdata](https://schema.org).
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -86,33 +90,35 @@ Oltre alla finestra di dialogo [modifica ](#edit-dialog) e alla finestra di dial
 
 ![Scheda Metadati della finestra di dialogo di configurazione del componente Immagine](/help/assets/image-configure-metadata.png)
 
-* **L&#39;immagine è**
-decorativaVerificare se l&#39;immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
-* **Testo**
-alternativo: alternativa testuale al significato o alla funzione dell’immagine per lettori ipovedenti.
-   * Ottieni testo alternativo da DAM: se questa opzione è attivata, il testo alternativo dell&#39;immagine verrà popolato con il valore dei metadati `dc:description` in DAM.
-
-* ****
-DidascaliaUlteriori informazioni sull’immagine, visualizzate per impostazione predefinita sotto l’immagine.
-   * **Ottieni didascalia da**
-DAMWquando è selezionata, il testo della didascalia dell’immagine viene popolato con il valore del 
-`dc:title` in DAM.
-   * **Visualizza la didascalia come pop-**
-upSe questa opzione è selezionata, la didascalia non verrà visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
-
-* **Collegamento**
-   * Collegate l’immagine a un’altra risorsa.
+* **Tipo**  predefinito: definisce i tipi di predefiniti per immagini disponibili,  **Predefinito immagine o** Ritaglio **avanzato, ed è disponibile solo se sono abilitate le funzioni per i contenuti multimediali** dinamici.  [ ](#dynamic-meida) 
+   * **Predefinito**  immagine - Quando è selezionato  **Predefinito** tipo di  **predefinito per immagini, è disponibile il** predefinito  **** per immagini a discesa, che consente la selezione dai predefiniti per file multimediali dinamici disponibili. Questa funzione è disponibile solo se per la risorsa selezionata sono definiti dei predefiniti.
+   * **Ritaglio**  avanzato: quando si seleziona il tipo di  **predefinito**  **Ritaglio** avanzato, è disponibile il  **** rendering a discesa, che consente di selezionare le rappresentazioni disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definite delle rappresentazioni.
+   * **Modificatori**  immagini - Ulteriori comandi per la gestione di immagini per file multimediali dinamici possono essere definiti qui separati da  `&`, indipendentemente da quale  **predefinito** sia selezionato.
+* **L&#39;immagine è decorativa**  - Verificare se l&#39;immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+* **Testo**  alternativo: alternativa testuale al significato o alla funzione dell&#39;immagine, per lettori ipovedenti.
+   * **Ottieni testo alternativo da DAM** : se questa opzione è selezionata, il testo alternativo dell&#39;immagine verrà popolato con il valore dei  `dc:description` metadati in DAM.
+* **Didascalia**  - Per impostazione predefinita, sotto l’immagine vengono visualizzate ulteriori informazioni sull’immagine.
+   * **Ottieni didascalia da DAM** : se questa opzione è selezionata, il testo della didascalia dell&#39;immagine verrà popolato con il valore dei  `dc:title` metadati in DAM.
+   * **Visualizza la didascalia come pop-up**  - Se questa opzione è selezionata, la didascalia non viene visualizzata sotto l&#39;immagine, ma come pop-up visualizzato da alcuni browser quando si passa il puntatore sull&#39;immagine.
+* **Collegamento** : collega l’immagine a un’altra risorsa.
    * Utilizzare la finestra di dialogo di selezione per collegarsi a un&#39;altra risorsa AEM.
    * Se non effettuate il collegamento a una risorsa AEM, immettete l’URL assoluto. Gli URL non soluti verranno interpretati come relativi a AEM.
-
 * **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
+>[!TIP]
+>
+>**Smart** Cropand  **Image** Preset si escludono a vicenda. Se l’autore deve usare un predefinito per immagini insieme a una rappresentazione Ritaglio avanzato, dovrà usare i **Modificatori immagini** per aggiungere manualmente dei predefiniti.
+
 ## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica consente all’autore del contenuto di ritagliare, modificare la mappa del lancio e ingrandire l’immagine.
+
+>[!NOTE]
+>
+>Le funzioni di ritaglio, rotazione e zoom non si applicano alle risorse per file multimediali dinamici. Se le [funzioni per contenuti multimediali dinamici](#dynamic-media) sono abilitate, qualsiasi modifica alle risorse per contenuti multimediali dinamici deve essere eseguita tramite la finestra di dialogo [Configura.](#configure-dialog)
 
 ![Finestra di dialogo di modifica del componente immagine](/help/assets/image-edit.png)
 
@@ -181,36 +187,20 @@ Inoltre, è possibile definire quali opzioni generali del componente vengono aut
 
 ![Scheda principale della finestra di dialogo Progettazione del componente Immagine](/help/assets/image-design-main.png)
 
-* **Abilita**
-caricamento lento: consente di definire se l’opzione di caricamento pigro è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Immagine è**
-decorativaConsente di definire se l’opzione per l’immagine decorativa è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Ottenete testo alternativo da**
-DAMDefine se l&#39;opzione per recuperare il testo alternativo da DAM è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Ottieni didascalia da**
-DAMDefine se l’opzione per recuperare la didascalia da DAM è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Visualizza la didascalia come**
-pop-upConsente di definire se l’opzione per visualizzare la didascalia immagine come pop-up è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Disattiva UUID**
-TrackingCheck per disattivare il tracciamento dell’UUID della risorsa immagine.
-
-* ****
-LarghezzeDefinisce un elenco di larghezze in pixel per l’immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser.
+* **Abilitare le funzioni**  DM - Se questa opzione è selezionata, sono disponibili le  [funzioni Attiva elemento multimediale ](#dynamic-media) dinamico.
+* **Abilita caricamento**  lazy - Consente di definire se l’opzione di caricamento pigro è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
+* **Immagine decorativa**  - Consente di definire se l’opzione per l’immagine decorativa è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
+* **Ottieni testo alternativo da DAM** - Definisci se l’opzione per recuperare il testo alternativo da DAM è abilitata automaticamente quando aggiungi il componente immagine a una pagina.
+* **Ottieni didascalia da DAM** : consente di definire se l’opzione per recuperare la didascalia da DAM è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
+* **Visualizza la didascalia come pop-up**  - Consente di definire se l&#39;opzione per visualizzare la didascalia immagine come pop-up è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
+* **Disattiva tracciamento**  UUUID - Controlla se disabilitare il tracciamento dell’UUID della risorsa immagine.
+* **Larghezza**  - Definisce un elenco di larghezze in pixel per l’immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser.
    * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere un&#39;altra dimensione.
       * Utilizzare le maniglie per riordinare l&#39;ordine delle dimensioni.
       * Utilizzare l&#39;icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene differito finché non diventano visibili.
       * Selezionate l&#39;opzione **Disattiva caricamento pigro** per caricare le immagini al caricamento della pagina.
-* **Qualità JPEG**
-Fattore di qualità (in percentuale da 0 e 100) per le immagini JPEG trasformate (ad es. ridimensionate o ritagliate).
-
->[!NOTE]
->
->L’opzione Qualità JPEG è disponibile a partire dalla release 2.2.0 dei componenti core.
-
->[!NOTE]
->
->A partire dalla release 2.2.0 dei componenti core, il componente Immagine aggiunge alla risorsa immagine l’attributo UUID univoco `data-asset-id` per consentire il tracciamento e l’analisi del numero di visualizzazioni ricevute dalle singole risorse.
+* **Qualità**  JPEG - Fattore di qualità (in percentuale da 0 e 100) per le immagini JPEG trasformate (ad es. ridimensionate o ritagliate).
 
 ### Scheda Funzioni {#features-tab}
 
@@ -262,6 +252,6 @@ Il componente Immagine utilizza il servlet immagine adattivo del componente prin
 
 >[!NOTE]
 >
->Le richieste condizionali effettuate tramite l&#39;intestazione `Last-Modified` sono supportate dal servlet immagine adattivo, ma la memorizzazione nella cache dell&#39; `Last-Modified` intestazione [ deve essere abilitata nel dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
+>Le richieste condizionali effettuate tramite l&#39;intestazione `Last-Modified` sono supportate dal servlet immagine adattivo, ma la memorizzazione nella cache dell&#39; `Last-Modified` intestazione [ deve essere abilitata nel dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 >
 >[La configurazione del Dispatcher di esempio di AEM Project Archetype](/help/developing/archetype/overview.md) contiene già questa configurazione.
