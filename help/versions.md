@@ -2,9 +2,9 @@
 title: Versioni dei componenti core
 description: I componenti core sono pubblicati come versioni che possono contenere più versioni degli stessi componenti core. In questo documento vengono illustrati i rilasci e le versioni e viene illustrato come comprendere la compatibilità con i componenti core e i AEM.
 translation-type: tm+mt
-source-git-commit: 2f3d2499e9f6c88453b633c20e49703eac25eff4
+source-git-commit: 0f2994657ac42d4110e3b802753968a2bfdf0e5a
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1873'
 ht-degree: 22%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 22%
 
 # Versioni dei componenti core {#core-components-versions}
 
-La versione corrente dei componenti core è 2.12.1 ed è compatibile con le installazioni [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) e [in sede AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html). È stato rilasciato nel novembre 2020 come patch release per 2.12.0. La release 2.12.0 ha introdotto diverse nuove funzioni per moduli, metadati e livello dati.
+La versione corrente dei componenti core è 2.13.0 ed è compatibile con le installazioni [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) e [in sede AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html).
 
 ## Cronologia rilascio e compatibilità {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ La seguente tabella, il cui contenuto è [disponibile su GitHub con i dettagli s
 
 | Release | Descrizione | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
+| [2,13,0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0) | Questa versione include nuove funzioni per i file multimediali dinamici per il componente [immagine.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 4 dicembre 2020 |
 | [2.12.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.2) | Questa era una patch release per 2.12.0 con correzioni secondarie. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 11 novembre 2020 |
 | [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.1) | Questa è una patch release per 2.12.0 che risolve un bug principale nel componente [immagine.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 5 novembre 2020 |
 | [2,12,0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) | Questa release ha introdotto [un nuovo gestore di moduli POST;](/help/components/forms/form-container.md#post-data) la possibilità di includere tag CSS, Javascript e metadati [personalizzati mediante la configurazione in base al contesto;](/help/developing/including-clientlibs.md#context-aware-loading) e un&#39;utility `DataLayerBuilder` per [semplificare l&#39;integrazione dei livelli di dati nei componenti personalizzati.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 29 ottobre 2020 |
@@ -45,7 +46,7 @@ La seguente tabella, il cui contenuto è [disponibile su GitHub con i dettagli s
 | [2.0.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.0.8) | Questa era una release di bug. | 6.4.0.0+ | - | - | 8 | 12 giugno 2018 |
 | [2.0.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.0.6) | Questa versione ha aggiunto miglioramenti sotto-soglia, correzioni di bug e piccoli miglioramenti, tra cui il supporto del ribaltamento delle immagini nel componente [Immagine.](/help/components/image.md) | 6.4.0.0+ | - | - | 8 | 11 aprile 2018 |
 | [2.0.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.0.4) | Questa release si è concentrata principalmente su miglioramenti secondari, correzioni di bug, oltre ad alcuni miglioramenti minori al componente [immagine,](/help/components/image.md) [Componente pagina,](/help/components/page.md) e [Componente frammento di contenuto.](/help/components/content-fragment-component.md) | 6.4.0.0+ | - | - | 8 | 7 marzo 2018 |
-| [2.0.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.0.0) | Questa versione ha introdotto il componente di navigazione [](/help/components/navigation.md) [Componente di navigazione della lingua,](/help/components/language-navigation.md) e il componente di ricerca rapida [e implementato il](/help/components/quick-search.md) [Sistema di stile](/help/get-started/authoring.md#component-styling) per tutti i componenti. | 6.4.0.0+ | - | - | 8 | 16 gennaio 2018 |
+| [2.0.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.0.0) | Questa versione ha introdotto il componente di navigazione [](/help/components/navigation.md) [Componente di navigazione della lingua,](/help/components/language-navigation.md) e il componente di ricerca rapida [a5/> e implementato il [Sistema di stile](/help/get-started/authoring.md#component-styling) per tutti i componenti.](/help/components/quick-search.md) | 6.4.0.0+ | - | - | 8 | 16 gennaio 2018 |
 | [1.1.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-1.1.0) | Questa versione implementa l&#39;esportazione JSON su tutti i componenti e introduce il componente [Frammento di contenuto.](/help/components/content-fragment-component.md) | 6.4.0.0+ | - | - | 8 | 10 ottobre 2017 |
 | [1.0.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-1.0.6) | Questa versione aggiunge diverse correzioni per il componente [Immagine.](/help/components/image.md) | 6.4.0.0+ | - | - | 8 | 4 agosto 2017 |
 | [1.0.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-1.0.4) | Questa versione aggiunge correzioni per il componente [Pagina,](/help/components/page.md) [Componente immagine,](/help/components/image.md) e vari miglioramenti e correzioni globali. | 6.4.0.0+ | - | - | 8 | 26 aprile 2017 |
