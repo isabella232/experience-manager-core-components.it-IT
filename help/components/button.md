@@ -2,7 +2,7 @@
 title: Componente pulsante
 description: Il componente Pulsante componente core consente di creare e visualizzare un pulsante.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: df42f9e3fa26cbb26aa44688e26e5c9a7de4752e
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 4%
@@ -72,4 +72,4 @@ Nella scheda **Accessibilità** è possibile impostare i valori per le etichette
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Immagine supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+Il componente Pulsante supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
