@@ -2,7 +2,7 @@
 title: Utilizzo del tipo di archivio AEM progetti
 description: Istruzioni d'uso dettagliate per AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: 794408e8b643de2234664e69e59e1108cf286cd7
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 1%
@@ -57,9 +57,9 @@ Per iniziare, è possibile utilizzare semplicemente l&#39;estensione [AEM Eclips
 
 Naturalmente si può anche invocare direttamente Maven.
 
-```
+```shell
 mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
  -D archetypeVersion=XX \
  -D aemVersion=cloud \
@@ -132,31 +132,31 @@ Il progetto maven generato supporta profili di distribuzione diversi durante l&#
 
 Per creare tutti i moduli eseguiti nella directory principale del progetto, utilizzate il seguente comando Maven.
 
-```
+```shell
 mvn clean install
 ```
 
 Se disponete di un&#39;istanza AEM in esecuzione, potete creare e creare l&#39;intero progetto e distribuirlo in AEM con il seguente comando Maven.
 
-```
+```shell
 mvn clean install -PautoInstallPackage
 ```
 
 Per distribuirlo in un&#39;istanza di pubblicazione, eseguite questo comando.
 
-```
+```shell
 mvn clean install -PautoInstallPackagePublish
 ```
 
 In alternativa, per distribuire in un&#39;istanza di pubblicazione, eseguite questo comando.
 
-```
+```shell
 mvn clean install -PautoInstallPackage -Daem.port=4503
 ```
 
 Oppure, per distribuire solo il bundle all&#39;autore, eseguite questo comando.
 
-```
+```shell
 mvn clean install -PautoInstallBundle
 ```
 
@@ -172,7 +172,7 @@ Queste proprietà sono configurate per la distribuzione in un&#39;istanza AEM lo
 
 Queste proprietà sono configurate in modo che possano essere sostituite durante la distribuzione in ambienti di livello superiore. In questo modo i file POM non devono essere modificati, ma variabili come `aem.host` e `sling.password` possono essere ignorate tramite gli argomenti della riga di comando:
 
-```
+```shell
 mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.password=productionpasswd
 ```
 
