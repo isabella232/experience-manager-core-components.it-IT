@@ -2,9 +2,9 @@
 title: Componente teaser
 description: Il componente teaser può visualizzare un’immagine, un titolo, un testo RTF e, facoltativamente, un collegamento ad altri contenuti.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: e7aeff3a24cff14fbcd468561632ee1927c07b4e
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '762'
 ht-degree: 2%
 
 ---
@@ -52,6 +52,10 @@ L’autore del contenuto può utilizzare la finestra di dialogo di configurazion
    * Rilasciate una risorsa dal [browser delle risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) o toccate l&#39;opzione **Browse** per caricarla da un file system locale.
    * Toccate o fate clic su **Cancella** per deselezionare l&#39;immagine attualmente selezionata.
    * Toccate o fate clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell&#39;editor risorse.
+
+>[!NOTE]
+>
+>[Al momento ](image.md#dynamic-media) le funzioni Dynamic Media non sono disponibili nel componente Teaser.
 
 ### Testo {#text}
 
