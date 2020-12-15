@@ -2,10 +2,10 @@
 title: Utilizzo dei componenti core
 description: '"Per iniziare a usare i componenti core nel tuo progetto, devi seguire tre passaggi: scaricate e installate, create componenti proxy, caricate gli stili di base e consentite i componenti nei modelli."'
 translation-type: tm+mt
-source-git-commit: 78202dc777b90f795f66873921c55e21ef8a239c
+source-git-commit: 10090b836397af3c9428f99bba72313263f34596
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 4%
+source-wordcount: '757'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ Ad esempio, guardate il componente [title del sito WKND](https://github.com/adob
 
 ## Caricare gli stili di base {#load-the-core-styles}
 
-1. Se non ancora, create una [libreria client](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che contenga tutti i file CSS e JS necessari per il sito.
+1. Se non ancora, create una [libreria client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) che contenga tutti i file CSS e JS necessari per il sito.
 1. Nella libreria client del sito, aggiungere le dipendenze ai componenti core eventualmente necessari. Questa operazione viene eseguita aggiungendo una proprietà `embed`.
 
    Ad esempio, per includere le librerie client di tutti i componenti core v1, la proprietà da aggiungere sarà:
