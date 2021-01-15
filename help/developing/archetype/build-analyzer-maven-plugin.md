@@ -2,9 +2,9 @@
 title: AEM come Cloud Service SDK Build Analyzer Maven Plugin
 description: Documentazione per il plug-in dell'analizzatore Maven
 translation-type: tm+mt
-source-git-commit: b95515dba74486add7f50bc8984f4358090e735c
+source-git-commit: 37ec5c245d3806d98dd8a8538c81fc10154a2dfc
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '425'
 ht-degree: 3%
 
 ---
@@ -26,3 +26,4 @@ Di seguito è riportata una tabella che descrive gli analizzatori eseguiti come 
 | `bundle-resources` | Visualizza un avviso se un bundle contiene risorse specificate con l’intestazione Sling-Bundle-Resources, problema nell’AEM come ambiente cluster di Cloud Service. L&#39;avviso è simile al seguente:<p> </p> `[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Found bundle resources : [/libs/sling/explorer!/resources/explorer]`<p> </p> Per risolvere i problemi relativi alla conversione delle risorse in istruzioni di reindirizzamento, vedere [Repoinit Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#repo-init). | Sì | Sì |
 | `api-regions`<p> </p>`api-regions-check-order`<p> </p>`api-regions-dependencies`<p> </p>`api-regions-duplicates` | Questi analizzatori controllano alcuni dettagli relativi al pacchetto di [contenuto per il processo di conversione del modello di feature](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying) che crea artefatti conformi al modello di feature Sling. Eventuali errori devono essere segnalati  Adobe Assistenza clienti. | Sì | Sì |
 | `api-regions-crossfeature-dups` | Verifica che i bundle OSGI del cliente non abbiano dichiarazioni di pacchetto di esportazione che ignorano AEM come API pubblica  Cloud Service<p> </p>`[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Package overlap found between region global and bundle org.acme:mybundle:0.0.1.SNAPSHOT which comes from feature: [org.acme:myproject.analyse:slingosgifeature:0.0.1-SNAPSHOT]. Both export package: com.day.util`<p> </p>Per risolvere il problema, interrompete l&#39;esportazione di un pacchetto che fa parte dell&#39;API pubblica AEM. | Sì | Sì |
+| `repoinit` | Controlla la sintassi di tutte le sezioni di reindirizzamento | Sì | Sì |
