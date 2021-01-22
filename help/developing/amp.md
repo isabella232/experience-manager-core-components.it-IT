@@ -2,9 +2,9 @@
 title: Supporto AMP per i componenti core
 description: I componenti core supportano AMP - Pagine mobili con accelerazione
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: a4df0c8603614cf831ffd66cbcfc1f7ef964c25b
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -63,5 +63,9 @@ Le impostazioni AMP per una pagina possono essere sostituite anche in [Propriet√
 Quando si utilizza AMP con i componenti core, la differenza principale √® che AMP richiede che tutti i CSS [siano allineati](including-clientlibs.md#inlining) nell&#39;elemento `<head>` e ottimizzati.
 
 A questo scopo, viene utilizzato un componente pagina personalizzato, che carica solo il CSS specifico di AMP per i componenti presenti sulla pagina.
+
+>[!NOTE]
+>
+>A causa di limitazioni di progettazione AMP  Adobe non supporta l&#39;uso della griglia reattiva con la versione AMP della pagina.
 
 Per ulteriori requisiti e dettagli tecnici, consulta la documentazione per gli sviluppatori [GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
