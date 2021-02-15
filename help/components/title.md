@@ -2,9 +2,9 @@
 title: Componente titolo
 description: Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '569'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 ![Finestra di dialogo Progettazione del componente Titolo](/help/assets/title-design.png)
 
 * **Tipi/dimensioni consentiti per gli autori** - Abilitare o disabilitare i tipi di intestazione che saranno disponibili per gli autori di contenuti quando utilizzano il componente Titolo.
-* **Tipo/Dimensione** predefinita: consente di definire il tipo di intestazione che verrà assegnato automaticamente quando un autore di contenuto aggiunge il componente Titolo a una pagina.
+* **Tipo/Dimensione** predefiniti: consente di definire il tipo di intestazione che verrà assegnato automaticamente quando un autore di contenuto aggiunge il componente Titolo a una pagina.
 * **Disattiva collegamento** - Disattiva il supporto per i collegamenti nel componente titolo per impedire agli autori di contenuti di collegare i titoli.
 
 >[!NOTE]
@@ -82,3 +82,7 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 ### Scheda Stili {#styles-tab}
 
 Il componente Titolo supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Titolo supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
