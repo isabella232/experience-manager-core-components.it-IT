@@ -2,10 +2,10 @@
 title: Componente frammento di contenuto
 description: Il componente Frammento di contenuto del componente di base consente la visualizzazione di un frammento di contenuto.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 5%
+source-wordcount: '673'
+ht-degree: 4%
 
 ---
 
@@ -46,7 +46,7 @@ Nella tabella seguente sono elencate tutte le versioni supportate del componente
 >
 >`apps/core/wcm/components/contentfragment/v1/contentfragment`
 >
->Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei relativi componenti proxy per utilizzare il nuovo tipo di risorsa quando si esegue l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
+>Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei componenti proxy correlati per utilizzare il nuovo tipo di risorsa quando si esegue l&#39;aggiornamento alla release 2.4.0 o successiva dei componenti core.
 
 Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
 
@@ -110,3 +110,6 @@ La finestra di dialogo di progettazione consente all’autore del modello di def
 
    * Tipo di risorsa Sling utilizzato per la griglia reattiva interna
 
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Frammento di contenuto supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
