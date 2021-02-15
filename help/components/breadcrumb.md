@@ -2,9 +2,9 @@
 title: Componente Breadcrumb
 description: Il componente di base Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
 translation-type: tm+mt
-source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '722'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,7 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 ### Scheda Stili {#styles-tab}
 
 Il componente Breadcrumb supporta il AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Breadcrumb supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
