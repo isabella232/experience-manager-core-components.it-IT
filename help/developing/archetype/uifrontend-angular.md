@@ -2,7 +2,7 @@
 title: Build front-end per SPA angolare
 description: Descrizione del processo di compilazione front-end per progetti SPA basati su Angular
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Se si verificano errori relativi a CORS, è possibile configurare AEM come segue
 
 ### test npm {#npm-test}
 
-```
+```shell
 npm test
 ```
 
@@ -53,7 +53,7 @@ Questo comando avvia il runtime di test Karma. Per ulteriori informazioni, consu
 
 ### test di esecuzione npm:debug {#npm-run-test-debug}
 
-```
+```shell
 npm run test:debug
 ```
 
@@ -61,7 +61,7 @@ Questo comando avvia il corridore di test Karma in modalità orologio interattiv
 
 ### build di esecuzione npm {#npm-run-build}
 
-```
+```shell
 npm run build
 ```
 
