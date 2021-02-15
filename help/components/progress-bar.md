@@ -2,9 +2,9 @@
 title: Componente barra di avanzamento
 description: Il componente della barra di avanzamento rappresenta visivamente il progresso verso un obiettivo
 translation-type: tm+mt
-source-git-commit: cba1d898d7789af7f4045ef9aa052b4da6a6b33a
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '338'
 ht-degree: 3%
 
 ---
@@ -55,3 +55,7 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 ### Scheda Stili {#styles-tab}
 
 Il componente Barra di avanzamento supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Barra di avanzamento supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
