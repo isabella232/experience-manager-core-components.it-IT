@@ -2,9 +2,9 @@
 title: Utilizzo del tipo di archivio AEM progetti
 description: Istruzioni d'uso dettagliate per AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 10090b836397af3c9428f99bba72313263f34596
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,16 @@ L&#39;archetipo del progetto rende facile iniziare a sviluppare su AEM. I primi 
 AEM Archetype è composto da moduli:
 
 * **[core](core.md)**: è un pacchetto Java contenente tutte le funzionalità di base come servizi OSGi, listener e pianificatori, nonché il codice Java relativo ai componenti, come servlet e filtri di richiesta.
-* **[ui.apps](uiapps.md)**: contiene le  `/apps` e  `/etc` parti del progetto, ad esempio clientlibs JS e CSS, componenti, modelli, configurazioni specifiche per la modalità di esecuzione e test Hobbes.
+* **[it.test](ittests.md)**: sono test di integrazione basati su Java.
+* **[ui.apps](uiapps.md)**: contiene  `/apps` e  `/etc` parti del progetto, ad esempio clientlibs JS e CSS, componenti e modelli.
 * **[ui.content](uicontent.md)**: contiene contenuto di esempio utilizzando i componenti del modulo ui.apps.
-* **[ui.test](uitests.md)**: è un pacchetto Java contenente test JUnit eseguiti sul lato server. Questo bundle non deve essere distribuito in produzione.
-* **ui.launcher**: contiene codice colla che distribuisce il bundle ui.test (e i bundle dipendenti) al server e attiva l&#39;esecuzione JUnit remota.
+* **ui.config**: contiene configurazioni OSGi specifiche per la modalità di esecuzione per il progetto.
 * **[ui.frontend.general](uifrontend.md)**:  **(facoltativo)** contiene gli artefatti necessari per utilizzare il modulo di build front-end basato su Webpack generale.
 * **[ui.frontend.response](uifrontend-react.md)**:  **(Facoltativo)** contiene gli artefatti necessari quando si utilizza archetype per creare un progetto SPA basato su React.
 * **[ui.frontend.angular](uifrontend-angular.md)**:  **(Facoltativo)** contiene gli artefatti necessari quando si utilizza archetype per creare un progetto SPA basato su Angular.
+* **[ui.test](uitests.md)**: contiene test dell’interfaccia utente basati su selenio.
+* **all**: è un singolo pacchetto di contenuti che incorpora tutti i moduli compilati (pacchetti e pacchetti di contenuti), comprese eventuali dipendenze del fornitore.
+* **analizza**: esegue l&#39;analisi sul progetto, che fornisce una convalida aggiuntiva per la distribuzione in AEM come Cloud Service.
 
 ![](/help/assets/archetype-structure.png)
 
