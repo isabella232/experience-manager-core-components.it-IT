@@ -1,10 +1,10 @@
 ---
 title: ui.test Modulo AEM Project Archetype
-description: Come utilizzare i test JUnit AEM Project Archetype
+description: Come utilizzare i test dell'interfaccia utente AEM tipo archivio progetti
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -14,24 +14,22 @@ ht-degree: 0%
 
 Il progetto prevede tre livelli di test:
 
-## Prove di unità {#unit-tests}
+* [Prove di unità](core.md#unit-tests)
+* [Test di integrazione](ittests.md)
+* Test interfaccia
 
-Il test dell&#39;unità nel modulo [core](core.md) mostra il test dell&#39;unità classica per il codice contenuto nel pacchetto. Per eseguire il test, eseguire:
+Questo articolo descrive i test di interfaccia utente disponibili come parte del modulo ui.test.
 
-```
-mvn clean test
-```
+## Esecuzione di test dell&#39;interfaccia utente {#running-tests}
 
-## Test di integrazione {#integration-tests}
+Per eseguire il test, eseguire:
 
-I test di integrazione lato server consentono l&#39;esecuzione di test simili a quelli dell&#39;unità nell&#39;ambiente AEM, ad esempio sul server AEM. Per eseguire il test, eseguire:
-
-```
-mvn clean verify -PintegrationTests
+```shell
+mvn verify -Pui-tests-local-execution
 ```
 
-## Test lato client {#client-side-tests}
+Dopo l&#39;esecuzione, i report e i file di registro sono disponibili nella cartella `target/reports`.
 
-I `client-side Hobbes.js` test sono test basati su JavaScript basati su browser che verificano il comportamento sul lato browser.
+## Opzioni aggiuntive {#additional-options}
 
-Per eseguire il test, quando si visualizza una pagina AEM che si desidera testare nel browser, aprire la pagina in **Modalità Sviluppatore** aprendo il pannello a sinistra e passando alla scheda **Test**, individuare i **MyName Tests** generati ed eseguirli.
+I test dell&#39;interfaccia utente possono essere eseguiti con diverse opzioni, tra cui test headless su un browser locale e come immagine Docker. Per ulteriori informazioni, vedere il file [README.md del modulo ui.test](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
