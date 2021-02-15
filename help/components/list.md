@@ -2,9 +2,9 @@
 title: Elenca componente
 description: Il componente Elenco componenti core consente di creare facilmente elenchi dinamici e statici.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '979'
 ht-degree: 4%
 
 ---
@@ -188,3 +188,7 @@ dataAbilita data nella finestra di dialogo di  [modifica](#edit-dialog)
 ### Scheda Stili {#styles-tab}
 
 Il componente Immagine supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Elenco supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
