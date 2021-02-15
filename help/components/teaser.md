@@ -2,9 +2,9 @@
 title: Componente teaser
 description: Il componente teaser può visualizzare un’immagine, un titolo, un testo RTF e, facoltativamente, un collegamento ad altri contenuti.
 translation-type: tm+mt
-source-git-commit: e7aeff3a24cff14fbcd468561632ee1927c07b4e
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '775'
 ht-degree: 2%
 
 ---
@@ -106,3 +106,7 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 ### Scheda Stili {#styles-tab}
 
 Il componente Teaser supporta il AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Teaser supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
