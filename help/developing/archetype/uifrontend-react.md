@@ -2,7 +2,7 @@
 title: Creazione front-end per SPA React
 description: Descrizione del processo di build front-end per i progetti SPA basati su React
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Nella directory del progetto potete eseguire i comandi seguenti:
 
 ### npm start {#npm-start}
 
-```
+```shell
 npm start
 ```
 
@@ -45,7 +45,7 @@ Se si verificano errori relativi a CORS, è possibile configurare AEM come segue
 
 ### test npm {#npm-test}
 
-```
+```shell
 npm test
 ```
 
@@ -53,7 +53,7 @@ Questo comando avvia il runtime di test nella modalità orologio interattiva. Pe
 
 ### build di esecuzione npm {#npm-run-build}
 
-```
+```shell
 npm run build
 ```
 
@@ -69,7 +69,7 @@ Per impostazione predefinita, questo progetto utilizza l&#39;opzione predefinita
 
 L&#39;app React è configurata per utilizzare per impostazione predefinita [la suddivisione del codice](https://webpack.js.org/guides/code-splitting). Durante la creazione dell&#39;app per la produzione, il codice viene generato in diversi blocchi:
 
-```
+```shell
 $ ls build/static/js
 2.5b77f553.chunk.js
 2.5b77f553.chunk.js.map
