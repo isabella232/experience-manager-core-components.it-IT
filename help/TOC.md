@@ -1,13 +1,13 @@
 ---
 sub-product: AEM Core Components
 user-guide-title: Componenti di base AEM
-breadcrumb-title: Guida ai componenti core
+breadcrumb-title: Guida dei componenti core
 user-guide-description: Utilizza i componenti core estensibili per consentire agli autori di creare facilmente contenuti.
 translation-type: tm+mt
-source-git-commit: e32521f35f33897cd72892de393073b01ad963f1
+source-git-commit: f4bed5d9d0f5387259d083fe46220208347052b3
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 69%
+source-wordcount: '214'
+ht-degree: 67%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 69%
          + [Testo modulo (v1)](components/v1/form-text-v1.md)
 + Sviluppo {#developing}
    + [Sviluppo di componenti core](developing/overview.md)
-   + [Percorsi per il successo](developing/success.md)
+   + [Percorsi per il successo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
    + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Personalizzazione dei componenti core](developing/customizing.md)
    + [Linee guida per i componenti](developing/guidelines.md)
@@ -89,4 +89,5 @@ ht-degree: 69%
       + [ui.frontend.response Module](developing/archetype/uifrontend-react.md)
       + [modulo ui.frontend.angular](developing/archetype/uifrontend-angular.md)
       + [modulo ui.test](developing/archetype/uitests.md)
+      + [it.test Module](developing/archetype/ittests.md)
       + [Plug-in Analizzatore di generazione](developing/archetype/build-analyzer-maven-plugin.md)
