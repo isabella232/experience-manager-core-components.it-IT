@@ -2,9 +2,9 @@
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e composizione di testo RTF che offre funzioni di modifica diretta.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2213'
 ht-degree: 3%
 
 ---
@@ -369,3 +369,7 @@ L’opzione per l’inserimento di caratteri speciali può essere attivata o dis
 ## Scheda Stili {#styles-tab}
 
 Il componente Testo supporta il sistema AEM [stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Testo supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
