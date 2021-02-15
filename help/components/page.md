@@ -2,9 +2,9 @@
 title: Componente pagina
 description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
@@ -83,3 +83,7 @@ Per ulteriori informazioni sull&#39;utilizzo delle librerie lato client, vedere 
 ### Scheda Stili {#styles-tab}
 
 Il componente Pagina supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Pagina supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
