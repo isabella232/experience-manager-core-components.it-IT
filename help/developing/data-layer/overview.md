@@ -2,10 +2,10 @@
 title: Utilizzo del livello dati client del Adobe  con i componenti core
 description: Utilizzo del livello dati client del Adobe  con i componenti core
 translation-type: tm+mt
-source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
+source-git-commit: 57582c5c938e0f345b27785bd6fd6d5ed5454bd0
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 3%
+source-wordcount: '974'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +41,7 @@ Per attivare manualmente il Livello dati è necessario creare una [configurazion
 
 1. Aggiungere una proprietà `sling:configRef` al nodo `jcr:content` del sito sotto `/content` (ad es. `/content/<mySite>/jcr:content`) e impostarlo su `/conf/<mySite>` dal passaggio precedente.
 
-1. Una volta attivata questa opzione, potete verificare l’attivazione caricando una pagina del sito all’esterno dell’editor.  Inspect l&#39;origine della pagina e il tag `<body>` devono includere un attributo `data-cmp-data-layer-enabled`
+1. Una volta attivata questa opzione, è possibile verificare l&#39;attivazione caricando una pagina del sito all&#39;esterno dell&#39;editor, ad esempio utilizzando l&#39;opzione **Visualizza come pubblicato** nell&#39;editor.  Inspect l&#39;origine della pagina e il tag `<body>` devono includere un attributo `data-cmp-data-layer-enabled`
 
    ```html
    <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
@@ -62,6 +62,28 @@ Per attivare manualmente il Livello dati è necessario creare una [configurazion
    ```javascript
    window.adobeDataLayer.getState();
    ```
+
+## Componenti supportati {#supported-components}
+
+I seguenti componenti supportano il livello dati.
+
+* [Pannello a soffietto](/help/components/accordion.md)
+* [Breadcrumb](/help/components/breadcrumb.md)
+* [Pulsante](/help/components/button.md)
+* [Carosello](/help/components/carousel.md)
+* [Frammento di contenuto](/help/components/content-fragment-component.md)
+* [Immagine](/help/components/image.md)
+* [Navigazione lingua](/help/components/language-navigation.md)
+* [Elenco](/help/components/list.md)
+* [Navigazione](/help/components/navigation.md)
+* [Pagina](/help/components/page.md)
+* [Barra di avanzamento](/help/components/progress-bar.md)
+* [Schede](/help/components/tabs.md)
+* [Teaser](/help/components/teaser.md)
+* [Testo](/help/components/text.md)
+* [Titolo](/help/components/title.md)
+
+Fare riferimento anche agli eventi [attivati dai componenti.](#events-components)
 
 ## Schemi di dati dei componenti core {#data-schemas}
 
@@ -197,6 +219,34 @@ id: {
 Il seguente [evento](#events) è pertinente allo schema delle risorse:
 
 * `cmp:click`
+
+### Schema frammento di contenuto {#content-fragment}
+
+Lo schema frammento di contenuto è utilizzato dal componente [Frammento di contenuto.](/help/components/content-fragment-component.md)
+
+Lo schema Frammento di contenuto è definito come segue.
+
+```javascript
+id: {
+    @type
+    repo:modifyDate
+    dc:title
+    dc:description
+    xdm:text
+    xdm:linkURL
+    parentId
+    elements            // array of the Content Fragment elements
+}
+```
+
+Lo schema utilizzato per l&#39;elemento Frammento di contenuto è il seguente.
+
+```javascript
+{
+    xdm:title           // title
+    xdm:text            // text
+}
+```
 
 ## Eventi componenti core {#events}
 
