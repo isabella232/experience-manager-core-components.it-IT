@@ -2,9 +2,9 @@
 title: Componente Accordion
 description: Il componente Core Component Accordion consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1067'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Il componente Core Component Accordion consente la creazione di una raccolta di 
 
 ## Collegamento diretto a un pannello {#deep-linking}
 
-Le schede [Componenti Accordion e &lt;a0/>Tabs](tabs.md) supportano il collegamento diretto a un pannello all&#39;interno del componente.
+Le schede [Componenti Accordion e Tabs](tabs.md) supportano il collegamento diretto a un pannello all&#39;interno del componente.
 
 Per effettuare ciò:
 
@@ -120,8 +120,12 @@ La finestra di dialogo di progettazione consente all&#39;autore del modello di d
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi ai pannelli nel componente Accordion dall&#39;autore del contenuto.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)[
 
 ### Scheda Stili {#styles-tab}
 
 Il componente Accordion supporta il AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Accordion supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
