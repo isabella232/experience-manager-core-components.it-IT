@@ -2,9 +2,9 @@
 title: Componente carosello
 description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello a rotazione.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1125'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di aggiun
 
 ![Scheda Elementi della finestra di dialogo di modifica del componente Carosello](/help/assets/carousel-edit-items.png)
 
-Utilizzate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
+Utilizzate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
 * **Icona**  - L&#39;icona del tipo di componente della scheda per facilitarne l&#39;identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come una descrizione comando.
 * **Descrizione**  - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
@@ -123,8 +123,12 @@ La scheda **Proprietà** viene utilizzata per definire le impostazioni predefini
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti al componente Carosello dall&#39;autore del contenuto come diapositive.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)[
 
 ### Scheda Stili {#styles-tab}
 
 Il componente Carosello supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Carosello supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
