@@ -2,9 +2,9 @@
 title: Componente Tabulazioni
 description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto su una pagina.
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1040'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di creare
 
 ![Scheda Elementi della finestra di dialogo di modifica del componente](/help/assets/tabs-edit-items.png)
 
-Utilizzate il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
+Utilizzate il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come scheda. Una volta aggiunta, una voce viene aggiunta all&#39;elenco, che contiene le seguenti colonne:
 
 * **Icona**  - L&#39;icona del tipo di componente della scheda per facilitarne l&#39;identificazione nell&#39;elenco. Passate il puntatore del mouse sopra per visualizzare il nome completo del componente come una descrizione comando.
 * **Descrizione**  - Descrizione utilizzata come testo della scheda, con impostazione predefinita sul nome del componente selezionato per la scheda.
@@ -79,7 +79,7 @@ Utilizzate il pulsante **Aggiungi** per aprire il selettore di componenti e sceg
 
 >[!TIP]
 >
->Se la vista della pagina viene ridotta in modo che la finestra di dialogo di modifica diventi a schermo intero, il pulsante **Aggiungi** verrà nascosto. I componenti possono essere aggiunti al componente Tabs trascinando dal browser Componenti e rilasciando il componente Tabs nell&#39;editor pagina[.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component)
+>Se la vista della pagina viene ridotta in modo che la finestra di dialogo di modifica diventi a schermo intero, il pulsante **Aggiungi** verrà nascosto. I componenti possono essere aggiunti al componente Tabs trascinando dal browser Componenti e rilasciando il componente Tabs nell&#39;editor pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component).[
 
 ### Scheda Proprietà {#properties-tab}
 
@@ -128,8 +128,12 @@ La finestra di dialogo Progettazione consente all&#39;autore del modello di defi
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti al componente Tabulazioni dall&#39;autore del contenuto come elementi.
 
-La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda Componenti consentiti funziona nello stesso modo della scheda con lo stesso nome quando si definisce il criterio e le proprietà di un Contenitore di layout nell&#39;Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)[
 
 ### Scheda Stili {#styles-tab}
 
 Il componente Tabs supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Tabs supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
