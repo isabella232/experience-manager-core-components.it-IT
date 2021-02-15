@@ -2,9 +2,9 @@
 title: Incorpora componente
 description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 601bee9df2a82255c92fcf30b8dacde70b0583dc
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Il componente Incorpora componenti core consente di incorporare contenuto estern
 
 ## Utilizzo {#usage}
 
-Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare all’interno di una pagina di contenuto AEM. Inoltre, è disponibile un’opzione per definire anche l’HTML a forma libera da incorporare.
+Il componente core Incorpora componente permette all’autore del contenuto di definire il contenuto esterno selezionato da incorporare in una pagina di contenuto AEM. È inoltre disponibile un’opzione per definire anche l’HTML a forma libera da incorporare.
 
 * Le proprietà del componente possono essere definite nella finestra di dialogo di [configurazione](#configure-dialog).
 * I valori predefiniti per il componente quando viene aggiunto a una pagina possono essere definiti nella finestra di dialogo di progettazione [a1/>.](#design-dialog)
@@ -72,13 +72,20 @@ Gli sviluppatori possono aggiungere altri processori URL [seguendo la documentaz
 
 ### Contenuto incorporabile {#embeddable}
 
-Le variabili da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e che include informazioni aggiuntive. Un autore può scegliere tra file da incorporare affidabili preconfigurati e i componenti vengono forniti con un out-of-the-box integrabile su YouTube.
+Le variabili da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e che include informazioni aggiuntive. Un autore può selezionare tra file incorporati attendibili preconfigurati e i componenti vengono forniti con un componente YouTube incorporato out-of-the-box.
 
 Il campo **Embedable** definisce il tipo di processore da utilizzare. Nel caso di YouTube embedable potete quindi definire:
 
 * **ID**  video - ID video univoco da YouTube della risorsa da incorporare
 * **Larghezza**  - La larghezza del video incorporato
 * **Altezza**  - L&#39;altezza del video incorporato
+* **Abilita disattivazione audio** : questo parametro specifica se il video verrà riprodotto in modo disattivato per impostazione predefinita. Attivando questa opzione si aumenta la possibilità che Autoplay funzioni nei browser più recenti.
+* **Abilita riproduzione**  automatica: questo parametro specifica se il video iniziale verrà avviato automaticamente al caricamento del lettore. Questa opzione è valida solo per l’istanza di pubblicazione o per l’opzione **Visualizza come pubblicato** nell’istanza di creazione.
+* **Abilita loop**  - Nel caso di un singolo video, questo parametro specifica se il lettore deve riprodurre ripetutamente il video iniziale. Nel caso di una playlist, il lettore riproduce l&#39;intera playlist e riparte dal primo video.
+* **Abilita riproduzione in linea (iOS)**  - Questo parametro controlla se i video vengono riprodotti in linea (on) o a schermo intero (off) in un lettore HTML5 su iOS.
+* **Video**  correlati senza restrizioni - Se questa opzione è disattivata, i relativi video proverranno dallo stesso canale del video appena riprodotto, altrimenti proverranno da qualsiasi canale.
+
+Tenere presente che le opzioni &quot;enable&quot; devono essere attivate tramite la finestra di dialogo [Progettazione](#design-dialog) e possono essere impostate come valori predefiniti.
 
 Altri elementi da incorporare offrirebbero campi simili e possono essere definiti da uno sviluppatore da [seguendo la documentazione sviluppatore del componente Incorpora.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
@@ -102,7 +109,7 @@ La marcatura HTML che l&#39;autore può immettere viene filtrata a scopo di sicu
 
 *In generale,* tutti gli script e  `style` gli elementi, nonché tutti  `on*` e  `style` gli attributi, verranno rimossi dall&#39;output.
 
-Tuttavia, le regole sono più complicate perché il componente Incorpora segue AEM&#39;insieme di regole di filtraggio del framework HTML antiSamy, che si trova in `/libs/cq/xssprotection/config.xml`. Se necessario, lo sviluppatore può sovrapporre la configurazione specifica per il progetto.
+Tuttavia, le regole sono più complicate perché il componente Incorpora segue AEM set di regole di filtraggio del framework HTML AntiSamy, che si trova in `/libs/cq/xssprotection/config.xml`. Se necessario, lo sviluppatore può sovrapporre la configurazione specifica per il progetto.
 
 Ulteriori informazioni sulla sicurezza sono reperibili nella [AEM documentazione per gli sviluppatori per le installazioni aziendali interne](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) e in AEM [come installazioni Cloud Service.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/security/home.html)
 
@@ -113,9 +120,26 @@ Ulteriori informazioni sulla sicurezza sono reperibili nella [AEM documentazione
 
 La finestra di dialogo Progettazione consente all&#39;autore del modello di definire le opzioni disponibili per l&#39;autore del contenuto che utilizza il componente Incorpora e le impostazioni predefinite impostate al momento del posizionamento del componente Incorpora.
 
+### Scheda Tipi incorporabili {#embeddable-types-tab}
+
 ![Finestra di dialogo di progettazione di Incorpora componente](/help/assets/embed-design.png)
 
 * **Disattiva URL**  - Disattiva l&#39;opzione  **** URL per l&#39;autore del contenuto quando è selezionata
 * **Disabilita incorporabili**  - Disattiva l&#39;opzione  **** Incorpora per l&#39;autore del contenuto quando è selezionata, indipendentemente da quali processori incorporabili sono consentiti.
 * **Disattiva HTML**  - Disattiva l&#39;opzione  **** HTML per l&#39;autore del contenuto quando è selezionata.
-* **Embeddables**  consentiti - Multilegge che definisce quali processori incorporabili sono disponibili per l&#39;autore del contenuto, a condizione che l&#39;opzione  **** Embeddable sia attiva.
+* **Embeddables**  consentiti: selezione multipla che definisce quali processori incorporabili sono disponibili per l&#39;autore del contenuto, a condizione che sia attiva l&#39;opzione  **** Embeddable.
+
+### Scheda YouTube {#youtube-tab}
+
+![Scheda YouTube della finestra di dialogo di progettazione del componente Incorpora](/help/assets/embed-design-youtube.png)
+
+* **Consenti configurazione del comportamento**  disattivazione audio: consente all&#39;autore del contenuto di configurare l&#39;opzione  **Abilita** muteoption nel componente quando è selezionato il tipo di incorporamento di YouTube
+   * **Valore predefinito di disattivazione audio** : imposta automaticamente  **Abilita** muteoption quando è selezionato il tipo di incorporamento di YouTube
+* **Consenti configurazione del comportamento**  di riproduzione automatica: consente all&#39;autore del contenuto di configurare l&#39;opzione  **Abilita riproduzione** automatica nel componente quando il tipo di incorporamento di YouTube è selezionato
+   * **Valore predefinito di esecuzione**  automatica: imposta automaticamente l&#39;opzione  **Abilita** riproduzione automatica quando è selezionato il tipo di incorporamento di YouTube
+* **Consenti configurazione del comportamento**  del ciclo continuo: consente all&#39;autore del contenuto di configurare l&#39;opzione  **Abilita** posizione nel componente quando è selezionato il tipo di incorporamento di YouTube
+   * **Valore predefinito del ciclo** : imposta automaticamente  **Abilita** posizione quando è selezionato il tipo di incorporamento di YouTube
+* **Consenti configurazione della riproduzione in linea (iOS)**  - Consente all&#39;autore del contenuto di configurare l&#39; **opzione** Abilita riproduzione in linea (iOS) nel componente quando il tipo di incorporamento YouTube è selezionato
+   * **Valore predefinito di riproduzione in linea (iOS)**  - Imposta automaticamente  **l&#39;** opzione Abilita riproduzione in linea (iOS) quando è selezionato il tipo di incorporamento di YouTube
+* **Consenti configurazione di video**  in linea - Consente all&#39;autore del contenuto di configurare la  **Video correlati senza restrizioni nel** componente quando è selezionato il tipo di incorporamento di YouTube
+   * **Valore predefinito di video**  correlati senza restrizioni - Imposta automaticamente  **** Video correlati senza restrizioni quando si seleziona il tipo di incorporamento di YouTube
