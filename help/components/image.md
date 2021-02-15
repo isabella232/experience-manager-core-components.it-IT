@@ -2,9 +2,9 @@
 title: Componente immagine
 description: Il componente di base Immagine è un componente di immagine adattivo che consente di modificare direttamente il contenuto.
 translation-type: tm+mt
-source-git-commit: c20d02aa93cce60b583a2d22c77b08ca7eb9b765
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2170'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,15 @@ Le larghezze delle immagini, il ritaglio e impostazioni aggiuntive possono esser
 
 ## Funzioni reattive {#responsive-features}
 
-Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo di progettazione [può essere utilizzata per definire le larghezze predefinite della risorsa immagine. ](#design-dialog) Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
+Il componente Immagine è dotato di robuste funzioni reattive pronte all&#39;uso. A livello di modello di pagina, la finestra di dialogo di progettazione [può essere utilizzata per definire le larghezze predefinite della risorsa immagine. ](#design-dialog) Il componente Immagine caricherà automaticamente la larghezza corretta da visualizzare, a seconda delle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica automaticamente le dimensioni corrette. Non è necessario che gli sviluppatori di componenti si preoccupino di definire query multimediali personalizzate, dal momento che il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
-## Supporto per contenuti multimediali dinamici {#dynamic-media}
+## Supporto Dynamic Media {#dynamic-media}
 
-Il componente Immagine (a partire da [release 2.13.0](/help/versions.md)) supporta le risorse [Contenuti multimediali dinamici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia). [Quando questa opzione è attivata, ](#design-dialog) queste funzioni consentono di aggiungere risorse di immagini per file multimediali dinamici con un semplice trascinamento o tramite il browser delle risorse, esattamente come per qualsiasi altra immagine. Sono inoltre supportati i modificatori di immagini, i predefiniti per immagini e le colture intelligenti.
+Il componente Immagine (a partire da [release 2.13.0](/help/versions.md)) supporta le risorse [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia). [Quando questa opzione è attivata, ](#design-dialog) queste funzioni consentono di aggiungere risorse di immagini Dynamic Media con un semplice trascinamento o tramite il browser delle risorse, esattamente come per qualsiasi altra immagine. Sono inoltre supportati i modificatori di immagini, i predefiniti per immagini e le colture intelligenti.
 
-Le esperienze Web create con i componenti core non possono includere funzionalità avanzate, potenti, robuste, ad alte prestazioni e multipiattaforma per le immagini multimediali dinamiche.
+Le esperienze Web create con i componenti core non possono includere funzionalità Dynamic Media Image potenti, potenti, robuste, ad alte prestazioni e multipiattaforma.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -90,10 +90,10 @@ Oltre alla finestra di dialogo [modifica ](#edit-dialog) e alla finestra di dial
 
 ![Scheda Metadati della finestra di dialogo di configurazione del componente Immagine](/help/assets/image-configure-metadata.png)
 
-* **Tipo**  predefinito: definisce i tipi di predefiniti per immagini disponibili,  **Predefinito immagine o** Ritaglio **avanzato, ed è disponibile solo se sono abilitate le funzioni per i contenuti multimediali** dinamici.  [ ](#dynamic-meida) 
-   * **Predefinito**  immagine - Quando è selezionato  **Predefinito** tipo di  **predefinito per immagini, è disponibile il** predefinito  **** per immagini a discesa, che consente la selezione dai predefiniti per file multimediali dinamici disponibili. Questa funzione è disponibile solo se per la risorsa selezionata sono definiti dei predefiniti.
+* **Tipo**  predefinito: definisce i tipi di predefiniti per immagini disponibili,  **Predefinito immagine o** Ritaglio **avanzato, ed è disponibile solo se sono abilitate** le  [ ](#dynamic-meida) funzioni Dynamic Media.
+   * **Predefinito**  immagine - Quando è selezionato  **Predefinito** tipo di  **predefinito per immagini,** è disponibile il  **predefinito** per immagini a discesa, che consente la selezione dai predefiniti Dynamic Media disponibili. Questa funzione è disponibile solo se per la risorsa selezionata sono definiti dei predefiniti.
    * **Ritaglio**  avanzato: quando si seleziona il tipo di  **predefinito**  **Ritaglio** avanzato, è disponibile il  **** rendering a discesa, che consente di selezionare le rappresentazioni disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definite delle rappresentazioni.
-   * **Modificatori**  immagini - Ulteriori comandi per la gestione di immagini per file multimediali dinamici possono essere definiti qui separati da  `&`, indipendentemente da quale  **predefinito** sia selezionato.
+   * **Modificatori**  immagini - È possibile definire ulteriori comandi di gestione delle immagini Dynamic Media separati da  `&`, indipendentemente dal  **predefinito** selezionato.
 * **L&#39;immagine è decorativa**  - Verificare se l&#39;immagine deve essere ignorata dalla tecnologia di supporto e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
 * **Testo**  alternativo: alternativa testuale al significato o alla funzione dell&#39;immagine, per lettori ipovedenti.
    * **Ottieni testo alternativo da DAM** : se questa opzione è selezionata, il testo alternativo dell&#39;immagine verrà popolato con il valore dei  `dc:description` metadati in DAM.
@@ -118,7 +118,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
 >[!NOTE]
 >
->Le funzioni di ritaglio, rotazione e zoom non si applicano alle risorse per file multimediali dinamici. Se le [funzioni per contenuti multimediali dinamici](#dynamic-media) sono abilitate, qualsiasi modifica alle risorse per contenuti multimediali dinamici deve essere eseguita tramite la finestra di dialogo [Configura.](#configure-dialog)
+>Le funzioni di ritaglio, rotazione e zoom non si applicano alle risorse Dynamic Media. Se le [funzioni Dynamic Media](#dynamic-media) sono abilitate, qualsiasi modifica alle risorse Dynamic Media deve essere eseguita tramite la finestra di dialogo [Configura.](#configure-dialog)
 
 ![Finestra di dialogo di modifica del componente immagine](/help/assets/image-edit.png)
 
@@ -187,7 +187,7 @@ Inoltre, è possibile definire quali opzioni generali del componente vengono aut
 
 ![Scheda principale della finestra di dialogo Progettazione del componente Immagine](/help/assets/image-design-main.png)
 
-* **Abilitare le funzioni**  DM - Se questa opzione è selezionata, sono disponibili le  [funzioni Attiva elemento multimediale ](#dynamic-media) dinamico.
+* **Abilitare le funzioni**  DM - Se questa opzione è selezionata, sono disponibili le  [funzioni ](#dynamic-media) Dynamic Media abilitate.
 * **Abilita caricamento**  lazy - Consente di definire se l’opzione di caricamento pigro è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
 * **Immagine decorativa**  - Consente di definire se l’opzione per l’immagine decorativa è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
 * **Ottieni testo alternativo da DAM** - Definisci se l’opzione per recuperare il testo alternativo da DAM è abilitata automaticamente quando aggiungi il componente immagine a una pagina.
@@ -255,3 +255,7 @@ Il componente Immagine utilizza il servlet immagine adattivo del componente prin
 >Le richieste condizionali effettuate tramite l&#39;intestazione `Last-Modified` sono supportate dal servlet immagine adattivo, ma la memorizzazione nella cache dell&#39; `Last-Modified` intestazione [ deve essere abilitata nel dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 >
 >[La configurazione del Dispatcher di esempio di AEM Project Archetype](/help/developing/archetype/overview.md) contiene già questa configurazione.
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Immagine supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
