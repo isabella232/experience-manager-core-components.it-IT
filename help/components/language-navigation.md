@@ -2,9 +2,9 @@
 title: Componente navigazione lingua
 description: Il componente di navigazione della lingua fornisce una navigazione tra la lingua e il paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un'impostazione internazionale diversa.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '846'
 ht-degree: 2%
 
 ---
@@ -104,3 +104,7 @@ In genere il componente Navigazione lingua deve essere aggiunto e configurato so
 * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
 
 ![Finestra di dialogo di modifica del componente Navigazione lingua](/help/assets/language-navigation-edit.png)
+
+## Livello dati client  Adobe {#data-layer}
+
+Il componente Navigazione lingua supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
