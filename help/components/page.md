@@ -2,9 +2,9 @@
 title: Componente pagina
 description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare con l’editor modelli i componenti di intestazione/piè di pagina e struttura della pagina.
 translation-type: tm+mt
-source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
+source-git-commit: 2748fea0aca82b1262585b3f8c191f61607f7735
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '691'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,13 @@ Il componente Pagina è un componente di pagina estensibile progettato per funzi
 
 ## Utilizzo {#usage}
 
-Il componente pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
+Il componente Pagina costituisce la base di tutte le pagine progettate con i componenti core e modelli modificabili. Utilizzando il componente Pagina, le intestazioni, i piè di pagina e la struttura della pagina possono essere definiti come un modello utilizzando gli altri componenti core.
 
-Utilizzando la finestra di dialogo [progettazione](#design-dialog), è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente è la pagina stessa, la [finestra di dialogo di modifica](#edit-dialog) del componente pagina è la finestra delle proprietà della pagina.
+Utilizzando la finestra di dialogo [progettazione](#design-dialog), è possibile definire librerie personalizzate sul lato client per la pagina. A differenza di altri componenti che dispongono di una finestra di dialogo di modifica accessibile direttamente dal componente, poiché il componente Pagina è la pagina stessa, la [finestra di dialogo di modifica](#edit-dialog) del componente Pagina è la finestra delle proprietà della pagina.
+
+## Supporto progressivo delle app Web {#pwa-support}
+
+La release 2.15.0 dei componenti core ha introdotto il supporto per AEM funzionalità integrate [Progressive Web Apps (PWA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) nel componente Pagina. Con una semplice configurazione a livello di sito, trasforma la tua esperienza AEM in un PWA!
 
 ## Versione e compatibilità {#version-and-compatibility}
 
