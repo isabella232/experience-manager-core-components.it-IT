@@ -2,7 +2,7 @@
 title: Introduzione ai componenti core
 description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e sulle best practice più recenti. '
 translation-type: tm+mt
-source-git-commit: defc6f2cf4cac817577f3e74372da5e420a45ead
+source-git-commit: a752bbe7e03b3b85950b4b6332c39960198edd1e
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 26%
@@ -106,7 +106,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 | Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4   | Java SE | Paradiso |
 |---------|---------|---------|---------|---------|---------|
-| [2,14,0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.14.0) | Continuo | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
+| [2,15,0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Continuo | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
