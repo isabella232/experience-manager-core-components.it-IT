@@ -1,10 +1,11 @@
 ---
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 499047a8c15a6423a56b370f41fd020740481f80
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '961'
 ht-degree: 2%
 
 ---
@@ -16,91 +17,91 @@ Il componente Contenitore di moduli per componenti core consente la creazione di
 
 ## Utilizzo {#usage}
 
-Il componente Contenitore modulo consente di creare moduli e funzioni semplici per l&#39;invio di informazioni, mediante il supporto di semplici moduli WCM e l&#39;uso di una struttura nidificata per consentire l&#39;aggiunta di altri componenti modulo.
+Il componente Contenitore modulo consente di creare semplici moduli e funzioni per l’invio di informazioni, mediante il supporto di semplici moduli WCM e l’utilizzo di una struttura nidificata per consentire l’aggiunta di componenti modulo.
 
-Utilizzando la finestra di dialogo di [configurazione](#configure-dialog) l&#39;Editor contenuto può definire l&#39;azione attivata dall&#39;invio del modulo, l&#39;URL che deve gestire l&#39;invio e se è necessario avviare un flusso di lavoro. L&#39;autore del modello può utilizzare la finestra di dialogo [progettazione](#design-dialog) per definire i componenti consentiti e le relative mappature in modo simile alla finestra di dialogo di progettazione per il contenitore di layout standard [nell&#39;editor modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Utilizzando la [finestra di dialogo di configurazione](#configure-dialog) l’editor di contenuti può definire l’azione attivata dall’invio del modulo, l’URL che deve gestire l’invio e se deve essere attivato un flusso di lavoro. L’autore del modello può utilizzare la finestra di dialogo [progettazione](#design-dialog) per definire i componenti consentiti e le relative mappature in modo simile alla finestra di dialogo di progettazione per il contenitore di layout [standard nell’editor dei modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
->I componenti core Modulo contenitore Component supportano solo l’uso di componenti core per i componenti modulo (pulsante, testo, nascosti, ecc.). L&#39;utilizzo di componenti [foundation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) all&#39;interno del contenitore del modulo dei componenti core (e viceversa) non è supportato.
+>Il componente Contenitore modulo dei componenti core supporta solo l’utilizzo di componenti di base per i moduli (pulsanti, testo, nascosti, ecc.). Non è supportato l’utilizzo di componenti modulo [foundation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) all’interno del contenitore modulo dei componenti core (e viceversa).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Contenitore modulo è v2, introdotta con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Contenitore modulo è v2, introdotta con la versione 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
 
-Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-container-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Contenitore di moduli e per visualizzare esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_form_container).
+Per visualizzare esempi delle opzioni di configurazione e dell’output HTML e JSON del componente contenitore modulo, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_form_container) .
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Contenitore moduli [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_form_container_v2).
+La documentazione tecnica più recente sul componente per contenitori moduli [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_form_container_v2).
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire le azioni da eseguire quando il componente viene inviato.
 
-A seconda del **Tipo di azione** selezionato, le opzioni disponibili all&#39;interno del contenitore cambieranno. I tipi di azione disponibili sono:
+A seconda del **Tipo azione** selezionato, le opzioni disponibili all’interno del contenitore cambieranno. I tipi di azione disponibili sono:
 
-* [Pubblica dati modulo](#post-data)
+* [Dati modulo post](#post-data)
 * [E-mail](#mail)
 * [Contenuto store](#store-content)
 
 Indipendentemente dal tipo, esistono [impostazioni generali](#general-settings) che si applicano a ogni azione.
 
-### Post Form Data {#post-data}
+### Dati modulo post {#post-data}
 
-Quando il modulo viene inviato, il tipo di azione dei dati del modulo di posta passa i dati inviati a terzi come JSON per l&#39;elaborazione.
+Quando il modulo viene inviato, il tipo di azione per i dati del modulo di pubblicazione trasmette i dati inviati a un terzo come JSON per l’elaborazione.
 
-![Opzioni di inserimento dati modulo nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-post.png)
+![Opzioni per i dati del modulo nella finestra di dialogo di modifica del componente del contenitore del modulo](/help/assets/form-container-edit-post.png)
 
 * **Endpoint**  - Il servizio HTTPS completo che elaborerà i dati
-* **Messaggio**  di errore - Messaggio da visualizzare se l&#39;invio non ha esito positivo
+* **Messaggio di errore** : messaggio da visualizzare se l’invio non ha esito positivo
 
 >[!TIP]
->Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l&#39;elaborazione dei dati del modulo inoltrato. [Per ulteriori informazioni, consulta la documentazione tecnica su GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
+>Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l’elaborazione dei dati del modulo inoltrati. [Per ulteriori informazioni, consulta la documentazione tecnica su GitHub .](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
 ### E-mail {#mail}
 
 Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e-mail ai destinatari designati.
 
-![Opzioni e-mail nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-mail.png)
+![Opzioni e-mail nella finestra di dialogo di modifica del componente del contenitore del modulo](/help/assets/form-container-edit-mail.png)
 
-* **Oggetto**  - Oggetto dell&#39;e-mail che verrà inviata all&#39;invio del modulo
-* **Da**  - L&#39;indirizzo e-mail del messaggio e-mail che verrà inviato all&#39;invio del modulo
-* **A**  - Gli indirizzi dei destinatari che riceveranno un&#39;e-mail al momento dell&#39;invio del modulo
-   * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
-   * Toccate o fate clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
-* **CC** - Gli indirizzi dei destinatari che riceveranno una copia in carbonio dell&#39;e-mail inviata al momento dell&#39;invio del modulo
-   * Toccate o fate clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
-   * Toccate o fate clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
+* **Oggetto** : Oggetto dell’e-mail che verrà inviata all’invio del modulo
+* **Da** : l’indirizzo e-mail del mittente dell’e-mail che verrà inviato all’invio del modulo
+* **A** : gli indirizzi dei destinatari che riceveranno un’e-mail al momento dell’invio del modulo
+   * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
+   * Tocca o fai clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
+* **CC** : gli indirizzi dei destinatari che riceveranno una copia carbone dell’e-mail inviata al momento dell’invio del modulo
+   * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere altri indirizzi
+   * Tocca o fai clic sul pulsante **Elimina** per rimuovere un indirizzo e-mail
 
 ### Contenuto store {#store-content}
 
-Quando il modulo viene inviato, il contenuto del modulo viene memorizzato in una posizione archivio designata.
+Quando il modulo viene inviato, il contenuto del modulo verrà memorizzato in una posizione archivio specifica.
 
-![Opzioni di memorizzazione del contenuto nella finestra di dialogo di modifica del contenitore del modulo](/help/assets/form-container-edit-store.png)
+![Opzioni di archiviazione del contenuto nella finestra di dialogo di modifica del contenitore del modulo](/help/assets/form-container-edit-store.png)
 
-* **Percorso**  contenuto - Percorso dell&#39;archivio dei contenuti in cui è memorizzato il contenuto inviato
-* **Visualizza dati**  - Toccate o fate clic per visualizzare i dati inviati memorizzati come JSON
-* **Avvia flusso di lavoro** : configura per avviare un flusso di lavoro con il contenuto memorizzato come payload al momento dell&#39;invio del modulo
+* **Percorso contenuto** : percorso dell’archivio dei contenuti in cui è memorizzato il contenuto inviato
+* **Visualizza dati** : tocca o fai clic per visualizzare come JSON i dati archiviati inviati
+* **Avvia flusso di lavoro** : configura l’avvio di un flusso di lavoro con il contenuto memorizzato come payload al momento dell’invio del modulo
 
 >[!NOTE]
 >
->Al fine di semplificare la gestione dei dati utente e di garantire la separazione delle preoccupazioni, si sconsiglia in genere di archiviare contenuti generati dagli utenti all’interno del repository.
+>Al fine di semplificare la gestione dei dati utente e di applicare la separazione dei problemi, si sconsiglia generalmente di archiviare i contenuti generati dagli utenti all’interno dell’archivio.
 >
->Utilizzare invece il tipo di azione [Post Form Data](#post-data) per trasmettere il contenuto dell&#39;utente a un provider di servizi dedicato.
+>Utilizza invece il tipo di azione [Pubblica dati modulo](#post-data) per trasmettere i contenuti utente a un provider di servizi dedicato.
 
 ### Impostazioni generali {#general-settings}
 
@@ -108,19 +109,19 @@ Indipendentemente dal tipo di azione selezionato, è sempre possibile definire u
 
 ![Opzioni generali nella finestra di dialogo di modifica del componente Contenitore modulo](/help/assets/form-container-edit-general.png)
 
-* **Pagina**  di ringraziamento: l’utente verrà reindirizzato alla pagina specificata dopo il completamento dell’invio del modulo.
-   * Utilizzare la finestra di dialogo di selezione per selezionare una risorsa all&#39;interno di AEM.
-   * Se la pagina di ringraziamento non è AEM, specificate l’URL assoluto. Gli URL non assoluti verranno interpretati in relazione ai AEM.
-   * Lasciare vuoto per visualizzare nuovamente il modulo dopo l&#39;invio.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* **Pagina di ringraziamento** : l’utente verrà reindirizzato alla pagina specificata dopo il completamento dell’invio del modulo.
+   * Utilizza la finestra di dialogo Selezione per selezionare una risorsa all’interno di AEM.
+   * Se la pagina di ringraziamento non è in AEM, specifica l’URL assoluto. Gli URL non assoluti verranno interpretati in base a AEM.
+   * Lasciare vuoto per visualizzare nuovamente il modulo dopo l’invio.
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i componenti consentiti e le relative mappature per il contenitore, in modo simile alla finestra di dialogo di progettazione per il contenitore di layout [standard nell&#39;editor modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+La finestra di dialogo di progettazione consente all’autore del modello di definire i componenti consentiti e le relative mappature per il contenitore, in modo analogo alla finestra di dialogo di progettazione per il contenitore di layout [standard nell’editor modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Contenitore modulo supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+Il componente Contenitore modulo supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
