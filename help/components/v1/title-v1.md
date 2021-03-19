@@ -1,11 +1,12 @@
 ---
 title: Componente titolo (v1)
-description: Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+description: Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
 index: n
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '342'
 ht-degree: 2%
 
 ---
@@ -13,19 +14,19 @@ ht-degree: 2%
 
 # Componente titolo (v1) {#title-component-v}
 
-Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
 
 ## Utilizzo {#usage}
 
-Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto.
+Il componente Titolo deve essere utilizzato come titolo o intestazione di una sezione di contenuto.
 
-I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo di [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
+I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L’editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche una semplice modifica diretta del testo dell’intestazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v1 del componente Titolo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Titolo, originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
 
-La tabella seguente elenca la compatibilità di v1 del componente Titolo.
+Nella tabella seguente è riportata la compatibilità di v1 del componente Titolo.
 
 | Versione di AEM | Componente titolo v1 |
 |--- |--- |
@@ -34,13 +35,13 @@ La tabella seguente elenca la compatibilità di v1 del componente Titolo.
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Titolo.
+>Questo documento descrive la versione 1 del componente Titolo .
 >
->Per informazioni dettagliate sulla versione corrente del componente Titolo, vedere il documento [Componente titolo](/help/components/title.md).
+>Per informazioni dettagliate sulla versione corrente del componente Titolo, consulta il documento [Componente titolo](/help/components/title.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -67,7 +68,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
+>L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
 ## Finestra di dialogo Modifica {#edit-dialog}
 
@@ -75,7 +76,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di defini
 
 >[!NOTE]
 >
->Un valore vuoto per il titolo causerà la visualizzazione del titolo della pagina.
+>Se si specifica un valore vuoto per il titolo, viene visualizzato il titolo della pagina.
 
 ![](/help/assets/chlimage_1-91.png)
 
@@ -85,7 +86,7 @@ L’editor locale può essere utilizzato anche per modificare il testo del compo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno al momento della creazione da parte degli autori dei contenuti.
+La finestra di dialogo Progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno quando creati dagli autori dei contenuti.
 
 ![](/help/assets/chlimage_1-92.png)
 
@@ -95,4 +96,4 @@ La documentazione tecnica più recente sul componente Titolo [è disponibile su 
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
