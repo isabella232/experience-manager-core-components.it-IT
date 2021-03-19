@@ -1,34 +1,30 @@
 ---
-product: Adobe Experience Manager
+product: adobe experience manager
+solution: Experience Manager Sites
+type: Documentazione
 description: Documentazione per i componenti core di Adobe Experience Manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.it-IT
 index: y
-solution-title: Informazioni e supporto per AEM
-solution-hub-url: https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/home.html
-getting-started-title: Guida introduttiva allo sviluppo per AEM
-getting-started-url: https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/core-concepts/home.html
-tutorials-title: Esercitazioni su AEM
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: f109463f1942349c300600acf6b94f268e8aa60e
+source-git-commit: 290423c39b925ea8cf4077f31a76ecf01167f344
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 19%
+source-wordcount: '113'
+ht-degree: 6%
 
 ---
 
 
 # Metadati per uso interno
 
-I metadati nel sistema di creazione GitHub sono gerarchici ed è definito dai seguenti livelli crescenti di precedenti.
+I metadati nel sistema di authoring GitHub sono gerarchici e vengono definiti i seguenti livelli crescenti di precedenti.
 
 1. metadata.md
 1. ToC
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all’intero repo, ma possono essere sostituiti a livello di AC e di articolo. L&#39;eventuale sostituzione dei metadati deve essere eseguita al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all&#39;intero repository, ma possono essere ignorati a livello di AC e di articolo. Qualsiasi override dei metadati deve essere eseguito al livello più basso possibile.
 
-I metadati contenuti nel repo experience-manager-core-components.en sono il minimo richiesto.
+I metadati nell&#39;archivio experience-manager-core-components.en sono il minimo richiesto.
 
 metadata.md
 
