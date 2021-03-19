@@ -1,10 +1,11 @@
 ---
 title: Componente titolo
-description: Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+description: Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '574'
 ht-degree: 3%
 
 ---
@@ -12,52 +13,52 @@ ht-degree: 3%
 
 # Componente titolo{#title-component}
 
-Il componente Titolo componente di base è un componente di intestazione di sezione che include la modifica locale.
+Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
 
 ## Utilizzo {#usage}
 
-Il componente Titolo è destinato a essere utilizzato come titolo o intestazione di una sezione di contenuto. I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo di [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche la semplice modifica locale del testo dell’intestazione.
+Il componente Titolo deve essere utilizzato come titolo o intestazione di una sezione di contenuto. I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L’editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche una semplice modifica diretta del testo dell’intestazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Titolo è v2, introdotta con la release 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Titolo è v2, introdotta con la versione 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
 
-Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](v1/title-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Titolo e vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_title).
+Per visualizzare esempi delle opzioni di configurazione del componente Titolo e dell’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_title) .
 
 ### Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_title_v2).
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
 ## Finestra di dialogo Modifica {#edit-dialog}
 
 La finestra di dialogo di modifica consente all’autore del contenuto di definire il testo del titolo e selezionare il livello del titolo.
 
-* **Titolo**  - Se vuoto, verrà utilizzato il titolo della pagina
-* **Tipo/Dimensione**  - Definisce il livello del titolo del titolo
+* **Titolo** : se questo campo viene lasciato vuoto, viene utilizzato il titolo della pagina
+* **Tipo/Dimensione**  - Definisce il livello del titolo
 * **Collegamento**  - Definisce il contenuto a cui verrà collegato il titolo. Può essere un percorso a una pagina di contenuto, un URL esterno o un ancoraggio di pagina.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
 ![Finestra di dialogo di modifica del componente Titolo](/help/assets/title-edit.png)
 
 >[!NOTE]
 >
->La possibilità di definire un collegamento per il titolo è stata introdotta con la release 2.2.0 dei componenti core.
+>La possibilità di definire un collegamento per il titolo è stata introdotta con la versione 2.2.0 dei componenti core.
 
 L’editor locale può essere utilizzato anche per modificare il testo del componente titolo.
 
@@ -65,24 +66,24 @@ L’editor locale può essere utilizzato anche per modificare il testo del compo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno al momento della creazione da parte degli autori dei contenuti.
+La finestra di dialogo Progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno quando creati dagli autori dei contenuti.
 
 ### Scheda Dimensioni {#sizes-tab}
 
-![Finestra di dialogo Progettazione del componente Titolo](/help/assets/title-design.png)
+![Finestra di dialogo di progettazione del componente Titolo](/help/assets/title-design.png)
 
-* **Tipi/dimensioni consentiti per gli autori** - Abilitare o disabilitare i tipi di intestazione che saranno disponibili per gli autori di contenuti quando utilizzano il componente Titolo.
-* **Tipo/Dimensione** predefiniti: consente di definire il tipo di intestazione che verrà assegnato automaticamente quando un autore di contenuto aggiunge il componente Titolo a una pagina.
-* **Disattiva collegamento** - Disattiva il supporto per i collegamenti nel componente titolo per impedire agli autori di contenuti di collegare i titoli.
+* **Tipi/dimensioni consentiti per gli autori**  - Abilita o disabilita i tipi di intestazione che saranno disponibili per gli autori di contenuti quando utilizzano il componente Titolo.
+* **Tipo/dimensione predefinito**: definisci il tipo di intestazione che verrà assegnato automaticamente quando un autore di contenuti aggiunge il componente Titolo a una pagina.
+* **Disattiva collegamento**: disabilita il supporto dei collegamenti nel componente titolo per impedire agli autori di contenuti di effettuare collegamenti dai titoli.
 
 >[!NOTE]
 >
->La possibilità di definire un collegamento per il titolo è stata introdotta con la release 2.2.0 dei componenti core.
+>La possibilità di definire un collegamento per il titolo è stata introdotta con la versione 2.2.0 dei componenti core.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Titolo supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+Il componente Titolo supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-## Livello dati client  Adobe {#data-layer}
+## Livello dati client di Adobe {#data-layer}
 
-Il componente Titolo supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
+Il componente Titolo supporta [Livello dati client di Adobe.](/help/developing/data-layer/overview.md)
