@@ -1,10 +1,11 @@
 ---
 sub-product: AEM Core Components
-user-guide-title: Componenti di base AEM
+user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei componenti core
 user-guide-description: Utilizza i componenti core estensibili per consentire agli autori di creare facilmente contenuti.
+feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: f4bed5d9d0f5387259d083fe46220208347052b3
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 67%
@@ -73,9 +74,9 @@ ht-degree: 67%
    + [Personalizzazione dei componenti core](developing/customizing.md)
    + [Linee guida per i componenti](developing/guidelines.md)
    + [Supporto AMP](developing/amp.md)
-   + [Configurazioni basate sul contesto](developing/context-aware-configs.md)
-   + [Incluse le librerie client](developing/including-clientlibs.md)
-   + Livello dati client  Adobe {#data-layer}
+   + [Configurazioni in base al contesto](developing/context-aware-configs.md)
+   + [Inclusione delle librerie client](developing/including-clientlibs.md)
+   + Livello dati client di Adobe {#data-layer}
       + [Panoramica del livello dati](developing/data-layer/overview.md)
       + [Integrazioni con il livello dati](developing/data-layer/integrations.md)
       + [Estensione del livello dati](developing/data-layer/extending.md)
@@ -85,9 +86,9 @@ ht-degree: 67%
       + [Modulo core](developing/archetype/core.md)
       + [modulo ui.apps](developing/archetype/uiapps.md)
       + [modulo ui.content](developing/archetype/uicontent.md)
-      + [ui.frontend.general Module](developing/archetype/uifrontend.md)
-      + [ui.frontend.response Module](developing/archetype/uifrontend-react.md)
-      + [ui.frontend. Modulo angular](developing/archetype/uifrontend-angular.md)
+      + [modulo ui.frontend.general](developing/archetype/uifrontend.md)
+      + [modulo ui.frontend.react](developing/archetype/uifrontend-react.md)
+      + [modulo ui.frontend.angular](developing/archetype/uifrontend-angular.md)
       + [modulo ui.test](developing/archetype/uitests.md)
-      + [it.test Module](developing/archetype/ittests.md)
-      + [Plug-in Analizzatore di generazione](developing/archetype/build-analyzer-maven-plugin.md)
+      + [modulo it.testing](developing/archetype/ittests.md)
+      + [Plug-in Maven di Build Analyzer](developing/archetype/build-analyzer-maven-plugin.md)
