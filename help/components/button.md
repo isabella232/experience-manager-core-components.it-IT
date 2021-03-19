@@ -1,10 +1,11 @@
 ---
 title: Componente pulsante
-description: Il componente Pulsante componente core consente di creare e visualizzare un pulsante.
+description: Il componente Pulsante del componente core consente di creare e visualizzare un pulsante.
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -12,53 +13,53 @@ ht-degree: 3%
 
 # Componente pulsante{#button-component}
 
-Il componente Pulsante componente di base consente la configurazione e la visualizzazione di un pulsante su una pagina.
+Il componente Pulsante del componente core consente di configurare e visualizzare un pulsante su una pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Pulsante componente di base consente di includere un pulsante in una pagina.
+Il componente Pulsante del componente core consente di includere un pulsante in una pagina.
 
-* Le proprietà del pulsante possono essere selezionate nella finestra di dialogo di [configurazione](#configure-dialog).
-* Gli stili per il componente Pulsante possono essere definiti nella finestra di dialogo [progettazione](#design-dialog).
+* Le proprietà del pulsante possono essere selezionate nella finestra di dialogo [configura](#configure-dialog).
+* Gli stili per il componente pulsante possono essere definiti nella finestra di dialogo di progettazione [a1/>.](#design-dialog)
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Pulsante è v1, introdotto con la release 2.5.0 dei componenti core a giugno 2019, ed è descritto in questo documento.
+La versione corrente del componente pulsante è la v1, introdotta con la versione 2.5.0 dei componenti core a giugno 2019, ed è descritta in questo documento.
 
-Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Pulsante ed esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_button).
+Per visualizzare esempi delle opzioni di configurazione e dell’output HTML e JSON del componente Pulsante, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_button) .
 
 ## Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Pulsante [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_button_v1).
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire il pulsante e il comportamento del visitatore e la sua visualizzazione sulla pagina.
+La finestra di dialogo di configurazione consente all’autore del contenuto di definire il pulsante e il suo comportamento e la sua visualizzazione sulla pagina da parte del visitatore.
 
 ### Scheda Proprietà {#properties-tab}
 
-![scheda Proprietà della finestra di dialogo di modifica del componente Pulsante](/help/assets/button-edit-properties.png)
+![Scheda Proprietà della finestra di dialogo di modifica del componente Pulsante](/help/assets/button-edit-properties.png)
 
-* **Testo**  - Testo da visualizzare sul pulsante
-* **Collegamento** : collegamento a una pagina di contenuto all’interno di AEM, una risorsa esterna o un ancoraggio
-   * Utilizzare la finestra di dialogo **Selezione** per scegliere un percorso all&#39;interno di AEM.
-* **Icona**  - Identificatore per la visualizzazione di un&#39;icona nel pulsante
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* **Testo** : testo da visualizzare sul pulsante
+* **Collegamento** : collegamento a una pagina di contenuto in AEM, una risorsa esterna o un ancoraggio
+   * Utilizza la finestra di dialogo **Selezione** per scegliere un percorso all&#39;interno di AEM.
+* **Icona** : identificatore per la visualizzazione di un’icona nel pulsante
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -66,14 +67,14 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 Nella scheda **Accessibilità** è possibile impostare i valori per le etichette [Accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente.
 
-* **Etichetta**  - Valore di un attributo etichetta ARIA per il componente
+* **Etichetta**  - Valore di un attributo dell’etichetta ARIA per il componente
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Pulsante supporta il AEM [Sistema di stile](/help/get-started/authoring.md#component-styling).
+Il componente Pulsante supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-## Livello dati client  Adobe {#data-layer}
+## Livello dati client di Adobe {#data-layer}
 
-Il componente Pulsante supporta il [ livello dati client Adobe.](/help/developing/data-layer/overview.md)
+Il componente Pulsante supporta il [Livello dati client Adobe.](/help/developing/data-layer/overview.md)
