@@ -1,47 +1,48 @@
 ---
 title: Componente Elenco frammenti di contenuto
-description: Il componente Elenco frammenti di contenuto del componente principale consente la visualizzazione di un elenco di frammenti di contenuto.
+description: Il componente Elenco frammenti di contenuto del componente core consente la visualizzazione di un elenco di frammenti di contenuto.
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 3%
+source-wordcount: '767'
+ht-degree: 5%
 
 ---
 
 
 # Componente elenco frammenti di contenuto{#content-fragment-list-component}
 
-Il componente Elenco frammenti di contenuto del componente principale consente la visualizzazione di un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente Elenco frammenti di contenuto del componente core consente la visualizzazione di un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 ## Utilizzo {#usage}
 
-Il componente di base Elenco frammenti di contenuto del componente consente di includere un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina basata su un modello di frammento di contenuto. Questo può essere utile per creare [contenuto headless](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente utilizzato da altre applicazioni.
+Il componente di base Elenco frammenti di contenuto consente di includere un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina basata su un modello di frammento di contenuto. Questa funzione può essere particolarmente utile per creare [contenuto headless](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente utilizzato da altre applicazioni.
 
-* L&#39;elenco e le relative proprietà possono essere selezionati nella finestra di dialogo [configura](#configure-dialog).
+* L&#39;elenco e le relative proprietà possono essere selezionate nella finestra di dialogo [configura](#configure-dialog).
 * Gli stili possono essere applicati al componente nella finestra di dialogo [progettazione](#design-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento di contenuto è v1, introdotto con la release 2.4.0 dei componenti core a maggio 2019, ed è descritto in questo documento.
+La versione corrente del componente Frammento di contenuto è la v1, introdotta con la versione 2.4.0 dei componenti core a maggio 2019, ed è descritta in questo documento.
 
-Nella tabella seguente sono elencate tutte le versioni supportate del componente, le versioni AEM con cui sono compatibili le versioni del componente e i collegamenti alla documentazione delle versioni precedenti.
+La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4   | AEM 6.5 | AEM as a Cloud Service |
+| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consultare il documento [Versioni dei componenti core](/help/versions.md).
+Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Per provare il componente Elenco frammenti di contenuto e per vedere esempi delle relative opzioni di configurazione, nonché l&#39;output HTML e JSON, visitare la [Libreria componenti](https://adobe.com/go/aem_cmp_library_cflist).
+Per visualizzare esempi delle opzioni di configurazione del componente Elenco frammenti di contenuto e dell’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_cflist) .
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Elenco frammenti di contenuto [è disponibile in GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
+La documentazione tecnica più recente sul componente Elenco frammenti di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -49,43 +50,43 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ### Scheda Proprietà
 
-La scheda **Proprietà** definisce quali frammenti di contenuto includere nell&#39;elenco. Si basa principalmente su un modello di frammento di contenuto selezionato, ma sono disponibili altre opzioni di filtro.
+La scheda **Proprietà** definisce quali frammenti di contenuto includere nell’elenco. Si basa principalmente su un modello di frammento di contenuto selezionato, ma sono disponibili altre opzioni di filtro.
 
-![scheda Proprietà della finestra di dialogo di modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-properties.png)
+![Scheda Proprietà della finestra di dialogo di modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-properties.png)
 
-* **Modello**  - Percorso del modello di frammento di contenuto su cui si basa l&#39;elenco.
-   * Per impostazione predefinita, tutti i frammenti di contenuto del modello definiti come **Percorso modello** sono inclusi nell&#39;elenco.
-* **Percorso**  padre - Percorso padre da cui creare l&#39;elenco.
-   * I frammenti di contenuto basati sul percorso **modello** selezionato verranno filtrati in base a quelli presenti nel percorso **principale** specificato.
+* **Modello** : percorso del modello di frammento di contenuto su cui è basato l’elenco.
+   * Per impostazione predefinita, tutti i frammenti di contenuto del modello definito come **Percorso modello** sono inclusi nell’elenco.
+* **Percorso padre** : percorso principale da cui creare l’elenco.
+   * I frammenti di contenuto basati sul **Percorso modello** selezionato verranno filtrati su quelli presenti nel **Percorso padre** specificato.
       * Tocca o fai clic sul pulsante **Apri finestra di dialogo di selezione** a destra del campo per specificare il percorso.
-* **Tag**  - Solo i frammenti di contenuto con i tag specificati verranno inclusi nell&#39;elenco.
+* **Tag** : l’elenco includerà solo i frammenti di contenuto con i tag specificati.
    * Tocca o fai clic sul pulsante **Apri finestra di dialogo di selezione** a destra del campo per specificare i tag.
    * Tocca o fai clic sulla X accanto ai tag selezionati per rimuoverli.
-* **Ordina per**  - Campo del modello di frammento di contenuto per il quale verrà ordinato l&#39;elenco
-   * È possibile selezionare solo i campi di testo (inclusi i campi numerici, data e ora).
-* **Ordina ordine** : ordine dell&#39;elenco in base al  **campo** Ordine
-   * Crescente o discendente
-* **Numero massimo elementi**  - Numero massimo di elementi da visualizzare nell&#39;elenco
+* **Ordine per** : campo del modello di frammento di contenuto in base al quale verrà ordinato l’elenco
+   * È possibile selezionare solo i campi di testo (compresi i campi numerici, di data e di ora).
+* **Ordina**  - Ordinamento dell&#39;elenco in base al campo  **Ordine** byte
+   * Crescente o decrescente
+* **Numero massimo elementi** : numero massimo di elementi da visualizzare nell&#39;elenco
    * Nessun valore restituirà tutti gli elementi.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello [ ](/help/developing/data-layer/overview.md)dati.
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato esaminando la pagina risultante.
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
+   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento dei livelli di dati.
+   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
 >[!NOTE]
->Le opzioni **Order By**, **Sort Order** e **Max Items** sono state introdotte con la release 2.7.0 dei componenti core.
+>Le opzioni **Ordina per**, **Ordina ordine** e **Max Items** sono state introdotte con la versione 2.7.0 dei componenti core.
 
 ### Scheda Elementi
 
-Per impostazione predefinita, tutti gli elementi del modello di frammento di contenuto saranno inclusi nell&#39;elenco (a meno che il campo **Max Items** non contenga limiti). La scheda **Elements** consente di specificare solo elementi specifici da includere.
+Per impostazione predefinita, tutti gli elementi del modello di frammento di contenuto saranno inclusi nell’elenco (a meno che non sia limitato dal campo **Elementi massimi** ). La scheda **Elementi** consente di specificare solo elementi specifici da includere.
 
 ![Scheda Elementi della finestra di dialogo di modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-elements.png)
 
-* **Elementi**  - Vengono visualizzati solo gli elementi dei frammenti di contenuto nell&#39;elenco specificato.
+* **Elementi**  - Verranno visualizzati solo gli elementi dei frammenti di contenuto nell’elenco specificato.
    * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un nuovo elemento.
    * Tocca o fai clic sul pulsante **Elimina** per rimuovere un elemento selezionato.
-   * Trascinare la maniglia **Order** per riordinare gli elementi.
+   * Trascinare la maniglia **Ordine** per ridisporre l&#39;ordine degli elementi.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all&#39;autore del modello di definire gli stili applicati al componente Elenco frammenti di contenuto.
+La finestra di dialogo di progettazione consente all’autore del modello di definire gli stili applicati al componente Elenco frammenti di contenuto .
