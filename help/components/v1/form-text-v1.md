@@ -1,11 +1,12 @@
 ---
 title: Componente testo modulo (v1)
-description: Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
+description: Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
 index: n
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 8%
 
 ---
@@ -13,19 +14,19 @@ ht-degree: 8%
 
 # Componente testo modulo (v1) {#form-text-component-v}
 
-Il componente Testo modulo componente principale consente l’immissione di testo del modulo per l’invio.
+Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
 
 ## Utilizzo {#usage}
 
-Il componente Testo modulo consente l&#39;invio di diversi tipi di testo e deve essere utilizzato insieme al componente contenitore [modulo](form-container-v1.md).
+Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [contenitore modulo](form-container-v1.md).
 
-Il tipo di convalida del testo, etichette e messaggi della guida può essere definito dall&#39;editor di contenuti nella finestra di dialogo [configura](#configure-dialog).
+Il tipo di convalida di testo, etichette e messaggi della guida può essere definito dall&#39;editor di contenuti nella finestra di dialogo [configura](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v1 del componente Testo modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Testo modulo , originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
 
-La tabella seguente elenca la compatibilità di v1 del componente Testo modulo.
+Nella tabella seguente è riportata la compatibilità della versione 1 del componente Testo modulo .
 
 | Versione di AEM | Componente testo modulo v1 |
 |--- |--- |
@@ -34,13 +35,13 @@ La tabella seguente elenca la compatibilità di v1 del componente Testo modulo.
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Testo modulo.
+>Questo documento descrive la versione 1 del componente Testo modulo .
 >
->Per informazioni dettagliate sulla versione corrente del componente Testo modulo, vedere il documento [Componente Testo modulo](/help/components/forms/form-text.md).
+>Per informazioni dettagliate sulla versione corrente del componente Testo modulo, consultare il documento [Componente Testo modulo](/help/components/forms/form-text.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -88,7 +89,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
+>L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -98,7 +99,7 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](/help/assets/chlimage_1-23.png)
 
-* **Vincolo** : il tipo di testo da inserire e su cui verrà convalidato il comando
+* **Vincolo** : il tipo di testo da inserire e su cui verrà convalidato.
 
    * **Testo**
    * **Area testo**
@@ -108,19 +109,19 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * **Numero**
    * **Password**
 
-* **Righe**  di testo - Numero di righe da visualizzare nell&#39;area di testo (visualizzate solo se  **** Limite è impostata su Area **di** testo)
+* **Righe**  di testo - Numero di righe da visualizzare nell’area di testo (solo se l’opzione  **** Limite è impostata su  **Area** di testo)
 
-* **Etichetta**  - Etichetta che verrà visualizzata per il campo
-* **Nascondere l&#39;etichetta per la visualizzazione**  - Necessario se l&#39;etichetta è necessaria solo a scopo di accessibilità e non invia ulteriori informazioni visive sul campo
-* **Nome**  elemento: il nome del campo inviato con i dati del modulo
-* **Valore**  - Valore predefinito precompilato nel campo
+* **Etichetta** : l’etichetta che verrà visualizzata per il campo
+* **Nascondere l’etichetta dalla visualizzazione**  - Necessario se l’etichetta è necessaria solo a scopo di accessibilità e non fornisce ulteriori informazioni visive sul campo
+* **Nome elemento** : il nome del campo inviato con i dati del modulo
+* **Valore** : valore predefinito precompilato nel campo
 
 ### Informazioni su {#about}
 
 ![](/help/assets/chlimage_1-24.png)
 
-* **Messaggio**  della Guida: un suggerimento per l&#39;utente sulle informazioni che è possibile immettere nel campo
-* **Visualizza messaggio di aiuto come segnaposto** : per visualizzare il messaggio di aiuto all&#39;interno del modulo di input quando è vuoto e non è attivo
+* **Messaggio della Guida** : un suggerimento per l’utente su cosa è possibile inserire nel campo
+* **Visualizza il messaggio della guida come segnaposto** : per visualizzare il messaggio della guida all’interno del modulo di input quando è vuoto o non attivo
 
 ### Vincoli {#constraints}
 
@@ -131,12 +132,12 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * Messaggio visualizzato come descrizione comando quando si invia il modulo, se il valore non convalida il tipo scelto
    * Non visualizzato per i tipi di vincolo **Testo** e **Area di testo**
 
-* **Obbligatorio** : se selezionato, l&#39;utente deve compilare un valore prima di inviare il modulo
-* **Rendi sola**  lettura - Se selezionato, l&#39;utente non può modificare il valore del campo
+* **Obbligatorio** : se selezionato, l’utente deve compilare un valore prima di inviare il modulo
+* **Rendi sola**  lettura: se selezionata, l&#39;utente non può modificare il valore del campo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Non è disponibile una finestra di dialogo per il componente Testo modulo.
+Non è disponibile una finestra di dialogo di progettazione per il componente Testo modulo .
 
 ## Dettagli tecnici {#technical-details}
 
@@ -144,4 +145,4 @@ La documentazione tecnica più recente sul componente Testo modulo [è disponibi
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
