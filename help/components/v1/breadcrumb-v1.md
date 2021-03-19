@@ -2,10 +2,11 @@
 title: Componente Breadcrumb (v1)
 description: Il componente di base Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
 index: n
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
@@ -17,17 +18,17 @@ Il componente di base Breadcrumb è un componente di navigazione che crea una br
 
 ## Utilizzo {#usage}
 
-Il componente Breadcrumb visualizza la posizione della pagina corrente all’interno della gerarchia del sito, consentendo ai visitatori della pagina di spostarsi nella gerarchia di pagina dalla posizione corrente. Questa funzione è spesso integrata nelle intestazioni o nei piè di pagina della pagina.
+Il componente Breadcrumb visualizza la posizione della pagina corrente all’interno della gerarchia del sito, consentendo ai visitatori della pagina di spostarsi nella gerarchia della pagina dalla posizione corrente. Questo è spesso integrato nelle intestazioni o nei piè di pagina.
 
-Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di mostrare la pagina corrente o le pagine nascoste, possono essere definite dall&#39;autore del modello nella finestra di dialogo di progettazione [](#design-dialog). L&#39;editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo di [modifica](#edit-dialog).
+Le opzioni disponibili, come il livello di navigazione predefinito e la possibilità di mostrare la pagina corrente o le pagine nascoste, possono essere definite dall’autore del modello nella finestra di dialogo [progettazione](#design-dialog). L’editor dei contenuti può quindi scegliere se visualizzare o meno le pagine nascoste e il livello di navigazione effettivo per il componente nella finestra di dialogo [modifica](#edit-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v1 del componente Breadcrumb, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Breadcrumb, originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
 
-Nella tabella seguente è elencata la compatibilità di v1 del componente Breadcrumb.
+La tabella seguente elenca la compatibilità della v1 del componente Breadcrumb.
 
-| Versione di AEM | Breadcrumb Component v1 |
+| Versione di AEM | Componente Breadcrumb v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
@@ -35,11 +36,11 @@ Nella tabella seguente è elencata la compatibilità di v1 del componente Breadc
 >[!CAUTION]
 >
 >Questo documento descrive la versione 1 del componente Breadcrumb.
->Per informazioni dettagliate sulla versione corrente del componente Breadcrumb, consultare il documento [Breadcrumb Component](/help/components/breadcrumb.md).
+>Per informazioni dettagliate sulla versione corrente del componente Breadcrumb, consulta il documento [Breadcrumb Component](/help/components/breadcrumb.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -84,34 +85,34 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md).
+>L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
 ## Finestra di dialogo Modifica {#edit-dialog}
 
-La finestra di dialogo di modifica consente all’autore del contenuto di eliminare le pagine nascoste e attive nelle breadcrumb e la profondità nella gerarchia che dovrebbe visualizzare.
+La finestra di dialogo di modifica consente all’autore del contenuto di eliminare le pagine nascoste e attive nelle breadcrumb e la profondità nella gerarchia che deve visualizzare.
 
 ![](/help/assets/chlimage_1-34.png)
 
-* **Livello di navigazione per iniziare**  - Punto della gerarchia in cui il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente. Ad esempio in We.Retail:
+* **Livello di navigazione da iniziare** : dove nella gerarchia il componente breadcrumb deve iniziare a spostarsi verso il basso fino alla pagina corrente. Ad esempio in We.Retail:
 
    * 1 inizia a `/content/we-retail`
-   * 2 inizia da `/content/we-retail/<country>`
+   * 2 inizia a `/content/we-retail/<country>`
 
-* **Mostra nascosto** : mostra le pagine contrassegnate come nascoste nel percorso di navigazione (per impostazione predefinita non vengono visualizzate)
-* **Nascondi corrente**: elimina la pagina corrente nel percorso di navigazione (per impostazione predefinita verrà visualizzata)
+* **Mostra nascosto** : mostra le pagine contrassegnate come nascoste nel breadcrumb (per impostazione predefinita non vengono visualizzate)
+* **Nascondi corrente**: consente di eliminare la pagina corrente nel breadcrumb (per impostazione predefinita verrà visualizzata).
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all&#39;autore del modello di definire i valori predefiniti per le opzioni che consentono di eliminare le pagine nascoste e attive nelle breadcrumb, nonché la profondità nella gerarchia che dovrebbe visualizzare.
+La finestra di dialogo di progettazione consente all’autore del modello di definire i valori predefiniti per le opzioni di eliminazione delle pagine nascoste e attive nelle breadcrumb, nonché la profondità nella gerarchia da visualizzare.
 
 ![](/help/assets/chlimage_1-35.png)
 
-* **Livello di navigazione per iniziare**  - Definisce il valore predefinito per dove nella gerarchia il componente breadcrumb deve iniziare a camminare verso il basso fino alla pagina corrente quando il componente breadcrumb viene aggiunto a una pagina.
+* **Livello di navigazione per iniziare** : definisce il valore predefinito per la posizione nella gerarchia in cui il componente breadcrumb deve iniziare a spostarsi verso il basso nella pagina corrente quando il componente breadcrumb viene aggiunto a una pagina.
 * **Mostra nascosto**  - Definisce il valore predefinito dell’opzione  **Mostra** nascosto quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
-* **Nascondi corrente** : definisce il valore predefinito dell&#39;opzione  **Nascondi** corrente quando il componente breadcrumb viene aggiunto a una pagina.
+* **Nascondi corrente** : definisce il valore predefinito dell’opzione  **Nascondi** corrente quando il componente breadcrumb viene aggiunto a una pagina.
 
    * Non attiva o disattiva l’opzione per l’autore. Imposta solo il valore predefinito.
 
@@ -121,4 +122,4 @@ La documentazione tecnica più recente sul componente Breadcrumb [è disponibile
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
