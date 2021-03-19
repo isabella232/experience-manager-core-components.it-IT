@@ -1,46 +1,47 @@
 ---
-title: Componente nascosto modulo (v1)
-description: Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
+title: Componente nascosto per modulo (v1)
+description: Il componente di base Nascosto per modulo consente la visualizzazione di un campo nascosto.
 index: n
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
 
 
-# Componente nascosto modulo (v1) {#form-hidden-component-v}
+# Componente nascosto per modulo (v1) {#form-hidden-component-v}
 
-Il componente Principale Modulo nascosto consente la visualizzazione di un campo nascosto.
+Il componente di base Nascosto per modulo consente la visualizzazione di un campo nascosto.
 
 ## Utilizzo {#usage}
 
-Il componente di base Modulo nascosto consente la creazione di campi nascosti per riportare in AEM le informazioni sulla pagina corrente e deve essere utilizzato insieme al componente contenitore [modulo](form-container-v1.md).
+Il componente di base Nascosto per modulo consente la creazione di campi nascosti per riportare in AEM le informazioni sulla pagina corrente e deve essere utilizzato insieme al [componente contenitore modulo](form-container-v1.md).
 
-Le proprietà del campo possono essere definite dall&#39;editor del contenuto nella finestra di dialogo di [configurazione](#configure-dialog).
+Le proprietà del campo possono essere definite dall&#39;editor dei contenuti nella finestra di dialogo [configura](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v1 del componente Nascosto modulo, introdotto originariamente con la release 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente nascosto per modulo, originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
 
-La tabella seguente elenca la compatibilità di v1 del componente nascosto modulo.
+La tabella seguente elenca la compatibilità della v1 del componente nascosto modulo.
 
-| Versione di AEM | Componente nascosto modulo v1 |
+| Versione di AEM | Componente nascosto per modulo v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->In questo documento viene descritta la versione 1 del componente Nascosto modulo.
+>In questo documento viene descritta la versione 1 del componente nascosto per modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Nascosto modulo, vedere il documento [Componente nascosto modulo](/help/components/forms/form-hidden.md).
+>Per informazioni dettagliate sulla versione corrente del componente Nascosto per modulo, consultare il documento [Componente nascosto per modulo](/help/components/forms/form-hidden.md) .
 
-## Esempio di output del componente {#sample-component-output}
+## Output componente di esempio {#sample-component-output}
 
-Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 
@@ -80,7 +81,7 @@ Esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sit
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la release 1.1.0 dei componenti core. Per ulteriori informazioni, vedere le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md#release-history-and-compatibility).
+>L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md#release-history-and-compatibility) .
 
 ## Configura finestra di dialogo {#configure-dialog}
 
@@ -88,18 +89,18 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 ![](/help/assets/chlimage_1-26.png)
 
-* **Nome** : il nome del campo, inviato con i dati del modulo
-* **Valore**  - Il valore del campo, inviato con i dati del modulo
-* **Identificatore** : l&#39;identificatore deve essere univoco sulla pagina e può essere utilizzato per eseguire il binding degli script a questo campo del modulo
+* **Nome** : il nome del campo che viene inviato insieme ai dati del modulo
+* **Valore** : valore del campo, inviato insieme ai dati del modulo
+* **Identificatore** : l’identificatore deve essere univoco sulla pagina e può essere utilizzato per associare gli script a questo campo del modulo
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
-Non è disponibile alcuna finestra di dialogo per il componente Nascosto modulo.
+Non esiste una finestra di dialogo di progettazione per il componente Nascosto modulo .
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Nascosto modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+La documentazione tecnica più recente sul componente Nascosto per modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
 L’intero progetto dei componenti core può essere scaricato da GitHub.
 
-Ulteriori dettagli sullo sviluppo di componenti core sono disponibili nella [documentazione per lo sviluppo di componenti core](/help/developing/overview.md).
+Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
