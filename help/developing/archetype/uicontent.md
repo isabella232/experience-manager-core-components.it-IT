@@ -1,23 +1,25 @@
 ---
-title: ui.content Modulo dell'archivio AEM progetto
-description: ui.content Modulo dell'archivio AEM progetto
+title: modulo ui.content dell'Archetipo di progetto AEM
+description: modulo ui.content dell'Archetipo di progetto AEM
+feature: Componenti core, AEM Project Archetype
+role: Architetto, Sviluppatore, Amministratore
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 
-# ui.content Modulo dell&#39;archivio AEM progetto {#uicontent-module}
+# modulo ui.content dell&#39;Archetipo di progetto AEM {#uicontent-module}
 
-Il modulo ui.content maven (`<src-directory>/<project>/ui.content`) include il contenuto e le configurazioni di base sotto `/content` e `/conf`. ui.content viene compilato in un pacchetto AEM come ui.apps. La differenza principale sta nel fatto che i nodi memorizzati in ui.content possono essere modificati direttamente sull&#39;istanza AEM. Sono incluse pagine, risorse DAM e modelli modificabili. Il modulo ui.content può essere utilizzato per memorizzare il contenuto campione per un&#39;istanza pulita e/o per creare alcune configurazioni di base da gestire nel controllo del codice sorgente.
+Il modulo maven ui.content (`<src-directory>/<project>/ui.content`) include il contenuto e le configurazioni della linea di base sotto `/content` e `/conf`. ui.content viene compilato in un pacchetto AEM molto simile a ui.apps. La differenza principale è che i nodi memorizzati in ui.content possono essere modificati direttamente sull&#39;istanza AEM. Sono inclusi pagine, risorse DAM e modelli modificabili. Il modulo ui.content può essere utilizzato per memorizzare il contenuto di esempio per un&#39;istanza pulita e/o per creare alcune configurazioni della linea di base da gestire nel controllo del codice sorgente.
 
 ## filter.xml {#filter}
 
-Il file `filter.xml` per il modulo ui.content si trova in `<src>/<project>/ui.content/src/main/content/META-INF/vault/filter.xml` e contiene i percorsi che verranno inclusi e installati con il pacchetto ui.content. Al percorso viene aggiunto un attributo `mode="merge"`. In questo modo le configurazioni distribuite con una distribuzione del codice non ignorano automaticamente il contenuto o le configurazioni che sono state create direttamente nell&#39;istanza AEM.
+Il file `filter.xml` per il modulo ui.content si trova in `<src>/<project>/ui.content/src/main/content/META-INF/vault/filter.xml` e contiene i percorsi che verranno inclusi e installati con il pacchetto ui.content. Al percorso viene aggiunto un attributo `mode="merge"` . In questo modo le configurazioni distribuite con una distribuzione di codice non sovrascrivono automaticamente i contenuti o le configurazioni create direttamente sull’istanza AEM.
 
 ## ui.content/pom.xml
 
-Il modulo ui.content, come il modulo ui.apps, utilizza il plug-in Pacchetto FileVault. Tuttavia il percorso ui.content (`<src>/<project>/ui.content/pom.xml`) include una proprietà di configurazione aggiuntiva denominata `acHandling`, impostata su `merge_preserve`. Questo è incluso perché il modulo ui.content include gli elenchi di controllo degli accessi (ACL, Access Control List) che sono autorizzazioni e che determinano chi può modificare i modelli. Affinché questi ACL possano essere importati in AEM è necessaria la proprietà `acHandling`.
+Il modulo ui.content, come il modulo ui.apps, utilizza il plug-in FileVault Package. Tuttavia il file pom ui.content (`<src>/<project>/ui.content/pom.xml`) include una proprietà di configurazione aggiuntiva denominata `acHandling`, impostata su `merge_preserve`. Questo è incluso perché il modulo ui.content include gli elenchi di controllo di accesso (ACL, Access Control List) che sono autorizzazioni, che determinano chi può modificare i modelli. Affinché queste ACL siano importate in AEM la proprietà `acHandling` è necessaria.
