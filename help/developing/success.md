@@ -1,61 +1,62 @@
 ---
 title: Percorsi per il successo con i componenti core
-description: Come ottenere successo durante l’implementazione del progetto con i componenti core
+description: Come eseguire correttamente l’implementazione del progetto con i componenti core
+role: Architetto, Sviluppatore, Amministratore, Business Practices
 translation-type: tm+mt
-source-git-commit: c338428a681f652d17bb972fb6a2abf216a338c3
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 14%
+source-wordcount: '575'
+ht-degree: 13%
 
 ---
 
 
 # Percorsi per il successo con i componenti core {#paths-to-success}
 
-I componenti core sono potenti, flessibili e facili da usare e personalizzare. Seguendo alcune linee guida chiave come indicato in questo documento, il progetto con i componenti core avrà esito positivo.
+I componenti core sono potenti, flessibili e facili da usare e personalizzare. Seguendo alcune linee guida chiave descritte in questo documento, il progetto con i componenti core avrà successo.
 
 ## Due percorsi per il successo {#two-paths}
 
-Esistono due approcci di base per l&#39;implementazione dei componenti core, che possono portare al successo, ma che devono essere considerati progetti per progetto.
+Esistono due approcci di base per l’implementazione dei componenti di base, che possono portare al successo, ma hanno le proprie scelte che devono essere considerate per progetto.
 
-1. Mappate i vostri progetti sui componenti core e ottenete il codice HTML fornito. Oppure
-1. Se devi rispettare gli standard HTML già definiti, avrai bisogno di maggiore impegno e non potrai sfruttare tutti i vantaggi offerti dai componenti core.
+1. Mappa le progettazioni sui componenti core e prendi il codice HTML che forniscono. Oppure
+1. Se devi rispettare gli standard HTML già definiti, dovrai fare più sforzo e non ottenere tutti i vantaggi dei componenti core.
 
-## Problemi comuni nell&#39;implementazione del componente {#common-pitfalls}
+## Problemi comuni nell’implementazione dei componenti {#common-pitfalls}
 
-Due problemi comuni che portano al fallimento dei progetti con i componenti core sono:
+Due problemi comuni che portano a progetti che non hanno successo con i componenti core sono:
 
-* **Progetti**  finiti - Questi possono anche essere approvati a livello C e vengono consegnati al team di sviluppo per essere implementati in modo perfetto, senza problemi per la tecnologia sottostante.
-* **Guida**  allo stile HTML a livello di società: troppo spesso tali guide devono essere seguite dogmaticamente dai componenti che applicano gli stili in una prospettiva dall&#39;alto verso il basso.
+* **Progetti**  finalizzati - Questi potrebbero anche essere approvati a livello C e vengono consegnati al team di sviluppo per essere implementati in modo perfetto per i pixel senza preoccuparsi della tecnologia sottostante.
+* **Guida**  allo stile HTML a livello aziendale: troppo spesso tali guide devono essere seguite dogmaticamente dai componenti che applicano gli stili da una prospettiva dall’alto verso il basso.
 
-In entrambi i casi, i requisiti applicati ai componenti sono talmente rigidi e specifici da rendere difficile la conformità dei componenti core o di qualsiasi componente out-of-the-box, con conseguente sviluppo massiccio di componenti personalizzati.
+In entrambi i casi, i requisiti impostati per i componenti sono così rigidi e specifici che è difficile conformarli a tali requisiti per i componenti core o qualsiasi componente preconfigurato, il che porta allo sviluppo massiccio di componenti personalizzati.
 
-## Inizio anticipata {#start-early}
+## Inizia presto {#start-early}
 
-Invece di considerare solo i componenti core nella fase di implementazione del progetto, iniziate già con i componenti core durante la fase di wireframe e progettazione.
+Invece di considerare solo i componenti core nella fase di implementazione del progetto, inizia già con i componenti core durante la fase di wireframe e progettazione.
 
 ### Utilizzare la libreria dei componenti {#component-library}
 
-Fare riferimento alla [Libreria componenti](https://adobe.com/go/aem_cmp_library) già in fase di progettazione. I componenti core sono potenti e flessibili e possono portarvi a un punto di partenza. Aggiungi componenti personalizzati solo se esiste una necessità aziendale reale che non può essere ragionevolmente raggiunta con un componente core.
+Fai riferimento alla [Libreria dei componenti](https://adobe.com/go/aem_cmp_library) già nella fase di progettazione. I componenti core sono potenti e flessibili e possono portarti fino a un punto di partenza. Aggiungi componenti personalizzati solo quando esiste una necessità aziendale reale che non può essere ragionevolmente raggiunta con un componente core.
 
-### Usare il kit dell&#39;interfaccia utente per  Adobe XD {#ui-kit}
+### Utilizza il kit dell&#39;interfaccia utente per Adobe XD {#ui-kit}
 
-Non appena vi sarà una comprovata necessità di un componente personalizzato, utilizzate il [kit dell&#39;interfaccia utente per  Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) in modo che i progettisti possano iniziare a creare i wireframe e le progettazioni con i componenti core come elementi di base.
+Non appena si verifica una comprovata necessità di un componente personalizzato, utilizza il [kit di interfaccia utente per Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) in modo che i designer possano iniziare a creare i wireframe e le progettazioni con i componenti core come blocchi predefiniti.
 
-## Non ignorare le potenti funzioni {#powerful-features}
+## Non trascurare le funzioni potenti {#powerful-features}
 
-Le caratteristiche di AEM e componenti core possono essere molto potenti, ma anche molto sottili e le possibilità per certe funzionalità potrebbero non essere immediatamente evidenti a un progettista.
+Le funzioni di AEM e i componenti core possono essere molto potenti, ma anche molto sottili e le possibilità di determinate funzionalità potrebbero non essere immediatamente evidenti a un progettista.
 
 ### Frammenti di contenuto {#content-fragments}
 
-[I ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) frammenti di contenuto consentono di creare contenuti versatili per canali e varianti (eventualmente specifiche per i canali). Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
+[I ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) frammenti di contenuto ti consentono di creare contenuti neutri per il canale, insieme a varianti (eventualmente specifiche per il canale). Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 ### Modelli di frammento esperienza {#experience-fragment-templates}
 
-Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina. Senza [Frammenti esperienza,](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) l&#39;autore deve copiare e incollare il frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
+Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina. Senza [Frammenti esperienza,](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) l’autore dovrebbe copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 
-### Componente Incorpora {#embed-component}
+### Componente di incorporamento {#embed-component}
 
-[Il ](/help/components/embed.md) componente Incorpora non solo consente di includere semplicemente risorse esterne come i contenuti video di YouTube, ma è anche estensibile per consentirgli di soddisfare i contenuti specifici in base alle esigenze di un progetto.
+[Il ](/help/components/embed.md) componente Incorpora non solo consente di includere semplicemente risorse esterne come i contenuti video di YouTube, ma è anche estensibile per consentirgli di adattare i contenuti in base alle esigenze di un progetto.
