@@ -1,15 +1,15 @@
 ---
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, markup snello ed esportazione JSON di contenuti.
-role: Architetto, Sviluppatore, Amministratore
+role: Architect, Developer, Administrator
+exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b01fdc7ab6b4d4bb4200d28aaa3706c58ccdea9f
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 15%
+source-wordcount: '1591'
+ht-degree: 14%
 
 ---
-
 
 # Sviluppo di componenti core {#developing-core-components}
 
@@ -40,6 +40,8 @@ I componenti core sono potenti, flessibili e facili da usare e personalizzare. [
 
 Eventuali nuovi progetti devono essere implementati con i componenti core. Tuttavia, i progetti esistenti avranno in genere implementazioni estese dei componenti di base.
 
+### Migrazione dai componenti di base {#from-foundation}
+
 Uno sforzo maggiore su un progetto esistente (ad esempio un rebranding o un refactoring complessivo) spesso offre la possibilità di migrare ai componenti core. Per facilitare questa migrazione, Adobe ha fornito una serie di strumenti di migrazione per incoraggiare l’adozione dei componenti core e della tecnologia AEM più recente.
 
 [Il ](http://opensource.adobe.com/aem-modernize-tools/) Saldo degli strumenti di modernizzazione AEM per la facile conversione di:
@@ -54,6 +56,23 @@ Per ulteriori informazioni sull&#39;utilizzo di questi strumenti, [consulta la r
 >[!NOTE]
 >
 >Gli strumenti di modernizzazione AEM sono uno sforzo comunitario e non sono supportati o garantiti dall&#39;Adobe.
+
+## Migrazione tramite Sposta a AEM come Cloud Service {#via-aemaacs}
+
+Poiché AEM come Cloud Service viene fornito automaticamente l’ultima versione dei componenti core, quando passi da un’installazione AEM locale, dovrai rimuovere qualsiasi dipendenza dai componenti core nel file `pom.xml` dei progetti.
+
+I componenti proxy continueranno a funzionare come prima perché   i proxy indicano il supertipo necessario e il percorso del supertipo contiene la versione. In questo modo, la semplice rimozione della dipendenza consente ai componenti core di funzionare in AEMaaCS proprio come nei locali.
+
+Come qualsiasi altro progetto AEMaaCS, dovrai aggiungere anche una dipendenza al jar dell’SDK AEM. Questo non è specifico per i componenti core, ma è obbligatorio.
+
+```xml
+<dependency>
+   <groupId>com.adobe.aem</groupId>
+   <artifactId>aem-sdk-api</artifactId>
+</dependency>
+```
+
+Per ulteriori informazioni sui progetti AEMaaCS, consulta il documento [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) .
 
 ## Supporto dei componenti core {#core-component-support}
 
