@@ -1,15 +1,15 @@
 ---
 title: Utilizzo dei componenti core
 description: '"Per iniziare a utilizzare i componenti core nel tuo progetto, segui tre passaggi: scarica e installa, crea componenti proxy, carica gli stili di base e consenti i componenti sui tuoi modelli."'
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 45a17fe42146516f351f897e85a4a48dcf3aadab
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 3%
+source-wordcount: '977'
+ht-degree: 2%
 
 ---
-
 
 # Utilizzo dei componenti core{#using-core-components}
 
@@ -20,16 +20,36 @@ Per iniziare a utilizzare i componenti core nel tuo progetto, sono disponibili q
 1. [Caricare gli stili core](#load-the-core-styles)
 1. [Attivare i componenti](#allow-the-components)
 
->[!NOTE]
+>[!TIP]
 >
->In alternativa, per istruzioni più ampie su come iniziare da zero con la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo di componenti, potrebbe essere interessante l’esercitazione in più parti seguente:\
+>Per istruzioni più generali su come iniziare da zero con la configurazione del progetto, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti, potrebbe essere interessante la seguente esercitazione in più parti:\
 >[Guida introduttiva ad AEM Sites: tutorial WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+
+>[!TIP]
+>
+>Se utilizzi [AEM Project Archetype,](/help/developing/archetype/overview.md) i componenti core vengono inclusi automaticamente nel progetto in base ai consigli sulle best practice di Adobe.
 
 ## Scarica e installa {#download-and-install}
 
-Una delle idee alla base dei componenti principali è la flessibilità. Rilasciare più spesso nuove versioni dei componenti core consente ad Adobe di essere più flessibile nel distribuire nuove funzioni. Gli sviluppatori possono a loro volta essere flessibili in merito ai componenti che scelgono di integrare nei loro progetti e alla frequenza con cui desiderano aggiornarli.
+Una delle idee alla base dei componenti principali è la flessibilità. Rilasciare più spesso nuove versioni dei componenti core consente ad Adobe di essere più flessibile nel distribuire nuove funzioni. Gli sviluppatori possono a loro volta essere flessibili in merito ai componenti che scelgono di integrare nei loro progetti e alla frequenza con cui desiderano aggiornarli. Questo determina un processo di rilascio separato per i componenti AEM e core.
 
-Per questo motivo, i componenti core non fanno parte dell’avvio rapido quando si avvia in modalità di produzione (senza contenuti di esempio). Pertanto, il primo passaggio è quello di [scaricare l&#39;ultimo pacchetto di contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei tuoi ambienti AEM.
+Pertanto, la procedura di installazione dipende dal fatto che tu esegua AEM as a Cloud Service o on-premise.
+
+### AEM as a Cloud Service {#aemaacs}
+
+Non c&#39;è passo uno! AEM come Cloud Service viene fornito automaticamente con la versione più recente dei componenti core. Proprio come AEMaaCS offre le funzioni più recenti di AEM, AEMaaCS ti tiene automaticamente aggiornato con l’ultima versione dei componenti core.
+
+Alcuni punti da tenere a mente quando utilizzi i componenti core su AEMaaCS:
+
+* I componenti core sono inclusi in `/libs`.
+* La pipeline di generazione del progetto genera avvisi nel registro se include nuovamente i componenti core come parte di `/apps` e ignora la versione incorporata come parte del progetto.
+   * In una versione futura, includere nuovamente i componenti core non sarà in grado di generare la pipeline.
+* Se il progetto includeva in precedenza i componenti core in `/apps`, [potrebbe essere necessario regolare il progetto.](/help/developing/overview.md#via-aemaacs)
+* Anche se i componenti core sono ora in `/libs`, si sconsiglia di creare sovrapposizioni dello stesso percorso in `/apps`. [Il ](/help/developing/guidelines.md#proxy-component-pattern) pattern del componente proxy deve essere utilizzato invece se è necessario personalizzare qualsiasi aspetto dei componenti.
+
+### AEM 6.5 e versioni precedenti {#aem-65}
+
+I componenti core non fanno parte dell’avvio rapido quando si inizia in modalità di produzione (senza contenuti di esempio). Pertanto, il primo passaggio è quello di [scaricare l&#39;ultimo pacchetto di contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei tuoi ambienti AEM.
 
 Esistono diversi modi per automatizzare questo processo, ma il modo più semplice per installare rapidamente un pacchetto di contenuti in un’istanza è quello di utilizzare Gestione pacchetti; consulta [Installare pacchetti](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). Inoltre, una volta che avrai eseguito anche un&#39;istanza di pubblicazione, dovrai replicare quel pacchetto all&#39;editore; vedere [Replica dei pacchetti](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
 
