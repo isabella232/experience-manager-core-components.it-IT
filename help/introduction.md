@@ -1,15 +1,15 @@
 ---
 title: Introduzione ai componenti core
 description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 translation-type: tm+mt
-source-git-commit: fa8ead438093681071b6b6f8ccfbba523f6d3bee
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 26%
+source-wordcount: '936'
+ht-degree: 25%
 
 ---
-
 
 # Introduzione ai componenti core{#core-components-introduction}
 
@@ -23,7 +23,7 @@ I componenti core sono un set di componenti WCM (Web Content Management) standar
 * **Documentazione del componente (questo documento):**  per sviluppatori e autori, con dettagli su ciascun componente.
 * **[Repository GitHub dei componenti core:](https://github.com/adobe/aem-core-wcm-components)** per informazioni sugli sviluppatori di ogni componente e download di progetto.
 * Introduzione:
-   * **[Successo con i componenti core:](/help/developing/success.md)** linee guida da considerare molto prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
+   * **[Successo con i componenti core:](/help/developing/success.md)** linee guida da prendere in considerazione prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
    * **[Tutorial WKND:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Tutorial sul Summit:](https://expleague.azureedge.net/labs/L767/index.html)** un tutorial di due ore per la costruzione di un nuovo sito (da un laboratorio al Summit degli Stati Uniti 2019).
    * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)** visita guidata dei componenti core (registrata il 1 dicembre 2018).
@@ -118,3 +118,9 @@ Per i requisiti delle versioni precedenti dei componenti core, consulta [Version
 I componenti core richiedono l&#39;uso di [modelli modificabili](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) e non supportano l&#39;interfaccia classica né i modelli statici. Se necessario, controlla [AEM Strumenti di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il progetto con queste funzioni AEM moderne.
 
 Per configurare l&#39;ambiente di sviluppo locale, controlla [questa panoramica per AEM come Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) o questo documento [per le versioni precedenti di AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+
+>[!TIP]
+>
+>I componenti core fanno automaticamente parte di AEM come Cloud Service e disponi sempre dell’ultima versione dei componenti core.
+>
+>Consulta il documento [Utilizzo dei componenti core](/help/get-started/using.md) per ulteriori informazioni su come iniziare a utilizzare i componenti core sia in AEMaaCS che nei locali.
