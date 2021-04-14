@@ -1,15 +1,15 @@
 ---
 title: Linee guida per i componenti
 description: I componenti core seguono modelli di implementazione moderni che sono molto diversi dai componenti di base.
-role: Architetto, Sviluppatore, Amministratore
+role: Architect, Developer, Administrator
+exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1272'
 ht-degree: 2%
 
 ---
-
 
 # Linee guida per i componenti {#component-guidelines}
 
@@ -52,6 +52,10 @@ Per rendere i componenti il più possibile riutilizzabili, è necessario fornire
 Poiché ogni risorsa di contenuto ha una proprietà `sling:resourceType` che fa riferimento al componente per eseguirne il rendering, in genere è buona prassi che queste proprietà puntino a componenti specifici del sito, invece di puntare a componenti condivisi da più siti. Questo offre maggiore flessibilità ed evita il refactoring dei contenuti se un sito necessita di un comportamento diverso per un componente, perché questa personalizzazione può quindi essere ottenuta sul componente specifico per il sito e non influisce sugli altri siti.
 
 Tuttavia, affinché i componenti specifici del progetto non duplichino alcun codice, ciascuno di essi deve fare riferimento al componente principale condiviso con la proprietà `sling:resourceSuperType` . Questi componenti specifici del progetto che si riferiscono principalmente solo ai componenti padre sono chiamati &quot;componenti proxy&quot;. I componenti proxy possono essere completamente vuoti se ereditano completamente la funzionalità o se possono ridefinire alcuni aspetti del componente.
+
+>[!TIP]
+>
+>Per informazioni dettagliate su come creare componenti proxy, consulta [Uso dei componenti core](/help/get-started/using.md#create-proxy-components) .
 
 ### Controllo delle versioni dei componenti {#component-versioning}
 
