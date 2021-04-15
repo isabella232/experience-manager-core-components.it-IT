@@ -4,7 +4,7 @@ description: Il componente Ricerca rapida fornisce funzionalità di ricerca per 
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
 translation-type: tm+mt
-source-git-commit: 72b8864a5dca24b938cecd808ab4cdededb1abec
+source-git-commit: 6eff0c8584605e034fc6516416783715fce10095
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -50,7 +50,7 @@ La finestra di dialogo di modifica consente all’autore del contenuto di defini
 ![Finestra di dialogo di modifica del componente Ricerca rapida](/help/assets/quick-search-edit.png)
 
 **Cerca radice** : la pagina principale da cui avviare la ricerca. La directory principale di ricerca può essere una pagina master blueprint, una lingua master o una pagina normale.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
+* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati.](/help/developing/data-layer/overview.md)
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
