@@ -1,15 +1,15 @@
 ---
 title: Componente Ricerca rapida
 description: Il componente Ricerca rapida fornisce funzionalità di ricerca per un sito web e presenta i risultati di ricerca in modo che i visitatori possano cercare il sito e filtrare i risultati.
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 72b8864a5dca24b938cecd808ab4cdededb1abec
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 2%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
-
 
 # Componente Ricerca rapida {#quick-search-component}
 
@@ -54,6 +54,10 @@ La finestra di dialogo di modifica consente all’autore del contenuto di defini
    * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+
+>[!NOTE]
+>
+>Se la **directory principale di ricerca** non è configurata o non può essere risolta, la ricerca rapida viene eseguita per impostazione predefinita sotto la pagina corrente.
 
 ## Finestra di dialogo Progettazione {#design-dialog}
 
