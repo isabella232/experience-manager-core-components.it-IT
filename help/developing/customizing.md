@@ -1,15 +1,15 @@
 ---
 title: Personalizzazione dei componenti core
 description: I componenti core implementano diversi pattern che consentono una facile personalizzazione, dal semplice stile al riutilizzo avanzato delle funzionalità.
-role: Architetto, Sviluppatore, Amministratore
+role: Architect, Developer, Administrator
+exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
-
 
 # Personalizzazione dei componenti core{#customizing-core-components}
 
@@ -105,7 +105,7 @@ Per ulteriori dettagli sul pattern di delega consulta l’articolo Wiki sui comp
 
 A volte lo stile avanzato richiede una diversa struttura di marcatura del componente.
 
-Questo può essere facilmente fatto copiando i file HTL che devono essere modificati dal componente core al componente proxy.
+Questo può essere facilmente fatto copiando i file HTL che devono essere modificati dal componente core nel componente [proxy.](guidelines.md#proxy-component-pattern)
 
 Riprendendo l’esempio del componente Breadcrumb core, per personalizzare l’output di markup, il file `breadcrumb.html` deve essere copiato nel componente specifico del sito che ha un `sling:resourceSuperTypes` che punta al componente Breadcrumb core.
 
