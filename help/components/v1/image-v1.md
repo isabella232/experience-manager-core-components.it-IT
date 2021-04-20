@@ -2,7 +2,7 @@
 title: Componente immagine (v1)
 description: Il componente immagine di base è un componente immagine adattivo che offre funzioni di modifica diretta.
 index: n
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Componente contenitore
 description: Il componente Contenitore di componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt

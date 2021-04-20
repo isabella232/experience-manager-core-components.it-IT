@@ -1,7 +1,7 @@
 ---
 title: Componente nascosto per modulo
 description: Il componente di base Nascosto per modulo consente la visualizzazione di un campo nascosto.
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt

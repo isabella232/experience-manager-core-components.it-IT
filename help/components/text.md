@@ -1,7 +1,7 @@
 ---
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
-role: Architetto, Sviluppatore, Amministratore, Business Practices
+role: Architect, Developer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
