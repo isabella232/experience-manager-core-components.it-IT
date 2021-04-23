@@ -4,7 +4,7 @@ description: 'I componenti core forniscono componenti di base affidabili ed este
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: f151a70c5ff7db042d4e10adc7ed8a9752ea9c87
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 25%
@@ -23,7 +23,7 @@ I componenti core sono un set di componenti WCM (Web Content Management) standar
 * **Documentazione del componente (questo documento):**  per sviluppatori e autori, con dettagli su ciascun componente.
 * **[Repository GitHub dei componenti core:](https://github.com/adobe/aem-core-wcm-components)** per informazioni sugli sviluppatori di ogni componente e download di progetto.
 * Introduzione:
-   * **[Successo con i componenti core:](/help/developing/success.md)** linee guida da prendere in considerazione prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
+   * **[Successo con i componenti core:](/help/developing/success.md)** linee guida da considerare molto prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
    * **[Tutorial WKND:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Tutorial sul Summit:](https://expleague.azureedge.net/labs/L767/index.html)** un tutorial di due ore per la costruzione di un nuovo sito (da un laboratorio al Summit degli Stati Uniti 2019).
    * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)** visita guidata dei componenti core (registrata il 1 dicembre 2018).
@@ -107,7 +107,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 | Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 |---------|---------|---------|---------|---------|---------|
-| [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Continuo | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
+| [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Continuo | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
