@@ -5,10 +5,10 @@ breadcrumb-title: Guida dei componenti core
 user-guide-description: Utilizza i componenti core estensibili per consentire agli autori di creare facilmente contenuti.
 feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 74cbb94c35e7b62332f88245ed48c72d1ac07796
+source-git-commit: 15aa2145a4872a9e9c46e639f42f212363823d75
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 66%
+source-wordcount: '214'
+ht-degree: 67%
 
 ---
 
@@ -92,4 +92,3 @@ ht-degree: 66%
       + [modulo ui.test](developing/archetype/uitests.md)
       + [modulo it.testing](developing/archetype/ittests.md)
       + [Plug-in Maven di Build Analyzer](developing/archetype/build-analyzer-maven-plugin.md)
-+ [Pagina nascosta](hidden.md)
