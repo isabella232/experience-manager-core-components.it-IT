@@ -2,14 +2,14 @@
 title: Percorsi per il successo con i componenti core
 description: Come eseguire correttamente l’implementazione del progetto con i componenti core
 role: Architect, Developer, Administrator, Business Practitioner
+exl-id: 1ea8cd1c-8435-4ded-82dc-5a7896c53e0c
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 056c5bc15ac9e669c3bf6d5da7f060d6eef02608
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 13%
+source-wordcount: '564'
+ht-degree: 14%
 
 ---
-
 
 # Percorsi per il successo con i componenti core {#paths-to-success}
 
@@ -41,7 +41,7 @@ Fai riferimento alla [Libreria dei componenti](https://adobe.com/go/aem_cmp_libr
 
 ### Utilizza il kit dell&#39;interfaccia utente per Adobe XD {#ui-kit}
 
-Non appena si verifica una comprovata necessità di un componente personalizzato, utilizza il [kit di interfaccia utente per Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) in modo che i designer possano iniziare a creare i wireframe e le progettazioni con i componenti core come blocchi predefiniti.
+Non appena si verifica una comprovata necessità di un componente personalizzato, utilizza il [kit di interfaccia utente per Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) in modo che i designer possano iniziare a creare i wireframe e le progettazioni con i componenti core come blocchi predefiniti.
 
 ## Non trascurare le funzioni potenti {#powerful-features}
 
@@ -59,4 +59,4 @@ Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di un
 
 ### Componente di incorporamento {#embed-component}
 
-[Il ](/help/components/embed.md) componente Incorpora non solo consente di includere semplicemente risorse esterne come i contenuti video di YouTube, ma è anche estensibile per consentirgli di adattare i contenuti in base alle esigenze di un progetto.
+[Il ](/help/components/embed.md) componente Incorpora non solo consente di includere facilmente risorse esterne come i contenuti video di YouTube, ma è anche estensibile per consentirgli di adattare i contenuti in base alle esigenze di un progetto.
