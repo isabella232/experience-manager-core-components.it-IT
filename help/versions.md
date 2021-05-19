@@ -3,9 +3,9 @@ title: Versioni dei componenti core
 description: I componenti core vengono pubblicati come versioni che possono contenere più di una versione degli stessi componenti core. Questo documento spiega cosa sono le versioni e le versioni e come comprendere la compatibilità con i componenti core e le AEM.
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 46d97324ed1b903c315725429fe36b11a1856aa9
+source-git-commit: 6dc5c5959410f643ff169989d4d98c6f65f98076
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2072'
 ht-degree: 21%
 
 ---
@@ -26,10 +26,10 @@ La tabella seguente, i cui contenuti sono [disponibili su GitHub con dettagli su
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
-| [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Questa era una versione patch per risolvere i problemi relativi al gestore collegamenti. Sono stati apportati piccoli miglioramenti anche alla PWA. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 15 maggio 2021 |
+| [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Questa era una release di patch principalmente risolve un problema con il nuovo Link Handler e aggiunto un miglioramento per supportare applicazioni multipagina per [PWA.](/help/components/page.md#pwa-support) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 15 maggio 2021 |
 | [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Questa versione si è concentrata sui miglioramenti dell’accessibilità e sull’introduzione di un nuovo gestore di collegamenti ai componenti esistenti. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 22 aprile 2021 |
 | [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Questa era una patch release principalmente risolvere problemi con [Livello dati](/help/developing/data-layer/overview.md) compatibilità con le versioni precedenti e i test IT non riescono in alcune situazioni. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 16 marzo 2021 |
-| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Questa versione include il supporto per le app web progressive nel [componente pagina](/help/components/page.md) e supporta la versione 2.0.0 del [livello dati Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 23 febbraio 2021 |
+| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Questa versione include il supporto per [app web progressive (PWA) nel componente pagina](/help/components/page.md#pwa-support) e supporta la versione 2.0.0 del [livello dati Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 23 febbraio 2021 |
 | [2.14.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.14.0) | Questa versione include nuove opzioni per il [componente da incorporare](/help/components/embed.md) e introduce la funzione Brand Slug a livello di [pagina](/help/components/page.md) e risolve molti problemi. | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 9 febbraio 2021 |
 | [2.13.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.2) | Questa era una versione della patch per risolvere un problema con l’editor Rich Text quando veniva utilizzata su AEMaaCS | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 16 dicembre 2020 |
 | [2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0) | Questa versione include nuove funzioni Dynamic Media per il [componente immagine.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Continuo | 8, 11 | 4 dicembre 2020 |
