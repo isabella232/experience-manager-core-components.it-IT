@@ -2,15 +2,14 @@
 title: Componente Opzioni modulo (v1)
 description: Il componente per le opzioni del modulo dei componenti core consente la selezione da opzioni predefinite in vari formati.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: a5e8656b-eddd-48ec-876b-39bbaa70edf6
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '476'
 ht-degree: 3%
 
 ---
-
 
 # Componente Opzioni modulo (v1) {#form-options-component-v}
 
@@ -113,7 +112,7 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 >
 >L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
 
