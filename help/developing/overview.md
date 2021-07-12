@@ -1,10 +1,9 @@
 ---
 title: Sviluppo di componenti core
 description: I componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, markup snello ed esportazione JSON di contenuti.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-translation-type: tm+mt
-source-git-commit: b01fdc7ab6b4d4bb4200d28aaa3706c58ccdea9f
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 14%
@@ -32,7 +31,7 @@ componenti personalizzatiValutare se è possibile personalizzare [ un componente
 \
    In caso contrario, fare riferimento a &quot;Nuovi componenti personalizzati&quot; sopra.
 
-## Come utilizzare i componenti core {#how-to-succeed}
+## Come utilizzare con successo i componenti core {#how-to-succeed}
 
 I componenti core sono potenti, flessibili e facili da usare e personalizzare. [Seguendo alcune ](success.md) linee guida chiave, assicurati che il progetto con i componenti core sia un successo.
 
@@ -74,7 +73,7 @@ Come qualsiasi altro progetto AEMaaCS, dovrai aggiungere anche una dipendenza al
 
 Per ulteriori informazioni sui progetti AEMaaCS, consulta il documento [AEM Struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) .
 
-## Supporto dei componenti core {#core-component-support}
+## Supporto per componenti core {#core-component-support}
 
 I componenti core sono parte integrante di AEM e sono supportati così come sono. Sono soggetti agli stessi termini e condizioni dei prodotti forniti con Quickstart.
 
@@ -118,7 +117,7 @@ Nella tabella seguente sono elencati i componenti core disponibili, con collegam
 | [Testo](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text) | Rich text | `/libs/foundation/components/text /libs/foundation/components/table /libs/wcm/foundation/components/text` |
 | [Immagine](https://adobe.com/go/aem_cmp_tech_image_v2) | Caricamento intelligente e lento delle dimensioni ottimali del rendering | `/libs/foundation/components/image /libs/foundation/components/adaptiveimage /libs/foundation/components/logo /libs/foundation/components/mobileimage  /libs/foundation/components/mobilelogo /libs/wcm/foundation/components/image` |
 | [Elenco](https://adobe.com/go/aem_cmp_tech_list_v2) | Elenco delle pagine | `/libs/foundation/components/list /libs/foundation/components/mobilelist /libs/wcm/foundation/components/list` |
-| [Condivisione social media](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Widget di condivisione Facebook e Pinterest | `-` |
+| [Condivisione social media](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Widget di condivisione facebook e Pinterest | `-` |
 | [Contenitore modulo](https://adobe.com/go/aem_cmp_tech_form_container_v2) | Sistema di paragrafi a forma reattiva | `/libs/foundation/components/form/start /libs/foundation/components/form/end` |
 | [Testo modulo](https://adobe.com/go/aem_cmp_tech_form_text_v2) | Campo di immissione testo | `/libs/foundation/components/form/text /libs/foundation/components/form/password` |
 | [Opzioni modulo](https://adobe.com/go/aem_cmp_tech_form_options_v2) | Campo di input a più opzioni | `/libs/foundation/components/form/checkbox /libs/foundation/components/form/radio /libs/foundation/components/form/dropdown` |
