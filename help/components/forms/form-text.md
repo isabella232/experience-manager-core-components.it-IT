@@ -1,17 +1,16 @@
 ---
 title: Componente Testo Modulo
 description: Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: e8fa3881-51fb-4726-9654-8f93acfb7464
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '577'
 ht-degree: 7%
 
 ---
 
-
-# Componente testo modulo{#form-text-component}
+# Componente Testo Modulo{#form-text-component}
 
 Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
 
@@ -42,7 +41,7 @@ La documentazione tecnica più recente sul componente Testo modulo [è disponibi
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di testo da inserire, nonché i valori e le etichette predefiniti.
 
@@ -68,7 +67,7 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
-### Informazioni sulla scheda {#about-tab}
+### Scheda Informazioni {#about-tab}
 
 ![Scheda Informazioni](/help/assets/form-text-edit-about.png)
 
