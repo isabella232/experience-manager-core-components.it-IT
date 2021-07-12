@@ -1,15 +1,14 @@
 ---
 title: Componente testo
 description: Il componente Testo è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2213'
 ht-degree: 4%
 
 ---
-
 
 # Componente testo{#text-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente di testo [è disponibile s
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Il componente Testo e l’ Editor Rich Text {#the-text-component-and-the-rich-text-editor}
+## Il componente Testo e l’Editor Rich Text {#the-text-component-and-the-rich-text-editor}
 
 Il componente Testo dei componenti core sfrutta l’Editor Rich Text AEM . L’editor Rich Text offre agli autori di contenuti diverse funzionalità per modificare il contenuto del testo. L’editor Rich Text è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurare l’editor Rich Text](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurare i plug-in dell’editor Rich Text](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
