@@ -1,15 +1,14 @@
 ---
 title: Supporto AMP per i componenti core
 description: I componenti core supportano AMP - Pagine mobili accelerate
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin
+exl-id: 1fd9b6b5-0e4d-48c7-8faa-42e0d4a6bbd0
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
-
 
 # Supporto AMP per i componenti core {#amp-support}
 
