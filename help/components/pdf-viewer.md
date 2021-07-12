@@ -1,15 +1,14 @@
 ---
 title: Componente visualizzatore PDF
 description: Il componente Visualizzatore PDF consente la visualizzazione di un documento PDF.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: deb635f5-2b73-4e7a-9838-3a941e39e898
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '705'
 ht-degree: 3%
 
 ---
-
 
 # Componente visualizzatore PDF {#pdf-viewer-component}
 
@@ -45,7 +44,7 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [docu
 >
 >Il componente visualizzatore PDF sfrutta [le API di Adobe Document Services](https://www.adobe.io/apis/documentcloud/dcsdk.html) e richiede all’amministratore di configurare una [configurazione in base al contesto](/help/developing/context-aware-configs.md) per utilizzare questi servizi. Per informazioni dettagliate su questa configurazione, consulta la documentazione tecnica del componente.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)[
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il visualizzatore e come si comporterà e apparirà per un visitatore alla pagina.
 
@@ -55,7 +54,7 @@ La scheda Configurazione consente all’autore di definire quale PDF visualizzar
 
 ![Scheda Configurazione della finestra di dialogo di modifica del componente Visualizzatore PDF](/help/assets/pdf-viewer-edit-configuration.png)
 
-### Personalizza scheda {#customize-tab}
+### Scheda Personalizza {#customize-tab}
 
 La scheda Personalizza consente all’autore di definire le opzioni disponibili nel visualizzatore per il lettore e come deve essere presentato il visualizzatore.
 
