@@ -1,15 +1,14 @@
 ---
 title: Componente Schede
 description: Il componente Tabulazioni consente di creare più schede per disporre il contenuto di una pagina.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0031c5f3-447c-4932-898f-2f453801e492
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1040'
 ht-degree: 2%
 
 ---
-
 
 # Componente Schede {#tabs-component}
 
@@ -101,7 +100,7 @@ Nella scheda **Accessibilità** è possibile impostare i valori per le etichette
 
 * **Etichetta**  - Valore di un attributo dell’etichetta ARIA per il componente
 
-## Seleziona il pannello {#select-panel}
+## Pannello Seleziona {#select-panel}
 
 L’autore del contenuto può utilizzare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello per la modifica e per ridisporre facilmente l’ordine delle schede.
 
