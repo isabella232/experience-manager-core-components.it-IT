@@ -1,17 +1,16 @@
 ---
 title: Componente Elenco frammenti di contenuto
 description: Il componente Elenco frammenti di contenuto del componente core consente la visualizzazione di un elenco di frammenti di contenuto.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
 
-
-# Componente elenco frammenti di contenuto{#content-fragment-list-component}
+# Componente Elenco frammenti di contenuto{#content-fragment-list-component}
 
 Il componente Elenco frammenti di contenuto del componente core consente la visualizzazione di un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Elenco frammenti di conten
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i frammenti di contenuto che compongono l’elenco e gli elementi di tali frammenti da includere.
 
