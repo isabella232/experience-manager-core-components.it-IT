@@ -2,15 +2,14 @@
 title: Componente immagine (v1)
 description: Il componente immagine di base è un componente immagine adattivo che offre funzioni di modifica diretta.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 625ce8de-5c4a-476d-b749-895493d169b1
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 3%
 
 ---
-
 
 # Componente immagine (v1) {#image-component-v}
 
@@ -76,7 +75,7 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 >
 >L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 Oltre alla finestra di dialogo standard [modifica](#edit-dialog) e [progettazione](#design-dialog), il componente immagine offre una finestra di dialogo di configurazione in cui l&#39;immagine stessa è definita insieme alla relativa descrizione e alle proprietà di base.
 
