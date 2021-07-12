@@ -1,15 +1,14 @@
 ---
 title: Componente contenitore modulo
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 2%
 
 ---
-
 
 # Componente contenitore modulo {#form-container-component}
 
@@ -48,14 +47,14 @@ La documentazione tecnica più recente sul componente per contenitori moduli [è
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire le azioni da eseguire quando il componente viene inviato.
 
 A seconda del **Tipo azione** selezionato, le opzioni disponibili all’interno del contenitore cambieranno. I tipi di azione disponibili sono:
 
 * [Dati modulo post](#post-data)
-* [E-mail](#mail)
+* [Mail](#mail)
 * [Contenuto store](#store-content)
 
 Indipendentemente dal tipo, esistono [impostazioni generali](#general-settings) che si applicano a ogni azione.
@@ -72,7 +71,7 @@ Quando il modulo viene inviato, il tipo di azione per i dati del modulo di pubbl
 >[!TIP]
 >Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l’elaborazione dei dati del modulo inoltrati. [Per ulteriori informazioni, consulta la documentazione tecnica su GitHub .](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
-### E-mail {#mail}
+### Posta {#mail}
 
 Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e-mail ai destinatari designati.
 
