@@ -1,15 +1,14 @@
 ---
 title: Componente teaser
 description: Il componente teaser può mostrare un’immagine, un titolo, un testo RTF ed eventualmente un collegamento ad altri contenuti.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '775'
 ht-degree: 2%
 
 ---
-
 
 # Componente teaser {#teaser-component}
 
@@ -41,7 +40,7 @@ La documentazione tecnica più recente sul componente Teaser [è disponibile su 
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 L’autore del contenuto può utilizzare la finestra di dialogo di configurazione per definire le proprietà del singolo teaser. È inoltre disponibile una [finestra di dialogo di modifica](#edit-dialog) per modificare l’immagine teaser, se selezionata.
 
@@ -87,7 +86,7 @@ Il componente Teaser delega il rendering delle immagini al [componente immagine]
 
 La finestra di dialogo Progettazione consente all’autore del modello di definire le opzioni teaser disponibili per l’autore del contenuto quando si utilizza questo componente.
 
-### Scheda teaser {#teaser-tab}
+### Scheda Teaser {#teaser-tab}
 
 ![Finestra di dialogo di progettazione del componente teaser](/help/assets/teaser-design.png)
 
