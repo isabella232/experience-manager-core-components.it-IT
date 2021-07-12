@@ -1,16 +1,15 @@
 ---
 title: Integrazioni e livello dati client Adobe
 description: Scopri come Adobe Client Data Layer può integrarsi con i componenti personalizzati e come le integrazioni con Adobe Analytics e Adobe Target possono aiutarti a ottenere informazioni sul tuo sito web
-feature: Core Components, Adobe Client Data Layer
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, Adobe Client Data Layer
+role: Architect, Developer, Admin
+exl-id: 503dd3dc-fe95-4a17-83f5-1f0c1960993d
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
-
 
 # Integrazioni con Adobe Client Data Layer {#integrations}
 
@@ -43,8 +42,8 @@ Scopri come utilizzare le funzioni integrate di Adobe Client Data Layer con AEM 
 
 [Visualizza l&#39;esercitazione qui.](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
 
-### Tracciare i componenti selezionati con Adobe Analytics {#track-clicked-components}
+### Tracciamento dei componenti selezionati con Adobe Analytics {#track-clicked-components}
 
-Utilizza Adobe Client Data Layer basato su eventi con i componenti core AEM per tenere traccia dei clic su componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole in Experience Platform Launch per rilevare gli eventi di clic, filtrare per componente e inviare i dati a un Adobe Analytics con un beacon di tracciamento dei collegamenti.
+Utilizza Adobe Client Data Layer basato sugli eventi con i componenti core AEM per tenere traccia dei clic su componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole in Experience Platform Launch per rilevare gli eventi di clic, filtrare per componente e inviare i dati a un Adobe Analytics con un beacon di tracciamento dei collegamenti.
 
 [Visualizza l&#39;esercitazione qui.](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/analytics/track-clicked-component.html)
