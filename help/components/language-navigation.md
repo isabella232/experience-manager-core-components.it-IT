@@ -1,17 +1,16 @@
 ---
 title: Componente di navigazione lingua
 description: Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un’altra impostazione internazionale.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '846'
 ht-degree: 2%
 
 ---
 
-
-# Componente di navigazione della lingua{#language-navigation-component}
+# Componente di navigazione lingua{#language-navigation-component}
 
 Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in impostazioni internazionali diverse.
 
