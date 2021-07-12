@@ -1,16 +1,15 @@
 ---
 title: Estensione di Adobe Client Data Layer
 description: Adobe Client Data Layer può essere esteso seguendo alcuni pattern di base
-feature: Core Components, Adobe Client Data Layer
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, Adobe Client Data Layer
+role: Architect, Developer, Admin
+exl-id: f3d5555b-4f08-49de-ab0f-dc0fb04aadf8
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
-
 
 # Estensione di Adobe Client Data Layer {#extending-acdl}
 
