@@ -1,19 +1,18 @@
 ---
 title: Componente Opzioni modulo
 description: Il componente per le opzioni del modulo dei componenti core consente la selezione da opzioni predefinite in vari formati.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 8a74bd37-9b12-4fa6-bff2-53e337b16251
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '545'
 ht-degree: 3%
 
 ---
 
-
 # Componente Opzioni modulo {#form-options-component}
 
-Il componente Opzioni modulo per componente core consente la selezione da opzioni predefinite in vari formati.
+Il componente per le opzioni del modulo dei componenti core consente la selezione da opzioni predefinite in vari formati.
 
 ## Utilizzo {#usage}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Opzioni modulo [è disponi
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
 
