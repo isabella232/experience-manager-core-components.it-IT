@@ -1,18 +1,17 @@
 ---
 title: Generazione front-end, ad Angular SPA
 description: Una descrizione del processo di compilazione front-end per i progetti SPA basati su Angular
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: 5726e29d-081c-42bb-bf4e-2852043b21d6
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
-
-# Build front-end, ad Angular SPA {#frontend-angular}
+# Generazione front-end, ad Angular SPA {#frontend-angular}
 
 In questo documento vengono illustrati i dettagli del progetto creato quando si utilizza l’archetipo per creare un’applicazione a pagina singola (SPA) basata sul framework di Angular. Ad esempio, quando imposti l’opzione `frontendModule` su `angular`.
 
