@@ -1,15 +1,14 @@
 ---
 title: Scarica componente
 description: Il componente Download del componente core consente di creare un’opzione di download su una pagina.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '687'
 ht-degree: 2%
 
 ---
-
 
 # Scarica componente{#download-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Download [è disponibile s
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento da scaricare e come si comporterà e apparirà per un visitatore alla pagina.
 
