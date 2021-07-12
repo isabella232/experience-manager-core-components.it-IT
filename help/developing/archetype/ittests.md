@@ -1,16 +1,15 @@
 ---
 title: modulo it.test di AEM Project Archetype
 description: Come utilizzare i test di integrazione di AEM Project Archetype
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: 0abc0265-3a3f-4323-97e6-3af0c62299ef
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '80'
 ht-degree: 0%
 
 ---
-
 
 # modulo it.testing dell&#39;Archetipo di progetto AEM {#ittests-module}
 
