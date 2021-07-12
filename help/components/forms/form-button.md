@@ -1,15 +1,14 @@
 ---
 title: Componente pulsante modulo
 description: Il componente di base Nascosto per modulo consente di includere un campo nascosto in un modulo.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 1e5cff43-57db-4bfc-b2d2-23307eaf5eb3
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '412'
 ht-degree: 4%
 
 ---
-
 
 # Componente pulsante modulo {#form-button-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Pulsante modulo [è dispon
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del pulsante.
 
