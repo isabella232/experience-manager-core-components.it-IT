@@ -1,17 +1,16 @@
 ---
 title: Componente Frammento di contenuto
 description: Il componente Frammento di contenuto del componente core consente la visualizzazione di un frammento di contenuto.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '673'
 ht-degree: 7%
 
 ---
 
-
-# Componente frammento di contenuto{#content-fragment-component}
+# Componente Frammento di contenuto{#content-fragment-component}
 
 Il componente Frammento di contenuto del componente core consente la visualizzazione di un [frammento di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
@@ -61,7 +60,7 @@ La documentazione tecnica più recente sul componente Frammento di contenuto [è
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il frammento di contenuto e gli elementi del frammento da includere.
 
