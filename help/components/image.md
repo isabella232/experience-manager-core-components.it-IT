@@ -1,15 +1,14 @@
 ---
 title: Componente immagine
 description: Il componente immagine di base è un componente immagine adattivo che offre funzioni di modifica diretta.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2170'
 ht-degree: 2%
 
 ---
-
 
 # Componente immagine{#image-component}
 
@@ -74,7 +73,7 @@ Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [docu
 
 Il componente Immagine supporta i microdati [schema.org](https://schema.org).
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 Oltre alla finestra di dialogo standard [modifica](#edit-dialog) e [progettazione](#design-dialog), il componente immagine offre una finestra di dialogo di configurazione in cui l&#39;immagine stessa è definita insieme alla relativa descrizione e alle proprietà di base.
 
