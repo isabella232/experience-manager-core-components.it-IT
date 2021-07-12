@@ -2,15 +2,14 @@
 title: Componente pulsante modulo (v1)
 description: Il componente di base Nascosto per modulo consente di includere un campo nascosto in un modulo.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 2c06a942-7ac5-4847-9d11-7bbcd0ea51bd
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '342'
 ht-degree: 3%
 
 ---
-
 
 # Componente pulsante modulo (v1) {#form-button-component-v}
 
@@ -87,7 +86,7 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 >
 >L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del pulsante.
 
