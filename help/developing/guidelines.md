@@ -1,10 +1,9 @@
 ---
 title: Linee guida per i componenti
 description: I componenti core seguono modelli di implementazione moderni che sono molto diversi dai componenti di base.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
-translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -17,7 +16,7 @@ I [Componenti core](overview.md) seguono modelli di implementazione moderni che 
 
 Questa pagina spiega questi pattern e quando utilizzarli per creare componenti di authoring personalizzati. La prima sezione [Pattern generali dei componenti](#general-component-patterns) si applica a qualsiasi tipo di componente, mentre la seconda sezione [Pattern di componenti riutilizzabili](#reusable-component-patterns) si applica ai componenti destinati a essere riutilizzati tra siti o progetti, ad esempio i componenti core.
 
-## Pattern generali dei componenti {#general-component-patterns}
+## Pattern dei componenti generali {#general-component-patterns}
 
 Le linee guida illustrate in questa sezione sono consigliate per qualsiasi tipo di componente, indipendentemente dal fatto che sia specifico per un singolo progetto o se il componente debba essere ampiamente riutilizzato su più siti o progetti.
 
@@ -47,7 +46,7 @@ Oltre alla finestra di dialogo di modifica utilizzata dagli autori delle pagine,
 
 Per rendere i componenti il più possibile riutilizzabili, è necessario fornire loro opzioni significative per la preconfigurazione. Questo consente di abilitare o disabilitare le funzioni dei componenti in modo che soddisfino le esigenze specifiche dei diversi siti.
 
-### Pattern del componente proxy {#proxy-component-pattern}
+### Pattern componente proxy {#proxy-component-pattern}
 
 Poiché ogni risorsa di contenuto ha una proprietà `sling:resourceType` che fa riferimento al componente per eseguirne il rendering, in genere è buona prassi che queste proprietà puntino a componenti specifici del sito, invece di puntare a componenti condivisi da più siti. Questo offre maggiore flessibilità ed evita il refactoring dei contenuti se un sito necessita di un comportamento diverso per un componente, perché questa personalizzazione può quindi essere ottenuta sul componente specifico per il sito e non influisce sugli altri siti.
 
@@ -102,7 +101,7 @@ La proprietà `cq:allowedTemplates` indica quali modelli possono essere utilizza
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-[AEM Project ](/help/developing/archetype/overview.md) Archetypecrealizza un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componenti HTL personalizzati con SlingModels per la logica e la corretta implementazione dei componenti core con il modello proxy consigliato.
+[L’](/help/developing/archetype/overview.md) archivio dei progetti di AEM individua un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componenti HTL personalizzati con SlingModels per la logica e la corretta implementazione dei componenti core con il modello proxy consigliato.
 
 **Articolo successivo:**
 
