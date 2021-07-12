@@ -1,18 +1,17 @@
 ---
 title: Build front-end per SPA React
 description: Descrizione del processo di compilazione front-end per i progetti SPA basati su React
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: dd8ef13a-9686-47a9-b6af-e486ff10c4d8
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
 
-
-# Build front-end per React SPA {#frontend-react}
+# Build front-end per SPA React {#frontend-react}
 
 In questo documento vengono illustrati i dettagli del progetto creato quando si utilizza l&#39;archetipo per creare un&#39;applicazione a pagina singola (SPA) basata sul framework React. Ad esempio, quando imposti l’opzione `frontendModule` su `react`.
 
