@@ -1,24 +1,23 @@
 ---
 title: modulo ui.apps del AEM Project Archetype
 description: modulo ui.apps del AEM Project Archetype
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: fc63a19a-3253-44ee-96e2-bb5544c2235b
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
-# modulo ui.apps dell&#39;Archetipo di progetto AEM {#uiapps-module}
+# modulo ui.apps del AEM Project Archetype {#uiapps-module}
 
 Il modulo maven ui.apps (`<src-directory>/<project>/ui.apps`) include tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include CSS/JS che verranno memorizzati in un formato AEM denominato [clientlibs.](uifrontend.md#clientlibs) Sono inclusi anche gli script HTL per il rendering di HTML dinamico. Puoi considerare il modulo ui.apps come una mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente.
 
 Il plug-in Apache Jackrabbit FileVault Package viene utilizzato per compilare il contenuto del modulo ui.apps in un pacchetto AEM che può essere distribuito a AEM. Le configurazioni globali per il plug-in sono definite nel file pom.xml principale.
 
-## POM padre {#parent-pom}
+## POM principale {#parent-pom}
 
 [Il POM](/help/developing/archetype/using.md#parent-pom)  padre (`<src>/<project>/pom.xml`) include  `<plugin>` sezioni che definiscono diverse configurazioni per i plug-in utilizzati nel progetto. Questo include una configurazione per `filterSource` per il plug-in pacchetto Jackrabbit FileVault. Il `filterSource` punta alla posizione del file `filter.xml` utilizzato per definire i percorsi jcr inclusi nel pacchetto.
 
