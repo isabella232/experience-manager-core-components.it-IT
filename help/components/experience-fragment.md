@@ -1,15 +1,14 @@
 ---
 title: Componente Frammento esperienza
 description: Il componente Frammento esperienza consente all’autore del contenuto di aggiungere a una pagina una variante del frammento esperienza.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '816'
 ht-degree: 1%
 
 ---
-
 
 # Componente Frammento esperienza{#experience-fragment-component}
 
@@ -113,7 +112,7 @@ La documentazione tecnica più recente sul componente Frammento esperienza [è d
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di selezionare la variante del frammento di esperienza da eseguire sulla pagina.
 
