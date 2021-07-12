@@ -1,16 +1,15 @@
 ---
 title: Utilizzo di Adobe Client Data Layer con i componenti core
 description: Utilizzo di Adobe Client Data Layer con i componenti core
-feature: Core Components, Adobe Client Data Layer
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, Adobe Client Data Layer
+role: Architect, Developer, Admin
+exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 5%
 
 ---
-
 
 # Utilizzo di Adobe Client Data Layer con i componenti core {#data-layer-core-components}
 
@@ -91,7 +90,7 @@ Fare riferimento anche agli eventi [attivati dai componenti.](#events-components
 
 Di seguito è riportato un elenco di schemi utilizzati dai componenti core con Data Layer.
 
-### Schema elemento componente/contenitore {#item}
+### Schema componente/elemento contenitore {#item}
 
 Lo schema Componente/Elemento contenitore viene utilizzato nei seguenti componenti:
 
@@ -177,7 +176,7 @@ I seguenti [eventi](#events) sono pertinenti allo schema del contenitore:
 * `cmp:show`
 * `cmp:hide`
 
-### Schema immagine {#image}
+### Schema immagini {#image}
 
 Lo schema immagine viene utilizzato dal componente seguente:
 
