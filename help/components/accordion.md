@@ -1,17 +1,16 @@
 ---
 title: Componente a soffietto
 description: Il componente pannello a soffietto dei componenti core consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1067'
 ht-degree: 1%
 
 ---
 
-
-# Componente per pannello a soffietto{#accordion-component}
+# Componente a soffietto{#accordion-component}
 
 Il componente pannello a soffietto dei componenti core consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
 
@@ -59,7 +58,7 @@ La documentazione tecnica più recente sul componente per pannello a soffietto [
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento a soffietto, i relativi pannelli e il comportamento di un visitatore sulla pagina.
 
@@ -91,7 +90,7 @@ Utilizza il pulsante **Aggiungi** per aprire il selettore dei componenti e scegl
    * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
    * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
 
-## Seleziona il puntatore del pannello {#select-panel-popover}
+## Selezione del puntatore del pannello {#select-panel-popover}
 
 L’autore del contenuto può utilizzare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello da modificare e per ridisporre facilmente l’ordine dei pannelli nel pannello a soffietto.
 
