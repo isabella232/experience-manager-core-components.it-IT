@@ -1,15 +1,14 @@
 ---
 title: Inclusione delle librerie client
 description: Esistono diversi modi per includere le librerie client a seconda del caso d’uso.
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin
+exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---
-
 
 # Inclusione delle librerie client {#including-client-libraries}
 
@@ -28,7 +27,7 @@ Se non hai il tempo di indagare le migliori situazioni, includi le librerie clie
 
 Questo includerà sia il CSS che il JS nella pagina `head`, ma l’aggiunta dell’attributo `defer` al JS `script` include, in modo che i browser attendano che il DOM sia pronto prima di eseguire gli script, ottimizzando quindi la velocità di caricamento della pagina.
 
-## Uso di base {#basic-usage}
+## Utilizzo di base {#basic-usage}
 
 La sintassi di base per includere sia JS che CSS di una categoria di libreria client, che genererà tutti gli elementi CSS `link` e/o JS `script` corrispondenti, è la seguente:
 
@@ -91,7 +90,7 @@ Attributi CSS `link` che possono essere passati a `jsAndCssIncludes` e `cssInclu
 * `onload`: stringa
 * `crossorigin`: stringa
 
-## Struttura {#inlining}
+## Inclinazione {#inlining}
 
 In alcuni casi, per l’ottimizzazione, o per e-mail o [AMP,](amp.md) potrebbe essere necessario inline il CSS o JS nell’output dell’HTML.
 
