@@ -1,16 +1,15 @@
 ---
 title: modulo ui.test di AEM Project Archetype
 description: Come utilizzare i test dell’interfaccia utente di AEM Project Archetype
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: eb3c9b34-f10e-410f-bcf3-34f94f124c7c
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
-
 
 # modulo ui.test dell&#39;Archetipo di progetto AEM {#uitests-module}
 
@@ -22,7 +21,7 @@ Il progetto prevede tre livelli di test:
 
 Questo articolo descrive i test dell&#39;interfaccia utente disponibili come parte del modulo ui.test .
 
-## Esecuzione di test dell&#39;interfaccia utente {#running-tests}
+## Esecuzione di test dell’interfaccia utente {#running-tests}
 
 Per eseguire il test, esegui:
 
