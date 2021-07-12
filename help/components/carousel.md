@@ -1,15 +1,14 @@
 ---
 title: Componente carosello
 description: Il componente Carosello consente all’autore del contenuto di presentare il contenuto in un carosello rotante.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1125'
 ht-degree: 1%
 
 ---
-
 
 # Componente carosello{#carousel-component}
 
@@ -90,7 +89,7 @@ Nella scheda **Accessibilità** è possibile impostare i valori per le etichette
 
 * **Etichetta**  - Valore di un attributo dell’etichetta ARIA per il componente
 
-## Seleziona il pannello {#select-panel}
+## Pannello Seleziona {#select-panel}
 
 L’autore del contenuto può utilizzare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a una diapositiva diversa da modificare e per ridisporre facilmente l’ordine delle diapositive.
 
