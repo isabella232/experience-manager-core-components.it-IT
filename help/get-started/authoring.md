@@ -1,15 +1,14 @@
 ---
 title: Authoring con i componenti core
 description: 'In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create: i componenti core offrono funzionalità flessibili e avanzate per l’authoring.'
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 56e58303-a178-45ab-b59d-e374c9cf90cf
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '764'
 ht-degree: 8%
 
 ---
-
 
 # Authoring con i componenti core
 
@@ -63,7 +62,7 @@ Ad esempio, se un componente immagine non deve consentire il caricamento di imma
 
 Per ulteriori informazioni, consulta [Creazione di modelli di pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) .
 
-### Finestre di dialogo di modifica e progettazione {#edit-and-design-dialogs}
+### Finestra di dialogo Modifica e Progettazione {#edit-and-design-dialogs}
 
 Poiché gli autori dei modelli possono preconfigurare i componenti core per definire le opzioni consentite come parte di un modello, e poi ulteriormente configurati dall’autore della pagina per definire il contenuto della pagina effettiva, ogni componente può avere opzioni in due diverse finestre di dialogo.
 
