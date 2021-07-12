@@ -1,15 +1,14 @@
 ---
 title: Componente di navigazione
 description: Il componente Navigazione consente agli utenti di navigare facilmente in una struttura del sito globalizzata.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
-
 
 # Componente di navigazione{#navigation-component}
 
@@ -70,7 +69,7 @@ Indipendentemente dalla pagina localizzata che un utente sta visualizzando, il c
 
 Quindi, se un visitatore sta visualizzando `/content/ch/de/experience/arctic-surfing-in-lofoten`, il componente è in grado di generare la struttura di navigazione in base a `/content/wknd/language-masters/de`. Analogamente, se il visitatore visualizza `/content/us/en/experience/arctic-surfing-in-lofoten`, il componente è in grado di generare la struttura di navigazione in base a `/content/wknd/language-masters/en`.
 
-## Supporto per la struttura del sito ombreggiata {#shadow-structure}
+## Supporto per la struttura del sito ombreggiato {#shadow-structure}
 
 A volte è necessario creare un menu di navigazione per il visitatore che sia diverso dalla struttura effettiva del sito. Forse una promozione dovrebbe evidenziare determinati contenuti nel menu riorganizzando l&#39;elenco dei contenuti. Utilizzando le pagine shadow, che si reindirizzano semplicemente ad altre pagine di contenuto, il componente di navigazione può generare qualsiasi struttura di navigazione arbitraria necessaria.
 
