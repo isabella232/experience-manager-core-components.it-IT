@@ -1,23 +1,22 @@
 ---
 title: Componente di condivisione social network
-description: Il componente di base per la condivisione social network è un widget di condivisione Facebook e Pinterest .
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+description: Il componente di base per la condivisione social network è un widget di condivisione Facebook e Pinterest.
+role: Architect, Developer, Admin, User
+exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '427'
 ht-degree: 7%
 
 ---
 
-
 # Componente di condivisione social network{#social-sharing-component}
 
-Il componente di base per la condivisione social network è un widget di condivisione Facebook e Pinterest .
+Il componente di base per la condivisione social network è un widget di condivisione Facebook e Pinterest.
 
 ## Utilizzo {#usage}
 
-Il componente Condivisione social aggiunge alla pagina i collegamenti di Facebook e Pinterest condivisi. Spesso è incluso nelle intestazioni o nei piè di pagina.
+Il componente Condivisione social aggiunge alla pagina collegamenti di condivisione Facebook e Pinterest. Spesso è incluso nelle intestazioni o nei piè di pagina.
 
 A differenza di altri componenti, le impostazioni per il componente Condivisione social vengono eseguite dall’autore del modello tramite [Proprietà pagina iniziale](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) e dall’autore del contenuto tramite [Proprietà pagina](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
