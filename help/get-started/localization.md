@@ -1,15 +1,14 @@
 ---
 title: Funzioni di localizzazione dei componenti core
 description: Funzioni di localizzazione dei componenti core
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
-
 
 # Funzioni di localizzazione dei componenti core {#localization-features-of-the-core-components}
 
@@ -106,7 +105,7 @@ Il componente di navigazione e il componente Frammento esperienza provengono dal
 
 ![](/help/assets/screen-shot-2019-09-09-11.22.14.png)
 
-## Adatta tutto {#fitting-it-all-together}
+## Adattare tutto {#fitting-it-all-together}
 
 Ecco l’immagine completa di come questi elementi semplici ma potenti lavorano insieme per distribuire pagine localizzate agli autori dei contenuti.
 
