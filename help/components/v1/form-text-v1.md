@@ -2,15 +2,14 @@
 title: Componente testo modulo (v1)
 description: Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: d6fbc596-cb42-4478-8a3c-aa5aead3be0a
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 8%
 
 ---
-
 
 # Componente testo modulo (v1) {#form-text-component-v}
 
@@ -91,7 +90,7 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 >
 >L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di testo da inserire, nonché i valori e le etichette predefiniti.
 
