@@ -2,15 +2,14 @@
 title: Componente testo (v1)
 description: Il componente Testo è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: c9fe3052-a33d-412e-9456-52c9a0cea292
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
-
 
 # Componente testo (v1) {#text-component-v}
 
