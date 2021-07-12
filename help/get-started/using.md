@@ -1,10 +1,9 @@
 ---
 title: Utilizzo dei componenti core
 description: '"Per iniziare a utilizzare i componenti core nel tuo progetto, segui tre passaggi: scarica e installa, crea componenti proxy, carica gli stili di base e consenti i componenti sui tuoi modelli."'
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
-translation-type: tm+mt
-source-git-commit: 45a17fe42146516f351f897e85a4a48dcf3aadab
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 2%
@@ -85,7 +84,7 @@ EsempioAggiungi le seguenti proprietà:
 
 Ad esempio, guarda il [componente titolo del sito WKND](https://github.com/adobe/aem-guides-wknd/blob/master/ui.apps/src/main/content/jcr_root/apps/wknd/components/title/.content.xml), che è un buon esempio di un componente proxy creato in questo modo.
 
-## Carica gli stili core {#load-the-core-styles}
+## Caricare gli stili core {#load-the-core-styles}
 
 1. Se non ancora eseguito, crea una [Libreria client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) che contiene tutti i file CSS e JS necessari per il sito.
 1. Nella libreria client del sito, aggiungi le dipendenze ai componenti core eventualmente necessari. A questo scopo, aggiungi una proprietà `embed` .
