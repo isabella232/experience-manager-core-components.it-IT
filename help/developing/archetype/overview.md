@@ -4,9 +4,9 @@ description: Un modello di progetto per applicazioni basate su AEM
 feature: Componenti core, AEM Project Archetype
 role: Architect, Developer, Administrator
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 8b3f98d5087ddca6928950daf2db1eb7728fa44e
+source-git-commit: b5ad1c874d5f6d6781c2d0b0cc992b278c91211b
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1118'
 ht-degree: 9%
 
 ---
@@ -54,12 +54,13 @@ Per generare un progetto, regola la seguente riga di comando in base alle tue es
 mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=27 \
+ -D archetypeVersion=XX \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
 ```
 
+* Sostituisci `XX` con il numero di versione più recente [archetipo.](#requirements)
 * Imposta `aemVersion=cloud` per [AEM come Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
    Imposta `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) o on-premise.
 La dipendenza dai componenti core viene aggiunta solo per le versioni aem non cloud, in quanto i componenti core vengono forniti come Cloud Service da OOTB per AEM.
