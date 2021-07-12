@@ -1,10 +1,9 @@
 ---
 title: Percorsi per il successo con i componenti core
 description: Come eseguire correttamente l’implementazione del progetto con i componenti core
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 exl-id: 1ea8cd1c-8435-4ded-82dc-5a7896c53e0c
-translation-type: tm+mt
-source-git-commit: 056c5bc15ac9e669c3bf6d5da7f060d6eef02608
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 14%
@@ -22,7 +21,7 @@ Esistono due approcci di base per l’implementazione dei componenti di base, ch
 1. Mappa le progettazioni sui componenti core e prendi il codice HTML che forniscono. Oppure
 1. Se devi rispettare gli standard HTML già definiti, dovrai fare più sforzo e non ottenere tutti i vantaggi dei componenti core.
 
-## Problemi comuni nell’implementazione dei componenti {#common-pitfalls}
+## Insidie comuni nell’implementazione dei componenti {#common-pitfalls}
 
 Due problemi comuni che portano a progetti che non hanno successo con i componenti core sono:
 
@@ -39,7 +38,7 @@ Invece di considerare solo i componenti core nella fase di implementazione del p
 
 Fai riferimento alla [Libreria dei componenti](https://adobe.com/go/aem_cmp_library) già nella fase di progettazione. I componenti core sono potenti e flessibili e possono portarti fino a un punto di partenza. Aggiungi componenti personalizzati solo quando esiste una necessità aziendale reale che non può essere ragionevolmente raggiunta con un componente core.
 
-### Utilizza il kit dell&#39;interfaccia utente per Adobe XD {#ui-kit}
+### Usa il kit dell&#39;interfaccia utente per Adobe XD {#ui-kit}
 
 Non appena si verifica una comprovata necessità di un componente personalizzato, utilizza il [kit di interfaccia utente per Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) in modo che i designer possano iniziare a creare i wireframe e le progettazioni con i componenti core come blocchi predefiniti.
 
@@ -57,6 +56,6 @@ Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto 
 
 Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina. Senza [Frammenti esperienza,](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) l’autore dovrebbe copiare e incollare tale frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 
-### Componente di incorporamento {#embed-component}
+### Componente Incorpora {#embed-component}
 
 [Il ](/help/components/embed.md) componente Incorpora non solo consente di includere facilmente risorse esterne come i contenuti video di YouTube, ma è anche estensibile per consentirgli di adattare i contenuti in base alle esigenze di un progetto.
