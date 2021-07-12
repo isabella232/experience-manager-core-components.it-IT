@@ -1,15 +1,14 @@
 ---
 title: Componente titolo
 description: Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 393af72c-549f-4609-afb0-2712f827b549
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '569'
 ht-degree: 3%
 
 ---
-
 
 # Componente titolo{#title-component}
 
