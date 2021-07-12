@@ -1,18 +1,17 @@
 ---
 title: Modulo principale dell’Archetipo di progetto AEM
 description: Modulo principale dell’Archetipo di progetto AEM
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: 49e80d8c-2b41-4c42-b45e-c2e3b4b16a59
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-
-# Modulo di base dell&#39;Archetipo di progetto AEM {#core-module}
+# Modulo principale dell’Archetipo di progetto AEM {#core-module}
 
 Il modulo maven di base (`<src-directory>/<project>/core`) include tutto il codice Java necessario per l&#39;implementazione. Il modulo raggrupperà tutto il codice Java e lo distribuirà nell’istanza AEM come Bundle OSGi.
 
