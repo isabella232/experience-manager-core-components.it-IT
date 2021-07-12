@@ -1,15 +1,14 @@
 ---
 title: Componente nascosto per modulo
 description: Il componente di base Nascosto per modulo consente la visualizzazione di un campo nascosto.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0364cd3b-3c09-46db-9392-a67e3f9ea7a5
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '428'
 ht-degree: 3%
 
 ---
-
 
 # Componente nascosto per modulo{#form-hidden-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Nascosto per modulo [è di
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del campo nascosto.
 
