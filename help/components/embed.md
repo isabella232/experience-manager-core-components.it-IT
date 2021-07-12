@@ -1,17 +1,16 @@
 ---
 title: Componente di incorporamento
 description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
 
-
-# Incorpora componente{#embed-component}
+# Componente di incorporamento{#embed-component}
 
 Il componente Incorpora componenti core consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente da incorporare [è disponi
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire la risorsa esterna da incorporare nella pagina. Scegli innanzitutto il tipo di risorsa da incorporare:
 
@@ -64,7 +63,7 @@ L’incorporamento più semplice è l’URL. È sufficiente incollare l’URL de
 
 Il componente Incorpora viene fornito con processori per i seguenti tipi di risorse:
 
-* Risorse conformi allo [standard di incorporamento](https://oembed.com/), inclusi post di Facebook, Instagram, SoundCloud, Twitter e YouTube
+* Risorse conformi allo [standard di incorporamento](https://oembed.com/), inclusi Facebook Post, Instagram, SoundCloud, Twitter e YouTube
 * Pinterest
 
 Gli sviluppatori possono aggiungere processori URL aggiuntivi [seguendo la documentazione per gli sviluppatori del componente di incorporamento.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
@@ -73,7 +72,7 @@ Gli sviluppatori possono aggiungere processori URL aggiuntivi [seguendo la docum
 
 ### Contenuto incorporabile {#embeddable}
 
-Le tabelle da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra file da incorporare affidabili preconfigurati e il componente viene fornito con un componente YouTube incorporato pronto all’uso.
+Le tabelle da incorporare consentono una maggiore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra file da incorporare affidabili preconfigurati e il componente viene fornito con un YouTube incorporato pronto all’uso.
 
 Il campo **Incorporabile** definisce il tipo di processore che si desidera utilizzare. Nel caso di YouTube embeddable puoi quindi definire:
 
@@ -134,13 +133,13 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 ![Scheda YouTube della finestra di dialogo di progettazione del componente da incorporare](/help/assets/embed-design-youtube.png)
 
-* **Consenti configurazione del comportamento muto** : consente all’autore del contenuto di configurare l’opzione  **Abilita** muteoption nel componente quando è selezionato il tipo di incorporamento YouTube
+* **Consenti configurazione del comportamento muto** : consente all’autore del contenuto di configurare l’opzione  **Abilita** muteopzione nel componente quando è selezionato il tipo di incorporamento di YouTube
    * **Valore predefinito muto** : imposta automaticamente  **Enable** Muteoption quando è selezionato il tipo di incorporamento YouTube
 * **Consenti configurazione del comportamento di riproduzione automatica** : consente all’autore del contenuto di configurare l’opzione  **Abilita riproduzione** automatica nel componente quando è selezionato il tipo di incorporamento YouTube
-   * **Valore predefinito dell&#39;esecuzione automatica** : imposta automaticamente l&#39;opzione  **Abilita** riproduzione automatica quando è selezionato il tipo di incorporamento di YouTube
-* **Consenti configurazione del comportamento del ciclo** : consente all’autore del contenuto di configurare l’opzione  **Abilita** percorso nel componente quando è selezionato il tipo di incorporamento di YouTube
+   * **Valore predefinito dell&#39;esecuzione automatica** : imposta automaticamente l&#39;opzione  **Abilita** riproduzione automatica quando è selezionato il tipo di incorporamento YouTube
+* **Consenti configurazione del comportamento del ciclo** : consente all’autore del contenuto di configurare l’opzione  **Abilita** percorso nel componente quando è selezionato il tipo di incorporamento YouTube
    * **Valore predefinito del ciclo** : imposta automaticamente  **Abilita** percorso quando è selezionato il tipo di incorporamento YouTube
-* **Consenti configurazione della riproduzione in linea (iOS)** : consente all’autore del contenuto di configurare l’opzione  **Abilita riproduzione in linea (iOS)**  nel componente quando è selezionato il tipo di incorporamento di YouTube
+* **Consenti configurazione della riproduzione in linea (iOS)** : consente all’autore del contenuto di configurare l’opzione  **Abilita riproduzione in linea (iOS)**  nel componente quando è selezionato il tipo di incorporamento YouTube
    * **Valore predefinito di riproduzione in linea (iOS)** : imposta automaticamente l&#39;opzione  **Abilita riproduzione in linea (iOS)**  quando è selezionato il tipo di incorporamento YouTube
-* **Consenti configurazione di video in linea**  - Consente all’autore del contenuto di configurare la  **** visualizzazione senza restrizioni correlata nel componente quando è selezionato il tipo di incorporamento YouTube
-   * **Valore predefinito dei video correlati illimitati**  - Imposta automaticamente la  **visualizzazione** senza restrizioni correlata quando è selezionato il tipo di incorporamento YouTube
+* **Consenti configurazione di video in linea**  - Consente all’autore del contenuto di configurare la  **visualizzazione correlata senza restrizioni nel** componente quando è selezionato il tipo di incorporamento YouTube
+   * **Valore predefinito dei video correlati senza restrizioni**  - Imposta automaticamente  **la** visualizzazione correlata senza restrizioni quando è selezionato il tipo di incorporamento YouTube
