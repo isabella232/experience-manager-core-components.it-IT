@@ -1,18 +1,17 @@
 ---
 title: Generazione front-end Archetype AEM progetto
 description: Un modello di progetto per applicazioni basate su AEM
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Componenti core, AEM Project Archetype
+role: Architect, Developer, Admin
+exl-id: 99132b49-bd06-4ac2-9348-12c0dfdfe8b2
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
 
-
-# modulo ui.frontend dell’ Archetipo di progetto AEM {#uifrontend-module}
+# modulo ui.frontend dell’Archetipo di progetto AEM {#uifrontend-module}
 
 Il AEM Project Archetype include un meccanismo di compilazione front-end opzionale e dedicato basato su Webpack. Il modulo ui.frontend diventa così la posizione centrale per tutte le risorse front-end del progetto, inclusi i file JavaScript e CSS. Per sfruttare appieno questa funzione utile e flessibile, è importante comprendere in che modo lo sviluppo front-end si inserisce in un progetto AEM.
 
@@ -186,7 +185,7 @@ L’inclusione finale delle librerie client nella pagina Sites è la seguente:
 
 L&#39;inclusione di cui sopra può ovviamente essere modificata aggiornando i Criteri di pagina e/o modificando le categorie e le proprietà di incorporamento delle rispettive librerie client.
 
-### Server di sviluppo del Webpack statico {#webpack-dev-server}
+### Server di sviluppo webpack statico {#webpack-dev-server}
 
 Incluso nel modulo ui.frontend è un webpack-dev-server che fornisce un ricaricamento live per uno sviluppo front-end rapido al di fuori di AEM. La configurazione sfrutta l’html-webpack-plugin per inserire automaticamente CSS e JS compilati dal modulo ui.frontend in un modello HTML statico.
 
