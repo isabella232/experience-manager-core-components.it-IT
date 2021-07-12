@@ -1,15 +1,14 @@
 ---
 title: Componente contenitore
 description: Il componente Contenitore di componenti core consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
-
 
 # Componente contenitore{#container-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente contenitore [è disponibil
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento contenitore e il suo comportamento e la sua visualizzazione sulla pagina da parte di un visitatore.
 
