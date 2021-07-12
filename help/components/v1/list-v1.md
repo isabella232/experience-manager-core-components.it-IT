@@ -2,15 +2,14 @@
 title: Componente elenco (v1)
 description: Il componente Elenco dei componenti core consente di creare facilmente elenchi dinamici e statici.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 510d059c-e60a-40aa-9032-66a901109f6e
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '854'
 ht-degree: 4%
 
 ---
-
 
 # Componente elenco (v1) {#list-component-v}
 
