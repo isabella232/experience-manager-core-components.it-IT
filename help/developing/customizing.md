@@ -1,10 +1,9 @@
 ---
 title: Personalizzazione dei componenti core
 description: I componenti core implementano diversi pattern che consentono una facile personalizzazione, dal semplice stile al riutilizzo avanzato delle funzionalità.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
-translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 3%
@@ -34,7 +33,7 @@ E tutti i componenti core implementano il [Sistema di stili](#styling-the-compon
 
 [AEM Project ](/help/developing/archetype/overview.md) Archetypecrealizza un progetto Adobe Experience Manager minimo come punto di partenza per i tuoi progetti, incluso un esempio di componente HTL personalizzato con SlingModels per la logica e la corretta implementazione dei componenti core con il modello proxy consigliato.
 
-## Pattern di personalizzazione {#customization-patterns}
+## Modelli di personalizzazione {#customization-patterns}
 
 ### Personalizzazione delle finestre di dialogo {#customizing-dialogs}
 
@@ -109,7 +108,7 @@ Questo può essere facilmente fatto copiando i file HTL che devono essere modifi
 
 Riprendendo l’esempio del componente Breadcrumb core, per personalizzare l’output di markup, il file `breadcrumb.html` deve essere copiato nel componente specifico del sito che ha un `sling:resourceSuperTypes` che punta al componente Breadcrumb core.
 
-### Stile dei componenti {#styling-the-components}
+### Definizione dello stile dei componenti {#styling-the-components}
 
 La prima forma di personalizzazione consiste nell’applicare gli stili CSS.
 
