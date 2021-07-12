@@ -1,9 +1,9 @@
 ---
 title: Introduzione ai componenti core
 description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 85904d334091f1b9345023a84e8f12abeeb54692
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 25%
