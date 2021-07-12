@@ -2,15 +2,14 @@
 title: Componente pagina (v1)
 description: Il componente Pagina è un componente di pagina estensibile progettato per funzionare con l’editor modelli e consente di assemblare l’intestazione/piè di pagina e i componenti struttura con l’editor modelli.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 522f32f0-fc06-4ca0-ada2-61bdbc8761e0
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
-
 
 # Componente pagina (v1) {#page-component-v}
 
