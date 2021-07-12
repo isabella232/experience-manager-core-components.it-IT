@@ -2,15 +2,14 @@
 title: Componente Breadcrumb (v1)
 description: Il componente di base Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia dei contenuti.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 4845e649-033a-43a8-b5ee-892a3f2a8b98
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
-
 
 # Componente Breadcrumb (v1) {#breadcrumb-component-v}
 
