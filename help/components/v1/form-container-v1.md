@@ -2,15 +2,14 @@
 title: Componente contenitore modulo (v1)
 description: Il componente Contenitore di moduli per componenti core consente la creazione di moduli di invio semplici.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 1e34219f-fa82-494e-82e2-1b4d63d37fea
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
-
 
 # Componente contenitore modulo (v1) {#form-container-component-v1}
 
@@ -47,14 +46,14 @@ La finestra di dialogo delle impostazioni consente all’autore del contenuto di
 
 A seconda del **Tipo azione** selezionato, le opzioni disponibili all’interno del contenitore cambieranno. I tipi di azione disponibili sono:
 
-* [E-mail](#mail)
+* [Mail](#mail)
 * [Contenuto store](#store-content)
 * [Invia ordine](#submit-order)
 * [Aggiorna ordine](#update-order)
 
 Indipendentemente dal tipo, esistono [impostazioni generali](#general-settings) che si applicano a ogni azione.
 
-### E-mail {#mail}
+### Posta {#mail}
 
 Quando il modulo viene inviato, il tipo di azione e-mail invierà un messaggio e-mail ai destinatari designati.
 
