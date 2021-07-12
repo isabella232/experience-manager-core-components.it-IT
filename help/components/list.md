@@ -1,15 +1,14 @@
 ---
 title: Elenca componente
 description: Il componente Elenco dei componenti core consente di creare facilmente elenchi dinamici e statici.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '979'
 ht-degree: 4%
 
 ---
-
 
 # Elenca componente{#list-component}
 
