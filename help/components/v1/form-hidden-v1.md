@@ -2,15 +2,14 @@
 title: Componente nascosto per modulo (v1)
 description: Il componente di base Nascosto per modulo consente la visualizzazione di un campo nascosto.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 8e30dac0-5b4b-4fc7-af99-5791c98c90bf
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '335'
 ht-degree: 2%
 
 ---
-
 
 # Componente nascosto per modulo (v1) {#form-hidden-component-v}
 
@@ -83,7 +82,7 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 >
 >L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md#release-history-and-compatibility) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire i parametri del campo nascosto.
 
