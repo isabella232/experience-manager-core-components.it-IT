@@ -1,10 +1,9 @@
 ---
 title: Componente Ricerca rapida
 description: Il componente Ricerca rapida fornisce funzionalità di ricerca per un sito web e presenta i risultati di ricerca in modo che i visitatori possano cercare il sito e filtrare i risultati.
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-translation-type: tm+mt
-source-git-commit: 6eff0c8584605e034fc6516416783715fce10095
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
