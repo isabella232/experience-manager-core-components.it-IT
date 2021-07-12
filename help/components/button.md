@@ -1,15 +1,14 @@
 ---
 title: Componente pulsante
 description: Il componente Pulsante del componente core consente di creare e visualizzare un pulsante.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: e17efd1d-90d4-497a-9e7d-45934d81bc28
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '451'
 ht-degree: 3%
 
 ---
-
 
 # Componente pulsante{#button-component}
 
@@ -44,7 +43,7 @@ La documentazione tecnica più recente sul componente Pulsante [è disponibile s
 
 Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
 
-## Configura finestra di dialogo {#configure-dialog}
+## Finestra di dialogo Configura {#configure-dialog}
 
 La finestra di dialogo di configurazione consente all’autore del contenuto di definire il pulsante e il suo comportamento e la sua visualizzazione sulla pagina da parte del visitatore.
 
