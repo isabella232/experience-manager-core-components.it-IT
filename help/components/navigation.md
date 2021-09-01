@@ -3,9 +3,9 @@ title: Componente di navigazione
 description: Il componente Navigazione consente agli utenti di navigare facilmente in una struttura del sito globalizzata.
 role: Architect, Developer, Admin, User
 exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: eea159ad494150c3f132166d48f624605eb92e64
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1469'
 ht-degree: 1%
 
 ---
@@ -87,6 +87,18 @@ Il componente di navigazione esegue quindi il rendering del menu in base alla st
 
 >[!NOTE]
 >Quando si esegue il rendering di una struttura del sito ombreggiata, solo le pagine shadow vengono ricorse dalla logica di navigazione. La logica non ricorre alla struttura delle destinazioni di reindirizzamento.
+
+## Reindirizzamenti in navigazione {#redirects}
+
+Quando una pagina ha una destinazione di reindirizzamento (indipendentemente dal fatto che punti a un URL esterno o a un&#39;altra pagina AEM), allora un componente di navigazione che contiene i collegamenti a tale punto punta direttamente all&#39;URL della destinazione di reindirizzamento.
+
+### Esempio {#redirect-example}
+
+* Crea una pagina A che reindirizza alla pagina B.
+* Crea una pagina C che reindirizza a `https://aemcomponents.dev`
+* In una pagina D, inserisci un componente o di navigazione contenente le pagine A e C
+* I rispettivi collegamenti generati puntano direttamente alle pagine B e `https://aemcomponents.dev`
+
 
 ## Versione e compatibilità {#version-and-compatibility}
 

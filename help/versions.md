@@ -3,9 +3,9 @@ title: Versioni dei componenti core
 description: I componenti core vengono pubblicati come versioni che possono contenere più di una versione degli stessi componenti core. Questo documento spiega cosa sono le versioni e le versioni e come comprendere la compatibilità con i componenti core e le AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: cc8c3275bf251b4c390ee66588f34bac7c0ec218
+source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
 workflow-type: tm+mt
-source-wordcount: '2233'
+source-wordcount: '2275'
 ht-degree: 20%
 
 ---
@@ -26,6 +26,7 @@ La tabella seguente, i cui contenuti sono [disponibili su GitHub con dettagli su
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di rilascio |
 |---|---|---|---|---|---|---|
+| [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Questa patch migliora i componenti [List](/help/components/list.md) e [Navigation](/help/components/navigation.md) per visualizzare l&#39;URL esterno per le destinazioni di reindirizzamento, abilita l&#39;ereditarietà delle immagini di pagina per il componente [Teaser](/help/components/teaser.md) e contiene correzioni di bug aggiuntivi. | 6.4.8.4+ * | 6.5.6.0+ * | Continuo | 8, 11 | 31 agosto 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Questa versione della patch Questa è una release della patch per correggere una modifica incompatibile con le versioni precedenti introdotta in precedenza. | 6.4.8.4+ * | 6.5.6.0+ * | Continuo | 8, 11 | 2 agosto 2021 |
 | [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Questa versione della patch aggiunge il supporto per le mappe del sito per le pagine e include vari miglioramenti di accessibilità. | 6.4.8.4+ * | 6.5.6.0+ * | Continuo | 8, 11 | 29 luglio 2021 |
 | [2.17.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.2) | Questa versione della patch include una correzione per il [Livello dati](/help/developing/data-layer/overview.md) che non funziona con AEMaaCS. | 6.4.8.4+ * | 6.5.6.0+ * | Continuo | 8, 11 | 8 luglio 2021 |
@@ -78,7 +79,7 @@ Nella tabella seguente sono descritte le versioni dei componenti contenuti nelle
 
 |  | Versione 1.0.0 - 1.0.6 | Versione 1.1.0 | Versione 2.0.0 - 2.0.8 | Versione 2.1.0 | Versione 2.2.0-2.2.0 | Versione 2.3.0-2.3.2 | Versione 2.4.0 | Versione 2.5.0 | Versione 2.6.0 | Versione 2.7.0-2.8.0 | Versione 2.9.0+ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| **[Pagina](components/page.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Page](components/page.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
 | **[Titolo](components/title.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
 | **[Immagine](components/image.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
 | **[Elenco](components/list.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |

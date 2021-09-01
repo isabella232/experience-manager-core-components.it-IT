@@ -3,9 +3,9 @@ title: Elenca componente
 description: Il componente Elenco dei componenti core consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: eea159ad494150c3f132166d48f624605eb92e64
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1064'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,17 @@ Il componente Elenco dei componenti core consente di creare facilmente elenchi d
 ## Utilizzo {#usage}
 
 Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco dinamico di pagine figlie o un elenco statico di elementi definiti arbitrariamente. Il tipo di elenchi disponibili e le opzioni di formattazione possono essere definite dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può scegliere tra i tipi di elenco disponibili e come formattare gli elementi dell&#39;elenco nella finestra di dialogo [modifica](#edit-dialog).
+
+## Reindirizzamenti negli elenchi {#redirects}
+
+Quando una pagina dispone di una destinazione di reindirizzamento (indipendentemente dal fatto che punti a un URL esterno o a un&#39;altra pagina AEM), allora un elenco che contiene i collegamenti a tale punto direttamente all&#39;URL della destinazione di reindirizzamento.
+
+### Esempio {#redirect-example}
+
+* Crea una pagina A che reindirizza alla pagina B.
+* Crea una pagina C che reindirizza a `https://aemcomponents.dev`
+* In una pagina D, inserisci un componente elenco che contiene le pagine A e C
+* I rispettivi collegamenti generati puntano direttamente alle pagine B e `https://aemcomponents.dev`
 
 ## Versione e compatibilità {#version-and-compatibility}
 

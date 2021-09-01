@@ -3,7 +3,7 @@ title: Introduzione ai componenti core
 description: 'I componenti core forniscono componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: cc8c3275bf251b4c390ee66588f34bac7c0ec218
+source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 25%
@@ -23,7 +23,7 @@ I componenti core sono un set di componenti WCM (Web Content Management) standar
 * **[Repository GitHub dei componenti core:](https://github.com/adobe/aem-core-wcm-components)** per informazioni sugli sviluppatori di ogni componente e download di progetto.
 * Introduzione:
    * **[Successo con i componenti core:](/help/developing/success.md)** linee guida da considerare molto prima dell’inizio di qualsiasi progetto che utilizzerà i componenti core.
-   * **[Tutorial WKND:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** esercitazione di due giorni per la creazione di un nuovo sito.
+   * **[Tutorial WKND:](https://docs.adobe.com/content/help/it/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Tutorial sul Summit:](https://expleague.azureedge.net/labs/L767/index.html)** un tutorial di due ore per la costruzione di un nuovo sito (da un laboratorio al Summit degli Stati Uniti 2019).
    * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)** visita guidata dei componenti core (registrata il 1 dicembre 2018).
 
@@ -53,7 +53,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 ### Componenti modello {#template-components}
 
-* [Pagina](components/page.md)
+* [Page](components/page.md)
 * [Navigazione](components/navigation.md)
 * [Navigazione lingua](components/language-navigation.md)
 * [Breadcrumb](components/breadcrumb.md)
@@ -106,7 +106,7 @@ La versione corrente dei componenti core include i seguenti componenti.
 
 | Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 |---------|---------|---------|---------|---------|---------|
-| [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Continuo | 6.5.6.0+ * | 6.4.8.4+ * | 8, 11 | 3.3.9+ |
+| [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Continuo | 6.5.6.0+ * | 6.4.8.4+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
