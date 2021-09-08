@@ -1,12 +1,12 @@
 ---
 title: Plug-in Maven di AEM as a Cloud Service SDK Build Analyzer
 description: Documentazione per il plug-in locale Maven build analyzer
-feature: Componenti core, AEM Project Archetype
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: de26b310-a294-42d6-a0db-91f6036a328c
-source-git-commit: a6c28db9eaf20e194b4b3355e59f710e2c251305
+source-git-commit: db33866f0a9e87e34eaaa061d308438c6f5bebb4
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '605'
 ht-degree: 4%
 
 ---
@@ -37,6 +37,7 @@ Di seguito è riportata una tabella che descrive gli analizzatori eseguiti come 
 | `bundle-nativecode` | Convalida che i bundle OSGI non installino il codice nativo. | Sì | Sì |
 | `configuration-api` | Convalida importanti configurazioni OSGi. <p> </p> `Configuration org.apache.felix.webconsole.internal.servlet.OsgiManager: Configuration is not allowed (com.mysite:mysite.all:1.0.0-SNAPSHOT\|com.mysite:mysite.ui.config:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `region-deprecated-api` | Controlla se viene utilizzato [api obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html) <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
+| `artifact-rules` | Convalida le dipendenze come bundle e pacchetti di contenuto per evitare problemi noti negli artefatti.<p> </p>`[WARNING] [artifact-rules] com.adobe.acs:acs-aem-commons-bundle:5.0.4: Use at least version 5.0.10 (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
 
 ## Problemi noti
 
