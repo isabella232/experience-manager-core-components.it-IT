@@ -1,30 +1,29 @@
 ---
 product: adobe experience manager
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 type: Documentation
 description: Documentazione per i componenti core di Adobe Experience Manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.it-IT
 index: y
-translation-type: tm+mt
-source-git-commit: 290423c39b925ea8cf4077f31a76ecf01167f344
+source-git-commit: 3897e37ed1e24c4a045b7f6cc716b5cabdd7cf9f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Metadati per uso interno
 
-I metadati nel sistema di authoring GitHub sono gerarchici e vengono definiti i seguenti livelli crescenti di precedenti.
+I metadati nel sistema di authoring GitHub sono gerarchici, in base ai seguenti livelli crescenti di precedenza.
 
 1. metadata.md
-1. ToC
+1. Sommario
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all&#39;intero repository, ma possono essere ignorati a livello di AC e di articolo. Qualsiasi override dei metadati deve essere eseguito al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
 
-I metadati nell&#39;archivio experience-manager-core-components.en sono il minimo richiesto.
+I metadati nell’archivio experience-manager-core-components.en rappresentano il minimo richiesto.
 
 metadata.md
 
@@ -38,7 +37,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-ToCs
+Sommario
 
 * `sub-product`
 * `user-guide-title`
@@ -49,4 +48,4 @@ Articolo
 * `description`
 * `index: n` (solo per le versioni precedenti dei componenti)
 
-Ulteriori informazioni sui metadati sono disponibili nella [guida all&#39;authoring interno.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
+Ulteriori informazioni sui metadati sono disponibili nella [guida all’authoring interno.](https://docs.adobe.com/help/it/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
