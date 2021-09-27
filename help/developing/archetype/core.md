@@ -1,33 +1,33 @@
 ---
-title: Modulo principale dell’Archetipo di progetto AEM
-description: Modulo principale dell’Archetipo di progetto AEM
-feature: Componenti core, AEM Project Archetype
+title: Modulo core Archetipo progetto AEM
+description: Modulo core Archetipo progetto AEM
+feature: Componenti core, Archetipo progetto AEM
 role: Architect, Developer, Admin
 exl-id: 49e80d8c-2b41-4c42-b45e-c2e3b4b16a59
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Modulo principale dell’Archetipo di progetto AEM {#core-module}
+# Modulo core Archetipo progetto AEM {#core-module}
 
-Il modulo maven di base (`<src-directory>/<project>/core`) include tutto il codice Java necessario per l&#39;implementazione. Il modulo raggrupperà tutto il codice Java e lo distribuirà nell’istanza AEM come Bundle OSGi.
+Il modulo maven ui.apps (`<src-directory>/<project>/core`) include tutto il codice Java necessario per l’implementazione. Il modulo riunisce in un pacchetto tutto il codice Java e lo distribuisce all’istanza di AEM come Bundle OSGi.
 
-Il plug-in Bundle Maven definito in `<src-directory>/<project>/core/pom.xml` è responsabile della compilazione del codice Java in un bundle OSGi che può essere riconosciuto da AEM contenitore OSGi. Tieni presente che è qui che è definita la posizione dei modelli Sling.
+Il plug-in Maven Bundle definito in `<src-directory>/<project>/core/pom.xml` è responsabile della compilazione del codice Java in un bundle OSGi che può essere riconosciuto dal contenitore OSGi di AEM. Tieni presente che è qui che è definita la posizione dei modelli Sling.
 
-Sebbene sia raro che il bundle principale debba essere distribuito indipendentemente dal modulo ui.apps negli ambienti di livello superiore, la distribuzione diretta del bundle principale è utile durante lo sviluppo/il test locali. Il plug-in Maven Sling consente di implementare il bundle principale per AEM sfruttando direttamente il profilo `autoInstallBundle` come definito nel [POM principale](/help/developing/archetype/using.md#parent-pom).
+Sebbene sia raro che il bundle core debba essere distribuito indipendentemente dal modulo ui.apps negli ambienti di livello superiore, la distribuzione diretta del bundle core è utile durante lo sviluppo e i test locali. Il plug-in Maven Sling consente di distribuire il bundle core ad AEM utilizzando direttamente il profilo `autoInstallBundle` come definito nel [POM (Project Object Model) padre](/help/developing/archetype/using.md#parent-pom).
 
 ```shell
 mvn -PautoInstallBundle clean install
 ```
 
-Una volta eseguita correttamente, dovresti essere in grado di visualizzare la console Bundles in `http://<host>:<port>/system/console/bundles`.
+Una volta eseguita correttamente la distribuzione, dovresti poter visualizzare la console dei bundle in `http://<host>:<port>/system/console/bundles`.
 
-##  Test di unità {#unit-tests}
+## Test unità {#unit-tests}
 
-Il test di unità nel modulo principale mostra il classico unit testing del codice contenuto nel bundle. Per eseguire il test, esegui:
+Il test unità nel modulo core mostra i classici test unità del codice contenuto nel bundle. Per effettuare il test, esegui:
 
 ```shell
 mvn clean test
