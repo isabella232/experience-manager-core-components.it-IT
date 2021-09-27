@@ -1,85 +1,85 @@
 ---
-title: Authoring con i componenti core
-description: 'In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create: i componenti core offrono funzionalità flessibili e avanzate per l’authoring.'
+title: Authoring con i Componenti core
+description: 'In AEM, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create: i Componenti core offrono funzionalità flessibili e avanzate per l’authoring.'
 role: Architect, Developer, Admin, User
 exl-id: 56e58303-a178-45ab-b59d-e374c9cf90cf
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Authoring con i componenti core
+# Authoring con i Componenti core
 
 In Adobe Experience Manager, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create.
 
-I componenti core offrono funzionalità flessibili e avanzate per l’authoring. Il [sito di riferimento WKND](https://wknd.site) e i relativi componenti illustrano come i componenti core possono essere utilizzati per implementare un’esperienza Web avanzata.
+I Componenti core offrono funzionalità flessibili e avanzate per l’authoring. Il [sito di riferimento WKND](https://wknd.site) e i relativi componenti illustrano come i Componenti core possono essere utilizzati per implementare un’esperienza avanzata con i siti web.
 
-Per scoprire i componenti core e vedere esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library).
+Per avere un’idea dei Componenti core e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_it).
 
-Per un’introduzione più dettagliata e orientata agli sviluppatori all’implementazione dei componenti core in un progetto AEM, utilizza l’ [AEM Archetipo di progetto](/help/developing/archetype/overview.md) , controlla [l’esercitazione WKND.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Per un’introduzione più dettagliata e orientata agli sviluppatori dell’implementazione dei Componenti core in un progetto AEM utilizzando [Archetipo progetto AEM](/help/developing/archetype/overview.md), vedi [l’esercitazione WKND.](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 >[!NOTE]
 >
->I componenti core non sono immediatamente disponibili per gli autori; [devono prima essere integrarti nell’ambiente dal team di sviluppo](/help/get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’ [editor modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+>I Componenti core non sono immediatamente disponibili per gli autori; il [team di sviluppo deve prima integrarli nel tuo ambiente](/help/get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’[editor di modelli](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!CAUTION]
 >
->I componenti core [richiedono AEM 6.4 o versioni successive](/help/versions.md) e richiedono l&#39;uso di [modelli modificabili](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). Non funzionano né con l’interfaccia classica né con modelli statici.
+>I Componenti core [richiedono AEM 6.4 o versioni successive](/help/versions.md) e l’uso di [modelli modificabili](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html). Non funzionano né con l’interfaccia utente classica né con i modelli statici.
 
-## Authoring con i componenti core {#authoring-with-core-components}
+## Authoring con i Componenti core {#authoring-with-core-components}
 
-In qualità di autore, noterai diversi vantaggi dei componenti core, tra cui:
+In qualità di autore, ti renderai conto dei molti vantaggi offerti dai Componenti core, tra cui:
 
-* Semplice da usare e ben integrato con l&#39; [editor di pagine](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* Semplicità di utilizzo e ottima integrazione con [l’editor di pagine](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 
-* Funzionalità avanzate per soddisfare molti casi d&#39;uso, come illustrato dal [sito di riferimento WKND](https://wknd.site) e dalla [Libreria dei componenti](https://adobe.com/go/aem_cmp_library)
+* Funzionalità avanzate per soddisfare molti casi d’uso, come illustrato dal [sito di riferimento WKND](https://wknd.site) e dalla [libreria dei componenti](https://adobe.com/go/aem_cmp_library_it)
 
-* [Possibilità di pre-](#pre-configuring-core-components) configurazione per definire le funzioni disponibili per gli autori di pagine tramite l’editor  [modelli](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+* [Possibilità di pre-configurazione](#pre-configuring-core-components) per definire le funzioni disponibili per gli autori di pagine tramite [l’editor di modelli](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
-* Progettazione basata sulle [linee guida sull&#39;accessibilità](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html)
+* Progettazione basata sulle [linee guida per l’accessibilità](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html)
 
-* Progettato per supportare il [layout reattivo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
+* Supporto del [layout reattivo](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
 
-* Progettato per supportare [una localizzazione semplice](localization.md)
+* [Facilità di localizzazione](localization.md)
 
-I componenti sono disponibili nella scheda **Componenti** del pannello laterale dell’Editor pagina durante la [modifica di una pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html).
+I componenti sono disponibili nella scheda **Componenti** visualizzata nel pannello laterale dell’editor di pagine durante la [modifica di una pagina](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html).
 
-I componenti sono raggruppati in base alle categorie definite gruppi di componenti per organizzare e filtrare facilmente i componenti. Il nome del gruppo di componenti viene visualizzato con il componente nel [browser componenti](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html) ed è anche possibile filtrare per gruppo per trovare facilmente il componente giusto.
+I componenti sono raggruppati in categorie, chiamate gruppi di componenti, per semplificarne l’organizzazione e l’applicazione di filtri. Il nome del gruppo di componenti viene visualizzato con il componente nel [browser di componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html) ed è anche possibile filtrare per gruppo per trovare facilmente il componente giusto.
 
 >[!NOTE]
 >
->I componenti core sono per impostazione predefinita parte di un gruppo nascosto e non sono visibili nel browser dei componenti.
+>Per impostazione predefinita, i Componenti core fanno parte di un gruppo nascosto e non sono visibili nel browser di componenti.
 >
 >Aggiungi i componenti richiesti a un gruppo visibile o personalizzali affinché siano disponibili per gli autori.
 
-## Preconfigurazione dei componenti core {#pre-configuring-core-components}
+## Preconfigurazione dei Componenti core {#pre-configuring-core-components}
 
-La configurazione dei componenti di base era compito di uno sviluppatore. Tuttavia, con i componenti core, un autore di modelli può ora configurare diverse funzionalità tramite l’editor di modelli.
+La configurazione dei Componenti di base era compito di uno sviluppatore. Tuttavia, con i Componenti core, un autore di modelli può ora configurare diverse funzionalità tramite l’editor di modelli.
 
-Ad esempio, se un componente immagine non deve consentire il caricamento di immagini dal file system o se un componente testo deve consentire solo determinate formattazioni di paragrafo, queste funzioni possono essere abilitate o disabilitate con un semplice clic.
+Ad esempio, se un componente Immagine non deve consentire il caricamento di immagini dal file system oppure se un componente Testo deve consentire solo determinate formattazioni dei paragrafi, queste funzioni possono essere abilitate o disabilitate con un semplice clic.
 
-Per ulteriori informazioni, consulta [Creazione di modelli di pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) .
+Per ulteriori informazioni, vedi [Creazione di modelli di pagina](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
-### Finestra di dialogo Modifica e Progettazione {#edit-and-design-dialogs}
+### Finestre di dialogo per modifica e per progettazione {#edit-and-design-dialogs}
 
-Poiché gli autori dei modelli possono preconfigurare i componenti core per definire le opzioni consentite come parte di un modello, e poi ulteriormente configurati dall’autore della pagina per definire il contenuto della pagina effettiva, ogni componente può avere opzioni in due diverse finestre di dialogo.
+Poiché gli autori dei modelli possono preconfigurare i Componenti core per definire le opzioni consentite come parte di un modello e poi l’autore della pagina può ulteriormente configurarli per definire il contenuto della pagina effettiva, ogni componente può avere opzioni in due diverse finestre di dialogo.
 
-|  | Descrizione | Controlli | Esempi |
+|  | Descrizione | Cosa controlla | Esempi |
 |--- |--- |--- |--- |
-| **Finestra di dialogo Modifica** | Opzioni che un **autore di pagina** può modificare durante la normale modifica della pagina per i componenti inseriti | Il contenuto visualizzato dal componente e come apparirà alla fine sulla pagina. | Formattazione del testo di contenuto, rotazione di un&#39;immagine su una pagina |
-| **Finestra di dialogo Progettazione** | Opzioni che un **autore di modelli** può modificare durante la configurazione di un modello di pagina. | Opzioni disponibili per l’autore della pagina durante la modifica del componente | Quali opzioni di formattazione del testo sono disponibili, quali opzioni di formattazione dell&#39;immagine sono disponibili |
+| **Finestra di dialogo per modifica** | Le opzioni che un **autore di pagine** può modificare durante la normale modifica di una pagina in relazione ai componenti inseriti | Il contenuto visualizzato dal componente e come apparirà alla fine sulla pagina. | Formattazione del testo del contenuto, rotazione di un’immagine su una pagina |
+| **Finestra di dialogo per progettazione** | Le opzioni che un **autore di modelli** può modificare durante la configurazione del modello di una pagina. | Le opzioni disponibili per l’autore della pagina durante la modifica del componente | Quali opzioni di formattazione del testo e quali opzioni di posizionamento dell’immagine sono disponibili |
 
-### Stile del componente {#component-styling}
+### Stili dei componenti {#component-styling}
 
-Gli stili della maggior parte dei componenti core possono essere definiti utilizzando il sistema di stili AEM.
+Gli stili della maggior parte dei Componenti core possono essere definiti utilizzando il sistema di stili di AEM.
 
-* Un autore di modelli può definire gli stili disponibili per un particolare componente nella finestra di dialogo Progettazione di tale componente.
-* L’autore del contenuto può quindi scegliere quali stili applicare quando aggiunge il componente e crea il contenuto.
+* Un autore di modelli può definire gli stili disponibili per un particolare componente nella finestra di dialogo per progettazione di quel componente.
+* L’autore di contenuto può quindi scegliere quali stili applicare quando aggiunge il componente e crea il contenuto.
 
-Per ulteriori dettagli, consulta la documentazione [Sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/style-system.html) .
+Per ulteriori dettagli, vedi la documentazione sul [sistema di stili](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/style-system.html).
 
-## Riferimenti per sviluppatori {#developer-resources}
+## Risorse per sviluppatori {#developer-resources}
 
-Per informazioni tecniche sui componenti core, consulta la documentazione per gli sviluppatori [Sviluppo di componenti core](/help/developing/overview.md) .
+Per informazioni tecniche sui Componenti core, vedi la documentazione [Sviluppo di Componenti core](/help/developing/overview.md) per gli sviluppatori.
