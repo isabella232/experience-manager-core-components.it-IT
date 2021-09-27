@@ -1,46 +1,46 @@
 ---
 title: Componente Opzioni modulo (v1)
-description: Il componente per le opzioni del modulo dei componenti core consente la selezione da opzioni predefinite in vari formati.
+description: Il componente core Opzioni modulo consente la selezione di opzioni predefinite in vari formati.
 index: n
 role: Architect, Developer, Admin, User
 exl-id: a5e8656b-eddd-48ec-876b-39bbaa70edf6
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Componente Opzioni modulo (v1) {#form-options-component-v}
 
-Il componente per le opzioni del modulo dei componenti core consente la selezione da opzioni predefinite in vari formati.
+Il componente core Opzioni modulo consente la selezione di opzioni predefinite in vari formati.
 
 ## Utilizzo {#usage}
 
-Il componente Opzioni modulo per componente di base consente l’invio di diversi tipi di opzioni presentate in diversi modi e deve essere utilizzato insieme al componente [contenitore modulo](form-container-v1.md).
+Il componente core Opzioni modulo consente di inviare diversi tipi di opzioni visualizzate in molti modi differenti ed è concepito per essere utilizzato insieme al [componente Contenitore modulo](form-container-v1.md).
 
-La presentazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall&#39;editor dei contenuti nella finestra di dialogo [configura](#configure-dialog).
+La visualizzazione delle opzioni, delle etichette e delle singole opzioni può essere definita dall’editor di contenuto nella [finestra di dialogo per configurazione](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente Opzioni modulo , originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Opzioni modulo, originariamente introdotto con la versione 1.0.0 dei Componenti core in AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità della versione 1 del componente Opzioni modulo.
+La tabella che segue riporta la compatibilità della versione 1 del componente Opzioni modulo.
 
-| Versione componente | AEM 6.3 | AEM 6.4 |
+| Versione del componente | AEM 6.3 | AEM 6.4 |
 |--- |--- |--- |
 | v2 | Compatibile | Compatibile |
 | v1 | Compatibile | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Opzioni modulo .
+>Questo documento descrive la versione 1 del componente Opzioni modulo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Opzioni modulo, consultare il documento [Componente Opzioni modulo](/help/components/forms/form-options.md) .
+>Per informazioni dettagliate sulla versione corrente del componente Opzioni modulo, vedi il documento [Componente Opzioni modulo](/help/components/forms/form-options.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://experienceleague.adobe.com/docs/experience-manager-64/developing/bestpractices/we-retail/we-retail.html?lang=it).
 
 ### Schermata {#screenshot}
 
@@ -110,47 +110,47 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai Componenti core richiede la versione 1.1.0 dei Componenti core. Per ulteriori informazioni, vedi le [informazioni sulla compatibilità dei Componenti core v1](/help/versions.md).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di opzioni da presentare, le etichette e le opzioni disponibili.
+La finestra di dialogo per configurazione consente all’autore di contenuto di definire il tipo di opzioni da visualizzare, le etichette e le opzioni disponibili.
 
 ![](/help/assets/chlimage_1-90.png)
 
-* ****
-TipiModalità di presentazione delle opzioni
+* **Tipo**
+Modalità di presentazione delle opzioni
 
    * **Caselle di controllo**
    * **Pulsanti di scelta**
-   * **A discesa**
-   * **Menu a discesa a selezione multipla**
+   * **Elenchi a discesa**
+   * **Elenchi a discesa a selezione multipla**
 
-* **Titolo** : il titolo che verrà visualizzato come etichetta per le opzioni
-* **Nome** : nome del campo inviato con i dati del modulo
-* **Origine**  - Dove sono definite le opzioni
+* **Titolo**: il titolo che verrà visualizzato come etichetta per le opzioni
+* **Nome**: il nome del campo che viene inviato con i dati del modulo
+* **Origine**: dove sono definite le opzioni
 
-   * **Locale**  - Definito all’interno del componente
-      * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un valore, **Elimina** per rimuovere un valore
-      * **Valore** : valore salvato quando tale opzione viene selezionata al momento dell’invio del modulo
-      * **Testo** : l’etichetta dell’opzione visualizzata sul modulo
-      * **Attivo** : l’opzione viene contrassegnata come selezionata al caricamento del modulo
-      * **Disabilitato** : l’opzione non è selezionabile ma è ancora visualizzata
-      * **Elenco** : per l’opzione viene utilizzato un elenco statico definito altrove in AEM
-         * **Elenco** : percorso dell’elenco statico in AEM
-            * Utilizzare il pulsante Sfoglia per individuare la risorsa dell’elenco
-      * **Origine**  dati: un’origine dati utilizzata per le opzioni
-         * **Origine**  dati: tipo di risorsa dell’origine dati
-* **Messaggio della Guida** : un suggerimento per l’utente di ciò che può essere immesso nel campo
+   * **Locale**: definito all’interno del componente
+      * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un valore o sul pulsante **Elimina** per rimuovere un valore
+      * **Valore**: valore salvato quando l’opzione viene selezionata al momento dell’invio del modulo
+      * **Testo**: l’etichetta dell’opzione visualizzata sul modulo
+      * **Attiva**: l’opzione viene contrassegnata come selezionata al caricamento del modulo
+      * **Disabilitata**: l’opzione non è selezionabile ma è ancora visualizzata
+      * **Elenco**: per l’opzione viene utilizzato un elenco statico definito altrove in AEM
+         * **Elenco**: il percorso dell’elenco statico in AEM
+            * Utilizza il pulsante Sfoglia per individuare la risorsa elenco
+      * **Origine dati**: un’origine dati utilizzata per le opzioni
+         * **Origine dati**: tipo di risorsa dell’origine dati
+* **Messaggio di aiuto**: suggerimento per l’utente per la compilazione del campo
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-Non è disponibile una finestra di dialogo di progettazione per il componente Opzioni modulo .
+La finestra di dialogo per progettazione non è disponibile per il componente Opzioni modulo.
 
 ## Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Opzioni modulo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v1/options).
 
-L’intero progetto dei componenti core può essere scaricato da GitHub.
+L’intero progetto dei Componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
