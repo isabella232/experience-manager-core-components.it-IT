@@ -1,29 +1,29 @@
 ---
-title: modulo it.test di AEM Project Archetype
-description: Come utilizzare i test di integrazione di AEM Project Archetype
-feature: Componenti core, AEM Project Archetype
+title: Modulo it.tests di Archetipo progetto AEM
+description: Come utilizzare gli integration test di Archetipo progetto AEM
+feature: Componenti core, Archetipo progetto AEM
 role: Architect, Developer, Admin
 exl-id: 0abc0265-3a3f-4323-97e6-3af0c62299ef
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# modulo it.testing dell&#39;Archetipo di progetto AEM {#ittests-module}
+# Modulo it.tests di Archetipo progetto AEM {#ittests-module}
 
 Il progetto prevede tre livelli di test:
 
-* [Test di unità](core.md#unit-tests)
-* Test di integrazione
-* [Test dell&#39;interfaccia utente](uitests.md)
+* [Test unità](core.md#unit-tests)
+* Integration test
+* [Test dell’interfaccia utente](uitests.md)
 
-Questo articolo descrive i test di integrazione disponibili come parte del modulo it.testing .
+Questo articolo descrive gli integration test disponibili come parte del modulo it.tests.
 
-## Esecuzione di test di integrazione {#running-tests}
+## Esecuzione degli integration test {#running-tests}
 
-I test di integrazione lato server consentono l’esecuzione di test di tipo unit nell’ambiente AEM, ad esempio sul server AEM. Per eseguire il test, esegui:
+Gli integration test lato server consentono l’esecuzione di test unità in ambiente AEM, ad esempio sul server AEM. Per effettuare il test, esegui:
 
 ```
 mvn clean verify -PintegrationTests
