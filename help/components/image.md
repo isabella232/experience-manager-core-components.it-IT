@@ -1,137 +1,137 @@
 ---
-title: Componente immagine
-description: Il componente immagine di base è un componente immagine adattivo che offre funzioni di modifica diretta.
+title: Componente Immagine
+description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2170'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Componente immagine{#image-component}
+# Componente Immagine{#image-component}
 
-Il componente immagine di base è un componente immagine adattivo che offre funzioni di modifica diretta.
+Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 
 ## Utilizzo {#usage}
 
-Il componente Immagine offre una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché un posizionamento e un ritaglio semplici delle immagini per l’autore del contenuto.
+Il componente Immagine offre all’autore di contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché una facilità di posizionamento e ritaglio delle immagini.
 
-La larghezza dell&#39;immagine, il ritaglio e le impostazioni aggiuntive possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L&#39;editor dei contenuti può caricare o selezionare le risorse nella finestra di dialogo [configura](#configure-dialog) e ritagliare l&#39;immagine nella finestra di dialogo [modifica](#edit-dialog). Per una maggiore comodità, è disponibile anche una semplice modifica diretta dell&#39;immagine.
+Le larghezze delle immagini e il ritaglio nonché le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor di contenuto può caricare o selezionare le risorse nella [finestra di dialogo per configurazione](#configure-dialog) e ritagliare l’immagine nella [finestra di dialogo per modifica](#edit-dialog). Per maggiore comodità, è disponibile anche una semplice modifica diretta dell’immagine.
 
 ## Funzioni reattive {#responsive-features}
 
-Il componente Immagine è dotato di solide funzioni reattive pronte all’uso. A livello di modello di pagina, la [finestra di dialogo Progettazione](#design-dialog) può essere utilizzata per definire le larghezze predefinite della risorsa immagine. Il componente Immagine carica quindi automaticamente la larghezza corretta da visualizzare in base alle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente immagine carica dinamicamente al volo la dimensione corretta dell’immagine. Gli sviluppatori di componenti non devono preoccuparsi di definire query multimediali personalizzate, in quanto il componente immagine è già ottimizzato per caricare i contenuti.
+Il componente Immagine è dotato di solide funzioni reattive pronte per l’uso. A livello di modello della pagina, si può utilizzare la [finestra di dialogo per Progettazione](#design-dialog) per definire le larghezze predefinite della risorsa immagine. Il componente Immagine carica quindi automaticamente la larghezza corretta da visualizzare, in base alle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica dinamicamente la dimensione corretta dell’immagine. Gli sviluppatori di componenti non devono preoccuparsi di definire query multimediali personalizzate, in quanto il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
-## Supporto Dynamic Media {#dynamic-media}
+## Supporto di Dynamic Media {#dynamic-media}
 
-Il componente Immagine (a partire da [release 2.13.0](/help/versions.md)) supporta le risorse [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia). [Quando abilitata, ](#design-dialog) queste funzioni consentono di aggiungere risorse di immagini Dynamic Media con una semplice azione di trascinamento della selezione o tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, predefiniti immagine e ritaglio avanzato.
+Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) supporta le risorse di [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=it#dynamicmedia). [Se abilitate,](#design-dialog) queste funzioni consentono di aggiungere risorse immagine di Dynamic Media con una semplice azione di trascinamento e rilascio della selezione oppure tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, immagini preimpostate e ritaglio avanzato.
 
-Le esperienze web create con i componenti core non possono utilizzare funzionalità avanzate, basate su tecnologia Sensei, solide, ad alte prestazioni, per immagini Dynamic Media multipiattaforma.
+La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente immagine è v2, introdotta con la versione 2.0.0 dei componenti core a gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Immagine è la v2, introdotta con la versione 2.0.0 dei Componenti core a gennaio 2018, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](v1/image-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Supporto SVG {#svg-support}
+## Supporto di SVG {#svg-support}
 
-La grafica vettoriale scalabile (SVG) è supportata dal componente immagine.
+Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
 
-* Sono entrambi supportati il trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale.
-* Il Servlet immagine adattiva trasmette in streaming il file SVG originale (le trasformazioni vengono saltate).
-* Per un&#39;immagine SVG, le &quot;immagini intelligenti&quot; e le &quot;dimensioni intelligenti&quot; sono impostate su un array vuoto nel modello di immagine.
+* Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
+* L’Adaptive Image Servlet trasmette in streaming il file SVG originale (le trasformazioni vengono ignorate).
+* Per un’immagine SVG, le “immagini intelligenti” e le “dimensioni intelligenti” sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
 
-Per motivi di sicurezza, l’SVG originale non viene mai chiamato direttamente dall’Editor immagini. Viene chiamato tramite `<img src=“path-to-component”>`. Questo impedisce al browser di eseguire eventuali script incorporati nel file SVG.
+Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttamente dall’editor di immagini. Viene richiamato tramite `<img src=“path-to-component”>`. Ciò impedisce al browser di eseguire eventuali script incorporati nel file SVG.
 
 >[!CAUTION]
 >
->Il supporto SVG richiede la versione 2.1.0 dei componenti core o superiore insieme al [service pack 2](https://docs.adobe.com/content/help/it-IT/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o versioni successive per supportare le [funzioni dell&#39;editor di immagini](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) all&#39;interno di AEM.
+>Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://docs.adobe.com/content/help/it-IT/experience-manager-64/release-notes/sp-release-notes.html) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) in AEM.
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per visualizzare esempi delle opzioni di configurazione del componente immagine e dell’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_image) .
+Per avere un’idea del componente Immagine e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_image_it).
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente immagine [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_image_v2).
+La documentazione tecnica più recente sul componente Immagine [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_image_v2_it).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-Il componente Immagine supporta i microdati [schema.org](https://schema.org).
+Il componente Immagine supporta [i microdati schema.org](https://schema.org).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-Oltre alla finestra di dialogo standard [modifica](#edit-dialog) e [progettazione](#design-dialog), il componente immagine offre una finestra di dialogo di configurazione in cui l&#39;immagine stessa è definita insieme alla relativa descrizione e alle proprietà di base.
+Oltre alla normale [finestra di dialogo per modifica](#edit-dialog) e [finestra di dialogo per progettazione](#design-dialog), il componente Immagine offre anche una finestra di dialogo per configurazione, in cui l’immagine stessa viene definita insieme alla sua descrizione e alle sue proprietà di base.
 
 ### Scheda Risorsa {#asset-tab}
 
-![Scheda Risorsa della finestra di dialogo di configurazione del componente immagine](/help/assets/image-configure-asset.png)
+![Scheda Risorsa della finestra di dialogo per configurazione del componente Immagine](/help/assets/image-configure-asset.png)
 
 * **Risorsa immagine**
-   * Rilascia una risorsa dal [browser Risorse](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) o tocca l’opzione **Sfoglia** per caricarla da un file system locale.
+   * Rilascia una risorsa dal [browser di risorse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
+   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
 
 ### Scheda Metadati {#metadata-tab}
 
-![Scheda Metadati della finestra di dialogo di configurazione del componente immagine](/help/assets/image-configure-metadata.png)
+![Scheda Metadati della finestra di dialogo per configurazione del componente Immagine](/help/assets/image-configure-metadata.png)
 
-* **Tipo di predefinito** : definisce i tipi di predefiniti per immagini disponibili,  **Predefinito immagine o Ritaglio** avanzato **, ed è disponibile solo quando le funzioni di** Dynamic Media  [ ](#dynamic-meida) sono abilitate.
-   * **Predefinito immagine** : se è selezionata l’opzione  **Predefinito** tipo di  **immagine** predefinita, è disponibile l’opzione  **Predefinito immagine** dal menu a discesa, che consente di selezionare i predefiniti Dynamic Media disponibili. Questa opzione è disponibile solo se per la risorsa selezionata sono definiti dei predefiniti.
-   * **Ritaglio avanzato** : quando è selezionata l’opzione  **Tipo** predefinito di  **ritaglio** avanzato, è disponibile l’opzione  **** Rendering a discesa, che consente di selezionare i rendering disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definite rappresentazioni.
-   * **Modificatori immagine**  - È possibile definire qui comandi aggiuntivi di gestione immagini Dynamic Media separati da  `&`, indipendentemente da quali tipi di  **predefiniti** siano selezionati.
-* **L’immagine è decorativa**  - Controlla se l’immagine deve essere ignorata dalla tecnologia per l’accessibilità e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
-* **Testo alternativo** : alternativa testuale al significato o alla funzione dell’immagine, per lettori ipovedenti.
-   * **Ottieni testo alternativo da DAM** : se questa opzione è selezionata, il testo alternativo dell’immagine verrà popolato con il valore dei  `dc:description` metadati in DAM.
-* **Didascalia**  - Informazioni aggiuntive sull’immagine, visualizzate per impostazione predefinita sotto l’immagine.
-   * **Ottieni didascalia da DAM** : se questa opzione è selezionata, il testo della didascalia dell’immagine verrà popolato con il valore dei  `dc:title` metadati in DAM.
-   * **Visualizza didascalia come a comparsa** : se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l’immagine, ma come pop-up visualizzato da alcuni browser quando si passa il mouse sull’immagine.
-* **Collegamento** : collega l’immagine a un’altra risorsa.
-   * Utilizza la finestra di dialogo di selezione per eseguire il collegamento a un’altra risorsa AEM.
-   * Se non ti colleghi a una risorsa AEM, immetti l’URL assoluto. Gli URL non soluti vengono interpretati come relativi a AEM.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+* **Tipo di predefinito**: definisce i tipi di immagini preimpostate disponibili, **Predefinito immagine** o **Ritaglio avanzato**, ed è disponibile solo se [le funzioni di Dynamic Media](#dynamic-meida) sono abilitate.
+   * **Predefinito immagine**: se per **Tipo di predefinito** è selezionata l’opzione **Predefinito immagine**, è disponibile l’elenco a discesa **Predefinito immagine** che consente di selezionare i predefiniti di Dynamic Media disponibili. Questa opzione è disponibile solo se per la risorsa selezionata esistono dei predefiniti.
+   * **Ritaglio avanzato**: quando per **Tipo di predefinito** è selezionata l’opzione **Ritaglio avanzato**, avanzato, è disponibile l’elenco a discesa **Rendering** che consente di selezionare i rendering disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definiti rendering.
+   * **Modificatori immagine**: qui si possono definire comandi Dynamic Media aggiuntivi per la gestione delle immagini, separati da `&`, indipendentemente da qualunque cosa sia selezionata per **Tipo di predefinito**.
+* **L’immagine è decorativa**: controlla se l’immagine deve essere ignorata dalla tecnologia per l’accessibilità e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+* **Testo alternativo**: alternativa testuale del significato o della funzione dell’immagine per utenti ipovedenti.
+   * **Ottieni testo alternativo da DAM**: se questa opzione è selezionata, come testo alternativo dell’immagine verrà inserito il valore dei `dc:description`metadati in DAM.
+* **Didascalia**: informazioni aggiuntive sull’immagine, per impostazione predefinita viene visualizzata sotto l’immagine.
+   * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title`metadati in DAM.
+   * **Visualizza didascalia come nota a comparsa**: se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l’immagine, ma, in alcuni browser, come nota a comparsa quando si passa il puntatore sull’immagine.
+* **Collegamento**: collega l’immagine a un’altra risorsa.
+   * Utilizza la finestra di dialogo per selezione per stabilire il collegamento con un’altra risorsa AEM.
+   * Se non stabilisci il collegamento con un’altra risorsa AEM, immetti l’URL assoluto. Gli URL non assoluti vengono interpretati come relativi ad AEM.
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
 >[!TIP]
 >
->**Le opzioni** di Smart Cropand  **Image** Preset si escludono a vicenda. Se un autore deve utilizzare un predefinito per immagini insieme a un rendering di ritaglio avanzato, deve utilizzare i **modificatori di immagine** per aggiungere manualmente i predefiniti.
+>Le opzioni **Ritaglio avanzato** e **Predefinito immagine** si escludono a vicenda. Se un autore deve utilizzare un predefinito immagine insieme a al rendering di un ritaglio avanzato, deve utilizzare i **modificatori immagine** per aggiungere manualmente i predefiniti.
 
-## Finestra di dialogo Modifica {#edit-dialog}
+## Finestra di dialogo per modifica {#edit-dialog}
 
-La finestra di dialogo di modifica consente all’autore del contenuto di ritagliare, modificare la mappa del lancio e ingrandire l’immagine.
+La finestra di dialogo per modifica consente all’autore di contenuto di ritagliare, modificare la mappa di lancio ed eseguire lo zoom dell’immagine.
 
 >[!NOTE]
 >
->Le funzioni di ritaglio, rotazione e zoom non sono applicabili alle risorse Dynamic Media. Se le [funzioni Dynamic Media](#dynamic-media) sono abilitate, tutte le modifiche apportate alle risorse Dynamic Media devono essere eseguite tramite la finestra di dialogo [Configura .](#configure-dialog)
+>Le funzioni di ritaglio, rotazione e zoom non sono applicabili alle risorse Dynamic Media. Se le [funzioni di Dynamic Media](#dynamic-media) sono abilitate, tutte le modifiche apportate alle risorse Dynamic Media devono essere eseguite tramite la [finestra di dialogo per configurazione.](#configure-dialog)
 
-![Finestra di dialogo di modifica del componente immagine](/help/assets/image-edit.png)
+![Finestra di dialogo per modifica del componente Immagine](/help/assets/image-edit.png)
 
 * Avvia ritaglio
 
-   ![Icona di ritaglio](/help/assets/image-start-crop.png)
+   ![Icona Avvia ritaglio](/help/assets/image-start-crop.png)
 
    Selezionando questa opzione si apre un elenco a discesa per le proporzioni predefinite del ritaglio.
 
-   * Scegli l&#39;opzione **Mano libera** per definire il ritaglio desiderato.
-   * Scegli l&#39;opzione **Rimuovi ritaglio** per visualizzare la risorsa originale.
+   * Scegli l’opzione **Free Hand** per definire il ritaglio desiderato.
+   * Scegli l’opzione **Rimuovi Ritaglio** per visualizzare la risorsa originale.
 
-   Una volta selezionata l’opzione Ritaglia, utilizzate le maniglie blu per ridimensionare il ritaglio sull’immagine.
+   Una volta selezionata un’opzione di ritaglio, utilizza le maniglie blu per dimensionare il ritaglio sull’immagine.
 
    ![Opzioni di ritaglio](/help/assets/image-crop-options.png)
 
@@ -139,123 +139,123 @@ La finestra di dialogo di modifica consente all’autore del contenuto di ritagl
 
    ![Icona Ruota a destra](/help/assets/image-rotate-right.png)
 
-   Utilizzare questa opzione per ruotare l&#39;immagine di 90° verso destra (in senso orario).
+   Utilizza questa opzione per ruotare l’immagine di 90° verso destra (in senso orario).
 
-* Capovolgi orizzontalmente
+* Riflessione orizzontale
 
-   ![Icona Capovolgi orizzontalmente](/help/assets/image-flip-horizontal.png)
+   ![Icona Riflessione orizzontale](/help/assets/image-flip-horizontal.png)
 
-   Utilizzare questa opzione per capovolgere l&#39;immagine orizzontalmente o ruotare l&#39;immagine di 180° lungo l&#39;asse y.
+   Utilizza questa opzione per capovolgere l’immagine orizzontalmente o ruotarla di 180° lungo l’asse y.
 
-* Capovolgi verticalmente
+* Riflessione verticale
 
-   ![Icona Flip verticalmente](/help/assets/image-flip-vertical.png)
+   ![Icona Riflessione verticale](/help/assets/image-flip-vertical.png)
 
-   Utilizzare questa opzione per capovolgere l&#39;immagine verticalmente o ruotare l&#39;immagine di 180° lungo l&#39;asse x.
+   Utilizza questa opzione per capovolgere l’immagine verticalmente o ruotarla 180° lungo l’asse x.
 
-* Ripristina zoom
+* Reimposta zoom
 
-   ![Icona Ripristina zoom](/help/assets/image-reset-zoom.png)
+   ![Icona Reimposta zoom](/help/assets/image-reset-zoom.png)
 
    Se l’immagine è già stata ingrandita, utilizza questa opzione per reimpostare il livello di zoom.
 
 * Apri cursore Zoom
 
-   ![Icona del cursore dello zoom aperto](/help/assets/image-zoom.png)
+   ![Icona Apri cursore zoom](/help/assets/image-zoom.png)
 
-   Utilizzare questa opzione per visualizzare un cursore per controllare il livello di zoom dell&#39;immagine.
+   Utilizza questa opzione per visualizzare un cursore che permette di controllare il livello di zoom dell’immagine.
 
    ![Controllo cursore dello zoom](/help/assets/image-zoom-slider.png)
 
-L’editor locale può essere utilizzato anche per modificare l’immagine. A causa di limiti di spazio, sono disponibili solo opzioni di base in linea. Per le opzioni di modifica completa, utilizzate la modalità a schermo intero.
+L’editor locale può essere utilizzato anche per modificare l’immagine. A causa di limiti di spazio, in linea sono disponibili solo opzioni di base. Per le opzioni di modifica completa, utilizza la modalità a schermo intero.
 
 ![Opzioni di modifica diretta dell’immagine](/help/assets/image-in-place-edit.png)
 
 >[!NOTE]
 >
->Le operazioni di modifica delle immagini (ritaglio, capovolgimento, rotazione) non sono supportate per le immagini GIF. Tutte le modifiche apportate in modalità di modifica alle GIF non verranno mantenute.
+>Le funzioni di modifica delle immagini (ritaglio, riflessione, rotazione) non sono supportate per le immagini GIF. Tutte le modifiche apportate in modalità di modifica alle immagini GIF non verranno mantenute.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all’autore del modello di definire le opzioni di ritaglio, caricamento e rotazione e caricamento disponibili dall’autore del contenuto quando utilizza questo componente.
+La finestra di dialogo per progettazione consente all’autore del modello di definire le opzioni di ritaglio, caricamento e rotazione disponibili per l’autore di contenuto quando utilizza questo componente.
 
-### Scheda principale {#main-tab}
+### Scheda Principale {#main-tab}
 
-Nella scheda **Principale** è possibile definire un elenco di larghezze in pixel per l’immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser. Questa è una parte importante delle [funzioni reattive](#responsive-features) del componente immagine.
+Nella scheda **Principale** puoi definire un elenco di larghezze consentite, espresse in pixel, in modo che l’immagine e il componente possano automaticamente caricare la larghezza appropriata in base alle dimensioni della finestra del browser. Questa è una parte importante delle [funzioni reattive](#responsive-features) del componente Immagine.
 
-Inoltre, puoi definire quali opzioni generali del componente vengono automaticamente o disattivate quando l’autore aggiunge il componente a una pagina.
+Inoltre, puoi definire quali opzioni generali del componente vengono automaticamente abilitate o disabilitate quando l’autore aggiunge il componente a una pagina.
 
-![Scheda principale della finestra di dialogo di progettazione del componente immagine](/help/assets/image-design-main.png)
+![Scheda Principale della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-main.png)
 
-* **Abilita funzioni DM** : se questa opzione è selezionata, sono disponibili le funzioni di abilitazione di  [Dynamic Media ](#dynamic-media) .
-* **Abilita caricamento lento** : consente di definire se l’opzione di caricamento lento è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **L’immagine è decorativa** : consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Ottieni testo alternativo da DAM**: definisci se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando aggiungi il componente immagine a una pagina.
-* **Ottieni didascalia da DAM** : consente di definire se l’opzione per recuperare la didascalia dal DAM è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Visualizza didascalia come a comparsa** : consente di definire se l’opzione per visualizzare la didascalia immagine come pop-up è abilitata automaticamente quando si aggiunge il componente immagine a una pagina.
-* **Disabilita tracciamento UUID**  - Controlla di disabilitare il tracciamento dell&#39;UUID della risorsa immagine.
-* **Larghezza**  - Definisce un elenco di larghezze in pixel per l&#39;immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser.
+* **Abilita funzioni DM**: se questa opzione è selezionata, sono disponibili le funzioni di [Dynamic Media](#dynamic-media).
+* **Attiva il caricamento lento**: consente di definire se l’opzione di caricamento lento è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **Ottieni didascalia da DAM**: consente di definire se l’opzione per recuperare la didascalia dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **Visualizza didascalia come nota a comparsa**: consente di definire se l’opzione per visualizzare la didascalia dell’immagine come nota a comparsa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
+* **Disabilita tracciamento UUID**: consente di disabilitare il tracciamento dell’UUID della risorsa immagine.
+* **Larghezze**: consente di definire un elenco di larghezze, espresse in pixel, in modo che l’immagine e il componente possano automaticamente caricare la larghezza appropriata in base alle dimensioni della finestra del browser.
    * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un’altra dimensione.
-      * Utilizzare le maniglie per ridisporre l&#39;ordine delle dimensioni.
-      * Utilizza l&#39;icona **Elimina** per rimuovere una larghezza.
+      * Utilizza le maniglie per modificare l’ordine delle dimensioni.
+      * Utilizza l’icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene differito fino a quando non diventano visibili.
-      * Seleziona l&#39;opzione **Disattiva il caricamento lento** per caricare le immagini al caricamento della pagina.
-* **Qualità JPEG** : fattore di qualità (in percentuale da 0 e 100) per le immagini JPEG trasformate (ad esempio ridimensionate o ritagliate).
+      * Deseleziona l’opzione **Attiva il caricamento lento** per caricare le immagini al caricamento della pagina.
+* **Qualità JPEG**: fattore di qualità, espresso come percentuale tra 0 e 100, per le immagini JPEG trasformate, ad esempio ridimensionate o ritagliate.
 
 ### Scheda Funzioni {#features-tab}
 
-Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli autori di contenuti quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
+Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli autori di contenuto quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
 
 * Origine
 
-   ![Scheda Funzioni della finestra di dialogo Progettazione del componente immagine](/help/assets/image-design-features-source.png)
+   ![Scheda Funzioni della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-features-source.png)
 
-   Seleziona l’opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuti di caricare immagini dal proprio computer locale. Per forzare gli autori di contenuti a selezionare solo le risorse da AEM, deseleziona questa opzione.
+   Seleziona l’opzione **Consenti caricamento risorse dal file system** per consentire agli autori di contenuto di caricare immagini dal proprio computer locale. Per forzare gli autori di contenuto a selezionare solo le risorse da AEM, deseleziona questa opzione.
 
 * Orientamento
 
-   ![Scheda Funzioni della finestra di dialogo Progettazione del componente immagine](/help/assets/image-design-features-orientation.png)
+   ![Scheda Funzioni della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-features-orientation.png)
 
-* ****
-RuotaUtilizza questa opzione per consentire all’autore del contenuto di utilizzare la funzione 
-**Ruota** a destra.
-* ****
-FlipUtilizza questa opzione per consentire all’autore del contenuto di utilizzare la funzione 
-**Capovolgi** orizzontalmente e  **capovolgi** verticalmente.
+* **Rotazione**
+Seleziona questa opzione per consentire all’autore di contenuto di utilizzare l’opzione 
+**Ruota a destra**.
+* **Riflessione**
+Seleziona questa opzione per consentire all’autore di contenuto di utilizzare 
+le opzioni **Riflessione orizzontale** e **Riflessione verticale**.
 
    >[!CAUTION]
    >
-   >L&#39;opzione **Capovolgi** è disabilitata per impostazione predefinita. Attivando questa opzione, i pulsanti **Capovolgi verticalmente** e **Capovolgi orizzontalmente** verranno visualizzati nella finestra di dialogo di modifica del componente immagine, ma la funzione non è attualmente supportata da AEM e le modifiche effettuate utilizzando queste opzioni non verranno mantenute.
+   >L’opzione **Riflessione** è disabilitata per impostazione predefinita. Attivando questa opzione, i pulsanti **Riflessione verticale** e **Riflessione orizzontale** vengono visualizzati nella finestra di dialogo per modifica del componente Immagine, ma questa funzione non è attualmente supportata da AEM e le modifiche effettuate utilizzando queste opzioni non verranno mantenute.
 
 * Ritaglio
 
-   ![Scheda Funzioni della finestra di dialogo Progettazione del componente immagine](/help/assets/image-design-features-cropping.png)
+   ![Scheda Funzioni della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-features-cropping.png)
 
-   Seleziona l’opzione **Consenti ritaglio** per consentire all’autore del contenuto di ritagliare l’immagine nel componente nella finestra di dialogo di modifica.
-   * Fai clic su **Aggiungi** per aggiungere una proporzione di ritaglio predefinita.
-   * Immetti un nome descrittivo che verrà visualizzato nel menu a discesa **Avvia ritaglio** .
-   * Immettere il rapporto numerico dell&#39;aspetto.
-   * Utilizzare le maniglie di trascinamento per ridisporre l&#39;ordine delle proporzioni
-   * Utilizza l’icona del cestino per eliminare una proporzione.
+   Seleziona l’opzione **Consenti ritaglio** per consentire all’autore di contenuto di ritagliare l’immagine nella finestra di dialogo per modifica del componente.
+   * Fai clic su **Aggiungi** per aggiungere una proporzione predefinita per il ritaglio.
+   * Immetti un nome descrittivo che verrà visualizzato nel menu a discesa **Avvia ritaglio**.
+   * Immetti il rapporto numerico per la proporzione.
+   * Utilizza le maniglie di trascinamento per modificare l’ordine delle proporzioni
+   * Utilizza l’icona cestino per eliminare una proporzione.
 
    >[!CAUTION]
    >
-   >In AEM, le proporzioni di ritaglio sono definite come **altezza/larghezza**. Questo differisce dalla definizione tradizionale di larghezza/altezza, per ragioni di compatibilità con versioni precedenti. Gli autori dei contenuti non sono a conoscenza di alcuna differenza, purché tu fornisca un nome chiaro per le proporzioni, poiché il nome viene visualizzato nell’interfaccia utente e non per le proporzioni stesse.
+   >In AEM, i rapporti di proporzione del ritaglio sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli autori di contenuto non noteranno alcuna differenza, purché venga fornito un nome chiaro per la proporzione, in quanto il nome viene visualizzato nell’interfaccia utente e non nella proporzione stessa.
 
 ### Scheda Stili {#styles-tab-1}
 
-Il componente Immagine supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Immagine supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-## Servlet immagine adattivo {#adaptive-image-servlet}
+## Adaptive Image Servlet {#adaptive-image-servlet}
 
-Il componente immagine utilizza il servlet immagine adattivo del componente core. [L’Adaptive Image ](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) Servlets è responsabile dell’elaborazione e dello streaming delle immagini e può essere sfruttato dagli sviluppatori nelle loro  [personalizzazioni dei componenti](/help/developing/customizing.md) core.
+Il componente Immagine utilizza l’Adaptive Image Servlet dei Componente core. [L’Adaptive Image Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle loro [personalizzazioni dei Componenti core](/help/developing/customizing.md).
 
 >[!NOTE]
 >
->Le richieste condizionali tramite l&#39;intestazione `Last-Modified` sono supportate da Adaptive Image Servlet, ma la memorizzazione in cache dell&#39; `Last-Modified` intestazione [deve essere abilitata nel Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
+>Le richieste condizionali tramite l’intestazione `Last-Modified` sono supportate dall’Adaptive Image Servlet, ma il caching dell’intestazione `Last-Modified` [deve essere abilitato in Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers).
 >
->[La configurazione di Dispatcher di esempio di AEM Project Archetype](/help/developing/archetype/overview.md) contiene già questa configurazione.
+>L’esempio di configurazione di Dispatcher in [Archetipo progetto AEM](/help/developing/archetype/overview.md) già include questa configurazione.
 
-## Livello dati client di Adobe {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Il componente Immagine supporta il [Livello dati client di Adobe.](/help/developing/data-layer/overview.md)
+Il componente Immagine supporta [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
