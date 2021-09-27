@@ -1,36 +1,36 @@
 ---
-title: modulo ui.test di AEM Project Archetype
-description: Come utilizzare i test dell’interfaccia utente di AEM Project Archetype
-feature: Componenti core, AEM Project Archetype
+title: Modulo ui.tests di Archetipo progetto AEM
+description: Come utilizzare i test dell’interfaccia utente di Archetipo progetto AEM
+feature: Componenti core, Archetipo progetto AEM
 role: Architect, Developer, Admin
 exl-id: eb3c9b34-f10e-410f-bcf3-34f94f124c7c
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# modulo ui.test dell&#39;Archetipo di progetto AEM {#uitests-module}
+# Modulo ui.tests di Archetipo progetto AEM {#uitests-module}
 
 Il progetto prevede tre livelli di test:
 
-* [Test di unità](core.md#unit-tests)
-* [Test di integrazione](ittests.md)
-* Test dell&#39;interfaccia utente
+* [Test unità](core.md#unit-tests)
+* [Integration test](ittests.md)
+* Test dell’interfaccia utente
 
-Questo articolo descrive i test dell&#39;interfaccia utente disponibili come parte del modulo ui.test .
+Questo articolo descrive i test dell’interfaccia utente disponibili come parte del modulo ui.tests.
 
-## Esecuzione di test dell’interfaccia utente {#running-tests}
+## Esecuzione dei test dell’interfaccia utente {#running-tests}
 
-Per eseguire il test, esegui:
+Per effettuare il test, esegui:
 
 ```shell
 mvn verify -Pui-tests-local-execution
 ```
 
-Dopo l’esecuzione, i rapporti e i registri sono disponibili nella cartella `target/reports` .
+Dopo l’esecuzione, i report e i registri sono disponibili nella cartella `target/reports`.
 
 ## Opzioni aggiuntive {#additional-options}
 
-I test dell’interfaccia utente possono essere eseguiti con diverse opzioni, tra cui per test headless su un browser locale e come immagine Docker. Per ulteriori informazioni, consulta il file [README.md del modulo ui.test](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) .
+I test dell’interfaccia utente possono essere eseguiti con diverse opzioni, tra cui test senza intestazione su un browser locale e come immagine Docker. Per ulteriori informazioni, vedi il file [README.md del modulo ui.tests](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
