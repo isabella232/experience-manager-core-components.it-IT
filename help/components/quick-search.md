@@ -1,86 +1,86 @@
 ---
 title: Componente Ricerca rapida
-description: Il componente Ricerca rapida fornisce funzionalità di ricerca per un sito web e presenta i risultati di ricerca in modo che i visitatori possano cercare il sito e filtrare i risultati.
+description: Il componente Ricerca rapida fornisce funzionalità di ricerca in un sito web e visualizzazione dei risultati della ricerca, in modo che i visitatori possano effettuare ricerche nel sito e filtrare i risultati.
 role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Componente Ricerca rapida {#quick-search-component}
 
-Il componente Ricerca rapida fornisce funzionalità di ricerca per un sito web e presenta i risultati di ricerca in modo che i visitatori possano trovare facilmente contenuti corrispondenti e visualizzare i risultati.
+Il componente Ricerca rapida fornisce funzionalità di ricerca in un sito web e visualizzazione dei risultati della ricerca, in modo che i visitatori possano facilmente effettuare ricerche nel contenuto del sito e visualizzare i risultati.
 
 ## Utilizzo {#usage}
 
-Il componente Ricerca rapida offre ai visitatori del sito la possibilità di cercare contenuti, visualizzare i risultati sul posto e navigare facilmente nelle pagine corrispondenti. I nuovi risultati vengono recuperati dinamicamente mentre l’utente scorre i risultati della ricerca.
+Il componente Ricerca rapida offre ai visitatori del sito la possibilità di cercare contenuto, visualizzare direttamente i risultati e navigare facilmente nelle pagine trovate. I nuovi risultati vengono recuperati dinamicamente mentre l’utente scorre i risultati della ricerca.
 
-La [finestra di dialogo di modifica](#edit-dialog) consente all’autore del contenuto di definire da dove deve iniziare la ricerca nella struttura del contenuto. Utilizzando la [finestra di dialogo di progettazione](#design-dialog), l’autore del modello può impostare il valore predefinito per la posizione nella struttura del contenuto in cui deve iniziare la ricerca, nonché una dimensione massima del set di risultati e una lunghezza minima del termine di ricerca.
+La [finestra di dialogo per modifica](#edit-dialog) consente all’autore di contenuto di definire da dove deve iniziare la ricerca nella struttura del contenuto. La [finestra di dialogo per progettazione](#design-dialog) consente all’autore del modello di impostare il valore predefinito per la posizione nella struttura del contenuto dalla quale deve iniziare la ricerca, nonché una dimensione massima del set di risultati e una lunghezza minima del termine di ricerca.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Ricerca rapida è la v1, introdotta con la versione 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Ricerca rapida e la v1, introdotta con la versione 2.0.0 dei Componenti core a gennaio 2018, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
 ### Dettagli tecnici {#technical-details}
 
 >[!NOTE]
 >
->La protezione del componente di ricerca o di qualsiasi applicazione basata su AEM contro attacchi DOS deve essere implementata a un livello più alto, ad esempio utilizzando `mod_security` sul dispatcher.
+>La protezione del componente Ricerca o di qualsiasi applicazione basata su AEM contro attacchi DOS deve essere implementata a un livello più alto, ad esempio utilizzando la proprietà `mod_security` su Dispatcher.
 
-La documentazione tecnica più recente sul componente Ricerca rapida [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_search_v1).
+La documentazione tecnica più recente sul componente Ricerca rapida [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_search_v1_it).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Modifica {#edit-dialog}
+## Finestra di dialogo per modifica {#edit-dialog}
 
-La finestra di dialogo di modifica consente all’autore del contenuto di definire da dove deve iniziare la ricerca nella struttura del contenuto.
+La finestra di dialogo per modifica consente all’autore di contenuto di definire da dove deve iniziare la ricerca nella struttura del contenuto.
 
-![Finestra di dialogo di modifica del componente Ricerca rapida](/help/assets/quick-search-edit.png)
+![Finestra di dialogo per modifica del componente Ricerca rapida](/help/assets/quick-search-edit.png)
 
-**Cerca radice** : la pagina principale da cui avviare la ricerca. La directory principale di ricerca può essere una pagina master blueprint, una lingua master o una pagina normale.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati.](/help/developing/data-layer/overview.md)
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+**Pagina iniziale ricerca**: la pagina da cui avviare la ricerca. La pagina iniziale della ricerca può essere una pagina master blueprint, master lingua o normale.
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer.](/help/developing/data-layer/overview.md)
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
 >[!NOTE]
 >
->Se la **directory principale di ricerca** non è configurata o non può essere risolta, la ricerca rapida viene eseguita per impostazione predefinita sotto la pagina corrente.
+>Se la **Pagina iniziale ricerca** non è configurata o non può essere risolta, per impostazione predefinita la ricerca rapida viene eseguita sotto la pagina corrente.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-Tramite la finestra di dialogo Progettazione, l’autore del modello può impostare il valore predefinito per l’inizio della ricerca nella struttura del contenuto, nonché una dimensione massima del set di risultati e una lunghezza minima del termine di ricerca.La finestra di dialogo Progettazione consente all’autore del modello di definire quali opzioni di formattazione del testo sono disponibili per gli autori del contenuto.
+Tramite la finestra di dialogo per progettazione, l’autore del modello può impostare il valore predefinito per la posizione da cui iniziare la ricerca nella struttura del contenuto, nonché una dimensione massima del set di risultati e una lunghezza minima del termine di ricerca. La finestra di dialogo per progettazione consente all’autore del modello di definire quali opzioni di formattazione del testo sono disponibili per gli autori di contenuto.
 
 ### Scheda Proprietà {#properties-tab}
 
-![Finestra di dialogo di progettazione del componente Ricerca rapida](/help/assets/quick-search-design.png)
+![Finestra di dialogo per progettazione del componente Ricerca rapida](/help/assets/quick-search-design.png)
 
-* **Ricerca**
-radiceIl valore predefinito della directory principale di ricerca quando un autore di contenuti inserisce il componente Ricerca rapida in una pagina di contenuto
-* **Dimensione**
-dei risultatiIl numero massimo di risultati recuperati da una richiesta di ricerca
-* **Termine di ricerca**
-Lunghezza minimaLunghezza minima del termine di ricerca per avviare la ricerca
+* **Pagina iniziale ricerca**
+Il valore predefinito per la pagina iniziale della ricerca della ricerca quando un autore di contenuto inserisce il componente Ricerca rapida in una pagina
+* **Dimensione risultati**
+Il numero massimo di risultati recuperati da una richiesta di ricerca
+* **Lunghezza minima termine di ricerca**
+La lunghezza minima del termine di ricerca per l’avvio della ricerca
 
 >[!NOTE]
 >
->**La dimensione** dei risultati e la  **** lunghezza minima del termine di ricerca possono essere impostate solo in modalità di progettazione e quindi solo a livello di modello, il che significa che gli autori dei contenuti non sono in grado di modificare questi valori.
+>Le opzioni **Dimensione risultati** e **Lunghezza minima termine di ricerca** possono essere impostate solo in modalità di progettazione e quindi solo a livello di modello, il che significa che gli autori di contenuto non possono modificare questi valori.
 
 >[!CAUTION]
 >
->**Dimensione** dei risultati e  **durata minima del termine di ricerca** possono avere un impatto sulle prestazioni se sono impostati rispettivamente troppo alti o troppo bassi.
+>Le opzioni **Dimensione risultati** e **Lunghezza minima termine di ricerca** possono avere un impatto sulle prestazioni, se impostate rispettivamente su un valore troppo alto o troppo basso.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Ricerca rapida supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Ricerca rapida supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
