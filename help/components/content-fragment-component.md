@@ -1,38 +1,38 @@
 ---
 title: Componente Frammento di contenuto
-description: Il componente Frammento di contenuto del componente core consente la visualizzazione di un frammento di contenuto.
+description: Il componente core Frammento di contenuto consente la visualizzazione di un frammento di contenuto.
 role: Architect, Developer, Admin, User
 exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Componente Frammento di contenuto{#content-fragment-component}
 
-Il componente Frammento di contenuto del componente core consente la visualizzazione di un [frammento di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente core Frammento di contenuto consente la visualizzazione di un [frammento di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 >[!NOTE]
 >
->Prima della versione 2.4.0 dei componenti core, il componente Frammento di contenuto era disponibile come estensione per i componenti core e doveva essere scaricato separatamente e abilitato in modo esplicito.
+>Prima della versione 2.4.0 dei Componenti core, il componente Frammento di contenuto era disponibile come estensione dei Componenti core e doveva essere scaricato separatamente e abilitato in modo esplicito.
 
 ## Utilizzo {#usage}
 
-Il componente di base Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
+Il componente core Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
 
-* Il frammento e le relative proprietà possono essere selezionati nella finestra di dialogo [configura](#configure-dialog).
-* I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella finestra di dialogo [progettazione](#design-dialog).
-* L’opzione di modifica aprirà il frammento selezionato all’interno dell’ [editor frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
+* Il frammento e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione](#configure-dialog).
+* I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella [finestra di dialogo per progettazione](#design-dialog).
+* L’opzione Modifica apre il frammento selezionato all’interno dell’[editor di frammenti di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento di contenuto è la v1, introdotta con la versione 1.1.0 dei componenti core a ottobre 2017, ed è descritta in questo documento.
+La versione corrente del componente Frammento di contenuto è la v1, introdotta con la versione 1.1.0 dei Componenti core a ottobre 2017, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
@@ -46,23 +46,23 @@ La tabella seguente descrive tutte le versioni supportate del componente, le ver
 >
 >`apps/core/wcm/components/contentfragment/v1/contentfragment`
 >
->Anche se entrambi sono v1, qualsiasi componente Frammento di contenuto utilizzato dalla cartella delle estensioni richiederà una migrazione dei relativi componenti proxy per utilizzare il nuovo tipo di risorsa durante l’aggiornamento alla versione 2.4.0 o successiva dei componenti core.
+>Anche se entrambi sono v1, ogni componente Frammento di contenuto che era stato utilizzato dalla cartella delle estensioni richiederà la migrazione dei relativi componenti proxy, per poter utilizzare il nuovo tipo di risorsa, durante l’aggiornamento alla versione 2.4.0 o successive dei Componenti core.
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per visualizzare esempi delle opzioni di configurazione del componente Frammento di contenuto e dell’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_cf) .
+Per avere un’idea del componente Frammento di contenuto e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_cf_it).
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Frammento di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
+La documentazione tecnica più recente sul componente Frammento di contenuto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1_it).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire il frammento di contenuto e gli elementi del frammento da includere.
+La finestra di dialogo per configurazione consente all’autore di contenuto di definire il frammento di contenuto e gli elementi di quel frammento da includere.
 
 ### Scheda Proprietà {#properties-tab}
 
@@ -70,46 +70,46 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 * **Frammento di contenuto**
 
-   * Percorso del frammento di contenuto desiderato
-   * Per individuare il frammento è possibile utilizzare la finestra di dialogo di selezione **a1/>**
+   * Il percorso del Frammento di contenuto desiderato
+   * Per individuare il Frammento è possibile utilizzare la **finestra di dialogo per selezione**
 
 * **Modalità di visualizzazione**
-   * **Elemento**  di testo singolo: abilita la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
-   * **Più elementi** : consente di selezionare uno o più elementi del frammento di contenuto selezionato
-* **Elemento** : elemento o elementi del frammento di contenuto da includere
-* **Variazione** : variante del frammento di contenuto da utilizzare (impostazione predefinita:  **Master**)
+   * **Elemento di testo singolo**: consente la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
+   * **Più elementi**: consente di selezionare uno o più elementi del Frammento di contenuto selezionato
+* **Elemento**: l’elemento o gli elementi del Frammento di contenuto da includere
+* **Variante**: la variante del Frammento di contenuto da utilizzare (l’impostazione predefinita è **Master**)
 
 * **Paragrafi**
 
-   * **Tutti**  - Visualizza tutti i paragrafi
+   * **Tutti**: visualizza tutti i paragrafi
    * **Intervallo**
 
       * Specificare gli intervalli di paragrafi da visualizzare, separati da punto e virgola
-      * Ad esempio `1;3-5;7;9-*` per includere il primo, il terzo e il quinto, il settimo e il nono nei paragrafi finali
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+      * Ad esempio, specificare `1;3-5;7;9-*` per includere il primo, dal terzo al quinto, il settimo e il nono nei paragrafi finali
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-### Scheda Controllo Paragrafo {#paragraph-control-tab}
+### Scheda Controllo paragrafo {#paragraph-control-tab}
 
-Questa scheda non è disponibile quando è selezionata la modalità **Elementi multipli** .
+Questa scheda non è disponibile quando è selezionata la modalità **Più elementi**.
 
 ![Componente Frammento di contenuto](/help/assets/content-fragment-edit-paragraph.png)
 
-* **Paragrafi** : consente la selezione di tutti i paragrafi o di un intervallo
-* **Tratta l’intestazione come paragrafi propri**
+* **Paragrafi**: consente di selezionare tutti o un intervallo di paragrafi
+* **Tratta le intestazioni come paragrafi**
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire i tipi di risorse utilizzate per gestire le immagini con file multimediali diversi e le griglie reattive.
+La finestra di dialogo per progettazione consente all’autore del modello di definire i tipi di risorse utilizzati per gestire file multimediali e griglie reattive.
 
-![Finestra di dialogo Progettazione del componente Frammento di contenuto](/help/assets/content-fragment-design.png)
+![Finestra di dialogo per progettazione del componente Frammento di contenuto](/help/assets/content-fragment-design.png)
 
 * **Griglia reattiva interna**
 
    * Tipo di risorsa Sling utilizzato per la griglia reattiva interna
 
-## Livello dati client di Adobe {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Il componente Frammento di contenuto supporta [Livello dati client di Adobe.](/help/developing/data-layer/overview.md)
+Il componente Frammento di contenuto supporta [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
