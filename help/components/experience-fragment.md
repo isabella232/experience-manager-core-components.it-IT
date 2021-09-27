@@ -1,40 +1,40 @@
 ---
 title: Componente Frammento esperienza
-description: Il componente Frammento esperienza consente all’autore del contenuto di aggiungere a una pagina una variante del frammento esperienza.
+description: Il componente Frammento esperienza consente all’autore di contenuto di aggiungere a una pagina una variante del Frammento esperienza.
 role: Architect, Developer, Admin, User
 exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '816'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Componente Frammento esperienza{#experience-fragment-component}
 
-Il componente Frammento esperienza del componente di base consente all’autore del contenuto di inserire una variante del frammento di esperienza in una pagina e al contempo di supportare una struttura del sito localizzata.
+Il componente Frammento esperienza consente all’autore di contenuto di inserire una variante del Frammento esperienza in una pagina e al contempo di supportare una struttura localizzata del sito.
 
 ## Utilizzo {#usage}
 
-Il componente Frammento esperienza del componente di base consente all’autore del contenuto di selezionare tra le varianti di frammento di esperienza esistenti e inserirne una nella pagina del contenuto. Il componente Frammento esperienza supporta anche una struttura del sito localizzata.
+Il componente Frammento esperienza consente all’autore di contenuto di selezionare tra le varianti di Frammento esperienza esistenti e inserirne una nella pagina di contenuto. Il componente Frammento esperienza supporta anche una struttura localizzata del sito.
 
-* Le proprietà del componente possono essere definite nella finestra di dialogo [configura](#configure-dialog).
-* I valori predefiniti per il componente quando lo si aggiunge a una pagina possono essere definiti nella finestra di dialogo [progettazione](#design-dialog).
+* Le proprietà del componente possono essere definite nella [finestra di dialogo per configurazione](#configure-dialog).
+* Le impostazioni predefinite del componente, quando lo si aggiunge a una pagina, possono essere definite nella [finestra di dialogo per progettazione](#design-dialog).
 
-## Supporto per la struttura del sito localizzata {#localized-site-structure}
+## Supporto della struttura localizzata del sito {#localized-site-structure}
 
-Il componente Frammento esperienza si adatta alle strutture del sito localizzate ed esegue il rendering del frammento esperienza appropriato in base alla localizzazione della pagina. A questo scopo, il frammento di esperienza deve soddisfare le seguenti condizioni.
+Il componente Frammento esperienza si adatta alle strutture localizzate dei siti ed esegue il rendering del Frammento esperienza appropriato in base alla localizzazione della pagina. A questo scopo, il Frammento esperienza deve soddisfare le seguenti condizioni.
 
 * Il componente Frammento esperienza viene aggiunto a un modello.
-* Tale modello viene utilizzato per creare una nuova pagina di contenuto che fa parte di una struttura localizzata sotto `/content/<site>`.
-* Il frammento di esperienza a cui si fa riferimento in una pagina di contenuto fa parte di una struttura di frammento di esperienza localizzata sotto `/content/experience-fragments` che segue gli stessi pattern del sito sotto `/content/<site>`, incluso l’utilizzo degli stessi nomi di componente.
+* Il modello viene utilizzato per creare una nuova pagina di contenuto che fa parte di una struttura localizzata sotto `/content/<site>`.
+* Il Frammento esperienza a cui si fa riferimento in una pagina di contenuto fa parte di una struttura di Frammenti esperienza localizzati sotto `/content/experience-fragments` che segue gli stessi modelli del sito sotto `/content/<site>`, incluso l’utilizzo degli stessi nomi di componenti.
 
 In questo caso, come parte del modello, verrà eseguito il rendering del frammento con la stessa localizzazione (lingua, blueprint o Live Copy) della pagina corrente.
 
-Questo comportamento è limitato ai componenti Frammento esperienza aggiunti ai modelli. I componenti Frammento esperienza aggiunti alle singole pagine di contenuto renderanno le rappresentazioni esatte dei frammenti di esperienza configurate all’interno del componente.
+Questo comportamento è limitato ai componenti Frammento esperienza aggiunti ai modelli. I componenti Frammento esperienza aggiunti alle singole pagine di contenuto restituiranno esattamente le rappresentazioni dei Frammenti esperienza configurate all’interno del componente.
 
-* Per un esempio del funzionamento delle funzioni di localizzazione del componente Frammento esperienza, consulta [la sezione seguente](#example).
-* Per un esempio del funzionamento congiunto delle funzioni di localizzazione dei componenti core, consulta la pagina [Funzioni di localizzazione dei componenti core](/help/get-started/localization.md) .
+* Per un esempio delle funzioni di localizzazione del componente Frammento esperienza, vedi [la sezione che segue](#example).
+* Per un esempio dell’interazione delle funzioni di localizzazione dei Componenti core, visita la pagina [Funzioni di localizzazione dei Componenti core](/help/get-started/localization.md).
 
 ### Esempio {#example}
 
@@ -75,63 +75,63 @@ Supponiamo che il contenuto sia simile al seguente:
 \-- wknd-shop
 ```
 
-La struttura seguente `/content/experience-fragments/wknd` rispecchia la struttura di `/content/wknd`.
+Nota come la struttura sotto `/content/experience-fragments/wknd` rispecchi la struttura di `/content/wknd`.
 
-In questo caso, se il componente Frammento esperienza `/content/experience-fragments/wknd/us/en/footerTextXf` è posizionato su un modello, le pagine localizzate create in base a tale modello renderanno automaticamente il frammento di esperienza localizzato corrispondente alla pagina del contenuto localizzato.
+In questo caso, se il componente Frammento esperienza `/content/experience-fragments/wknd/us/en/footerTextXf` è inserito in un modello, per le pagine localizzate create in base a quel modello verrà automaticamente eseguito il rendering del Frammento esperienza localizzato corrispondente alla pagina localizzata.
 
-Quindi, se passi a una pagina di contenuto sotto `/content/wknd/ch/de` che utilizza lo stesso modello, viene eseguito il rendering di `/content/experience-fragments/wknd/ch/de/footerTextXf` invece di `/content/experience-fragments/wknd/us/en/footerTextXf`.
+Pertanto, se vai a una pagina di contenuto sotto `/content/wknd/ch/de` che utilizza lo stesso modello, viene eseguito il rendering di `/content/experience-fragments/wknd/ch/de/footerTextXf` invece di `/content/experience-fragments/wknd/us/en/footerTextXf`.
 
-### Fallback {#fallback}
+### Regresso {#fallback}
 
 Il componente Frammento esperienza tenta di trovare un componente localizzato corrispondente nell’ordine seguente.
 
-1. Prima cerca di trovare una radice linguistica.
-1. Se non viene trovato, cerca di trovare un modello.
-1. Se non viene trovato, cerca di trovare una Live Copy.
-1. Se non viene trovato, per impostazione predefinita viene visualizzato il frammento di esperienza configurato nel componente.
+1. Prima tenta di trovare una directory principale della lingua.
+1. Se non la trova, tenta di trovare un modello.
+1. Se non lo trova, tenta di trovare una Live Copy.
+1. Se non la trova, per impostazione predefinita viene visualizzato il Frammento esperienza configurato nel componente.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento esperienza è la v1, introdotta con la versione 2.6.0 dei componenti core a settembre 2019, ed è descritta in questo documento.
+La versione corrente del componente Frammento esperienza è la v1, introdotta con la versione 2.6.0 dei Componenti core a maggio 2019, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente Frammento esperienza e visualizzare esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la [Libreria di componenti](https://adobe.com/go/aem_cmp_library_xf) .
+Per avere un’idea del componente Frammento esperienza e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_xf).
 
 ## Dettagli tecnici {#technical-details}
 
 La documentazione tecnica più recente sul componente Frammento esperienza [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_xf_v1).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di selezionare la variante del frammento di esperienza da eseguire sulla pagina.
+La finestra di dialogo per configurazione consente all’autore di contenuto di selezionare la variante del Frammento di esperienza di cui eseguire il rendering sulla pagina.
 
-![Finestra di dialogo di modifica del componente Frammento esperienza](/help/assets/experience-fragment-edit.png)
+![Finestra di dialogo per modifica del componente Frammento esperienza](/help/assets/experience-fragment-edit.png)
 
-Utilizza il pulsante **Apri finestra di dialogo di selezione** per aprire il selettore dei componenti e scegliere la variante del componente del frammento di esperienza da aggiungere alla pagina del contenuto.
+Utilizza il pulsante **Apri finestra di dialogo per selezione** per aprire il selettore di componenti e scegliere la variante del componente Frammento esperienza da aggiungere alla pagina di contenuto.
 
-Se aggiungi il componente Frammento esperienza a un modello, noterai che sarà localizzato automaticamente a condizione che i Frammenti esperienza siano localizzati, in modo che il rendering sulla pagina possa variare dal componente selezionato in modo esplicito. [Per ulteriori informazioni, consulta l’esempio ](#example) precedente.
+Se aggiungi il componente Frammento esperienza a un modello, noterai che verrà automaticamente localizzato, a condizione che i Frammenti esperienza siano localizzati, pertanto ciò che viene rappresentato sulla pagina può variare in base al componente esplicitamente selezionato. Per ulteriori informazioni, [vedi l’esempio precedente](#example).
 
-Puoi anche definire un **ID**. Questa opzione consente di controllare l&#39;identificatore univoco del componente nell&#39;HTML e nel [Livello dati](/help/developing/data-layer/overview.md).
+Puoi anche definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
 
-* Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-* Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-* La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+* Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+* Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+* La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente Frammento esperienza e le impostazioni predefinite al momento del posizionamento del componente Frammento esperienza.
+La finestra di dialogo per progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore di contenuto che utilizza il componente Frammento esperienza e le impostazioni predefinite scelte al momento del posizionamento del Frammento esperienza.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Frammento esperienza supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Frammento esperienza supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
