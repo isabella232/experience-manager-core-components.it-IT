@@ -1,68 +1,68 @@
 ---
-title: Componente di navigazione lingua
-description: Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in un’altra impostazione internazionale.
+title: Componente Navigazione lingua
+description: Il componente Navigazione lingua fornisce una navigazione per lingua/paese in un sito, consentendo ai visitatori di visualizzare la stessa pagina in una lingua diversa.
 role: Architect, Developer, Admin, User
 exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '846'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Componente di navigazione lingua{#language-navigation-component}
+# Componente Navigazione lingua{#language-navigation-component}
 
-Il componente Navigazione lingua fornisce una navigazione in lingua/paese per un sito, in modo che i visitatori possano passare alla stessa pagina in impostazioni internazionali diverse.
+Il componente Navigazione lingua fornisce una navigazione per lingua/paese in un sito, consentendo ai visitatori di visualizzare la stessa pagina in una lingua diversa.
 
 ## Utilizzo {#usage}
 
-I siti web sono spesso disponibili in più lingue per diverse aree geografiche. Il componente di navigazione della lingua consente a un visitatore di visualizzare la stessa pagina in lingue/impostazioni internazionali diverse. Quindi, se siete lettori nella versione tedesca svizzera del sito web, è possibile facilmente passare alla versione inglese USA della stessa pagina. Il componente Navigazione lingua gestisce la comprensione della struttura della lingua del sito e trova automaticamente la pagina corrispondente.
+I siti web sono spesso disponibili in più lingue per diverse aree geografiche. Il componente Navigazione lingua consente a un visitatore di visualizzare la stessa pagina in diverse lingue. Pertanto, un lettore che si trovi nella versione in tedesco svizzero del sito, può passare facilmente passare alla versione italiana della stessa pagina. Il componente Navigazione lingua gestisce la comprensione della struttura delle lingue del sito e trova automaticamente la pagina corrispondente.
 
-* Per un esempio del funzionamento della funzione di localizzazione del componente di navigazione in lingua, consulta [la sezione seguente](#example).
-* Per un esempio del funzionamento congiunto delle funzioni di localizzazione degli altri componenti core, consulta la pagina [Funzioni di localizzazione dei componenti core](/help/get-started/localization.md) .
+* Per un esempio della funzione di localizzazione del componente Navigazione lingua, vedi [la sezione che segue](#example).
+* Per un esempio dell’interazione delle funzioni di localizzazione dei Componenti core, visita la pagina [Funzioni di localizzazione dei Componenti core](/help/get-started/localization.md).
 
-La [finestra di dialogo di modifica](#edit-dialog) consente di definire la directory principale globale di navigazione del sito e di specificare la profondità della struttura in cui deve essere effettuata la navigazione. Utilizzando la finestra di dialogo [progettazione](#design-dialog), l&#39;autore del modello può impostare i valori predefiniti per le stesse opzioni.
+La [finestra di dialogo per modifica](#edit-dialog) consente di definire la directory principale di navigazione globale del sito e specificare fino a che profondità nella struttura può arrivare la navigazione. Utilizzando la [finestra di dialogo per progettazione](#design-dialog), l’autore del modello può impostare i valori predefiniti per le stesse opzioni.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di navigazione in lingua è la v1, introdotta con la versione 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Navigazione lingua è la v1, introdotta con la versione 2.0.0 dei Componenti core a gennaio 2018, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per visualizzare esempi delle opzioni di configurazione del componente Navigazione lingua e dei relativi output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_langnav).
+Per avere un’idea del componente Navigazione lingua e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_langnav_it).
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente di navigazione in lingua [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v1).
+La documentazione tecnica più recente sul componente Navigazione lingua [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v1_it).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo di modifica consente di definire la directory principale di navigazione del sito globale e di specificare la profondità della struttura in cui deve essere effettuata la navigazione.
+La finestra di dialogo per modifica consente di definire la directory principale di navigazione globale del sito e specificare fino a che profondità nella struttura può arrivare la navigazione.
 
-In genere queste configurazioni devono essere eseguite solo a livello di modello di pagina. Tuttavia, possono essere modificati a livello di pagina tramite la finestra di dialogo [modifica](#edit-dialog).
+In genere, queste configurazioni devono essere eseguite solo a livello di modello della pagina. Tuttavia, possono essere modificate anche livello di pagina tramite la [finestra di dialogo per modifica](#edit-dialog).
 
 ### Scheda Proprietà {#properties-tab}
 
-![Finestra di dialogo di progettazione del componente Navigazione lingua](/help/assets/language-navigation-design.png)
+![Finestra di dialogo per progettazione del componente Navigazione lingua](/help/assets/language-navigation-design.png)
 
 * **Directory principale di navigazione**
-   * È qui che dovrebbe iniziare la navigazione in lingua del sito.
-   * La struttura della lingua del sito inizia al livello successivo sotto questa radice.
+   * La navigazione nelle lingue del sito inizia da qui.
+   * La struttura delle lingue del sito inizia al livello immediatamente successivo sotto la directory principale di navigazione.
 * **Annidamento struttura lingua**
-   * Questo è il numero di livelli della struttura del contenuto sotto la **Radice di navigazione** che rappresentano la struttura della lingua del sito. Esempi:
+   * È il numero di livelli della struttura del contenuto sotto la **Directory di navigazione principale** che rappresentano la struttura delle lingue del sito. Esempi:
       * `1` in genere significa che hai solo la scelta della lingua.
-      * `2` in genere significa che hai una scelta di lingua e paese.
-      * `3` in genere significa che si dispone di una scelta di lingua, paese e regione.
+      * `2` in genere significa che hai la scelta di lingua e paese.
+      * `3` in genere significa che hai la scelta di lingua, paese e area geografica.
 
 #### Esempio {#example}
 
@@ -83,28 +83,28 @@ Supponiamo che il contenuto sia simile al seguente:
 \-- wknd-shop
 ```
 
-Per il WKND del sito, è probabile che si desideri inserire il componente Navigazione lingua in un modello di pagina come parte dell’intestazione. Una volta parte del modello, è possibile impostare la **Radice di navigazione** del componente su `/content/wknd`, in quanto è da lì che inizia il contenuto localizzato per quel sito. Imposta anche **Profondità struttura lingua** su `2` poiché la struttura è di due livelli (paese e lingua).
+Per il WKND del sito, è probabile che tu voglia inserire il componente Navigazione lingua nel modello di una pagina come parte dell’intestazione. Una volta inserito nel modello, è possibile impostare **Directory principale di navigazione** del componente su `/content/wknd`, in quanto è da lì che inizia il contenuto localizzato di quel sito. Puoi anche impostare **Annidamento struttura lingua** su `2`, poiché la struttura è di due livelli (paese e lingua).
 
-Con il valore **Radice di navigazione**, il componente Lingua sa che dopo `/content/wknd` la navigazione inizia e può generare opzioni di navigazione nella lingua riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione della lingua del sito (come definito dal valore **Profondità della struttura della lingua** ).
+Con il valore di **Directory principale di navigazione**, il componente Navigazione lingua sa che dopo `/content/wknd` inizia la navigazione e può generare opzioni di navigazione nelle lingue riconoscendo i due livelli successivi nella struttura del contenuto come struttura di navigazione nelle lingue del sito (come definito dal valore di **Annidamento struttura lingua**).
 
-Indipendentemente dalla pagina visualizzata dall’utente, il componente Navigazione lingua è in grado di trovare la pagina corrispondente in un’altra lingua, conoscendo la posizione della pagina corrente e lavorando all’indietro fino alla pagina principale, quindi inoltrandola alla pagina corrispondente.
+Indipendentemente dalla pagina che un utente sta visualizzando, il componente Navigazione lingua è in grado di trovare la pagina localizzata corrispondente conoscendo la posizione della pagina corrente, risalendo all’indietro fino alla directory principale e quindi in avanti fino alla pagina corrispondente.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Navigazione lingua supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Navigazione lingua supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-## Finestra di dialogo Modifica {#edit-dialog}
+## Finestra di dialogo per modifica {#edit-dialog}
 
-In genere il componente Navigazione lingua deve essere aggiunto e configurato solo nei modelli di pagina di un sito. Tuttavia, se è necessario aggiungere il componente Navigazione lingua a una singola pagina di contenuto, la finestra di dialogo di modifica consente all’autore di contenuti di configurare gli stessi valori come descritto nella [finestra di dialogo di progettazione](#design-dialog).
+In genere il componente Navigazione lingua deve essere aggiunto e configurato solo nei modelli di pagina di un sito. Tuttavia, se è necessario aggiungere il componente Navigazione lingua a una singola pagina di contenuto, la finestra di dialogo per modifica consente all’autore di contenuto di configurare gli stessi valori come descritto nella [finestra di dialogo per progettazione](#design-dialog).
 
-Inoltre puoi impostare un **ID**. Questa opzione consente di controllare l&#39;identificatore univoco del componente nell&#39;HTML e nel [Livello dati](/help/developing/data-layer/overview.md).
+Inoltre, si può anche impostare un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
 
-* Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-* Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-* La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+* Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+* Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+* La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-![Finestra di dialogo di modifica del componente Navigazione lingua](/help/assets/language-navigation-edit.png)
+![Finestra di dialogo per modifica del componente Navigazione lingua](/help/assets/language-navigation-edit.png)
 
-## Livello dati client di Adobe {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Il componente Navigazione lingua supporta il [Livello dati client di Adobe.](/help/developing/data-layer/overview.md)
+Il componente Navigazione lingua supporta [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
