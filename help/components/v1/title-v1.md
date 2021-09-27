@@ -1,46 +1,46 @@
 ---
-title: Componente titolo (v1)
-description: Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
+title: Componente Titolo (v1)
+description: Il componente core Titolo è un componente di intestazione di sezione che offre funzioni di modifica diretta.
 index: n
 role: Architect, Developer, Admin, User
 exl-id: 79549ac0-82f2-4ea0-9cce-d534d0b47b5c
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Componente titolo (v1) {#title-component-v}
+# Componente Titolo (v1) {#title-component-v}
 
-Il componente Titolo componente di base è un componente di intestazione di sezione che presenta funzioni di modifica diretta.
+Il componente core Titolo è un componente di intestazione di sezione che offre funzioni di modifica diretta.
 
 ## Utilizzo {#usage}
 
 Il componente Titolo deve essere utilizzato come titolo o intestazione di una sezione di contenuto.
 
-I livelli di intestazione disponibili possono essere definiti dall&#39;autore del modello nella finestra di dialogo [progettazione](#design-dialog). L’editor dei contenuti può selezionare tra i livelli di intestazione disponibili nella finestra di dialogo [modifica](#edit-dialog). Per maggiore comodità, è disponibile anche una semplice modifica diretta del testo dell’intestazione.
+I livelli di intestazione disponibili possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor di contenuto può selezionare tra i livelli di intestazione disponibili nella [finestra di dialogo per modifica](#edit-dialog). Per maggiore comodità, è disponibile anche una semplice modifica diretta del testo dell’intestazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente Titolo, originariamente introdotto con la versione 1.0.0 dei componenti core con AEM 6.3.
+Questo documento descrive la versione 1 del componente Titolo, originariamente introdotto con la versione 1.0.0 dei Componenti core in AEM 6.3.
 
-Nella tabella seguente è riportata la compatibilità di v1 del componente Titolo.
+La tabella che segue riporta la compatibilità della versione 1 del componente Titolo.
 
-| Versione di AEM | Componente titolo v1 |
+| Versione di AEM | Componente Titolo v1 |
 |--- |--- |
 | 6.3 | Compatibile |
 | 6.4 | Compatibile |
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Titolo .
+>Questo documento descrive la versione 1 del componente Titolo.
 >
->Per informazioni dettagliate sulla versione corrente del componente Titolo, consulta il documento [Componente titolo](/help/components/title.md) .
+>Per informazioni dettagliate sulla versione corrente del componente Titolo, vedi il documento [Componente Titolo](/help/components/title.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Di seguito è riportato un esempio tratto da [We.Retail](https://experienceleague.adobe.com/docs/experience-manager-64/developing/bestpractices/we-retail/we-retail.html?lang=it).
 
 ### Schermata {#screenshot}
 
@@ -67,25 +67,25 @@ Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com
 
 >[!NOTE]
 >
->L’esportazione JSON dai componenti core richiede la versione 1.1.0 dei componenti core. Per ulteriori informazioni, consulta le [informazioni sulla compatibilità per i componenti core v1](/help/versions.md) .
+>L’esportazione JSON dai Componenti core richiede la versione 1.1.0 dei Componenti core. Per ulteriori informazioni, vedi le [informazioni sulla compatibilità dei Componenti core v1](/help/versions.md).
 
-## Finestra di dialogo Modifica {#edit-dialog}
+## Finestra di dialogo per modifica {#edit-dialog}
 
-La finestra di dialogo di modifica consente all’autore del contenuto di definire il testo del titolo e selezionare il livello del titolo.
+La finestra di dialogo per modifica consente all’autore di contenuto di definire il testo del titolo e selezionare il livello dell’intestazione.
 
 >[!NOTE]
 >
->Se si specifica un valore vuoto per il titolo, viene visualizzato il titolo della pagina.
+>Se non viene specificato alcun titolo, viene visualizzato automaticamente il titolo della pagina.
 
 ![](/help/assets/chlimage_1-91.png)
 
-L’editor locale può essere utilizzato anche per modificare il testo del componente titolo.
+L’editor locale può essere utilizzato anche per modificare il testo del componente Titolo.
 
 ![](/help/assets/chlimage_1-37.png)
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente all’autore del modello di definire il livello di intestazione predefinito che i componenti titolo avranno quando creati dagli autori dei contenuti.
+La finestra di dialogo per progettazione consente all’autore del modello di definire il livello di intestazione predefinito dei componenti Titolo che vengono creati dagli autori di contenuto.
 
 ![](/help/assets/chlimage_1-92.png)
 
@@ -93,6 +93,6 @@ La finestra di dialogo Progettazione consente all’autore del modello di defini
 
 La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v1/title).
 
-L’intero progetto dei componenti core può essere scaricato da GitHub.
+L’intero progetto dei Componenti core può essere scaricato da GitHub.
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
