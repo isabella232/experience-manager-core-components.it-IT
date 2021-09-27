@@ -1,55 +1,55 @@
 ---
 title: Componente Testo Modulo
-description: Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
+description: Il componente core Testo modulo consente l’inserimento di testo del modulo per l’invio.
 role: Architect, Developer, Admin, User
 exl-id: e8fa3881-51fb-4726-9654-8f93acfb7464
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Componente Testo Modulo{#form-text-component}
 
-Il componente Testo modulo componente di base consente di inserire il testo del modulo da inviare.
+Il componente core Testo modulo consente l’inserimento di testo del modulo per l’invio.
 
 ## Utilizzo {#usage}
 
-Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [contenitore modulo](form-container.md). Il tipo di convalida di testo, etichette e messaggi della guida può essere definito dall&#39;editor di contenuti nella finestra di dialogo [configura](#configure-dialog).
+Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al [componente Contenitore modulo](form-container.md). Il tipo di convalida del testo, le etichette e i messaggi di aiuto possono essere definiti dall’editor di contenuto nella [finestra di dialogo per configurazione](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di testo per modulo è v2, introdotta con la versione 2.0.0 dei componenti core nel gennaio 2018, ed è descritta in questo documento.
+La versione corrente del componente Testo modulo è la v2, introdotta con la versione 2.0.0 dei Componenti core a gennaio 2018, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | Compatibile | Compatibile | Compatibile |
 | [v1](/help/components/v1/form-text-v1.md) | Compatibile | Compatibile | - |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per visualizzare esempi delle opzioni di configurazione del componente Testo modulo e dell’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_form_text) .
+Per avere un’idea del componente Testo modulo e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_form_text_it).
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Testo modulo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_form_text_v2).
+La documentazione tecnica più recente sul componente Testo modulo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_form_text_v2_it).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire il tipo di testo da inserire, nonché i valori e le etichette predefiniti.
+La finestra di dialogo per configurazione consente all’autore di contenuto di definire il tipo di testo da inserire, nonché i valori e le etichette predefiniti.
 
 ### Scheda Proprietà {#properties-tab}
 
 ![Scheda Proprietà](/help/assets/form-text-edit-properties.png)
 
-* **Vincolo** : il tipo di testo da inserire e su cui verrà convalidato.
+* **Vincolo**: il tipo di testo da inserire e su cui verrà effettuata la convalida
    * **Testo**
    * **Area testo**
    * **E-mail**
@@ -57,22 +57,22 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
    * **Data**
    * **Numero**
    * **Password**
-* **Righe**  di testo - Numero di righe da visualizzare nell’area di testo (solo se l’opzione  **** Limite è impostata su  **Area** di testo)
-* **Etichetta** : l’etichetta che verrà visualizzata per il campo
-* **Nascondere l’etichetta dalla visualizzazione**  - Necessario se l’etichetta è necessaria solo a scopo di accessibilità e non fornisce ulteriori informazioni visive sul campo
-* **Nome elemento** : il nome del campo inviato con i dati del modulo
-* **Valore** : valore predefinito precompilato nel campo
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+* **Righe di testo**: numero di righe da visualizzare nell’area di testo (solo se l’opzione **Vincolo** Limite è impostata su **Area testo**)
+* **Etichetta**: l’etichetta che verrà visualizzata per il campo
+* **Nascondi l’etichetta**: opzione necessaria se l’etichetta serve solo per scopi di accessibilità e non fornisce alcuna informazione visiva aggiuntiva relativa al campo
+* **Nome**: il nome del campo che viene inviato con i dati del modulo
+* **Valore**: il valore predefinito inserito automaticamente nel campo
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-### Scheda Informazioni {#about-tab}
+### Scheda Informazioni su {#about-tab}
 
-![Scheda Informazioni](/help/assets/form-text-edit-about.png)
+![Scheda Informazioni su](/help/assets/form-text-edit-about.png)
 
-* **Messaggio della Guida** : un suggerimento per l’utente su cosa è possibile inserire nel campo
-* **Visualizza il messaggio della guida come segnaposto** : per visualizzare il messaggio della guida all’interno del modulo di input quando è vuoto o non attivo
+* **Messaggio di aiuto**: suggerimento per l’utente per la compilazione del campo
+* **Visualizza messaggio di aiuto come segnaposto**: indica se deve essere visualizzato il messaggio di aiuto nel modulo, quando il modulo è vuoto e non attivo
 
 ### Scheda Vincoli {#constraints-tab}
 
@@ -80,13 +80,13 @@ La finestra di dialogo di configurazione consente all’autore del contenuto di 
 
 * **Messaggio vincolo**
    * Messaggio visualizzato come descrizione comando quando si invia il modulo, se il valore non convalida il tipo scelto
-   * Non visualizzato per i tipi di vincolo **Testo** e **Area di testo**
-* **Obbligatorio** : se selezionato, l’utente deve compilare un valore prima di inviare il modulo
-   * **Messaggio richiesto** : messaggio visualizzato come descrizione comando se il campo viene lasciato vuoto
-* **Rendi sola**  lettura: se selezionata, l&#39;utente non può modificare il valore del campo
+   * Non visualizzato per i tipi di vincolo **Testo** e **Area testo**
+* **Richiesto**: se selezionata, l’utente deve necessariamente inserire un valore prima di inviare il modulo
+   * **Messaggio richiesto**: messaggio visualizzato come descrizione comando se il campo viene lasciato vuoto
+* **Imposta per sola lettura**: se selezionata, l’utente non può modificare il valore del campo
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Testo modulo supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Testo modulo supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
