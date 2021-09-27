@@ -1,131 +1,131 @@
 ---
-title: Componente a soffietto
-description: Il componente pannello a soffietto dei componenti core consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
+title: Componente Pannello a soffietto
+description: Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1067'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Componente a soffietto{#accordion-component}
+# Componente Pannello a soffietto{#accordion-component}
 
-Il componente pannello a soffietto dei componenti core consente di creare una raccolta di pannelli disposti in un pannello a soffietto su una pagina.
+Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 
 ## Utilizzo {#usage}
 
-Il componente Pannello a soffietto del componente core consente di creare una raccolta di componenti, composti come pannelli e disposti in un pannello a soffietto su una pagina, simile al [Componente schede](tabs.md), ma consente di espandere e comprimere i pannelli.
+Il componente core Pannello a soffietto consente di creare una raccolta di componenti, composti come pannelli e inclusi in un Pannello a soffietto su una pagina, in modo simile al [componente Schede](tabs.md), ma con la possibilità di espandere e comprimere i pannelli.
 
-* Le proprietà del pannello a soffietto possono essere definite nella finestra di dialogo [configura](#configure-dialog).
-* L&#39;ordine dei pannelli del pannello a soffietto può essere definito nella finestra di dialogo di configurazione e nel [selettore pannello](#select-panel-popover).
-* Le impostazioni predefinite per il componente per pannello a soffietto quando lo si aggiunge a una pagina possono essere definite nella finestra di dialogo [progettazione](#design-dialog).
+* Le proprietà del Pannello a soffietto possono essere definite nella [finestra di dialogo per configurazione](#configure-dialog).
+* L’ordine dei pannelli nel Pannello a soffietto può essere definito sia nella finestra di dialogo per configurazione che nella [finestra a comparsa seleziona pannello](#select-panel-popover).
+* Le impostazioni predefinite del componente Pannello a soffietto, quando lo si aggiunge a una pagina, possono essere definite [nella finestra di dialogo per progettazione](#design-dialog).
 
 ## Collegamenti profondi a un pannello {#deep-linking}
 
-I componenti per pannello a soffietto e [schede](tabs.md) supportano il collegamento diretto a un pannello all’interno del componente.
+I componenti Pannello a soffietto e [Schede](tabs.md) supportano il collegamento diretto a un pannello all’interno del componente.
 
-Per effettuare ciò:
+Per effettuare questo collegamento:
 
-1. Visualizza la pagina con il componente utilizzando l&#39;opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell&#39;editor di pagine.
-1. Inspect il contenuto della pagina e identifica l’ID del pannello.
-   * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
+1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
+1. Esamina il contenuto della pagina e identifica l’ID del pannello.
+   * Esempio: `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
-   * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
+   * Esempio: `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
-Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e visualizza il pannello specificato. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
+Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente per pannello a soffietto è la v1, introdotta con la versione 2.5.0 dei componenti core a giugno 2019, ed è descritta in questo documento.
+La versione corrente del componente Pannello a soffietto è la v1, introdotta con la versione 2.5.0 dei Componenti core a giugno 2019, ed è quella descritta in questo documento.
 
-La tabella seguente descrive tutte le versioni supportate del componente, le versioni AEM con cui le versioni del componente sono compatibili e si collega alla documentazione delle versioni precedenti.
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
-| Versione componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Compatibile | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md) .
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
-## Output componente di esempio {#sample-component-output}
+## Esempio di output del componente {#sample-component-output}
 
-Per provare il componente per pannello a soffietto e visualizzare esempi delle relative opzioni di configurazione, nonché l’output HTML e JSON, visita la [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_accordion).
+Per avere un’idea del componente Pannello a soffietto e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_accordion_it).
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente per pannello a soffietto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
+La documentazione tecnica più recente sul componente Pannello a soffietto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
 
-Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md) .
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo Configura {#configure-dialog}
+## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento a soffietto, i relativi pannelli e il comportamento di un visitatore sulla pagina.
+La finestra di dialogo per configurazione consente all’autore di contenuto di definire l’elemento Pannello a soffietto, i relativi pannelli e il suo comportamento e aspetto nei confronti di chi visita la pagina.
 
 ### Scheda Elementi {#items-tab}
 
-![Scheda Elementi della finestra di dialogo di modifica del componente per pannello a soffietto](/help/assets/accordion-edit-items.png)
+![Scheda Elementi della finestra di dialogo per modifica del componente Pannello a soffietto](/help/assets/accordion-edit-items.png)
 
-Utilizza il pulsante **Aggiungi** per aprire il selettore dei componenti e scegliere quale componente aggiungere come pannello. Una volta aggiunta, una voce viene aggiunta all’elenco, che contiene le colonne seguenti:
+Utilizza il pulsante **Aggiungi** per aprire il selettore di componenti e scegliere quale componente aggiungere come pannello. Una volta aggiunto, all’elenco viene aggiunta una voce che contiene le seguenti colonne:
 
-* **Icona** : l’icona del tipo di componente del pannello per facilitarne l’identificazione nell’elenco. Passa il puntatore del mouse per visualizzare il nome completo del componente come descrizione comando.
-* **Descrizione** : descrizione utilizzata come testo del pannello, con impostazione predefinita sul nome del componente selezionato per il pannello.
-* **Elimina** : tocca o fai clic per eliminare il pannello dal componente a soffietto.
-* **Ridisponi**  - Tocca o fai clic e trascina per ridisporre l’ordine dei pannelli.
+* **Icona**: l’icona del tipo di componente del pannello per facilitarne l’identificazione nell’elenco. Passa il puntatore del mouse sulla voce per visualizzare il nome completo del componente sotto forma di descrizione comando.
+* **Descrizione**: il testo descrittivo del pannello; per impostazione predefinita è il nome del componente selezionato come pannello.
+* **Elimina**: tocca o fai clic per eliminare il pannello dal componente Pannello a soffietto.
+* **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
 >[!TIP]
 >
->Se la finestra di visualizzazione della pagina viene ridotta in modo che la finestra di dialogo di modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono ancora essere aggiunti al componente per pannello a soffietto trascinandoli dal browser Componenti e rilasciandoli sul componente per pannello a soffietto nell’ editor pagina](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent).[
+>Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Pannello a soffietto [trascinandoli dal browser dei componenti e rilasciandoli sul componente Pannello a soffietto nell’editor di pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=it).
 
 ### Scheda Proprietà {#properties-tab}
 
-![Scheda Proprietà della finestra di dialogo di modifica del componente per pannello a soffietto](/help/assets/accordion-edit-properties.png)
+![Scheda Proprietà della finestra di dialogo per modifica del componente Pannello a soffietto](/help/assets/accordion-edit-properties.png)
 
-* **Espansione di un singolo elemento** : se selezionata, questa opzione consente di espandere un singolo elemento a soffietto alla volta. Espandi un elemento per comprimere tutti gli altri.
-* **Elementi espansi** : questa opzione definisce gli elementi che vengono espansi per impostazione predefinita al caricamento della pagina.
-   * Quando si seleziona **Espansione elemento singolo**, è necessario selezionare un pannello. Per impostazione predefinita, è selezionato il primo pannello.
-   * Quando **L&#39;espansione di un singolo elemento** non è selezionata, questa opzione è una selezione multipla ed è facoltativa.
-* **ID**  - Questa opzione consente di controllare l’identificatore univoco del componente nell’HTML e nel livello  [dati](/help/developing/data-layer/overview.md).
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando la pagina risultante.
-   * Se viene specificato un ID, è responsabilità dell’autore assicurarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto su CSS, JS e tracciamento livello dati.
+* **Espansione di un singolo elemento**: se selezionata, questa opzione consente di espandere un singolo elemento del Pannello a soffietto alla volta. L’espansione di un singolo elemento determinerà la compressione di tutti gli altri.
+* **Elementi espansi**: questa opzione definisce gli elementi che vengono espansi per impostazione predefinita al caricamento della pagina.
+   * Quando si seleziona **Espansione di un singolo elemento**, è necessario selezionare un pannello. Per impostazione predefinita, viene selezionato il primo pannello.
+   * Quando **Espansione di un singolo elemento** non è selezionata, questa opzione è a selezione multipla ed è facoltativa.
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-## Selezione del puntatore del pannello {#select-panel-popover}
+## Finestra a comparsa selezione pannello {#select-panel-popover}
 
-L’autore del contenuto può utilizzare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello da modificare e per ridisporre facilmente l’ordine dei pannelli nel pannello a soffietto.
+L’autore di contenuto può utilizzare l’opzione **Seleziona pannello** nella barra degli strumenti del componente per passare a un altro pannello da modificare e per modificare facilmente l’ordine dei pannelli nel Pannello a soffietto.
 
 ![Icona Seleziona pannello](/help/assets/select-panel-icon.png)
 
-Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, i pannelli a soffietto configurati vengono visualizzati come un elenco a discesa.
+Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strumenti del componente, i pannelli del Pannello a soffietto configurati vengono visualizzati come elenco a discesa.
 
-![Selezione pover del pannello](/help/assets/select-panel-popover.png)
+![Finestra a comparsa selezione pannello](/help/assets/select-panel-popover.png)
 
-* L&#39;elenco è ordinato dalla disposizione assegnata dei pannelli e si riflette nella numerazione.
+* L’elenco viene ordinato in base alla disposizione assegnata ai pannelli, che si evidenzia nella numerazione.
 * Il tipo di componente del pannello viene visualizzato per primo, seguito dalla descrizione del pannello in caratteri più chiari.
-* Toccando o facendo clic su una voce nel menu a discesa, la visualizzazione nell’editor passa a tale pannello.
-* I pannelli possono essere ridisposti in posizione mediante le maniglie di trascinamento.
+* Toccando o facendo clic su una voce nel menu a discesa, nell’editor viene visualizzato il pannello corrispondente.
+* I pannelli possono essere riposizionati tramite le maniglie di trascinamento.
 
-## Finestra di dialogo Progettazione {#design-dialog}
+## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente per pannello a soffietto e le impostazioni predefinite al momento del posizionamento del componente per pannello a soffietto.
+La finestra di dialogo per progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore di contenuto che utilizza il componente Pannello a soffietto e le impostazioni predefinite scelte al momento del posizionamento del Pannello a soffietto.
 
 ### Scheda Proprietà {#properties-tab-design}
 
-![Scheda delle proprietà della finestra di dialogo Progettazione](/help/assets/accordion-design-properties.png)
+![Scheda Proprietà della finestra di dialogo per progettazione](/help/assets/accordion-design-properties.png)
 
-* **Elementi titolo consentiti**  - Questo elenco a discesa con più selezioni definisce l’intestazione di elemento a soffietto elementi HTML che possono essere selezionati da un autore.
-* **Elemento intestazione predefinito** : questo elenco a discesa definisce l’elemento HTML predefinito dell’intestazione di pannello a soffietto.
+* **Elementi intestazione consentiti**: questo elenco a discesa a selezione multipla definisce gli elementi HTML per l’intestazione del Pannello a soffietto che possono essere selezionati da un autore.
+* **Elemento intestazione predefinito**: questo elenco a discesa definisce l’elemento HTML predefinito per l’intestazione del Pannello a soffietto.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
-La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi ai pannelli nel componente per pannello a soffietto dall’autore del contenuto.
+La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi al Pannello a soffietto dall’autore di contenuto.
 
-La scheda Componenti consentiti funziona allo stesso modo della scheda dello stesso nome quando [definisci i criteri e le proprietà di un contenitore di layout nell’Editor modelli.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
 
 ### Scheda Stili {#styles-tab}
 
-Il componente per pannello a soffietto supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Pannello a soffietto supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-## Livello dati client di Adobe {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Il componente per pannello a soffietto supporta [Livello dati client di Adobe.](/help/developing/data-layer/overview.md)
+Il componente Pannello a soffietto supporta [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
