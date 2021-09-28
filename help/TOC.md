@@ -1,13 +1,13 @@
 ---
-sub-product: Componenti core AEM
+sub-product: AEM Core Components
 user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 15aa2145a4872a9e9c46e639f42f212363823d75
-workflow-type: ht
+source-git-commit: 7bff1282bdd05b98e7ce33ab0e1a1be7080bb209
+workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -84,6 +84,7 @@ ht-degree: 100%
       + [Utilizzo di Archetipo](developing/archetype/using.md)
       + [Modulo core](developing/archetype/core.md)
       + [Modulo ui.apps](developing/archetype/uiapps.md)
+      + [Script raggruppati precompilati](developing/archetype/precompiled-bundled-scripts.md)
       + [Modulo ui.content](developing/archetype/uicontent.md)
       + [Modulo ui.frontend.general](developing/archetype/uifrontend.md)
       + [Modulo ui.frontend.react](developing/archetype/uifrontend-react.md)
