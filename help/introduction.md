@@ -3,10 +3,10 @@ title: Introduzione ai Componenti core
 description: 'I Componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
+source-git-commit: 19a7057d0a37d8222dcb2441bba1e479d786fb10
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
 | Configurabili | [Criteri di contenuto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
 | Tracciabili | [L’integrazione con Adobe Client Data Layer](/help/developing/data-layer/overview.md) consente il tracciamento di tutti gli aspetti dell’esperienza del visitatore. |
-| Accessibili | Sono conformi allo [standard WCAG 2.1](https://www.w3.org/TR/WCAG21/), forniscono etichette ARIA e supportano la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
+| Accessibili | Sono conformi a [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), forniscono etichette ARIA e supportano la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-friendly | L’output HTML è semantico e fornisce annotazioni di microdati [schema.org.](https://schema.org) |
 | Pronti per WebApp | [L’output JSON ottimizzato](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) consente il rendering lato client, ma ancora con la possibilità di [modifica nel contesto](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Supporto AMP | I componenti hanno il [supporto integrato per lo standard AMP,](/help/developing/amp.md) per accelerare le tue esperienze mobili. |
