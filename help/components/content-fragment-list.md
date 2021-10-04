@@ -3,20 +3,20 @@ title: Componente Elenco frammenti di contenuto
 description: Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di frammenti di contenuto.
 role: Architect, Developer, Admin, User
 exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '762'
-ht-degree: 100%
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 98%
 
 ---
 
 # Componente Elenco frammenti di contenuto{#content-fragment-list-component}
 
-Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di [frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 ## Utilizzo {#usage}
 
-Il componente core Elenco frammenti di contenuto consente di includere un elenco di [frammenti di contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina basata su un Modello del Frammento di contenuto. Questa funzione può essere particolarmente utile per creare [contenuto senza intestazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente riutilizzato da altre applicazioni.
+Il componente core Elenco frammenti di contenuto consente di includere un elenco di [frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina basata su un Modello del Frammento di contenuto. Questa funzione può essere particolarmente utile per creare [contenuto senza intestazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente riutilizzato da altre applicazioni.
 
 * L’elenco e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione](#configure-dialog).
 * Gli stili possono essere applicati al componente nella [finestra di dialogo per progettazione](#design-dialog).

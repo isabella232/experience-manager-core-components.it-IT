@@ -3,10 +3,10 @@ title: Componente Schede
 description: Il componente Schede consente di creare più schede per disporre il contenuto di una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+workflow-type: tm+mt
+source-wordcount: '1028'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ La [finestra di dialogo per modifica](#edit-dialog) consente all’autore di con
 >
 >Sono supportati i componenti Schede nidificati (schede all’interno di schede).
 >
->I componenti Schede semplici (non nidificati) possono essere posizionati/selezionati utilizzando la [struttura del contenuto](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree), ma non è possibile utilizzare le schede nidificate.
+>I componenti Schede semplici (non nidificati) possono essere posizionati/selezionati utilizzando la [struttura del contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree), ma non è possibile utilizzare le schede nidificate.
 
 ## Collegamenti profondi a un pannello {#deep-linking}
 
@@ -32,7 +32,7 @@ I componenti Schede e [Pannello a soffietto](accordion.md) supportano il collega
 
 Per effettuare questo collegamento:
 
-1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
+1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
 1. Esamina il contenuto della pagina e identifica l’ID del pannello.
    * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
@@ -79,7 +79,7 @@ Utilizza il pulsante **Aggiungi** per aprire il selettore di componenti e scegli
 
 >[!TIP]
 >
->Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Schede [trascinandoli dal browser dei componenti e rilasciandoli sul componente Schede nell’editor di pagine](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component).
+>Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Schede [trascinandoli dal browser dei componenti e rilasciandoli sul componente Schede nell’editor di pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component).
 
 ### Scheda Proprietà {#properties-tab}
 
@@ -118,7 +118,7 @@ Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strum
 
 >[!NOTE]
 >
->Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
+>Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
@@ -128,7 +128,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi del componente Schede dall’autore di contenuto.
 
-La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Scheda Stili {#styles-tab}
 

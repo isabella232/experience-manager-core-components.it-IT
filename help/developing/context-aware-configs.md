@@ -3,10 +3,10 @@ title: Configurazioni in base al contesto di Sling e Componenti core
 description: I Componenti core utilizzano le configurazioni in base al contesto di Sling per alcune funzioni
 role: Architect, Developer, Admin
 exl-id: d35210f7-a65d-4768-ab9e-f12ec406da2d
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ Le configurazioni in base al contesto sono una funzione di [Sling](https://sling
 
 Un sito potrebbe richiedere configurazioni diverse per le varie aree, ad esempio laddove alcuni parametri potrebbero essere condivisi e richiedere la capacità di ereditarli per contesti nidificati e valori di regresso globali. AEM utilizza le configurazioni in base contesto di Sling, in quanto offrono questa possibilità.
 
-Per informazioni dettagliate sulle configurazioni in AEM, [vedi la documentazione sulle configurazioni e sul browser di configurazione.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/configurations.html)
+Per informazioni dettagliate sulle configurazioni in AEM, [vedi la documentazione sulle configurazioni e sul browser di configurazione.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 ## Utilizzo nei Componenti core {#core-components}
 

@@ -4,10 +4,10 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 7bff1282bdd05b98e7ce33ab0e1a1be7080bb209
+source-git-commit: 04adfb00ca5908714e611f8b5de6cd2b6d127a37
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 98%
+source-wordcount: '212'
+ht-degree: 95%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 98%
 + Sviluppo {#developing}
    + [Sviluppo di Componenti core](developing/overview.md)
    + [Percorsi verso il successo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=it)
-   + [Esercitazione per sviluppatori WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Esercitazione per sviluppatori WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Personalizzazione dei Componenti core](developing/customizing.md)
    + [Linee guida per i componenti](developing/guidelines.md)
    + [Supporto AMP](developing/amp.md)

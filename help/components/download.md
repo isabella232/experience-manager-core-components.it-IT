@@ -3,10 +3,10 @@ title: Componente Scarica
 description: Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+workflow-type: tm+mt
+source-wordcount: '683'
+ht-degree: 97%
 
 ---
 
@@ -54,9 +54,9 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
 La selezione di una risorsa da scaricare è molto simile alla funzionalità del [componente Immagine](image.md) e allo stesso modo sfrutta il DAM di AEM.
 
 * **Scarica risorsa**
-   * Rilascia una risorsa dal [browser di risorse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
+   * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
+   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
 
 ### Scheda Proprietà {#properties-tab}
 

@@ -3,16 +3,16 @@ title: Inclusione delle librerie client
 description: Esistono diversi modi per includere le librerie client a seconda del caso d’uso.
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '394'
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+workflow-type: tm+mt
+source-wordcount: '392'
 ht-degree: 100%
 
 ---
 
 # Inclusione delle librerie client {#including-client-libraries}
 
-Esistono diversi modi per includere le [librerie client](/help/developing/archetype/uifrontend.md#clientlibs) a seconda del caso d’uso. Questo documento fornisce esempi e [snippet HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) per ciascuno di essi.
+Esistono diversi modi per includere le [librerie client](/help/developing/archetype/uifrontend.md#clientlibs) a seconda del caso d’uso. Questo documento fornisce esempi e [snippet HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) per ciascuno di essi.
 
 ## Utilizzo predefinito consigliato {#recommended-default-usage}
 

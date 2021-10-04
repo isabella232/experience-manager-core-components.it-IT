@@ -3,10 +3,10 @@ title: Funzioni di localizzazione dei Componenti core
 description: Funzioni di localizzazione dei Componenti core
 role: Architect, Developer, Admin, User
 exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '725'
-ht-degree: 100%
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ La maggior parte dei siti richiede che un piè di pagina sia presente in tutte l
 
 Analogamente, un componente di navigazione in genere deve essere visualizzato su tutte le pagine. Tuttavia, dovrà riflettere anche il contenuto delle pagine localizzate.
 
-Questo compito diventa semplice utilizzando le funzioni di localizzazione del [componente core Navigazione](/help/components/navigation.md) e del [componente core Frammento esperienza](/help/components/experience-fragment.md), insieme ai [modelli modificabili di AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html). L’esempio potrebbe essere ulteriormente esteso per utilizzare anche il [componente Navigazione lingua](/help/components/language-navigation.md).
+Questo compito diventa semplice utilizzando le funzioni di localizzazione del [componente core Navigazione](/help/components/navigation.md) e del [componente core Frammento esperienza](/help/components/experience-fragment.md), insieme ai [modelli modificabili di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html). L’esempio potrebbe essere ulteriormente esteso per utilizzare anche il [componente Navigazione lingua](/help/components/language-navigation.md).
 
 ## Struttura del contenuto {#content-structure}
 

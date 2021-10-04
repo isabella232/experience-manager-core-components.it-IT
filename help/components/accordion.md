@@ -3,10 +3,10 @@ title: Componente Pannello a soffietto
 description: Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '1067'
-ht-degree: 100%
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 98%
 
 ---
 
@@ -28,11 +28,11 @@ I componenti Pannello a soffietto e [Schede](tabs.md) supportano il collegamento
 
 Per effettuare questo collegamento:
 
-1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
+1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
 1. Esamina il contenuto della pagina e identifica l’ID del pannello.
-   * Esempio: `id="accordion-86196c94d3-item-ca319dbb0b"`
+   * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
-   * Esempio: `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
+   * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
 
@@ -120,7 +120,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi al Pannello a soffietto dall’autore di contenuto.
 
-La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
 
 ### Scheda Stili {#styles-tab}
 

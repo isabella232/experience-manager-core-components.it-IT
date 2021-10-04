@@ -3,10 +3,10 @@ title: Personalizzazione dei Componenti core
 description: I Componenti core implementano diversi modelli che consentono una facile personalizzazione, dalla semplice assegnazione di uno stile al riutilizzo di funzionalità avanzate.
 role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '1106'
-ht-degree: 100%
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+workflow-type: tm+mt
+source-wordcount: '1100'
+ht-degree: 98%
 
 ---
 
@@ -122,7 +122,7 @@ Ad esempio, osservando il file HTL del componente core Breadcrumb v1: [breadcrum
 .cmp-breadcrumb a {}
 ```
 
-Inoltre, ciascuno dei Componenti core utilizza la [funzionalità Sistema di stili](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/style-system.html) di AEM che consente agli autori di modelli di definire nomi di classi CSS aggiuntivi che possono essere applicati al componente dagli autori delle pagine. Ciò consente di definire per ogni modello un elenco di stili di consentiti e se uno di questi deve essere applicato per impostazione predefinita a tutti i componenti di quel tipo.
+Inoltre, ciascuno dei Componenti core utilizza la [funzionalità Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html) di AEM che consente agli autori di modelli di definire nomi di classi CSS aggiuntivi che possono essere applicati al componente dagli autori delle pagine. Ciò consente di definire per ogni modello un elenco di stili di consentiti e se uno di questi deve essere applicato per impostazione predefinita a tutti i componenti di quel tipo.
 
 ## Compatibilità degli aggiornamenti delle personalizzazioni {#upgrade-compatibility-of-customizations}
 
@@ -132,7 +132,7 @@ Sono possibili tre diversi tipi di aggiornamento:
 * Aggiornamento dei Componenti core a una nuova versione secondaria
 * Aggiornamento dei Componenti core a una versione principale
 
-In genere, l’aggiornamento di AEM a una nuova versione non influisce sui Componenti core o sulle personalizzazioni eseguite, purché le versioni dei componenti supportino anche la nuova versione di AEM a cui viene effettuata la migrazione e le personalizzazioni non utilizzino API che sono state dichiarate [obsolete oppure rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+In genere, l’aggiornamento di AEM a una nuova versione non influisce sui Componenti core o sulle personalizzazioni eseguite, purché le versioni dei componenti supportino anche la nuova versione di AEM a cui viene effettuata la migrazione e le personalizzazioni non utilizzino API che sono state dichiarate [obsolete oppure rimosse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 L’aggiornamento dei Componenti core senza passare a una versione principale più recente non dovrebbe influire sulle personalizzazioni, purché vengano utilizzati i modelli di personalizzazione descritti in questa pagina.
 
@@ -152,7 +152,7 @@ Come per qualsiasi componente AEM, occorre essere consapevoli di alcune situazio
 
 1. **Attenzione alle funzionalità obsolete e rimosse.**
 
-   Quando ti aggiorni a nuova versione di AEM, accertati che tutte le API utilizzate siano ancora attuali visitando la pagina [Funzioni obsolete e rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+   Quando ti aggiorni a nuova versione di AEM, accertati che tutte le API utilizzate siano ancora attuali visitando la pagina [Funzioni obsolete e rimosse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Vedi anche la sezione [Supporto dei componenti core](overview.md#core-component-support).
 

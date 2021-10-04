@@ -3,10 +3,10 @@ title: Sviluppo di Componenti core
 description: I Componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, markup snello ed esportazione JSON di contenuto.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '1591'
-ht-degree: 100%
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+workflow-type: tm+mt
+source-wordcount: '1583'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Per informazioni dettagliate sulle loro funzionalità di authoring e sulle opzio
 | **Funzionalità** | **Componente core** | **Componente di base** |
 |-----|---|---|
 | Implementazione logica | Java POJO con annotazioni di [modelli Sling](https://sling.apache.org/documentation/bundles/models.html) | Codice JSP |
-| Definizione del markup | Sintassi di [HTML Template Language](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html) (HTL) | Codice JSP |
+| Definizione del markup | Sintassi di [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) (HTL) | Codice JSP |
 | Bonifica XSS | Automatizzata tramite HTL | Principalmente manuale |
 | Denominazione delle classi CSS | Convenzione di denominazione standardizzata basata sulla notazione [Block Element Modifier](https://getbem.com/) (BEM) (a partire dalla versione 2.0.0) | Schemi personalizzati |
 | Definizione della finestra di dialogo | [Coral 3](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Interfaccia utente classica |
@@ -103,7 +103,7 @@ Per informazioni dettagliate sulle loro funzionalità di authoring e sulle opzio
 | Distribuzione | [Tramite GitHub pubblico](https://github.com/adobe/aem-core-wcm-components) | Tramite Quickstart |
 | Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) | Proprietaria di Adobe |
 | Contributo | Tramite richiesta pull | Impossibile |
-| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Elenco dei componenti {#component-list}
 
@@ -149,6 +149,6 @@ Per una panoramica della roadmap dei Componenti core in arrivo, vedi [wiki del p
 
 Uno dei vantaggi dei componenti con versione è la possibilità di separare la migrazione a una nuova versione di AEM dalla migrazione a nuove versioni dei componenti. Inoltre, se sono disponibili nuove versioni dei componenti, consente la migrazione individuale di ciascun componente alla nuova versione.
 
-Le migrazioni a una nuova versione di AEM non influiscono sul funzionamento dei Componenti core, purché le loro versioni supportino anche la nuova versione di AEM a cui si migra. Neppure le personalizzazioni apportate ai Componenti core vengono influenzate, a condizione che non utilizzino API [obsolete o rimosse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Le migrazioni a una nuova versione di AEM non influiscono sul funzionamento dei Componenti core, purché le loro versioni supportino anche la nuova versione di AEM a cui si migra. Neppure le personalizzazioni apportate ai Componenti core vengono influenzate, a condizione che non utilizzino API [obsolete o rimosse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Le migrazioni a nuove versioni dei Componenti core non influiscono neppure sulla modalità di funzionamento del componente. Tuttavia, gli autori delle pagine potrebbero avere a disposizione nuove funzioni che potrebbero richiedere un aggiustamento della configurazione tramite un editor di modelli, nel caso in cui il comportamento predefinito non fosse quello desiderato. Inoltre, potrebbe essere necessario adattare le personalizzazioni. Per ulteriori dettagli, visita la pagina [Personalizzazione dei Componenti core](customizing.md#upgrade-compatibility-of-customizations).

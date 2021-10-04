@@ -3,10 +3,10 @@ title: Componente Contenitore
 description: Il componente core Contenitore consente la creazione di un contenitore per più componenti aggiuntivi su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '792'
-ht-degree: 100%
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
 
 * **Layout**: questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore.
    * **Semplice**: definisce un contenitore come una semplice raccolta di componenti
-   * **Griglia reattiva**: definisce un contenitore come un [layout reattivo AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
+   * **Griglia reattiva**: definisce un contenitore come un [layout reattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
 * **Colore sfondo**: definibile utilizzando i valori RGB in forma libera o utilizzando il selettore colore, [a seconda della configurazione](#background-tab)
 * **Immagine di sfondo**: definisce il colore di sfondo del Contenitore, [a seconda della configurazione](#background-tab)
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
@@ -67,11 +67,11 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti dall’autore di contenuto come elementi del componente Contenitore.
 
-La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Scheda Componenti standard {#default-components-tab}
 
-La scheda Componenti standard consente di definire quale componente viene aggiunto al componente Contenitore quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html).
+La scheda Componenti standard consente di definire quale componente viene aggiunto al componente Contenitore quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 ### Scheda Impostazioni reattive {#responsive-settings-tab}
 

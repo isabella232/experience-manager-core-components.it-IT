@@ -5,10 +5,10 @@ type: Documentation
 description: Documentazione per i componenti core di Adobe Experience Manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.it-IT
 index: y
-source-git-commit: 3897e37ed1e24c4a045b7f6cc716b5cabdd7cf9f
+source-git-commit: 2fbf593dee19f22b87a0f7e98d8a1f0c9252e7e7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 81%
 
 ---
 
@@ -48,4 +48,4 @@ Articolo
 * `description`
 * `index: n` (solo per le versioni precedenti dei componenti)
 
-Ulteriori informazioni sui metadati sono disponibili nella [guida all’authoring interno.](https://docs.adobe.com/help/it/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
+Ulteriori informazioni sui metadati sono disponibili nella [guida all’authoring interno.](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html#solution)

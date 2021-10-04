@@ -3,10 +3,10 @@ title: Componente Teaser
 description: Il componente Teaser può mostrare un’immagine, un titolo, un testo RTF e opzionalmente un collegamento ad altro contenuto.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '775'
-ht-degree: 100%
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 98%
 
 ---
 
@@ -49,9 +49,9 @@ L’autore di contenuto può utilizzare la finestra di dialogo per configurazion
 ![Scheda Immagine della finestra di dialogo per modifica del componente Teaser](/help/assets/teaser-edit-image.png)
 
 * **Risorsa immagine**
-   * Rilascia una risorsa dal [browser di risorse](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
+   * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
+   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) nell’editor risorse.
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: Componente Testo
 description: Il componente Testo è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '2213'
-ht-degree: 100%
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+workflow-type: tm+mt
+source-wordcount: '2205'
+ht-degree: 98%
 
 ---
 
@@ -45,13 +45,13 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Il componente Testo e l’editor RTF {#the-text-component-and-the-rich-text-editor}
 
-Il componente core Testo utilizza l’editor RTF di AEM. L’editor RTF offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor RTF è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor RTF sono disponibili negli articoli [Configurazione dell’editor RTF](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurazione dei plug-in dell’editor RTF](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Il componente core Testo utilizza l’editor RTF di AEM. L’editor RTF offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor RTF è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor RTF sono disponibili negli articoli [Configurazione dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 Il resto di questo articolo illustra la configurazione standard del componente core Testo con la configurazione standard dell’editor RTF.
 
 >[!NOTE]
 >
->Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+>Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -258,7 +258,7 @@ Consente di inserire una tabella nel testo. Selezionando questa opzione si apre 
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ### Caratteri speciali {#special-characters}
 

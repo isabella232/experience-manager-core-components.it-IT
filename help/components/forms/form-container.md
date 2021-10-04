@@ -3,10 +3,10 @@ title: Componente Contenitore modulo
 description: Il componente core Contenitore modulo consente la creazione di semplici moduli per l’invio.
 role: Architect, Developer, Admin, User
 exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '956'
-ht-degree: 100%
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+workflow-type: tm+mt
+source-wordcount: '950'
+ht-degree: 97%
 
 ---
 
@@ -18,11 +18,11 @@ Il componente core Contenitore modulo consente la creazione di semplici moduli p
 
 Il componente Contenitore modulo consente di creare semplici moduli e funzioni per l’invio di informazioni, mediante il supporto di semplici moduli WCM e l’utilizzo di una struttura nidificata per consentire l’aggiunta di altri componenti Modulo.
 
-Utilizzando la [finestra di dialogo per configurazione](#configure-dialog) l’editor di contenuto può definire l’azione attivata dall’invio del modulo, l’URL che deve gestire l’invio e se deve essere attivato un flusso di lavoro. L’autore del modello può utilizzare la [finestra di dialogo per progettazione](#design-dialog) per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Utilizzando la [finestra di dialogo per configurazione](#configure-dialog) l’editor di contenuto può definire l’azione attivata dall’invio del modulo, l’URL che deve gestire l’invio e se deve essere attivato un flusso di lavoro. L’autore del modello può utilizzare la [finestra di dialogo per progettazione](#design-dialog) per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
->Il componente core Contenitore modulo supporta solo l’utilizzo di altri componenti core Modulo (pulsante, testo, nascosto, ecc.). Non è supportato l’utilizzo di [componenti Modulo di base](https://docs.adobe.com/content/help/it-IT/experience-manager-65/authoring/siteandpage/default-components-foundation.html) all’interno del componente core Contenitore modulo (e viceversa).
+>Il componente core Contenitore modulo supporta solo l’utilizzo di altri componenti core Modulo (pulsante, testo, nascosto, ecc.). Non è supportato l’utilizzo di [componenti Modulo di base](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) all’interno del componente core Contenitore modulo (e viceversa).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -71,7 +71,7 @@ Quando il modulo viene inviato, il tipo di azione Pubblica dati modulo trasmette
 >[!TIP]
 >Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l’elaborazione dei dati del modulo inviati. [Per ulteriori informazioni, vedi la documentazione tecnica su GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
-### Mail {#mail}
+### Posta {#mail}
 
 Quando il modulo viene inviato, il tipo di azione Mail invierà un messaggio e-mail ai destinatari designati.
 
@@ -119,7 +119,7 @@ Indipendentemente dal tipo di azione selezionato, è sempre possibile definire u
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-L’autore del modello può utilizzare la finestra di dialogo per progettazione per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html).
+L’autore del modello può utilizzare la finestra di dialogo per progettazione per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 ### Scheda Stili {#styles-tab}
 

@@ -4,10 +4,10 @@ description: Istruzioni d’uso dettagliate per Archetipo progetto AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
-source-git-commit: 69be45e2aa80753789fa19b12374b8e15eb6a394
+source-git-commit: 017790c5a0e53ba6203a5c3d5ddebcce9c00cb01
 workflow-type: tm+mt
-source-wordcount: '2209'
-ht-degree: 96%
+source-wordcount: '2193'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Naturalmente, ci sono molti elementi che entrano in un progetto di AEM riuscito,
 
 L’archetipo del progetto rende facile iniziare a sviluppare in AEM. Puoi iniziare in diversi modi.
 
-* Esercitazione WKND: per un’ottima introduzione allo sviluppo in AEM, incluso il modo di utilizzare l’archetipo, vedi la [Guida introduttiva ai AEM Sites: esercitazione WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) per un esempio pratico che illustra come utilizzare l’archetipo per implementare un semplice progetto.
+* Esercitazione WKND: per un’ottima introduzione allo sviluppo in AEM, incluso il modo di utilizzare l’archetipo, vedi la [Guida introduttiva ai AEM Sites: esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) per un esempio pratico che illustra come utilizzare l’archetipo per implementare un semplice progetto.
 * Esercitazione eventi WKND: se sei particolarmente interessato allo sviluppo di applicazioni a pagina singola (SPA) in AEM, vedi [l’esercitazione sugli eventi WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it) dedicata.
 * Scarica e inizia da solo! - Puoi scaricare facilmente l’archetipo del progetto corrente disponibile su GitHub e creare il tuo primo progetto [seguendo i semplici passaggi descritti di seguito](#how-to-use-the-archetype).
 
@@ -75,7 +75,7 @@ mvn -B archetype:generate \
 ```
 
 * Imposta `XX` sul [numero di versione](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) del più recente Archetipo progetto AEM.
-* Imposta `aemVersion=cloud` per [AEM as a Cloud Service](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/landing/home.html);\
+* Imposta `aemVersion=cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
    Imposta `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise.
 La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non cloud, in quanto i Componenti core vengono forniti come OOTB per AEM as a Cloud
 Service.
@@ -102,10 +102,10 @@ Quando crei un progetto utilizzando l’archetipo, sono disponibili le seguenti 
 | `groupId` |  | ID gruppo Maven di base (ad esempio, `"com.mysite"`). |
 | `package` | *`${groupId}`* | Pacchetto sorgente Java (ad esempio, `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Versione del progetto (ad esempio, `1.0-SNAPSHOT`). |
-| `aemVersion` | `cloud` | Versione AEM di destinazione (può essere `cloud` per [AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html); `6.5.0` o `6.4.4` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise). |
-| `sdkVersion` | `latest` | Con `aemVersion=cloud` è possibile specificare una versione del [Software Development Kit (SDK)](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) (ad esempio, `2020.02.2265.20200217T222518Z-200130`). |
+| `aemVersion` | `cloud` | Versione AEM di destinazione (può essere `cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); `6.5.0` o `6.4.4` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise). |
+| `sdkVersion` | `latest` | Con `aemVersion=cloud` è possibile specificare una versione del [Software Development Kit (SDK)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) (ad esempio, `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Include una configurazione di Dispatcher sia per il cloud che per AMS/on-premise, a seconda del valore di `aemVersion` (può essere `y` o `n`). |
-| `frontendModule` | `general` | Include un modulo di sviluppo front-end di Webpack che genera le librerie client (può essere `general` o `none` per i siti normali; può essere `angular` o `react` per una SPA (Single Page App) che implementa l’[editor di SPA](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
+| `frontendModule` | `general` | Include un modulo di sviluppo front-end di Webpack che genera le librerie client (può essere `general` o `none` per i siti normali; può essere `angular` o `react` per una SPA (Single Page App) che implementa l’[editor di SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
 | `language` | `en` | Codice lingua (ISO 639-1) dal quale creare la struttura del contenuto (ad esempio, `en`, `deu`). |
 | `country` | `us` | Codice paese (ISO 3166-1) dal quale creare la struttura del contenuto (ad esempio, `US`). |
 | `singleCountry` | `y` | Include una struttura di contenuto language-master (può essere `y` o `n`). |
@@ -199,7 +199,7 @@ La sezione `<dependencyManagement>` del POM padre definisce tutte le dipendenze 
 
 #### Uber-Jar {#uber-jar}
 
-Una delle dipendenze chiave è [AEM uber-jar](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/devtools/ht-projects-maven.html#ExperienceManagerAPIDependencies). Ciò includerà tutte le API di AEM in sola dipendenza per la versione di AEM.
+Una delle dipendenze chiave è il [AEM Java API Jar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html). Ciò includerà tutte le API di AEM in sola dipendenza per la versione di AEM.
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Una delle dipendenze chiave è [AEM uber-jar](https://docs.adobe.com/content/hel
 
 L’Archetipo progetto AEM, ovviamente, utilizza i Componenti core.
 
-I Componenti core vengono automaticamente installati in AEM nella modalità di esecuzione predefinita e vengono utilizzati dall’esempio di sito WKND. In [modalità di esecuzione per la produzione](https://docs.adobe.com/content/help/it-IT/experience-manager-65/administering/security/production-ready.html) (`nosamplecontent`) i Componenti core non sono disponibili.
+I Componenti core vengono automaticamente installati in AEM nella modalità di esecuzione predefinita e vengono utilizzati dall’esempio di sito WKND. In [modalità di esecuzione per la produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes) (`nosamplecontent`) i Componenti core non sono disponibili.
 
 Pertanto, per utilizzare i Componenti core in tutte le implementazioni, è consigliabile includerli come parte del progetto Maven.
 
@@ -233,7 +233,7 @@ Il progetto contiene tre livelli di test e, poiché esistono diversi tipi di tes
    * `mvn clean verify -PintegrationTests`
 * Test di Hobbes.js lato client: si tratta di test lato browser basati su JavaScript per verificare il comportamento del browser. Per effettuare il test:
    1. Carica AEM nel browser come quando crei una pagina.
-   1. Apri la pagina in modalità [Sviluppatore](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/components/developer-mode.html)
+   1. Apri la pagina in modalità [Sviluppatore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/developer-mode.html)
    1. Apri il pannello a sinistra e passa alla scheda **Test**.
    1. Trova i **Test MyName** generati ed eseguili.
 
@@ -242,6 +242,6 @@ Il progetto contiene tre livelli di test e, poiché esistono diversi tipi di tes
 In questo modo, hai sviluppato e installato Archetipo progetto AEM. E adesso? Bene, l’archetipo è piccolo, ma è costituito da molti esempi di efficienti funzioni AEM configurate in base alle best practice consigliate. Utilizzali come indicatori di come sfruttare queste funzioni nel progetto. Per qualsiasi progetto è probabilmente necessario:
 
 * [Personalizzare i componenti estendendo i Componenti core esistenti](/help/developing/customizing.md)
-* [Aggiungere altri modelli](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/authoring/features/templates.html)
-* [Adattare la struttura di localizzazione](https://docs.adobe.com/content/help/it-IT/experience-manager-65/administering/introduction/tc-prep.html)
+* [Aggiungere altri modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+* [Adattare la struttura di localizzazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html)
 * [Informazioni sul modulo di sviluppo front-end](uifrontend.md)
