@@ -1,23 +1,22 @@
 ---
 source-git-commit: d1ab5eb1b3de07ccdf095b03f7c2e760dfc3d413
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
 source-wordcount: '151'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
-# Documentazione sui componenti di base di Adobe Experience Manager
+# Documentazione dei Componenti core di Adobe Experience Manager
 
-## Documentazione di Core Components
+## Documentazione dei Componenti core
 
-Questo è il repository per i componenti core di Adobe Experience Manager ***documentazione***. Questa documentazione descrive l’installazione, l’utilizzo dell’authoring e come personalizzare i componenti core.
+Questo è l’archivio della ***documentazione*** dei Componenti core di Adobe Experience Manager. Questa documentazione descrive come installare, utilizzare a scopo di authoring e personalizzare i Componenti core.
 
-I vostri contributi alla documentazione sono i benvenuti. Consulta le risorse seguenti:
+Saremo lieti di accogliere anche il contributo alla documentazione. Consulta le risorse seguenti:
 
-* [contribute.](contributing.md) mdPer una panoramica di come contribuire alla documentazione.
-* [guidelines.](guidelines.md) mdPer una panoramica di quanto ci si aspetta dai contributi e come comporre i contributi della documentazione.
-* [code-of-Conduct.](code-of-conduct.md) mdPer una panoramica degli standard di comportamento che ci aspettiamo nel corso del progetto di documentazione.
+* [contributing.md](contributing.md): panoramica su come contribuire alla documentazione.
+* [guidelines.md](guidelines.md): panoramica su cosa includere nei contributi e come comporre i contributi alla documentazione.
+* [code-of-conduct.md](code-of-conduct.md): panoramica degli standard di comportamento a cui dovrà attenersi chi partecipa al progetto di documentazione.
 
-## Repository dei componenti core
+## Archivio dei Componenti core
 
-Gli [componenti core Adobe Experience Manager](https://github.com/adobe/aem-core-wcm-components) stessi vengono mantenuti come un progetto in un archivio separato. Se necessiti di documentazione tecnica/sviluppatore sui componenti, se desideri contribuire ai componenti stessi o se devi segnalare un problema con le funzionalità o le caratteristiche dei componenti core, consulta il progetto.
+I [Componenti core di Adobe Experience Manager](https://github.com/adobe/aem-core-wcm-components) stessi vengono mantenuti come un progetto in un archivio separato. Consulta tale progetto se hai bisogno di documentazione tecnica/per sviluppatori sui componenti, se desideri contribuire ai componenti stessi o se vuoi segnalare un problema relativo alle funzionalità dei Componenti core.
