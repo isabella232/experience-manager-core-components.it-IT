@@ -62,7 +62,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
          * **Valore**: valore salvato quando l’opzione viene selezionata al momento dell’invio del modulo
          * **Testo**: l’etichetta dell’opzione visualizzata sul modulo
          * **Attiva**: l’opzione viene contrassegnata come selezionata al caricamento del modulo
-         * **Disabilitata**: l’opzione non è selezionabile ma è ancora visualizzata
+         * **Disattivato**: l’opzione non è selezionabile ma è ancora visualizzata
    * **Elenco**: per le opzioni viene utilizzato un elenco statico definito altrove in AEM
       * **Elenco**: il percorso dell’elenco statico in AEM
          * Utilizza il pulsante Sfoglia per individuare la risorsa elenco
