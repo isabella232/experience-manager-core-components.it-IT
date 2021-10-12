@@ -1,12 +1,12 @@
 ---
 title: Modulo ui.apps di Archetipo progetto AEM
 description: Modulo ui.apps di Archetipo progetto AEM
-feature: Componenti core, Archetipo progetto AEM
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: fc63a19a-3253-44ee-96e2-bb5544c2235b
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: ht
-source-wordcount: '340'
+source-wordcount: '335'
 ht-degree: 100%
 
 ---
