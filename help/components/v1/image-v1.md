@@ -143,7 +143,7 @@ La finestra di dialogo per modifica consente all’autore di contenuto di ritagl
       * Utilizza l’opzione Selettore percorso per selezionare un percorso in AEM
       * Se il percorso non è in AEM, utilizza l’URL assoluto. I percorsi non assoluti vengono interpretati come relativi ad AEM.
 
-      * **Testo alt.**
+      * **Testo alt**
 Descrizione alternativa della destinazione del percorso
       * **Destinazione**
          * **Stessa scheda**
