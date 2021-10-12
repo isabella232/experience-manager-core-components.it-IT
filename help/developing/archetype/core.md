@@ -1,12 +1,12 @@
 ---
 title: Modulo core Archetipo progetto AEM
 description: Modulo core Archetipo progetto AEM
-feature: Componenti core, Archetipo progetto AEM
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 49e80d8c-2b41-4c42-b45e-c2e3b4b16a59
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: ht
-source-wordcount: '187'
+source-wordcount: '182'
 ht-degree: 100%
 
 ---
