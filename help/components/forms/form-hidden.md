@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Componente Campo nascosto modulo{#form-hidden-component}
+# Componente Campo nascosto modulo {#form-hidden-component}
 
 Il componente core Campo nascosto modulo consente la visualizzazione di un campo nascosto di un modulo.
 
