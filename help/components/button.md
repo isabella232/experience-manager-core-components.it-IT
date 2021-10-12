@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Componente Pulsante{#button-component}
+# Componente Pulsante {#button-component}
 
 Il componente core Pulsante consente di configurare e visualizzare un pulsante su una pagina.
 
