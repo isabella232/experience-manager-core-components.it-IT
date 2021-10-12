@@ -1,12 +1,12 @@
 ---
 title: Sviluppo front-end per SPA Angular
 description: Una descrizione del processo di sviluppo front-end per i progetti SPA basati su Angular
-feature: Componenti core, Archetipo Progetto AEM
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 5726e29d-081c-42bb-bf4e-2852043b21d6
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: ht
-source-wordcount: '409'
+source-wordcount: '404'
 ht-degree: 100%
 
 ---
