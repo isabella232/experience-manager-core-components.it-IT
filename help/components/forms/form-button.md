@@ -16,7 +16,7 @@ Il componente core Pulsante modulo consente di includere un pulsante per attivar
 
 ## Utilizzo {#usage}
 
-Il componente core Pulsante modulo consente la creazione di un campo pulsante, spesso per attivare l’invio del modulo, che deve essere utilizzato insieme al [componente Contenitore modulo](form-container.md).
+Il componente core Pulsante modulo consente la creazione di un campo pulsante, spesso per attivare l’invio del modulo, che deve essere utilizzato insieme al componente [Contenitore modulo](form-container.md).
 
 Le proprietà del pulsante possono essere definite tramite l’editor di contenuto nella [finestra di dialogo per configurazione](#configure-dialog).
 
