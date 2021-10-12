@@ -97,8 +97,8 @@ La finestra di dialogo per modifica consente all’autore di contenuto di elimin
    * 1 inizia da `/content/we-retail`
    * 2 inizia da `/content/we-retail/<country>`
 
-* **Mostra elementi di navigazione nascosti**: visualizza le pagine contrassegnate come nascoste nel breadcrumb (per impostazione predefinita non vengono visualizzate)
-* **Nascondi pagina corrente**: consente di eliminare la pagina corrente nella breadcrumb (per impostazione predefinita viene visualizzata)
+* **Mostra nascosti**: visualizza le pagine contrassegnate come nascoste nel breadcrumb (per impostazione predefinita non vengono visualizzate)
+* **Nascondi corrente**: consente di eliminare la pagina corrente nella breadcrumb (per impostazione predefinita viene visualizzata)
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
@@ -107,11 +107,11 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 ![](/help/assets/chlimage_1-35.png)
 
 * **Livello di navigazione iniziale**: definisce il valore predefinito per il punto nella gerarchia da cui il componente Breadcrumb deve iniziare a scendere fino alla pagina corrente, quando il componente Breadcrumb viene aggiunto a una pagina.
-* **Mostra elementi di navigazione nascosti**: definisce il valore predefinito dell’opzione **Mostra elementi di navigazione nascosti** quando il componente Breadcrumb viene aggiunto a una pagina.
+* **Mostra nascosti**: definisce il valore predefinito dell’opzione **Mostra nascosti** quando il componente Breadcrumb viene aggiunto a una pagina.
 
    * Non abilita o disabilita l’opzione per l’autore. Imposta solo il valore predefinito.
 
-* **Nascondi pagina corrente**: definisce il valore predefinito dell’opzione **Nascondi pagina corrente** quando il componente Breadcrumb viene aggiunto a una pagina.
+* **Nascondi corrente**: definisce il valore predefinito dell’opzione **Nascondi corrente** quando il componente Breadcrumb viene aggiunto a una pagina.
 
    * Non abilita o disabilita l’opzione per l’autore. Imposta solo il valore predefinito.
 
