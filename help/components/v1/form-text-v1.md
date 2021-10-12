@@ -103,7 +103,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
    * **Testo**
    * **Area testo**
    * **E-mail**
-   * **Tel.**
+   * **Tel**
    * **Data**
    * **Numero**
    * **Password**
@@ -112,7 +112,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
 
 * **Etichetta**: l’etichetta che verrà visualizzata per il campo
 * **Nascondi l’etichetta**: opzione necessaria se l’etichetta serve solo per scopi di accessibilità e non fornisce alcuna informazione visiva aggiuntiva relativa al campo
-* **Nome**: il nome del campo che viene inviato con i dati del modulo
+* **Nome elemento**: il nome del campo che viene inviato con i dati del modulo
 * **Valore**: il valore predefinito inserito automaticamente nel campo
 
 ### Informazioni su {#about}
