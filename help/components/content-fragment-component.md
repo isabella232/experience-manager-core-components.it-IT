@@ -10,7 +10,7 @@ ht-degree: 96%
 
 ---
 
-# Componente Frammento di contenuto{#content-fragment-component}
+# Componente Frammento di contenuto {#content-fragment-component}
 
 Il componente core Frammento di contenuto consente la visualizzazione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
@@ -77,7 +77,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
    * **Elemento di testo singolo**: consente la selezione di un elemento di testo su più righe e abilita le opzioni di controllo del paragrafo
    * **Più elementi**: consente di selezionare uno o più elementi del Frammento di contenuto selezionato
 * **Elemento**: l’elemento o gli elementi del Frammento di contenuto da includere
-* **Variante**: la variante del Frammento di contenuto da utilizzare (l’impostazione predefinita è **Master**)
+* **Variante**: la variante del Frammento di contenuto da utilizzare (l’impostazione predefinita è **Principale**)
 
 * **Paragrafi**
 

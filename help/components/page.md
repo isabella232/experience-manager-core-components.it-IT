@@ -10,7 +10,7 @@ ht-degree: 97%
 
 ---
 
-# Componente Pagina{#page-component}
+# Componente Pagina {#page-component}
 
 Il componente Pagina è una pagina estensibile concepita per funzionare con l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 
@@ -62,7 +62,7 @@ Poiché il componente rappresenta l’intera pagina, la finestra di dialogo per 
 La finestra per progettazione della pagina consente di definire le librerie client da caricare e la libreria di risorse web della pagina.
 
 * **Librerie client**: definisce le categorie di librerie client da caricare. JavaScript viene aggiunto alla fine del corpo della pagina e CSS viene aggiunto all’intestazione della pagina.
-* **Intestazione pagina JavaScript per le librerie client**: definisce le categorie di librerie client JavaScript da caricare nell’intestazione della pagina.
+* **Intestazione pagina JavaScript per librerie client**: definisce le categorie di librerie client JavaScript da caricare nell’intestazione della pagina.
    * Le categorie definite in questo campo che sono presenti anche nel campo **Librerie client** avranno JavaScript caricato nell’intestazione invece che alla fine del corpo della pagina.
    * Non verrà caricato alcun CSS, a meno che la categoria non sia presente anche nel campo **Librerie client**.
 

@@ -45,9 +45,9 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Il componente Testo e l’editor RTF {#the-text-component-and-the-rich-text-editor}
 
-Il componente core Testo utilizza l’editor RTF di AEM. L’editor RTF offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor RTF è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor RTF sono disponibili negli articoli [Configurazione dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Il componente core Testo utilizza l’editor Rich Text di AEM. L’editor Rich Text offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor Rich Text è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurazione dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurazione dei plug-in dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
-Il resto di questo articolo illustra la configurazione standard del componente core Testo con la configurazione standard dell’editor RTF.
+Il resto di questo articolo illustra la configurazione standard del componente core Testo con la configurazione standard dell’editor Rich Text.
 
 >[!NOTE]
 >

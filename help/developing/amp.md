@@ -46,16 +46,16 @@ Per abilitare AMP per una pagina, è necessario selezionare la **Modalità AMP**
 ![Opzioni di Criterio pagina AMP](/help/assets/amp-policy.png)
 
 * **Nessun AMP**: la pagina viene distribuita solo come HTML standard.
-* **AMP abbinato**: la pagina viene distribuita sia come AMP che come HTML.
+* **AMP associata**: la pagina viene distribuita sia come AMP che come HTML.
 * **Solo AMP**: la pagina viene distribuita solo come AMP.
 
 Le impostazioni AMP per una pagina possono anche essere ignorate in [Proprietà pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) per una singola pagina.
 
 ![Proprietà pagina AMP](/help/assets/amp-page-properties.png)
 
-* **Eredita da modello pagina**: questo è il valore predefinito che consente di prendere l’impostazione dal criterio del modello della pagina.
+* **Eredita dal modello della pagina**: questo è il valore predefinito che consente di prendere l’impostazione dal criterio del modello della pagina.
 * **Nessun AMP**: la pagina viene distribuita solo come HTML standard.
-* **AMP abbinato**: la pagina viene distribuita sia come AMP che come HTML.
+* **AMP associata**: la pagina viene distribuita sia come AMP che come HTML.
 * **Solo AMP**: la pagina viene distribuita solo come AMP.
 
 ### Requisiti CSS {#css-requirements}

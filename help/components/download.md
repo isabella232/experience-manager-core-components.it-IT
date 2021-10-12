@@ -1,5 +1,5 @@
 ---
-title: Componente Scarica
+title: 'Componente Scarica '
 description: Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
@@ -10,7 +10,7 @@ ht-degree: 97%
 
 ---
 
-# Componente Scarica{#download-component}
+# Componente Scarica {#download-component}
 
 Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 

@@ -1,5 +1,5 @@
 ---
-title: Componente Condivisione
+title: 'Componente Condivisione '
 description: Il componente core Condivisione è un widget per la condivisione su Facebook e Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
@@ -10,7 +10,7 @@ ht-degree: 92%
 
 ---
 
-# Componente Condivisione{#social-sharing-component}
+# Componente Condivisione {#social-sharing-component}
 
 Il componente core Condivisione è un widget per la condivisione su Facebook e Pinterest.
 

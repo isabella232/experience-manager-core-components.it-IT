@@ -18,7 +18,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 
 ## Riferimenti {#resources}
 
-* **[Libreria dei componenti:](https://www.adobe.com/go/aem_cmp_library)** una raccolta di esempi per visualizzare i componenti nelle loro varie configurazioni.
+* **[Libreria dei componenti:](https://www.adobe.com/go/aem_cmp_library_it)** una raccolta di esempi per visualizzare i componenti nelle loro varie configurazioni.
 * **Documentazione del componente (questo documento):** per sviluppatori e autori, con dettagli su ciascun componente.
 * **[Archivio GitHub dei Componenti core:](https://github.com/adobe/aem-core-wcm-components)** informazioni su ciascun componente e sul download del progetto, per gli sviluppatori.
 * Introduzione:
