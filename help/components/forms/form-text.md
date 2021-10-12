@@ -10,13 +10,13 @@ ht-degree: 100%
 
 ---
 
-# Componente Testo Modulo{#form-text-component}
+# Componente Testo Modulo {#form-text-component}
 
 Il componente core Testo modulo consente l’inserimento di testo del modulo per l’invio.
 
 ## Utilizzo {#usage}
 
-Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al [componente Contenitore modulo](form-container.md). Il tipo di convalida del testo, le etichette e i messaggi di aiuto possono essere definiti dall’editor di contenuto nella [finestra di dialogo per configurazione](#configure-dialog).
+Il componente Testo modulo consente l’invio di diversi tipi di testo e deve essere utilizzato insieme al componente [Contenitore modulo](form-container.md). Il tipo di convalida del testo, le etichette e i messaggi di aiuto possono essere definiti dall’editor di contenuto nella [finestra di dialogo per configurazione](#configure-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -53,14 +53,14 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
    * **Testo**
    * **Area testo**
    * **E-mail**
-   * **Tel.**
+   * **Tel**
    * **Data**
    * **Numero**
    * **Password**
 * **Righe di testo**: numero di righe da visualizzare nell’area di testo (solo se l’opzione **Vincolo** Limite è impostata su **Area testo**)
 * **Etichetta**: l’etichetta che verrà visualizzata per il campo
 * **Nascondi l’etichetta**: opzione necessaria se l’etichetta serve solo per scopi di accessibilità e non fornisce alcuna informazione visiva aggiuntiva relativa al campo
-* **Nome**: il nome del campo che viene inviato con i dati del modulo
+* **Nome elemento**: il nome del campo che viene inviato con i dati del modulo
 * **Valore**: il valore predefinito inserito automaticamente nel campo
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
