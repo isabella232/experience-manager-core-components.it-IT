@@ -4,15 +4,15 @@ description: Il componente Pagina è una pagina estensibile concepita per funzio
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
 source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Componente Pagina {#page-component}
 
-Il componente Pagina è una pagina estensibile concepita per funzionare con l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
+Il componente Pagina è una pagina estensibile concepita per funzionare con l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 
 ## Utilizzo {#usage}
 
@@ -22,7 +22,7 @@ Nella [finestra di dialogo per progettazione](#design-dialog) è possibile defin
 
 ## Supporto di Progressive Web App {#pwa-support}
 
-La versione 2.15.0 dei Componenti core ha introdotto il supporto delle [funzionalità di Progressive Web App (PWA) integrato in AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html)Con una semplice configurazione a livello di sito, puoi trasformare la tua esperienza AEM in un’esperienza PWA.
+La versione 2.15.0 dei Componenti core ha introdotto il supporto delle [funzionalità di Progressive Web App (PWA) integrato in AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html?lang=it)Con una semplice configurazione a livello di sito, puoi trasformare la tua esperienza AEM in un’esperienza PWA.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -45,7 +45,7 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
-Poiché il componente rappresenta l’intera pagina, le impostazioni normalmente presenti in una finestra di dialogo per modifica si trovano invece nella finestra [Proprietà della pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Poiché il componente rappresenta l’intera pagina, le impostazioni normalmente presenti in una finestra di dialogo per modifica si trovano invece nella finestra [Proprietà della pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=it).
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
