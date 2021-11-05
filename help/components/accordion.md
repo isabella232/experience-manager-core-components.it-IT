@@ -4,9 +4,9 @@ description: Il componente core Pannello a soffietto consente di creare una racc
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ I componenti Pannello a soffietto e [Schede](tabs.md) supportano il collegamento
 
 Per effettuare questo collegamento:
 
-1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** nell’editor di pagine.
+1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** nell’editor di pagine.
 1. Esamina il contenuto della pagina e identifica l’ID del pannello.
    * Esempio `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
@@ -120,7 +120,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti come elementi al Pannello a soffietto dall’autore di contenuto.
 
-La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it#editing-a-template-layout-template-author)
 
 ### Scheda Stili {#styles-tab}
 
