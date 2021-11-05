@@ -4,9 +4,9 @@ description: '“Per iniziare a utilizzare i Componenti core nel tuo progetto, s
 role: Architect, Developer, Admin, User
 exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '969'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Per iniziare a utilizzare i Componenti core nel tuo progetto, segui i quattro pa
 >[!TIP]
 >
 >Per istruzioni più ampie su come iniziare da zero con la configurazione del progetto, i Componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti, potrebbe essere interessante la seguente esercitazione in più parti:\
->[Guida introduttiva ai AEM Sites: esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+>[Guida introduttiva ai AEM Sites: esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 
 >[!TIP]
 >
@@ -50,7 +50,7 @@ Alcuni punti da tenere presenti quando utilizzi i Componenti core su AEMaaCS:
 
 I Componenti core non fanno parte dell’avvio rapido, quando si inizia in modalità di produzione (senza esempi di contenuto). Pertanto, il primo passaggio è quello di [scaricare l’ultimo pacchetto dei contenuti rilasciato da GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) e installarlo nei tuoi ambienti AEM.
 
-Esistono diversi modi per automatizzare questo processo, ma il modo più semplice per installare rapidamente un pacchetto dei contenuti su un’istanza è quello di utilizzare Gestione pacchetti; vedi [Installazione di pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). Inoltre, una volta che avrai in esecuzione anche un’istanza Publish, dovrai replicare quel pacchetto nell’editore; vedi [Replica di pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
+Esistono diversi modi per automatizzare questo processo, ma il modo più semplice per installare rapidamente un pacchetto dei contenuti su un’istanza è quello di utilizzare Gestione pacchetti; vedi [Installazione di pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it#installing-packages). Inoltre, una volta che avrai in esecuzione anche un’istanza Publish, dovrai replicare quel pacchetto nell’editore; vedi [Replica di pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it#replicating-packages).
 
 ## Creazione di componenti proxy {#create-proxy-components}
 
@@ -105,7 +105,7 @@ Accertati che i componenti proxy e le librerie client siano stati distribuiti ne
 
 ## Consenti i componenti {#allow-the-components}
 
-I seguenti passaggi vengono eseguiti nell’[Editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+I seguenti passaggi vengono eseguiti nell’[Editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it).
 
 1. Nell’editor di modelli, seleziona il Contenitore di layout e apri il relativo criterio.
 1. Nell’elenco Componenti consentiti, seleziona i componenti proxy creati in precedenza, che devono essere visualizzati sotto il gruppo di componenti ad essi assegnato. Al termine, applica le modifiche.
