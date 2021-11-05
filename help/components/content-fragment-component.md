@@ -4,15 +4,15 @@ description: Il componente core Frammento di contenuto consente la visualizzazio
 role: Architect, Developer, Admin, User
 exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Componente Frammento di contenuto {#content-fragment-component}
 
-Il componente core Frammento di contenuto consente la visualizzazione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Il componente core Frammento di contenuto consente la visualizzazione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it).
 
 >[!NOTE]
 >
@@ -20,11 +20,11 @@ Il componente core Frammento di contenuto consente la visualizzazione di un [fra
 
 ## Utilizzo {#usage}
 
-Il componente core Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
+Il componente core Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it) in una pagina.
 
 * Il frammento e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione](#configure-dialog).
 * I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella [finestra di dialogo per progettazione](#design-dialog).
-* L’opzione Modifica apre il frammento selezionato all’interno dell’[editor di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
+* L’opzione Modifica apre il frammento selezionato all’interno dell’[editor di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=it).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
