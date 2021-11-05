@@ -4,9 +4,9 @@ description: Il componente Incorpora consente di incorporare contenuto esterno i
 role: Architect, Developer, Admin, User
 exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
 source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1337'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ Il markup HTML che l’autore può inserire viene filtrato a scopo di sicurezza 
 
 Tuttavia, le regole sono più complicate, perché il componente Incorpora segue a livello globale il set di regole di filtro del framework di bonifica AntiSamy HTML di AEM, reperibile in `/libs/cq/xssprotection/config.xml`. Se necessario, uno sviluppatore può sostituire temporaneamente questa impostazione per la configurazione specifica di un progetto.
 
-Ulteriori informazioni sulla sicurezza sono disponibili nella [documentazione sulle installazioni on-premise per gli sviluppatori di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) e in [Installazioni di AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
+Ulteriori informazioni sulla sicurezza sono disponibili nella [documentazione sulle installazioni on-premise per gli sviluppatori di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=it) e in [Installazioni di AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=it)
 
 >[!NOTE]
 >Anche se le regole del framework di bonifica AntiSamy possono essere configurate sostituendo temporaneamente `/libs/cq/xssprotection/config.xml`, queste modifiche influiscono sul comportamento di tutti gli elementi HTL e JSP e non solo su quello del componente core Incorpora.
