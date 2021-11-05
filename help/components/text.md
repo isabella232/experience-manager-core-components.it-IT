@@ -4,9 +4,9 @@ description: Il componente Testo è un componente per la modifica e la composizi
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
 source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2205'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,13 +45,13 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Il componente Testo e l’editor RTF {#the-text-component-and-the-rich-text-editor}
 
-Il componente core Testo utilizza l’editor Rich Text di AEM. L’editor Rich Text offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor Rich Text è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurazione dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) e [Configurazione dei plug-in dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Il componente core Testo utilizza l’editor Rich Text di AEM. L’editor Rich Text offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor Rich Text è molto flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurazione dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html?lang=it) e [Configurazione dei plug-in dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 Il resto di questo articolo illustra la configurazione standard del componente core Testo con la configurazione standard dell’editor Rich Text.
 
 >[!NOTE]
 >
->Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+>Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -258,7 +258,7 @@ Consente di inserire una tabella nel testo. Selezionando questa opzione si apre 
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ### Caratteri speciali {#special-characters}
 
