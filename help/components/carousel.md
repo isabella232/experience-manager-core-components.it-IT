@@ -4,9 +4,9 @@ description: Il componente Carosello consente all’autore di contenuto di prese
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1115'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Utilizza il pulsante **Aggiungi** per aprire il selettore di componenti e scegli
 
 >[!TIP]
 >
->Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Carosello [trascinandoli dal browser dei componenti e rilasciandoli sul componente Carosello nell’editor di pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component-from-the-components-browser).
+>Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Carosello [trascinandoli dal browser dei componenti e rilasciandoli sul componente Carosello nell’editor di pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#inserting-a-component-from-the-components-browser).
 
 ### Scheda Proprietà {#properties-tab}
 
@@ -77,9 +77,9 @@ Nella scheda **Proprietà**, l’autore di contenuto può impostare la transizio
 
 >[!NOTE]
 >
->I controlli di avanzamento delle diapositiva non sono attivi in modalità **Modifica**. Utilizza la modalità [**Anteprima** oppure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode) l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con il carosello come farebbe un normale lettore del contenuto pubblicato.
+>I controlli di avanzamento delle diapositiva non sono attivi in modalità **Modifica**. Utilizza la modalità [**Anteprima** oppure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode) l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per interagire con il carosello come farebbe un normale lettore del contenuto pubblicato.
 >
->La funzione di avanzamento automatico non è abilitata in modalità **Modifica**. Utilizza l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per visualizzare la funzione di avanzamento automatico come farebbe un normale lettore del contenuto pubblicato.
+>La funzione di avanzamento automatico non è abilitata in modalità **Modifica**. Utilizza l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per visualizzare la funzione di avanzamento automatico come farebbe un normale lettore del contenuto pubblicato.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -123,7 +123,7 @@ La scheda **Proprietà** viene utilizzata per definire le impostazioni predefini
 
 La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti dall’autore di contenuto come elementi del componente Carosello.
 
-La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda Componenti consentiti funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore layout nell’editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
 
 ### Scheda Stili {#styles-tab}
 
