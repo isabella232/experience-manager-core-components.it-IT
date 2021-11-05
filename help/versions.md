@@ -4,15 +4,15 @@ description: Le versioni dei Componenti core pubblicate possono contenere più d
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 source-git-commit: 35d29c28672f53812de4a348c9f75f6766b2a7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2300'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Versioni dei Componenti core {#core-components-versions}
 
-La versione corrente dei Componenti core è la 2.17.12 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html).
+La versione corrente dei Componenti core è la 2.17.12 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it).
 
 ## Cronologia delle versioni e compatibilità {#release-history-and-compatibility}
 
@@ -26,7 +26,7 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di pubblicazione |
 |---|---|---|---|---|---|---|
-| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una release di patch che risolve una regressione introdotta con la versione precedente. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 1o ottobre 2021 |
+| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una patch che risolve una regressione introdotta con la versione precedente. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 1° ottobre 2021 |
 | [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Questa patch migliora i componenti [Elenco](/help/components/list.md) e [Navigazione](/help/components/navigation.md) in modo da visualizzare l’URL esterno per le destinazioni di reindirizzamento; abilita l’ereditarietà delle immagini di pagina per la prossima v2 del componente [Teaser](/help/components/teaser.md); e contiene alcune correzioni di bug aggiuntivi. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 31 agosto 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Questa versione patch corregge una modifica non compatibile con le versioni precedenti introdotta in precedenza. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 2 agosto 2021 |
 | [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Questa versione patch aggiunge il supporto delle mappe del sito per le pagine e include vari miglioramenti a livello di accessibilità. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 29 luglio 2021 |
@@ -156,4 +156,4 @@ Per informazioni dettagliate sul supporto delle personalizzazioni dei componenti
 
 L’enfasi sullo sviluppo di Adobe si è spostata sui Componenti core e nuove funzioni continueranno a essere aggiunte.
 
-[Quasi tutti i Componenti di base sono stati dichiarati obsoleti con AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) e solo le correzioni di bug principali verranno prese in considerazione per i Componenti di base in futuro.
+[Quasi tutti i Componenti di base sono stati dichiarati obsoleti con AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html?lang=it) e solo le correzioni di bug principali verranno prese in considerazione per i Componenti di base in futuro.
