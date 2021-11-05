@@ -4,9 +4,9 @@ description: 'I Componenti core sono stati introdotti per offrire componenti di 
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 35d29c28672f53812de4a348c9f75f6766b2a7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 * **[Archivio GitHub dei Componenti core:](https://github.com/adobe/aem-core-wcm-components)** informazioni su ciascun componente e sul download del progetto, per gli sviluppatori.
 * Introduzione:
    * **[Utilizzo efficace dei Componenti core:](/help/developing/success.md)** linee guida da tenere bene in mente prima di iniziare qualsiasi progetto che preveda l’utilizzo dei Componenti core.
-   * **[Esercitazione WKND:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** esercitazione di due giorni per la creazione di un nuovo sito.
+   * **[Esercitazione WKND:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)** esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Esercitazione Summit:](https://expleague.azureedge.net/labs/L767/index.html)** un’esercitazione di due ore per la creazione di un nuovo sito (da un laboratorio presso US Summit 2019).
    * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)** visita guidata dei Componenti core (registrata a dicembre 2018).
 
@@ -32,13 +32,13 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 |  |  |
 |---|---|
 | Pronti per la produzione | I Componenti core sono 28 efficienti componenti testati, ampiamente utilizzati e con prestazioni ottimali. |
-| Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
+| Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
 | Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
 | Tracciabili | [L’integrazione con Adobe Client Data Layer](/help/developing/data-layer/overview.md) consente il tracciamento di tutti gli aspetti dell’esperienza del visitatore. |
-| Accessibili | Sono conformi a [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), forniscono etichette ARIA e supportano la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
+| Accessibili | Sono conformi allo [standard WCAG 2.1](https://www.w3.org/TR/WCAG21/), forniscono etichette ARIA e supportano la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-friendly | L’output HTML è semantico e fornisce annotazioni di microdati [schema.org.](https://schema.org) |
-| Pronti per WebApp | [L’output JSON ottimizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) consente il rendering lato client, ma ancora con la possibilità di [modifica nel contesto](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
+| Pronti per WebApp | [L’output JSON ottimizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it) consente il rendering lato client, ma ancora con la possibilità di [modifica nel contesto](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it). |
 | Supporto AMP | I componenti hanno il [supporto integrato per lo standard AMP,](/help/developing/amp.md) per accelerare le tue esperienze mobili. |
 | Kit di progettazione | Un [kit di interfaccia utente per Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) consente ai designer di creare wireframe [personalizzabili in base alle esigenze](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
 | Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/style-system.html) e il markup segue le [convenzioni BEM CSS](http://getbem.com/). |
@@ -94,7 +94,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 >[!NOTE]
 >
->I Componenti core non sono immediatamente disponibili per gli autori; il [team di sviluppo deve prima integrarli nel tuo ambiente](get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+>I Componenti core non sono immediatamente disponibili per gli autori; il [team di sviluppo deve prima integrarli nel tuo ambiente](get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it).
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 Per i requisiti delle precedenti versioni dei Componenti core, vedi [Versioni dei Componenti core](versions.md).
 
-I Componenti core richiedono l’utilizzo di [modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) e non supportano l’interfaccia utente classica né i modelli statici. Se necessario, vedi [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il tuo progetto con queste nuove funzioni AEM.
+I Componenti core richiedono l’utilizzo di [modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it) e non supportano l’interfaccia utente classica né i modelli statici. Se necessario, vedi [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il tuo progetto con queste nuove funzioni AEM.
 
-Per configurare il tuo ambiente di sviluppo locale, vedi [questa panoramica sul SDK per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) o questo documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Per configurare il tuo ambiente di sviluppo locale, vedi [questa panoramica sul SDK per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o questo documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 >[!TIP]
 >
