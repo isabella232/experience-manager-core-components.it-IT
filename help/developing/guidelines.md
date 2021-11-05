@@ -4,9 +4,9 @@ description: I Componenti core seguono modelli di implementazione moderni che so
 role: Architect, Developer, Admin
 exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Anche le linee guida incluse in questa sezione possono essere utilizzate per qua
 
 ### Funzionalità preconfigurabili {#pre-configurable-capabilities}
 
-Oltre alla finestra di dialogo per modifica utilizzata dagli autori di pagine, i componenti possono avere anche una finestra di dialogo per progettazione per consentire agli autori di modelli di preconfigurarli. L’[Editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) consente di impostare tutte queste preconfigurazioni, che sono chiamate “Criteri”.
+Oltre alla finestra di dialogo per modifica utilizzata dagli autori di pagine, i componenti possono avere anche una finestra di dialogo per progettazione per consentire agli autori di modelli di preconfigurarli. L’[Editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) consente di impostare tutte queste preconfigurazioni, che sono chiamate “Criteri”.
 
 Per rendere i componenti il più possibile riutilizzabili, è necessario fornire loro opzioni significative per la preconfigurazione. Ciò consente di abilitare o disabilitare funzioni dei componenti, in modo che soddisfino le esigenze specifiche dei vari siti.
 
@@ -85,7 +85,7 @@ In combinazione con il [modello di componente proxy](#proxy-component-pattern) d
 
 ## Tutti gli elementi insieme {#putting-it-all-together}
 
-Di seguito è riportata una panoramica dell’intera struttura di associazione dei tipi di risorsa, come, ad esempio, il componente core Titolo. La panoramica illustra come un componente proxy specifico del sito consenta di risolvere il controllo delle versioni dei componenti per evitare che la risorsa di contenuto contenga un numero di versione. Mostra altresì come il file [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) `title.html` del componente utilizzi l’interfaccia di modello, mentre l’implementazione si associa alla versione specifica del componente tramite le annotazioni del [modello Sling](https://sling.apache.org/documentation/bundles/models.html).
+Di seguito è riportata una panoramica dell’intera struttura di associazione dei tipi di risorsa, come, ad esempio, il componente core Titolo. La panoramica illustra come un componente proxy specifico del sito consenta di risolvere il controllo delle versioni dei componenti per evitare che la risorsa di contenuto contenga un numero di versione. Mostra altresì come il file [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) `title.html` del componente utilizzi l’interfaccia di modello, mentre l’implementazione si associa alla versione specifica del componente tramite le annotazioni del [modello Sling](https://sling.apache.org/documentation/bundles/models.html).
 
 ![Panoramica sull’associazione delle risorse](/help/assets/chlimage_1-32.png)
 
