@@ -4,9 +4,9 @@ description: Come eseguire correttamente l’implementazione del progetto con i 
 role: Architect, Developer, Admin, User
 exl-id: 1ea8cd1c-8435-4ded-82dc-5a7896c53e0c
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ Le funzioni di AEM e dei Componenti core possono essere molto efficienti, ma anc
 
 ### Frammenti di contenuto {#content-fragments}
 
-I [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) consentono di creare contenuto versatile utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
+I [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html?lang=it) consentono di creare contenuto versatile utilizzabile in qualsiasi canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
 Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 ### Modelli di Frammento esperienza {#experience-fragment-templates}
 
-Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina. Senza [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html), l’autore dovrebbe copiare e incollare ogni frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
+Se un autore desidera riutilizzare parti (un frammento di un’esperienza) di una pagina. Senza [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html?lang=it), l’autore dovrebbe copiare e incollare ogni frammento. Creare e gestire queste esperienze di copia/incolla richiede tempo e può essere fonte di errori da parte dell’utente. Grazie a Frammenti esperienza non è più necessario eseguire operazioni di copia/incolla.
 
 ### Componente Incorpora {#embed-component}
 
