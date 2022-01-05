@@ -3,10 +3,10 @@ title: Componente Immagine
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: ht
-source-wordcount: '2162'
-ht-degree: 100%
+source-git-commit: c48f332ac97ef96d0cb59f2b64e3f726f9a90307
+workflow-type: tm+mt
+source-wordcount: '2270'
+ht-degree: 95%
 
 ---
 
@@ -25,6 +25,10 @@ Le larghezze delle immagini e il ritaglio nonché le altre impostazioni possono 
 Il componente Immagine è dotato di solide funzioni reattive pronte per l’uso. A livello di modello della pagina, si può utilizzare la [finestra di dialogo per Progettazione](#design-dialog) per definire le larghezze predefinite della risorsa immagine. Il componente Immagine carica quindi automaticamente la larghezza corretta da visualizzare, in base alle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica dinamicamente la dimensione corretta dell’immagine. Gli sviluppatori di componenti non devono preoccuparsi di definire query multimediali personalizzate, in quanto il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
+
+>[!TIP]
+>
+>Vedi la sezione [Servlet immagine adattivo](#adaptive-image-servlet) per ulteriori informazioni tecniche su queste funzioni e suggerimenti per l’ottimizzazione della selezione del rendering.
 
 ## Supporto di Dynamic Media {#dynamic-media}
 
@@ -202,6 +206,10 @@ Inoltre, puoi definire quali opzioni generali del componente vengono automaticam
       * Deseleziona l’opzione **Attiva il caricamento lento** per caricare le immagini al caricamento della pagina.
 * **Qualità JPEG**: fattore di qualità, espresso come percentuale tra 0 e 100, per le immagini JPEG trasformate, ad esempio ridimensionate o ritagliate.
 
+>[!TIP]
+>
+>Vedi la sezione [Servlet immagine adattivo](#adaptive-image-servlet) per ulteriori dettagli tecnici sulle sue funzioni e suggerimenti per ottimizzare la selezione del rendering definendo con attenzione le larghezze.
+
 ### Scheda Funzioni {#features-tab}
 
 Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli autori di contenuto quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
@@ -249,6 +257,12 @@ Il componente Immagine supporta il [sistema di stili](/help/get-started/authorin
 ## Adaptive Image Servlet {#adaptive-image-servlet}
 
 Il componente Immagine utilizza l’Adaptive Image Servlet dei Componente core. [L’Adaptive Image Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle loro [personalizzazioni dei Componenti core](/help/developing/customizing.md).
+
+### Ottimizzazione della selezione della rappresentazione {#optimizing-rendition-selection}
+
+Il servlet di immagini adattive cercherà di scegliere il rendering migliore per le dimensioni e il tipo di immagine richiesti. Si consiglia di definire in sincronia le rappresentazioni DAM e le larghezze consentite del componente Immagine, in modo che il Servlet immagine adattivo esegua il minor numero possibile di elaborazione.
+
+Ciò migliorerà le prestazioni ed evita che alcune immagini non vengano elaborate correttamente dalla libreria di elaborazione delle immagini sottostante.
 
 >[!NOTE]
 >
