@@ -4,9 +4,9 @@ description: Le versioni dei Componenti core pubblicate possono contenere più d
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 source-git-commit: ef18f65be72295f7886a132a26bdd4f8bc2fbd50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di pubblicazione |
 |---|---|---|---|---|---|---|
-| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una patch. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 13 dicembre 2021 |
+| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una versione patch. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 13 dicembre 2021 |
 | [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una patch che risolve una regressione introdotta con la versione precedente. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 1° ottobre 2021 |
 | [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Questa patch migliora i componenti [Elenco](/help/components/list.md) e [Navigazione](/help/components/navigation.md) in modo da visualizzare l’URL esterno per le destinazioni di reindirizzamento; abilita l’ereditarietà delle immagini di pagina per la prossima v2 del componente [Teaser](/help/components/teaser.md); e contiene alcune correzioni di bug aggiuntivi. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 31 agosto 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Questa versione patch corregge una modifica non compatibile con le versioni precedenti introdotta in precedenza. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 2 agosto 2021 |
