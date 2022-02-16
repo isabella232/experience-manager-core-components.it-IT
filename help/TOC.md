@@ -4,9 +4,9 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+source-git-commit: 4f5ab401aee70b979217738dce4f1a72de940ae9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '242'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 + [Introduzione ai Componenti core](introduction.md)
 + [Percorsi verso il successo](developing/success.md)
 + [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_it)
-+ [Versioni dei Componenti core](versions.md)
++ [Versioni](versions.md)
 + Introduzione {#get-started}
    + [Authoring con i Componenti core](get-started/authoring.md)
    + [Utilizzo dei Componenti core](get-started/using.md)
