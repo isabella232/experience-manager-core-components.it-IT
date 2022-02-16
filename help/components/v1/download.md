@@ -1,16 +1,16 @@
 ---
-title: 'Componente Scarica '
+title: Download del componente (v1)
 description: Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 role: Architect, Developer, Admin, User
-exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 87%
+source-wordcount: '644'
+ht-degree: 93%
 
 ---
 
-# Componente Scarica {#download-component}
+
+# Componente Scarica  (v1) {#download-component}
 
 Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 
@@ -23,16 +23,13 @@ Il componente core Scarica consente di includere in una pagina un’opzione di s
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Download è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 1 del componente Download , introdotto con la versione 2.5.0 dei componenti core a giugno 2019.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Compatibile | Compatibile |
-| [v1](v1/download.md) | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 1 del componente Download.
+>
+>Per informazioni dettagliate sulla versione corrente del componente Download, consulta [Scarica componente](/help/components/download.md) documento.
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -52,7 +49,7 @@ La finestra di dialogo per configurazione consente all’autore di contenuto di 
 
 ### Scheda Risorsa {#asset-tab}
 
-La selezione di una risorsa da scaricare è molto simile alla funzionalità del [componente Immagine](image.md) e allo stesso modo sfrutta il DAM di AEM.
+La selezione di una risorsa da scaricare è molto simile alla funzionalità del [componente Immagine](image-v1.md) e allo stesso modo sfrutta il DAM di AEM.
 
 * **Scarica risorsa**
    * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
@@ -74,16 +71,6 @@ La selezione di una risorsa da scaricare è molto simile alla funzionalità del 
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
-
-### Scheda Stili {#styles-tab-edit}
-
-![Scheda Stili della finestra di dialogo di modifica del componente Download](/help/assets/download-edit-styles.png)
-
-Il componente Download supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

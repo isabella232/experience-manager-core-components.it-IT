@@ -1,16 +1,16 @@
 ---
-title: Componente Frammento esperienza
+title: Componente Frammento esperienza (v1)
 description: Il componente Frammento esperienza consente all’autore di contenuto di aggiungere a una pagina una variante del Frammento esperienza.
 role: Architect, Developer, Admin, User
-exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 88%
+source-wordcount: '780'
+ht-degree: 94%
 
 ---
 
-# Componente Frammento esperienza{#experience-fragment-component}
+
+# Componente Frammento esperienza (v1) {#experience-fragment-component}
 
 Il componente Frammento esperienza consente all’autore di contenuto di inserire una variante del Frammento esperienza in una pagina e al contempo di supportare una struttura localizzata del sito.
 
@@ -23,16 +23,13 @@ Il componente Frammento esperienza consente all’autore di contenuto di selezio
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento esperienza è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 1 del componente Frammento esperienza, introdotto con la versione 2.6.0 dei componenti core a settembre 2019.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Compatibile | Compatibile |
-| [v1](v1/experience-fragment.md) | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 1 del componente Frammento esperienza .
+>
+>Per informazioni dettagliate sulla versione corrente del componente Frammento esperienza, consulta [Componente Frammento esperienza](/help/components/experience-fragment.md) documento.
 
 ## Supporto della struttura localizzata del sito {#localized-site-structure}
 
@@ -128,16 +125,6 @@ Puoi anche definire un **ID**. Questa opzione consente di controllare l’identi
 * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
 * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
 * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
-
-### Scheda Stili {#styles-tab-edit}
-
-![Scheda Stili della finestra di dialogo di modifica del componente Frammento esperienza](/help/assets/experience-fragment-edit-styles.png)
-
-Il componente Frammento esperienza supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

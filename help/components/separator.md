@@ -3,10 +3,10 @@ title: Componente separatore
 description: Il componente Separatore crea un’interruzione tra i componenti di una pagina
 role: Architect, Developer, Admin, User
 exl-id: 79f19368-67fa-4864-93f7-2aa801d13fdb
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
-workflow-type: ht
-source-wordcount: '304'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 ## Esempio di output del componente {#sample-component-output}
 

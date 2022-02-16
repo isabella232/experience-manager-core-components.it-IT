@@ -3,10 +3,10 @@ title: Componente Carosello
 description: Il componente Carosello consente all’autore di contenuto di presentare il contenuto in un carosello rotante.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: ht
-source-wordcount: '1115'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -79,7 +79,7 @@ Nella scheda **Proprietà**, l’autore di contenuto può impostare la transizio
 >
 >I controlli di avanzamento delle diapositiva non sono attivi in modalità **Modifica**. Utilizza la modalità [**Anteprima** oppure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode) l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per interagire con il carosello come farebbe un normale lettore del contenuto pubblicato.
 >
->La funzione di avanzamento automatico non è abilitata in modalità **Modifica**. Utilizza l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per visualizzare la funzione di avanzamento automatico come farebbe un normale lettore del contenuto pubblicato.
+>La funzione di avanzamento automatico non è abilitata in modalità **Modifica**. Utilizza l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per visualizzare la funzione di avanzamento automatico come farebbe un normale lettore del contenuto pubblicato.
 
 ### Scheda Accessibilità {#accessibility-tab}
 

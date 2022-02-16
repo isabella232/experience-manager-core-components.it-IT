@@ -3,10 +3,10 @@ title: Componente Pannello a soffietto
 description: Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: ht
-source-wordcount: '1063'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '1067'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,28 @@ Il componente core Pannello a soffietto consente di creare una raccolta di compo
 * L’ordine dei pannelli nel Pannello a soffietto può essere definito sia nella finestra di dialogo per configurazione che nella [finestra a comparsa seleziona pannello](#select-panel-popover).
 * Le impostazioni predefinite del componente Pannello a soffietto, quando lo si aggiunge a una pagina, possono essere definite [nella finestra di dialogo per progettazione](#design-dialog).
 
+## Versione e compatibilità {#version-and-compatibility}
+
+La versione corrente del componente Pannello a soffietto è la v1, introdotta con la versione 2.5.0 dei Componenti core a giugno 2019, ed è quella descritta in questo documento.
+
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+
+## Esempio di output del componente {#sample-component-output}
+
+Per avere un’idea del componente Pannello a soffietto e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_accordion_it).
+
+## Dettagli tecnici {#technical-details}
+
+La documentazione tecnica più recente sul componente Pannello a soffietto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
+
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
+
 ## Collegamenti profondi a un pannello {#deep-linking}
 
 I componenti Pannello a soffietto e [Schede](tabs.md) supportano il collegamento diretto a un pannello all’interno del componente.
@@ -35,28 +57,6 @@ Per effettuare questo collegamento:
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
-
-## Versione e compatibilità {#version-and-compatibility}
-
-La versione corrente del componente Pannello a soffietto è la v1, introdotta con la versione 2.5.0 dei Componenti core a giugno 2019, ed è quella descritta in questo documento.
-
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Pannello a soffietto e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_accordion_it).
-
-## Dettagli tecnici {#technical-details}
-
-La documentazione tecnica più recente sul componente Pannello a soffietto [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
-
-Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
 ## Finestra di dialogo per configurazione {#configure-dialog}
 

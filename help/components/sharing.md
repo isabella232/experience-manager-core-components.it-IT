@@ -3,10 +3,10 @@ title: 'Componente Condivisione '
 description: Il componente core Condivisione è un widget per la condivisione su Facebook e Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
-source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ La tabella che segue descrive tutte le versioni supportate del componente e le v
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -51,8 +51,8 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore di contenuto sono disponibili opzioni di modifica aggiuntive per il componente Condivisione nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=it) della pagina.
+Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore di contenuto sono disponibili opzioni di modifica aggiuntive per il componente Condivisione nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) della pagina.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) della pagina iniziale.
+Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) della pagina iniziale.

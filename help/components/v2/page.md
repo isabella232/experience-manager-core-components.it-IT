@@ -1,16 +1,16 @@
 ---
-title: Componente Pagina
+title: Componente Pagina (v2)
 description: Il componente Pagina è una pagina estensibile concepita per funzionare con l’editor di modelli e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 role: Architect, Developer, Admin, User
-exl-id: 2503e067-abed-427d-8a54-8b79e3451487
-source-git-commit: dbc1ba9ae0f9caa3bc52a7a5e08899c457813003
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 92%
+source-wordcount: '645'
+ht-degree: 97%
 
 ---
 
-# Componente Pagina {#page-component}
+
+# Componente Pagina  (v2) {#page-component}
 
 Il componente Pagina è una pagina estensibile concepita per funzionare con l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 
@@ -22,17 +22,13 @@ Nella [finestra di dialogo per progettazione](#design-dialog) è possibile defin
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Pagina è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 2 del componente Pagina , introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v3 | - | Compatibile | Compatibile |
-| [v2](v2/page.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/page-v1.md) | Compatibile | Compatibile | - |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 2 del componente Pagina.
+>
+>Per informazioni dettagliate sulla versione corrente del componente Pagina, vedi il documento [Componente Pagina](/help/components/page.md).
 
 ## Supporto di Progressive Web App {#pwa-support}
 
@@ -70,8 +66,6 @@ La finestra per progettazione della pagina consente di definire le librerie clie
 * **Libreria client risorse web**: categoria di librerie client utilizzate per fornire risorse web come le favicons (favorite icons).
 
 * **Selettore per passare all’elemento del contenuto principale**: utilizzato come funzione di accessibilità per passare direttamente al contenuto principale della pagina
-
-* **Eseguire il rendering di collegamenti per lingue alternative** - Se attivato, i collegamenti alle versioni in lingua alternativa della pagina nello stesso sito verranno aggiunti all’intestazione della pagina.
 
 ![Finestra di dialogo per progettazione del componente Pagina](/help/assets/page-design.png)
 

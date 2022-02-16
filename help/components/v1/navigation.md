@@ -1,16 +1,16 @@
 ---
-title: Componente Navigazione
+title: Componente Navigazione (v1)
 description: Il componente Navigazione consente agli utenti di navigare facilmente nella struttura globalizzata di un sito.
 role: Architect, Developer, Admin, User
-exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 93%
+source-wordcount: '1430'
+ht-degree: 97%
 
 ---
 
-# Componente Navigazione{#navigation-component}
+
+# Componente Navigazione (v1) {#navigation-component}
 
 Il componente Navigazione consente agli utenti di navigare facilmente nella struttura globalizzata di un sito.
 
@@ -24,16 +24,13 @@ La [finestra di dialogo per modifica](#edit-dialog) consente all’autore di con
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di navigazione è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 1 del componente di navigazione, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | - | Compatibile | Compatibile |
-| [v1](v1/navigation.md) | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 1 del componente di navigazione.
+>
+>Per informazioni dettagliate sulla versione corrente del componente di navigazione, consulta [Componente di navigazione](/help/components/navigation.md) documento.
 
 ## Supporto della struttura localizzata del sito {#localized-site-structure}
 
@@ -155,16 +152,6 @@ Nella finestra di dialogo per modifica, l’autore di contenuto può definire la
 Nella scheda **Accessibilità** è possibile impostare i valori per le etichette di [accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente.
 
 * **Etichetta**: il valore di un attributo dell’etichetta ARIA del componente
-
-### Scheda Stili {#styles-tab-edit}
-
-Il componente di navigazione supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
-
-![Scheda Stili della finestra di dialogo di modifica del componente di navigazione](/help/assets/navigation-edit-styles.png)
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

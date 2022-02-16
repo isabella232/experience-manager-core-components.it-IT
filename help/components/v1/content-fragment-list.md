@@ -1,16 +1,16 @@
 ---
-title: Componente Elenco frammenti di contenuto
+title: Componente Elenco frammenti di contenuto (v1)
 description: Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di frammenti di contenuto.
 role: Architect, Developer, Admin, User
-exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 86%
+source-wordcount: '725'
+ht-degree: 93%
 
 ---
 
-# Componente Elenco frammenti di contenuto{#content-fragment-list-component}
+
+# Componente Elenco frammenti di contenuto (v1) {#content-fragment-list-component}
 
 Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di [frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it).
 
@@ -23,16 +23,13 @@ Il componente core Elenco frammenti di contenuto consente di includere un elenco
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento di contenuto è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Il documento descrive la versione 1 del componente Frammento di contenuto, introdotto con la versione 2.4.0 dei componenti core a maggio 2019.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|----|---|---|
-| v2 | - | Compatibile | Compatibile |
-| [v1](v1/content-fragment-list.md) | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 1 del componente Elenco frammenti di contenuto .
+>
+>Per informazioni dettagliate sulla versione corrente del componente Elenco frammenti di contenuto, consulta [Componente Elenco frammenti di contenuto](/help/components/content-fragment-list.md) documento.
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -87,18 +84,6 @@ Per impostazione predefinita, tutti gli elementi del Modello del Frammento di co
    * Tocca o fai clic sul pulsante **Elimina** per rimuovere un elemento selezionato.
    * Trascina la maniglia **di ordinamento** per cambiare l’ordine degli elementi.
 
-### Scheda Stili {#styles-tab-edit}
-
-![Scheda Stili della finestra di dialogo di modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-styles.png)
-
-Il componente Elenco frammenti di contenuto supporta l’AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
-
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-### Scheda Stili {#styles-tab}
-
-Il componente Elenco frammenti di contenuto supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La finestra di dialogo per progettazione consente all’autore del modello di definire gli stili applicati al componente Elenco frammenti di contenuto.

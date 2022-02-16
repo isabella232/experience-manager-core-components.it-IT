@@ -1,16 +1,16 @@
 ---
-title: Componente Breadcrumb
+title: Componente Breadcrumb (v2)
 description: Il componente core Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia del contenuto.
 role: Architect, Developer, Admin, User
-exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 87%
+source-wordcount: '680'
+ht-degree: 97%
 
 ---
 
-# Componente Breadcrumb{#breadcrumb-component}
+
+# Componente Breadcrumb (v2) {#breadcrumb-component}
 
 Il componente core Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia del contenuto.
 
@@ -22,17 +22,13 @@ Le opzioni disponibili, ad esempio il livello di navigazione predefinito e la po
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Breadcrumb è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 2 del componente Breadcrumb, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- | --- |--- |---|
-| v3 | - | Compatibile | Compatibile |
-| [v2](v2/breadcrumb.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/breadcrumb-v1.md) | Compatibile | Compatibile | - |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 2 del componente Breadcrumb.
+>
+>Per informazioni dettagliate sulla versione corrente del componente Breadcrumb, vedi il documento [Componente Breadcrumb](/help/components/breadcrumb.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -52,8 +48,6 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 La finestra di dialogo per modifica consente all’autore di contenuto di eliminare le pagine nascoste e attive nelle breadcrumb e l’annidamento nella gerarchia che deve visualizzare.
 
-## Scheda Proprietà {#properties-tab}
-
 ![Finestra di dialogo per modifica del componente Breadcrumb](/help/assets/breadcrumb-edit.png)
 
 * **Livello di navigazione iniziale**: il punto nella gerarchia da cui il componente Breadcrumb deve iniziare a scendere fino alla pagina corrente. Esempio:
@@ -64,21 +58,11 @@ La finestra di dialogo per modifica consente all’autore di contenuto di elimin
 
 * **Mostra elementi di navigazione nascosti**: mostra le pagine contrassegnate come nascoste nella breadcrumb (per impostazione predefinita non verranno visualizzate)
 * **Nascondi pagina corrente**: consente di eliminare la pagina corrente nella breadcrumb (per impostazione predefinita verrà visualizzata)
-* **Disattiva ombreggiatura**: se la pagina nella gerarchia è reindirizzata, viene visualizzato il nome della pagina di reindirizzamento al posto della pagina di destinazione. Per ulteriori informazioni, vedi [Supporto per la struttura del sito ombra](navigation.md#shadow-structure) del componente Navigazione.
+* **Disattiva ombreggiatura**: se la pagina nella gerarchia è reindirizzata, viene visualizzato il nome della pagina di reindirizzamento al posto della pagina di destinazione. Per ulteriori informazioni, vedi [Supporto per la struttura del sito ombra](../v1/navigation.md#shadow-structure) del componente Navigazione.
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
-
-### Scheda Stili {#styles-tab-edit}
-
-![Scheda Stili della finestra di dialogo di modifica del componente Elenco breadcrumb](/help/assets/breadcrumb-edit-styles.png)
-
-Il componente Breadcrumb supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

@@ -3,10 +3,10 @@ title: Introduzione ai Componenti core
 description: 'I Componenti core sono stati introdotti per offrire componenti di base affidabili ed estensibili, basati sulle tecnologie e le best practice più recenti. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: ef18f65be72295f7886a132a26bdd4f8bc2fbd50
-workflow-type: ht
-source-wordcount: '917'
-ht-degree: 100%
+source-git-commit: 01f57b2d547d2c1ab87b552522375a0a07496a23
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 99%
 
 ---
 
@@ -104,9 +104,9 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 ## Requisiti di sistema {#system-requirements}
 
-| Componenti core | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
-|---------|---------|---------|---------|---------|---------|
-| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.14) | Continua | 6.5.6.0+ * | 6.4.8.4+ * | 8, 11 | 3.3.9+ |
+| Componenti core Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
+|---------|---------|---------|---------|---------|
+| [2.18.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.0) | Continua | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >

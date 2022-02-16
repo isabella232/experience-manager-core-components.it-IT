@@ -3,10 +3,10 @@ title: Componente Frammento di contenuto
 description: Il componente core Frammento di contenuto consente la visualizzazione di un frammento di contenuto.
 role: Architect, Developer, Admin, User
 exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
-source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
-workflow-type: ht
-source-wordcount: '667'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ Il componente core Frammento di contenuto consente la visualizzazione di un [fra
 
 ## Utilizzo {#usage}
 
-Il componente core Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it) in una pagina.
+Il componente core Frammento di contenuto consente l’inclusione di un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina.
 
 * Il frammento e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione](#configure-dialog).
 * I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella [finestra di dialogo per progettazione](#design-dialog).
@@ -34,7 +34,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
-| v1 | Compatibile | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 >[!NOTE]
 >

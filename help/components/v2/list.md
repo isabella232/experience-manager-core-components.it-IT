@@ -1,16 +1,16 @@
 ---
-title: Componente Elenco
+title: Componente Elenco (v2)
 description: Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
-exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 88%
+source-wordcount: '1022'
+ht-degree: 98%
 
 ---
 
-# Componente Elenco{#list-component}
+
+# Componente Elenco (v2) {#list-component}
 
 Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 
@@ -20,17 +20,13 @@ Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco di
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Elenco è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 1 del componente Elenco, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v3 | - | Compatibile | Compatibile |
-| [v2](v2/list.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/list-v1.md) | Compatibile | Compatibile | - |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 2 del componente Elenco.
+>
+>Per informazioni dettagliate sulla versione corrente del componente Elenco, vedi il documento [Componente Elenco](/help/components/list.md).
 
 ## Reindirizzamenti nei componenti Elenco {#redirects}
 
@@ -156,20 +152,12 @@ Utilizzando la scheda Impostazioni elemento, è possibile configurare la formatt
 
 ![Impostazioni elemento](/help/assets/list-edit-items.png)
 
-* **Collega elementi** - Collegamento di elementi alla pagina corrispondente
-* **Mostra descrizione** - Visualizza le descrizioni dell&#39;elemento di collegamento
-* **Mostra data** - Mostra la data di modifica dell&#39;elemento del collegamento
-* **Visualizza come teaser** - Se questa opzione è selezionata, l’elemento viene visualizzato come teaser
-
-### Scheda Stili {#styles-tab-edit}
-
-Il componente Elenco supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
-
-![Scheda Stili della finestra di dialogo di modifica del componente Elenco](/help/assets/list-edit-styles.png)
+* **Collega elementi**
+Collega gli elementi alla pagina corrispondente
+* **Mostra descrizione**
+Mostra la descrizione dell’elemento da collegare
+* **Mostra data**
+Mostra la data di modifica dell’elemento da collegare
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

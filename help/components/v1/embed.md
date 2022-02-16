@@ -1,16 +1,16 @@
 ---
-title: Componente Incorpora
+title: Componente di incorporamento (v1)
 description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 role: Architect, Developer, Admin, User
-exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
-source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 92%
+source-wordcount: '1298'
+ht-degree: 96%
 
 ---
 
-# Componente Incorpora {#embed-component}
+
+# Componente Incorpora (v1) {#embed-component}
 
 Il componente core Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 
@@ -23,16 +23,13 @@ Il componente core Incorpora consente all’autore di contenuto di definire un c
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di incorporamento è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+Questo documento descrive la versione 1 del componente di incorporamento, introdotto con la versione 2.7.0 dei componenti core a settembre 2019.
 
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Compatibile | Compatibile |
-| [v1](v1/embed.md) | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+>[!CAUTION]
+>
+>Questo documento descrive la versione 1 del componente di incorporamento.
+>
+>Per informazioni dettagliate sulla versione corrente del componente da incorporare, consulta [Componente di incorporamento](/help/components/embed.md) documento.
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -46,23 +43,19 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Finestra di dialogo per configurazione {#configure-dialog}
 
-La finestra di dialogo per configurazione consente all’autore di contenuto di definire la risorsa esterna da incorporare nella pagina.
-
-### Scheda Proprietà {#properties-tab}
-
-Scegli innanzitutto il tipo di risorsa da incorporare:
+La finestra di dialogo per configurazione consente all’autore di contenuto di definire la risorsa esterna da incorporare nella pagina. Scegli innanzitutto il tipo di risorsa da incorporare:
 
 * [URL](#url)
 * [Contenuto incorporabile](#embeddable)
 * [HTML](#html)
 
-Per ogni tipo di incorporabile, puoi definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
+Per ogni tipo di risorsa incorporabile, puoi definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
 
 * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
 * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
 * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-#### URL {#url}
+### URL {#url}
 
 L’URL è il tipo di risorsa più facile da incorporare. È sufficiente incollare l’URL della risorsa da incorporare nel campo **URL**. Il componente tenterà di accedere alla risorsa e, se uno dei processori potrà eseguirne il rendering, visualizzerà un messaggio di conferma sotto il campo **URL**. In caso contrario, il campo verrà contrassegnato come in errore.
 
@@ -75,7 +68,7 @@ Gli sviluppatori possono aggiungere processori URL aggiuntivi [seguendo la docum
 
 ![Opzione URL nella finestra di dialogo per modifica del componente Incorpora](/help/assets/embed-url.png)
 
-#### Contenuto incorporabile {#embeddable}
+### Contenuto incorporabile {#embeddable}
 
 L’opzione Contenuto incorporabile consente un’ulteriore personalizzazione della risorsa incorporata, che può essere parametrizzata e includere informazioni aggiuntive. Un autore può scegliere tra vari tipi di contenuto affidabile preconfigurato e il componente viene fornito con YouTube incorporabile pronto per l’uso.
 
@@ -90,15 +83,16 @@ Il campo **Contenuto incorporabile** definisce il tipo di processore vuoi utiliz
 * **Abilita Riproduzione in linea (iOS)**: questo parametro definisce se i video vengono riprodotti in linea (opzione abilitata) o a schermo intero (opzione disabilitata) in un lettore HTML5 su iOS.
 * **Video correlati senza restrizioni**: se questa opzione è disabilitata, i video correlati proverranno dallo stesso canale del video appena riprodotto, altrimenti proverranno da qualsiasi canale.
 
+Notare che l’abilitazione delle opzioni deve avvenire nella [Finestra di dialogo per progettazione](#design-dialog) e può essere impostata come valore predefinito.
+
 Altre risorse incorporabili potrebbero offrire campi simili, che possono essere definiti da uno sviluppatore [seguendo la documentazione per gli sviluppatori del componente Incorpora.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![Opzione Contenuto incorporabile nella finestra di dialogo per modifica del componente Incorpora](/help/assets/embed-embeddable.png)
 
 >[!NOTE]
->
 >Per poter essere disponibile per l’autore di pagine, l’opzione Contenuto incorporabile deve essere abilitata a livello di modello tramite la [finestra di dialogo per progettazione](#design-dialog).
 
-#### HTML {#html}
+### HTML {#html}
 
 Puoi aggiungere alla pagina codice HTML in formato libero utilizzando il componente Incorpora.
 
@@ -107,29 +101,18 @@ Puoi aggiungere alla pagina codice HTML in formato libero utilizzando il compone
 >[!NOTE]
 >Eventuali tag non sicuri, come gli script, verranno filtrati dal codice HTML inserito e non ne verrà eseguito il rendering nella pagina risultante.
 
-##### Sicurezza {#security}
+#### Sicurezza {#security}
 
 Il markup HTML che l’autore può inserire viene filtrato a scopo di sicurezza per evitare attacchi di script tra i siti, che potrebbero, ad esempio, consentire agli autori di ottenere diritti amministrativi.
 
-In generale, tutti gli script e gli elementi `style` nonché tutti gli attributi `on*` e `style` verranno rimossi dall’output.
+*In generale,* tutti gli script e gli elementi `style` nonché tutti gli attributi `on*` e `style` verranno rimossi dall’output.
 
 Tuttavia, le regole sono più complicate, perché il componente Incorpora segue a livello globale il set di regole di filtro del framework di bonifica AntiSamy HTML di AEM, reperibile in `/libs/cq/xssprotection/config.xml`. Se necessario, uno sviluppatore può sostituire temporaneamente questa impostazione per la configurazione specifica di un progetto.
 
 Ulteriori informazioni sulla sicurezza sono disponibili nella [documentazione sulle installazioni on-premise per gli sviluppatori di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=it) e in [Installazioni di AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=it)
 
 >[!NOTE]
->
 >Anche se le regole del framework di bonifica AntiSamy possono essere configurate sostituendo temporaneamente `/libs/cq/xssprotection/config.xml`, queste modifiche influiscono sul comportamento di tutti gli elementi HTL e JSP e non solo su quello del componente core Incorpora.
-
-### Scheda Stili {#styles-tab-edit}
-
-![Scheda Stili della finestra di dialogo di modifica del componente da incorporare](/help/assets/embed-styles.png)
-
-Il componente Incorpora supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
-
-Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
-
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 

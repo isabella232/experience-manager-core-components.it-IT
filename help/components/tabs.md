@@ -3,10 +3,10 @@ title: Componente Schede
 description: Il componente Schede consente di creare più schede per disporre il contenuto di una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 99%
 
 ---
 
@@ -26,6 +26,28 @@ La [finestra di dialogo per modifica](#edit-dialog) consente all’autore di con
 >
 >I componenti Schede semplici (non nidificati) possono essere posizionati/selezionati utilizzando la [struttura del contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it#content-tree), ma non è possibile utilizzare le schede nidificate.
 
+## Versione e compatibilità {#version-and-compatibility}
+
+La versione corrente del componente Schede è la v1, introdotta con la versione 2.2.0 dei Componenti core a ottobre 2018, ed è quella descritta in questo documento.
+
+La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
+
+| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+
+## Esempio di output del componente {#sample-component-output}
+
+Per avere un’idea del componente Schede e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_tabs_it).
+
+### Dettagli tecnici {#technical-details}
+
+La documentazione tecnica più recente sul componente Schede [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_tabs_v1_it).
+
+Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
+
 ## Collegamenti profondi a un pannello {#deep-linking}
 
 I componenti Schede e [Pannello a soffietto](accordion.md) supportano il collegamento diretto a un pannello all’interno del componente.
@@ -39,28 +61,6 @@ Per effettuare questo collegamento:
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
-
-## Versione e compatibilità {#version-and-compatibility}
-
-La versione corrente del componente Schede è la v1, introdotta con la versione 2.2.0 dei Componenti core a ottobre 2018, ed è quella descritta in questo documento.
-
-La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
-
-| Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v1 | Compatibile | Compatibile | Compatibile |
-
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Schede e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_tabs_it).
-
-### Dettagli tecnici {#technical-details}
-
-La documentazione tecnica più recente sul componente Schede [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_tabs_v1_it).
-
-Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -118,7 +118,7 @@ Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strum
 
 >[!NOTE]
 >
->Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
+>Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
