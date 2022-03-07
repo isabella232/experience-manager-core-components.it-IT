@@ -4,9 +4,9 @@ description: Il componente Navigazione lingua fornisce una navigazione per lingu
 role: Architect, Developer, Admin, User
 exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
 source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La [finestra di dialogo per modifica](#edit-dialog) consente di definire la dire
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di navigazione in lingua è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Navigazione lingua è la versione 2, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente di definire la directory principale di navigazione del sito globale e il livello di profondità della struttura in cui deve essere effettuata la navigazione.
+La finestra di dialogo per la progettazione consente di definire la directory principale di navigazione globale del sito e specificare fino a che profondità nella struttura può arrivare la navigazione.
 
 In genere, queste configurazioni devono essere eseguite solo a livello di modello della pagina. Tuttavia, possono essere modificate anche livello di pagina tramite la [finestra di dialogo per modifica](#edit-dialog).
 
@@ -110,17 +110,17 @@ Inoltre, si può anche impostare un **ID**. Questa opzione consente di controlla
 
 ### Scheda Accessibilità {#accessibility-tab}
 
-* **Etichetta** - Questa opzione deve essere definita se sulla pagina è presente più di una navigazione in lingua per impostare l’attributo dell’etichetta aria del componente.
+* **Etichetta** - Questa opzione deve essere definita se sulla pagina è presente più di una navigazione lingua per impostare l’attributo dell’etichetta aria del componente.
 
-![Scheda Accesso facilitato alla navigazione in lingua](/help/assets/language-navigation-edit-accessibility.png)
+![Scheda Accesso facilitato alla navigazione lingua](/help/assets/language-navigation-edit-accessibility.png)
 
 ### Scheda Stili {#styles-tab-edit}
 
-Il componente Navigazione lingua supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Navigazione lingua supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ![Scheda Stili della finestra di dialogo di modifica del componente Navigazione lingua](/help/assets/language-navigation-edit-styles.png)
 
