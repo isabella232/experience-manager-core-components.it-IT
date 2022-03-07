@@ -1,11 +1,11 @@
 ---
-title: Download del componente (v1)
+title: Componente Scarica (v1)
 description: Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 role: Architect, Developer, Admin, User
 source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Il componente core Scarica consente di includere in una pagina un’opzione di s
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente Download , introdotto con la versione 2.5.0 dei componenti core a giugno 2019.
+Questo documento descrive la versione 1 del componente Scarica, introdotto con la versione 2.5.0 dei componenti core a giugno 2019.
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Download.
+>Questo documento descrive la versione 1 del componente Scarica.
 >
->Per informazioni dettagliate sulla versione corrente del componente Download, consulta [Scarica componente](/help/components/download.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Scarica, vedi il documento [Componente Scarica](/help/components/download.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
