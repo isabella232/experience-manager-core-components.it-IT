@@ -4,9 +4,9 @@ description: Il componente Navigazione consente agli utenti di navigare facilmen
 role: Architect, Developer, Admin, User
 exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1544'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ La [finestra di dialogo per modifica](#edit-dialog) consente all’autore di con
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di navigazione è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Navigazione è la v2, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -158,13 +158,13 @@ Nella scheda **Accessibilità** è possibile impostare i valori per le etichette
 
 ### Scheda Stili {#styles-tab-edit}
 
-Il componente di navigazione supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Navigazione supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
-![Scheda Stili della finestra di dialogo di modifica del componente di navigazione](/help/assets/navigation-edit-styles.png)
+![Scheda Stili della finestra di dialogo per modifica del componente Navigazione](/help/assets/navigation-edit-styles.png)
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
