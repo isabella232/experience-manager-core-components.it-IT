@@ -3,9 +3,9 @@ title: Componente teaser (v1)
 description: Il componente Teaser può mostrare un’immagine, un titolo, un testo RTF e opzionalmente un collegamento ad altro contenuto.
 role: Architect, Developer, Admin, User
 source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Questo documento descrive la versione 1 del componente Teaser, introdotta con la
 >
 >Questo documento descrive la versione 1 del componente Teaser.
 >
->Per informazioni dettagliate sulla versione corrente del componente Teaser, consulta la sezione [Componente teaser](/help/components/teaser.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Teaser, consulta il documento [Componente Teaser](/help/components/teaser.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -62,7 +62,7 @@ L’autore di contenuto può utilizzare la finestra di dialogo per configurazion
 ![Scheda Testo della finestra di dialogo per modifica del componente Teaser](/help/assets/teaser-edit-text.png)
 
 * **Pretitolo**: il pretitolo viene visualizzato prima del titolo del teaser.
-* **Title**: definisce un titolo da visualizzare come intestazione del teaser.
+* **Titolo**: definisce un titolo da visualizzare come intestazione del teaser.
    * **Ottieni titolo da pagina collegata**: se questa opzione è selezionata, il titolo diventa quello della pagina collegata.
 * **Descrizione**: è una descrizione da visualizzare come sottotitolo del teaser.
    * **Ottieni descrizione da pagina collegata**: se questa opzione è selezionata, la descrizione diventa quella della pagina collegata.
@@ -80,7 +80,7 @@ L’autore di contenuto può utilizzare la finestra di dialogo per configurazion
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
-Il componente Teaser delega il rendering dell’immagine al [componente Immagine](image-v1.md). Pertanto, [finestra di dialogo modifica](image-v1.md#edit-dialog of the Image Component è disponibile per l’autore del contenuto per manipolare l’immagine teaser.
+Il componente Teaser delega il rendering dell’immagine al [componente Immagine](image-v1.md). Pertanto, la [finestra di dialogo per modifica](image-v1.md#edit-dialog) del componente Immagine è disponibile per consentire all’autore di contenuto di manipolare l’immagine del teaser.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
@@ -91,7 +91,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 ![Finestra di dialogo per progettazione del componente Teaser](/help/assets/teaser-design.png)
 
 * **Inviti all’azione**
-   * **Disabili Inviti all’azione**: nasconde **Inviti all’azione** di agli autori di contenuto
+   * **Disabilita inviti all&#39;azione**: nasconde **Inviti all’azione** di agli autori di contenuto
 * **Elementi**
    * **Nascondi pretitolo**: nasconde l’opzione **Pretitolo** agli autori di contenuto
    * **Nascondi titolo**: nasconde l’opzione **Titolo** agli autori di contenuto
