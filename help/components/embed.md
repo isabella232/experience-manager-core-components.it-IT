@@ -4,9 +4,9 @@ description: Il componente Incorpora consente di incorporare contenuto esterno i
 role: Architect, Developer, Admin, User
 exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
 source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1395'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Il componente core Incorpora consente all’autore di contenuto di definire un c
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente di incorporamento è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Incorpora è la v2, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -56,7 +56,7 @@ Scegli innanzitutto il tipo di risorsa da incorporare:
 * [Contenuto incorporabile](#embeddable)
 * [HTML](#html)
 
-Per ogni tipo di incorporabile, puoi definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
+Per ogni tipo di risorsa incorporabile, puoi definire un **ID**. Questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
 
 * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
 * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
@@ -123,13 +123,13 @@ Ulteriori informazioni sulla sicurezza sono disponibili nella [documentazione su
 
 ### Scheda Stili {#styles-tab-edit}
 
-![Scheda Stili della finestra di dialogo di modifica del componente da incorporare](/help/assets/embed-styles.png)
+![Scheda Stili della finestra di dialogo per modifica del componente Incorpora](/help/assets/embed-styles.png)
 
-Il componente Incorpora supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Incorpora supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
