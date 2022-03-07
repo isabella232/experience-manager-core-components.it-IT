@@ -4,9 +4,9 @@ description: Il componente Frammento esperienza consente all’autore di contenu
 role: Architect, Developer, Admin, User
 exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Il componente Frammento esperienza consente all’autore di contenuto di selezio
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento esperienza è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Frammento esperienza è la v2, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -133,11 +133,11 @@ Puoi anche definire un **ID**. Questa opzione consente di controllare l’identi
 
 ![Scheda Stili della finestra di dialogo di modifica del componente Frammento esperienza](/help/assets/experience-fragment-edit-styles.png)
 
-Il componente Frammento esperienza supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Frammento esperienza supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
