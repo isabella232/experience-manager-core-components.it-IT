@@ -3,9 +3,9 @@ title: Componente titolo (v2)
 description: Il componente core Titolo è un componente di intestazione di sezione che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Il componente Titolo deve essere utilizzato come titolo o intestazione di una se
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 2 del componente Titolo , introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
+Questo documento descrive la versione 2 del componente Titolo, originariamente introdotto con la versione 2.0.0 dei Componenti core a gennaio 2018.
 
 >[!CAUTION]
 >
