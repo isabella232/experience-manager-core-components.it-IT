@@ -4,9 +4,9 @@ description: 'I Componenti core sono stati introdotti per offrire componenti di 
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 01f57b2d547d2c1ab87b552522375a0a07496a23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
