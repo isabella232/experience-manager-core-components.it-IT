@@ -3,9 +3,9 @@ title: Componente Pulsante (v1)
 description: Il componente core Pulsante consente di creare e visualizzare un pulsante.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Il componente core Pulsante consente di includere un pulsante in una pagina.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il documento descrive la versione 1 del componente Pulsante , introdotto con la versione 2.5.0 dei componenti core a giugno 2019.
+Il documento descrive la versione 1 del componente Pulsante, introdotto con la versione 2.5.0 dei componenti core a giugno 2019.
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente Button.
+>Questo documento descrive la versione 1 del componente Pulsante.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pulsante, consulta la sezione [Componente pulsante](/help/components/button.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Pulsante, consulta il documento [Componente pulsante](/help/components/button.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
