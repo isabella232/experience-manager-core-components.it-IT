@@ -4,9 +4,9 @@ description: Il componente core Pannello a soffietto consente di creare una racc
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1067'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Utilizza il pulsante **Aggiungi** per aprire il selettore di componenti e scegli
 
 >[!TIP]
 >
->Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Pannello a soffietto [trascinandoli dal browser dei componenti e rilasciandoli sul componente Pannello a soffietto nell’editor di pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=it).
+>Se il riquadro di visualizzazione della pagina viene ridotto in modo che la finestra di dialogo per modifica diventi a schermo intero, il pulsante **Aggiungi** sarà nascosto. I componenti possono comunque essere aggiunti al componente Pannello a soffietto [trascinandoli dal browser dei componenti e rilasciandoli sul componente Pannello a soffietto nell’editor di pagine](https://helpx.adobe.com/it/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent).
 
 ### Scheda Proprietà {#properties-tab}
 
