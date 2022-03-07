@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1796'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ Il componente core Immagine è un componente immagine adattivo che offre funzion
 
 Il componente Immagine offre all’autore di contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché una facilità di posizionamento e ritaglio delle immagini.
 
-Le larghezze dell’immagine e le impostazioni aggiuntive possono essere definite dall’autore del modello nel [finestra di dialogo di progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nel [finestra di dialogo di configurazione.](#configure-dialog)
+Le larghezze delle immagini e le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nella [finestra di dialogo di configurazione.](#configure-dialog)
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente immagine è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Immagine è la v3, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -46,7 +46,7 @@ Inoltre, il componente Immagine supporta il caricamento lento per posticipare il
 
 ## Supporto di Dynamic Media {#dynamic-media}
 
-Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) supporta le risorse di [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia). [Se abilitate,](#design-dialog) queste funzioni consentono di aggiungere risorse immagine di Dynamic Media con una semplice azione di trascinamento e rilascio della selezione oppure tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, immagini preimpostate e ritaglio avanzato.
+Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) supporta le risorse di [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=it#dynamicmedia). [Se abilitate,](#design-dialog) queste funzioni consentono di aggiungere risorse immagine di Dynamic Media con una semplice azione di trascinamento e rilascio della selezione oppure tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, immagini preimpostate e ritaglio avanzato.
 
 La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
 
@@ -86,18 +86,18 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 ![Scheda Risorsa della finestra di dialogo per configurazione del componente Immagine](/help/assets/image-configure-asset.png)
 
-* **Eredita immagine in primo piano dalla pagina** - Questa opzione utilizza [immagine in primo piano della pagina collegata](page.md) o l&#39;immagine in primo piano della pagina corrente se l&#39;immagine non è collegata.
+* **Eredita immagine in primo piano dalla pagina** - Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
 
 * **Testo alternativo per l’accessibilità** - Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
 
-   * **Eredita testo alternativo dalla pagina** - Questa opzione utilizza la descrizione alternativa del valore del cespite collegato del `dc:description` metadati in DAM o nella pagina corrente se non è collegata alcuna risorsa.
+   * **Eredita testo alternativo dalla pagina** - Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
 
 * **Risorsa immagine**
    * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
    * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’editor risorse.
 
-* **Non fornire un testo alternativo** - Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
+* **Non fornire testo alternativo** - Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
 
 ### Scheda Metadati {#metadata-tab}
 
@@ -127,36 +127,36 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 ![Scheda Stili della finestra di dialogo di modifica del componente Immagine](/help/assets/image-configure-styles.png)
 
-Il componente Immagine supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Immagine supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
 ![Scheda Principale della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-main.png)
 
-* **Abilitare le funzioni DM** - Se controllato, [Funzioni di Dynamic Media](#dynamic-media) sono disponibili.
+* **Abilita funzioni DM** - Se questa opzione è selezionata, sono disponibili [le funzioni di Dynamic Media](#dynamic-media).
    * Questa opzione viene visualizzata solo quando Dynamic Media è abilitato nell’ambiente.
 * **Disattiva il caricamento lento** - Se questa opzione è selezionata, il componente precarica tutte le immagini senza caricamento lento.
 * **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni didascalia da DAM**: consente di definire se l’opzione per recuperare la didascalia dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Visualizza didascalia come nota a comparsa**: consente di definire se l’opzione per visualizzare la didascalia dell’immagine come nota a comparsa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
-* **Ridimensiona larghezza** - Questo valore viene utilizzato per ridimensionare la larghezza delle immagini di base che sono risorse DAM.
+* **Larghezza di ridimensionamento** - Questo valore viene utilizzato per ridimensionare la larghezza delle immagini di base che sono risorse DAM.
    * Le proporzioni delle immagini vengono mantenute.
    * Se il valore è maggiore della larghezza effettiva dell’immagine, questo valore non avrà alcun effetto.
    * Questo valore non ha alcun effetto sulle immagini di SVG.
 
-Puoi definire un elenco di larghezze in pixel per l’immagine e il componente carica automaticamente la larghezza più appropriata in base alle dimensioni del browser. Questa è una parte importante delle [funzioni reattive](#responsive-features) del componente Immagine.
+Nella scheda Principale puoi definire un elenco di larghezze consentite, espresse in pixel, in modo che l’immagine e il componente possano automaticamente caricare la larghezza appropriata in base alle dimensioni della finestra del browser. Questa è una parte importante delle [funzioni reattive](#responsive-features) del componente Immagine.
 
 * **Larghezze**: consente di definire un elenco di larghezze, espresse in pixel, in modo che l’immagine e il componente possano automaticamente caricare la larghezza appropriata in base alle dimensioni della finestra del browser.
    * Tocca o fai clic sul pulsante **Aggiungi** per aggiungere un’altra dimensione.
       * Utilizza le maniglie per modificare l’ordine delle dimensioni.
       * Utilizza l’icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene differito fino a quando non diventano visibili.
-      * Deseleziona l’opzione **Attiva il caricamento lento** per caricare le immagini al caricamento della pagina.
+      * Seleziona l’opzione **Disattiva il caricamento lento** per caricare le immagini al caricamento della pagina.
 * **Qualità JPEG**: fattore di qualità, espresso come percentuale tra 0 e 100, per le immagini JPEG trasformate, ad esempio ridimensionate o ritagliate.
 
 >[!TIP]
