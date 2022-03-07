@@ -4,9 +4,9 @@ description: Il componente core Contenitore consente la creazione di un contenit
 role: Architect, Developer, Admin, User
 exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '790'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ La scheda Componenti consentiti funziona come la scheda con lo stesso nome utili
 
 ### Scheda Componenti standard {#default-components-tab}
 
-La scheda Componenti standard consente di definire quale componente viene aggiunto al componente Contenitore quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+La scheda Componenti standard consente di definire quale componente viene aggiunto al componente Contenitore quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it).
 
 ### Scheda Impostazioni reattive {#responsive-settings-tab}
 
