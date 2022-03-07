@@ -4,9 +4,9 @@ description: Il componente core Elenco frammenti di contenuto consente la visual
 role: Architect, Developer, Admin, User
 exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ Il componente core Elenco frammenti di contenuto consente la visualizzazione di 
 
 ## Utilizzo {#usage}
 
-Il componente core Elenco frammenti di contenuto consente di includere un elenco di [frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) in una pagina basata su un Modello del Frammento di contenuto. Questa funzione può essere particolarmente utile per creare [contenuto senza intestazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente riutilizzato da altre applicazioni.
+Il componente core Elenco frammenti di contenuto consente di includere un elenco di [frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it) in una pagina basata su un Modello del Frammento di contenuto. Questa funzione può essere particolarmente utile per creare [contenuto senza intestazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) che può essere facilmente riutilizzato da altre applicazioni.
 
 * L’elenco e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione](#configure-dialog).
 * Gli stili possono essere applicati al componente nella [finestra di dialogo per progettazione](#design-dialog).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Frammento di contenuto è v2, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Frammento di contenuto è la v2, introdotta con la versione 2.18.0 dei Componenti core a febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -89,16 +89,16 @@ Per impostazione predefinita, tutti gli elementi del Modello del Frammento di co
 
 ### Scheda Stili {#styles-tab-edit}
 
-![Scheda Stili della finestra di dialogo di modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-styles.png)
+![Scheda Stili della finestra di dialogo per modifica del componente Elenco frammenti di contenuto](/help/assets/content-fragment-list-styles.png)
 
-Il componente Elenco frammenti di contenuto supporta l’AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Frammento esperienza supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Elenco frammenti di contenuto supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Frammento esperienza supporta il [sistema di stili di AEM.](/help/get-started/authoring.md#component-styling)
