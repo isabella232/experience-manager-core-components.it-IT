@@ -4,9 +4,9 @@ description: Il componente Pagina è una pagina estensibile concepita per funzio
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
 source-git-commit: dbc1ba9ae0f9caa3bc52a7a5e08899c457813003
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Nella [finestra di dialogo per progettazione](#design-dialog) è possibile defin
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Pagina è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Pagina è la v3, introdotta con la versione 2.18.0 dei Componenti core di febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -71,7 +71,7 @@ La finestra per progettazione della pagina consente di definire le librerie clie
 
 * **Selettore per passare all’elemento del contenuto principale**: utilizzato come funzione di accessibilità per passare direttamente al contenuto principale della pagina
 
-* **Eseguire il rendering di collegamenti per lingue alternative** - Se attivato, i collegamenti alle versioni in lingua alternativa della pagina nello stesso sito verranno aggiunti all’intestazione della pagina.
+* **Collegamenti di lingue alternative del rendering** - Se questa opzione è attivata, i collegamenti alle versioni in lingua alternativa della pagina nello stesso sito verranno aggiunti all’intestazione della pagina.
 
 ![Finestra di dialogo per progettazione del componente Pagina](/help/assets/page-design.png)
 
