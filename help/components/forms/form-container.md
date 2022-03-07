@@ -4,9 +4,9 @@ description: Il componente core Contenitore modulo consente la creazione di semp
 role: Architect, Developer, Admin, User
 exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Quando il modulo viene inviato, il tipo di azione Pubblica dati modulo trasmette
 >[!TIP]
 >Sono disponibili opzioni di timeout aggiuntive che un amministratore di sistema può modificare per gestire l’elaborazione dei dati del modulo inviati. [Per ulteriori informazioni, vedi la documentazione tecnica su GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
-### Posta {#mail}
+### Mail {#mail}
 
 Quando il modulo viene inviato, il tipo di azione Mail invierà un messaggio e-mail ai destinatari designati.
 
@@ -119,7 +119,7 @@ Indipendentemente dal tipo di azione selezionato, è sempre possibile definire u
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-L’autore del modello può utilizzare la finestra di dialogo per progettazione per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+L’autore del modello può utilizzare la finestra di dialogo per progettazione per definire i componenti consentiti e i relativi mapping in modo simile alla finestra di dialogo per progettazione del [contenitore di layout standard nell’editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it).
 
 ### Scheda Stili {#styles-tab}
 
