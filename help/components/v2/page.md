@@ -3,9 +3,9 @@ title: Componente Pagina (v2)
 description: Il componente Pagina è una pagina estensibile concepita per funzionare con l’editor di modelli e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ Nella [finestra di dialogo per progettazione](#design-dialog) è possibile defin
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 2 del componente Pagina , introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
+Questo documento descrive la versione 2 del componente Pagina, originariamente introdotto con la versione 2.0.0 dei Componenti core a gennaio 2018.
 
 >[!CAUTION]
 >
 >Questo documento descrive la versione 2 del componente Pagina.
 >
->Per informazioni dettagliate sulla versione corrente del componente Pagina, vedi il documento [Componente Pagina](/help/components/page.md).
+>Per informazioni dettagliate sulla versione corrente del componente Pagina, consulta il documento [Componente Pagina](/help/components/page.md).
 
 ## Supporto di Progressive Web App {#pwa-support}
 
