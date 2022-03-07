@@ -3,9 +3,9 @@ title: Componente Immagine (v2)
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2228'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Le larghezze delle immagini e il ritaglio nonché le altre impostazioni possono 
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v2 del componente immagine, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
+Questo documento descrive la versione 2 del componente Immagine, originariamente introdotto con la versione 2.0.0 dei Componenti core a gennaio 2018.
 
 >[!CAUTION]
 >
@@ -200,7 +200,7 @@ Inoltre, puoi definire quali opzioni generali del componente vengono automaticam
       * Utilizza le maniglie per modificare l’ordine delle dimensioni.
       * Utilizza l’icona **Elimina** per rimuovere una larghezza.
    * Per impostazione predefinita, il caricamento delle immagini viene differito fino a quando non diventano visibili.
-      * Deseleziona l’opzione **Attiva il caricamento lento** per caricare le immagini al caricamento della pagina.
+      * Seleziona l’opzione **Disattiva il caricamento lento** per caricare le immagini al caricamento della pagina.
 * **Qualità JPEG**: fattore di qualità, espresso come percentuale tra 0 e 100, per le immagini JPEG trasformate, ad esempio ridimensionate o ritagliate.
 
 >[!TIP]
