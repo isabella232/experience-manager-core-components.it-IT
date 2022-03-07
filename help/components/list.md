@@ -4,9 +4,9 @@ description: Il componente core Elenco consente di creare facilmente elenchi din
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1151'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco di
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Elenco è la v3, introdotta con la versione 2.18.0 dei componenti core nel febbraio 2022, ed è descritta in questo documento.
+La versione corrente del componente Elenco è la v3, introdotta con la versione 2.18.0 dei Componenti core di febbraio 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -156,20 +156,20 @@ Utilizzando la scheda Impostazioni elemento, è possibile configurare la formatt
 
 ![Impostazioni elemento](/help/assets/list-edit-items.png)
 
-* **Collega elementi** - Collegamento di elementi alla pagina corrispondente
-* **Mostra descrizione** - Visualizza le descrizioni dell&#39;elemento di collegamento
-* **Mostra data** - Mostra la data di modifica dell&#39;elemento del collegamento
+* **Collega elementi** - Collega gli elementi alla pagina corrispondente
+* **Mostra descrizione** - Mostra la descrizione dell’elemento da collegare
+* **Mostra data** - Mostra la data di modifica dell’elemento da collegare
 * **Visualizza come teaser** - Se questa opzione è selezionata, l’elemento viene visualizzato come teaser
 
 ### Scheda Stili {#styles-tab-edit}
 
-Il componente Elenco supporta la AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling).
+Il componente Elenco supporta il [sistema di stili di AEM](/help/get-started/authoring.md#component-styling).
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
-![Scheda Stili della finestra di dialogo di modifica del componente Elenco](/help/assets/list-edit-styles.png)
+![Scheda Stili della finestra di dialogo per modifica del componente Elenco](/help/assets/list-edit-styles.png)
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
