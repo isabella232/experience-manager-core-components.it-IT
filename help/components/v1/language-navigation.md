@@ -3,9 +3,9 @@ title: Componente Navigazione lingua (v1)
 description: Il componente Navigazione lingua fornisce una navigazione per lingua/paese in un sito, consentendo ai visitatori di visualizzare la stessa pagina in una lingua diversa.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ La [finestra di dialogo per modifica](#edit-dialog) consente di definire la dire
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente di navigazione in lingua, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
+Questo documento descrive la versione 1 del componente di navigazione lingua, introdotto con la versione 2.0.0 dei componenti core a gennaio 2018.
 
 >[!CAUTION]
 >
->In questo documento viene descritta la versione 1 del componente Navigazione lingua.
+>Questo documento descrive la versione 1 del componente Navigazione lingua.
 >
->Per informazioni dettagliate sulla versione corrente del componente di navigazione in lingua, vedere la [Componente di navigazione lingua](/help/components/language-navigation.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Navigazione lingua, consulta il documento [Componente Navigazione lingua](/help/components/language-navigation.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
