@@ -5,8 +5,8 @@ role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 source-git-commit: 4f5ab401aee70b979217738dce4f1a72de940ae9
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,8 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di pubblicazione |
 |---|---|---|---|---|---|---|
 | [2.18.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.0) | Questa versione principale dei componenti core vede l’introduzione di un nuovo gestore di collegamenti nelle nuove versioni di più componenti, insieme a numerosi miglioramenti a livello di accessibilità e correzioni di bug. | - | 6.5.10.0+ * | Continua | 8, 11 | 16 febbraio 2022 |
-| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una patch. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 13 dicembre 2021 |
-| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | This is a patch release that fixes a regression introduced with the previous release. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 1° ottobre 2021 |
+| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una versione patch. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 13 dicembre 2021 |
+| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Questa è una patch che risolve una regressione introdotta con la versione precedente. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 1° ottobre 2021 |
 | [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Questa patch migliora i componenti [Elenco](/help/components/list.md) e [Navigazione](/help/components/navigation.md) in modo da visualizzare l’URL esterno per le destinazioni di reindirizzamento; abilita l’ereditarietà delle immagini di pagina per la prossima v2 del componente [Teaser](/help/components/teaser.md); e contiene alcune correzioni di bug aggiuntivi. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 31 agosto 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Questa versione patch corregge una modifica non compatibile con le versioni precedenti introdotta in precedenza. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 2 agosto 2021 |
 | [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Questa versione patch aggiunge il supporto delle mappe del sito per le pagine e include vari miglioramenti a livello di accessibilità. | 6.4.8.4+ * | 6.5.6.0+ * | Continua | 8, 11 | 29 luglio 2021 |
@@ -80,7 +80,7 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 
 La tabella che segue riporta in dettaglio le versioni dei singoli componenti contenuti in ciascuna versione dei Componenti core.
 
-|  | Versione 1.0.0 - 1.0.6 | Versione 1.1.0 | Versione 2.0.0 - 2.0.8 | Versione 2.1.0 | Versione 2.2.0-2.2.0 | Versione 2.3.0-2.3.2 | Versione 2.4.0 | Versione 2.5.0 | Versione 2.6.0 | Versione 2.7.0-2.8.0 | Versione 2.9.0-2.17.14 | Versione 2.18.0+ |
+|  | Versione 1.0.0 - 1.0.6 | Versione 1.1.0 | Versione 2.0.0 - 2.0.8 | Versione 2.1.0 | Versione 2.2.0-2.2.0 | Versione 2.3.0-2.3.2 | Versione 2.4.0 | Versione 2.5.0 | Versione 2.6.0 | Versione 2.7.0-2.8.0 | Versione 2.9.0 - 2.17.14 | Versione 2.18.0+ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | **[Pagina](components/page.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
 | **[Titolo](components/title.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
@@ -127,11 +127,11 @@ Per ulteriori dettagli sulle versioni dei componenti core, vedi la [documentazio
 
 ### Indicazione estesa delle versioni {#releases}
 
-I Componenti core vengono resi disponibili tramite **l’indicazione estesa delle versioni** e [rappresentano gli artefatti effettivamente pubblicati e disponibili su GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Le release sono identificate con un numero decimale del formato `X.Y.Z` e raccoglie tutti i componenti core come pacchetto finale.
+I Componenti core vengono resi disponibili tramite **l’indicazione estesa delle versioni** e [rappresentano gli artefatti effettivamente pubblicati e disponibili su GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Le versioni estese sono identificate con un numero decimale di formato `X.Y.Z` e raccolgono tutti i Componenti core come singolo pacchetto erogabile.
 
-* **Versioni principali** introduce componenti completamente nuovi, miglioramenti alla versione esistente dei componenti e correzioni di bug standard. È rappresentato da un incremento nel `X` del numero di rilascio.
-* **Versioni minori** introduce nuovi componenti, nuove funzionalità alle versioni esistenti dei componenti e correzioni di bug. È rappresentato da un incremento nel `Y` del numero di rilascio.
-* **Rilasci di patch** contiene solo correzioni di bug. È rappresentato da un incremento nel `Z` del numero di rilascio.
+* **Versioni principali** introduce componenti completamente nuovi, miglioramenti alla versione esistente dei componenti e correzioni di bug standard. Ciò viene rappresentato da un incremento nel componente `X` del numero di versione.
+* **Versioni minori** introducono nuovi componenti, nuove funzionalità alle versioni esistenti dei componenti e correzioni di bug. Ciò viene rappresentato da un incremento nel componente `Y` del numero di versione.
+* **Le versioni patch** contengono solo correzioni di bug. Ciò viene rappresentato da un incremento nel componente `Z` del numero di versione.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ I Componenti core vengono resi disponibili tramite **l’indicazione estesa dell
 
 ## Supporto dei Componenti core {#core-components-support}
 
-I componenti core sono parte integrante di AEM e sono supportati negli stessi termini e condizioni come se fossero forniti come parte di Quickstart.
+I Componenti core sono parte integrante di AEM e sono supportati in quanto tali, soggetti agli stessi termini e condizioni dei prodotti forniti con Quickstart.
 
 Analogamente ad altre funzionalità di prodotto, la regola generale di fine vita è la seguente:
 

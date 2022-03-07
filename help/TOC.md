@@ -6,8 +6,8 @@ user-guide-description: Utilizza i Componenti core estensibili per consentire ag
 feature-set: Experience Manager Sites
 source-git-commit: 4f5ab401aee70b979217738dce4f1a72de940ae9
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
