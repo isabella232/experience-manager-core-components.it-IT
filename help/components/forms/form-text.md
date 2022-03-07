@@ -4,9 +4,9 @@ description: Il componente core Testo modulo consente l’inserimento di testo d
 role: Architect, Developer, Admin, User
 exl-id: e8fa3881-51fb-4726-9654-8f93acfb7464
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
