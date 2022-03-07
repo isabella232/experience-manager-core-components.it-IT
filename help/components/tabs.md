@@ -4,9 +4,9 @@ description: Il componente Schede consente di creare più schede per disporre il
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Dopo aver selezionato l’opzione **Seleziona pannello** nella barra degli strum
 
 >[!NOTE]
 >
->Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
+>Le schede non sono selezionabili dall’autore in modalità **Modifica**. Utilizza la modalità **[Anteprima](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#preview-mode)** oppure l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** per interagire con le schede come farebbe un normale lettore del contenuto pubblicato.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
