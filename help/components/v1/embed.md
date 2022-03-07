@@ -1,11 +1,11 @@
 ---
-title: Componente di incorporamento (v1)
+title: Componente Incorpora (v1)
 description: Il componente Incorpora consente di incorporare contenuto esterno in una pagina di contenuto AEM.
 role: Architect, Developer, Admin, User
 source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1298'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Il componente core Incorpora consente all’autore di contenuto di definire un c
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la versione 1 del componente di incorporamento, introdotto con la versione 2.7.0 dei componenti core a settembre 2019.
+Questo documento descrive la versione 1 del componente Incorpora, introdotto con la versione 2.7.0 dei componenti core a settembre 2019.
 
 >[!CAUTION]
 >
->Questo documento descrive la versione 1 del componente di incorporamento.
+>Questo documento descrive la versione 1 del componente Incorpora.
 >
->Per informazioni dettagliate sulla versione corrente del componente da incorporare, consulta [Componente di incorporamento](/help/components/embed.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Incorpora, vedi il documento [Componente Incorpora](/help/components/embed.md).
 
 ## Esempio di output del componente {#sample-component-output}
 
