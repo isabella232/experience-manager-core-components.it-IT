@@ -3,16 +3,16 @@ title: Versioni dei Componenti core
 description: Le versioni dei Componenti core pubblicate possono contenere più di una versione degli stessi Componenti core. Questo documento spiega cosa s’intende per versioni e come comprendere la compatibilità con i Componenti core e AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 3407b5d086dca4ba18eeaf2e57b648923a4557b4
-workflow-type: ht
-source-wordcount: '2425'
-ht-degree: 100%
+source-git-commit: fce9b5b2693acf96724c4c6e9872012fda7d36d9
+workflow-type: tm+mt
+source-wordcount: '2462'
+ht-degree: 98%
 
 ---
 
 # Versioni dei Componenti core {#core-components-versions}
 
-La versione corrente dei Componenti core è la 2.18.0 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it).
+La versione corrente dei Componenti core è la 2.19.0 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it).
 
 ## Cronologia delle versioni e compatibilità {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di pubblicazione |
 |---|---|---|---|---|---|---|
+| [2.19.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.19.0) | Questa versione aggiunge una nuova versione al [Componente di ricerca](/help/components/quick-search.md) e le caratteristiche [Componente pulsante](/help/components/button.md) e molti miglioramenti a livello di accessibilità e correzioni di bug. | - | 6.5.10.0+ * | Continua | 8, 11 | 17 marzo 2022 |
 | [2.18.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.8) | Questa versione risolve un problema per AEMaaCS. | - | 6.5.10.0+ * | Continua | 8, 11 | 17 marzo 2022 |
 | [2.18.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.6) | Questa è una versione patch. | - | 6.5.10.0+ * | Continua | 8, 11 | 3 marzo 2022 |
 | [2.18.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.0) | Questa versione principale dei componenti core vede l’introduzione di un nuovo gestore di collegamenti nelle nuove versioni di più componenti, insieme a numerosi miglioramenti a livello di accessibilità e correzioni di bug. | - | 6.5.10.0+ * | Continua | 8, 11 | 16 febbraio 2022 |
