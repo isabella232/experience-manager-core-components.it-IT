@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: 1a02aea6cda2bb1f70ab97d7a439e2c8e64add52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1799'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttam
 
 >[!NOTE]
 >
->Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html) in AEM.
+>Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html?lang=it) in AEM.
 
 ## Esempio di output del componente {#sample-component-output}
 
