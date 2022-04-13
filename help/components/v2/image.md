@@ -1,16 +1,16 @@
 ---
-title: Componente Immagine (v2)
+title: Componente Immagine  (v2)
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
 source-git-commit: c64cdbf3779318c9cf018658d43684946de9c15b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2231'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Componente Immagine  (v2) {#image-component}
+# Componente Immagine   (v2) {#image-component}
 
 Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 
@@ -60,7 +60,7 @@ Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttam
 
 >[!CAUTION]
 >
->Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html) in AEM.
+>Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html?lang=it) in AEM.
 
 ## Esempio di output del componente {#sample-component-output}
 
