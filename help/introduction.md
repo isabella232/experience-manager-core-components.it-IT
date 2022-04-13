@@ -6,7 +6,7 @@ exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: fce9b5b2693acf96724c4c6e9872012fda7d36d9
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,14 +34,14 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 | Pronti per la produzione | I Componenti core sono 28 efficienti componenti testati, ampiamente utilizzati e con prestazioni ottimali. |
 | Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
-| Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
+| Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
 | Tracciabili | [L’integrazione con Adobe Client Data Layer](/help/developing/data-layer/overview.md) consente il tracciamento di tutti gli aspetti dell’esperienza del visitatore. |
 | Accessibili | Sono conformi allo [standard WCAG 2.1](https://www.w3.org/TR/WCAG21/), forniscono etichette ARIA e supportano la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-friendly | L’output HTML è semantico e fornisce annotazioni di microdati [schema.org.](https://schema.org) |
 | Pronti per WebApp | [L’output JSON ottimizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it) consente il rendering lato client, ma ancora con la possibilità di [modifica nel contesto](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it). |
 | Supporto AMP | I componenti hanno il [supporto integrato per lo standard AMP,](/help/developing/amp.md) per accelerare le tue esperienze mobili. |
 | Kit di progettazione | Un [kit di interfaccia utente per Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) consente ai designer di creare wireframe [personalizzabili in base alle esigenze](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html) e il markup segue le [convenzioni BEM CSS](http://getbem.com/). |
+| Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it) e il markup segue le [convenzioni BEM CSS](http://getbem.com/). |
 | Personalizzabili | Diversi modelli consentono [una facile personalizzazione](developing/customizing.md), dalla rettifica del codice HTML al riutilizzo avanzato delle funzionalità. |
 | Controllo delle versioni | I [criteri di controllo delle versioni](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) garantiscono che i Componenti core non blocchino il tuo sito in fase di miglioramento di elementi che potrebbero influire su di te. |
 | Localizzabili | Grazie alla risoluzione intelligente dei riferimenti alcuni componenti possono trovare ed eseguire [automaticamente il rendering del contenuto localizzato corrispondente.](get-started/localization.md) |
@@ -94,7 +94,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 >[!NOTE]
 >
->I Componenti core non sono immediatamente disponibili per gli autori; il [team di sviluppo deve prima integrarli nel tuo ambiente](get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+>I Componenti core non sono immediatamente disponibili per gli autori; il [team di sviluppo deve prima integrarli nel tuo ambiente](get-started/using.md). Una volta integrati, possono essere resi disponibili e preconfigurati tramite l’[editor di modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it).
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 ## Requisiti di sistema {#system-requirements}
 
-| Componenti core Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
+| Componenti core  Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
 |---------|---------|---------|---------|---------|
 | [2.19.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.19.0) | Continua | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
 
