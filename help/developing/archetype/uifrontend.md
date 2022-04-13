@@ -5,9 +5,9 @@ feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 99132b49-bd06-4ac2-9348-12c0dfdfe8b2
 source-git-commit: 0e8082b0c5db1f2efc7db51f13123b5264a3a608
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1621'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Quando l’intero Archetipo progetto AEM viene eseguito utilizzando `mvn clean i
 
 ## Panoramica delle ClientLibs {#clientlibs}
 
-Il modulo frontend è reso disponibile utilizzando una [AEM ClientLib](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html). Durante l’esecuzione dello script di sviluppo NPM, l’app viene sviluppata e il pacchetto aem-clientlib-generator prende il risultante output di sviluppo e lo trasforma in una ClientLib.
+Il modulo frontend è reso disponibile utilizzando una [AEM ClientLib](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it). Durante l’esecuzione dello script di sviluppo NPM, l’app viene sviluppata e il pacchetto aem-clientlib-generator prende il risultante output di sviluppo e lo trasforma in una ClientLib.
 
 Una ClientLib è costituita dai file e dalle directory seguenti:
 
@@ -163,7 +163,7 @@ Il processo di sviluppo del modulo ui.frontend sfrutta il plug-in [aem-clientlib
 
 ### Inclusione delle librerie client nelle pagine {#clientlib-inclusion}
 
-Le categorie `clientlib-site` e `clientlib-dependencies` vengono incluse nelle pagine tramite la [configurazione di Criterio pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#template-definitions) come parte del modello predefinito. Per visualizzare il criterio, modifica **Modello pagina di contenuto > Informazioni pagina > Criterio pagina**.
+Le categorie `clientlib-site` e `clientlib-dependencies` vengono incluse nelle pagine tramite la [configurazione di Criterio pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#template-definitions) come parte del modello predefinito. Per visualizzare il criterio, modifica **Modello pagina di contenuto > Informazioni pagina > Criterio pagina**.
 
 L’inclusione finale delle librerie client nella pagina del sito è la seguente:
 
