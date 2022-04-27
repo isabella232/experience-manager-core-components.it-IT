@@ -4,10 +4,10 @@ description: Documentazione del plug-in Maven locale di Build Analyzer
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: de26b310-a294-42d6-a0db-91f6036a328c
-source-git-commit: 79eb9cc18a66c09deeef1477c4d26d8616ba55de
+source-git-commit: 98d8fac2a626a1f89ef1b109aa8cba27abf8203a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 94%
+source-wordcount: '646'
+ht-degree: 93%
 
 ---
 
@@ -39,6 +39,8 @@ La tabella che segue descrive gli analizzatori eseguiti come parte di questo pas
 | `region-deprecated-api` | Verifica l’eventuale utilizzo di [API obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html?lang=it) <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `artifact-rules` | Convalida le dipendenze come bundle e pacchetti di contenuto per evitare problemi noti negli artefatti.<p> </p>`[WARNING] [artifact-rules] com.adobe.acs:acs-aem-commons-bundle:5.0.4: Use at least version 5.0.10 (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `content-package-validation` | Esegue gli identificatori di convalida filevault. Per impostazione predefinita, jackrabbit-docviewparser è abilitato e verifica la presenza di una sintassi di contenuto ben formata all’interno dei pacchetti che verranno installati durante la distribuzione.<p> </p>`[main] WARN org.apache.sling.feature.analyser.task.impl.CheckContentPackages - ValidationViolation: "jackrabbit-docviewparser: Invalid XML found: The reference to entity "se" must end with the ';' delimiter.", filePath=jcr_root/apps/somename/configs/com.adobe.test.Invalid.xml, nodePath=/apps/somename/configs/com.adobe.test.Invalid`<p> </p>Per risolvere il problema, controlla il file denominato dall&#39;analizzatore per i problemi xml. | Sì | Sì |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Problemi noti
 
