@@ -1,16 +1,16 @@
 ---
-title: Componente Ricerca rapida (v1)
+title: Componente Ricerca rapida  (v1)
 description: Il componente Ricerca rapida fornisce funzionalità di ricerca in un sito web e visualizzazione dei risultati della ricerca, in modo che i visitatori possano effettuare ricerche nel sito e filtrare i risultati.
 role: Architect, Developer, Admin, User
 exl-id: 60a043b7-d82c-4bc1-b91a-b77f748f7bc2
 source-git-commit: ae2e1d0aaadbc0ad04847ce9aecb382e10cbedf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Componente Ricerca rapida (v1) {#quick-search-component}
+# Componente Ricerca rapida  (v1) {#quick-search-component}
 
 Il componente Ricerca rapida fornisce funzionalità di ricerca in un sito web e visualizzazione dei risultati della ricerca, in modo che i visitatori possano facilmente effettuare ricerche nel contenuto del sito e visualizzare i risultati.
 
@@ -28,12 +28,12 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 >[!CAUTION]
 >
 >Questo documento descrive la versione 1 del componente Ricerca rapida.
->Per informazioni dettagliate sulla versione corrente del componente Ricerca rapida, consulta [Componente Ricerca rapida](/help/components/quick-search.md) documento.
+>Per informazioni dettagliate sulla versione corrente del componente Ricerca rapida, consulta il documento [Componente Ricerca rapida](/help/components/quick-search.md).
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
