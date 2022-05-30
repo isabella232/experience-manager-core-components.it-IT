@@ -4,9 +4,9 @@ description: 'Risolvi i problemi relativi ai componenti core e consenti ad altri
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 72f774c7e4bbcf0e2dfefb6f8294dd729eb0ea1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '924'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
    * **[Utilizzo efficace dei Componenti core:](/help/developing/success.md)** linee guida da tenere bene in mente prima di iniziare qualsiasi progetto che preveda l’utilizzo dei Componenti core.
    * **[Esercitazione WKND:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)** esercitazione di due giorni per la creazione di un nuovo sito.
    * **[Esercitazione Summit:](https://expleague.azureedge.net/labs/L767/index.html)** un’esercitazione di due ore per la creazione di un nuovo sito (da un laboratorio presso US Summit 2019).
-   * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html.)** visita guidata dei Componenti core (registrata a dicembre 2018).
+   * **[Webinar Gems:](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)** visita guidata dei Componenti core (registrata a dicembre 2018).
 
 ## Funzioni {#features}
 
