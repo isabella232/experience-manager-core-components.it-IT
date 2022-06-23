@@ -4,9 +4,9 @@ description: I Componenti core forniscono componenti di base affidabili ed esten
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
 source-git-commit: faf73c70a4bff387bed2f8cf6e48c39e597e51c7
-workflow-type: ht
-source-wordcount: '1559'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ Per informazioni dettagliate sulle loro funzionalità di authoring e sulle opzio
 | Distribuzione | [Tramite GitHub pubblico](https://github.com/adobe/aem-core-wcm-components) | Tramite Quickstart |
 | Licenza | [Licenza Apache](https://www.apache.org/licenses/LICENSE-2.0) | Proprietaria di Adobe |
 | Contributo | Tramite richiesta pull | Impossibile |
-| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=it) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=it) |
+| Accessibilità | Completamente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=it) | Solo parzialmente conforme allo standard [WCAG 2.0 AA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Elenco dei componenti {#component-list}
 
