@@ -3,9 +3,9 @@ title: Sviluppo di Componenti core
 description: I Componenti core forniscono componenti di base affidabili ed estensibili che offrono funzionalità avanzate, distribuzione continua, controllo delle versioni dei componenti, implementazione moderna, markup snello ed esportazione JSON di contenuto.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: faf73c70a4bff387bed2f8cf6e48c39e597e51c7
 workflow-type: ht
-source-wordcount: '1583'
+source-wordcount: '1559'
 ht-degree: 100%
 
 ---
@@ -140,10 +140,6 @@ La tabella che segue riporta i Componenti core disponibili, il collegamento alle
 | [Incorpora](https://adobe.com/go/aem_cmp_tech_embed_v1) | Incorpora una risorsa esterna all’interno di una pagina | - |
 | [Barra di avanzamento](https://adobe.com/go/aem_cmp_tech_progress_v1) | Fornisce una rappresentazione visiva del progresso verso un obiettivo | - |
 | [Visualizzatore PDF](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1_it) | Visualizza un documento PDF su una pagina | - |
-
-### Componenti in arrivo {#upcoming-components}
-
-Per una panoramica della roadmap dei Componenti core in arrivo, vedi [wiki del progetto su GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
 
 ## Aggiornamento dei Componenti core {#upgrade-of-core-components}
 
