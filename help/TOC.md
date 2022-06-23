@@ -4,9 +4,9 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: fce9b5b2693acf96724c4c6e9872012fda7d36d9
-workflow-type: ht
-source-wordcount: '245'
+source-git-commit: d67fe6776bac26e5060d1e83feb4c078c0a45295
+workflow-type: tm+mt
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 100%
    + [Ricerca rapida](components/quick-search.md)
    + [Separatore](components/separator.md)
    + [Condivisione sui social media](components/sharing.md)
+   + [Sommario](components/tableofcontents.md)
    + [Testo](components/text.md)
    + [Schede](components/tabs.md)
    + [Teaser](components/teaser.md)

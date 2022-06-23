@@ -3,9 +3,9 @@ title: 'Introduzione ai Componenti core '
 description: 'Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 72f774c7e4bbcf0e2dfefb6f8294dd729eb0ea1b
-workflow-type: ht
-source-wordcount: '924'
+source-git-commit: c572a2f5ab4e975e0ef467ab071fd25b373be18b
+workflow-type: tm+mt
+source-wordcount: '927'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 
 |  |  |
 |---|---|
-| Pronti per la produzione | I Componenti core sono 28 efficienti componenti testati, ampiamente utilizzati e con prestazioni ottimali. |
+| Pronti per la produzione | I Componenti core sono 30 efficienti componenti testati, ampiamente utilizzati e con prestazioni ottimali. |
 | Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
 | Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
@@ -58,6 +58,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 * [Navigazione lingua](components/language-navigation.md)
 * [Breadcrumb](components/breadcrumb.md)
 * [Ricerca rapida](components/quick-search.md)
+* [Sommario](components/tableofcontents.md)
 
 ### Componenti di authoring delle pagine {#page-authoring-components}
 
@@ -106,7 +107,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 
 | Componenti core   Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
 |---------|---------|---------|---------|---------|
-| [2.19.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.19.0) | Continua | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
+| [2,20,0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.0) | Continua | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
