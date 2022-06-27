@@ -3,9 +3,9 @@ title: Componente Testo
 description: Il componente Testo è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: c041439e31a7da62739b6d5130c52dea36662a0c
-workflow-type: ht
-source-wordcount: '2209'
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+workflow-type: tm+mt
+source-wordcount: '2210'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
 | v2 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
-| [v1](v1/text-v1.md) | Compatibile | Compatibile | - |
+| [v1](v1/text-v1.md) | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -51,7 +51,7 @@ Il resto di questo articolo illustra la configurazione standard del componente c
 
 >[!NOTE]
 >
->Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
+>Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -258,7 +258,7 @@ Consente di inserire una tabella nel testo. Selezionando questa opzione si apre 
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ### Caratteri speciali {#special-characters}
 

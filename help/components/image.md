@@ -3,10 +3,10 @@ title: Componente Immagine
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 1a02aea6cda2bb1f70ab97d7a439e2c8e64add52
-workflow-type: ht
-source-wordcount: '1799'
-ht-degree: 100%
+source-git-commit: 2af48e397e47916760656cde8b0295b2f75cb0a6
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 |--- |--- |--- |---|
 | v3 | - | Compatibile | Compatibile |
 | [v2](v2/image.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/image-v1.md) | Compatibile | Compatibile | - |
+| [v1](v1/image-v1.md) | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -40,23 +40,19 @@ Il componente Immagine è dotato di solide funzioni reattive pronte per l’uso.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
 
->[!TIP]
->
->Consulta la sezione [Servlet Immagine adattiva](#adaptive-image-servlet) per ulteriori informazioni tecniche su queste funzioni e suggerimenti per ottimizzare la selezione della rappresentazione.
-
 ## Supporto di Dynamic Media {#dynamic-media}
 
 Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) supporta le risorse di [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=it#dynamicmedia). [Se abilitate,](#design-dialog) queste funzioni consentono di aggiungere risorse immagine di Dynamic Media con una semplice azione di trascinamento e rilascio della selezione oppure tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, immagini preimpostate e ritaglio avanzato.
 
-La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
+Le esperienze web create con i componenti core possono offrire funzionalità Dynamic Media Image avanzate, basate su Sensei, solide, ad alte prestazioni e multipiattaforma.
 
 ## Supporto di SVG {#svg-support}
 
 Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
 
 * Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
-* L’Adaptive Image Servlet trasmette in streaming il file SVG originale (le trasformazioni vengono ignorate).
-* Per un’immagine SVG, le “immagini intelligenti” e le “dimensioni intelligenti” sono impostate su un array vuoto nel modello di immagine.
+* Il file SVG originale viene inviato in streaming (le trasformazioni vengono ignorate).
+* Per un&#39;immagine SVG, le &quot;immagini intelligenti&quot; e le &quot;dimensioni avanzate&quot; sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
 
@@ -95,7 +91,7 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 * **Risorsa immagine**
    * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’editor risorse.
+   * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’Editor risorse.
 
 * **Non fornire testo alternativo** - Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
 
@@ -114,7 +110,7 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
    * Utilizza la finestra di dialogo per selezione per stabilire il collegamento con un’altra risorsa AEM.
    * Se non stabilisci il collegamento con un’altra risorsa AEM, immetti l’URL assoluto. Gli URL non assoluti vengono interpretati come relativi ad AEM.
    * **Apri collegamento in una nuova scheda** - Questa opzione apre il collegamento in una nuova finestra del browser.
-* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
@@ -135,10 +131,15 @@ Gli stili devono essere configurati per questo componente nella [finestra di dia
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
+### Scheda Principale {#main-tab}
+
 ![Scheda Principale della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-main.png)
 
 * **Abilita funzioni DM** - Se questa opzione è selezionata, sono disponibili [le funzioni di Dynamic Media](#dynamic-media).
    * Questa opzione viene visualizzata solo quando Dynamic Media è abilitato nell’ambiente.
+* **Abilita immagini ottimizzate per il web** - Se controllato, [servizio di distribuzione delle immagini ottimizzato per il web](/help/developing/web-optimized-image-delivery.md) Le immagini verranno distribuite in formato WebP, riducendo in media le dimensioni delle immagini del 25%.
+   * Questa opzione è disponibile solo in AEMaaCS.
+   * Se non è selezionato o il servizio di distribuzione delle immagini ottimizzato per il Web non è disponibile il [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) viene utilizzato.
 * **Disattiva il caricamento lento** - Se questa opzione è selezionata, il componente precarica tutte le immagini senza caricamento lento.
 * **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
@@ -161,27 +162,11 @@ Nella scheda Principale puoi definire un elenco di larghezze consentite, espress
 
 >[!TIP]
 >
->Consulta la sezione [Servlet immagine adattiva](#adaptive-image-servlet) per ulteriori informazioni tecniche sulle sue funzioni e suggerimenti su come ottimizzare la selezione della rappresentazione definendo con cura le larghezze.
+>Vedere il documento [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) per suggerimenti su come ottimizzare la selezione del rendering definendo con attenzione le larghezze.
 
 ### Scheda Stili {#styles-tab}
 
 Il componente Immagine supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
-
-## Adaptive Image Servlet {#adaptive-image-servlet}
-
-Il componente Immagine utilizza l’Adaptive Image Servlet dei Componente core. [L’Adaptive Image Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle loro [personalizzazioni dei Componenti core](/help/developing/customizing.md).
-
-### Ottimizzazione della selezione della rappresentazione {#optimizing-rendition-selection}
-
-Il servlet per immagini adattive cercherà di scegliere la rappresentazione migliore per le dimensioni e il tipo di immagine richiesti. Si consiglia di definire in sincronia le rappresentazioni DAM e le larghezze consentite del componente Immagine, in modo che il servlet per immagini adattive possa eseguire la minor quantità di elaborazione possibile.
-
-Ciò migliora le prestazioni ed evita che alcune immagini non vengano elaborate correttamente dalla libreria di elaborazione delle immagini sottostante.
-
->[!NOTE]
->
->Le richieste condizionali tramite l’intestazione `Last-Modified` sono supportate dall’Adaptive Image Servlet, ma il caching dell’intestazione `Last-Modified` [deve essere abilitato in Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers).
->
->L’esempio di configurazione di Dispatcher in [Archetipo progetto AEM](/help/developing/archetype/overview.md) già include questa configurazione.
 
 ## Adobe Client Data Layer {#data-layer}
 

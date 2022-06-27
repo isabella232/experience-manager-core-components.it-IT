@@ -4,10 +4,10 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: d67fe6776bac26e5060d1e83feb4c078c0a45295
+source-git-commit: 3ff1343ab4ef7a52f910984a0bcd8fc4201441bf
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '255'
+ht-degree: 97%
 
 ---
 
@@ -91,6 +91,8 @@ ht-degree: 100%
    + [Supporto AMP](developing/amp.md)
    + [Configurazioni in base al contesto](developing/context-aware-configs.md)
    + [Inclusione delle librerie client](developing/including-clientlibs.md)
+   + [Servlet di immagine adattiva](/help/developing/adaptive-image-servlet.md)
+   + [Distribuzione delle immagini ottimizzata per il web](/help/developing/web-optimized-image-delivery.md)
    + Adobe Client Data Layer {#data-layer}
       + [Panoramica di Data Layer](developing/data-layer/overview.md)
       + [Integrazioni con Data Layer](developing/data-layer/integrations.md)

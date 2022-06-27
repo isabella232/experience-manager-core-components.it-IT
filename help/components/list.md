@@ -3,9 +3,9 @@ title: Componente Elenco
 description: Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: ht
-source-wordcount: '1151'
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+workflow-type: tm+mt
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 |--- |--- |--- |---|
 | v3 | - | Compatibile | Compatibile |
 | [v2](v2/list.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/list-v1.md) | Compatibile | Compatibile | - |
+| [v1](v1/list-v1.md) | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
