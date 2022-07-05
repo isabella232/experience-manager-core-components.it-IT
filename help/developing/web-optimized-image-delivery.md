@@ -2,13 +2,13 @@
 title: Distribuzione delle immagini ottimizzata per il web
 description: Scopri in che modo i componenti core possono sfruttare AEM funzionalità di distribuzione delle immagini ottimizzate per il web di as a Cloud Service per fornire le immagini in modo più efficiente.
 role: Architect, Developer, Admin, User
-source-git-commit: 20436ffb5d6a6346738be1e6f5e6e2e8a68e76c9
+exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
+source-git-commit: df0ae972ca698e809a5cb8a5ad2d41ad89c2db8e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
-
 
 # Distribuzione delle immagini ottimizzata per il web {#web-optimized-image-delivery}
 
@@ -122,6 +122,6 @@ Vedi la sezione precedente [Attivazione della distribuzione di immagini ottimizz
 
 No, questo non dovrebbe mai succedere.
 
-* In HTML, il markup non cambia quando si abilitano immagini ottimizzate per il web, cambia solo il valore dell&#39;attributo SCR sull&#39;elemento immagine.
+* In HTML, il markup non cambia quando si abilitano immagini ottimizzate per il web, cambia solo il valore dell’attributo SRC sull’elemento immagine.
 * Quando il nuovo servizio immagine non è disponibile o non può elaborare l&#39;immagine desiderata, l&#39;URL generato [fallback a Adaptive Image Servlet.](#fallback)
 * Le regole del Dispatcher possono bloccare il servizio immagine ottimizzato per il web e [deve essere selezionato quando si attiva la funzione.](#activating)
