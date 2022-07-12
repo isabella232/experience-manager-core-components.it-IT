@@ -4,7 +4,7 @@ description: Il componente Testo è un componente per la modifica e la composizi
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
 source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2210'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Il resto di questo articolo illustra la configurazione standard del componente c
 
 >[!NOTE]
 >
->Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+>Nel componente Testo sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente di RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -258,7 +258,7 @@ Consente di inserire una tabella nel testo. Selezionando questa opzione si apre 
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ### Caratteri speciali {#special-characters}
 
