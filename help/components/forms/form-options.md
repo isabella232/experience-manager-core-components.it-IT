@@ -4,7 +4,7 @@ description: Il componente core Opzioni modulo consente la selezione di opzioni 
 role: Architect, Developer, Admin, User
 exl-id: 8a74bd37-9b12-4fa6-bff2-53e337b16251
 source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
 ht-degree: 100%
 
