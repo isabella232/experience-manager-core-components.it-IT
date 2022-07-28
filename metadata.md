@@ -3,12 +3,12 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 type: Documentation
 description: Documentazione dei Componenti core di Adobe Experience Manager
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.it-IT
+git-repo: https://github.com/AdobeDocs/experience-manager-core-components.it-IT
 index: y
 source-git-commit: 2fbf593dee19f22b87a0f7e98d8a1f0c9252e7e7
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
