@@ -5,9 +5,9 @@ index: n
 role: Architect, Developer, Admin, User
 exl-id: 625ce8de-5c4a-476d-b749-895493d169b1
 source-git-commit: 5f25aee6ebcb7a5c6b8db0df5b8b853f15af97d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1323'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ La tabella che segue riporta la compatibilità della versione 1 del componente I
 
 ## Esempio di output del componente {#sample-component-output}
 
-Di seguito è riportato un esempio tratto da [We.Retail](https://experienceleague.adobe.com/docs/experience-manager-64/developing/bestpractices/we-retail/we-retail.html?lang=it).
+Di seguito è riportato un esempio tratto da [We.Retail](https://helpx.adobe.com/it/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Schermata {#screenshot}
 
@@ -194,17 +194,17 @@ Tocca o fai clic sul pulsante Aggiungi per aggiungere un’altra dimensione.
 
 Per impostazione predefinita, il caricamento delle immagini viene differito fino a quando non diventano visibili. Deseleziona l’opzione **Attiva il caricamento lento** per caricare le immagini al caricamento della pagina.
 
-* **Abilita immagini ottimizzate per il web** - Se selezionato, il [servizio di distribuzione delle immagini ottimizzato per il web](/help/developing/web-optimized-image-delivery.md) Le immagini verranno distribuite in formato WebP, riducendo in media le dimensioni delle immagini del 25%.
+* **Abilita immagini ottimizzate per il web**: se questa opzione è selezionata, il [servizio di consegna delle immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) fornisce immagini in formato WebP, riducendone in media le dimensioni del 25%.
    * Questa opzione è disponibile solo in AEMaaCS.
-   * Se non è selezionato o il servizio di distribuzione delle immagini ottimizzato per il Web non è disponibile il [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) viene utilizzato.
+   * Se non è selezionata o se il servizio di consegna delle immagini ottimizzate per il web non è disponibile, viene utilizzato [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md).
 
 ### Funzioni {#features}
 
 Nella scheda **Funzioni** è possibile definire le opzioni disponibili per gli autori di contenuto quando utilizzano il componente, incluse le opzioni di caricamento, orientamento e ritaglio.
 
-* **Abilita immagini ottimizzate per il web** - se selezionato, il servizio di distribuzione delle immagini ottimizzato per il Web distribuirà le immagini in formato WebP, riducendo le dimensioni delle immagini in media del 25%.
+* **Abilita immagini ottimizzate per il web**: se questa opzione è selezionata, il servizio di consegna delle immagini ottimizzate per il web distribuisce le immagini in formato WebP, riducendone le dimensioni in media del 25%.
    * Questa opzione è disponibile solo in AEMaaCS.
-   * Se non è selezionato o il servizio di distribuzione delle immagini ottimizzato per il Web non è disponibile il [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) viene utilizzato.
+   * Se non è selezionata o se il servizio di consegna delle immagini ottimizzate per il web non è disponibile, viene utilizzato [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md).
 
 * Origine
 
