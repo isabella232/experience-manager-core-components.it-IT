@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: 2af48e397e47916760656cde8b0295b2f75cb0a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Inoltre, il componente Immagine supporta il caricamento lento per posticipare il
 
 Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) supporta le risorse di [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=it#dynamicmedia). [Se abilitate,](#design-dialog) queste funzioni consentono di aggiungere risorse immagine di Dynamic Media con una semplice azione di trascinamento e rilascio della selezione oppure tramite il browser delle risorse, esattamente come faresti con qualsiasi altra immagine. Sono inoltre supportati modificatori di immagini, immagini preimpostate e ritaglio avanzato.
 
-Le esperienze web create con i componenti core possono offrire funzionalità Dynamic Media Image avanzate, basate su Sensei, solide, ad alte prestazioni e multipiattaforma.
+La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
 
 ## Supporto di SVG {#svg-support}
 
@@ -52,7 +52,7 @@ Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
 
 * Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 * Il file SVG originale viene inviato in streaming (le trasformazioni vengono ignorate).
-* Per un&#39;immagine SVG, le &quot;immagini intelligenti&quot; e le &quot;dimensioni avanzate&quot; sono impostate su un array vuoto nel modello di immagine.
+* Per un’immagine SVG, le “immagini avanzate” e le “dimensioni avanzate” sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
 
@@ -137,9 +137,9 @@ Gli stili devono essere configurati per questo componente nella [finestra di dia
 
 * **Abilita funzioni DM** - Se questa opzione è selezionata, sono disponibili [le funzioni di Dynamic Media](#dynamic-media).
    * Questa opzione viene visualizzata solo quando Dynamic Media è abilitato nell’ambiente.
-* **Abilita immagini ottimizzate per il web** - Se controllato, [servizio di distribuzione delle immagini ottimizzato per il web](/help/developing/web-optimized-image-delivery.md) Le immagini verranno distribuite in formato WebP, riducendo in media le dimensioni delle immagini del 25%.
+* **Abilita immagini ottimizzate per il web**: quando questa opzione è selezionata, il [servizio di consegna delle immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) fornisce immagini in formato WebP, riducendone in media le dimensioni del 25%.
    * Questa opzione è disponibile solo in AEMaaCS.
-   * Se non è selezionato o il servizio di distribuzione delle immagini ottimizzato per il Web non è disponibile il [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) viene utilizzato.
+   * Se non è selezionata o il servizio di consegna delle immagini ottimizzate per il web non è disponibile, viene utilizzato [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md).
 * **Disattiva il caricamento lento** - Se questa opzione è selezionata, il componente precarica tutte le immagini senza caricamento lento.
 * **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
@@ -162,7 +162,7 @@ Nella scheda Principale puoi definire un elenco di larghezze consentite, espress
 
 >[!TIP]
 >
->Vedere il documento [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) per suggerimenti su come ottimizzare la selezione del rendering definendo con attenzione le larghezze.
+>Consulta il documento [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md) per suggerimenti su come ottimizzare la selezione delle rappresentazioni definendone con attenzione le dimensioni.
 
 ### Scheda Stili {#styles-tab}
 
