@@ -4,9 +4,9 @@ description: Il componente Sommario crea un sommario basato sui titoli nel conte
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
 source-git-commit: 394a8b968d7bcde7e766ed719c5914ec5cb60744
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,10 +16,10 @@ Il componente Sommario crea un sommario basato sui titoli nel contenuto della pa
 
 ## Utilizzo {#usage}
 
-Il componente Sommario offre ai visitatori del sito la possibilità di navigare rapidamente nel contenuto della pagina attraverso un sommario generato in modo efficiente in base ai titoli del contenuto delle pagine.
+Il componente Sommario offre ai visitatori del sito la possibilità di navigare rapidamente nel contenuto della pagina attraverso un sommario generato in modo efficace in base ai titoli del contenuto delle pagine.
 
-* Il ToC viene generato lato server.
-* È completamente memorizzato nella cache dal dispatcher per una consegna rapida.
+* Il Sommario viene generato lato server.
+* È completamente memorizzato nella cache dal dispatcher, per una consegna rapida.
 * Funziona con tutti i componenti della pagina, non solo con i componenti core.
 
 La [finestra di dialogo di modifica](#edit-dialog) consente all’autore dei contenuti di definire la serie di titoli da inserire nel sommario. Utilizzando la [finestra di dialogo di progettazione](#design-dialog), l’autore del modello può impostare il valore predefinito per i titoli quando un autore di contenuti aggiunge un componente Sommario a una pagina, nonché limitare i titoli da includere nel sommario in base a nomi di classi.
