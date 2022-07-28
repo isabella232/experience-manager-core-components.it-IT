@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
 source-git-commit: 5f25aee6ebcb7a5c6b8db0df5b8b853f15af97d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2092'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -185,9 +185,9 @@ Inoltre, puoi definire quali opzioni generali del componente vengono automaticam
 ![Scheda Principale della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-main-v2.png)
 
 * **Abilita funzioni DM**: se questa opzione è selezionata, sono disponibili le funzioni di [Dynamic Media](#dynamic-media).
-* **Abilita immagini ottimizzate per il web** - Se selezionato, il [servizio di distribuzione delle immagini ottimizzato per il web](/help/developing/web-optimized-image-delivery.md) Le immagini verranno distribuite in formato WebP, riducendo in media le dimensioni delle immagini del 25%.
+* **Abilita immagini ottimizzate per il web**: se questa opzione è selezionata, il [servizio di consegna delle immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) fornisce immagini in formato WebP, riducendone in media le dimensioni del 25%.
    * Questa opzione è disponibile solo in AEMaaCS.
-   * Se non è selezionato o il servizio di distribuzione delle immagini ottimizzato per il Web non è disponibile il [Servlet immagine adattivo](/help/developing/adaptive-image-servlet.md) viene utilizzato.
+   * Se non è selezionata o se il servizio di consegna delle immagini ottimizzate per il web non è disponibile, viene utilizzato [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md).
 * **Attiva il caricamento lento**: consente di definire se l’opzione di caricamento lento è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
@@ -204,7 +204,7 @@ Inoltre, puoi definire quali opzioni generali del componente vengono automaticam
 
 >[!TIP]
 >
->Vedere il documento [Servlet immagine adattivo](#adaptive-image-servlet) per suggerimenti su come ottimizzare la selezione del rendering definendo con attenzione le larghezze.
+>Consulta il documento [Adaptive Image Servlet](#adaptive-image-servlet) per suggerimenti su come ottimizzare la selezione delle rappresentazioni definendone con attenzione le dimensioni.
 
 ### Scheda Funzioni {#features-tab}
 
