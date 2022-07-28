@@ -3,7 +3,7 @@ title: Distribuzione delle immagini ottimizzata per il web
 description: Scopri in che modo i componenti core possono sfruttare AEM funzionalità di distribuzione delle immagini ottimizzate per il web di as a Cloud Service per fornire le immagini in modo più efficiente.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: df0ae972ca698e809a5cb8a5ad2d41ad89c2db8e
+source-git-commit: a134c2593593efef4df7b01e3a870e03e9860640
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Scopri in che modo i componenti core possono sfruttare AEM funzionalità di dist
 >
 >Per ulteriori informazioni sulle funzioni prerelease di AEMaaCS, consulta il documento [Canale pre-rilascio Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it)
 
-##  Panoramica {#overview}
+## Panoramica {#overview}
 
 La funzione di distribuzione delle immagini ottimizzata per il web di AEM as a Cloud Service offre risorse di immagini da DAM in [Formato WebP.](https://developers.google.com/speed/webp) WebP può ridurre le dimensioni di download di un&#39;immagine di circa il 25% in media, il che si traduce in un caricamento più rapido della pagina.
 
