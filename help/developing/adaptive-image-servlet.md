@@ -1,31 +1,31 @@
 ---
 title: Adaptive Image Servlet
-description: Scopri in che modo i componenti core utilizzano il servlet immagine adattivo per la distribuzione delle immagini e come ottimizzarne l’utilizzo.
+description: Scopri in che modo i componenti core sfruttano Adaptive Image Servlet per la consegna delle immagini e come ottimizzarne l’utilizzo.
 role: Architect, Developer, Admin, User
-source-git-commit: 3ff1343ab4ef7a52f910984a0bcd8fc4201441bf
-workflow-type: tm+mt
+exl-id: d9199d51-6f09-4000-9525-afc30474437e
+source-git-commit: dd07fa714a23759d43ca491232674d88bc7bf88e
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
+# Adaptive Image Servlet {#adaptive-image-servlet}
 
-# Servlet immagine adattivo {#adaptive-image-servlet}
+Scopri in che modo i componenti core sfruttano Adaptive Image Servlet per la consegna delle immagini e come ottimizzarne l’utilizzo.
 
-Scopri in che modo i componenti core utilizzano il servlet immagine adattivo per la distribuzione delle immagini e come ottimizzarne l’utilizzo.
+## Adaptive Image Servlet o consegna di immagini ottimizzate per il web? {#options}
 
-## Distribuzione di immagini adattive o ottimizzate per il web? {#options}
+Il componente core Immagine può utilizzare due metodi per la consegna delle immagini.
 
-Il componente di base Immagine può utilizzare due metodi per la distribuzione delle immagini.
+* Adaptive Image Servlet è il metodo predefinito.
+* La [consegna di immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) è disponibile per AEMaaCS e riduce la dimensione del download del 25% in media.
 
-* Il servlet immagine adattivo è il predefinito.
-* [Distribuzione di immagini ottimizzata per il web](/help/developing/web-optimized-image-delivery.md) è disponibile per AEMaaCS e riduce la dimensione del download del 25% in media.
-
-Questo documento descrive il Servlet immagine adattivo predefinito.
+Questo documento descrive il metodo predefinito, Adaptive Image Servlet.
 
 ## Panoramica {#overview}
 
-Per impostazione predefinita, il componente immagine utilizza il servlet immagine adattivo del componente core per distribuire le immagini. [L’Adaptive Image Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle loro [personalizzazioni dei Componenti core](/help/developing/customizing.md).
+Per impostazione predefinita, il componente Immagine utilizza Adaptive Image Servlet del componente core per consegnare le immagini. [Adaptive Image Servlet](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) è responsabile dell’elaborazione e dello streaming delle immagini e può essere utilizzato dagli sviluppatori nelle [personalizzazioni dei componenti core](/help/developing/customizing.md).
 
 ## Ottimizzazione della selezione della rappresentazione {#optimizing-rendition-selection}
 
@@ -33,7 +33,7 @@ Il servlet per immagini adattive cercherà di scegliere la rappresentazione migl
 
 Ciò migliora le prestazioni ed evita che alcune immagini non vengano elaborate correttamente dalla libreria di elaborazione delle immagini sottostante.
 
-## Utilizzo delle intestazioni modificate per ultimo {#last-modified}
+## Utilizzo delle intestazioni “Last-Mofified” {#last-modified}
 
 Le richieste condizionali tramite l’intestazione `Last-Modified` sono supportate dall’Adaptive Image Servlet, ma il caching dell’intestazione `Last-Modified` [deve essere abilitato in Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers).
 
