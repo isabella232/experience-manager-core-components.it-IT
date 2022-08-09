@@ -3,10 +3,10 @@ title: Componente Immagine  (v2)
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
-source-git-commit: 5f25aee6ebcb7a5c6b8db0df5b8b853f15af97d0
-workflow-type: ht
-source-wordcount: '2092'
-ht-degree: 100%
+source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
+workflow-type: tm+mt
+source-wordcount: '2115'
+ht-degree: 98%
 
 ---
 
@@ -35,6 +35,10 @@ Questo documento descrive la versione 2 del componente Immagine, originariamente
 Il componente Immagine è dotato di solide funzioni reattive pronte per l’uso. A livello di modello della pagina, si può utilizzare la [finestra di dialogo per Progettazione](#design-dialog) per definire le larghezze predefinite della risorsa immagine. Il componente Immagine carica quindi automaticamente la larghezza corretta da visualizzare, in base alle dimensioni della finestra del browser. Quando la finestra viene ridimensionata, il componente Immagine carica dinamicamente la dimensione corretta dell’immagine. Gli sviluppatori di componenti non devono preoccuparsi di definire query multimediali personalizzate, in quanto il componente Immagine è già ottimizzato per caricare il contenuto.
 
 Inoltre, il componente Immagine supporta il caricamento lento per posticipare il caricamento della risorsa immagine effettiva fino a quando non sarà visibile nel browser, aumentando la reattività delle pagine.
+
+>[!TIP]
+>
+>Il componente immagine è alimentato dal servlet immagine adattivo. Vedi il documento [Servlet immagine adattivo](#adaptive-image-servlet) per informazioni dettagliate su come funziona.
 
 ## Supporto di Dynamic Media {#dynamic-media}
 

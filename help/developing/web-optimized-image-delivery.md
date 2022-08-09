@@ -3,22 +3,16 @@ title: Consegna delle immagini ottimizzate per il web
 description: Scopri in che modo i componenti core possono sfruttare le funzionalità di AEM as a Cloud Service per la consegna delle immagini ottimizzate per il web, per fornire le immagini in modo più efficiente.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: a134c2593593efef4df7b01e3a870e03e9860640
+source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 100%
+source-wordcount: '1118'
+ht-degree: 98%
 
 ---
 
 # Consegna delle immagini ottimizzate per il web {#web-optimized-image-delivery}
 
 Scopri in che modo i componenti core possono sfruttare le funzionalità di AEM as a Cloud Service per la consegna delle immagini ottimizzate per il web, per fornire le immagini in modo più efficiente.
-
->[!NOTE]
->
->Il servizio di consegna delle immagini ottimizzate per il web è una funzionalità in prerelease con la versione di giugno 2022 di AEM as a Cloud Service, la cui disponibilità generale è prevista per luglio.
->
->Per ulteriori informazioni sulle funzioni in prerelease di AEMaaCS, consulta il documento [Canale prerelease di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it).
 
 ## Panoramica {#overview}
 
@@ -66,7 +60,7 @@ Così come l’abilitazione della consegna di immagini ottimizzate per il web no
 
 ## Domande frequenti {#faq}
 
-### Perché non esiste un’opzione simile per abilitare le immagini ottimizzate per il web nel mio ambiente? {#missing-option}
+### Perché non è disponibile alcuna opzione per abilitare le immagini ottimizzate per il web nel mio ambiente? {#missing-option}
 
 La funzione è disponibile solo in AEM as a Cloud Service. Se AEM viene eseguito on-premise o in locale, il componente Immagine utilizza come [fallback](#fallback) Adaptive Image Servlet.
 
