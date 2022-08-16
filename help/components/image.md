@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Inoltre, il componente Immagine supporta il caricamento lento per posticipare il
 
 >[!TIP]
 >
->Per impostazione predefinita, il componente immagine è alimentato dal servlet immagine adattivo. Vedi il documento [Servlet immagine adattivo](#adaptive-image-servlet) per informazioni dettagliate su come funziona.
+>Per impostazione predefinita, il componente immagine è alimentato da Adaptive Image Servlet. Per informazioni dettagliate su come funziona, consulta il documento [Adaptive Image Servlet](#adaptive-image-servlet).
 
 ## Supporto di Dynamic Media {#dynamic-media}
 
@@ -86,18 +86,18 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 ![Scheda Risorsa della finestra di dialogo per configurazione del componente Immagine](/help/assets/image-configure-asset.png)
 
-* **Eredita immagine in primo piano dalla pagina** - Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
+* **Eredita immagine in primo piano dalla pagina**: Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
 
-* **Testo alternativo per l’accessibilità** - Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
+* **Testo alternativo per l’accessibilità**: Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
 
-   * **Eredita testo alternativo dalla pagina** - Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
+   * **Eredita testo alternativo dalla pagina**: Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
 
 * **Risorsa immagine**
    * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
    * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’Editor risorse.
 
-* **Non fornire testo alternativo** - Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
+* **Non fornire testo alternativo**: Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
 
 ### Scheda Metadati {#metadata-tab}
 
@@ -113,7 +113,7 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 * **Collegamento**: collega l’immagine a un’altra risorsa.
    * Utilizza la finestra di dialogo per selezione per stabilire il collegamento con un’altra risorsa AEM.
    * Se non stabilisci il collegamento con un’altra risorsa AEM, immetti l’URL assoluto. Gli URL non assoluti vengono interpretati come relativi ad AEM.
-   * **Apri collegamento in una nuova scheda** - Questa opzione apre il collegamento in una nuova finestra del browser.
+   * **Apri collegamento in una nuova scheda**: Questa opzione apre il collegamento in una nuova finestra del browser.
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
@@ -139,17 +139,17 @@ Gli stili devono essere configurati per questo componente nella [finestra di dia
 
 ![Scheda Principale della finestra di dialogo per progettazione del componente Immagine](/help/assets/image-design-main.png)
 
-* **Abilita funzioni DM** - Se questa opzione è selezionata, sono disponibili [le funzioni di Dynamic Media](#dynamic-media).
+* **Abilita funzioni DM**: Se questa opzione è selezionata, sono disponibili [le funzioni di Dynamic Media](#dynamic-media).
    * Questa opzione viene visualizzata solo quando Dynamic Media è abilitato nell’ambiente.
 * **Abilita immagini ottimizzate per il web**: quando questa opzione è selezionata, il [servizio di consegna delle immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) fornisce immagini in formato WebP, riducendone in media le dimensioni del 25%.
    * Questa opzione è disponibile solo in AEMaaCS.
    * Se non è selezionata o il servizio di consegna delle immagini ottimizzate per il web non è disponibile, viene utilizzato [Adaptive Image Servlet](/help/developing/adaptive-image-servlet.md).
-* **Disattiva il caricamento lento** - Se questa opzione è selezionata, il componente precarica tutte le immagini senza caricamento lento.
+* **Disattiva il caricamento lento**: Se questa opzione è selezionata, il componente precarica tutte le immagini senza caricamento lento.
 * **L’immagine è decorativa**: consente di definire se l’opzione dell’immagine decorativa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni testo alternativo da DAM**: consente di definire se l’opzione per recuperare il testo alternativo dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Ottieni didascalia da DAM**: consente di definire se l’opzione per recuperare la didascalia dal DAM è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
 * **Visualizza didascalia come nota a comparsa**: consente di definire se l’opzione per visualizzare la didascalia dell’immagine come nota a comparsa è abilitata automaticamente quando si aggiunge il componente Immagine a una pagina.
-* **Larghezza di ridimensionamento** - Questo valore viene utilizzato per ridimensionare la larghezza delle immagini di base che sono risorse DAM.
+* **Larghezza di ridimensionamento**: Questo valore viene utilizzato per ridimensionare la larghezza delle immagini di base che sono risorse DAM.
    * Le proporzioni delle immagini vengono mantenute.
    * Se il valore è maggiore della larghezza effettiva dell’immagine, questo valore non avrà alcun effetto.
    * Questo valore non ha alcun effetto sulle immagini di SVG.
