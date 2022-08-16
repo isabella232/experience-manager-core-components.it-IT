@@ -4,9 +4,9 @@ description: Scopri in che modo i componenti core possono sfruttare le funzional
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
 source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Così come l’abilitazione della consegna di immagini ottimizzate per il web no
 
 ## Domande frequenti {#faq}
 
-### Perché non è disponibile alcuna opzione per abilitare le immagini ottimizzate per il web nel mio ambiente? {#missing-option}
+### Perché non esiste un’opzione per abilitare le immagini ottimizzate per il web nel mio ambiente? {#missing-option}
 
 La funzione è disponibile solo in AEM as a Cloud Service. Se AEM viene eseguito on-premise o in locale, il componente Immagine utilizza come [fallback](#fallback) Adaptive Image Servlet.
 
