@@ -4,9 +4,9 @@ description: Il componente core Immagine è un componente immagine adattivo che 
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
 source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2115'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Inoltre, il componente Immagine supporta il caricamento lento per posticipare il
 
 >[!TIP]
 >
->Il componente immagine è alimentato dal servlet immagine adattivo. Vedi il documento [Servlet immagine adattivo](#adaptive-image-servlet) per informazioni dettagliate su come funziona.
+>Il componente immagine è alimentato da Adaptive Image Servlet. Per informazioni dettagliate su come funziona, consulta il documento [Adaptive Image Servlet](#adaptive-image-servlet).
 
 ## Supporto di Dynamic Media {#dynamic-media}
 
