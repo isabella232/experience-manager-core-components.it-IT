@@ -4,13 +4,13 @@ description: Scopri in che modo i componenti core sfruttano Adaptive Image Servl
 role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
 source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-# Servlet immagine adattivo {#adaptive-image-servlet}
+# Adaptive Image Servlet {#adaptive-image-servlet}
 
 Scopri in che modo i componenti core sfruttano Adaptive Image Servlet per la consegna delle immagini e come ottimizzarne l’utilizzo.
 
@@ -29,16 +29,16 @@ Per impostazione predefinita, il componente Immagine utilizza Adaptive Image Ser
 
 ## Selezione della rappresentazione {#rendition-selection}
 
-Il servlet di immagini adattive selezionerà automaticamente il rendering più appropriato da visualizzare in base alle dimensioni del contenitore in cui viene visualizzato. Il processo di selezione del rendering è il seguente.
+Adaptive Image Servlet selezionerà automaticamente la rappresentazione più appropriata da visualizzare in base alle dimensioni del contenitore in cui viene visualizzata. Il processo di selezione della rappresentazione è il seguente.
 
-1. Il Adaptive Image Servlet rivede tutte le rappresentazioni disponibili della risorsa immagine.
-1. Seleziona solo quelli con lo stesso mime/tipo della risorsa di riferimento originale.
-   * Ad esempio, se la risorsa originale era un PNG, considererà solo le rappresentazioni PNG.
-1. Di queste rappresentazioni considera le dimensioni e le confronta con le dimensioni del contenitore in cui deve essere visualizzata l&#39;immagine.
-   1. Se il rendering è >= la dimensione del contenitore, viene aggiunto a un elenco di rappresentazioni candidate.
-   1. Se il rendering è &lt; la dimensione del contenitore, viene ignorato.
-   1. Questi criteri garantiscono che il rendering non venga aggiornato, con un conseguente impatto sulla qualità delle immagini.
-1. Il servlet immagine adattivo seleziona quindi il rendering con le dimensioni di file più piccole dall’elenco dei file candidati.
+1. Adaptive Image Servlet rivede tutte le rappresentazioni disponibili della risorsa immagine.
+1. Seleziona solo quelle con lo stesso mime/tipo della risorsa di riferimento originale.
+   * Ad esempio, se la risorsa originale era un file PNG, considererà solo le rappresentazioni PNG.
+1. Di quelle rappresentazioni considera le dimensioni e le confronta con le dimensioni del contenitore in cui deve essere visualizzata l’immagine.
+   1. Se la rappresentazione è >= alla dimensione del contenitore, viene aggiunta a un elenco di rappresentazioni candidate.
+   1. Se la rappresentazione è &lt; alla dimensione del contenitore, viene ignorata.
+   1. Questi criteri garantiscono che la rappresentazione non subisca un processo di upscaling, con un conseguente impatto sulla qualità delle immagini.
+1. Adaptive Image Servlet seleziona quindi la rappresentazione con le dimensioni di file più piccole dall’elenco delle candidate.
 
 ## Ottimizzazione della selezione della rappresentazione {#optimizing-rendition-selection}
 
@@ -46,7 +46,7 @@ Il servlet per immagini adattive cercherà di scegliere la rappresentazione migl
 
 Ciò migliora le prestazioni ed evita che alcune immagini non vengano elaborate correttamente dalla libreria di elaborazione delle immagini sottostante.
 
-## Utilizzo delle intestazioni modificate {#last-modified}
+## Utilizzo delle ultime intestazioni modificate {#last-modified}
 
 Le richieste condizionali tramite l’intestazione `Last-Modified` sono supportate dall’Adaptive Image Servlet, ma il caching dell’intestazione `Last-Modified` [deve essere abilitato in Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers).
 
