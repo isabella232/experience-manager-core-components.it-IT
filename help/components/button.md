@@ -3,8 +3,8 @@ title: Componente Pulsante
 description: Il componente core Pulsante consente di creare e visualizzare un pulsante.
 role: Architect, Developer, Admin, User
 exl-id: e17efd1d-90d4-497a-9e7d-45934d81bc28
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Per avere un’idea del componente Pulsante e vedere esempi delle opzioni di con
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Pulsante [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_button_v1).
+La documentazione tecnica più recente sul componente Pulsante [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_button_v2).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

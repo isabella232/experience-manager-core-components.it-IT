@@ -3,8 +3,8 @@ title: Componente Elenco
 description: Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Per avere un’idea del componente Elenco e vedere esempi delle opzioni di confi
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Elenco [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_list_v2_it).
+La documentazione tecnica più recente sul componente Elenco [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_list_v3_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

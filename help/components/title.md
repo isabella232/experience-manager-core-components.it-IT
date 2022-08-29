@@ -3,8 +3,8 @@ title: Componente titolo
 description: Il componente core Titolo è un componente di intestazione di sezione che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 393af72c-549f-4609-afb0-2712f827b549
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Per avere un’idea del componente Titolo e vedere esempi delle opzioni di confi
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_title_v2_it).
+La documentazione tecnica più recente sul componente Titolo [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_title_v3_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

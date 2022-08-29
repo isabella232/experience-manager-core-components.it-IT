@@ -3,8 +3,8 @@ title: Componente Navigazione lingua
 description: Il componente Navigazione lingua fornisce una navigazione per lingua/paese in un sito, consentendo ai visitatori di visualizzare la stessa pagina in una lingua diversa.
 role: Architect, Developer, Admin, User
 exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
-source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Per avere un’idea del componente Navigazione lingua e vedere esempi delle opzi
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Navigazione lingua [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v1_it).
+La documentazione tecnica più recente sul componente Navigazione lingua [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v2_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

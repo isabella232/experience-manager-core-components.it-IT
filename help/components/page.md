@@ -3,8 +3,8 @@ title: Componente Pagina
 description: Il componente Pagina è una pagina estensibile concepita per funzionare con l’editor di modelli e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ La versione 2.15.0 dei Componenti core ha introdotto il supporto delle [funziona
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Pagina [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_page_v2_it).
+La documentazione tecnica più recente sul componente Pagina [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_page_v3_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

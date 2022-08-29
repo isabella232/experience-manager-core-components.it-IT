@@ -3,8 +3,8 @@ title: Componente Breadcrumb
 description: Il componente core Breadcrumb è un componente di navigazione che crea una breadcrumb di collegamenti in base alla posizione della pagina nella gerarchia del contenuto.
 role: Architect, Developer, Admin, User
 exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: ht
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Per avere un’idea del componente Breadcrumb e vedere esempi delle opzioni di c
 
 ## Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Breadcrumb [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v2_it).
+La documentazione tecnica più recente sul componente Breadcrumb [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v3_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 

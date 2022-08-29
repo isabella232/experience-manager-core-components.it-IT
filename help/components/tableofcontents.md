@@ -3,9 +3,9 @@ title: Componente Sommario
 description: Il componente Sommario crea un sommario basato sui titoli nel contenuto della pagina, consentendo ai lettori di navigare rapidamente all'interno della pagina.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 394a8b968d7bcde7e766ed719c5914ec5cb60744
-workflow-type: ht
-source-wordcount: '759'
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+workflow-type: tm+mt
+source-wordcount: '722'
 ht-degree: 100%
 
 ---
@@ -35,10 +35,6 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 | v1 | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
-
-## Esempio di output del componente {#sample-component-output}
-
-Per conoscere il componente Sommario e vedere esempi delle sue opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria di componenti](https://adobe.com/go/aem_cmp_library_tableofcontents).
 
 ### Dettagli tecnici {#technical-details}
 

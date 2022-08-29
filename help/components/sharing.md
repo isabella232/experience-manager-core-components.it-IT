@@ -3,10 +3,10 @@ title: 'Componente Condivisione '
 description: Il componente core Condivisione è un widget per la condivisione su Facebook e Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
-source-git-commit: 12fef6732ba53beeb7b3354335005f459321da96
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
@@ -35,10 +35,6 @@ La tabella che segue descrive tutte le versioni supportate del componente e le v
 | v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile, obsoleto | Compatibile, obsoleto |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Condivisione e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_sharing_it).
 
 ### Dettagli tecnici {#technical-details}
 
