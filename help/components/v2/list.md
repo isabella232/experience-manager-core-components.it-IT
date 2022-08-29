@@ -2,13 +2,13 @@
 title: Componente Elenco (v2)
 description: Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: fa34be64-b345-45cd-baf3-571973414852
+source-git-commit: 241c86240377858a73f4a022368d428da9c11100
 workflow-type: ht
 source-wordcount: '1022'
 ht-degree: 100%
 
 ---
-
 
 # Componente Elenco (v2) {#list-component}
 
@@ -64,7 +64,7 @@ L’elenco può essere creato in diversi modi.
 
 Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibile configurare le [opzioni Ordinamento e ID](#sort-options).
 
-![Finestra di dialogo per modifica del componente Elenco](/help/assets/list-edit.png)
+![Finestra di dialogo per modifica del componente Elenco](/help/assets/v2/list-edit.png)
 
 A seconda di come l’autore del contenuto sceglie di creare l’elenco, le opzioni di configurazione aggiuntive cambiano.
 
@@ -72,7 +72,7 @@ A seconda di come l’autore del contenuto sceglie di creare l’elenco, le opzi
 
 L’elenco può essere costituito dalle pagine figlie della pagina corrente o di un’altra pagina.
 
-![Opzioni per le pagine figlie](/help/assets/list-edit-child-pages.png)
+![Opzioni per le pagine figlie](/help/assets/v2/list-edit-child-pages.png)
 
 * **Pagina padre**
    * Pagina da cui creare l’elenco di pagine figlie
@@ -85,7 +85,7 @@ Quanti livelli della gerarchia devono essere utilizzati
 
 L’elenco può essere creato utilizzando elementi fissi.
 
-![Opzioni per elenco fisso](/help/assets/list-edit-fixed.png)
+![Opzioni per elenco fisso](/help/assets/v2/list-edit-fixed-list.png)
 
 Tocca il o fai clic sul pulsante **Aggiungi** per inserire un nuovo elemento nell’elenco.
 
@@ -97,7 +97,7 @@ Tocca il o fai clic sul pulsante **Aggiungi** per inserire un nuovo elemento nel
 
 L’elenco può essere creato utilizzando i risultati di una ricerca di contenuto AEM.
 
-![Opzioni per la ricerca](/help/assets/list-edit-search.png)
+![Opzioni per la ricerca](/help/assets/v2/list-edit-search.png)
 
 * **Query di ricerca**
 Stringa per la quale verrà eseguita una ricerca di testo completa per generare gli elementi dell’elenco
@@ -110,7 +110,7 @@ Dove eseguire la ricerca
 
 L’elenco può essere creato utilizzando pagine che corrispondono a determinati tag presenti in una posizione specifica.
 
-![Opzioni per i tag](/help/assets/list-edit-tags.png)
+![Opzioni per i tag](/help/assets/v2/list-edit-tags.png)
 
 * **Pagina padre**
 La pagina da cui inizia la ricerca delle corrispondenze con i tag
@@ -128,7 +128,7 @@ Consente di definire il tipo di corrispondenza da applicare a una pagina da incl
 
 Indipendentemente dalla modalità di creazione dell’elenco, è sempre possibile definire alcune opzioni di ordinamento.
 
-![Opzioni di ordinamento](/help/assets/list-edit-sort-options.png)
+![Opzioni di ordinamento](/help/assets/v2/list-edit-sort-options.png)
 
 * **Ordina per**
 Come ordinare gli elementi
@@ -150,7 +150,7 @@ Il numero massimo di elementi da visualizzare nell’elenco.
 
 Utilizzando la scheda Impostazioni elemento, è possibile configurare la formattazione degli elementi dell’elenco.
 
-![Impostazioni elemento](/help/assets/list-edit-items.png)
+![Impostazioni elemento](/help/assets/v2/list-edit-item-settings.png)
 
 * **Collega elementi**
 Collega gli elementi alla pagina corrispondente
@@ -167,7 +167,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 Nella scheda **Impostazioni elenco**, è possibile definire il formato della data e i tipi di elenchi da rendere disponibili nel componente per gli autori di contenuto.
 
-![Impostazione dell’elenco nella finestra di dialogo per progettazione del componente Elenco](/help/assets/list-design-list-settings.png)
+![Impostazione dell’elenco nella finestra di dialogo per progettazione del componente Elenco](/help/assets/v2/list-design-list-settings.png)
 
 * **Formato data**
 Il formato da utilizzare per visualizzare la data dell’ultima modifica
@@ -184,7 +184,7 @@ Disabilita il tipo di elenco tag nel componente
 
 Nella scheda **Impostazioni elemento**, è possibile definire le opzioni di formattazione per i singoli elementi dell’elenco che devono essere disponibili nel componente per gli autori di contenuto.
 
-![Impostazioni degli elementi nella finestra di dialogo per progettazione del componente Elenco](/help/assets/list-design-item-settings.png)
+![Impostazioni degli elementi nella finestra di dialogo per progettazione del componente Elenco](/help/assets/v2/list-design-item-settings.png)
 
 * **Collega elementi**
 Abilita l’opzione Collega elementi nella [finestra di dialogo per modifica](#edit-dialog)
