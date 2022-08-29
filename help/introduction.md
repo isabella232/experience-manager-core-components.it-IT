@@ -3,10 +3,10 @@ title: 'Introduzione ai Componenti core '
 description: 'Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 35b9c0d32d402e3f5466ccc1021094de5c7a750e
-workflow-type: ht
-source-wordcount: '927'
-ht-degree: 100%
+source-git-commit: 12fef6732ba53beeb7b3354335005f459321da96
+workflow-type: tm+mt
+source-wordcount: '928'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +73,7 @@ La versione corrente dei Componenti core include i seguenti componenti.
 * [Frammento di contenuto](components/content-fragment-component.md)
 * [Elenco di frammenti di contenuto](components/content-fragment-list.md)
 * [Incorpora](components/embed.md)
-* [Condivisione sui social media](components/sharing.md)
+* [Condivisione social media](components/sharing.md) (obsoleto)
 * [Separatore](components/separator.md)
 * [Barra di avanzamento](components/progress-bar.md)
 * [Visualizzatore PDF](components/pdf-viewer.md)
