@@ -1,12 +1,12 @@
 ---
-title: 'Componente Condivisione '
+title: Componente Condivisione
 description: Il componente core Condivisione è un widget per la condivisione su Facebook e Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
 source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ Il componente core Condivisione è un widget per la condivisione su Facebook e P
 
 >[!NOTE]
 >
->Il componente Condivisione social è stato ammortizzato con i componenti core [versione 2.18.0.](/help/versions.md)
+>Il componente Condivisione social media è diventato obsoleto con la [versione 2.18.0](/help/versions.md) dei Componenti core.
 
 ## Utilizzo {#usage}
 
