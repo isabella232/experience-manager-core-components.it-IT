@@ -1,12 +1,12 @@
 ---
-title: 'Introduzione ai Componenti core '
-description: 'Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM. '
+title: Introduzione ai Componenti core
+description: Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 12fef6732ba53beeb7b3354335005f459321da96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 
 ## Componenti {#the-components}
 
-La versione corrente dei Componenti core include i seguenti componenti.
+La versione corrente dei Componenti core include i seguenti componenti:
 
 ### Componenti modello {#template-components}
 
