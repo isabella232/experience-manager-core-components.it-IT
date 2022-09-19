@@ -4,7 +4,7 @@ description: Il componente Pagina è una pagina estensibile concepita per funzio
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
 source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ Le librerie possono essere configurate per i campi **Librerie client** e **Intes
 * Per rimuovere un campo, tocca o fai clic sull’icona cestino accanto al campo da rimuovere.
 * Per cambiare l’ordine di caricamento, tocca o fai clic e trascina la maniglia che si trova accanto al campo da spostare.
 
-Per ulteriori informazioni sull’utilizzo delle librerie client, vedi [Utilizzo delle librerie client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it).
+Per ulteriori informazioni sull’utilizzo delle librerie client, vedi [Utilizzo delle librerie client](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >
