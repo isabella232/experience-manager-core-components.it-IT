@@ -4,9 +4,9 @@ description: Il componente core Condivisione è un widget per la condivisione su
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
 source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '400'
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore di contenuto sono disponibili opzioni di modifica aggiuntive per il componente Condivisione nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) della pagina.
+Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore di contenuto sono disponibili opzioni di modifica aggiuntive per il componente Condivisione nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=it) della pagina.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) della pagina iniziale.
+Poiché la condivisione richiede speciali intestazioni di pagina, qualsiasi condivisione deve essere abilitata a livello di pagina. Pertanto, per l’autore del modello le opzioni di progettazione per il componente Condivisione sono disponibili nella scheda [Proprietà](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) della pagina iniziale.
