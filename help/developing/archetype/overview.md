@@ -4,10 +4,10 @@ description: Un modello di progetto per applicazioni basate su AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 01890b368b083b09b5be8a9b6efad55a5d8d4f9e
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: c817592207868284d6d9cc1c8bc0405aa50f8957
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 98%
 
 ---
 
@@ -38,10 +38,10 @@ L’Archetipo progetto AEM è un modello Maven che crea un progetto AEM minimo b
 * **Componenti core:** gli autori possono creare quasi tutti i layout con il nostro versatile [set di componenti standard](/help/introduction.md).
 * **Modelli modificabili:** assembla virtualmente qualsiasi [modello senza codice](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it) e definisci cosa gli autori possono modificare.
 * **Layout reattivo:** nei modelli o nelle singole pagine, [definisci il reflow degli elementi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it) per i punti di interruzione definiti.
-* **Intestazione e piè di pagina:** assemblali e localizzali senza codice, utilizzando le [funzioni di localizzazione dei componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=it).
+* **Intestazione e piè di pagina:** assemblali e localizzali senza codice, utilizzando le [funzioni di localizzazione dei componenti](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 * **Sistema di stili:** evita di creare componenti personalizzati consentendo agli autori di [applicare loro stili diversi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=it).
 * **Sviluppo front-end:** gli sviluppatori front-end possono [simulare pagine AEM](uifrontend.md#webpack-dev-server) e [creare librerie client](uifrontend.md) con Webpack, TypeScript e SASS.
-* **Predisposto per WebApp:** per i siti che utilizzano [React](uifrontend-react.md) o [Angular](uifrontend-angular.md), utilizza l’[SDK SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/developing.html?lang=it) per mantenere [l’authoring nel contesto dell’app](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it).
+* **Predisposto per WebApp:** per i siti che utilizzano [React](uifrontend-react.md) o [Angular](uifrontend-angular.md), utilizza l’[SDK SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/developing.html?lang=it) per mantenere [l’authoring nel contesto dell’app](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
 * **Predisposto per l’e-Commerce:** per progetti che intendono integrare [AEM Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=it) con soluzioni commerciali come [Magento](https://magento.com/it) utilizzando i [Componenti Core commerciali](https://github.com/adobe/aem-core-cif-components).
 * **Esempio di codice:** seleziona il componente HelloWorld e gli esempi di modelli, servlet, filtri e schedulatori.
 * **Open source:** se qualcosa non va come dovrebbe, [suggerisci](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) i tuoi miglioramenti!
@@ -61,7 +61,7 @@ mvn -B archetype:generate \
 ```
 
 * Sostituisci `XX` con il [numero di versione di Archetipo](#requirements) più recente.
-* Imposta `aemVersion=cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it);\
+* Imposta `aemVersion=cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
    Imposta `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise.
 La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non cloud, in quanto i Componenti core vengono forniti come OOTB per AEM as a Cloud Service.
 * Imposta `appTitle="My Site"` per definire il titolo del sito web e i gruppi di componenti.
@@ -79,7 +79,7 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 | `groupId` |  | ID gruppo Maven di base (ad esempio, `"com.mysite"`). Questo valore deve contenere un [nome pacchetto Java valido](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7). |
 | `package` | *`${groupId}`* | Pacchetto sorgente Java (ad esempio, `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Versione del progetto (ad esempio, `1.0-SNAPSHOT`). |
-| `aemVersion` | `cloud` | Versione AEM di destinazione (può essere `cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it); `6.5.0` o `6.4.4` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise). |
+| `aemVersion` | `cloud` | Versione AEM di destinazione (può essere `cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); `6.5.0` o `6.4.4` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise). |
 | `sdkVersion` | `latest` | Con `aemVersion=cloud` è possibile specificare una versione del [Software Development Kit (SDK)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it) (ad esempio, `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Include una configurazione di Dispatcher sia per il cloud che per AMS/on-premise, a seconda del valore di `aemVersion` (può essere `y` o `n`). |
 | `frontendModule` | `general` | Include un modulo di sviluppo front-end di Webpack che genera le librerie client (può essere `general` o `none` per i siti normali; può essere `angular` o `react` per una SPA (Single Page App) che implementa l’[editor di SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editor-overview.html?lang=it)). |
@@ -90,19 +90,21 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 | `includeErrorHandler` | `n` | Include una pagina di risposta 404 personalizzata che sarà globale per l’intera istanza (può essere `y` o `n`). |
 | `includeCommerce` | `n` | Include le dipendenze dei [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) e genera gli artefatti corrispondenti. |
 | `commerceEndpoint` |  | Obbligatorio solo per CIF. Endpoint opzionale del servizio GraphQL del sistema commerciale da utilizzare (ad esempio `https://hostname.com/grapql`). |
+| `includeFormscommunications` | `n` | Include [componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi Forms Communications. |
+| `includeFormsenrollment` | `n` | Include [Componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi di iscrizione Forms. |
+| `sdkFormsVersion` | `latest` | Quando `aemVersion=cloud` e uno di `includeFormsenrollment=y` o `includeFormscommunications=y`, è possibile specificare una versione dell’SDK per Forms (ad esempio `2020.12.17.02`). |
 | `datalayer` | `y` | Attiva l’integrazione con [Adobe Client Data Layer](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Abilita il supporto [AMP](/help/developing/amp.md) per i modelli di progetto generati. |
 | `enableDynamicMedia` | `n` | Abilita i componenti Dynamic Media di base nelle impostazioni dei criteri dei progetti e attiva le funzioni Dynamic Media nel criterio del componente core Immagine. |
 | `enableSSR` | `n` | Opzione per l’abilitazione di SSR per il progetto front-end |
 | `precompiledScripts` | `n` | Opzione per [precompilare](/help/developing/archetype/precompiled-bundled-scripts.md) gli script lato server da `ui.apps` e allegarli alla build come artefatto del bundle secondario nel progetto `ui.apps`. `aemVersion` deve essere impostato su `cloud`. |
-| `includeFormscommunications` | `n` | Include [componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi Forms Communications. |
-| `includeFormsenrollment` | `n` | Include [Componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi di iscrizione Forms. |
+| `includeFormsheadless` | `n` | Include [Componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, `ui.frontend.react.forms.af`e artefatti senza testa. |
 
 ## Requisiti di sistema {#requirements}
 
 | Archetipo | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [37](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-37) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [39](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-39) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Imposta l’ambiente di sviluppo locale per l’[SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o per [versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
