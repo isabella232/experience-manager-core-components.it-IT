@@ -3,10 +3,10 @@ title: Introduzione ai Componenti core
 description: Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 1e449c2b3c8fb9a98093c6731455089e8a157015
+source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '929'
+ht-degree: 97%
 
 ---
 
@@ -117,7 +117,7 @@ Per i requisiti delle precedenti versioni dei Componenti core, vedi [Versioni de
 
 I Componenti core richiedono l’utilizzo di [modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it) e non supportano l’interfaccia utente classica né i modelli statici. Se necessario, vedi [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il tuo progetto con queste nuove funzioni AEM.
 
-Per configurare il tuo ambiente di sviluppo locale, vedi [questa panoramica sul SDK per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o questo documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
+Per configurare l’ambiente di sviluppo locale, consulta [questa panoramica per AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o il presente documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 >[!TIP]
 >

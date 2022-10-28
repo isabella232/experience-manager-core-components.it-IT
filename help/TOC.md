@@ -4,10 +4,10 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 3ff1343ab4ef7a52f910984a0bcd8fc4201441bf
-workflow-type: ht
-source-wordcount: '255'
-ht-degree: 100%
+source-git-commit: 7744cc1debe991d2c0daa9e91f2a6b7c04d65342
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 95%
 
 ---
 
@@ -110,3 +110,19 @@ ht-degree: 100%
       + [Modulo ui.tests](developing/archetype/uitests.md)
       + [Modulo it.tests](developing/archetype/ittests.md)
       + [Plugin Maven di Build Analyzer](developing/archetype/build-analyzer-maven-plugin.md)
++ Componenti e-mail {#email}
+   + [Introduzione](/help/email/introduction.md)
+   + [Utilizzo dei componenti core e-mail](/help/email/using.md)
+   + [Variabili di campagna](/help/email/campaign-variables.md)
+   + [Versioni](/help/email/versions.md)
+   + Componenti e-mail {#components}
+      + [Pagina](/help/email/components/page.md)
+      + [Contenitore](/help/email/components/container.md)
+      + [Titolo](/help/email/components/title.md)
+      + [Testo](/help/email/components/text.md)
+      + [Immagine](/help/email/components/image.md)
+      + [Pulsante](/help/email/components/button.md)
+      + [Teaser](/help/email/components/teaser.md)
+      + [Frammento esperienza](/help/email/components/experience-fragment.md)
+      + [Frammento di contenuto](/help/email/components/content-fragment.md)
+      + [Segmentazione](/help/email/components/segmentation.md)
