@@ -1,22 +1,22 @@
 ---
 title: Componente Immagine
-description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
+description: Il componente immagine di base è un componente immagine adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: f0971db66cbbf8221c12cedf108eee3bca8a527a
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 97%
 
 ---
 
 # Componente Immagine {#image-component}
 
-Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
+Il componente immagine di base è un componente immagine adattivo.
 
 ## Utilizzo {#usage}
 
-Il componente Immagine offre all’autore di contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché una facilità di posizionamento e ritaglio delle immagini.
+Il componente Immagine offre una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina e un facile posizionamento dell’immagine per l’autore del contenuto.
 
 Le larghezze delle immagini e le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nella [finestra di dialogo di configurazione.](#configure-dialog)
 
