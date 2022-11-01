@@ -4,10 +4,10 @@ description: Documentazione del plug-in Maven locale di Build Analyzer
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: de26b310-a294-42d6-a0db-91f6036a328c
-source-git-commit: 98d8fac2a626a1f89ef1b109aa8cba27abf8203a
+source-git-commit: be66739084334120158eda96b830a7b6216ef5cd
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 99%
+source-wordcount: '668'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Per informazioni su come includerlo in un progetto Maven, di AEM, vedi la [docum
 >
 >È consigliabile aggiornare il progetto Maven per fare riferimento all’ultima versione del Plug-in presente nell’archivio centrale Maven, nella posizione seguente: https://repo1.maven.org/maven2/com/adobe/aem/aemanalyser-maven-plugin/
 
-Il Plug-in utilizza il SDK più recente disponibile, anziché quello configurato nel progetto.
+Il Plug-in utilizza l’SDK più recente disponibile, anziché quello configurato nel progetto.
 
 La tabella che segue descrive gli analizzatori eseguiti come parte di questo passaggio. <!-- Note that some are executed in the local SDK, while others are only executed during the Cloud Manager pipeline deployment. -->
 
@@ -38,6 +38,7 @@ La tabella che segue descrive gli analizzatori eseguiti come parte di questo pas
 | `configuration-api` | Verifica importanti configurazioni OSGi. <p> </p> `Configuration org.apache.felix.webconsole.internal.servlet.OsgiManager: Configuration is not allowed (com.mysite:mysite.all:1.0.0-SNAPSHOT\|com.mysite:mysite.ui.config:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `region-deprecated-api` | Verifica l’eventuale utilizzo di [API obsolete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html?lang=it) <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `artifact-rules` | Convalida le dipendenze come bundle e pacchetti di contenuto per evitare problemi noti negli artefatti.<p> </p>`[WARNING] [artifact-rules] com.adobe.acs:acs-aem-commons-bundle:5.0.4: Use at least version 5.0.10 (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Sì | Sì |
+| `aem-env-var` | Controlla l&#39;utilizzo delle variabili env in base al [guida alla denominazione delle variabili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#variable-naming)<p> </p>`[ERROR] Configuration org.apache.felix.webconsole.internal.servlet.OsgiManager: Value for property 'port' must not use env vars prefixed with INTERNAL_ or ADOBE_ (com.mysite1:my-site-1.all:1.0.0-SNAPSHOT\|com.mysite1:my-site-1.ui.config:1.0.0-SNAPSHOT)` | Sì | Sì |
 | `content-package-validation` | Esegue i moduli di convalida del FileVault. Per impostazione predefinita, jackrabbit-docviewparser è abilitato e verifica che la sintassi del contenuto del codice XML sia corretta all’interno dei pacchetti che verranno installati durante l’implementazione.<p> </p>`[main] WARN org.apache.sling.feature.analyser.task.impl.CheckContentPackages - ValidationViolation: "jackrabbit-docviewparser: Invalid XML found: The reference to entity "se" must end with the ';' delimiter.", filePath=jcr_root/apps/somename/configs/com.adobe.test.Invalid.xml, nodePath=/apps/somename/configs/com.adobe.test.Invalid`<p> </p>Per risolvere il problema, controlla il file denominato dall’analizzatore per i problemi XML. | Sì | Sì |
 
 {style=&quot;table-layout:auto&quot;}
