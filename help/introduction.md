@@ -3,10 +3,10 @@ title: Introduzione ai Componenti core
 description: Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 97%
+source-wordcount: '967'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 
 |  |  |
 |---|---|
-| Pronti per la produzione | I Componenti core sono 30 efficienti componenti testati, ampiamente utilizzati e con prestazioni ottimali. |
+| Pronti per la produzione | I componenti core sono 30 componenti WCM affidabili, testati, utilizzati ampiamente e con prestazioni ottimali. |
 | Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
 | Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
@@ -47,7 +47,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 | Localizzabili | Grazie alla risoluzione intelligente dei riferimenti alcuni componenti possono trovare ed eseguire [automaticamente il rendering del contenuto localizzato corrispondente.](get-started/localization.md) |
 | Open Source | Se qualcosa non va come dovrebbe, [suggerisci i tuoi miglioramenti!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
 
-## Componenti {#the-components}
+## Componenti WCM {#the-wcm-components}
 
 La versione corrente dei Componenti core include i seguenti componenti:
 
@@ -124,3 +124,9 @@ Per configurare l’ambiente di sviluppo locale, consulta [questa panoramica per
 >I Componenti core fanno automaticamente parte di AEM as a Cloud Service, per cui avrai sempre l’ultima versione dei Componenti core.
 >
 >Vedi il documento [Utilizzo dei Componenti core](/help/get-started/using.md) per ulteriori informazioni su come iniziare a utilizzare i Componenti core sia in AEMaaCS che on-premise.
+
+## Altri componenti {#other-components}
+
+Sono disponibili componenti aggiuntivi per gli autori AEM, basati sui componenti core.
+
+* [Componenti core e-mail](/help/email/introduction.md) - Scopri i componenti incorporati nei componenti core appositamente per l’utilizzo con Adobe Campaign.
