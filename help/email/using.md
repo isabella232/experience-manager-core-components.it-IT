@@ -2,12 +2,11 @@
 title: Utilizzo dei componenti core e-mail
 description: Scopri l’installazione, la configurazione e l’utilizzo di base dei componenti core di e-mail.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 0e79ca8f-eb0a-4519-b1e8-a9d3b0b99987
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 6%
+source-wordcount: '653'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +21,7 @@ I componenti core e-mail possono essere utilizzati con AEM 6.5. Consulta [Sezion
 
 ### Installare i componenti core {#core-components}
 
-I componenti core e-mail sono basati sui componenti core AEM. Poiché i componenti core non sono forniti con AEM, devi prima installare i componenti core AEM prima di installare i componenti core e-mail.
+I componenti core e-mail sono basati sui componenti core AEM. Poiché i componenti core non sono forniti con AEM 6.5, devi prima installare i componenti core AEM prima di installare i componenti core e-mail.
 
 Vedi la sezione [Scarica e installa](/help/get-started/using.md#download-and-install) sezione del documento Utilizzo dei componenti core per informazioni dettagliate su come installare i componenti core.
 
@@ -80,6 +79,4 @@ Una volta installati i componenti e-mail e configurata l’integrazione con Adob
 
 Per un esempio di creazione di contenuti e-mail in AEM e consegna in Adobe Campaign, consulta le seguenti risorse.
 
-* AEM as a Cloud Service: [Creazione di newsletter di Campaign con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/campaign/creating-newsletters.html)
 * AEM 6.5: [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html)
-
