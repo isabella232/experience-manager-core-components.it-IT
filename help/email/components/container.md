@@ -4,7 +4,7 @@ description: Il componente Contenitore e-mail consente di creare un contenitore 
 role: Architect, Developer, Admin, User
 exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ La scheda **Componenti consentiti** funziona come la scheda con lo stesso nome u
 
 ### Scheda Componenti predefiniti {#default-components-tab}
 
-La scheda **Componenti predefiniti** consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
+La scheda **Componenti predefiniti** consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Scheda Impostazioni contenitore {#container-settings-tab}
 

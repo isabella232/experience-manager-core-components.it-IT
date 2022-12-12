@@ -4,7 +4,7 @@ description: Il componente Frammento di contenuto e-mail consente di visualizzar
 role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Il componente Frammento di contenuto e-mail consente di visualizzare un [frammen
 
 ## Utilizzo {#usage}
 
-Il componente Frammento di contenuto e-mail consente di includere un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it) nel contenuto dell’e-mail. I frammenti di contenuto sono contenuti strutturati multicanale che possono essere creati a livello centrale e riutilizzati facilmente.
+Il componente Frammento di contenuto e-mail consente di includere un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) nel contenuto dell’e-mail. I frammenti di contenuto sono contenuti strutturati multicanale che possono essere creati a livello centrale e riutilizzati facilmente.
 
 * Il frammento e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione.](#configure-dialog)
 * I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella [finestra di dialogo per la progettazione.](#design-dialog)
