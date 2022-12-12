@@ -1,22 +1,22 @@
 ---
 title: Componente Immagine
-description: Il componente immagine di base è un componente immagine adattivo.
+description: Il componente core Immagine è un componente immagine adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: f0971db66cbbf8221c12cedf108eee3bca8a527a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Componente Immagine {#image-component}
 
-Il componente immagine di base è un componente immagine adattivo.
+Il componente core Immagine è un componente immagine adattivo.
 
 ## Utilizzo {#usage}
 
-Il componente Immagine offre una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina e un facile posizionamento dell’immagine per l’autore del contenuto.
+Il componente Immagine offre all’autore del contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché una facilità di posizionamento delle immagini.
 
 Le larghezze delle immagini e le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nella [finestra di dialogo di configurazione.](#configure-dialog)
 
@@ -88,7 +88,7 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 * **Eredita immagine in primo piano dalla pagina**: Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
 
-* **Testo alternativo per l’accessibilità**: Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
+* **Testo alternativo per accessibilità**: Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
 
    * **Eredita testo alternativo dalla pagina**: Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
 
@@ -108,12 +108,12 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
    * **Ritaglio avanzato**: quando per **Tipo di predefinito** è selezionata l’opzione **Ritaglio avanzato**, avanzato, è disponibile l’elenco a discesa **Rendering** che consente di selezionare i rendering disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definiti rendering.
    * **Modificatori immagine**: qui si possono definire comandi Dynamic Media aggiuntivi per la gestione delle immagini, separati da `&`, indipendentemente da qualunque cosa sia selezionata per **Tipo di predefinito**.
 * **Didascalia**: informazioni aggiuntive sull’immagine, per impostazione predefinita viene visualizzata sotto l’immagine.
-   * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title`metadati in DAM.
+   * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title` metadati in DAM.
    * **Visualizza didascalia come nota a comparsa**: se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l’immagine, ma, in alcuni browser, come nota a comparsa quando si passa il puntatore sull’immagine.
 * **Collegamento**: collega l’immagine a un’altra risorsa.
    * Utilizza la finestra di dialogo per selezione per stabilire il collegamento con un’altra risorsa AEM.
    * Se non stabilisci il collegamento con un’altra risorsa AEM, immetti l’URL assoluto. Gli URL non assoluti vengono interpretati come relativi ad AEM.
-   * **Apri collegamento in una nuova scheda**: Questa opzione apre il collegamento in una nuova finestra del browser.
+   * **Apri il collegamento in una nuova scheda**: Questa opzione apre il collegamento in una nuova finestra del browser.
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
