@@ -1,30 +1,30 @@
 ---
-title: Componente Testo E-Mail
-description: Il componente Testo e-mail è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
+title: Componente Testo e-mail
+description: Il componente Testo e-mail è un componente per la modifica e la composizione come testo formattato che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2328'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 
-# Componente Testo E-Mail {#email-text-component}
+# Componente Testo e-mail {#email-text-component}
 
-Il componente Testo e-mail è un componente per la modifica e la composizione di testo RTF che supporta la modifica diretta.
+Il componente Testo e-mail è un componente per la modifica e la composizione come testo formattato che offre funzioni di modifica diretta.
 
 ## Utilizzo {#usage}
 
-Il componente Testo e-mail offre un robusto editor Rich Text che consente di modificare facilmente il testo in un editor semplificato e in linea e in un formato a schermo intero.
+Il componente Testo e-mail offre un efficiente editor Rich Text che consente di modificare facilmente il testo in un editor in linea semplificato e in formato a schermo intero.
 
-* La [finestra di dialogo per modifica](#edit-dialog) offre funzioni di modifica in linea con opzioni limitate. Le funzionalità complete sono disponibili nella finestra di dialogo per modifica a schermo intero.
-* Utilizzo della [finestra di dialogo di progettazione,](#design-dialog) le opzioni di formattazione del testo, quali intestazioni, caratteri speciali e stili di paragrafo, possono essere configurate per il modello per l’autore del contenuto.
+* La [finestra di dialogo per la modifica](#edit-dialog) offre funzioni di modifica in linea con opzioni limitate. Le funzionalità complete sono disponibili nella finestra di dialogo di modifica a schermo intero.
+* La [finestra di dialogo per la progettazione](#design-dialog) consente di configurare le opzioni di formattazione del testo, come intestazioni, caratteri speciali e stili di paragrafo, per il modello utilizzabile dall’autore del contenuto.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Testo e-mail è v1, introdotto con la versione X dei componenti core e-mail nell’ottobre 2022, ed è descritto in questo documento.
+La versione corrente del componente Testo e-mail è la v1, introdotta con la versione X dei Componenti core e-mail a ottobre 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -32,7 +32,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 |---|---|---|
 | v1 | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core di e-mail.](/help/email/versions.md)
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, consulta il documento [Versioni dei Componenti core e-mail.](/help/email/versions.md)
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -40,27 +40,27 @@ Per avere un’idea del componente Testo e vedere esempi delle opzioni di config
 
 ### Dettagli tecnici {#technical-details}
 
-La documentazione tecnica più recente sul componente Testo e-mail [disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_email_text_v1).
+La documentazione tecnica più recente sul componente Testo e-mail [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_email_text_v1).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Il componente Testo e-mail e l’Editor Rich Text {#the-text-component-and-the-rich-text-editor}
+## Il componente Testo e-mail e l’editor Rich Text {#the-text-component-and-the-rich-text-editor}
 
-Il componente Testo e-mail sfrutta l’Editor Rich Text AEM. L’editor Rich Text offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. L’editor Rich Text è flessibile nella sua configurazione e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurazione dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html?lang=it) e [Configurazione dei plug-in dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
+Il componente core Testo e-mail utilizza l’editor Rich Text di AEM. L’editor Rich Text offre agli autori di contenuto un’ampia gamma di funzionalità per modificare il contenuto di testo. La configurazione dell’editor Rich Text è molto flessibile e offre diverse opzioni. Ulteriori dettagli sulla configurazione dell’editor Rich Text sono disponibili negli articoli [Configurazione dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html?lang=it) e [Configurazione dei plug-in dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
-Il resto del documento illustra la configurazione standard del componente Testo e-mail con la configurazione RTE predefinita.
+Il resto di questo documento illustra la configurazione standard del componente Testo e-mail con la configurazione standard dell’editor Rich Text.
 
 >[!NOTE]
 >
->Solo le opzioni abilitate da [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) sono disponibili nel componente Testo e-mail .
+>Nel componente Testo e-mail sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ## Finestra di dialogo per la modifica {#edit-dialog}
 
-![Finestra di dialogo per modifica del componente Testo](/help/email/assets/email-text-edit.png)
+![Finestra di dialogo per la modifica del componente Testo](/help/email/assets/email-text-edit.png)
 
 ### Opzioni di formattazione {#options}
 
-La finestra di dialogo di modifica offre gli strumenti di formattazione RTF standard che un utente si aspetta di utilizzare per comporre il testo.
+La finestra di dialogo per la modifica offre gli strumenti di formattazione del testo standard che l’utente si aspetta per la composizione.
 
 #### Grassetto
 
@@ -104,7 +104,7 @@ Consente di formattare come apice il testo selezionato o il testo immesso dopo i
 
 Incolla tutto il testo copiato come testo normale senza alcuna formattazione.
 
-Quando si seleziona questa opzione, viene visualizzata una finestra in cui il testo può essere incollato come testo normale senza formattazione come anteprima prima di essere inserito nel testo. Per accettare, tocca o fai clic sul segno di spunta, per annullare tocca o fai clic sulla x.
+Quando si seleziona questa opzione, viene visualizzata una finestra in cui il testo copiato può essere incollato come testo normale senza formattazione in anteprima, prima di essere effettivamente inserito nel testo. Per accettare, tocca o fai clic sul segno di spunta, per annullare tocca o fai clic sulla x.
 
 ![Incolla come esempio di testo](/help/assets/text-paste-text-example.png)
 
@@ -112,7 +112,7 @@ Quando si seleziona questa opzione, viene visualizzata una finestra in cui il te
 
 ![Icona Incolla da Word](/help/assets/text-paste-word.png)
 
-Quando si seleziona questa opzione, viene visualizzata una finestra in cui è possibile incollare il testo mantenendo la formattazione come anteprima prima di inserirla nel testo. Per accettare, tocca o fai clic sul segno di spunta, per annullare tocca o fai clic sulla x.
+Quando si seleziona questa opzione, viene visualizzata una finestra in cui il testo copiato può essere incollato con la formattazione originale in anteprima, prima di essere effettivamente inserito nel testo. Per accettare, tocca o fai clic sul segno di spunta, per annullare tocca o fai clic sulla x.
 
 ![Incolla da esempio di Word](/help/assets/text-paste-word-example.png)
 
@@ -120,12 +120,12 @@ Quando si seleziona questa opzione, viene visualizzata una finestra in cui è po
 
 ![Icona Collegamento ipertestuale](/help/assets/text-hyperlink.png)
 
-Questa opzione consente di convertire il testo selezionato in un collegamento ipertestuale o modificare un collegamento già definito. Questa opzione apre una finestra con opzioni aggiuntive per impostare il collegamento.
+Questa opzione consente di convertire il testo selezionato in un collegamento ipertestuale o modificare un collegamento già definito. Questa opzione apre una finestra contenente opzioni aggiuntive per impostare il collegamento.
 
 ![Esempio di collegamento ipertestuale](/help/assets/text-hyperlink-example.png)
 
 * Immettere il percorso
-   * Utilizza la **Apri selezione** finestra di dialogo per scegliere un percorso in AEM
+   * Utilizza la finestra di dialogo **Apri selezione** per scegliere un percorso in AEM
    * Se il collegamento non è in AEM, utilizza l’URL assoluto
       * I percorsi non assoluti vengono interpretati come relativi ad AEM
 * Immetti un testo descrittivo alternativo per il collegamento
@@ -146,7 +146,7 @@ Questa opzione consente di rimuovere un collegamento già applicato al testo sel
 
 #### Ancoraggio {#anchor}
 
-![Icona Ancoraggio](/help/email/assets/anchor.png)
+![Icona ancoraggio](/help/email/assets/anchor.png)
 
 Utilizza questa opzione per inserire un ancoraggio nel testo.
 
@@ -182,13 +182,13 @@ Immettere il testo da cercare e il testo con cui deve essere sostituito.
 * Se vuoi avere una corrispondenza esatta di maiuscole/minuscole, seleziona l’opzione **Rispetta maiuscole/minuscole** prima di avviare la ricerca.
 * Seleziona **Sostituisci tutto** per sostituire tutte le occorrenze del testo contemporaneamente.
 
-Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene sfumata. Fai nuovamente clic sul pulsante **Trova** nella finestra di dialogo sfumata per cercare l’occorrenza successiva oppure seleziona il pulsante **Sostituisci** per sostituire il testo evidenziato. La **Sostituisci** è attivo solo una volta effettuata una corrispondenza.
+Se viene trovata una corrispondenza, questa viene evidenziata e la finestra di dialogo di ricerca viene sfumata. Fai nuovamente clic sul pulsante **Trova** nella finestra di dialogo sfumata per cercare l’occorrenza successiva oppure seleziona il pulsante **Sostituisci** per sostituire il testo evidenziato. Il pulsante **Sostituisci** è attivo solo una volta trovata una corrispondenza.
 
 La finestra di dialogo Trova e sostituisci diventa trasparente quando si fa clic su Trova e diventa opaca quando si fa clic su Sostituisci. Ciò consente all’autore di rivedere il testo che verrà sostituito.
 
 >[!NOTE]
 >
->Quando si utilizza la funzionalità di sostituzione, la stringa da sostituire deve essere immessa contemporaneamente alla stringa da trovare. Tuttavia, è ancora possibile fare clic su Trova per cercare la stringa prima di sostituirla. Se la stringa sostitutiva viene immessa dopo aver fatto clic su Trova, la ricerca riprende dall’inizio del testo.
+>Quando si utilizza la funzionalità Sostituisci, la stringa da sostituire deve essere immessa contemporaneamente alla stringa da trovare. Tuttavia, è ancora possibile fare clic su Trova per cercare la stringa prima di sostituirla. Se la stringa sostitutiva viene immessa dopo aver fatto clic su Trova, la ricerca riprende dall’inizio del testo.
 
 #### Annulla
 
@@ -200,7 +200,7 @@ Utilizzato per annullare l’ultima modifica nell’editor Rich Text.
 
 ![Icona Ripristina](/help/email/assets/redo.png)
 
-Utilizzato per annullare una modifica annullata utilizzando l’icona Annulla .
+Utilizzato per annullare una modifica annullata utilizzando l’icona Annulla.
 
 #### Allineato a sinistra
 
@@ -276,7 +276,7 @@ Consente di inserire una tabella nel testo. Selezionando questa opzione si apre 
 
 ![Icona immagine](/help/email/assets/image-icon.png)
 
-Utilizzato per allineare un&#39;immagine inserita.
+Utilizzato per allineare un’immagine inserita.
 
 #### Controllo ortografico
 
@@ -284,7 +284,7 @@ Utilizzato per allineare un&#39;immagine inserita.
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 #### Caratteri speciali {#special-characters}
 
@@ -318,29 +318,29 @@ Per modificare il testo dalla vista formattata, tocca o fai clic sull’icona **
 
 ![Icona Formato paragrafo](/help/assets/text-paragraph.png)
 
-Consente di formattare come paragrafo il testo selezionato o il testo inserito dopo il cursore. Selezionando questa opzione si apre un menu a discesa dal quale è selezionato il formato del paragrafo.
+Consente di formattare come paragrafo il testo selezionato o il testo inserito dopo il cursore. Selezionando questa opzione si apre un menu a discesa dal quale si può selezionare il formato del paragrafo.
 
 ![Esempio di formato del paragrafo](/help/assets/text-paragraph-example.png)
 
 #### Seleziona variabile di Adobe Campaign
 
-![Icona Seleziona variabile Adobe Campaign](/help/email/assets/select-adobe-campaign-variable-icon.png)
+![Icona Seleziona variabile di Adobe Campaign](/help/email/assets/select-adobe-campaign-variable-icon.png)
 
-Apre la [Seleziona variabile Adobe Campaign](/help/email/campaign-variables.md) per inserire contenuto dinamico da Adobe Campaign.
+Apre la finestra di dialogo [Seleziona variabile di Adobe Campaign](/help/email/campaign-variables.md) per inserire il contenuto dinamico da Adobe Campaign.
 
 ### Modifica in linea {#in-line-editing}
 
-È possibile modificare anche il componente testo in linea. Per modificare in linea, seleziona il componente Testo e-mail nella pagina del contenuto.
+È possibile modificare anche il componente testo in linea. Per la modifica in linea, seleziona il componente Testo e-mail nella pagina del contenuto.
 
-![Seleziona componente Testo e-mail](/help/email/assets/email-text-select-component.png)
+![Selezionare il componente Testo e-mail](/help/email/assets/email-text-select-component.png)
 
-Quindi tocca o fai clic sul pulsante **Modifica** sulla barra degli strumenti che compare sul componente. La barra degli strumenti viene modificata per visualizzare opzioni di formattazione del testo limitate (incluso l’accesso al **Seleziona variabile Adobe Campaign** e puoi modificare il testo in linea.
+Quindi tocca o fai clic sull’icona **Modifica** sulla barra degli strumenti che compare sul componente. La barra degli strumenti cambia e presenta alcune opzioni per la formattazione del testo (incluso l’accesso all’opzione **Seleziona variabile di Adobe Campaign**) e puoi modificare il testo in linea.
 
 ![Esempio di modifica in linea](/help/email/assets/email-text-edit-inline-example.png)
 
-Tocca o fai clic sul segno di spunta nella barra degli strumenti per salvare le modifiche o sulla X da eliminare.
+Tocca o fai clic sul segno di spunta nella barra degli strumenti per salvare le modifiche o sulla X per eliminarle.
 
-A causa di limiti di spazio, non tutte le opzioni di formattazione sono disponibili in linea. Per visualizzare tutte le opzioni, passa alla modalità a schermo intero.
+A causa dei limiti di spazio, non tutte le opzioni di formattazione sono disponibili in linea. Per visualizzare tutte le opzioni, passa alla modalità a schermo intero.
 
 ### Impostazione di un ID {#setting-id}
 
@@ -348,7 +348,7 @@ Questa opzione consente di controllare l’identificatore univoco del componente
 
 * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
 * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
-* La modifica dell’ID può avere un impatto sui CSS.
+* La modifica dell’ID può avere un impatto sulle CSS.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
@@ -356,7 +356,7 @@ La finestra di dialogo per progettazione consente all’autore del modello di de
 
 ### Scheda Plug-in {#plugins-tab}
 
-La **Plug-in** viene utilizzata per abilitare e disabilitare le varie opzioni di formattazione del testo disponibili per gli autori dei contenuti.
+La scheda **Plug-in** viene utilizzata per abilitare e disattivare varie opzioni di formattazione del testo disponibili per gli autori di contenuti.
 
 ### Funzioni {#features}
 
@@ -367,7 +367,7 @@ Le seguenti funzioni possono essere attivate o disattivate per il componente.
 * Incolla testo semplice
 * Incolla da Word
 * Trova e sostituisci
-* Annulla e Ripristina
+* Annulla e ripristina
 * Controllo ortografico
 * Opzioni di modifica per le immagini inserite
 * Modifica origine HTML
@@ -393,8 +393,8 @@ Gli stili di paragrafo possono essere attivati o disattivati per il componente. 
 
 * Tocca o fai clic sul pulsante **Aggiungi** per inserire un nuovo stile.
 * Immetti il codice dello stile e una descrizione da visualizzare nella finestra di dialogo per modifica.
-* Per rimuovere uno stile, tocca o fai clic sul pulsante **Elimina** pulsante .
-* Per ridisporre l’ordine dei formati, tocca o fai clic su e trascina le maniglie.
+* Per rimuovere uno stile, tocca o fai clic sul pulsante **Elimina**.
+* Per cambiare l’ordine dei formati, tocca o fai clic e trascina le maniglie.
 
 ### Caratteri speciali {#configuring-special-characters}
 
@@ -404,9 +404,9 @@ L’opzione per l’inserimento di caratteri speciali può essere attivata o dis
 
 * Tocca o fai clic sul pulsante **Aggiungi** per inserire un nuovo carattere.
 * Immetti il codice HTML del carattere e una descrizione da visualizzare nella finestra di dialogo per modifica.
-* Per rimuovere un carattere, tocca o fai clic sul pulsante **Elimina** pulsante .
+* Per rimuovere un carattere, tocca o fai clic sul pulsante **Elimina**.
 * Per cambiare l’ordine dei caratteri, tocca o fai clic e trascina le maniglie.
 
 ## Scheda Stili {#styles-tab}
 
-Il componente Testo e-mail supporta il AEM [sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente Testo e-mail supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
