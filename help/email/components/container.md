@@ -1,17 +1,17 @@
 ---
-title: Componente contenitore e-mail
+title: Componente Contenitore e-mail
 description: Il componente Contenitore e-mail consente di creare un contenitore per più componenti aggiuntivi nel contenuto dell’e-mail.
 role: Architect, Developer, Admin, User
 exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '835'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
-# Componente contenitore e-mail {#email-container-component}
+# Componente Contenitore e-mail {#email-container-component}
 
 Il componente Contenitore e-mail consente di creare un contenitore per più componenti aggiuntivi nel contenuto dell’e-mail.
 
@@ -19,14 +19,14 @@ Il componente Contenitore e-mail consente di creare un contenitore per più comp
 
 Il componente Contenitore e-mail consente di creare un contenitore per più componenti aggiuntivi nel contenuto dell’e-mail e può essere utilizzato per raggruppare altri componenti e applicare uno stile o un layout comune.
 
-* Le proprietà del Contenitore possono essere selezionate nella [finestra di dialogo per configurazione.](#configure-dialog)
-* I valori predefiniti per il componente Contenitore e-mail quando lo si aggiunge a una pagina possono essere definiti nella [finestra di dialogo di progettazione.](#design-dialog)
+* Le proprietà del Contenitore possono essere selezionate nella [finestra di dialogo per la configurazione.](#configure-dialog)
+* Le impostazioni predefinite del componente Contenitore e-mail, quando lo si aggiunge a una pagina, possono essere definite nella [finestra di dialogo per la progettazione.](#design-dialog)
 
-Una volta aggiunto un componente Contenitore e-mail a una pagina, un autore di contenuti può trascinarvi altri componenti.
+Una volta che il componente Contenitore e-mail è stato aggiunto a una pagina, un autore del contenuto può trascinarvi i componenti aggiuntivi.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Contenitore e-mail è v1, introdotta con la versione X dei componenti core e-mail nell’ottobre 2022, ed è descritta in questo documento.
+La versione corrente del componente Contenitore e-mail è la v1, introdotta con la versione x dei Componenti core e-mail a ottobre 2022, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -34,11 +34,11 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 |---|---|---|
 | v1 | Compatibile | Compatibile |
 
-Per ulteriori informazioni sulle versioni e le versioni dei componenti core e-mail, consulta il documento [Versioni dei componenti core di e-mail.](/help/email/versions.md)
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei componenti core E-mail, consulta il documento [Versioni dei componenti core E-mail.](/help/email/versions.md)
 
 ## Esempio di output del componente {#sample-component-output}
 
-Per visualizzare esempi delle opzioni di configurazione del componente Contenitore e-mail e dell’output di HTML e JSON, visita il [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_container)
+Per avere un’idea del componente Contenitore e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_container)
 
 ## Dettagli tecnici {#technical-details}
 
@@ -48,50 +48,50 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-La finestra di dialogo di configurazione consente all’autore del contenuto di definire l’elemento contenitore e il suo funzionamento e la sua visualizzazione nel contenuto.
+La finestra di dialogo per la configurazione consente all’autore del contenuto di definire l’elemento contenitore, il suo comportamento e come si presenta nel contenuto.
 
-![Finestra di dialogo Modifica del componente contenitore e-mail](/help/email/assets/email-container-configure.png)
+![Finestra di dialogo per la modifica del componente Contenitore e-mail](/help/email/assets/email-container-configure.png)
 
-* **Layout** - Questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore e-mail.
-   * **a larghezza intera**
+* **Layout**: questa opzione definisce il comportamento o il comportamento del layout del componente Contenitore e-mail.
+   * **larghezza intera**
    * **mezzo|mezzo**
    * **un terzo|due terzi**
    * **due terzi|un terzo**
    * **terzo|terzo|terzo|terzo**
-* **Colore sfondo**: definibile utilizzando i valori RGB in forma libera o utilizzando il selettore colore, [a seconda della configurazione](#container-settings-tab)
-* **Immagine di sfondo** - Definisce un&#39;immagine di sfondo per il contenitore, [a seconda della configurazione](#container-settings-tab)
-* **ID** - Questa opzione consente di controllare l’identificatore univoco del componente in HTML.
-   * Se lasciato vuoto, viene generato automaticamente un ID univoco che può essere trovato controllando il contenuto risultante.
+* **Colore di sfondo**: definibile utilizzando i valori RGB in forma libera o utilizzando il selettore colore, [a seconda della configurazione](#container-settings-tab)
+* **Immagine di sfondo**: definisce l’immagine di sfondo del Contenitore, [a seconda della configurazione](#container-settings-tab)
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nell’HTML.
+   * Se non specificato, viene generato automaticamente un ID univoco reperibile esaminando il contenuto risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto sui CSS.
+   * La modifica dell’ID può avere un impatto sulle CSS.
 
 ### Scheda Stili {#styles-tab-edit}
 
-Il componente Contenitore e-mail supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling)
+Il componente Contenitore e-mail supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 Utilizza il menu a discesa per selezionare gli stili da applicare al componente. Le selezioni effettuate nella finestra di dialogo di modifica hanno lo stesso effetto di quelle selezionate nella barra degli strumenti del componente.
 
-Gli stili devono essere configurati per questo componente nel [finestra di dialogo di progettazione](#design-dialog) affinché la scheda sia disponibile.
+Gli stili devono essere configurati per questo componente nella [finestra di dialogo per la progettazione](#design-dialog) affinché la scheda sia disponibile.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo di progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore del contenuto che utilizza il componente Contenitore e-mail.
+La finestra di dialogo per la progettazione consente all’autore del modello di definire le opzioni disponibili per l’autore dei contenuti che utilizza il componente Contenitore e-mail.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
-La **Componenti consentiti** La scheda viene utilizzata per definire quali componenti possono essere aggiunti dall’autore del contenuto come elementi al componente Contenitore e-mail.
+La scheda **Componenti consentiti** viene utilizzata per definire quali componenti possono essere aggiunti al componente Contenitore e-mail dall’autore del contenuto.
 
-La **Componenti consentiti** la scheda funziona come la scheda dello stesso nome quando [definizione dei criteri e delle proprietà di un Contenitore di layout nell’Editor modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
+La scheda **Componenti consentiti** funziona come la scheda con lo stesso nome utilizzata per [definire i criteri e le proprietà di un Contenitore di layout nell’Editor di modelli.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
 
-### Scheda Componenti standard {#default-components-tab}
+### Scheda Componenti predefiniti {#default-components-tab}
 
-La **Componenti predefiniti** viene utilizzata per definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul contenitore, in modo analogo a [modalità di definizione dei componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda **Componenti predefiniti** consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
 
 ### Scheda Impostazioni contenitore {#container-settings-tab}
 
-La **Impostazioni dei contenitori** definisce se l’autore può definire un’immagine o un colore di sfondo.
+La scheda **Impostazioni contenitore** definisce se l’autore può definire un’immagine o un colore di sfondo.
 
-![Scheda Impostazioni contenitore della finestra di dialogo di progettazione del componente Contenitore e-mail](/help/email/assets/email-container-design-container-settings.png)
+![Scheda Impostazioni contenitore della finestra di dialogo per la progettazione del componente Contenitore e-mail](/help/email/assets/email-container-design-container-settings.png)
 
 * **Immagine di sfondo**
    * **Abilita immagine di sfondo**: seleziona questa opzione per consentire all’autore di contenuto di definire un’immagine di sfondo per il Contenitore.
@@ -104,8 +104,8 @@ La **Impostazioni dei contenitori** definisce se l’autore può definire un’i
    * **Valore**: consente di definire manualmente il colore utilizzando i valori RGB
       * Tocca o fai clic sul selettore colore per selezionare più facilmente un colore regolando i singoli valori RGB o definendo un valore esadecimale.
    * **Elimina**: tocca o fai clic su un campione per eliminarlo.
-   * **Ridisponi** - Tocca o fai clic e trascina per riordinare i campioni.
+   * **Ridisponi**: tocca o fai clic e trascina per riordinare i campioni.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente Contenitore e-mail supporta il AEM [Sistema di stili.](/help/get-started/authoring.md#component-styling)
+Il componente Contenitore e-mail supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
