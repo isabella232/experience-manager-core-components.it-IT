@@ -4,7 +4,7 @@ description: Il componente Testo e-mail è un componente per la modifica e la co
 role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2328'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Il resto di questo documento illustra la configurazione standard del componente 
 
 >[!NOTE]
 >
->Nel componente Testo e-mail sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
+>Nel componente Testo e-mail sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ## Finestra di dialogo per la modifica {#edit-dialog}
 
@@ -284,7 +284,7 @@ Utilizzato per allineare un’immagine inserita.
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 #### Caratteri speciali {#special-characters}
 
