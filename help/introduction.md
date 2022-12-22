@@ -4,9 +4,9 @@ description: Risolvi i problemi relativi ai componenti core e consenti ad altri 
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 
 |  |  |
 |---|---|
-| Pronti per la produzione | I componenti core sono 30 componenti WCM affidabili, testati, utilizzati ampiamente e con prestazioni ottimali. |
+| Pronti per la produzione | I Componenti core sono 30 efficienti componenti WCM testati, ampiamente utilizzati e con prestazioni ottimali. |
 | Pronti per il cloud | Che sia su [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it), su [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise, semplicemente funzionano. |
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori possono assemblare quasi tutti i layout. |
 | Configurabili | [Criteri di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#content-policies) a livello di modello definiscono quali funzioni gli autori di pagine possono utilizzare o meno. |
@@ -117,7 +117,7 @@ Per i requisiti delle precedenti versioni dei Componenti core, vedi [Versioni de
 
 I Componenti core richiedono l’utilizzo di [modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it) e non supportano l’interfaccia utente classica né i modelli statici. Se necessario, vedi [Strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) per aggiornare il tuo progetto con queste nuove funzioni AEM.
 
-Per configurare l’ambiente di sviluppo locale, consulta [questa panoramica per AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o il presente documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
+Per configurare il tuo ambiente di sviluppo locale, vedi [questa panoramica sull’SDK per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o questo documento [per le versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 >[!TIP]
 >
@@ -127,6 +127,6 @@ Per configurare l’ambiente di sviluppo locale, consulta [questa panoramica per
 
 ## Altri componenti {#other-components}
 
-Sono disponibili componenti aggiuntivi per gli autori AEM, basati sui componenti core.
+Sono disponibili componenti aggiuntivi per gli autori AEM, basati sui Componenti core.
 
-* [Componenti core e-mail](/help/email/introduction.md) - Scopri i componenti incorporati nei componenti core appositamente per l’utilizzo con Adobe Campaign.
+* [Componenti core E-mail](/help/email/introduction.md): scopri i componenti basati sui Componenti core specifici per l’utilizzo con Adobe Campaign.
