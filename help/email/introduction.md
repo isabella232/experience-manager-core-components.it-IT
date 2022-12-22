@@ -4,9 +4,9 @@ description: Crea contenuti e-mail coinvolgenti utilizzando la flessibilità dei
 role: Architect, Developer, Admin, User
 exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Le e-mail fanno parte della brand experience e del percorso del cliente. Con i c
 
 * I componenti core E-mail si basano sui [Componenti core](/help/introduction.md) e quindi supportano anche i [modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it) e il [sistema di stili.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it)
 * Per la creazione di contenuti e-mail sono disponibili [dieci componenti pronti per la produzione e ottimizzati per e-mail](#components).
-* I componenti e-mail core offrono una personalizzazione avanzata grazie all’inserimento di [Variabili Adobe Campaign](campaign-variables.md) nella maggior parte dei campi di dialogo.
-* La flessibilità [Componente Segmentation](/help/email/components/segmentation.md) consente una segmentazione avanzata del contenuto.
-* I componenti core E-mail core forniscono un output HTML ottimale grazie alla [funzione inline per stili CSS](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner:-Documentazione tecnica), alla [funzione inline per attributi HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) e allo [strumento di pulizia HTML.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizing)
+* I Componenti core E-mail consentono la personalizzazione avanzata mediante l’inserimento di [variabili Adobe Campaign](campaign-variables.md) nella maggior parte dei campi presenti nelle finestre di dialogo.
+* Il [componente Segmentazione](/help/email/components/segmentation.md) è flessibile e consente la segmentazione avanzata del contenuto.
+* I componenti core E-mail core forniscono un output HTML ottimale grazie alla [funzione inline per stili CSS](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner:-Technical-documentation), alla [funzione inline per attributi HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) e allo [strumento di pulizia HTML.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizing)
 * Puoi creare contenuti e-mail ovunque in `/content`.
 * I componenti core E-mail sono [open source.](https://github.com/adobe/aem-core-email-components)
 
@@ -42,7 +42,7 @@ Di seguito sono riportati i requisiti dei componenti core E-mail.
 
 | AEM | Adobe Campaign | Componenti core  |
 |---|---|---|
-| AEM 6.5.14.0+<br>On-Premise o AMS | Adobe Campaign Classic<br>Adobe Campaign Standard | [Versione 2.21.2](/help/versions.md)+ |
+| AEM 6.5.14.0+<br>On-premise o AMS | Adobe Campaign Classic<br>Adobe Campaign Standard | [Versione 2.21.2](/help/versions.md)+ |
 
 >[!NOTE]
 >
