@@ -5,9 +5,9 @@ breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
 source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -82,12 +82,12 @@ ht-degree: 94%
       + [Elenco (v2)](components/v2/list.md)
       + [Pagina (v2)](components/v2/page.md)
       + [Titolo (v2)](components/v2/title.md)
-+ Componenti e-mail {#email}
++ Componenti E-mail {#email}
    + [Introduzione](/help/email/introduction.md)
-   + [Utilizzo dei componenti core e-mail](/help/email/using.md)
-   + [Variabili di campagna](/help/email/campaign-variables.md)
+   + [Utilizzo dei componenti core E-mail](/help/email/using.md)
+   + [Variabili di Campaign](/help/email/campaign-variables.md)
    + [Versioni](/help/email/versions.md)
-   + Componenti e-mail {#components}
+   + Componenti E-mail {#components}
       + [Pagina](/help/email/components/page.md)
       + [Contenitore](/help/email/components/container.md)
       + [Titolo](/help/email/components/title.md)
