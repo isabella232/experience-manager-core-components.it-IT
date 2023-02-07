@@ -3,10 +3,10 @@ title: Componente Sommario
 description: Il componente Sommario crea un sommario basato sui titoli nel contenuto della pagina, consentendo ai lettori di navigare rapidamente all'interno della pagina.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
-workflow-type: ht
-source-wordcount: '722'
-ht-degree: 100%
+source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -35,6 +35,12 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 | v1 | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
+
+>[!NOTE]
+>
+>In AEM as a Cloud Service, l’amministratore deve abilitare un filtro per il componente per eseguirne il rendering del contenuto del componente.
+>
+>[Consulta la documentazione GitHub del componente](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1) per ulteriori informazioni.
 
 ### Dettagli tecnici {#technical-details}
 
