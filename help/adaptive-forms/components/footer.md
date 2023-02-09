@@ -2,9 +2,9 @@
 title: Componente core Forms adattivo - Piè di pagina
 description: Utilizzo o personalizzazione del componente core Footer di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 9a8b8661554eea2f669f17bee89f97165bcb58db
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '749'
 ht-degree: 19%
 
 ---
@@ -36,8 +36,10 @@ Un componente piè di pagina in un modulo adattivo è un’area che in genere vi
 
 Il componente core Footer di Forms adattivo è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -60,52 +62,49 @@ Puoi personalizzare facilmente l’esperienza del piè di pagina per i visitator
 * **Finestra di dialogo Modifica**
 La finestra di dialogo di modifica fornisce strumenti di formattazione RTF standard che consentono all’utente di creare testo per il piè di pagina.
 
-   * **Grassetto** - Questa opzione applica la formattazione in grassetto al testo selezionato o al testo in formato grassetto immesso dopo il cursore. `Ctrl+B` è una scelta rapida da tastiera.
+* **Grassetto** - Questa opzione applica la formattazione in grassetto al testo selezionato o al testo in formato grassetto immesso dopo il cursore. `Ctrl+B` è una scelta rapida da tastiera.
 
-   * **Corsivo** - Questa opzione applica la formattazione in corsivo al testo selezionato o al testo in corsivo immesso dopo il cursore. `Ctrl+I` è una scelta rapida da tastiera.
+* **Corsivo** - Questa opzione applica la formattazione in corsivo al testo selezionato o al testo in corsivo immesso dopo il cursore. `Ctrl+I` è una scelta rapida da tastiera.
 
-   * **Punto elenco**
-
-      ![Opzioni punto elenco](/help/adaptive-forms/assets/footer_bullet.png)
-
-      * **Icona punto elenco** - Formatta il testo selezionato come elenco puntato o inizia l&#39;inserimento di un elenco puntato dopo il cursore. Per terminare un elenco puntato, tocca o fai clic nuovamente sul pulsante Punto elenco oppure immetti due ritorni a capo.
-
-      * **Icona Elenco numerato** - Formatta il testo selezionato come elenco numerato o inizia l&#39;inserimento di un elenco numerato dopo il cursore. Per terminare un elenco numerato, tocca o fai clic nuovamente sul pulsante Numero oppure immetti due ritorni a capo.
-
-      * **Icona Outright** - Diminuisce il livello di rientro del testo o del testo selezionato dopo il cursore. L’opzione è attiva solo se il testo selezionato o la posizione del cursore è già rientrata.
-
-      * **Icona Rientro** - Aumenta il livello di rientro del testo o del testo selezionato dopo il cursore.
-   * **Collegamento ipertestuale**
-
-      ![Opzioni collegamento ipertestuale](/help/adaptive-forms/assets/footer_link.png)
+![Opzioni punto elenco](/help/adaptive-forms/assets/footer_bullet.png)
 
 
-      * **Percorso** - Inserire il percorso
-         1. La finestra di dialogo per selezione consente di scegliere un percorso in AEM.
-         1. Se il collegamento non è in AEM, utilizza l’URL assoluto.
-         1. I percorsi non assoluti vengono interpretati come relativi ad AEM.
-      * **Testo alternativo** - Inserisci un testo descrittivo alternativo per il collegamento.
+* **Punto elenco**
 
-      * **Target** - Selezionare il comportamento del collegamento
-         * Destinazione
-         * Stessa scheda
-         * Nuova scheda
-         * Frame principale
-         * Frame superiore
+   * **Icona punto elenco** - Formatta il testo selezionato come elenco puntato o inizia l&#39;inserimento di un elenco puntato dopo il cursore. Per terminare un elenco puntato, tocca o fai clic nuovamente sul pulsante Punto elenco oppure immetti due ritorni a capo.
+
+   * **Icona Elenco numerato** - Formatta il testo selezionato come elenco numerato o inizia l&#39;inserimento di un elenco numerato dopo il cursore. Per terminare un elenco numerato, tocca o fai clic nuovamente sul pulsante Numero oppure immetti due ritorni a capo.
+
+   * **Icona Outright** - Diminuisce il livello di rientro del testo o del testo selezionato dopo il cursore. L’opzione è attiva solo se il testo selezionato o la posizione del cursore è già rientrata.
+
+   * **Icona Rientro** - Aumenta il livello di rientro del testo o del testo selezionato dopo il cursore.
+
+![Opzioni collegamento ipertestuale](/help/adaptive-forms/assets/footer_link.png)
+
+* **Collegamento ipertestuale**
+
+   * **Percorso** - Inserire il percorso
+      1. La finestra di dialogo per selezione consente di scegliere un percorso in AEM.
+      1. Se il collegamento non è in AEM, utilizza l’URL assoluto.
+      1. I percorsi non assoluti vengono interpretati come relativi ad AEM.
+   * **Testo alternativo** - Inserisci un testo descrittivo alternativo per il collegamento.
+
+   * **Target** - Selezionare il comportamento del collegamento
+      * Destinazione
+      * Stessa scheda
+      * Nuova scheda
+      * Frame principale
+      * Frame superiore
    * **Icona Scollega** - Questa opzione rimuove un collegamento già applicato al testo selezionato. Questa opzione è attiva solo se il collegamento è già selezionato.
 
    * **Icona del formato paragrafo** - Questa opzione consente di applicare la formattazione del paragrafo al testo selezionato. Consente inoltre di formattare il testo inserito dopo il cursore. Definisce il livello di intestazione del titolo.
 
 
 
-* **ID**
-Questa opzione consente di controllare l’identificatore univoco del componente in HTML e nel livello dati.
+* **ID**: Questa opzione consente di controllare l’identificatore univoco del componente in HTML e nel livello dati.
 
    * Se lasciato vuoto, viene generato automaticamente un ID univoco * ed è possibile trovarlo controllando la pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
-
-## Finestra di dialogo per progettazione {#design-dialog}
-
 
 

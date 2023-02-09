@@ -1,8 +1,8 @@
 ---
 title: Componente core Forms adattivo - Pulsante Ripristina
-description: Utilizzo o personalizzazione del componente core del pulsante Reimposta adattativo di Forms.
+description: Utilizzo o personalizzazione del componente core del pulsante Reimpostazione adattiva di Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 1e6460d318f4f9a5dfdcbb81723da01b51b72f3f
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 2%
@@ -33,8 +33,10 @@ I motivi per utilizzare un pulsante di ripristino in un modulo adattivo sono i s
 
 Il pulsante Adaptive Forms Reset Componente core è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa è una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.

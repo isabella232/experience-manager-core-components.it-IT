@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Schede orizzontali
 description: Utilizzo o personalizzazione del componente core Schede adattabili orizzontali di Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 1e6460d318f4f9a5dfdcbb81723da01b51b72f3f
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 3%
@@ -32,8 +32,10 @@ I motivi comuni per utilizzare le schede orizzontali in un modulo adattivo sono 
 
 Il componente core Schede adattabili orizzontali Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.

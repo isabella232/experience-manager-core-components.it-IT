@@ -2,10 +2,10 @@
 title: Introduzione ai componenti core di Forms adattivi AEM
 description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la flessibilità dei componenti core Forms adattivi e forniscile con la potenza di Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: 781cf351ef52cbb56ff33c2674c8af591c81a30e
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 13%
+source-wordcount: '1202'
+ht-degree: 12%
 
 ---
 
@@ -18,15 +18,11 @@ Utilizzando i componenti core Forms adattivi in Adobe Experience Manager, puoi c
 
 In Adobe Experience Manager (AEM), i componenti sono i blocchi predefiniti utilizzati per creare pagine e moduli. Offrono agli autori un modo semplice e potente per creare e gestire i contenuti, fornendo allo stesso tempo agli sviluppatori la flessibilità e l’estensibilità necessarie per creare componenti personalizzati.
 
-I componenti core sono una serie di componenti WCM precompilati e standardizzati progettati per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione per i siti web. Questi componenti includono campi di testo, immagini, video e altro ancora. Sono progettati per essere flessibili e possono essere facilmente personalizzati in base alle esigenze specifiche di un sito web.
+Sono progettati per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione per siti web e moduli, essere flessibili e possono essere facilmente personalizzati in base alle esigenze specifiche di un sito web e di un modulo.
 
 I componenti core sono inoltre progettati per essere reattivi e supportano un’ampia gamma di dispositivi, tra cui desktop, tablet e smartphone. Inoltre, rispettano gli standard web e le best practice più recenti, rendendoli una soluzione solida e affidabile per la creazione di contenuti web.
 
-Inoltre, i componenti core sono progettati per funzionare in modo semplice con altre parti del AEM, consentendo agli autori e agli sviluppatori di creare moduli più interattivi e coinvolgenti con meno impegno e meno tempo.
-
 Nel complesso, i componenti core sono uno strumento essenziale per la creazione e la gestione dei contenuti web in AEM, fornendo una soluzione potente e flessibile che può contribuire a ridurre i tempi di sviluppo e i costi di manutenzione, fornendo al contempo ai visitatori del sito web una grande esperienza utente.
-
-In Adobe Experience Manager, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine e dei moduli creati. I componenti sono sempre stati un elemento fondamentale dell’esperienza AEM, rendendo la creazione di pagine e moduli semplice ma potente per l’autore e lo sviluppo di componenti flessibili ed estensibili per lo sviluppatore. I componenti core sono un set di componenti WCM (Web Content Management) standardizzati per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti web.
 
 ## Componenti core adattabili di Forms
 
@@ -54,19 +50,33 @@ Inoltre, poiché questi componenti sono open-source, gli sviluppatori possono pe
 
 ## Vantaggi {#benefits}
 
-Le esperienze di acquisizione dei dati sono fondamentali per la generazione e la registrazione dei lead e i componenti core per Forms adattivi offrono una soluzione potente per la creazione di moduli ottimizzati per l’acquisizione dei dati. Alcuni dei motivi per utilizzare i componenti core per creare queste esperienze sono:
+Le esperienze di acquisizione dei dati sono fondamentali per la generazione e la registrazione dei lead e i componenti core per Forms adattivi offrono una soluzione potente per la creazione di moduli ottimizzati per l’acquisizione dei dati. Alcuni dei motivi per utilizzare i componenti core per creare queste esperienze sui componenti di base:
 
-* **Personalizzazione**: I componenti core Forms adattivi consentono agli sviluppatori di personalizzare facilmente l’aspetto e il comportamento dei componenti modulo, ad esempio campi di testo, caselle di controllo e menu a discesa, in modo da soddisfare requisiti specifici.
+* **Disponibilità su GitHub e documentazione completa**: I AEM componenti core per Forms adattivi sono open-source e disponibili su GitHub, insieme a una documentazione completa. In questo modo gli sviluppatori possono comprendere più facilmente i componenti e il loro funzionamento e contribuire al loro sviluppo. Il sito web aemcomponents.dev è anche una risorsa preziosa, per la quale gli sviluppatori possono vedere i componenti in azione e accedere alla relativa documentazione.
+
+* **Modello BEM per stile**: I componenti core seguono il modello BEM (Block Element Modifier) per lo stile, una metodologia consolidata e ampiamente utilizzata per l’organizzazione dei CSS. In questo modo gli sviluppatori possono comprendere più facilmente come sono organizzati gli stili e come modificarli in base alle proprie esigenze specifiche.
+
+* **Nessuna dipendenza dalle librerie di terze parti**: Uno dei vantaggi dei componenti core è che non hanno dipendenza da librerie JavaScript di terze parti, inclusi JQuery e Underscore. Questo rende i componenti più veloci e leggeri, nonché più facili da integrare in un’implementazione AEM esistente.
+
+* **Concentrati su prestazioni e accessibilità**: I componenti core sono progettati tenendo presente le prestazioni e l’accessibilità, che si riflettono nei loro punteggi Google Lighthouse e web vitals elevati. Questo rende più facile per gli sviluppatori creare pagine web accessibili e dalle prestazioni elevate, che è sempre più importante nell&#39;attuale panorama digitale.
+
+* **Componenti modulo nel modello e nei temi di Sites 30**: I componenti core supportano i componenti modulo nel modello e nei temi di Sites 30, facilitando agli sviluppatori la creazione e la personalizzazione dei moduli all’interno di AEM.
+
+* **Stile più semplice**: Lo stile dei componenti core è più semplice rispetto a quello dei componenti di base. Il processo di creazione del tema è simile a Sites, con la possibilità di ereditare lo stesso tema/CSS dalla pagina Sites principale. Inoltre, il modello BEM per lo stile facilita la comprensione e la modifica degli stili.
 
 * **Accessibilità**: I componenti core Forms adattivi supportano gli standard e le linee guida di accessibilità, ad esempio  [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), per garantire che i moduli possano essere utilizzati da persone con disabilità, incluse quelle che utilizzano tecnologie per l’accessibilità quali gli assistenti vocali.
 
-* **Moduli coerenti**: Utilizzando i componenti core di Forms adattivi, gli sviluppatori possono creare moduli dall’aspetto e dal aspetto uniformi, facilitando agli utenti la comprensione e la compilazione dei moduli, aumentando il coinvolgimento e migliorando l’esperienza utente.
+* **Allineamento con AEM Sites**: I componenti core sono progettati per essere più allineati con AEM Sites, facilitando l’adozione e l’utilizzo da parte degli utenti di Sites senza dover apprendere nulla di nuovo. I componenti utilizzano la stessa pipeline front-end di Sites, facilitandone lo stile e modificarne l’aspetto. Inoltre, i seguenti punti illustrano ulteriormente questo allineamento:
 
-* **Editor WYSIWYG**: AEM Forms fornisce un’interfaccia intuitiva e un editor WYSIWYG semplice da utilizzare per creare un modulo adattivo. Consente agli autori dei moduli di creare e modificare i moduli senza che sia necessario sapere come eseguire il codice. Include inoltre un editor di regole visive per facilitare la creazione di azioni basate su regole e implementare logiche complesse per automatizzare il comportamento del modulo senza dover scrivere codice.
+   * **Authoring di esperienze in linea con l’editor di pagine**: I componenti core dispongono di un’esperienza di authoring in linea con l’editor Sites, con finestre di dialogo ed altre esperienze simili all’editor pagina. Questo semplifica la creazione e la gestione dei moduli da parte degli utenti di Sites nel contesto familiare dell’editor Sites.
 
-* **Logica condizionale**: I componenti core Forms adattivi supportano l’uso della logica condizionale, il che significa che l’aspetto o il comportamento dei componenti modulo può essere modificato in base ai valori immessi dall’utente. Ad esempio, alcuni campi possono essere nascosti o resi obbligatori in base alla selezione effettuata in altri campi.
+   * **Modifica in linea del modulo nell’editor di Sites**: I componenti core consentono la modifica in linea dei moduli all’interno dell’editor Sites, evitando la necessità di passare da un editor all’altro. Questo semplifica l’esperienza di authoring e facilita la creazione e la gestione dei moduli.
 
-* **Convalida dei dati**: I componenti core Forms adattivi forniscono funzionalità di convalida dei dati integrate che consentono agli sviluppatori di garantire che i dati immessi dall’utente soddisfino criteri specifici, ad esempio lunghezze minime e massime, valori richiesti e formati specifici.
+   * **Eredità delle funzioni di Sites in Forms**: Forms creato all’interno di una pagina Sites eredita le stesse funzioni di Sites. Questo offre un’esperienza diretta e integrata per la creazione e la gestione dei moduli nel contesto di AEM Sites
+
+   <!--including Multi Site Manager, the ability to use Sites components within a form for static content, support for scheduled publish/unpublish, form translation aligned with Sites translation, versioning, and targeting -->
+
+
 
 ## Requisiti {#requirements}
 

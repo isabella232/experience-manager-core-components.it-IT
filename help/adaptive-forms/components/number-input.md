@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Ingresso numero
 description: Utilizzo o personalizzazione del componente core di input per numero di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 6ea000f9259e9478ee3c0923ac35af7814e184d9
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 1%
@@ -39,8 +39,10 @@ Esistono diversi motivi per cui è utile includere un componente di input numeri
 
 Il componente di base per l’input del numero di Forms adattivo è stato rilasciato nel febbraio 2023 come parte dei componenti di base 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -93,6 +95,7 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero per i vis
 * **Escludi valore minimo** - Selezionare questa casella di controllo se non si desidera che il valore minimo specificato nel **Numero più basso / Numero più piccolo** da includere nell’intervallo di valori &#x200B; da immettere nel campo modulo.
 
 * **Numero più alto / numero più grande** - Utilizzare questa opzione per selezionare il numero massimo consentito per l’immissione nel campo del modulo. Se il numero è maggiore del numero specificato in **Numero più alto / numero più grande** nel campo modulo viene immessa l’opzione , viene visualizzato un messaggio di errore.
+
 * **Messaggio di errore massimo** - Questa opzione consente di inserire un messaggio di errore visualizzato quando l’utente immette un valore maggiore del valore specificato nel **Numero più alto / numero più grande** opzione .
 
 * **Escludi valore massimo** - Selezionare questa casella di controllo se non si desidera il valore massimo specificato nel **Numero più alto / numero più grande** da includere nell’intervallo di valori da immettere nel campo modulo.

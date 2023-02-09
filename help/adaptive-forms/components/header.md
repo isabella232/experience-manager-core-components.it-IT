@@ -2,9 +2,9 @@
 title: Componente core Forms adattivo - Intestazione
 description: Utilizzo o personalizzazione del componente di base dell’intestazione di Forms adattiva.
 role: Architect, Developer, Admin, User
-source-git-commit: 7f680eac1da61b55f9d90db6c0842421d03ac1dc
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '654'
 ht-degree: 7%
 
 ---
@@ -34,10 +34,11 @@ Un componente Intestazione in un modulo adattivo è una sezione nella parte supe
 
 Il componente di base dell’intestazione di Forms adattiva è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
-
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
 
 
@@ -80,6 +81,5 @@ Questa parte dell&#39;intestazione contiene il titolo dell&#39;intestazione e l&
 
 Questa sezione consente di inserire il testo da includere nell’intestazione.
 
-## Finestra di dialogo per la progettazione {#design-dialog}
 
 

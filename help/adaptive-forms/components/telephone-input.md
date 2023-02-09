@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Ingresso telefonico
 description: Utilizzo o personalizzazione del componente di base per l’input telefonico di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 0e4fb8454b7ef84eb5b1b73b01c982a2f9c12381
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%
@@ -30,8 +30,10 @@ I motivi comuni per utilizzare un campo di immissione telefonica in un modulo ad
 
 Il componente di base per l’input per telefono adattivo di Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -53,13 +55,19 @@ Puoi personalizzare facilmente l’esperienza di input del telefono per i visita
 * **Nome** - È possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
 * **Titolo** - Con il relativo Titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungete un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+
 * **Nascondi titolo** - Seleziona l’opzione per nascondere il titolo del componente.
 
 * **Testo segnaposto** - Il testo segnaposto in un componente modulo si riferisce a un’etichetta o a un prompt breve che viene visualizzato all’interno di un campo di input come suggerimento per l’utente sul tipo di informazioni che ci si aspetta venga immesso in quel campo. Il testo segnaposto scompare quando l’utente inizia a digitare nel campo e viene visualizzato nuovamente se il campo viene lasciato vuoto. Fornisce un segnale visivo all’utente, ma non agisce come etichetta o valore permanente per il campo.
+
 * **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente semplice per la raccolta e la gestione dei dati.
+
 * **Nascondi componente** - Selezionare l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+
 * **Disattiva componente** - Seleziona l’opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
+
 * **Sola lettura** - Seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
+
 * **Valore predefinito** - Questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo
 
 ### Scheda Convalida {#validation-tab}
@@ -78,10 +86,12 @@ Puoi personalizzare facilmente l’esperienza di input del telefono per i visita
 
 * **Numero minimo di caratteri** - Questa opzione consente di specificare il numero minimo di caratteri consentiti nel campo. Se immetti caratteri inferiori al valore specificato in **Numero minimo di caratteri**, sullo schermo viene visualizzato un messaggio di errore. La **Messaggio di errore minimo caratteri** consente di aggiungere un messaggio di errore personalizzato.
 
-* **Messaggio di errore minimo caratteri** - **Messaggio di errore minimo caratteri** consente di aggiungere un messaggio di errore personalizzato se si immettono caratteri inferiori al valore specificato nel **Numero minimo di caratteri** opzione .
+* *Messaggio di errore minimo caratteri** - Il **Messaggio di errore minimo caratteri** consente di aggiungere un messaggio di errore personalizzato se si immettono caratteri inferiori al valore specificato nel **Numero minimo di caratteri** opzione .
 
 La **Pattern di convalida** consente di inserire un pattern per convalidare il numero di telefono immesso. Il numero di telefono immesso viene convalidato in base al valore immesso nel **Pattern** opzione . Nel caso in cui il numero di telefono non sia convalidato con il valore inserito in **Pattern** il messaggio di errore viene visualizzato sullo schermo.
+
 * **Pattern** - Questa opzione consente di inserire i pattern di verifica consentiti per il numero di telefono. Sono consentite anche espressioni regolari.
+
 * **Messaggio di errore** - Questa opzione consente di inserire un messaggio visualizzato sullo schermo se il numero di telefono immesso non viene convalidato con il valore immesso nel campo **Pattern** opzione
 
 ### Scheda Contenuto dell’Aiuto {#help-content-tab}

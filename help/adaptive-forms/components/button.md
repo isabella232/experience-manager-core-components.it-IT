@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Pulsante
 description: Utilizzo o personalizzazione del componente core del pulsante Adattivo Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 1e6460d318f4f9a5dfdcbb81723da01b51b72f3f
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 2%
@@ -38,8 +38,10 @@ Ci sono diversi motivi per cui è utile includere un pulsante in un modulo adatt
 
 Il componente di base per pulsanti adattivi Forms v1 è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -87,15 +89,16 @@ Puoi personalizzare facilmente l’esperienza del pulsante per i visitatori tram
 ![Scheda Accessibilità](/help/adaptive-forms/assets/button_accessibilitytab.png)
 
 
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
-
 Sulla **Accessibilità** scheda , valori impostati per [Accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) etichette per il componente. Sono disponibili varie opzioni per l’utilizzo del testo per l’assistente vocale:
 
-* **Testo personalizzato**: Selezionare questa opzione per utilizzare il testo personalizzato per le etichette di accessibilità ARIA. Selezionando questa opzione viene visualizzata la finestra di dialogo Testo personalizzato. È possibile aggiungere informazioni rilevanti nella finestra di dialogo Testo personalizzato.
-* **Descrizione**: Selezionare questa opzione per utilizzare la descrizione per le etichette di accessibilità ARIA.
-* **Titolo**: Selezionare questa opzione per utilizzare il titolo per le etichette di accessibilità ARIA.
-* **Nome**: Selezionare questa opzione per utilizzare il nome per le etichette di accessibilità ARIA.
-* **Nessuno**: Selezionare questa opzione se non si desidera aggiungere etichette di accessibilità ARIA.
+* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
+
+
+   * **Testo personalizzato**: Selezionare questa opzione per utilizzare il testo personalizzato per le etichette di accessibilità ARIA. Selezionando questa opzione viene visualizzata la finestra di dialogo Testo personalizzato. È possibile aggiungere informazioni rilevanti nella finestra di dialogo Testo personalizzato.
+   * **Descrizione**: Selezionare questa opzione per utilizzare la descrizione per le etichette di accessibilità ARIA.
+   * **Titolo**: Selezionare questa opzione per utilizzare il titolo per le etichette di accessibilità ARIA.
+   * **Nome**: Selezionare questa opzione per utilizzare il nome per le etichette di accessibilità ARIA.
+   * **Nessuno**: Selezionare questa opzione se non si desidera aggiungere etichette di accessibilità ARIA.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 

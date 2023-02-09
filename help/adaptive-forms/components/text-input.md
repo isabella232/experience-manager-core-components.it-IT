@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Input di testo (casella di testo)
 description: Utilizzo o personalizzazione del componente di base per l’input di testo di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 0e4fb8454b7ef84eb5b1b73b01c982a2f9c12381
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 1%
@@ -34,8 +34,10 @@ Esistono diversi motivi per utilizzare il componente di input Testo in un modulo
 
 Il componente core per l’input di testo adattivo di Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -61,13 +63,21 @@ Puoi personalizzare facilmente l’esperienza di immissione del testo per i visi
 * **Nascondi titolo** - Seleziona l’opzione per nascondere il titolo del componente.
 
 * **Testo segnaposto** - Il testo segnaposto in un componente modulo si riferisce a un’etichetta o a un prompt breve che viene visualizzato all’interno di un campo di input come suggerimento per l’utente sul tipo di informazioni che ci si aspetta venga immesso in quel campo. Il testo segnaposto scompare quando l’utente inizia a digitare nel campo e viene visualizzato nuovamente se il campo viene lasciato vuoto. Fornisce un segnale visivo all’utente, ma non agisce come etichetta o valore permanente per il campo.
+
 * **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente semplice per la raccolta e la gestione dei dati.
+
 * **Nascondi componente** - Selezionare l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+
 * **Disattiva componente** - Seleziona l’opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
+
 * **Sola lettura** - Seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
+
 * **Valore predefinito** - Questa opzione consente di aggiungere un valore predefinito in un campo modulo. Il testo scompare quando l’utente inizia a digitare nel campo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
+
 * **Consenti righe multiple** - Questa opzione consente all’utente di immettere più righe in un campo modulo.
+
 * **Consenti RTF** - La finestra di dialogo di modifica fornisce strumenti di formattazione RTF standard che consentono all’utente di formattare il testo.
+
 * **Attributo di riempimento automatico** - L’opzione di riempimento automatico riempie il campo del modulo in base a un pattern o a un testo immesso in precedenza. Quando l’utente inizia a digitare del testo nel campo modulo, i suggerimenti vengono visualizzati in un elenco a discesa dal quale può selezionare l’opzione appropriata.
 
 ### Scheda Convalida {#validation-tab}
@@ -89,7 +99,9 @@ Puoi personalizzare facilmente l’esperienza di immissione del testo per i visi
 * **Messaggio di errore minimo caratteri** - **Messaggio di errore minimo caratteri** consente di aggiungere un messaggio di errore personalizzato se si immettono caratteri inferiori al valore specificato nel **Numero minimo di caratteri** opzione .
 
 La **Pattern di convalida** consente di immettere un pattern per convalidare il testo immesso. Se il testo non viene convalidato con il valore inserito in **Pattern** il messaggio di errore viene visualizzato sullo schermo.
+
 * **Pattern** - Questa opzione consente di inserire i pattern di verifica consentiti per il testo. Sono consentite anche espressioni regolari.
+
 * **Messaggio di errore** - Questa opzione ti consente di inserire un messaggio visualizzato sullo schermo se il testo immesso non viene convalidato con il valore inserito nella **Pattern** opzione
 
 ### Scheda Contenuto dell’Aiuto {#help-content-tab}

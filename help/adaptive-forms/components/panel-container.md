@@ -2,10 +2,10 @@
 title: Componente core Forms adattivo - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore Pannello di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 77ff7425be1e591b8f5b973a344d7def8191c033
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 2%
+source-wordcount: '1216'
+ht-degree: 1%
 
 ---
 
@@ -38,8 +38,10 @@ Esistono diversi motivi per utilizzare un pannello in un modulo, tra cui:
 
 Il componente core contenitore di pannello adattivo Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -92,7 +94,6 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
 
 * **Ruolo di HTML per l’annuncio dell’assistente vocale** - Il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come gli assistenti vocali. L’attributo ruolo viene utilizzato per fornire contesto e significato semantico aggiuntivi a un elemento, facilitando l’interpretazione e l’annuncio del contenuto da parte degli assistenti vocali. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di &quot;etichetta&quot; e il relativo campo di input potrebbe avere il ruolo di &quot;casella di testo&quot;. Questo consente all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input e di annunciarli correttamente all’utente.
 
-## Finestra di dialogo per la progettazione {#design-dialog}
 
 
 

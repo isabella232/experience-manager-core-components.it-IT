@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Pulsante di scelta
 description: Utilizzo o personalizzazione del componente core del pulsante di scelta adattivo Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 1e6460d318f4f9a5dfdcbb81723da01b51b72f3f
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 1%
@@ -44,8 +44,10 @@ Esistono diversi motivi per utilizzare i pulsanti di scelta in un modulo, tra cu
 
 Il componente core per pulsanti di scelta adattativo di Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
+|  |  |
+|---|---|
 | Versione del componente | AEM as a Cloud Service |
-|--- |--- |---|---|
+| --- | --- |
 | v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
 
 Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
@@ -80,6 +82,7 @@ Puoi personalizzare facilmente l’esperienza del pulsante di scelta per i visit
 * **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente semplice per la raccolta e la gestione dei dati.
 
 * **Tipo di dati del valore inviato** - Questa opzione specifica il tipo di dati del valore inviato quando viene selezionata un’opzione. Se la **tipo di dati del valore inviato** è impostato su `Number` e si aggiungono dati stringa a **Valore dati** &#x200B; &#x200B; **Opzioni** nella schermata viene visualizzato un `Value type mismatch` messaggio di errore.
+
 * **Opzioni predefinite** - Questa opzione consente di aggiungere valori predefiniti preselezionati al caricamento del modulo. Se la **tipo di dati del valore inviato** è impostato su `Number` e si aggiungono dati stringa a **Opzioni predefinite**, nella schermata viene visualizzato un `Value type mismatch` messaggio di errore.
 
 * **Opzioni di visualizzazione** - Questa opzione viene utilizzata per impostare l’allineamento visivo dei pulsanti di scelta in un modulo adattivo. Le due opzioni supportate sono:
@@ -128,3 +131,4 @@ La finestra di dialogo Progettazione consente di definire e gestire gli stili CS
 **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core del pulsante di scelta Adattivo Forms.
 
 **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+
