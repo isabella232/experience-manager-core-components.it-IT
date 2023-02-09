@@ -4,10 +4,10 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
-workflow-type: ht
-source-wordcount: '282'
-ht-degree: 100%
+source-git-commit: 534b4f0f8a298772de0f2f899dd4cfbaa3db4e74
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 79%
 
 ---
 
@@ -98,6 +98,30 @@ ht-degree: 100%
       + [Frammento esperienza](/help/email/components/experience-fragment.md)
       + [Frammento di contenuto](/help/email/components/content-fragment.md)
       + [Segmentazione](/help/email/components/segmentation.md)
++ Moduli adattivi {#adaptive-forms}
+   + [Introduzione](/help/adaptive-forms/introduction.md)
+   + Componenti Forms adattivi {#adaptive-forms-components}
+      + [Pannello a soffietto Forms adattivo](/help/adaptive-forms/components/accordion.md)
+      + [Pulsante Adattivo Forms](/help/adaptive-forms/components/button.md)
+      + [Gruppo di caselle di controllo Forms adattivo](/help/adaptive-forms/components/checkbox-group.md)
+      + [Selettore data adattivo di Forms](/help/adaptive-forms/components/date-picker.md)
+      + [Elenco a discesa Adattivo Forms](/help/adaptive-forms/components/drop-down.md)
+      + [Ingresso e-mail Forms adattivo](/help/adaptive-forms/components/email-input.md)
+      + [Allegati file Forms adattivi](/help/adaptive-forms/components/file-attachment.md)
+      + [Schede orizzontali Forms adattabili](/help/adaptive-forms/components/horizontal-tabs.md)
+      + [Immagine Forms adattiva](/help/adaptive-forms/components/image.md)
+      + [Ingresso numero Forms adattivo](/help/adaptive-forms/components/number-input.md)
+      + [Pannello Forms adattivo](/help/adaptive-forms/components/panel-container.md)
+      + [Pulsante di scelta Forms adattivo](/help/adaptive-forms/components/radio-button.md)
+      + [Pulsante Reimpostazione Forms adattivo](/help/adaptive-forms/components/reset-button.md)
+      + [Pulsante di invio Forms adattivo](/help/adaptive-forms/components/submit-button.md)
+      + [Ingresso telefonico Forms adattivo](/help/adaptive-forms/components/telephone-input.md)
+      + [Testo Forms adattivo](/help/adaptive-forms/components/text.md)
+      + [Casella di testo Forms adattiva](/help/adaptive-forms/components/text-input.md)
+      + [Titolo Forms adattivo](/help/adaptive-forms/components/title.md)
+      + [Layout guidato Forms adattivo](/help/adaptive-forms/components/wizard.md)
+      + [Intestazione](/help/adaptive-forms/components/header.md)
+      + [Piè di pagina](/help/adaptive-forms/components/footer.md)
 + Sviluppo {#developing}
    + [Sviluppo di Componenti core](developing/overview.md)
    + [Percorsi verso il successo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=it)
