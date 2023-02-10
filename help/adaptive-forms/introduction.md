@@ -2,10 +2,10 @@
 title: Introduzione ai componenti core di Forms adattivi AEM
 description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la flessibilità dei componenti core Forms adattivi e forniscile con la potenza di Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+source-git-commit: 86fa434d884b24b8d4b231c6108f5e6151a89813
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 12%
+source-wordcount: '1231'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,7 @@ Utilizzando i componenti core Forms adattivi in Adobe Experience Manager, puoi c
 
 ## Componenti core   {#overview}
 
-In Adobe Experience Manager (AEM), i componenti sono i blocchi predefiniti utilizzati per creare pagine e moduli. Offrono agli autori un modo semplice e potente per creare e gestire i contenuti, fornendo allo stesso tempo agli sviluppatori la flessibilità e l’estensibilità necessarie per creare componenti personalizzati.
-
-Sono progettati per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione per siti web e moduli, essere flessibili e possono essere facilmente personalizzati in base alle esigenze specifiche di un sito web e di un modulo.
+In Adobe Experience Manager (AEM), i componenti sono i blocchi predefiniti utilizzati per creare pagine e moduli. Offrono agli autori un modo semplice e potente per creare e gestire i contenuti, fornendo allo stesso tempo agli sviluppatori la flessibilità e l’estensibilità necessarie per creare componenti personalizzati. Questi sono progettati per velocizzare i tempi di sviluppo e ridurre i costi di manutenzione per siti web e moduli, essere flessibili e possono essere facilmente personalizzati in base alle esigenze specifiche di un sito web e di un modulo.
 
 I componenti core sono inoltre progettati per essere reattivi e supportano un’ampia gamma di dispositivi, tra cui desktop, tablet e smartphone. Inoltre, rispettano gli standard web e le best practice più recenti, rendendoli una soluzione solida e affidabile per la creazione di contenuti web.
 
@@ -43,16 +41,16 @@ Inoltre, poiché questi componenti sono open-source, gli sviluppatori possono pe
 | Versatili | I componenti rappresentano concetti generici con i quali gli autori di Forms possono assemblare quasi tutti i layout. |
 | Configurabili | A livello di modello [criteri dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=it#content-policies) definisci quali funzioni possono essere utilizzate o meno. |
 | Accessibili | Rispettano [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), fornire etichette ARIA, supportare la navigazione da tastiera ([problemi noti](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)) e testo per tecnologie di assistenza come gli assistenti vocali. |
-| Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it) e il markup segue le [convenzioni BEM CSS](http://getbem.com/). |
+| Tabella a tema | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it) e il markup segue le [convenzioni BEM CSS](https://getbem.com/). |
 | Personalizzabili | Diversi modelli consentono una facile personalizzazione, dalla rettifica del codice HTML al riutilizzo avanzato delle funzionalità. |
 | Controllo delle versioni | I [criteri di controllo delle versioni](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) garantiscono che i Componenti core non blocchino il tuo sito in fase di miglioramento di elementi che potrebbero influire su di te. |
 | Open Source | Se qualcosa non è come dovrebbe, contribuire al tuo miglioramento. |
 
 ## Vantaggi {#benefits}
 
-Le esperienze di acquisizione dei dati sono fondamentali per la generazione e la registrazione dei lead e i componenti core per Forms adattivi offrono una soluzione potente per la creazione di moduli ottimizzati per l’acquisizione dei dati. Alcuni dei motivi per utilizzare i componenti core per creare queste esperienze sui componenti di base:
+Le esperienze di acquisizione dei dati sono fondamentali per la generazione e la registrazione dei lead e i componenti core per Forms adattivi offrono una soluzione potente per la creazione di moduli ottimizzati per l’acquisizione dei dati. Alcuni dei motivi per utilizzare i componenti core per creare queste esperienze sui componenti di base sono:
 
-* **Disponibilità su GitHub e documentazione completa**: I AEM componenti core per Forms adattivi sono open-source e disponibili su GitHub, insieme a una documentazione completa. In questo modo gli sviluppatori possono comprendere più facilmente i componenti e il loro funzionamento e contribuire al loro sviluppo. Il sito web aemcomponents.dev è anche una risorsa preziosa, per la quale gli sviluppatori possono vedere i componenti in azione e accedere alla relativa documentazione.
+* **Disponibilità su GitHub e documentazione completa**: I AEM componenti core per Forms adattivi sono open-source e disponibili su GitHub, insieme a una documentazione completa. In questo modo gli sviluppatori possono comprendere più facilmente i componenti e il loro funzionamento e contribuire al loro sviluppo. La [aemcomponents.dev](https://www.aemcomponents.dev/) Il sito web è anche una risorsa preziosa, in cui gli sviluppatori possono vedere i componenti in azione e accedere alla documentazione dettagliata.
 
 * **Modello BEM per stile**: I componenti core seguono il modello BEM (Block Element Modifier) per lo stile, una metodologia consolidata e ampiamente utilizzata per l’organizzazione dei CSS. In questo modo gli sviluppatori possono comprendere più facilmente come sono organizzati gli stili e come modificarli in base alle proprie esigenze specifiche.
 
@@ -89,7 +87,7 @@ I componenti core Forms adattivi hanno i seguenti requisiti.
 
 ## Componenti core adattabili di Forms {#components}
 
-La versione corrente dei componenti core di Forms adattivi include i seguenti componenti.
+È possibile utilizzare [Editor Forms adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) per creare un Forms adattivo basato su componenti di base. La versione corrente dei componenti core di Forms adattivi include i componenti elencati di seguito.
 
 * Pannello a soffietto
 * Pulsante

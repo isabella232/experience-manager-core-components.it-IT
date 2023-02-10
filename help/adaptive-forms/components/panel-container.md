@@ -2,7 +2,7 @@
 title: Componente core Forms adattivo - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore Pannello di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+source-git-commit: 86fa434d884b24b8d4b231c6108f5e6151a89813
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 1%
