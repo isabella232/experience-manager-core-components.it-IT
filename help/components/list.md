@@ -3,10 +3,10 @@ title: Componente Elenco
 description: Il componente core Elenco consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
-workflow-type: ht
-source-wordcount: '1152'
-ht-degree: 100%
+source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
+workflow-type: tm+mt
+source-wordcount: '1208'
+ht-degree: 94%
 
 ---
 
@@ -20,15 +20,16 @@ Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco di
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Elenco è la v3, introdotta con la versione 2.18.0 dei Componenti core di febbraio 2022, ed è quella descritta in questo documento.
+La versione corrente del componente Elenco è la v4, introdotta con la versione 2.22.0 dei Componenti core di febbraio 2023, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v3 | - | Compatibile | Compatibile |
-| [v2](v2/list.md) | Compatibile | Compatibile | Compatibile |
-| [v1](v1/list-v1.md) | Compatibile | Compatibile | Compatibile |
+| v4 | - | Compatibile | Compatibile |
+| [v3](/help/components/v3/list.md) | - | Compatibile | Compatibile |
+| [v2](/help/components/v2/list.md) | Compatibile | Compatibile | Compatibile |
+| [v1](/help/components/v1/list-v1.md) | Compatibile | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -93,7 +94,15 @@ L’elenco può essere creato utilizzando elementi fissi.
 
 Tocca il o fai clic sul pulsante **Aggiungi** per inserire un nuovo elemento nell’elenco.
 
-* Inserisci il testo per l’elemento inserito nell’elenco oppure utilizza la **finestra di dialogo per selezione** per scegliere un elemento da AEM.
+* In **Collegamento** campo inserisci
+   * Un URL completo
+   * Un URL relativo al contenuto AEM esistente
+      * È possibile utilizzare **Finestra di dialogo Selezione** per scegliere un elemento da AEM.
+* In **Testo** , immetti nell’elenco il testo da visualizzare per il collegamento.
+* Seleziona la casella di controllo se il collegamento deve essere aperto in una nuova scheda del browser
+
+Una volta creato più di un elemento per l’elenco, è possibile organizzare l’elenco.
+
 * Utilizza la maniglia di trascinamento per modificare la disposizione degli elementi nell’elenco.
 * Utilizza l’icona cestino per eliminare elementi dall’elenco.
 
@@ -154,7 +163,7 @@ Il numero massimo di elementi da visualizzare nell’elenco.
 
 Utilizzando la scheda Impostazioni elemento, è possibile configurare la formattazione degli elementi dell’elenco.
 
-![Impostazioni elemento](/help/assets/list-edit-items.png)
+![Impostazioni elemento](/help/assets/list-edit-item-settings.png)
 
 * **Collega elementi** - Collega gli elementi alla pagina corrispondente
 * **Mostra descrizione** - Mostra la descrizione dell’elemento da collegare
