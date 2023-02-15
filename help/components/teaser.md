@@ -3,9 +3,9 @@ title: Componente Teaser
 description: Il componente Teaser può mostrare un’immagine, un titolo, un testo RTF e opzionalmente un collegamento ad altro contenuto.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
-workflow-type: ht
-source-wordcount: '999'
+source-git-commit: cfc86203051739cbcdc30be0fb10ccffa7d583a5
+workflow-type: tm+mt
+source-wordcount: '988'
 ht-degree: 100%
 
 ---
@@ -16,9 +16,9 @@ Il componente core Teaser può mostrare un’immagine, un titolo, un testo RTF e
 
 ## Utilizzo {#usage}
 
-Il componente Teaser consente all’autore di contenuto di creare facilmente un teaser per ampliare il contenuto utilizzando un’immagine, un titolo o un testo RTF e anche collegamenti ad altro contenuto o altre azioni.
+Il componente Teaser consente all’autore di contenuti di creare facilmente un teaser per promuovere i contenuti utilizzando un’immagine, un titolo o un testo formattato e anche collegamenti verso altri contenuti o altre azioni.
 
-L’autore del modello può utilizzare la [finestra di dialogo per progettazione](#design-dialog) per definire la disponibilità o meno di opzioni per la creazione di inviti all’azione e collegamenti nonché per disabilitare varie opzioni di visualizzazione. L’autore di contenuto può utilizzare la [finestra di dialogo per configurazione](#configure-dialog) per impostare un’immagine, definire inviti all’azione, impostare titoli e descrizioni e configurare collegamenti al singolo teaser. Per modificare l’immagine del teaser è possibile accedere alla [finestra di dialogo per modifica](image.md#edit-dialog) del [componente Immagine](image.md).
+L’autore di modelli può utilizzare la [finestra di dialogo per la progettazione](#design-dialog) per definire la disponibilità o meno di opzioni per la creazione di inviti all’azione e collegamenti nonché per disabilitare varie opzioni di visualizzazione. L’autore di contenuti può utilizzare la [finestra di dialogo per la configurazione](#configure-dialog) per impostare un’immagine, definire inviti all’azione, impostare titoli e descrizioni e configurare collegamenti verso uno specifico teaser. Per modificare l’immagine del teaser è possibile accedere alla [finestra di dialogo per la modifica](image.md#edit-dialog) del [componente Immagine](image.md).
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -41,9 +41,9 @@ La documentazione tecnica più recente sul componente Teaser [è disponibile su 
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Finestra di dialogo per configurazione {#configure-dialog}
+## Finestra di dialogo per la configurazione {#configure-dialog}
 
-L’autore di contenuto può utilizzare la finestra di dialogo per configurazione per definire le proprietà del singolo teaser. È inoltre disponibile una [finestra di dialogo per modifica](#edit-dialog) che consente di modificare l’immagine del teaser, se ne è stata selezionata una.
+L’autore di contenuti può utilizzare la finestra di dialogo per la configurazione per definire le proprietà del singolo teaser. È inoltre disponibile una [finestra di dialogo per la modifica](#edit-dialog) che consente di modificare l’immagine del teaser, se ne è stata selezionata una.
 
 ### Scheda Collegamenti {#links-tab}
 
@@ -58,14 +58,14 @@ Il titolo, la descrizione e l’immagine del teaser possono essere ereditati dal
 
 ### Scheda Testo {#text-tab}
 
-![Scheda Testo della finestra di dialogo per modifica del componente Teaser](/help/assets/teaser-edit-text.png)
+![Scheda Testo della finestra di dialogo per la modifica del componente Teaser](/help/assets/teaser-edit-text.png)
 
 * **Pretitolo**: il pretitolo viene visualizzato prima del titolo del teaser.
-* **Titolo**: definisce un titolo da visualizzare come intestazione del teaser.
-   * **Ottieni titolo da pagina collegata**: se questa opzione è selezionata, il titolo diventa quello della pagina collegata.
+* **Titolo**: definisce un testo da visualizzare come titolo del teaser.
+   * **Ottieni titolo da pagina collegata**: se questa opzione è selezionata, viene utilizzato il titolo della pagina collegata.
 * **Descrizione**: è una descrizione da visualizzare come sottotitolo del teaser.
-   * **Ottieni descrizione da pagina collegata**: se questa opzione è selezionata, la descrizione diventa quella della pagina collegata.
-* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e in [Data Layer](/help/developing/data-layer/overview.md).
+   * **Ottieni descrizione da pagina collegata**: se questa opzione è selezionata, viene utilizzata la descrizione della pagina collegata.
+* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel [Data Layer](/help/developing/data-layer/overview.md).
    * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
@@ -77,14 +77,10 @@ Il titolo, la descrizione e l’immagine del teaser possono essere ereditati dal
 * **Eredita immagine in primo piano dalla pagina** - Se non ne viene trovata alcuna, utilizza l’immagine definita nelle proprietà della pagina collegata o della pagina corrente.
 * **Risorsa immagine** - Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * Tocca o fai clic su **Modifica** per [gestire i rendering della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’editor risorse.
+   * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’Editor risorse.
 * **Testo alternativo per l’accessibilità** - Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
    * **Eredita testo alternativo dalla pagina** - Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
 * **Non fornire testo alternativo** - Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
-
->[!NOTE]
->
->Le [funzioni di Dynamic Media](image.md#dynamic-media) non sono attualmente disponibili nel componente Teaser.
 
 ### Scheda Stili {#styles-tab-edit}
 
@@ -96,25 +92,25 @@ Utilizza il menu a discesa per selezionare gli stili da applicare al componente.
 
 Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
-## Finestra di dialogo per modifica {#edit-dialog}
+## Finestra di dialogo per la modifica {#edit-dialog}
 
 Il componente Teaser delega il rendering dell’immagine al [componente Immagine](image.md). Pertanto, la [finestra di dialogo per modifica](image.md#edit-dialog) del componente Immagine è disponibile per consentire all’autore di contenuto di manipolare l’immagine del teaser.
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione consente all’autore del modello di definire le opzioni del teaser disponibili per l’autore di contenuto quando utilizza questo componente.
+La finestra di dialogo per la progettazione consente all’autore di modelli di definire le opzioni del teaser disponibili per l’autore di contenuti quando utilizza questo componente.
 
 ### Scheda Teaser {#teaser-tab}
 
-![Finestra di dialogo per progettazione del componente Teaser](/help/assets/teaser-design.png)
+![Finestra di dialogo per la progettazione del componente Teaser](/help/assets/teaser-design.png)
 
 * **Inviti all’azione**
-   * **Disabilita inviti all&#39;azione**: nasconde **Inviti all’azione** di agli autori di contenuto
+   * **Disabilita inviti all&#39;azione**: nasconde l’opzione **Inviti all’azione** agli autori di contenuti
 * **Elementi**
-   * **Nascondi pretitolo**: nasconde l’opzione **Pretitolo** agli autori di contenuto
-   * **Nascondi titolo**: nasconde l’opzione **Titolo** agli autori di contenuto
+   * **Nascondi pretitolo**: nasconde l’opzione **Pretitolo** agli autori di contenuti
+   * **Nascondi titolo**: nasconde l’opzione **Titolo** agli autori di contenuti
       * Quando è selezionata, il **tipo di titolo** è nascosto
-   * **Nascondi descrizione**: consente di nascondere l’opzione **Descrizione** a gli autori di contenuto
+   * **Nascondi descrizione**: nasconde l’opzione **Descrizione** agli autori di contenuti
 * **Tipo di titolo predefinito** - Definisce il tag H da utilizzare per il titolo del teaser.
 * **Delegato immagine**: visualizzazione informativa che indica a quale componente il Teaser delega la gestione dell’immagine.
 
