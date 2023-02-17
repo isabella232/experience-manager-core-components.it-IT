@@ -4,9 +4,9 @@ description: '“Per iniziare a utilizzare i Componenti core nel tuo progetto, s
 role: Architect, Developer, Admin, User
 exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
 source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,8 +45,8 @@ Alcuni punti da tenere presenti quando utilizzi i Componenti core su AEMaaCS:
    * In una prossima versione, includere nuovamente i Componenti core non permetterà di generare la pipeline.
 * Se il progetto già includeva i Componenti core in `/apps`, [potrebbe essere necessario adeguare il progetto.](/help/developing/overview.md#via-aemaacs)
 * Anche se i Componenti core sono ora inclusi in `/libs`, si sconsiglia di creare sovrapposizioni dello stesso percorso in `/apps`. Va invece utilizzato [il modello di componente proxy](/help/developing/guidelines.md#proxy-component-pattern), se è necessario personalizzare un qualunque aspetto dei componenti.
-* Al fine di [Componente Sommario](/help/components/tableofcontents.md) per eseguire il rendering del contenuto, è necessario configurare un filtro in OSGi.
-   * [Consulta la documentazione GitHub del componente](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1) per ulteriori informazioni.
+* Per eseguire il rendering del contenuto del [componente Sommario](/help/components/tableofcontents.md), è necessario configurare un filtro in OSGi.
+   * Per ulteriori informazioni, [consulta la documentazione GitHub del componente](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 ### AEM 6.5 e versioni precedenti {#aem-65}
 
