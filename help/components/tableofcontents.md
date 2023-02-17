@@ -4,9 +4,9 @@ description: Il componente Sommario crea un sommario basato sui titoli nel conte
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
 source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +38,9 @@ Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti c
 
 >[!NOTE]
 >
->In AEM as a Cloud Service, l’amministratore deve abilitare un filtro per il componente per eseguirne il rendering del contenuto del componente.
+>In AEM as a Cloud Service, l’amministratore deve abilitare un filtro per il componente affinché possa essere eseguito il rendering dei contenuti del componente.
 >
->[Consulta la documentazione GitHub del componente](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1) per ulteriori informazioni.
+>Per ulteriori informazioni, [consulta la documentazione GitHub del componente](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 ### Dettagli tecnici {#technical-details}
 
