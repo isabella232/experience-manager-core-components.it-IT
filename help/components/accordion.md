@@ -3,10 +3,10 @@ title: Componente Pannello a soffietto
 description: Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: ht
-source-wordcount: '1067'
-ht-degree: 100%
+source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
-| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -46,7 +46,7 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 ## Collegamenti profondi a un pannello {#deep-linking}
 
-I componenti Pannello a soffietto e [Schede](tabs.md) supportano il collegamento diretto a un pannello all’interno del componente.
+Pannello a soffietto, [carosello,](carousel.md) e [Componenti Schede](tabs.md) supporta il collegamento diretto a un pannello all’interno del componente.
 
 Per effettuare questo collegamento:
 

@@ -3,10 +3,10 @@ title: Componente Carosello
 description: Il componente Carosello consente all’autore di contenuto di presentare il contenuto in un carosello rotante.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
-workflow-type: ht
-source-wordcount: '1119'
-ht-degree: 100%
+source-git-commit: e0d3790b265ab27ac2116f0d8daf1a18ecd3d714
+workflow-type: tm+mt
+source-wordcount: '1312'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -41,6 +41,20 @@ Per avere un’idea del componente Carosello e vedere esempi delle opzioni di co
 La documentazione tecnica più recente sul componente Carosello [è disponibile su GitHub](https://adobe.com/go/aem_cmp_tech_carousel_v1_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
+
+## Collegamenti profondi a un pannello {#deep-linking}
+
+Il carosello, [Schede,](tabs.md) e [Componenti pannello a soffietto](accordion.md) supporta il collegamento diretto a un pannello all’interno del componente.
+
+Per effettuare questo collegamento:
+
+1. Visualizza la pagina del componente utilizzando l’opzione **[Visualizza come pubblicato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it#view-as-published)** nell’editor di pagine.
+1. Esamina il contenuto della pagina e identifica l’ID del pannello.
+   * Esempio `id="carousel-bfe4fa6647-item-47f1a7ca67-tabpanel"`
+1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
+   * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
+
+Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere visualizzato per impostazione predefinita, verrà fatto scorrere fino a in automatico.
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -67,6 +81,7 @@ Utilizza il pulsante **Aggiungi** per aprire il selettore di componenti e scegli
 
 Nella scheda **Proprietà**, l’autore di contenuto può impostare la transizione automatica delle diapositive.
 
+* **Elemento attivo**: l’autore di contenuto può definire quale scheda è attiva al caricamento della pagina.
 * **Transizione automatica diapositive**: se selezionata, il componente avanza automaticamente alla diapositiva successiva dopo un tempo di ritardo specificato.
 * **Ritardo transizione**: se è selezionata l’opzione Transizione automatica diapositive, questo valore viene utilizzato per definire il ritardo tra le transizioni (espresso in millisecondi).
 * **Disabilita pausa automatica al passaggio del mouse**: se è selezionata l’opzione **Transizione automatica diapositive**, la transizione del carosello si interrompe automaticamente ogni volta che il cursore passa sopra il carosello. Seleziona questa opzione per evitare che la transizione venga sospesa.
@@ -87,7 +102,13 @@ Nella scheda **Proprietà**, l’autore di contenuto può impostare la transizio
 
 Nella scheda **Accessibilità** è possibile impostare i valori per le etichette di [accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente.
 
-* **Etichetta**: il valore di un attributo dell’etichetta ARIA del componente
+* **Etichetta** - Valore di un attributo aria-label per il carosello, che descrive il contenuto del carosello
+* **Precedente** - Valore di un attributo aria-label per l’etichetta del pulsante precedente per la navigazione del carosello
+* **Successivo** - Valore di un attributo aria-label per l’etichetta del pulsante Successivo per la navigazione del carosello
+* **Play** - Valore di un attributo aria-label per l’etichetta del pulsante Riproduci per la navigazione del carosello
+* **Pausa** - Valore di un attributo aria-label per l’etichetta del pulsante Pausa per la navigazione del carosello
+* **Tablist** - Valore di un attributo aria-label per l’etichetta dell’elenco degli elementi per la navigazione del carosello
+* **Imposta l&#39;etichetta aria dell&#39;elemento sul relativo titolo** - Se selezionata, questa opzione imposta automaticamente il titolo degli elementi del carosello sulla relativa descrizione aria-label.
 
 ## Seleziona pannello {#select-panel}
 
@@ -116,8 +137,7 @@ La scheda **Proprietà** viene utilizzata per definire le impostazioni predefini
 ![Finestra di dialogo per progettazione del componente Carosello](/help/assets/carousel-design.png)
 
 * **Transizione automatica diapositive**: definisce se per impostazione predefinita l’opzione per far avanzare il carosello alla diapositiva successiva è abilitata, quando l’autore di contenuto aggiunge il componente Carosello a una pagina.
-* **Ritardo transizione**: definisce il valore predefinito del ritardo di transizione tra le diapositive (espresso in millisecondi), quando un autore di contenuto aggiunge il componente Carosello a una pagina.
-* **Disabilita pausa automatica al passaggio del mouse**: definisce se per impostazione predefinita l’opzione di disattivazione della pausa automatica delle diapositive è abilitata, quando l’autore di contenuto seleziona l’opzione **Transizione automatica diapositive**.
+* **Anteporre gli elementi di controllo** - Se questa opzione è selezionata, gli elementi di controllo vengono posizionati davanti agli elementi del carosello per migliorarne l’accessibilità.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
