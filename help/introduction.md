@@ -3,7 +3,7 @@ title: Introduzione ai Componenti core
 description: Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 0d004c90e789f23ff9e121fbd8ae11df9c9748b2
+source-git-commit: 8b922d7f6305f91337ef3c19d56eb7f192d65774
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
@@ -41,7 +41,7 @@ I Componenti core sono un set di componenti WCM (Web Content Management) standar
 | Pronti per WebApp | [L’output JSON ottimizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it) consente il rendering lato client, ma ancora con la possibilità di [modifica nel contesto](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it). |
 | Supporto AMP | I componenti hanno il [supporto integrato per lo standard AMP,](/help/developing/amp.md) per accelerare le tue esperienze mobili. |
 | Kit di progettazione | Un [kit di interfaccia utente per Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) consente ai designer di creare wireframe [personalizzabili in base alle esigenze](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it) e il markup segue le [convenzioni BEM CSS](http://getbem.com/). |
+| Supportano i temi | I componenti implementano il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it) e il markup segue le [convenzioni BEM CSS](https://getbem.com/). |
 | Personalizzabili | Diversi modelli consentono [una facile personalizzazione](developing/customizing.md), dalla rettifica del codice HTML al riutilizzo avanzato delle funzionalità. |
 | Controllo delle versioni | I [criteri di controllo delle versioni](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) garantiscono che i Componenti core non blocchino il tuo sito in fase di miglioramento di elementi che potrebbero influire su di te. |
 | Localizzabili | Grazie alla risoluzione intelligente dei riferimenti alcuni componenti possono trovare ed eseguire [automaticamente il rendering del contenuto localizzato corrispondente.](get-started/localization.md) |
