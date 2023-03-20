@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Piè di pagina
 description: Utilizzo o personalizzazione del componente core Footer di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 19%
+source-wordcount: '770'
+ht-degree: 18%
 
 ---
-
 
 # Piè di pagina {#footer-adaptive-forms-core-component}
 
@@ -34,15 +34,13 @@ Un componente piè di pagina in un modulo adattivo è un’area che in genere vi
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Footer di Forms adattivo è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -106,5 +104,4 @@ La finestra di dialogo di modifica fornisce strumenti di formattazione RTF stand
    * Se lasciato vuoto, viene generato automaticamente un ID univoco * ed è possibile trovarlo controllando la pagina risultante.
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
-
 

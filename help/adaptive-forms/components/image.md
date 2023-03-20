@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Immagine
 description: Utilizzo o personalizzazione del componente di base Immagine adattiva di Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '978'
 ht-degree: 2%
 
 ---
-
 
 # Immagine {#image-adaptive-forms-core-component}
 
@@ -36,15 +36,13 @@ Ci sono diversi motivi per cui è utile includere un componente Immagine in un M
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente di base per le immagini adattive di Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -87,7 +85,9 @@ La finestra di dialogo Progettazione viene utilizzata per definire e gestire gli
 
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente di base per l’immagine di Forms adattiva supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per l’immagine di Forms adattiva supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+
+![Finestra di dialogo per progettazione](/help/adaptive-forms/assets/image_designdialog.png)
 
 **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente di base Immagine adattiva di Forms.
 

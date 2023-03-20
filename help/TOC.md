@@ -4,9 +4,9 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 199cd9e1e49a1f7b939aa9cc3a62dcb3e0db96cd
+source-git-commit: 279b96734bc8621b98b828fa80ebe693dc7904e0
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '366'
 ht-degree: 79%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 79%
       + [Segmentazione](/help/email/components/segmentation.md)
 + Moduli adattivi {#adaptive-forms}
    + [Introduzione](/help/adaptive-forms/introduction.md)
+   + [Cronologia versioni](/help/adaptive-forms/version.md)
    + Componenti Forms adattivi {#adaptive-forms-components}
       + [Pannello a soffietto Forms adattivo](/help/adaptive-forms/components/accordion.md)
       + [Pulsante Adattivo Forms](/help/adaptive-forms/components/button.md)

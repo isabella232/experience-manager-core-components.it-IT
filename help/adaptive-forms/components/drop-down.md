@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Elenco a discesa
 description: Utilizzo o personalizzazione del componente di base dell’elenco a discesa di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1695'
 ht-degree: 1%
 
 ---
-
 
 # Elenco a discesa {#drop-down-list-adaptive-forms-core-component}
 
@@ -44,15 +44,13 @@ Inoltre, l’elenco a discesa può essere configurato in modo da avere valori di
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-L’elenco a discesa Adattivo Forms Componente principale è stato rilasciato nel febbraio 2023 come parte dei Componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -119,19 +117,23 @@ Puoi personalizzare facilmente l’esperienza dell’elenco a discesa per i visi
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/dropdown_accessibilitytab.png)
 
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
+
+**Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
+
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
 La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per il componente Elenco a discesa.
 
-
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. L’elenco a discesa Forms adattivo Componenti core supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. L’elenco a discesa Forms adattivo Componenti core supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core dell’elenco a discesa Forms adattivo.
+![Finestra di dialogo a discesa](/help/adaptive-forms/assets/dropdown_designdialog.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core dell’elenco a discesa Forms adattivo.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+
 
 

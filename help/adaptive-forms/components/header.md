@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Intestazione
 description: Utilizzo o personalizzazione del componente di base dell’intestazione di Forms adattiva.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: aa18def9-0bec-4475-8dde-213860621ef5
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '675'
+ht-degree: 6%
 
 ---
-
 
 # Intestazione {#header-adaptive-forms-core-component}
 
@@ -32,14 +32,13 @@ Un componente Intestazione in un modulo adattivo è una sezione nella parte supe
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente di base dell’intestazione di Forms adattiva è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -80,6 +79,4 @@ Questa parte dell&#39;intestazione contiene il titolo dell&#39;intestazione e l&
 ### Scheda Testo {#text-tab}
 
 Questa sezione consente di inserire il testo da includere nell’intestazione.
-
-
 

@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Selezione data
 description: Utilizzo o personalizzazione del componente core del selettore data adattivo di Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 2%
+source-wordcount: '1666'
+ht-degree: 1%
 
 ---
-
 
 # Selettore data {#date-picker-adaptive-forms-core-component}
 
@@ -36,15 +36,13 @@ Ci sono diversi motivi per cui è utile includere un selettore data in un modulo
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core del selettore data adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -111,18 +109,7 @@ Puoi personalizzare facilmente l’esperienza del selettore data per i visitator
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/datepicker_accessibilitytab.png)
 
-Sulla **Accessibilità** scheda , valori impostati per [Accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) etichette per il componente. Sono disponibili varie opzioni per l’utilizzo del testo per l’assistente vocale:
-
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
-
-
-   * **Testo personalizzato**: Selezionare questa opzione per utilizzare il testo personalizzato per le etichette di accessibilità ARIA. Selezionando questa opzione viene visualizzata la finestra di dialogo Testo personalizzato. È possibile aggiungere informazioni rilevanti nella finestra di dialogo Testo personalizzato.
-   * **Descrizione**: Selezionare questa opzione per utilizzare la descrizione per le etichette di accessibilità ARIA.
-   * **Titolo**: Selezionare questa opzione per utilizzare il titolo per le etichette di accessibilità ARIA.
-   * **Nome**: Selezionare questa opzione per utilizzare il nome per le etichette di accessibilità ARIA.
-   * **Nessuno**: Selezionare questa opzione se non si desidera aggiungere etichette di accessibilità ARIA.
-
-
+**Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
 
 ### Scheda Formati {#format-tab}
 
@@ -140,15 +127,19 @@ Sulla **Accessibilità** scheda , valori impostati per [Accessibilità ARIA](htt
 
 La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per il componente Selezione data .
 
-
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente di base per il selettore data adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per il selettore data adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core del selettore data adattivo di Forms.
+![Scheda Stile](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core del selettore data adattivo di Forms.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
 ### Scheda Formati {#formats-tab}
 
 La scheda Formati consente di specificare i formati di data predefiniti e personalizzati.
+
+![Formatta](/help/adaptive-forms/assets/datepicker_formatpolicy.png)
+

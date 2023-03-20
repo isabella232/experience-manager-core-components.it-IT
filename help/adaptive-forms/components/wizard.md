@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Procedura guidata
 description: Utilizzo o personalizzazione del componente di base della procedura guidata Forms adattiva.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 1%
+source-wordcount: '1847'
+ht-degree: 2%
 
 ---
-
 
 # Wizard {#wizard-adaptive-forms-core-component}
 
@@ -51,13 +51,11 @@ Nel complesso, un layout guidato può rendere il processo di compilazione del mo
 
 Il componente di base Layout guidato adattivo di Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -124,11 +122,38 @@ Questo consente di semplificare e personalizzare i moduli.
 
 La **Componenti consentiti** scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Wizard nell’editor di Forms adattivo.
 
+![Schede Componenti consentiti](/help/adaptive-forms/assets/panel_allowedcomponent.png)
+
+### Scheda Componenti predefiniti {#default-component-tab}
+
+Questa scheda consente all’editor modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente della procedura guidata nell’editor di Forms adattivo.
+
+![Componente predefinito del pannello](/help/adaptive-forms/assets/panel_defaultcomponent.png)
+
+### Impostazioni reattive {#responsive-settings}
+
+Questa scheda consente all’editor modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
+
+![Griglia reattiva](/help/adaptive-forms/assets/panel_responsivesettings.png)
+
+### Scheda Impostazioni contenitore {#container-setting-tab}
+
+La scheda delle impostazioni del contenitore consente di impostare la posizione dei componenti nell’editor di Forms adattivo.
+
+![Impostazioni contenitore](/help/adaptive-forms/assets/panel_settings.png)
+
+* **Layout**: Il layout Semplice mantiene tutto fisso nella posizione, mentre la griglia reattiva consente di modificare la posizione dei componenti in base alle proprie esigenze.
+* **Disabilita layout**: È inoltre possibile disattivare la selezione del layout nella finestra di dialogo di modifica selezionando **Disabilita layout** casella di controllo.
+* **Abilita immagine di sfondo**: Questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
+* **Attiva colore di sfondo**: Questa scheda consente di impostare il colore di sfondo nell’editor modelli.
+
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata adattiva Forms supporta la AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata adattiva Forms supporta la AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente Wizard.
+![Scheda Stile](/help/adaptive-forms/assets/panel_style.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente Wizard.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 

@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Schede orizzontali
 description: Utilizzo o personalizzazione del componente core Schede adattabili orizzontali di Forms.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 3%
+source-wordcount: '1609'
+ht-degree: 2%
 
 ---
-
 
 # Schede orizzontali {#horizontal-tabs-adaptive-forms-core-component}
 
@@ -30,15 +30,13 @@ I motivi comuni per utilizzare le schede orizzontali in un modulo adattivo sono 
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Schede adattabili orizzontali Forms è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -80,7 +78,7 @@ La **Aggiungi** consente di selezionare un componente da aggiungere come pannell
 
 * **Icona** - L’icona identifica il componente del pannello nell’elenco. Passa il puntatore del mouse sull’icona per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione** - Descrizione utilizzata come testo del pannello. Per impostazione predefinita, il nome del componente selezionato per il pannello.
-* **Elimina**: tocca o fai clic per eliminare il pannello dal componente Pannello a soffietto.
+* **Elimina** - Tocca o fai clic per eliminare il pannello dal componente tabulazione orizzontale.
 * **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
 ### Scheda Contenuto dell’Aiuto {#help-content}
@@ -103,10 +101,10 @@ La **Aggiungi** consente di selezionare un componente da aggiungere come pannell
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente per pannello a soffietto di Forms adattivo, puoi impostare quanto segue:
+La finestra di dialogo Progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Forms adattivo, puoi impostare quanto segue:
 
-* Componenti core che un creatore di moduli può aggiungere al pannello a soffietto nell’editor di Forms adattivo
-* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente a soffietto nell’editor di Forms adattivo.
+* Componenti core che un creatore di moduli può aggiungere alle schede orizzontali nell’editor di Forms adattivo
+* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente Tabulazioni orizzontali nell’editor Forms adattivo.
 
 Questo consente di semplificare e personalizzare i moduli.
 
@@ -114,10 +112,14 @@ Questo consente di semplificare e personalizzare i moduli.
 
 La **Componenti consentiti** La scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Tabulazioni orizzontali nell’editor di Forms adattivo.
 
+![Schede orizzontali](/help/adaptive-forms/assets/horizontaltabs_designdilog.png)
+
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core Schede adattabili orizzontali di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core Schede adattabili orizzontali di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente di base Schede orizzontali di Forms adattive.
+![Scheda Stile](/help/adaptive-forms/assets/horizontaltabs_designstyletab.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente di base Schede orizzontali di Forms adattive.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.

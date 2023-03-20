@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Titolo
 description: Utilizzo o personalizzazione del componente di base Titolo Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 15%
+source-wordcount: '862'
+ht-degree: 14%
 
 ---
-
 
 # Titolo {#title-input-adaptive-forms-core-component}
 
@@ -38,15 +38,13 @@ Nel complesso, il titolo di un modulo è un aspetto importante dell’esperienza
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Titolo di Forms adattivo è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -74,28 +72,32 @@ La finestra di dialogo per modifica consente all’autore di contenuto di defini
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per il componente Selezione data .
+La scheda Progettazione consente di definire e gestire gli stili CSS per il componente Selezione data .
 
 ### Titolo
 
 La scheda Titolo consente agli autori dei modelli di impostare gli elementi di intestazione HTML predefiniti e consentiti per gli autori dei moduli:
 
-![Scheda del titolo della finestra di dialogo Progettazione](/help/assets/accordion-design-properties.png)
+![Scheda del titolo della finestra di dialogo Progettazione](/help/adaptive-forms/assets/title_heading.png)
 
 * **Elementi di intestazione consentiti**: Un elenco con più opzioni che consente all’autore del modello di scegliere quali elementi di intestazione può essere utilizzato dall’autore del modulo per il titolo.
 
 * **Elemento di intestazione predefinito**: Elenco a discesa che imposta l’elemento Titolo predefinito per il componente Titolo .
 
-
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente di base per il selettore data adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per il selettore data adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core del selettore data adattivo di Forms.
+![Scheda del titolo della finestra di dialogo Progettazione](/help/adaptive-forms/assets/title_styles.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core del selettore data adattivo di Forms.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
 ### Scheda Formati {#format-tab}
 
 La scheda Formati consente di specificare i formati di data predefiniti e personalizzati.
+
+![Scheda Formato](/help/adaptive-forms/assets/title_styles.png)
+
 

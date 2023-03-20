@@ -2,13 +2,13 @@
 title: Componente core Forms adattivo - Ingresso numero
 description: Utilizzo o personalizzazione del componente core di input per numero di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1798'
 ht-degree: 1%
 
 ---
-
 
 # Ingresso numero {#number-input-adaptive-forms-core-component}
 
@@ -16,7 +16,7 @@ Un componente Input numero in un modulo adattivo è un tipo di campo modulo che 
 
 Può essere utilizzato anche con attributi come min, max, step, value e altro ancora. Questi attributi possono essere utilizzati per impostare i valori minimi e massimi consentiti nel campo, l’intervallo di passaggi per l’incremento o la riduzione del numero e il valore predefinito del campo.
 
-Questo componente può essere utilizzato per raccogliere dati numerici come età, quantità e altro ancora. e può essere utilizzato anche per eseguire operazioni matematiche come addizione e sottrazione. Questo componente può essere utilizzato anche per convalidare i dati numerici immessi dall’utente.
+Questo componente può essere utilizzato per raccogliere dati numerici come età, quantità e altro ancora. Può essere utilizzato anche per eseguire operazioni matematiche come addizione e sottrazione. Questo componente può essere utilizzato anche per convalidare i dati numerici immessi dall’utente.
 
 Per l’accessibilità, è importante specificare l’etichetta che descrive lo scopo del campo di immissione del numero e il tipo di input previsto.
 
@@ -30,22 +30,20 @@ Esistono diversi motivi per cui è utile includere un componente di input numeri
 
 * **Operazioni matematiche**: I campi numerici possono essere utilizzati per eseguire operazioni matematiche quali addizione, sottrazione, moltiplicazione e divisione.
 
-* **Intervallo dati**: I campi numerici possono essere utilizzati per impostare un intervallo di valori validi mediante gli attributi min, max e step.
+* **Intervallo dati**: I campi numerici possono essere utilizzati per impostare un intervallo di valori validi utilizzando gli attributi min, max e step.
 
 * **Contenuto dinamico**: Il componente numerico può essere utilizzato per visualizzare i dati dinamici in base ai campi del modulo.
 
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente di base per l’input del numero di Forms adattivo è stato rilasciato nel febbraio 2023 come parte dei componenti di base 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -71,7 +69,7 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero per i vis
 * **Nascondi titolo** - Seleziona l’opzione per nascondere il titolo del componente.
 
 * **Testo segnaposto** - Il testo segnaposto in un componente modulo si riferisce a un’etichetta o a un prompt breve che viene visualizzato all’interno di un campo di input come suggerimento per l’utente sul tipo di informazioni che ci si aspetta venga immesso in quel campo. Il testo segnaposto scompare quando l’utente inizia a digitare nel campo e viene visualizzato nuovamente se il campo viene lasciato vuoto. Fornisce un segnale visivo all’utente, ma non agisce come etichetta o valore permanente per il campo.
-* **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente semplice per la raccolta e la gestione dei dati.
+* **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, offrendo agli utenti un’esperienza utente fluida per la raccolta e la gestione dei dati.
 * **Nascondi componente** - Selezionare l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 * **Disattiva componente** - Seleziona l’opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
 * **Sola lettura** - Selezionare l&#39;opzione per rendere il componente non modificabile L&#39;utente può vedere il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
@@ -114,14 +112,13 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero per i vis
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/numberinput_accessibility.png)
 
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
+**Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo che deve essere letto da tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
 
 ### Scheda Formati {#formats-tab}
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/numberinput_formattab.png)
 
-
-* **Formato di visualizzazione** - Questa opzione consente di selezionare l&#39;opzione tra diversi formati numerici interi da visualizzare. Quando l&#39;utente seleziona una qualsiasi opzione dal **Tipo** menu a discesa, **Formato** diventa visibile nel pannello . È possibile scegliere un formato specifico in cui i numeri vengono visualizzati all&#39;utente.
+* **Formato di visualizzazione** - Questa opzione consente di selezionare l&#39;opzione tra diversi formati numerici di tipo integer da visualizzare. Quando l&#39;utente seleziona una qualsiasi opzione dal **Tipo** menu a discesa, **Formato** diventa visibile nel pannello . È possibile scegliere un formato specifico in cui i numeri vengono visualizzati all&#39;utente.
 
 * **Numero di cifre prima del separatore decimale (1234.000)** - Utilizzare questa opzione per specificare il numero di cifre da visualizzare prima del punto decimale.
 
@@ -131,15 +128,18 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero per i vis
 
 La finestra di dialogo Progettazione viene utilizzata per definire e gestire gli stili CSS per il componente di input Numero .
 
-
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente di base per l’input del numero di Forms adattivo supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per l’input del numero di Forms adattivo supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+
+![Styletab](/help/adaptive-forms/assets/datepicker_styletab.png)
 
 **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core di input per numero di Forms adattivo.
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo in Forms adattivo . Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile all’editor, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
 ### Scheda Formati {#format-tab}
 
 La scheda Formati consente di specificare i formati numerici predefiniti e personalizzati.
+![Scheda Progettazione](/help/adaptive-forms/assets/emailinput_designformattab.png)
+

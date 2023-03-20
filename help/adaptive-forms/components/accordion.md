@@ -2,10 +2,11 @@
 title: Pannello a soffietto per moduli adattivi
 description: Utilizzare il pannello a soffietto per organizzare e semplificare un modulo lungo o complesso suddividendolo in sezioni più piccole e gestibili.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
+source-git-commit: 0cfdc56fe5508e156eee2ae818be311748af7247
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 4%
+source-wordcount: '1677'
+ht-degree: 3%
 
 ---
 
@@ -37,16 +38,13 @@ La finestra di dialogo di configurazione, l’opzione Selezione pannello e la fi
 
 ## Versione e compatibilità {#version-and-compatibility}
 
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
-
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -103,43 +101,7 @@ Il pulsante Aggiungi consente di selezionare un componente da aggiungere come pa
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/accordion_accessibility.png)
 
-Sulla **Accessibilità** scheda , valori impostati per [Accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) etichette per il componente. Sono disponibili varie opzioni per l’utilizzo del testo per l’assistente vocale:
-
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
-
-
-   * **Testo personalizzato**: Selezionare questa opzione per utilizzare il testo personalizzato per le etichette di accessibilità ARIA. Selezionando questa opzione viene visualizzata la finestra di dialogo Testo personalizzato. È possibile aggiungere informazioni rilevanti nella finestra di dialogo Testo personalizzato.
-   * **Descrizione**: Selezionare questa opzione per utilizzare la descrizione per le etichette di accessibilità ARIA.
-   * **Titolo**: Selezionare questa opzione per utilizzare il titolo per le etichette di accessibilità ARIA.
-   * **Nome**: Selezionare questa opzione per utilizzare il nome per le etichette di accessibilità ARIA.
-   * **Nessuno**: Selezionare questa opzione se non si desidera aggiungere etichette di accessibilità ARIA.
-
-<!--
-
-### Properties Tab {#properties-tab}
-
-![Properties tab of the edit dialog of the Accordion Component](/help/assets/accordion-edit-properties.png)
-
-*   **Single item expansion** - When selected, this option forces a single accordion item to be expanded at a time. Expanding one item will then collapse all others.
-*   **Expanded items** - This option defines the items that are expanded by default when the page is loaded.
-    * When **Single item expansion** is selected, one panel must be selected. By default the first panel is selected.
-    * When **Single item expansion** is not selected, this option is a multi-select and is optional.
-*   **ID** - This option allows to control the unique identifier of the component in the HTML and in the [Data Layer](/help/developing/data-layer/overview.md).
-    * If left blank, a unique ID is automatically generated for you and can be found by inspecting the resulting page.
-    * If an ID is specified, it is the responsibility of the author to make sure that it is unique.
-    * Changing the ID can have an impact on CSS, JS and Data Layer tracking.
-
-## Select Panel Popover {#select-panel-popover}
-
-The **Select Panel** option (![Select panel icon](/help/assets/select-panel-icon.png)) on the component toolbar enables content authors to modify the panels in an accordion with ease. By selecting this option, the author can switch to a different panel for editing and rearrange the order of the panels in the accordion. The configured panels will be displayed in a drop-down menu for the author to choose from. This feature optimizes the editing process and makes it user-friendly for content authors.
-
-![Select panel popover](/help/assets/select-panel-popover.png)
-
-
-* The panels are displayed in a numbered list, reflecting the assigned arrangement.
-* Each panel is listed with its component type in bold, followed by a brief description in lighter font.
-* By clicking or tapping on a panel in the drop-down, you can easily switch the view in the editor to that specific panel.
-* To rearrange the panels, simply use the drag handles to move them into the desired order. -->
+**Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
@@ -165,43 +127,15 @@ La scheda Proprietà consente agli autori dei modelli di impostare gli elementi 
 
 La **Componenti consentiti** scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Pannello a soffietto nell’editor di Forms adattivo.
 
+![Scheda Componenti consentiti](/help/adaptive-forms/assets/accordion_allowedcomponents.png)
+
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo Progettazione consente di definire e gestire gli stili CSS per un componente. Il componente di base per pannello a soffietto adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per pannello a soffietto adattivo di Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente a soffietto.
+![Scheda Stile](/help/adaptive-forms/assets/accordion_style.png)
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente a soffietto.
 
-
-<!-- 
-
-The design dialog allows the template author to define the options available to the content author who uses the Accordion Component and the defaults set when placing the Accordion Component.
-
-
-### Properties Tab {#properties-tab-design}
-
-![Design dialog properties tab](/help/assets/accordion-design-properties.png)
-
-* **Allowed Heading Elements** - This multi-select drop-down defines the accordion item heading HTML elements that are allowed to be selected by an author.
-* **Default Heading Element** - This drop-down defines the default accordion item heading HTML element.
-
-### Allowed Components Tab {#allowed-components-tab}
-
-The **Allowed Components** tab is used to define which components can be added as items to panels in the Accordion Component by the content author.
-
-The Allowed Components tab functions in the same way as the tab of the same name when [defining the policy and properties of a Layout Container in the Template Editor.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
-
-### Styles Tab {#styles-tab}
-
-The Accordion Component supports the AEM [Style System](/help/get-started/authoring.md#component-styling).
-
-## Adobe Client Data Layer {#data-layer}
-
-The Accordion Component supports the [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
-
--->
-
-
-
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 

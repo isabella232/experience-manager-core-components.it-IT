@@ -2,19 +2,19 @@
 title: Componente core Forms adattivo - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore Pannello di Forms adattivo.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 1%
+source-wordcount: '1696'
+ht-degree: 2%
 
 ---
-
 
 # Contenitore pannello {#panel-container-adaptive-forms-core-component}
 
 In un modulo adattivo, un pannello è un elemento contenitore che può essere utilizzato per raggruppare gli elementi modulo correlati. Consente di raggruppare e organizzare diversi elementi modulo in modo logico e significativo. Questo consente di migliorare la struttura e la leggibilità complessiva del modulo, facilitando agli utenti la comprensione e la navigazione del modulo.
 
-I pannelli possono anche essere utilizzati per creare sezioni comprimibili, utili per nascondere campi modulo complessi o meno utilizzati, mantenendo il modulo semplice e facile da usare. Consente inoltre di includere altri componenti come testo, casella di controllo, pulsante e così via.
+I pannelli possono essere utilizzati per creare sezioni comprimibili, utili per nascondere campi modulo complessi o meno utilizzati, mantenendo il modulo semplice e facile da usare. Consente inoltre di includere altri componenti come testo, casella di controllo, pulsante.
 
 Può anche essere utilizzato per impostare diverse azioni basate su regole come l’invio di un modulo, l’apertura di un sito web, la visualizzazione/visualizzazione di componenti o l’aggiunta di un’istanza di un pannello.
 
@@ -36,15 +36,13 @@ Esistono diversi motivi per utilizzare un pannello in un modulo, tra cui:
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core contenitore di pannello adattivo Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-|  |  |
-|---|---|
-| Versione del componente | AEM as a Cloud Service |
-| --- | --- |
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/versions.md) e successivi | Compatibile | Compatibile |
+| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+|---|---|---|
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/versions.md) documento.
+Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -72,7 +70,7 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
 
 * **Layout** - È possibile disporre di un layout fisso (semplice) o flessibile (griglia reattiva) per la procedura guidata. Il layout Semplice mantiene tutto fisso nella posizione, mentre la griglia reattiva consente di regolare la posizione dei componenti in base alle proprie esigenze. Ad esempio, utilizza Griglia reattiva per allineare &quot;Nome&quot;, &quot;Nome intermedio&quot; e &quot;Cognome&quot; in un modulo in un’unica riga.
 
-* **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente semplice per la raccolta e la gestione dei dati.
+* **Riferimento a un&#39;associazione** - Un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, offrendo agli utenti un’esperienza utente fluida per la raccolta e la gestione dei dati.
 * **Nascondi componente** - Selezionare l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 * **Disattiva componente** - Seleziona l’opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
 
@@ -90,10 +88,52 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/panelcontainer_accessibilitytab.png)
 
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo destinato specificamente alla lettura da parte di tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
+* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo che deve essere letto da tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome ed eventuali messaggi pertinenti del campo (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di tutti gli utenti, compresi quelli con problemi visivi, e di comprendere appieno il campo del modulo e i relativi requisiti.
 
 * **Ruolo di HTML per l’annuncio dell’assistente vocale** - Il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come gli assistenti vocali. L’attributo ruolo viene utilizzato per fornire contesto e significato semantico aggiuntivi a un elemento, facilitando l’interpretazione e l’annuncio del contenuto da parte degli assistenti vocali. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di &quot;etichetta&quot; e il relativo campo di input potrebbe avere il ruolo di &quot;casella di testo&quot;. Questo consente all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input e di annunciarli correttamente all’utente.
 
+## Finestra di dialogo per la progettazione {#design-dialog}
 
+La finestra di dialogo Progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Contenitore pannello.
 
+### Scheda Componenti consentiti {#allowed-components-tab}
+
+![Schede Componenti consentiti](/help/adaptive-forms/assets/panel_allowedcomponent.png)
+
+La **Componenti consentiti** scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente contenitore Pannello nell’editor di Forms adattivo.
+
+### Scheda Componenti predefiniti {#default-component-tab}
+
+Questa scheda consente all’editor modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Contenitore pannello nell’editor di Forms adattivo.
+
+![Componente predefinito del pannello](/help/adaptive-forms/assets/panel_defaultcomponent.png)
+
+### Impostazioni reattive {#responsive-settings}
+
+Questa scheda consente all’editor modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
+
+![Griglia reattiva](/help/adaptive-forms/assets/panel_responsivesettings.png)
+
+### Scheda Impostazioni contenitore {#container-setting-tab}
+
+La scheda delle impostazioni del contenitore consente di impostare la posizione dei componenti nell’editor di Forms adattivo.
+
+![Impostazioni contenitore](/help/adaptive-forms/assets/panel_settings.png)
+
+* **Layout**: Il layout Semplice mantiene tutto fisso nella posizione, mentre la griglia reattiva consente di modificare la posizione dei componenti in base alle proprie esigenze.
+* **Disabilita layout**: È inoltre possibile disattivare la selezione del layout nella finestra di dialogo di modifica selezionando **Disabilita layout** casella di controllo.
+* **Abilita immagine di sfondo**: Questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
+* **Attiva colore di sfondo**: Questa scheda consente di impostare il colore di sfondo nell’editor modelli.
+
+### Scheda Stili {#styles-tab}
+
+La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core contenitore pannello adattivo Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+
+![Scheda Stile](/help/adaptive-forms/assets/panel_style.png)
+
+* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core Forms adattivo.
+
+* **Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo in Forms adattivo . Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile all’editor, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+
+* **Ruolo di HTML per l’annuncio dell’assistente vocale** - Il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come gli assistenti vocali. L’attributo ruolo viene utilizzato per fornire contesto e significato semantico aggiuntivi a un elemento, facilitando l’interpretazione e l’annuncio del contenuto da parte degli assistenti vocali. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di &quot;etichetta&quot; e il relativo campo di input potrebbe avere il ruolo di &quot;casella di testo&quot;. Questo consente all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input e di annunciarli correttamente all’utente.
 
