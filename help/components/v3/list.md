@@ -1,18 +1,18 @@
 ---
 title: Componente Elenco (v3)
-description: Il componente di elenco dei componenti core (v3) consente di creare facilmente elenchi dinamici e statici.
+description: Il componente Elenco (v3) del componente core consente di creare facilmente elenchi dinamici e statici.
 role: Architect, Developer, Admin, User
-source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
-workflow-type: tm+mt
+exl-id: 4aefce2e-9c22-4c6d-869e-aaa8c246b073
+source-git-commit: d86cb826922330f9877a725b84eb1844e1d5c0b7
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
 # Componente Elenco (v3) {#list-component}
 
-Il componente di elenco dei componenti core (v3) consente di creare facilmente elenchi dinamici e statici.
+Il componente Elenco (v3) del componente core consente di creare facilmente elenchi dinamici e statici.
 
 ## Utilizzo {#usage}
 
@@ -20,13 +20,13 @@ Il componente Elenco (v3) può essere utilizzato per creare, ad esempio, un elen
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Questo documento descrive la v3 del componente Elenco, introdotto con la versione 2.18.0 dei componenti core nel febbraio 2022.
+Questo documento descrive la versione 3 del componente elenco, originariamente introdotto con la versione 2.18.0 dei componenti core nel febbraio 2022.
 
 >[!CAUTION]
 >
 >Questo documento descrive la versione 3 del componente Elenco.
 >
->Per informazioni dettagliate sulla versione corrente del componente Elenco, vedi il documento [Componente Elenco](/help/components/list.md).
+>Per informazioni dettagliate sulla versione corrente del componente Elenco, consulta il documento [Componente Elenco](/help/components/list.md).
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
