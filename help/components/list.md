@@ -4,9 +4,9 @@ description: Il componente core Elenco consente di creare facilmente elenchi din
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
 source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1208'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Il componente Elenco può essere utilizzato per creare, ad esempio, un elenco di
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-La versione corrente del componente Elenco è la v4, introdotta con la versione 2.22.0 dei Componenti core di febbraio 2023, ed è quella descritta in questo documento.
+La versione corrente del componente Elenco è la v4, introdotta con la versione 2.22.0 dei componenti core di febbraio 2023, ed è quella descritta in questo documento.
 
 La tabella che segue descrive tutte le versioni supportate del componente, le versioni di AEM con cui le versioni del componente sono compatibili e i collegamenti alla documentazione delle versioni precedenti.
 
@@ -94,11 +94,11 @@ L’elenco può essere creato utilizzando elementi fissi.
 
 Tocca il o fai clic sul pulsante **Aggiungi** per inserire un nuovo elemento nell’elenco.
 
-* In **Collegamento** campo inserisci
-   * Un URL completo
-   * Un URL relativo al contenuto AEM esistente
-      * È possibile utilizzare **Finestra di dialogo Selezione** per scegliere un elemento da AEM.
-* In **Testo** , immetti nell’elenco il testo da visualizzare per il collegamento.
+* Nel campo **Collegamento** inserisci
+   * un URL completo
+   * o un URL relativo al contenuto AEM esistente
+      * È possibile utilizzare la **Finestra di dialogo per selezione** per scegliere un elemento da AEM.
+* Nel campo **Testo**, immetti nell’elenco il testo da visualizzare per il collegamento.
 * Seleziona la casella di controllo se il collegamento deve essere aperto in una nuova scheda del browser
 
 Una volta creato più di un elemento per l’elenco, è possibile organizzare l’elenco.
