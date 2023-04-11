@@ -5,7 +5,7 @@ feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
 source-git-commit: 0d004c90e789f23ff9e121fbd8ae11df9c9748b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1192'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 | `enableDynamicMedia` | `n` | Abilita i componenti Dynamic Media di base nelle impostazioni dei criteri dei progetti e attiva le funzioni Dynamic Media nel criterio del componente core Immagine. |
 | `enableSSR` | `n` | Opzione per l’abilitazione di SSR per il progetto front-end |
 | `precompiledScripts` | `n` | Opzione per [precompilare](/help/developing/archetype/precompiled-bundled-scripts.md) gli script lato server da `ui.apps` e allegarli alla build come artefatto del bundle secondario nel progetto `ui.apps`. `aemVersion` deve essere impostato su `cloud`. |
-| `includeFormsheadless` | `n` | Include le dipendenze dei [Componenti core forms](https://github.com/adobe/aem-core-forms-components), `ui.frontend.react.forms.af` e gli artefatti headless. |
+| `includeFormsheadless` | `n` | Include le dipendenze dei [Componenti core Forms](https://github.com/adobe/aem-core-forms-components), `ui.frontend.react.forms.af` e gli artefatti headless. |
 
 ## Requisiti di sistema {#requirements}
 
