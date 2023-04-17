@@ -3,9 +3,9 @@ title: Introduzione ai componenti core dei moduli adattivi in AEM
 description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la flessibilità dei componenti core dei moduli adattivi e forniscile con l’aiuto di Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 7afcc06e5932d8eeb4a4c45f52c653222f142daa
+source-git-commit: 1ac6ed00c19a8ae00e6a53d18419890a88235158
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1169'
 ht-degree: 86%
 
 ---
@@ -67,41 +67,6 @@ Le esperienze di acquisizione dei dati sono fondamentali per la generazione e la
 
 * **Accessibilità**: i componenti core dei moduli adattivi supportano gli standard e le linee guida di accessibilità per garantire che i moduli possano essere utilizzati da persone con disabilità, incluse quelle che utilizzano tecnologie per l’accessibilità, come le utilità per la lettura dello schermo
 
-
-<!-- >, such as  [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), to ensure that forms can be used by people with disabilities, including those using assistive technologies such as screen readers.
-
-*   **Alignment with AEM Sites**: The Core Components are designed to be more aligned with AEM Sites, making it easier for Sites users to adopt and use them without having to learn anything new. The components use the same front-end pipeline as Sites, making it easier to style and modify their appearance. 
-
-<!-- Additionally, the following points further illustrate this alignment:
-
-    *   **Authoring experience inline with Page editor**: The Core Components have an authoring experience that is inline with the Sites editor, with dialogs and other experiences similar to the Page editor. This makes it easier for Sites users to create and manage forms within the familiar context of the Sites editor.
-
-    *   **Inline form editing in Sites editor**: The Core Components allow  inline form editing within the Sites editor, avoiding the need to switch back and forth between editors. This streamlines the authoring experience and makes it easier to create and manage forms.
-
-    *   **Inheriting Sites features in Forms**: Forms authored within a Sites page inherit the same features as Sites. This provides a seamless and integrated experience for creating and managing forms within the context of AEM Sites 
-    
-    <!--including Multi Site Manager, the ability to use Sites components within a form for static content, support for scheduled publish/unpublish, form translation aligned with Sites translation, versioning, and targeting -->
-
-
-
-## Requisiti {#requirements}
-
-Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
-
-| AEM | Componente aggiuntivo per AEM Forms | Componenti core |
-|---|---|---|
-| AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.20.8](version.md)+ |
-| AEM 6.5 | Componente aggiuntivo Forms | [Versione 1.1.12](version.md)+ |
-
-## Configurazione e creazione di un modulo adattivo basato su componenti core
-
-**AEM Forms as a Cloud Service**: Quando crei un nuovo programma AEM Forms as a Cloud Service, i componenti core di Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
-
-Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
-
-Per utilizzare la procedura guidata Adattivo di Forms e l’editor di moduli adattivi per creare un modulo adattivo, consulta Creare un modulo adattivo ([Componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it?)).
-
-
 ## Componenti core dei moduli adattivi {#components}
 
 La versione attuale dei componenti core dei moduli adattivi include i componenti elencati in basso.
@@ -128,3 +93,39 @@ La versione attuale dei componenti core dei moduli adattivi include i componenti
 * [Testo](/help/adaptive-forms/components/text.md)
 * [Titolo](/help/adaptive-forms/components/title.md)
 * [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+
+## Configurazione dei componenti core
+
+
+Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
+
+| AEM | Componente aggiuntivo per AEM Forms | Componenti core |
+|---|---|---|
+| AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.20.8](version.md)+ |
+| AEM 6.5 | Componente aggiuntivo Forms | [Versione 1.1.12](version.md)+ |
+
+### Creare un modulo adattivo basato su componenti core
+
+**AEM Forms as a Cloud Service:** Quando crei un nuovo programma AEM Forms as a Cloud Service, i componenti core di Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
+
+Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
+
+Per utilizzare la procedura guidata Adattivo di Forms e l’editor di moduli adattivi per creare un modulo adattivo, consulta Creare un modulo adattivo ([Componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it?)).
+
+
+
+
+
+<!-- >, such as  [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), to ensure that forms can be used by people with disabilities, including those using assistive technologies such as screen readers.
+
+*   **Alignment with AEM Sites**: The Core Components are designed to be more aligned with AEM Sites, making it easier for Sites users to adopt and use them without having to learn anything new. The components use the same front-end pipeline as Sites, making it easier to style and modify their appearance. 
+
+<!-- Additionally, the following points further illustrate this alignment:
+
+    *   **Authoring experience inline with Page editor**: The Core Components have an authoring experience that is inline with the Sites editor, with dialogs and other experiences similar to the Page editor. This makes it easier for Sites users to create and manage forms within the familiar context of the Sites editor.
+
+    *   **Inline form editing in Sites editor**: The Core Components allow  inline form editing within the Sites editor, avoiding the need to switch back and forth between editors. This streamlines the authoring experience and makes it easier to create and manage forms.
+
+    *   **Inheriting Sites features in Forms**: Forms authored within a Sites page inherit the same features as Sites. This provides a seamless and integrated experience for creating and managing forms within the context of AEM Sites 
+    
+    <!--including Multi Site Manager, the ability to use Sites components within a form for static content, support for scheduled publish/unpublish, form translation aligned with Sites translation, versioning, and targeting -->

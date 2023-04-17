@@ -4,10 +4,10 @@ user-guide-title: Componenti core AEM
 breadcrumb-title: Guida dei Componenti core
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 279b96734bc8621b98b828fa80ebe693dc7904e0
+source-git-commit: 1ac6ed00c19a8ae00e6a53d18419890a88235158
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 79%
+source-wordcount: '369'
+ht-degree: 98%
 
 ---
 
@@ -103,26 +103,27 @@ ht-degree: 79%
 + Moduli adattivi {#adaptive-forms}
    + [Introduzione](/help/adaptive-forms/introduction.md)
    + [Cronologia versioni](/help/adaptive-forms/version.md)
-   + Componenti Forms adattivi {#adaptive-forms-components}
-      + [Pannello a soffietto Forms adattivo](/help/adaptive-forms/components/accordion.md)
-      + [Pulsante Adattivo Forms](/help/adaptive-forms/components/button.md)
-      + [Gruppo di caselle di controllo Forms adattivo](/help/adaptive-forms/components/checkbox-group.md)
-      + [Selettore data adattivo di Forms](/help/adaptive-forms/components/date-picker.md)
-      + [Elenco a discesa Adattivo Forms](/help/adaptive-forms/components/drop-down.md)
-      + [Ingresso e-mail Forms adattivo](/help/adaptive-forms/components/email-input.md)
-      + [Allegati file Forms adattivi](/help/adaptive-forms/components/file-attachment.md)
-      + [Schede orizzontali Forms adattabili](/help/adaptive-forms/components/horizontal-tabs.md)
-      + [Immagine Forms adattiva](/help/adaptive-forms/components/image.md)
-      + [Ingresso numero Forms adattivo](/help/adaptive-forms/components/number-input.md)
-      + [Pannello Forms adattivo](/help/adaptive-forms/components/panel-container.md)
-      + [Pulsante di scelta Forms adattivo](/help/adaptive-forms/components/radio-button.md)
-      + [Pulsante Reimpostazione Forms adattivo](/help/adaptive-forms/components/reset-button.md)
-      + [Pulsante di invio Forms adattivo](/help/adaptive-forms/components/submit-button.md)
-      + [Ingresso telefonico Forms adattivo](/help/adaptive-forms/components/telephone-input.md)
-      + [Testo Forms adattivo](/help/adaptive-forms/components/text.md)
-      + [Casella di testo Forms adattiva](/help/adaptive-forms/components/text-input.md)
-      + [Titolo Forms adattivo](/help/adaptive-forms/components/title.md)
-      + [Layout guidato Forms adattivo](/help/adaptive-forms/components/wizard.md)
+   + Componenti moduli adattivi {#adaptive-forms-components}
+      + [Pannello a soffietto moduli adattivi](/help/adaptive-forms/components/accordion.md)
+      + [Pulsante moduli adattivi](/help/adaptive-forms/components/button.md)
+      + [Gruppo di caselle di controllo dei moduli adattivi](/help/adaptive-forms/components/checkbox-group.md)
+      + [Contenitore Forms adattivo](/help/adaptive-forms/components/form-container.md)
+      + [Selettore data moduli adattivi](/help/adaptive-forms/components/date-picker.md)
+      + [Elenco a discesa moduli adattivi](/help/adaptive-forms/components/drop-down.md)
+      + [Inserimento e-mail moduli adattivi](/help/adaptive-forms/components/email-input.md)
+      + [Allegati file moduli adattivi](/help/adaptive-forms/components/file-attachment.md)
+      + [Schede orizzontali moduli adattivi](/help/adaptive-forms/components/horizontal-tabs.md)
+      + [Immagine moduli adattivi](/help/adaptive-forms/components/image.md)
+      + [Inserimento numero moduli adattivi](/help/adaptive-forms/components/number-input.md)
+      + [Pannello moduli adattivi](/help/adaptive-forms/components/panel-container.md)
+      + [Pulsante di scelta moduli adattivi](/help/adaptive-forms/components/radio-button.md)
+      + [Pulsante reimpostazione moduli adattivi](/help/adaptive-forms/components/reset-button.md)
+      + [Pulsante di invio moduli adattivi](/help/adaptive-forms/components/submit-button.md)
+      + [Inserimento telefono moduli adattivi](/help/adaptive-forms/components/telephone-input.md)
+      + [Testo moduli adattivi](/help/adaptive-forms/components/text.md)
+      + [Casella di testo moduli adattivi](/help/adaptive-forms/components/text-input.md)
+      + [Titolo moduli adattivi](/help/adaptive-forms/components/title.md)
+      + [Layout assistente virtuale moduli adattivi](/help/adaptive-forms/components/wizard.md)
       + [Intestazione](/help/adaptive-forms/components/header.md)
       + [Piè di pagina](/help/adaptive-forms/components/footer.md)
 + Sviluppo {#developing}
