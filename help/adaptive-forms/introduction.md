@@ -3,10 +3,10 @@ title: Introduzione ai componenti core dei moduli adattivi in AEM
 description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la flessibilità dei componenti core dei moduli adattivi e forniscile con l’aiuto di Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 0dec0b1e1d5303a8351d16f748f064a49128cbb3
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: 7afcc06e5932d8eeb4a4c45f52c653222f142daa
+workflow-type: tm+mt
+source-wordcount: '1168'
+ht-degree: 86%
 
 ---
 
@@ -90,32 +90,41 @@ Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
 
 | AEM | Componente aggiuntivo per AEM Forms | Componenti core |
 |---|---|---|
-| AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.20.8](/help/versions.md)+ |
+| AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.20.8](version.md)+ |
+| AEM 6.5 | Componente aggiuntivo Forms | [Versione 1.1.12](version.md)+ |
+
+## Configurazione e creazione di un modulo adattivo basato su componenti core
+
+**AEM Forms as a Cloud Service**: Quando crei un nuovo programma AEM Forms as a Cloud Service, i componenti core di Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
+
+Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
+
+Per utilizzare la procedura guidata Adattivo di Forms e l’editor di moduli adattivi per creare un modulo adattivo, consulta Creare un modulo adattivo ([Componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it?)).
 
 
 ## Componenti core dei moduli adattivi {#components}
 
-È possibile utilizzare l’[editor di moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it) per creare un modulo adattivo basato su componenti core. La versione attuale dei componenti core dei moduli adattivi include i componenti elencati in basso.
+La versione attuale dei componenti core dei moduli adattivi include i componenti elencati in basso.
 
-* Pannello a soffietto
-* Pulsante
-* Gruppo di caselle di selezione
-* Selettore data
-* Elenco a discesa
-* Inserimento e-mail
-* Contenitore modulo
-* Allegato file
-* Piè di pagina
-* Intestazione
-* Schede orizzontali
-* Immagine
-* Inserimento numero
-* Contenitore pannelli
-* Pulsante di scelta
-* Pulsante Ripristina
-* Pulsante Invia
-* Inserimento telefono
-* Inserimento testo
-* Testo
-* Titolo
-* Procedura guidata
+* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
+* [Pulsante](/help/adaptive-forms/components/button.md)
+* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
+* [Selettore data](/help/adaptive-forms/components/date-picker.md)
+* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
+* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
+* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
+* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
+* [Piè di pagina](/help/adaptive-forms/components/footer.md)
+* [Intestazione](/help/adaptive-forms/components/header.md)
+* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Immagine](/help/adaptive-forms/components/image.md)
+* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
+* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
+* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
+* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
+* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
+* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
+* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
+* [Testo](/help/adaptive-forms/components/text.md)
+* [Titolo](/help/adaptive-forms/components/title.md)
+* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
