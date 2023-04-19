@@ -3,9 +3,9 @@ title: Componente Immagine e-mail
 description: Il componente Immagine e-mail è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: f5d40047-3082-4edd-a5f6-6ab3e33997f9
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: ht
-source-wordcount: '1683'
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+workflow-type: tm+mt
+source-wordcount: '1645'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
+| v1 | Compatibile  | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, consulta il documento [Versioni dei Componenti core e-mail](/help/email/versions.md).
 
@@ -61,10 +61,6 @@ Il componente Immagine e-mail supporta il formato SVG per grafica vettoriale sca
 ### Sicurezza {#security}
 
 Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttamente dall’editor di immagini. Viene richiamato tramite `<img src=“path-to-component”>`. Ciò impedisce al browser di eseguire eventuali script incorporati nel file SVG.
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Immagine e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_image)
 
 ### Dettagli tecnici {#technical-details}
 

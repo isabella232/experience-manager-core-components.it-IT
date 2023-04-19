@@ -3,9 +3,9 @@ title: Componente Frammento esperienza e-mail
 description: Il componente Frammento esperienza e-mail consente all’autore del contenuto di inserire in esso una variante del Frammento esperienza e al contempo supporta una struttura per contenuti localizzati.
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '888'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
+| v1 | Compatibile  | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core e-mail, vedi il documento [Versioni dei Componenti core e-mail.](/help/email/versions.md)
 
@@ -104,10 +104,6 @@ Il componente Frammento esperienza e-mail tenta di trovare un componente localiz
 1. Se non la trova, tenta di trovare un modello.
 1. Se non lo trova, tenta di trovare una Live Copy.
 1. Se non lo trova, per impostazione predefinita viene visualizzato il frammento di esperienza configurato nel componente.
-
-## Esempio di output del componente {#sample-component-output}
-
-Per sperimentare il componente Frammento esperienza e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_xf)
 
 ## Dettagli tecnici {#technical-details}
 

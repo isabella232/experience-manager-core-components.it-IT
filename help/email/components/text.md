@@ -3,9 +3,9 @@ title: Componente Testo e-mail
 description: Il componente Testo e-mail è un componente per la modifica e la composizione come testo formattato che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2291'
 ht-degree: 100%
 
 ---
@@ -30,13 +30,9 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
+| v1 | Compatibile  | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, consulta il documento [Versioni dei Componenti core e-mail.](/help/email/versions.md)
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Testo e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti](https://adobe.com/go/aem_cmp_library_email_text).
 
 ### Dettagli tecnici {#technical-details}
 
@@ -52,7 +48,7 @@ Il resto di questo documento illustra la configurazione standard del componente 
 
 >[!NOTE]
 >
->Nel componente Testo e-mail sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+>Nel componente Testo e-mail sono disponibili solo le opzioni abilitate dalle [Configurazioni dell’interfaccia utente dell’editor Rich Text](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 ## Finestra di dialogo per la modifica {#edit-dialog}
 
@@ -284,7 +280,7 @@ Utilizzato per allineare un’immagine inserita.
 
 Consente di verificare l’ortografia del testo. Eventuali errori di ortografia appaiono sottolineati con linee tratteggiate rosse.
 
-Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Ulteriori dettagli sul controllo ortografico e sulla personalizzazione dei dizionari del controllo ortografico sono disponibili nel documento [Configurazione dei plug-in dell’editor RTF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=it).
 
 #### Caratteri speciali {#special-characters}
 

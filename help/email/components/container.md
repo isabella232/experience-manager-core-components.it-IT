@@ -3,9 +3,9 @@ title: Componente Contenitore e-mail
 description: Il componente Contenitore e-mail consente di creare un contenitore per più componenti aggiuntivi nel contenuto dell’e-mail.
 role: Architect, Developer, Admin, User
 exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '797'
 ht-degree: 100%
 
 ---
@@ -32,13 +32,9 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
+| v1 | Compatibile  | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei componenti core E-mail, consulta il documento [Versioni dei componenti core E-mail.](/help/email/versions.md)
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Contenitore e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_container)
 
 ## Dettagli tecnici {#technical-details}
 
@@ -85,7 +81,7 @@ La scheda **Componenti consentiti** funziona come la scheda con lo stesso nome u
 
 ### Scheda Componenti predefiniti {#default-components-tab}
 
-La scheda **Componenti predefiniti** consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+La scheda **Componenti predefiniti** consente di definire quale componente viene aggiunto al componente quando un particolare tipo di risorsa viene rilasciato sul Contenitore stesso, in modo analogo a [come vengono definiti i componenti predefiniti nel modello di pagina.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it)
 
 ### Scheda Impostazioni contenitore {#container-settings-tab}
 

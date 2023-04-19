@@ -3,9 +3,9 @@ title: Componente segmentazione e-mail
 description: Il componente Segmentazione e-mail
 role: Architect, Developer, Admin, User
 exl-id: 6c88b8c5-189a-40c0-ab28-04d37dc5fbac
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
-workflow-type: ht
-source-wordcount: '1171'
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+workflow-type: tm+mt
+source-wordcount: '1133'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Segmentazione e-mail e vedere esempi delle sue opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_segmentation)
+| v1 | Compatibile  | - |
 
 ### Dettagli tecnici {#technical-details}
 

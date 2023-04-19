@@ -3,9 +3,9 @@ title: Componente Teaser e-mail
 description: Il componente Teaser e-mail può mostrare un’immagine, un titolo, un testo formattato e, opzionalmente, un collegamento ad altro contenuto.
 role: Architect, Developer, Admin, User
 exl-id: d6123b22-7cba-406c-986d-b6f00322d135
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1018'
 ht-degree: 100%
 
 ---
@@ -31,11 +31,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Teaser e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [Libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_teaser)
+| v1 | Compatibile  | - |
 
 ### Dettagli tecnici {#technical-details}
 

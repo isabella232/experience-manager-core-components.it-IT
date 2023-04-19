@@ -3,9 +3,9 @@ title: Componente Frammento di contenuto e-mail
 description: Il componente Frammento di contenuto e-mail consente di visualizzare un frammento di contenuto nel contenuto.
 role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ Il componente Frammento di contenuto e-mail consente di visualizzare un [frammen
 
 ## Utilizzo {#usage}
 
-Il componente Frammento di contenuto e-mail consente di includere un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) nel contenuto dell’e-mail. I frammenti di contenuto sono contenuti strutturati multicanale che possono essere creati a livello centrale e riutilizzati facilmente.
+Il componente Frammento di contenuto e-mail consente di includere un [frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=it) nel contenuto dell’e-mail. I frammenti di contenuto sono contenuti strutturati multicanale che possono essere creati a livello centrale e riutilizzati facilmente.
 
 * Il frammento e le relative proprietà possono essere selezionati nella [finestra di dialogo per configurazione.](#configure-dialog)
 * I tipi di risorse per gestire determinate immagini e griglie possono essere definiti nella [finestra di dialogo per la progettazione.](#design-dialog)
@@ -31,13 +31,9 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile | Compatibile |
+| v1 | Compatibile  | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei componenti core E-mail, consulta il documento [Versioni dei componenti core E-mail.](/help/email/versions.md)
-
-## Esempio di output del componente {#sample-component-output}
-
-Per avere un’idea del componente Frammento di contenuto e-mail e vedere esempi delle opzioni di configurazione e dell’output HTML e JSON, visita la [libreria dei componenti.](https://adobe.com/go/aem_cmp_library_email_cf)
 
 ## Dettagli tecnici {#technical-details}
 
