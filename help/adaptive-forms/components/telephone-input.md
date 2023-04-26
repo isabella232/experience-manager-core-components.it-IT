@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core per l’inseriment
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1721'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ I motivi comuni per cui si utilizza un campo per il numero di telefono in un mod
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e i Componenti core 1.1.12 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti alla 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -66,7 +66,7 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero di telefo
 
 * **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
-* **Valore predefinito** - Questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo
+* **Valore predefinito** - questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
 
 ### Scheda Convalida {#validation-tab}
 
@@ -90,7 +90,7 @@ L’opzione **Pattern di convalida** consente di inserire un pattern per convali
 
 * **Pattern**: questa opzione consente di inserire i pattern di verifica consentiti per il numero di telefono. Sono consentite anche espressioni regolari.
 
-* **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato sullo schermo se il numero di telefono inserito non viene convalidato con il valore inserito nell’opzione **Pattern**
+* **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato sullo schermo se il numero di telefono inserito non viene convalidato con il valore inserito nell’opzione **Pattern**.
 
 ### Scheda Contenuto Guida {#help-content-tab}
 
@@ -114,9 +114,9 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core per l’inserimento del numero di telefono nei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core per l’inserimento del numero di telefono nei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per progettazione](/help/adaptive-forms/assets/telephoneinput_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/telephoneinput_designdialog.png)
 
 * **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core di inserimento del numero di telefono nei moduli adattivi.
 
