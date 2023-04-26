@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core della procedura gu
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1847'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ Nel complesso, un layout della procedura guidata può rendere il processo di com
 
 Il componente core del layout della procedura guidata per moduli adattivi è stato rilasciato nel febbraio 2023 come parte dei componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità con AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti alla 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -126,30 +126,30 @@ La scheda **Componenti consentiti** permette all’editor dei modelli di imposta
 
 ### Scheda Componenti predefiniti {#default-component-tab}
 
-Questa scheda consente all’editor modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente della procedura guidata nell’editor di Forms adattivo.
+Questa scheda permette all’editor dei modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente della procedura guidata nell’editor di moduli adattivi.
 
 ![Componente predefinito del pannello](/help/adaptive-forms/assets/panel_defaultcomponent.png)
 
 ### Impostazioni reattive {#responsive-settings}
 
-Questa scheda consente all’editor modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
+Questa scheda consente all’editor dei modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
 
-![Griglia reattiva](/help/adaptive-forms/assets/panel_responsivesettings.png)
+![Griglia dinamica](/help/adaptive-forms/assets/panel_responsivesettings.png)
 
 ### Scheda Impostazioni contenitore {#container-setting-tab}
 
-La scheda delle impostazioni del contenitore consente di impostare la posizione dei componenti nell’editor di Forms adattivo.
+La scheda delle impostazioni contenitore consente di impostare la posizione dei componenti nell’editor di moduli adattivi.
 
 ![Impostazioni contenitore](/help/adaptive-forms/assets/panel_settings.png)
 
-* **Layout**: Il layout Semplice mantiene tutto fisso nella posizione, mentre la griglia reattiva consente di modificare la posizione dei componenti in base alle proprie esigenze.
-* **Disabilita layout**: È inoltre possibile disattivare la selezione del layout nella finestra di dialogo di modifica selezionando **Disabilita layout** casella di controllo.
-* **Abilita immagine di sfondo**: Questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
-* **Attiva colore di sfondo**: Questa scheda consente di impostare il colore di sfondo nell’editor modelli.
+* **Layout**: il layout semplice mantiene tutto fisso in posizione, mentre la griglia dinamica consente di modificare la posizione dei componenti in base alle proprie esigenze.
+* **Disabilita layout**: è inoltre possibile disabilitare la selezione del layout nella finestra di dialogo di modifica selezionando la casella di controllo **Disabilita layout**.
+* **Abilita immagine di sfondo**: questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
+* **Abilita colore di sfondo**: questa scheda consente di impostare il colore di sfondo nell’editor modelli.
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Scheda Stile](/help/adaptive-forms/assets/panel_style.png)
 
