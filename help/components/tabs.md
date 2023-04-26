@@ -4,9 +4,9 @@ description: Il componente Schede consente di creare più schede per disporre il
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
 source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1033'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ La documentazione tecnica più recente sul componente Schede [è disponibile su 
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Collegamenti profondi a un pannello {#deep-linking}
+## Collegamento diretto a un pannello {#deep-linking}
 
-Schede, [carosello,](carousel.md) e [Componenti pannello a soffietto](accordion.md) supporta il collegamento diretto a un pannello all’interno del componente.
+I componenti Schede, [Carosello](carousel.md) e [Pannello a soffietto](accordion.md) supportano il collegamento diretto a un pannello all’interno del componente.
 
 Per effettuare questo collegamento:
 
