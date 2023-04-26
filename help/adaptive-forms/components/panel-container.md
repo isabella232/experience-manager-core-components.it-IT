@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core contenitore di pan
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 73%
 
 In un modulo adattivo, un pannello è un elemento contenitore che può essere utilizzato per raggruppare gli elementi modulo correlati. Consente di raggruppare e organizzare diversi elementi modulo in modo logico e significativo. Questo consente di migliorare la struttura e la leggibilità complessiva del modulo, facilitando agli utenti la comprensione e la navigazione del modulo.
 
-I pannelli possono essere utilizzati per creare sezioni comprimibili, utili per nascondere campi modulo complessi o meno utilizzati, mantenendo il modulo semplice e facile da usare. Consente inoltre di includere altri componenti come testo, casella di controllo, pulsante.
+I pannelli possono essere utilizzati per creare sezioni comprimibili, utili per nascondere campi modulo complessi o meno utilizzati, mantenendo il modulo semplice e facile da usare. Consentono inoltre di includere altri componenti come testo, casella di controllo, pulsante.
 
-Può anche essere utilizzato per impostare diverse azioni basate su regole come l’invio di un modulo, l’apertura di un sito web, la visualizzazione/visualizzazione di componenti o l’aggiunta di un’istanza di un pannello.
+Possono anche essere utilizzati per impostare diverse azioni basate su regole come l’invio di un modulo, l’apertura di un sito web, la visualizzazione o meno dei componenti o l’aggiunta di un’istanza di un pannello.
 
 **Esempio**
 
@@ -26,7 +26,7 @@ Può anche essere utilizzato per impostare diverse azioni basate su regole come 
 
 Esistono diversi motivi per utilizzare un pannello in un modulo, tra cui:
 
-* **Organizzazione degli elementi del modulo**: È possibile utilizzare un pannello per raggruppare gli elementi del modulo correlati, facilitando agli utenti la comprensione e la navigazione del modulo.
+* **Organizzazione degli elementi del modulo**: è possibile utilizzare un pannello per raggruppare gli elementi del modulo correlati, facilitando agli utenti la comprensione e la navigazione del modulo.
 
 * **Miglioramento della struttura dei moduli**: raggruppando gli elementi dei moduli in pannelli, è possibile migliorare la struttura complessiva e la leggibilità del modulo, facilitandone la comprensione.
 
@@ -36,11 +36,11 @@ Esistono diversi motivi per utilizzare un pannello in un modulo, tra cui:
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e i Componenti core 1.1.12 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti alla 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -88,52 +88,52 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/panelcontainer_accessibilitytab.png)
 
-* **Testo per assistenti vocali** - Il testo per gli assistenti vocali si riferisce al testo aggiuntivo che deve essere letto da tecnologie per l’accessibilità, come gli assistenti vocali, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome del campo ed eventuali messaggi rilevanti (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di qualsiasi utente, comprese le persone ipovedenti, consentendo di comprendere appieno il campo del modulo e i relativi requisiti.
+* **Testo per utilità per la lettura dello schermo**: il testo per le utilità per la lettura dello schermo indica il testo aggiuntivo destinato alla lettura da parte di tecnologie per l’accessibilità, come le utilità per la lettura dello schermo, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome del campo ed eventuali messaggi rilevanti (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di qualsiasi utente, comprese le persone ipovedenti, consentendo di comprendere appieno il campo del modulo e i relativi requisiti.
 
 * **Ruolo di HTML per l’annuncio dell’assistente vocale**: il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come le utilità per la lettura dello schermo. L’attributo ruolo viene utilizzato per fornire ulteriore contesto e significato semantico a un elemento, facilitando l’interpretazione e la lettura del contenuto da parte delle utilità per la lettura dello schermo per l’utente. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di “etichetta” e il relativo campo di input potrebbe avere il ruolo di “casella di testo”. Questo permette all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input, e di leggerli in modo corretto all’utente.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Contenitore pannello.
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente contenitore di pannelli.
 
 ### Scheda Componenti Consentiti {#allowed-components-tab}
 
 ![Schede Componenti consentiti](/help/adaptive-forms/assets/panel_allowedcomponent.png)
 
-La **Componenti consentiti** scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente contenitore Pannello nell’editor di Forms adattivo.
+La scheda **Componenti consentiti** consente all’editor dei modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Contenitore di pannelli nell’editor di moduli adattivi.
 
 ### Scheda Componenti predefiniti {#default-component-tab}
 
-Questa scheda consente all’editor modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Contenitore pannello nell’editor di Forms adattivo.
+Questa scheda consente all’editor dei modelli di mappare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Contenitore di pannelli nell’editor dei moduli adattivi.
 
 ![Componente predefinito del pannello](/help/adaptive-forms/assets/panel_defaultcomponent.png)
 
 ### Impostazioni reattive {#responsive-settings}
 
-Questa scheda consente all’editor modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
+Questa scheda consente all’editor dei modelli di impostare il numero di colonne da visualizzare nella griglia dinamica.
 
-![Griglia reattiva](/help/adaptive-forms/assets/panel_responsivesettings.png)
+![Griglia dinamica](/help/adaptive-forms/assets/panel_responsivesettings.png)
 
 ### Scheda Impostazioni contenitore {#container-setting-tab}
 
-La scheda delle impostazioni del contenitore consente di impostare la posizione dei componenti nell’editor di Forms adattivo.
+La scheda delle impostazioni contenitore consente di impostare la posizione dei componenti nell’editor di moduli adattivi.
 
 ![Impostazioni contenitore](/help/adaptive-forms/assets/panel_settings.png)
 
-* **Layout**: Il layout Semplice mantiene tutto fisso nella posizione, mentre la griglia reattiva consente di modificare la posizione dei componenti in base alle proprie esigenze.
-* **Disabilita layout**: È inoltre possibile disattivare la selezione del layout nella finestra di dialogo di modifica selezionando **Disabilita layout** casella di controllo.
-* **Abilita immagine di sfondo**: Questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
-* **Attiva colore di sfondo**: Questa scheda consente di impostare il colore di sfondo nell’editor modelli.
+* **Layout**: il layout semplice mantiene tutto fisso in posizione, mentre la griglia dinamica consente di modificare la posizione dei componenti in base alle proprie esigenze.
+* **Disabilita layout**: è inoltre possibile disabilitare la selezione del layout nella finestra di dialogo di modifica selezionando la casella di controllo **Disabilita layout**.
+* **Abilita immagine di sfondo**: questa scheda consente di impostare l’immagine e il colore di sfondo nell’editor modelli.
+* **Abilita colore di sfondo**: questa scheda consente di impostare il colore di sfondo nell’editor modelli.
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core contenitore pannello adattivo Forms supporta il AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core Contenitore di pannelli per moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Scheda Stile](/help/adaptive-forms/assets/panel_style.png)
 
-* **Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente core Forms adattivo.
+* **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core dei moduli adattivi.
 
-* **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo in Forms adattivo . Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile all’editor, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+* **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo in Moduli adattivi. Per applicare uno stile, nell’editor di moduli adattivi, seleziona il componente a cui desideri applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
 * **Ruolo di HTML per l’annuncio dell’assistente vocale**: il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come le utilità per la lettura dello schermo. L’attributo ruolo viene utilizzato per fornire ulteriore contesto e significato semantico a un elemento, facilitando l’interpretazione e la lettura del contenuto da parte delle utilità per la lettura dello schermo per l’utente. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di “etichetta” e il relativo campo di input potrebbe avere il ruolo di “casella di testo”. Questo permette all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input, e di leggerli in modo corretto all’utente.
 
