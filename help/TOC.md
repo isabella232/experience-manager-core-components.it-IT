@@ -7,7 +7,7 @@ feature-set: Experience Manager Sites
 source-git-commit: 1ac6ed00c19a8ae00e6a53d18419890a88235158
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 98%
       + [Segmentazione](/help/email/components/segmentation.md)
 + Moduli adattivi {#adaptive-forms}
    + [Introduzione](/help/adaptive-forms/introduction.md)
-   + [Cronologia versioni](/help/adaptive-forms/version.md)
+   + [Cronologia delle versioni](/help/adaptive-forms/version.md)
    + Componenti moduli adattivi {#adaptive-forms-components}
       + [Pannello a soffietto moduli adattivi](/help/adaptive-forms/components/accordion.md)
       + [Pulsante moduli adattivi](/help/adaptive-forms/components/button.md)

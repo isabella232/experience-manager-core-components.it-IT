@@ -6,7 +6,7 @@ exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 source-git-commit: 468078da4d31d7eedf9bd73cbcf2d71107bfe3f4
 workflow-type: tm+mt
 source-wordcount: '2924'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 |---|---|---|---|---|---|---|
 | [2.22.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.4) | Questa è una versione della patch per risolvere un problema nel [Componente Elenco frammenti di contenuto.](/help/components/content-fragment-list.md) | - | 6.5.14.0+ * | Continua | 8, 11 | 5 aprile 2023 |
 | [2.22.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.2) | Questa è una versione di manutenzione per risolvere due problemi introdotti nella versione 2.22.0 | - | 6.5.14.0+ * | Continua | 8, 11 | 31 marzo 2023 |
-| [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Questa versione introduce una nuova versione di [Componente elenco](/help/components/list.md) insieme ai miglioramenti apportati al [Teaser](/help/components/teaser.md) e l&#39;aggiornamento [Visualizzatore PDF](/help/components/pdf-viewer.md) e [Carosello](/help/components/carousel.md) | - | 6.5.14.0+ * | Continua | 8, 11 | 9 febbraio 2023 |
+| [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Questa versione introduce una nuova versione del [Componente elenco](/help/components/list.md) insieme ai miglioramenti apportati al [Teaser](/help/components/teaser.md) e all’aggiornamento del [Visualizzatore PDF](/help/components/pdf-viewer.md) e del [Carosello](/help/components/carousel.md). | - | 6.5.14.0+ * | Continua | 8, 11 | 9 febbraio 2023 |
 | [2.21.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.2) | Si tratta di una versione patch che risolve un problema relativo ai [Componenti teaser](/help/components/teaser.md) v1 e v2. | - | 6.5.13.0+ * | Continua | 8, 11 | 12 settembre 2022 |
 | [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Questa versione include una serie di miglioramenti, tra cui la pubblicazione dell’API LinkHandler, miglioramenti al [Componente immagine](/help/components/image.md) e al [livello dei dati,](/help/developing/data-layer/overview.md) nonché ai componenti per più pannelli. | - | 6.5.13.0+ * | Continua | 8, 11 | 12 settembre 2022 |
 | [2.20.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.8) | Questa versione risolve un problema di consegna di immagini SVG tramite AdaptiveImageServlet. | - | 6.5.13.0+ * | Continua | 8, 11 | 4 agosto 2022 |
