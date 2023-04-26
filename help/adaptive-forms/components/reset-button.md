@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core del pulsante Ripri
 role: Architect, Developer, Admin, User
 exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1194'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ I motivi per utilizzare un pulsante di ripristino in un modulo adattivo sono i s
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core del pannello a soffietto moduli adattivi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e dei Componenti core 1.1.12 per AEM Forms versione 6.5.16.0 o successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -89,9 +89,9 @@ La finestra di dialogo per la progettazione viene utilizzata per definire e gest
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core del pulsante Reimposta dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core del pulsante Reimposta dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per progettazione](/help/adaptive-forms/assets/reset_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/reset_designdialog.png)
 
 * **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del pulsante Reimposta dei moduli adattivi.
 
