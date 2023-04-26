@@ -5,9 +5,9 @@ feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
 source-git-commit: ca61d71a2644465e74249058157d8dea2aa71352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2198'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Service.
 >
 >È consigliabile aggiungere il profilo `adobe-public` al file Maven `settings.xml` per aggiungere automaticamente repo.adobe.com al processo di sviluppo Maven.
 >
->Un esempio di POM (Project Object Model) [è disponibile qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17454.html?lang=en).
+>Un esempio di POM (Project Object Model) [è disponibile qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17454.html?lang=it).
 
 ### Proprietà {#properties}
 
