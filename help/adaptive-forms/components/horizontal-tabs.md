@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core delle schede orizz
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ I motivi comuni per utilizzare le schede orizzontali in un modulo adattivo sono 
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e i Componenti core 1.1.12 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -78,7 +78,7 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 * **Icona**: l’icona identifica il componente del pannello nell’elenco. Passa il puntatore del mouse sull’icona per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione**: descrizione utilizzata come testo del pannello. Per impostazione predefinita, il nome del componente selezionato per il pannello.
-* **Elimina** - Tocca o fai clic per eliminare il pannello dal componente tabulazione orizzontale.
+* **Elimina**: tocca o fai clic per eliminare il pannello dal componente Scheda orizzontale.
 * **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
 ### Scheda Contenuto Guida {#help-content}
@@ -101,10 +101,10 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Forms adattivo, puoi impostare quanto segue:
+La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Moduli adattivi, è possibile impostare quanto segue:
 
-* Componenti core che un creatore di moduli può aggiungere alle schede orizzontali nell’editor di Forms adattivo
-* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente Tabulazioni orizzontali nell’editor Forms adattivo.
+* I componenti core che un creatore di moduli può aggiungere alle schede orizzontali nell’editor di moduli adattivi
+* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente schede orizzontali nell’editor dei moduli adattivi.
 
 Questo permette di rendere il processo di creazione e personalizzazione dei moduli più semplice ed efficace.
 
@@ -116,7 +116,7 @@ La scheda **Componenti consentiti** consente all’editor modelli di impostare i
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core delle schede orizzontali nei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core delle schede orizzontali nei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Scheda Stile](/help/adaptive-forms/assets/horizontaltabs_designstyletab.png)
 
