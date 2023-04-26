@@ -1,20 +1,20 @@
 ---
-title: Componente core Forms adattivo - Immagine
-description: Utilizzo o personalizzazione del componente di base Immagine adattiva di Forms.
+title: Componente core moduli adattivi - Immagine
+description: Utilizzo o personalizzazione del componente core immagine dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Immagine {#image-adaptive-forms-core-component}
 
-Un componente Immagine in un Modulo adattivo consente di includere le immagini in un modulo. Queste immagini possono essere utilizzate per migliorare la struttura complessiva del modulo, fornire informazioni aggiuntive o per aiutare gli utenti a comprendere lo scopo del modulo. Il componente Immagine può essere utilizzato per aggiungere un logo, una foto o un elemento grafico nel modulo.
+Un componente Immagine in un modulo adattivo consente di includere le immagini in un modulo. Queste immagini possono essere utilizzate per migliorare la struttura complessiva del modulo, fornire informazioni aggiuntive o servire come aiuto visivo per favorire la comprensione dello scopo del modulo. Il componente Immagine può essere utilizzato per aggiungere un logo, una foto o un elemento grafico nel modulo.
 
-Per l’accessibilità, è importante specificare **Testo alternativo** all’immagine per fornire un testo alternativo breve e descrittivo per l’immagine, che descrive l’immagine per gli utenti che non possono visualizzarla.
+Per l’accessibilità, è importante specificare un **Testo alternativo** all’immagine per fornire un testo alternativo breve e descrittivo per l’immagine, la quale viene descritta agli utenti che non possono visualizzarla.
 
 
 **Esempio**
@@ -24,25 +24,25 @@ Per l’accessibilità, è importante specificare **Testo alternativo** all’im
 
 ## Utilizzo {#reasons-to-use-image-in-a-form}
 
-Ci sono diversi motivi per cui è utile includere un componente Immagine in un Modulo adattivo, tra cui:
+Ci sono diversi motivi per cui è utile includere un componente Immagine in un modulo adattivo, tra cui:
 
-* **Branding**: Un’immagine può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
+* **Branding**: un’immagine può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
 
-* **Strumenti visivi**: Un’immagine può essere utile per fornire un ulteriore livello di informazioni agli utenti, fornendo un supporto visivo per aiutare gli utenti a comprendere lo scopo del modulo.
+* **Strumenti visivi**: un’immagine può essere utile per fornire un ulteriore livello di informazioni agli utenti, fornendo un supporto visivo per aiutarli a comprendere lo scopo del modulo.
 
-* **Decorazione**: Un’immagine può essere utilizzata per migliorare la struttura complessiva del modulo e renderlo più attraente dal punto di vista visivo.
+* **Decorazione**: un’immagine può essere utilizzata per migliorare la struttura complessiva del modulo e renderlo più attraente dal punto di vista visivo.
 
-* **Esperienza utente**: Un’immagine può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilare i campi del modulo.
+* **Esperienza utente**: un’immagine può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilarne i campi.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e i Componenti core 1.1.12 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successivi | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti alla 2.0.0. |
 
-Per informazioni sulle versioni e sulle versioni dei componenti core, consulta [Versioni dei componenti core](/help/adaptive-forms/version.md) documento.
+Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -51,44 +51,44 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Dettagli tecnici {#technical-details}
 
-Per informazioni aggiornate sul componente di base Immagine adattiva di Forms, consulta la documentazione tecnica disponibile in [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/image/v1/image). Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la sezione [Documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
+Ottieni informazioni aggiornate sul componente core Immagine per moduli adattivi nella documentazione tecnica in [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/image/v1/image). Per ulteriori informazioni sullo sviluppo dei componenti core, consulta la [Documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
 
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-Puoi personalizzare facilmente l’esperienza dell’immagine per i visitatori tramite la finestra di dialogo Configura . Puoi anche definire le opzioni immagine con facilità per un’esperienza utente fluida.
+Puoi personalizzare facilmente l’esperienza dell’immagine per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire le opzioni dell’immagine con facilità per un’esperienza utente semplice.
 
 ![Scheda Proprietà](/help/adaptive-forms/assets/image_properties.png)
 
-* **Nome** - È possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
+* **Nome**: puoi identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-* **Titolo** - Con il relativo Titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungete un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+* **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
 
-* **Riferimento di binding del documento di record** - Questa opzione consente di associare un campo Modulo adattivo a un campo Documento di record. Quando l’utente immette un valore in un campo collegato di un modulo adattivo, tale valore viene visualizzato anche nel campo collegato del corrispondente documento di record. Ad esempio, è possibile utilizzare un riferimento di binding Documento di record per visualizzare il nome e l&#39;indirizzo di un cliente in un documento di record, in base all&#39;ID del cliente immesso nel modulo. In questo modo, AEM Forms consente di generare un documento di record e offre un’esperienza utente semplice per la raccolta e la gestione dei dati.
+* **Riferimento di binding del documento di record**: questa opzione consente di associare un campo di un modulo adattivo a un campo di un documento di record. Quando l’utente immette un valore in un campo collegato di un modulo adattivo, tale valore viene visualizzato anche nel campo collegato del corrispondente documento di record. Ad esempio, è possibile utilizzare un riferimento di binding del documento di record per visualizzare il nome e l’indirizzo dell’utente in un documento di record, in base all’ID cliente immesso nel modulo. In questo modo, AEM Forms consente di generare un documento di record e offre un’esperienza utente semplice per la raccolta e la gestione dei dati.
 
-* **Descrizione** - Una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
+* **Descrizione**: una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
 
-* **Rilascia una risorsa qui o cerca un file da caricare** - Questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un file system locale utilizzando **Sfoglia** pulsante . Dopo l’aggiunta di un’immagine, nella parte inferiore dell’immagine vengono visualizzati tre pulsanti:
-   * **Modifica** - Tocca o fai clic su **Modifica** per gestire le rappresentazioni della risorsa nell’Editor risorse.
-   * **Cancella** - Tocca o fai clic su **Cancella** per deselezionare l&#39;immagine attualmente selezionata.
-   * **Selezione** - Tocca o fai clic su **Selezione**  per selezionare un’altra immagine dalla cartella Risorse.
+* **Rilascia una risorsa qui o cerca un file da caricare**: questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un sistema di file locale utilizzando il pulsante **Sfoglia**. Dopo l’aggiunta di un’immagine, nella sua parte inferiore vengono visualizzati tre pulsanti:
+   * **Modifica**: tocca o fai clic su **Modifica** per gestire i rendering della risorsa nell’editor delle risorse.
+   * **Cancella**: tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
+   * **Scegli**: tocca o fai clic sull’opzione **Scegli** per selezionare un’altra immagine dalla cartella risorse.
 
-* **Testo alternativo** - Questa opzione viene utilizzata per inserire il testo che fornisce un testo alternativo breve e descrittivo per l’immagine, che descrive l’immagine per gli utenti ipovedenti.
+* **Testo alternativo**: questa opzione viene utilizzata per inserire un testo breve e descrittivo alternativo all’immagine, che descrive l’immagine per gli utenti ipovedenti.
 
-* **Nascondi componente** - Selezionare l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+* **Nascondi componente**: seleziona l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 
-* **Sola lettura** - Seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’Editor regole.
+* **Sola lettura**: seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo Progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Immagine.
+La finestra di dialogo per la progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Immagine.
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente di base per l’immagine di Forms adattiva supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core immagine dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per progettazione](/help/adaptive-forms/assets/image_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/image_designdialog.png)
 
-**Classi CSS predefinite**: È possibile fornire una classe CSS predefinita per il componente di base Immagine adattiva di Forms.
+**Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core immagine dei moduli adattivi.
 
-**Stili consentiti**: È possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato &quot;bold text&quot; e fornire la classe CSS &quot;font-weight: grassetto&quot;. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di Forms adattivo. Per applicare uno stile, nell’editor di Forms adattivo, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dal **Stili** elenco a discesa. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo Progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+**Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
