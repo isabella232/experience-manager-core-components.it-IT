@@ -4,9 +4,9 @@ description: Il componente Carosello consente all’autore di contenuto di prese
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
 source-git-commit: e0d3790b265ab27ac2116f0d8daf1a18ecd3d714
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1312'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +42,9 @@ La documentazione tecnica più recente sul componente Carosello [è disponibile 
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Collegamenti profondi a un pannello {#deep-linking}
+## Collegamento direttio a un pannello {#deep-linking}
 
-Il carosello, [Schede,](tabs.md) e [Componenti pannello a soffietto](accordion.md) supporta il collegamento diretto a un pannello all’interno del componente.
+I componenti Carosello, [Schede](tabs.md) e [Pannello a soffietto](accordion.md) supportano il collegamento diretto a un pannello all’interno del componente.
 
 Per effettuare questo collegamento:
 
@@ -54,7 +54,7 @@ Per effettuare questo collegamento:
 1. L’ID diventa l’ancoraggio che puoi aggiungere all’URL utilizzando un hash (`#`).
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
 
-Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere visualizzato per impostazione predefinita, verrà fatto scorrere fino a in automatico.
+Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere visualizzato per impostazione predefinita, verrà fatto scorrere automaticamente.
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 
@@ -102,13 +102,13 @@ Nella scheda **Proprietà**, l’autore di contenuto può impostare la transizio
 
 Nella scheda **Accessibilità** è possibile impostare i valori per le etichette di [accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente.
 
-* **Etichetta** - Valore di un attributo aria-label per il carosello, che descrive il contenuto del carosello
-* **Precedente** - Valore di un attributo aria-label per l’etichetta del pulsante precedente per la navigazione del carosello
-* **Successivo** - Valore di un attributo aria-label per l’etichetta del pulsante Successivo per la navigazione del carosello
-* **Play** - Valore di un attributo aria-label per l’etichetta del pulsante Riproduci per la navigazione del carosello
-* **Pausa** - Valore di un attributo aria-label per l’etichetta del pulsante Pausa per la navigazione del carosello
-* **Tablist** - Valore di un attributo aria-label per l’etichetta dell’elenco degli elementi per la navigazione del carosello
-* **Imposta l&#39;etichetta aria dell&#39;elemento sul relativo titolo** - Se selezionata, questa opzione imposta automaticamente il titolo degli elementi del carosello sulla relativa descrizione aria-label.
+* **Etichetta**: valore di un attributo aria-label per il carosello che ne descrive il contenuto
+* **Precedente**: valore di un attributo aria-label per l’etichetta del pulsante Precedente della navigazione del carosello
+* **Successivo**: valore di un attributo aria-label per l’etichetta del pulsante Successivo della navigazione del carosello
+* **Riproduci**: valore di un attributo aria-label per l’etichetta del pulsante Riproduci della navigazione del carosello
+* **Pausa**: valore di un attributo aria-label per l’etichetta del pulsante Pausa della navigazione del carosello
+* **Tablist**: valore di un attributo aria-label per l’etichetta dell’elenco degli elementi della navigazione del carosello
+* **Imposta l’aria-label dell’elemento sul relativo titolo**: se questa opzione è selezionata, il titolo degli elementi del carosello viene impostato automaticamente sulla relativa descrizione aria-label.
 
 ## Seleziona pannello {#select-panel}
 
@@ -137,7 +137,7 @@ La scheda **Proprietà** viene utilizzata per definire le impostazioni predefini
 ![Finestra di dialogo per progettazione del componente Carosello](/help/assets/carousel-design.png)
 
 * **Transizione automatica diapositive**: definisce se per impostazione predefinita l’opzione per far avanzare il carosello alla diapositiva successiva è abilitata, quando l’autore di contenuto aggiunge il componente Carosello a una pagina.
-* **Anteporre gli elementi di controllo** - Se questa opzione è selezionata, gli elementi di controllo vengono posizionati davanti agli elementi del carosello per migliorarne l’accessibilità.
+* **Anteponi elementi di controllo**: se questa opzione è selezionata, gli elementi di controllo vengono posizionati prima degli elementi del carosello, per migliorarne l’accessibilità.
 
 ### Scheda Componenti consentiti {#allowed-components-tab}
 
