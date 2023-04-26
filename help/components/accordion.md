@@ -4,9 +4,9 @@ description: Il componente core Pannello a soffietto consente di creare una racc
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
 source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ La documentazione tecnica più recente sul componente Pannello a soffietto [è d
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core](/help/developing/overview.md).
 
-## Collegamenti profondi a un pannello {#deep-linking}
+## Collegamento diretto a un pannello {#deep-linking}
 
-Pannello a soffietto, [carosello,](carousel.md) e [Componenti Schede](tabs.md) supporta il collegamento diretto a un pannello all’interno del componente.
+I componenti Pannello a soffietto, [Carosello](carousel.md) e [Schede](tabs.md) supportano il collegamento diretto a un pannello all’interno del componente.
 
 Per effettuare questo collegamento:
 
