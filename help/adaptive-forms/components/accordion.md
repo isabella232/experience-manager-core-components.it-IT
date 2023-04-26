@@ -4,9 +4,9 @@ description: Utilizza il pannello a soffietto per organizzare e semplificare un 
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
 source-git-commit: 0cfdc56fe5508e156eee2ae818be311748af7247
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ La finestra di dialogo per la configurazione, la finestra di dialogo per la prog
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core per pannello a soffietto adattivo di Forms è stato rilasciato a febbraio 2023 come parte dei componenti core 2.0.4 per Cloud Service e i componenti core 1.1.12 per Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4 per Cloud Service e i Componenti core 1.1.12 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
-| Versione del componente | AEM as a Cloud Service | AEM 6.5.16.0 Forms o versione successiva |
+| Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con<br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma inferiori a 2.0.0. |
+| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con la <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive ma precedenti alla 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -131,7 +131,7 @@ La scheda **Componenti consentiti** consente all’editor dei modelli di imposta
 
 ### Scheda Stili {#styles-tab}
 
-La scheda viene utilizzata per definire e gestire gli stili CSS per un componente. Il componente core del pannello a soffietto dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core del pannello a soffietto dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Scheda Stile](/help/adaptive-forms/assets/accordion_style.png)
 
