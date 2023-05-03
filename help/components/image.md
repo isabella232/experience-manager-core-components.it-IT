@@ -3,9 +3,9 @@ title: Componente Immagine
 description: Il componente core Immagine è un componente immagine adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: f0971db66cbbf8221c12cedf108eee3bca8a527a
-workflow-type: ht
-source-wordcount: '1678'
+source-git-commit: 1cb06273ecb2c5b5f90c02b74b7ac0e440d87ecc
+workflow-type: tm+mt
+source-wordcount: '1636'
 ht-degree: 100%
 
 ---
@@ -54,17 +54,13 @@ La tua esperienza del web costruita con i Componenti core ora si arricchisce del
 
 Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
 
-* Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
+* L’inserimento tramite trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 * Il file SVG originale viene inviato in streaming (le trasformazioni vengono ignorate).
 * Per un’immagine SVG, le “immagini avanzate” e le “dimensioni avanzate” sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
 
 Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttamente dall’editor di immagini. Viene richiamato tramite `<img src=“path-to-component”>`. Ciò impedisce al browser di eseguire eventuali script incorporati nel file SVG.
-
->[!NOTE]
->
->Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html?lang=it) in AEM.
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -133,7 +129,7 @@ Utilizza il menu a discesa per selezionare gli stili da applicare al componente.
 
 Gli stili devono essere configurati per questo componente nella [finestra di dialogo di progettazione](#design-dialog) affinché il menu a discesa sia disponibile.
 
-## Finestra di dialogo per progettazione {#design-dialog}
+## Finestra di dialogo per la progettazione {#design-dialog}
 
 ### Scheda Principale {#main-tab}
 

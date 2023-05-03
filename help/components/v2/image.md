@@ -3,9 +3,9 @@ title: Componente Immagine  (v2)
 description: Il componente core Immagine è un componente immagine adattivo che offre funzioni di modifica diretta.
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
-source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
-workflow-type: ht
-source-wordcount: '2115'
+source-git-commit: 6c251cd03997dca8961b31498c6f5de3cfdc3793
+workflow-type: tm+mt
+source-wordcount: '2073'
 ht-degree: 100%
 
 ---
@@ -50,17 +50,13 @@ La tua esperienza del web costruita con i Componenti core ora si arricchisce del
 
 Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
 
-* Il trascinamento e rilascio di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
+* L’inserimento tramite trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 * Il file SVG originale viene inviato in streaming (le trasformazioni vengono ignorate).
 * Per un’immagine SVG, le “immagini intelligenti” e le “dimensioni intelligenti” sono impostate su un array vuoto nel modello di immagine.
 
 ### Sicurezza {#security}
 
 Per motivi di sicurezza, il file SVG originale non viene mai richiamato direttamente dall’editor di immagini. Viene richiamato tramite `<img src=“path-to-component”>`. Ciò impedisce al browser di eseguire eventuali script incorporati nel file SVG.
-
->[!CAUTION]
->
->Il supporto SVG richiede la versione 2.1.0 o successiva dei Componenti core insieme al [service pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=it) per AEM 6.4 o versioni successive per supportare le [funzioni dell’editor di immagini](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html?lang=it) in AEM.
 
 ## Esempio di output del componente {#sample-component-output}
 
@@ -99,7 +95,7 @@ Oltre alla normale [finestra di dialogo per modifica](#edit-dialog) e [finestra 
 * **Testo alternativo**: alternativa testuale del significato o della funzione dell’immagine per utenti ipovedenti.
    * **Ottieni testo alternativo da DAM**: se questa opzione è selezionata, come testo alternativo dell’immagine verrà inserito il valore dei `dc:description`metadati in DAM.
 * **Didascalia**: informazioni aggiuntive sull’immagine, per impostazione predefinita viene visualizzata sotto l’immagine.
-   * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title`metadati in DAM.
+   * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title` metadati in DAM.
    * **Visualizza didascalia come nota a comparsa**: se questa opzione è selezionata, la didascalia non verrà visualizzata sotto l’immagine, ma, in alcuni browser, come nota a comparsa quando si passa il puntatore sull’immagine.
 * **Collegamento**: collega l’immagine a un’altra risorsa.
    * Utilizza la finestra di dialogo per selezione per stabilire il collegamento con un’altra risorsa AEM.
