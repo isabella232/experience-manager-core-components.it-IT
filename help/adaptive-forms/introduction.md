@@ -4,9 +4,9 @@ description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la 
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
 source-git-commit: 1ac6ed00c19a8ae00e6a53d18419890a88235158
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ La versione attuale dei componenti core dei moduli adattivi include i componenti
 * [Titolo](/help/adaptive-forms/components/title.md)
 * [Procedura guidata](/help/adaptive-forms/components/wizard.md)
 
-## Configurazione dei componenti core
+## Configurare i componenti core
 
 
 Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
@@ -104,13 +104,13 @@ Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
 | AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.20.8](version.md)+ |
 | AEM 6.5 | Componente aggiuntivo Forms | [Versione 1.1.12](version.md)+ |
 
-### Creare un modulo adattivo basato su componenti core
+### Creare un modulo adattivo basato sui componenti core
 
-**AEM Forms as a Cloud Service:** Quando crei un nuovo programma AEM Forms as a Cloud Service, i componenti core di Forms adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente as a Cloud Service Forms basato su Archetype 39 o versioni precedenti, [Abilitare i componenti core Forms adattivi per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
+**AEM Forms as a Cloud Service:** quando crei un nuovo programma AEM Forms as a Cloud Service, i componenti core dei moduli adattivi sono già abilitati per il tuo ambiente. Se disponi di un ambiente Forms as a Cloud Service basato sull&#39;Archtipo 39 o versioni precedenti, vedi [Abilitare i componenti core dei moduli adattivi per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?lang=it#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
 
-Quando abiliti i componenti core per il tuo ambiente, **Forms adattivo (componente core)** il tema modello e canvas viene aggiunto all’ambiente. Se la tua versione SDK AEM precedente alla 2023.02.0, [assicurati di `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) in quanto i componenti core di Forms adattivi facevano parte della versione pre-release precedente alla versione 2023.02.0.
+Quando abiliti i componenti core per il tuo ambiente, vengono aggiunti il modello e l&#39;area di lavoro del **componente core moduli adattivi**. Se la tua versione dell’SDK di AEM è precedente alla 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
-Per utilizzare la procedura guidata Adattivo di Forms e l’editor di moduli adattivi per creare un modulo adattivo, consulta Creare un modulo adattivo ([Componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it?)).
+Per utilizzare la procedura guidata e l’editor di moduli adattivi per creare un modulo adattivo, consulta Creare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it) moduli adattivi.
 
 
 
