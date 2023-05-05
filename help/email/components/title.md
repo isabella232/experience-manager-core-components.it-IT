@@ -4,7 +4,7 @@ description: Il componente Titolo e-mail è un componente di intestazione sezion
 role: Architect, Developer, Admin, User
 exl-id: f65b6973-bb36-406f-bbea-f85a23f5340b
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 |---|---|---|
 | v1 | Compatibile  | - |
 
-Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, consulta il documento [Versioni dei Componenti core](/help/versions.md).
+Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, consulta il documento [Versioni dei componenti core E-mail](/help/versions.md).
 
 ### Dettagli tecnici {#technical-details}
 
