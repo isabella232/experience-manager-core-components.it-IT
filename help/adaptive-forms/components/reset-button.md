@@ -4,7 +4,7 @@ description: Utilizzo o personalizzazione del componente core del pulsante Ripri
 role: Architect, Developer, Admin, User
 exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
 source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 100%
 

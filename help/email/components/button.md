@@ -4,7 +4,7 @@ description: Il componente Pulsante e-mail consente di configurare e visualizzar
 role: Architect, Developer, Admin, User
 exl-id: b144e8d1-1097-475d-b2eb-3353c176afb9
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
 

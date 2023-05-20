@@ -4,7 +4,7 @@ description: Risolvi i problemi relativi ai componenti core e consenti ad altri 
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 3d43ab39018e786fdca73dc995116344b5e59b91
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 100%
 

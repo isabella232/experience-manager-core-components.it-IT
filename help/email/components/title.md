@@ -4,7 +4,7 @@ description: Il componente Titolo e-mail è un componente di intestazione sezion
 role: Architect, Developer, Admin, User
 exl-id: f65b6973-bb36-406f-bbea-f85a23f5340b
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 100%
 

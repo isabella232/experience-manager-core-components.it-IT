@@ -4,7 +4,7 @@ description: Esistono diversi modi per includere le librerie client a seconda de
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 100%
 

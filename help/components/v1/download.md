@@ -2,15 +2,15 @@
 title: Componente Scarica (v1)
 description: Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 role: Architect, Developer, Admin, User
-source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
-workflow-type: ht
+exl-id: ebd63522-218d-4784-bea0-1627c64f5230
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 100%
 
 ---
 
-
-# Componente Scarica  (v1) {#download-component}
+# Componente Scarica (v1) {#download-component}
 
 Il componente core Scarica consente di creare un’opzione di scaricamento su una pagina.
 

@@ -4,7 +4,7 @@ description: Il componente Teaser e-mail può mostrare un’immagine, un titolo,
 role: Architect, Developer, Admin, User
 exl-id: d6123b22-7cba-406c-986d-b6f00322d135
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 

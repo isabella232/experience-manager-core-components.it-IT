@@ -2,13 +2,13 @@
 title: Componente Navigazione (v1)
 description: Il componente Navigazione consente agli utenti di navigare facilmente nella struttura globalizzata di un sito.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: ht
+exl-id: 0b7de79a-e0c7-4cf9-b5a9-c78cbc3ecd2f
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 100%
 
 ---
-
 
 # Componente Navigazione (v1) {#navigation-component}
 

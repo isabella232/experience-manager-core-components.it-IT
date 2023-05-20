@@ -3,7 +3,7 @@ title: Script in bundle precompilati
 description: Scopri come distribuire gli script dei componenti tramite bundle OSGi in Adobe Experience Manager Cloud Service.
 exl-id: 3edc388f-01b2-45cc-bd56-f22e5a5a8624
 source-git-commit: 767f83fbad11a108aab25be2b77759af3c08b864
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 100%
 

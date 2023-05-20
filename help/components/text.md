@@ -4,7 +4,7 @@ description: Il componente Testo è un componente per la modifica e la composizi
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
 source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 100%
 

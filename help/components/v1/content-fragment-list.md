@@ -2,13 +2,13 @@
 title: Componente Elenco frammenti di contenuto (v1)
 description: Il componente core Elenco frammenti di contenuto consente la visualizzazione di un elenco di frammenti di contenuto.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: ht
+exl-id: 37d6632d-360d-4081-8279-8efbb369a82e
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 100%
 
 ---
-
 
 # Componente Elenco frammenti di contenuto (v1) {#content-fragment-list-component}
 

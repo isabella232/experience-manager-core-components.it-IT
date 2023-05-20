@@ -2,13 +2,13 @@
 title: Componente Pagina (v2)
 description: Il componente Pagina è una pagina estensibile concepita per funzionare con l’editor di modelli e consentire l’assemblaggio di intestazione/piè di pagina e altri componenti della struttura della pagina.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
-workflow-type: ht
+exl-id: e85fe4db-6de4-4a84-a54c-bd07a67efed3
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
 ---
-
 
 # Componente Pagina  (v2) {#page-component}
 
@@ -75,7 +75,7 @@ Le librerie possono essere configurate per i campi **Librerie client** e **Intes
 * Per rimuovere un campo, tocca o fai clic sull’icona cestino accanto al campo da rimuovere.
 * Per cambiare l’ordine di caricamento, tocca o fai clic e trascina la maniglia che si trova accanto al campo da spostare.
 
-Per ulteriori informazioni sull’utilizzo delle librerie client, vedi [Utilizzo delle librerie client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it).
+Per ulteriori informazioni sull’utilizzo delle librerie client, vedi [Utilizzo delle librerie client](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >

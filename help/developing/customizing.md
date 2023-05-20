@@ -4,7 +4,7 @@ description: I Componenti core implementano diversi modelli che consentono una f
 role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
 
