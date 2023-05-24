@@ -3,20 +3,20 @@ title: Versioni dei Componenti core
 description: Le versioni dei Componenti core pubblicate possono contenere più di una versione degli stessi Componenti core. Questo documento spiega cosa s’intende per versioni e come comprendere la compatibilità con i Componenti core e AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 468078da4d31d7eedf9bd73cbcf2d71107bfe3f4
+source-git-commit: 1b419d6f340f8062945f96b1605a67620d5f79af
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 100%
+source-wordcount: '2988'
+ht-degree: 98%
 
 ---
 
 # Versioni dei Componenti core {#core-components-versions}
 
-La versione corrente dei Componenti core è la 2.22.4 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it).
+La versione corrente dei Componenti core è la 2.22.10 ed è compatibile con le installazioni di [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it) e [AEM on-premise](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=it).
 
 ## Cronologia delle versioni e compatibilità {#release-history-and-compatibility}
 
-I Componenti core sono progettati per essere flessibili e compatibili con tutte le versioni di AEM supportate. Per questo motivo, una versione dei componenti può contenere più versioni dello stesso componente.
+I Componenti core sono progettati per essere flessibili e compatibili con tutte le versioni di AEM supportate. Per questo motivo, una versione dei Componenti può contenere più versioni dello stesso componente.
 
 Le tabelle seguenti illustrano la compatibilità delle versioni dei Componenti core insieme alle versioni dei Componenti inclusi in ciascuna versione.
 
@@ -26,6 +26,9 @@ La tabella che segue, il cui contenuto è [disponibile su GitHub con tutti i det
 
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Data di pubblicazione |
 |---|---|---|---|---|---|---|
+| [2.22.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.10) | Questa versione patch corregge due regressioni. | - | 6.5.14.0+ * | Continua | 8, 11 | 11 maggio 2023 |
+| [2.22.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.8) | Questa versione patch riprende le funzioni che sono state accidentalmente rimosse nella versione precedente. | - | 6.5.14.0+ * | Continua | 8, 11 | 9 maggio 2023 |
+| [2.22.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.6) | Questa versione patch corregge una regressione in [Componente contenitore.](/help/components/container.md) | - | 6.5.14.0+ * | Continua | 8, 11 | 21 aprile 2023 |
 | [2.22.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.4) | Questa è una versione patch che serve a risolvere un problema del [Componente Elenco Frammento di contenuto.](/help/components/content-fragment-list.md) | - | 6.5.14.0+ * | Continua | 8, 11 | 5 aprile 2023 |
 | [2.22.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.2) | Questa è una versione di manutenzione che serve a risolvere due problemi introdotti nella versione 2.22.0 | - | 6.5.14.0+ * | Continua | 8, 11 | 31 marzo 2023 |
 | [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Questa versione introduce una nuova versione del [Componente elenco](/help/components/list.md) insieme ai miglioramenti apportati al [Teaser](/help/components/teaser.md) e all’aggiornamento del [Visualizzatore PDF](/help/components/pdf-viewer.md) e del [Carosello](/help/components/carousel.md). | - | 6.5.14.0+ * | Continua | 8, 11 | 9 febbraio 2023 |
