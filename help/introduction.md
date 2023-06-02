@@ -3,14 +3,14 @@ title: Introduzione ai Componenti core
 description: Risolvi i problemi relativi ai componenti core e consenti ad altri utenti di creare elementi in AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 290fe27ef28e0ae30c3fa50672b550ebf11cadc3
+source-git-commit: b7b06b5760e233756a0e8906251fa3b8ab401908
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 100%
 
 ---
 
-# Introduzione ai Componenti core {#core-components-introduction}
+# Introduzione ai Componenti core{#core-components-introduction}
 
 In Adobe Experience Manager, i componenti sono gli elementi strutturali che costituiscono il contenuto delle pagine che vengono create. I componenti sono sempre stati un elemento fondamentale dell’esperienza AEM perché permettono agli autori di creare pagine in modo semplice ed efficiente e agli sviluppatori di realizzare componenti in modo flessibile ed estensibile.
 
@@ -107,7 +107,7 @@ La versione corrente dei Componenti core include i seguenti componenti:
 
 | Componenti core  Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
 |---------|---------|---------|---------|---------|
-| [2.22.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.10) | Continuo | 6.5.14.0+ * | 8, 11 | 3.3.9+ |
+| [2.22.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.12) | Continuo | 6.5.14.0+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
