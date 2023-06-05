@@ -4,9 +4,9 @@ description: I componenti core E-mail vengono pubblicati come versioni.
 role: Architect, Developer, Admin, User
 exl-id: 9733659a-641c-4a98-8d10-84e93e0e0a5d
 source-git-commit: 7ab19cb73493121282e90e752b38c445fd0962f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Consulta la [Sezione Requisiti](/help/email/introduction.md#requirements) del do
 
 I componenti core E-mail sono progettati per essere flessibili e compatibili con tutte le versioni di AEM supportate. I dettagli completi sulla cronologia delle versioni dei componenti core E-mail [sono disponibili su GitHub.](https://github.com/adobe/aem-core-email-components/releases) Tuttavia, la tabella seguente offre una panoramica delle versioni dei componenti core E-mail e della loro compatibilità con le versioni di AEM e Java.
 
-| Versione | Descrizione | AEM 6.5 | Componenti core  | Java | Data di pubblicazione |
+| Versione | Descrizione | AEM 6.5 | Componenti core | Java | Data di pubblicazione |
 |---|---|---|---|---|---|
 | [1.2.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.2.0) | Questa versione introduce i test e2e di Selenium e include una serie di correzioni di bug. | 6.5.14.0+ | [2.21.2+](/help/versions.md) | 8, 11 | 29 novembre 2022 |
 | [1.0.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.0.0) | Prima versione pubblica, consulta le note sulla versione per una descrizione dettagliata | 6.5.14.0+ | [2.21.2+](/help/versions.md) | 8, 11 | 29 novembre 2022 |
