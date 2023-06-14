@@ -4,9 +4,9 @@ description: Le versioni dei Componenti core pubblicate possono contenere più d
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 source-git-commit: b7b06b5760e233756a0e8906251fa3b8ab401908
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3006'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
