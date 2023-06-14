@@ -4,9 +4,9 @@ description: Le versioni dei Componenti core pubblicate possono contenere più d
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
 source-git-commit: 8648a8dabd1999c9d3bbb76bb4f04f16eafda650
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 | [2.0.6](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | In questa versione vengono introdotti più formati per il componente core dell’inserimento numerico. | Continua | 8, 11 | 08 febbraio 2023 |
 | [2.0.4](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | In questa versione viene introdotto il supporto per i componenti core per AEM as a Cloud Service. | Continua | 8, 11 | 30 gennaio 2023 |
 
-## Cronologia delle versioni di Forms di AEM 6.5 {#aem-as-form-version-history}
+## Cronologia delle versioni di AEM 6.5 Forms {#aem-as-form-version-history}
 
 La tabella seguente presenta un elenco delle versioni dei Componenti core compatibili con AEM 6.5 Form on-premise e AMS disponibili in [GitHub con dettagli completi relativi alle loro versioni](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12).
 
