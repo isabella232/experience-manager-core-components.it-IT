@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core del pulsante per m
 role: Architect, Developer, Admin, User
 exl-id: cb75929b-8c86-49d1-b51a-368f5b80b1a9
 source-git-commit: 90a48e6203ce611679c2a7269ffb5d48912e3d71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1406'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Un pulsante in un modulo adattivo è un elemento dell’interfaccia utente che c
 
 L’editor di regole per moduli adattivi consente agli utenti di impostare varie azioni per il componente pulsante. Queste azioni includono l’apertura di un sito web, la visualizzazione o l’eliminazione di componenti modulo, l’aggiunta di un’istanza di un pannello o di un componente, l’invio o la reimpostazione di un modulo e altro ancora.
 
-I Forms adattivi dispongono di componenti separati per [Pulsante Invia](/help/adaptive-forms/components/submit-button.md) e [Pulsante Reimposta](/help/adaptive-forms/components/reset-button.md), che consente agli utenti di inviare o reimpostare in modo semplice un modulo. Il componente Pulsante può essere configurato in modo flessibile per eseguire queste azioni in base a esigenze specifiche.
+I moduli adattivi presentano componenti separati per il [Pulsante Invia](/help/adaptive-forms/components/submit-button.md) e il [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md), che consentono agli utenti di inviare o ripristinare un modulo in modo opportuno. Il componente Pulsante può essere configurato in modo flessibile per eseguire queste azioni in base alle esigenze specifiche.
 
 Gli utenti possono accedere all’elenco completo delle azioni supportate per il componente pulsante utilizzando l’editor di regole per moduli adattivi. L’editor di regole consente agli utenti di creare regole attivate da vari eventi, ad esempio quando si fa clic su un pulsante, quando si carica un modulo o si modifica il valore di un campo. Queste regole possono quindi essere utilizzate per eseguire varie azioni, ad esempio per mostrare o nascondere i componenti, impostare i valori dei campi o inviare il modulo.
 
