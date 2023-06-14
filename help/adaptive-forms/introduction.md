@@ -6,7 +6,7 @@ exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
 source-git-commit: a450d265d10984b879fcb1ad4ffe0f3ce3edef5b
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -94,9 +94,9 @@ La versione attuale dei componenti core dei moduli adattivi include i componenti
 * [Titolo](/help/adaptive-forms/components/title.md)
 * [Procedura guidata](/help/adaptive-forms/components/wizard.md)
 
-## Configurare i componenti core di Forms adattivi
+## Configurazione dei componenti core dei moduli adattivi
 
-Abilitando i componenti core Adaptive Forms su AEM Forms as a Cloud Service, puoi iniziare a creare, pubblicare e distribuire componenti core basati su Adaptive Forms e Headless Forms utilizzando le istanze del Cloud Service AEM Forms su più canali. Per istruzioni dettagliate sull’abilitazione dei componenti core Modulo adattivo, consulta [Abilitare i componenti core Adaptive Forms nell’ambiente di sviluppo as a Cloud Service e locale di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html).
+Abilitando i componenti core dei moduli adattivi su AEM Forms as a Cloud Service, è possibile iniziare a creare, pubblicare e distribuire componenti core basati su moduli adattivi e moduli headless utilizzando le istanze del Cloud Service di AEM Forms su più canali. Per istruzioni dettagliate sull’abilitazione dei componenti core dei moduli adattivi, consulta [Abilita i componenti core dei moduli adattivi nell’ambiente di sviluppo locale di AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it).
 
 Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
 
@@ -105,12 +105,12 @@ Di seguito sono riportati i requisiti dei componenti core dei moduli adattivi.
 | AEM as a Cloud Service | Forms: registrazione digitale | [Versione 2.0.10](version.md)+ |
 | AEM 6.5 | Componente aggiuntivo Forms | [Versione 1.1.12](version.md)+ |
 
-Se la versione dell’SDK AEM Cloud Service precedente alla versione 2023.02.0, [assicurati di avere `prerelease` flag abilitato nell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features) in quanto i Componenti core adattivi di Forms facevano parte della pre-release prima della versione 2023.02.0.
+Se la versione dell’SDK del Cloud Service di AEM è precedente alla versione 2023.02.0, [assicurati di aver abilitato il flag `prerelease` nel tuo ambiente ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features), poiché i componenti core dei moduli adattivi facevano parte della versione prerelease precedente alla versione 2023.02.0.
 
 
-### Creare un modulo adattivo basato sui componenti core
+### Crea un modulo adattivo basato sui componenti core
 
-Per creare un modulo adattivo su AEM Forms as a Cloud Service, consulta [Creare un modulo adattivo (componenti core)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it).
+Per creare un modulo adattivo su AEM Forms as a Cloud Service, consulta [Crea un modulo adattivo (componenti core)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it).
 
 
 
