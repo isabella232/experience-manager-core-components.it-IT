@@ -4,7 +4,7 @@ description: Un modello di progetto per applicazioni basate su AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: fac7c40919d2c31a8004bd1f47500ac44f99fb61
+source-git-commit: d25e659828becc0d9285297d00c53530bb33785a
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
@@ -62,7 +62,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
 
 * Sostituisci `XX` con il [numero di versione di Archetipo](#requirements) più recente.
 * Imposta `aemVersion=cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it);\
-   Imposta `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise.
+  Imposta `aemVersion=6.5.0` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise.
 La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non cloud, in quanto i Componenti core vengono forniti come OOTB per AEM as a Cloud Service.
 * Imposta `appTitle="My Site"` per definire il titolo del sito web e i gruppi di componenti.
 * Imposta `appId="mysite"` per definire l’ID dell’artefatto Maven, i nomi delle cartelle di componenti, configurazione e contenuto nonché i nomi delle librerie client.
@@ -73,10 +73,10 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 
 | Nome | Predefiniti | Descrizione |
 |---------------------------|----------------|--------------------|
-| `appTitle` |  | Titolo dell’applicazione, verrà utilizzato come titolo del sito web e dei gruppi di componenti (ad esempio, `"My Site"`). |
-| `appId` |  | Nome tecnico, verrà utilizzato per i nomi di componenti, cartelle di configurazione e cartelle di contenuto nonché per i nomi delle librerie client (ad esempio, `"mysite"`). |
+| `appTitle` |                | Titolo dell’applicazione, verrà utilizzato come titolo del sito web e dei gruppi di componenti (ad esempio, `"My Site"`). |
+| `appId` |                | Nome tecnico, verrà utilizzato per i nomi di componenti, cartelle di configurazione e cartelle di contenuto nonché per i nomi delle librerie client (ad esempio, `"mysite"`). |
 | `artifactId` | *`${appId}`* | ID artefatto Maven di base (ad esempio, `"mysite"`). |
-| `groupId` |  | ID gruppo Maven di base (ad esempio, `"com.mysite"`). Questo valore deve contenere un [nome pacchetto Java valido](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7). |
+| `groupId` |                | ID gruppo Maven di base (ad esempio, `"com.mysite"`). Questo valore deve contenere un [nome pacchetto Java valido](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7). |
 | `package` | *`${groupId}`* | Pacchetto sorgente Java (ad esempio, `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Versione del progetto (ad esempio, `1.0-SNAPSHOT`). |
 | `aemVersion` | `cloud` | Versione AEM di destinazione (può essere `cloud` per [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=it); `6.5.0` o `6.4.4` per [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) oppure on-premise). |
@@ -89,7 +89,7 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 | `includeExamples` | `n` | Include un esempio di sito nella [Libreria dei componenti](https://www.aemcomponents.dev/) (può essere `y` o `n`). |
 | `includeErrorHandler` | `n` | Include una pagina di risposta 404 personalizzata che sarà globale per l’intera istanza (può essere `y` o `n`). |
 | `includeCommerce` | `n` | Include le dipendenze dei [Componenti core CIF](https://github.com/adobe/aem-core-cif-components) e genera gli artefatti corrispondenti. |
-| `commerceEndpoint` |  | Obbligatorio solo per CIF. Endpoint opzionale del servizio GraphQL del sistema commerciale da utilizzare (ad esempio `https://hostname.com/grapql`). |
+| `commerceEndpoint` |                | Obbligatorio solo per CIF. Endpoint opzionale del servizio GraphQL del sistema commerciale da utilizzare (ad esempio `https://hostname.com/grapql`). |
 | `includeFormscommunications` | `n` | Include [componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi Forms Communications. |
 | `includeFormsenrollment` | `n` | Include [Componenti core Forms](https://github.com/adobe/aem-core-forms-components) dipendenze, modelli, modelli di dati dei moduli, temi e genera artefatti corrispondenti per i programmi di iscrizione Forms. |
 | `sdkFormsVersion` | `latest` | Quando `aemVersion=cloud` e uno dei `includeFormsenrollment=y` o `includeFormscommunications=y`, è possibile specificare una versione dell’SDK per Forms (ad esempio `2020.12.17.02`). |
@@ -104,7 +104,7 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 
 | Archetipo | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [41](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-41) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [42](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-42) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Imposta l’ambiente di sviluppo locale per l’[SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o per [versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
