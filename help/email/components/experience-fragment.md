@@ -4,9 +4,9 @@ description: Il componente Frammento esperienza e-mail consente all’autore del
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
 source-git-commit: e5afead6bfdcc59cbd6da888f4e1e36038c6c0f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Compatibile  | - |
+| v1 | Compatibile | - |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core e-mail, vedi il documento [Versioni dei Componenti core e-mail.](/help/email/versions.md)
 
@@ -107,7 +107,7 @@ Il componente Frammento esperienza e-mail tenta di trovare un componente localiz
 
 ## Dettagli tecnici {#technical-details}
 
-Leggi le ultime [documentazione tecnica sul componente Frammento esperienza](https://www.adobe.com/go/aem_cmp_xf_v1).
+Leggi l’ultima [documentazione tecnica sul componente Frammento esperienza](https://www.adobe.com/go/aem_cmp_title_v1_it).
 
 Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documentazione per gli sviluppatori di Componenti core.](/help/developing/overview.md)
 
