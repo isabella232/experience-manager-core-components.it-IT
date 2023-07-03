@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Piè di pagina
 description: Utilizzo o personalizzazione del componente core piè di pagina dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 100%
+source-wordcount: '806'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a 
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile  con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
+| v1 | Compatibile con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -85,6 +85,7 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
       1. La finestra di dialogo per selezione consente di scegliere un percorso in AEM.
       1. Se il collegamento non è in AEM, utilizza l’URL assoluto.
       1. I percorsi non assoluti vengono interpretati come relativi ad AEM.
+
    * **Testo alternativo**: inserisci un testo descrittivo alternativo per il collegamento.
 
    * **Target**: scegli il comportamento del collegamento
@@ -93,11 +94,10 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
       * Nuova scheda
       * Frame principale
       * Frame superiore
+
    * **Icona Scollega**: questa opzione rimuove un collegamento già applicato al testo selezionato. Questa opzione è attiva solo se è già selezionato il collegamento.
 
    * **Icona del formato paragrafo**: questa opzione consente di applicare la formattazione del paragrafo al testo selezionato. Consente inoltre di formattare il testo inserito dopo il cursore. Definisce il livello di intestazione del titolo.
-
-
 
 * **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel livello dati.
 
@@ -105,3 +105,8 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
+## Articolo correlato {#related-article}
+
+* [Creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+
+* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
