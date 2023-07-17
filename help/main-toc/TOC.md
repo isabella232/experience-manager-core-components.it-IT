@@ -6,7 +6,7 @@ feature: Core Components
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
 source-git-commit: b39cd395d17f6aab7376e01fc01a7c0e98b2460f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
 ht-degree: 100%
 
