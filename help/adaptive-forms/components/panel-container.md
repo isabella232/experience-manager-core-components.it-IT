@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -77,15 +77,15 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
 
 ### Scheda Ripeti pannello {#repeat-panel}
 
-![scheda di ripetizione](/help/adaptive-forms/assets/repeat-panel.png)
+![scheda ripeti](/help/adaptive-forms/assets/repeat-panel.png)
 
-È possibile utilizzare le opzioni di ripetibilità per duplicare il contenitore del pannello e i relativi componenti secondari, definire un conteggio di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Contenitore pannello e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
+È possibile utilizzare le opzioni di ripetibilità per duplicare il contenitore di pannelli e i relativi componenti secondari, definire un numero di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Contenitore di pannelli e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
 
-* **Creazione guidata ripetibile**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzionalità di ripetibilità.
-* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il contenitore del pannello può essere ripetuto. Il valore zero indica che il pannello della procedura guidata non è ripetuto. Il valore predefinito è zero.
-* **Numero massimo di ripetizioni**: imposta il numero massimo di volte in cui il contenitore del pannello può essere ripetuto. Per impostazione predefinita, questo valore è illimitato.
+* **Rendi ripetibile la procedura guidata**: una funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzione di ripetibilità.
+* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il contenitore di pannelli può essere ripetuto. Il valore zero indica che il pannello della procedura guidata non è ripetuto. Il valore predefinito è zero.
+* **Numero massimo di ripetizioni**: imposta il numero massimo di volte in cui il contenitore di pannelli può essere ripetuto. Per impostazione predefinita, questo valore è illimitato.
 
-Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore del pannello, segui i passaggi descritti in [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) articolo.
+Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore di pannelli, segui i passaggi descritti nell’articolo [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=it).
 
 ### Scheda Contenuto Guida {#help-content}
 

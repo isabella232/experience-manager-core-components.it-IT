@@ -6,7 +6,7 @@ exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
 source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
 source-wordcount: '1950'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -81,15 +81,15 @@ Puoi personalizzare facilmente l’esperienza del pannello a soffietto per i vis
 
 ### Ripeti pannello a soffietto {#repeat-accordion}
 
-![repeat-pannello a soffietto](/help/adaptive-forms/assets/repeat-accordion.png)
+![ripeti pannello a soffietto](/help/adaptive-forms/assets/repeat-accordion.png)
 
-È possibile utilizzare le opzioni di ripetibilità per duplicare i pannelli Pannello a soffietto e i relativi componenti figlio, definire un conteggio di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Pannello a soffietto e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
+È possibile utilizzare le opzioni di ripetibilità per duplicare i pannelli a soffietto e i relativi componenti secondari, definire un numero di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Pannello a soffietto e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
 
-* **Rendi il pannello a soffietto ripetibile**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzionalità di ripetibilità.
-* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il pannello a soffietto può essere ripetuto. Il valore zero indica che il pannello Pannello a soffietto non è ripetuto; il valore predefinito è zero.
+* **Rendi ripetibile il pannello a soffietto**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzione di ripetibilità.
+* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il pannello a soffietto può essere ripetuto. Il valore zero indica che il pannello a soffietto non è ripetuto; il valore predefinito è zero.
 * **Numero massimo di ripetizioni**: imposta il numero massimo di ripetizioni del pannello a soffietto. Per impostazione predefinita, questo valore è illimitato.
 
-Per gestire in modo efficace le sezioni ripetibili nel Pannello a soffietto, segui i passaggi descritti in [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) articolo.
+Per gestire in modo efficace le sezioni ripetibili nel pannello a soffietto, segui i passaggi descritti nell’articolo [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=it).
 
 ### Scheda Elementi {#items-tab}
 
