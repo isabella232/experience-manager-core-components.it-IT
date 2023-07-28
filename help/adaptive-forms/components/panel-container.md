@@ -3,9 +3,9 @@ title: Componente core dei moduli adattivi - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore di pannelli dei moduli adattivi.
 role: Architect, Developer, Admin, User
 source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1402'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,6 +109,6 @@ Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore
 
 ## Articolo correlato {#related-article}
 
-* [Creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
 
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
