@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core delle schede orizz
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
 source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -76,13 +76,13 @@ Puoi personalizzare facilmente l’esperienza con le schede orizzontali per i vi
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/repeat-tabsontop.png)
 
-È possibile utilizzare le opzioni di ripetibilità per duplicare il componente Schede orizzontali e i relativi componenti figlio, definire un conteggio di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Schede orizzontali e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
+È possibile utilizzare le opzioni di ripetibilità per duplicare il componente Schede orizzontali e i relativi componenti secondari, definire un numero di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Schede orizzontali e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
 
-* **Rendi ripetibili le tabulazioni orizzontali**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzionalità di ripetibilità.
-* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il componente Schede orizzontali può essere ripetuto. Il valore zero indica che il componente Schede orizzontali non è ripetuto. Il valore predefinito è zero.
+* **Rendi ripetibili le schede orizzontali**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzione di ripetibilità.
+* **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il componente Schede orizzontali può essere ripetuto. Il valore zero indica che il componente Schede orizzontali non è ripetuto; il valore predefinito è zero.
 * **Numero massimo di ripetizioni**: imposta il numero massimo di volte in cui il componente Schede orizzontali può essere ripetuto. Per impostazione predefinita, questo valore è illimitato.
 
-Per gestire in modo efficace le sezioni ripetibili nelle schede Orizzontali, segui i passaggi descritti in [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) articolo.
+Per gestire in modo efficace le sezioni ripetibili nelle schede Orizzontali, segui i passaggi descritti nell’articolo [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=it).
 
 ### Scheda Elementi {#items-tab}
 
@@ -92,7 +92,7 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 * **Icona**: l’icona identifica il componente del pannello nell’elenco. Passa il puntatore del mouse sull’icona per visualizzare il nome completo del componente come descrizione comando.
 * **Descrizione**: descrizione utilizzata come testo del pannello. Per impostazione predefinita, il nome del componente selezionato per il pannello.
-* **Elimina** - Tocca o fai clic per eliminare il pannello dal componente Schede orizzontali.
+* **Elimina**: tocca o fai clic per eliminare il pannello dal componente Schede orizzontali.
 * **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
 ### Scheda Contenuto Guida {#help-content}
@@ -115,10 +115,10 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Schede orizzontali di Forms adattivo, puoi impostare quanto segue:
+La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Schede orizzontali dei moduli adattivi, è possibile impostare quanto segue:
 
-* Componenti core che un creatore di moduli può aggiungere alle schede orizzontali nell’editor di Forms adattivo
-* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente Schede orizzontali nell’editor di Forms adattivo.
+* I componenti core che un creatore di moduli può aggiungere alle Schede orizzontali nell’editor di moduli adattivi
+* Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente Schede orizzontali nell’editor dei moduli adattivi.
 
 Questo permette di rendere il processo di creazione e personalizzazione dei moduli più semplice ed efficace.
 
@@ -136,6 +136,6 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 ## Articolo correlato {#related-article}
 
-* [Creare un modulo adattivo in una pagina o in un frammento di esperienza di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
 
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
