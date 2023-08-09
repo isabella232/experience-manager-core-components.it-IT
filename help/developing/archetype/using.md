@@ -5,9 +5,9 @@ feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
 source-git-commit: e0dff3b15c9637292eb2bb89836215afc0fcf8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2201'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ L’archetipo del progetto rende facile iniziare a sviluppare in AEM. Puoi inizi
 
 * Esercitazione WKND: per un’ottima introduzione allo sviluppo in AEM, incluso il modo di utilizzare l’archetipo, vedi la [Guida introduttiva ai AEM Sites: esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it) per un esempio pratico che illustra come utilizzare l’archetipo per implementare un semplice progetto.
 * Esercitazione eventi WKND: se sei particolarmente interessato allo sviluppo di applicazioni a pagina singola (SPA) in AEM, vedi [l’esercitazione sugli eventi WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it) dedicata.
-* Scarica e inizia da solo! - Puoi scaricare facilmente l’archetipo del progetto corrente disponibile su GitHub e creare il tuo primo progetto [seguendo i semplici passaggi descritti di seguito](#how-to-use-the-archetype).
+* Scarica e inizia da solo! : Puoi scaricare facilmente l’archetipo del progetto corrente disponibile su GitHub e creare il tuo primo progetto [seguendo i semplici passaggi descritti di seguito](#how-to-use-the-archetype).
 
 ## Informazioni sull’utilizzo dell’archetipo {#what-you-get}
 
@@ -45,7 +45,7 @@ L’Archetipo progetto AEM è costituito da moduli:
 * **all**: è un singolo pacchetto di contenuti che incorpora tutti i moduli compilati (bundle e pacchetti di contenuti), comprese le dipendenze dei fornitori.
 * **analyse**: esegue l’analisi del progetto, che fornisce una convalida aggiuntiva per la distribuzione in AEM as a Cloud Service.
 
-![Organizzazione del pacchetto contenuti](/help/assets/content-package-organization.png)
+![Organizzazione del pacchetto di contenuti](/help/assets/content-package-organization.png)
 
 I moduli di Archetipo progetto AEM rappresentati in Maven vengono distribuiti ad AEM come pacchetti di contenuti che rappresentano l’applicazione, il contenuto e i bundle OSGi necessari.
 
