@@ -2,10 +2,10 @@
 title: Componente core dei moduli adattivi - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore di pannelli dei moduli adattivi.
 role: Architect, Developer, Admin, User
-source-git-commit: 9a80b453d6a6cf7b347128654d3b5e673a063505
+source-git-commit: b6e3a443c7425a60fc6c3469dc273960a4e29088
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 90%
+source-wordcount: '1539'
+ht-degree: 91%
 
 ---
 
@@ -133,3 +133,28 @@ Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore
 - [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
 
 - [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+
+
+## Vedi anche {#see-also}
+
+- [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
+- [Pulsante](/help/adaptive-forms/components/button.md)
+- [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
+- [Selettore data](/help/adaptive-forms/components/date-picker.md)
+- [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
+- [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
+- [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
+- [Allegato file](/help/adaptive-forms/components/file-attachment.md)
+- [Piè di pagina](/help/adaptive-forms/components/footer.md)
+- [Intestazione](/help/adaptive-forms/components/header.md)
+- [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
+- [Immagine](/help/adaptive-forms/components/image.md)
+- [Inserimento numero](/help/adaptive-forms/components/number-input.md)
+- [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
+- [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
+- [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
+- [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
+- [Inserimento testo](/help/adaptive-forms/components/text-input.md)
+- [Testo](/help/adaptive-forms/components/text.md)
+- [Titolo](/help/adaptive-forms/components/title.md)
+- [Procedura guidata](/help/adaptive-forms/components/wizard.md)

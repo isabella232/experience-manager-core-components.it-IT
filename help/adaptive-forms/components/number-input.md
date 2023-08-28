@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Input numero
 description: Utilizzo o personalizzazione del componente core di inserimento numero dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
-workflow-type: ht
-source-wordcount: '1834'
-ht-degree: 100%
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 99%
 
 ---
 
@@ -148,3 +148,28 @@ La scheda dei formati consente di specificare i formati numerici predefiniti e p
 * [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
 
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+
+
+## Vedi anche {#see-also}
+
+* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
+* [Pulsante](/help/adaptive-forms/components/button.md)
+* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
+* [Selettore data](/help/adaptive-forms/components/date-picker.md)
+* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
+* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
+* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
+* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
+* [Piè di pagina](/help/adaptive-forms/components/footer.md)
+* [Intestazione](/help/adaptive-forms/components/header.md)
+* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Immagine](/help/adaptive-forms/components/image.md)
+* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
+* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
+* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
+* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
+* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
+* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
+* [Testo](/help/adaptive-forms/components/text.md)
+* [Titolo](/help/adaptive-forms/components/title.md)
+* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
