@@ -5,35 +5,35 @@ role: Architect, Developer, Admin, User
 hide: true
 hidefromtoc: true
 source-git-commit: 8db061f3d6f1041336c379b34f3b6b7f03083560
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
-# Google reCPATCHA {#google-recaptcha}
+# reCPATCHA di Google {#google-recaptcha}
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o scopi dannosi.
+Il CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) è un programma comunemente utilizzato nelle transazioni online per distinguere tra esseri umani e programmi o bot automatizzati. Rappresenta una sfida e valuta la risposta dell’utente per determinare se si tratta di un essere umano o di un bot che interagisce con il sito. Impedisce all’utente di procedere se il test non riesce e contribuisce a rendere sicure le transazioni online impedendo ai bot di pubblicare spam o avere scopi dannosi.
 
-AEM Forms as a Cloud Service supporta Google reCAPTCHA v2 in Adaptive Forms. Puoi utilizzarlo per presentare una sfida CAPTCHA all’invio del modulo
+AEM Forms as a Cloud Service supporta il reCAPTCHA di Google v2 nei Moduli adattivi. Puoi utilizzarlo per presentare una sfida CAPTCHA all’invio del modulo
 
 ## Utilizzo {#reasons-to-use-google-recaptcha}
 
 
-- **Prevenzione di spam e bot**: uno dei motivi principali per utilizzare reCAPTCHA è quello di evitare che le inviazioni di spam e i bot dannosi inondino il modulo. Gli algoritmi avanzati di reCAPTCHA possono rilevare i tentativi automatizzati di inviare il modulo, garantendo in tal modo che solo gli utenti legittimi possano interagire con esso.
+- **Prevenzione di spam e bot**: uno dei motivi principali per cui utilizzare un reCAPTCHA è quello di evitare che gli invii di spam e i bot dannosi invadano il modulo. Gli algoritmi avanzati di reCAPTCHA possono rilevare i tentativi automatizzati di inviare il modulo, garantendo in tal modo che solo gli utenti legittimi possano interagire con esso.
 
-- **Sicurezza avanzata**: implementando reCAPTCHA, aggiungi un ulteriore livello di sicurezza al modulo adattivo. In questo modo è possibile proteggere le informazioni riservate e impedire a utenti malintenzionati di sfruttare le vulnerabilità.
+- **Sicurezza avanzata**: implementando un reCAPTCHA, aggiungi un ulteriore livello di sicurezza al modulo adattivo. In questo modo è possibile proteggere le informazioni riservate e impedire a utenti malintenzionati di sfruttare le vulnerabilità.
 
-- **Esperienza utente**: mentre i CAPTCHA possono a volte essere visti come un inconveniente, l’approccio adattivo di reCAPTCHA significa che alla maggior parte degli utenti viene presentata un’esperienza semplificata e intuitiva che richiede un’interazione minima. Questo può contribuire a mantenere un’esperienza utente positiva scoraggiando al contempo i bot.
+- **Esperienza utente**: mentre a volte i CAPTCHA possono essere considerati come un inconveniente, l’approccio adattivo di reCAPTCHA implica che alla maggior parte degli utenti viene presentata un’esperienza semplificata e intuitiva che richiede un’interazione minima. Questo può contribuire a mantenere un’esperienza utente positiva scoraggiando al contempo i bot.
 
-- **Adattabilità**: il meccanismo adattivo di reCAPTCHA analizza il comportamento degli utenti e le interazioni per determinare se sono umani o meno. Ciò significa che il livello di sfida presentato all’utente può variare in base alla probabilità che si tratti di un bot. Questa adattabilità riduce gli attriti per gli utenti autentici mantenendo al contempo una sicurezza elevata.
+- **Adattabilità**: il meccanismo adattivo di reCAPTCHA analizza il comportamento degli utenti e le interazioni per determinare se si tratta di esseri umani o meno. Ciò significa che il livello di sfida presentato all’utente può variare in base alla probabilità che si tratti di un bot. Questa adattabilità riduce gli attriti per gli utenti autentici mantenendo al contempo una sicurezza elevata.
 
-- **Moderazione manuale ridotta**: riducendo in modo significativo il numero di invii di spam e di contenuti generati da bot, reCAPTCHA può risparmiare tempo e risorse che altrimenti verrebbero spese per la moderazione manuale e la pulizia.
+- **Moderazione manuale ridotta**: riducendo in modo significativo il numero di invii di spam e di contenuti generati da bot, il reCAPTCHA può risparmiare tempo e risorse che altrimenti verrebbero spese per la moderazione manuale e la pulizia.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core reCAPTCHA di Forms Google adattivo è stato rilasciato nell’agosto 2023 come parte della &quot;versione&quot; dei Componenti core. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core reCAPTCHA di Google per moduli adattivi è stato rilasciato nell’agosto 2023 come parte della “versione” dei componenti core. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
 |  |  |
 |---|---|
@@ -45,11 +45,11 @@ Per informazioni sulle versioni dei componenti core, consulta il documento [Vers
 
 ## Dettagli tecnici {#technical-details}
 
-Per informazioni aggiornate sul componente core reCAPTCHA di Forms Google adattivo, consulta la documentazione tecnica su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/recaptcha/v1/recaptcha). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
+Per informazioni aggiornate sul componente core reCAPTCHA di Google per moduli adattivi, consulta la documentazione tecnica disponibile su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/recaptcha/v1/recaptcha). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-Puoi personalizzare facilmente l’esperienza Google reCAPTCHA per i visitatori con la finestra di dialogo per configurazione. Puoi anche definire le opzioni Google reCAPTCHA con facilità per un’esperienza utente fluida.
+Puoi personalizzare facilmente l’esperienza reCAPTCHA di Google per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire le opzioni reCAPTCHA di Google facilmente per un’esperienza utente semplice.
 
 ### Scheda Base {#basic-tab}
 
