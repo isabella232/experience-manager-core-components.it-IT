@@ -6,16 +6,16 @@ feature: Core Components
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
 source-git-commit: 8db061f3d6f1041336c379b34f3b6b7f03083560
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Aiuto dei Componenti core AEM {#using}
 
-+ [Introduzione ai Componenti core ](/help/introduction.md)
++ [Introduzione ai Componenti core](/help/introduction.md)
 + [Percorsi verso il successo](/help/developing/success.md)
 + [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_it)
 + [Versioni](/help/versions.md)
@@ -117,7 +117,7 @@ ht-degree: 96%
       + [Immagine moduli adattivi](/help/adaptive-forms/components/image.md)
       + [Inserimento numero moduli adattivi](/help/adaptive-forms/components/number-input.md)
       + [Pannello moduli adattivi](/help/adaptive-forms/components/panel-container.md)
-      + [CAPTCHA Forms adattivo](/help/adaptive-forms/components/captcha.md)
+      + [CAPTCHA dei moduli adattivi](/help/adaptive-forms/components/captcha.md)
       + [Pulsante di scelta moduli adattivi](/help/adaptive-forms/components/radio-button.md)
       + [Pulsante reimpostazione moduli adattivi](/help/adaptive-forms/components/reset-button.md)
       + [Pulsante di invio moduli adattivi](/help/adaptive-forms/components/submit-button.md)
@@ -128,8 +128,8 @@ ht-degree: 96%
       + [Layout assistente virtuale moduli adattivi](/help/adaptive-forms/components/wizard.md)
       + [Intestazione](/help/adaptive-forms/components/header.md)
       + [Piè di pagina](/help/adaptive-forms/components/footer.md)
-   + [Personalizzare i componenti core di Forms adattivi](/help/developing/customize-adaptive-forms-core-components.md)
-   + [Temi e modelli di esempio](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
+   + [Personalizzare i componenti core dei moduli adattivi](/help/developing/customize-adaptive-forms-core-components.md)
+   + [Modelli e temi di esempio](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
 + Sviluppo {#developing}
    + [Sviluppo di Componenti core](/help/developing/overview.md)
    + [Percorsi verso il successo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=it)
