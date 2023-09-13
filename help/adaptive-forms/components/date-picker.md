@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core del selettore data
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
 source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1738'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ La scheda dei formati consente di specificare i formati di data predefiniti e pe
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 * [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 * [Pulsante](/help/adaptive-forms/components/button.md)
