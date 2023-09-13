@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core allegato file dei 
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
 source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Il componente core Allegato file dei moduli adattivi supporta il [Sistema di sti
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 * [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 * [Pulsante](/help/adaptive-forms/components/button.md)
