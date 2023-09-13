@@ -4,9 +4,9 @@ description: Aggiungere un modulo adattivo a una pagina web.
 role: Architect, Developer, Admin, User
 exl-id: 8df7f862-4d59-4c3f-88dd-f0c937081f4f
 source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Gli utenti possono configurare azioni diverse per gli invii di moduli adattivi.
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 * [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 * [Pulsante](/help/adaptive-forms/components/button.md)
