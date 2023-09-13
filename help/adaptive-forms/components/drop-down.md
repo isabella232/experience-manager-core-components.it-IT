@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core dell’elenco a di
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
 source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ La scheda è utilizzata per definire e gestire gli stili CSS per un componente. 
 * [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 * [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 * [Pulsante](/help/adaptive-forms/components/button.md)
