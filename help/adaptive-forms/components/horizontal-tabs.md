@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core delle schede orizz
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
 source-git-commit: b6e3a443c7425a60fc6c3469dc273960a4e29088
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1906'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 - [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
 
 
-## Vedi anche {#see-also}
+## Consulta anche {#see-also}
 
 - [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 - [Pulsante](/help/adaptive-forms/components/button.md)
