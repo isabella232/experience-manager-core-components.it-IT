@@ -2,7 +2,7 @@
 title: Supporto Dynamic Medie di nuova generazione
 description: Scopri come configurare i componenti core Immagine e Teaser per supportare risorse Dynamic Medie di nuova generazione remote.
 role: Architect, Developer, Admin, User
-source-git-commit: 57307b75bd33fd538a1eb704cc37822847c896de
+source-git-commit: 9b8930c2e268f52a1377906725db9a05a089e233
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Una volta installati i Componenti core e il sito WKND, puoi testare la funzione 
 
 1. Una volta autenticato, si aprirà un browser risorse del servizio remoto. Seleziona la risorsa desiderata e tocca o fai clic su **Seleziona**.
 
-   ![Selezione di una risorsa remota](/help/assets/remote-asset-selection.png)
+   ![Selezione di una risorsa remota](/help/assets/remote-asset-picker.png)
 
 La risorsa remota viene aggiunta alla pagina AEM locale e hai verificato che la funzione sia configurata correttamente.
 
