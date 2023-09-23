@@ -3,20 +3,23 @@ title: Componente Immagine
 description: Il componente core Immagine è un componente immagine adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 1cb06273ecb2c5b5f90c02b74b7ac0e440d87ecc
+source-git-commit: c879cf92cae028230f092c7376a1e9271f568388
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '2084'
+ht-degree: 85%
 
 ---
 
-# Componente Immagine {#image-component}
+
+# Componente Immagine  {#image-component}
 
 Il componente core Immagine è un componente immagine adattivo.
 
 ## Utilizzo {#usage}
 
 Il componente Immagine offre all’autore del contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina, nonché una facilità di posizionamento delle immagini.
+
+L’autore del contenuto può utilizzare [finestra di dialogo per modifica](#edit-dialog) per modificare la risorsa immagine, ad esempio applicando un ritaglio o ruotando l’immagine.
 
 Le larghezze delle immagini e le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nella [finestra di dialogo di configurazione.](#configure-dialog)
 
@@ -50,6 +53,12 @@ Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) su
 
 La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
 
+## Supporto Dynamic Medie di nuova generazione {#next-gen-dm}
+
+Il componente Immagine (come da [versione 2.23.2](/help/versions.md)) supporta le risorse remote di Dynamic Medie di nuova generazione.
+
+[Una volta configurata,](/help/developing/next-gen-dm.md) è possibile selezionare le risorse da un servizio Dynamic Medie di nuova generazione remoto per il componente immagine.
+
 ## Supporto di SVG {#svg-support}
 
 Il componente Immagine supporta la grafica vettoriale scalabile (SVG).
@@ -74,7 +83,77 @@ Per ulteriori informazioni sullo sviluppo di Componenti core, vedi la [documenta
 
 Il componente Immagine supporta [i microdati schema.org](https://schema.org).
 
-## Finestra di dialogo per configurazione {#configure-dialog}
+## Finestra di dialogo per la modifica {#edit-dialog}
+
+La finestra di dialogo per modifica consente all’autore di contenuto di ritagliare e ingrandire l’immagine.
+
+A seconda che tu abbia o meno [Dynamic Medie](#dynamic-media) abilitato o [Dynamic Medie di nuova generazione](#next-gen-dm) , le opzioni disponibili per la modifica delle immagini saranno diverse.
+
+### Modifica risorse standard {#standard-assets}
+
+Se stai modificando le risorse AEM standard, puoi fare clic sul pulsante **Modifica** nel menu di scelta rapida del componente immagine.
+
+![Finestra di dialogo per modifica del componente Immagine](/help/assets/image-edit.png)
+
+* Avvia ritaglio
+
+  ![Icona Avvia ritaglio](/help/assets/image-start-crop.png)
+
+  Selezionando questa opzione si apre un elenco a discesa per le proporzioni predefinite del ritaglio.
+
+   * Scegli l’opzione **Rimuovi Ritaglio** per visualizzare la risorsa originale.
+
+  Una volta selezionata un’opzione di ritaglio, utilizza le maniglie blu per dimensionare il ritaglio sull’immagine.
+
+  ![Opzioni di ritaglio](/help/assets/image-crop-options.png)
+
+* Ruota a destra
+
+  ![Icona Ruota a destra](/help/assets/image-rotate-right.png)
+
+  Utilizza questa opzione per ruotare l’immagine di 90° verso destra (in senso orario).
+
+* Reimposta zoom
+
+  ![Icona Reimposta zoom](/help/assets/image-reset-zoom.png)
+
+  Se l’immagine è già stata ingrandita, utilizza questa opzione per reimpostare il livello di zoom.
+
+* Apri cursore Zoom
+
+  ![Icona Apri cursore zoom](/help/assets/image-zoom.png)
+
+  Utilizza questa opzione per visualizzare un cursore che permette di controllare il livello di zoom dell’immagine.
+
+  ![Controllo cursore dello zoom](/help/assets/image-zoom-slider.png)
+
+L’editor locale può essere utilizzato anche per modificare l’immagine. A causa di limiti di spazio, in linea sono disponibili solo opzioni di base. Per le opzioni di modifica completa, utilizza la modalità a schermo intero.
+
+![Opzioni di modifica diretta dell’immagine](/help/assets/image-in-place-edit.png)
+
+>[!NOTE]
+>
+>Le operazioni di modifica delle immagini non sono supportate per le immagini GIF. Tutte le modifiche apportate in modalità di modifica alle immagini GIF non verranno mantenute.
+
+### Modifica risorse Dynamic Medie {#dynamic-media-assets}
+
+Se è stato [funzionalità Dynamic Medie abilitate,](#dynamic-media) la modifica dell’immagine stessa deve essere eseguita nella console delle risorse.
+
+### Modifica delle risorse Dynamic Medie di nuova generazione {#next-gen-dm-assets}
+
+Se è stato [Dynamic Medie di nuova generazione configurato,](#next-gen-dm) il **Ritaglio avanzato** L’opzione è disponibile nei menu di scelta rapida del componente.
+
+![Ritaglio avanzato](/help/assets/image-smart-crop.png)
+
+Utilizza la finestra di dialogo per regolare il ritaglio avanzato.
+
+![Finestra di dialogo Ritaglio avanzato](/help/assets/image-smart-crop-dialog.png)
+
+>[!TIP]
+>
+>Per ulteriori informazioni su Ritaglio avanzato, consulta [questo video sulla funzione.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+
+## Finestra di dialogo per la configurazione {#configure-dialog}
 
 Il componente Immagine offre una finestra di dialogo di configurazione in cui l’immagine stessa è definita insieme alla relativa descrizione e alle proprietà di base.
 
@@ -84,14 +163,19 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 * **Eredita immagine in primo piano dalla pagina**: Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
 
-* **Testo alternativo per accessibilità**: Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
+* **Risorsa immagine** - Viene compilato automaticamente se **Eredita immagine in primo piano dalla pagina** è selezionato. Deselezionate questa opzione per definire manualmente l&#39;immagine impostando le seguenti opzioni.
 
-   * **Eredita testo alternativo dalla pagina**: Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
-
-* **Risorsa immagine**
    * Rilascia una risorsa dal [browser di risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) oppure tocca l’opzione **Sfoglia** per caricarla da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
+   * Tocca o fai clic su **Scegli** per aprire [browser risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=it) per selezionare un&#39;immagine.
+      * Se [Funzionalità di Dynamic Medie di nuova generazione](#next-gen-dm) sono attivate, sono disponibili diverse opzioni per il prelievo di una risorsa:
+         * **Locale** seleziona dalla libreria di risorse AEM locale.
+         * **Remoto** seleziona da una libreria Dynamic Medie esterna all’istanza AEM.
    * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=it) nell’Editor risorse.
+
+* **Testo alternativo per l’accessibilità** - Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
+
+   * **Eredita testo alternativo dalla pagina** - Questa opzione utilizza la descrizione alternativa del valore della risorsa collegata dei metadati `dc:description` in DAM o nella pagina corrente se non è collegata alcuna risorsa.
 
 * **Non fornire testo alternativo**: Questa opzione contrassegna l’immagine da ignorare da tecnologie per l’accessibilità, come gli assistenti vocali, nei casi in cui l’immagine sia puramente decorativa o in altro modo non trasmetta informazioni aggiuntive alla pagina.
 
@@ -101,7 +185,7 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 * **Tipo di predefinito**: definisce i tipi di immagini preimpostate disponibili, **Predefinito immagine** o **Ritaglio avanzato**, ed è disponibile solo se [le funzioni di Dynamic Media](#dynamic-meida) sono abilitate.
    * **Predefinito immagine**: se per **Tipo di predefinito** è selezionata l’opzione **Predefinito immagine**, è disponibile l’elenco a discesa **Predefinito immagine** che consente di selezionare i predefiniti di Dynamic Media disponibili. Questa opzione è disponibile solo se per la risorsa selezionata esistono dei predefiniti.
-   * **Ritaglio avanzato**: quando per **Tipo di predefinito** è selezionata l’opzione **Ritaglio avanzato**, avanzato, è disponibile l’elenco a discesa **Rendering** che consente di selezionare i rendering disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definiti rendering.
+   * **Ritaglio avanzato** - Quando **Tipo di predefinito** di **Ritaglio avanzato** è selezionato, il menu a discesa **Rappresentazione** , che consente di selezionare le rappresentazioni disponibili della risorsa selezionata. Questa opzione è disponibile solo se per la risorsa selezionata sono definiti rendering.
    * **Modificatori immagine**: qui si possono definire comandi Dynamic Media aggiuntivi per la gestione delle immagini, separati da `&`, indipendentemente da qualunque cosa sia selezionata per **Tipo di predefinito**.
 * **Didascalia**: informazioni aggiuntive sull’immagine, per impostazione predefinita viene visualizzata sotto l’immagine.
    * **Ottieni didascalia da DAM**: se questa opzione è selezionata, come didascalia dell’immagine verrà inserito il valore dei `dc:title` metadati in DAM.
