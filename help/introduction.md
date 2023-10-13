@@ -4,7 +4,7 @@ description: Risolvi i problemi relativi ai componenti core e consenti ad altri 
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 source-git-commit: 1d16628d8a85edff8c079421204d8cf0ca3e807a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 
@@ -105,9 +105,9 @@ La versione corrente dei Componenti core include i seguenti componenti:
 
 ## Requisiti di sistema {#system-requirements}
 
-| Componenti core  Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
+| Componenti core Versione | AEM as a Cloud Service | Livello di patch AEM 6.5 | Versione Java SE | Versione Maven |
 |---------|---------|---------|---------|---------|
-| [2.23.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.4) | Continuo | 6.5.17.0+ | 8, 11 | 3.3.9+ |
+| [2.23.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.4) | Continua | 6.5.17.0+ | 8, 11 | 3.3.9+ |
 
 Per i requisiti delle precedenti versioni dei Componenti core, vedi [Versioni dei Componenti core](versions.md).
 
