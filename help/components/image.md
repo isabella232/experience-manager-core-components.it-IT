@@ -6,12 +6,12 @@ exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
 source-git-commit: a10c98aecf6d3c0d989f2e3c18affc51850f60bc
 workflow-type: tm+mt
 source-wordcount: '2061'
-ht-degree: 60%
+ht-degree: 72%
 
 ---
 
 
-# Componente Immagine  {#image-component}
+# Componente Immagine {#image-component}
 
 Il componente core Immagine è un componente immagine adattivo.
 
@@ -19,7 +19,7 @@ Il componente core Immagine è un componente immagine adattivo.
 
 Il componente Immagine offre all’autore del contenuto una selezione adattiva delle immagini e un comportamento reattivo con caricamento lento per il visitatore della pagina e una facilità di posizionamento delle immagini.
 
-L’autore del contenuto può utilizzare [finestra di dialogo per modifica](#edit-dialog) per modificare la risorsa immagine, ad esempio applicando un ritaglio o ruotando l’immagine.
+Chi crea contenuti può utilizzare la [finestra di dialogo per la modifica](#edit-dialog) per modificare la risorsa immagine, ad esempio applicando un ritaglio o ruotando l’immagine.
 
 Le larghezze delle immagini e le altre impostazioni possono essere definiti dall’autore del modello nella [finestra di dialogo per progettazione](#design-dialog). L’editor dei contenuti può caricare o selezionare le risorse nella [finestra di dialogo di configurazione.](#configure-dialog)
 
@@ -53,11 +53,11 @@ Il componente Immagine (a partire dalla [versione 2.13.0](/help/versions.md)) su
 
 La tua esperienza del web costruita con i Componenti core ora si arricchisce delle molte funzionalità per le immagini offerte da Dynamic Media, efficienti, performanti, multipiattaforma e con tecnologia Sensei.
 
-## Supporto Dynamic Medie di nuova generazione {#next-gen-dm}
+## Supporto Dynamic Media di nuova generazione {#next-gen-dm}
 
-Il componente Immagine (come da [versione 2.23.2](/help/versions.md)) supporta le risorse remote di Dynamic Medie di nuova generazione.
+Il componente Immagine (a partire dalla [versione 2.23.2](/help/versions.md)) supporta le risorse Dynamic Media di nuova generazione.
 
-[Una volta configurata,](/help/developing/next-gen-dm.md) è possibile selezionare le risorse da un servizio Dynamic Medie di nuova generazione remoto per il componente immagine.
+[Una volta configurato](/help/developing/next-gen-dm.md), è possibile selezionare le risorse da un servizio remoto Dynamic Media di nuova generazione per il componente immagine.
 
 ## Supporto di SVG {#svg-support}
 
@@ -85,13 +85,13 @@ Il componente Immagine supporta [i microdati schema.org](https://schema.org).
 
 ## Finestra di dialogo per la modifica {#edit-dialog}
 
-La finestra di dialogo per modifica consente all’autore di contenuto di ritagliare e ingrandire l’immagine.
+La finestra di dialogo per la modifica consente a chi crea contenuti di ritagliare ed eseguire lo zoom dell’immagine.
 
 A seconda che tu abbia o meno [Dynamic Medie](#dynamic-media) abilitato o [Dynamic Medie di nuova generazione](#next-gen-dm) , le opzioni disponibili per la modifica delle immagini sono diverse.
 
-### Modifica risorse standard {#standard-assets}
+### Modifica delle risorse standard {#standard-assets}
 
-Se stai modificando le risorse AEM standard, puoi fare clic sul pulsante **Modifica** nel menu di scelta rapida del componente immagine.
+Se stai modificando AEM Assets standard, puoi fare clic sull’icona **Modifica** nel menu di scelta rapida del componente immagine.
 
 ![Finestra di dialogo per modifica del componente Immagine](/help/assets/image-edit.png)
 
@@ -135,13 +135,13 @@ L’editor locale può essere utilizzato anche per modificare l’immagine. A ca
 >
 >Le operazioni di modifica delle immagini non sono supportate per le immagini GIF. Tutte le modifiche apportate ai GIF in modalità di modifica non vengono mantenute.
 
-### Modifica risorse Dynamic Medie {#dynamic-media-assets}
+### Modifica delle risorse Dynamic Media {#dynamic-media-assets}
 
-Se è stato [funzionalità Dynamic Medie abilitate,](#dynamic-media) la modifica dell’immagine stessa deve essere eseguita nella console delle risorse.
+Se le [funzionalità Dynamic Media sono abilitate,](#dynamic-media) la modifica dell’immagine stessa deve essere eseguita nella console Assets.
 
 ### Modifica delle risorse Dynamic Medie di nuova generazione {#next-gen-dm-assets}
 
-Se è stato [Dynamic Medie di nuova generazione configurato,](#next-gen-dm) il **Ritaglio avanzato** L’opzione è disponibile nei menu di scelta rapida del componente.
+Se hai [Dynamic Media di nuova generazione configurato](#next-gen-dm), l’opzione **Ritaglio avanzato** è disponibile nei menu di scelta rapida del componente.
 
 ![Ritaglio avanzato](/help/assets/image-smart-crop.png)
 
@@ -151,7 +151,7 @@ Utilizza la finestra di dialogo per regolare il ritaglio avanzato.
 
 >[!TIP]
 >
->Per ulteriori informazioni su Ritaglio avanzato, consulta [questo video sulla funzione.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+>Per ulteriori informazioni su Ritaglio avanzato, consulta [questo video sulla funzione.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html?lang=it)
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
@@ -163,14 +163,14 @@ Il componente Immagine offre una finestra di dialogo di configurazione in cui l�
 
 * **Eredita immagine in primo piano dalla pagina**: Questa opzione utilizza [l’immagine in primo piano della pagina collegata](page.md) o l’immagine in primo piano della pagina corrente se l’immagine non è collegata.
 
-* **Risorsa immagine** - Viene compilato automaticamente se **Eredita immagine in primo piano dalla pagina** è selezionato. Deselezionate questa opzione per definire manualmente l&#39;immagine impostando le seguenti opzioni.
+* **Risorsa immagine**:se è selezionata l’opzione **Eredita immagine in primo piano dalla pagina**, viene compilata automaticamente. Deseleziona questa opzione per definire manualmente l’immagine impostando le seguenti opzioni.
 
    * Rilascia una risorsa da [browser risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) oppure tocca il pulsante **sfoglia** in modo da poter caricare da un file system locale.
    * Tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
    * Tocca o fai clic su **Scegli** per aprire [browser risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) in modo da poter selezionare un&#39;immagine.
-      * Se [Funzionalità di Dynamic Medie di nuova generazione](#next-gen-dm) sono attivate, sono disponibili diverse opzioni per il prelievo di una risorsa:
-         * **Locale** seleziona dalla libreria di risorse AEM locale.
-         * **Remoto** seleziona da una libreria Dynamic Medie esterna all’istanza AEM.
+      * Se le [funzioni di Dynamic Media di nuova generazione](#next-gen-dm) sono abilitate, sono disponibili diverse opzioni per la scelta di una risorsa:
+         * **Locale** sceglie la risorsa dalla libreria di risorse AEM locale.
+         * **Remoto** sceglie la risorsa da una libreria Dynamic Media esterna all’istanza AEM.
    * Tocca o fai clic su **Modifica** per [gestire le rappresentazioni della risorsa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html) nell’Editor risorse.
 
 * **Testo alternativo per accessibilità**: Questo campo consente di definire una descrizione dell’immagine per gli utenti ipovedenti.
