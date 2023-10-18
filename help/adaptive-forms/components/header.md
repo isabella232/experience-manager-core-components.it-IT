@@ -3,9 +3,9 @@ title: Componente core di moduli adattivi - Intestazione
 description: Utilizzo o personalizzazione del componente core dell’ntestazione dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '712'
 ht-degree: 100%
 
 ---
@@ -80,11 +80,14 @@ Questa parte dell’intestazione contiene il titolo dell’intestazione e l’im
 
 Questa sezione consente di inserire il testo da includere nell’intestazione.
 
-## Articolo correlato {#related-article}
+<!--
 
-* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
+## Related article {#related-article}
 
-* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 
 >[!MORELIKETHIS]
 >

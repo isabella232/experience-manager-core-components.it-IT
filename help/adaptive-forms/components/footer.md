@@ -3,9 +3,9 @@ title: Componente core moduli adattivi - Piè di pagina
 description: Utilizzo o personalizzazione del componente core piè di pagina dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
@@ -105,11 +105,13 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
    * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
    * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
-## Articolo correlato {#related-article}
+<!--
 
-* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
+## Related article {#related-article}
 
-* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
 
 
 >[!MORELIKETHIS]
@@ -135,6 +137,7 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
 >* [Testo](/help/adaptive-forms/components/text.md)
 >* [Titolo](/help/adaptive-forms/components/title.md)
 >* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+
 
 ## Consulta anche {#see-also}
 

@@ -3,9 +3,9 @@ title: Componente core dei moduli adattivi - Input di testo (casella di testo)
 description: Utilizzo o personalizzazione del componente core per l’input di testo dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1786'
 ht-degree: 100%
 
 ---
@@ -139,12 +139,13 @@ La scheda dei formati consente di specificare i formati numerici predefiniti e p
 ![Scheda Formato](/help/adaptive-forms/assets/telephoneinput_format.png)
 
 
-## Articolo correlato {#related-article}
+<!--
 
-* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
+## Related article {#related-article}
 
-* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+-->
 
 >[!MORELIKETHIS]
 >

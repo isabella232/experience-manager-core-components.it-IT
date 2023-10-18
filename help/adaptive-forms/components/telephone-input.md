@@ -3,9 +3,9 @@ title: Componente core moduli adattivi - Inserimento numero di telefono
 description: Utilizzo o personalizzazione del componente core per l’inserimento del numero di telefono nei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 100%
 
 ---
@@ -128,12 +128,38 @@ La scheda dei formati consente di specificare i formati numerici predefiniti e p
 
 ![Scheda Formato](/help/adaptive-forms/assets/telephoneinput_format.png)
 
-## Articolo correlato {#related-article}
+<!--
 
-* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
+## Related article {#related-article}
 
-* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+-->
+
+
+>[!MORELIKETHIS]
+>
+>* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
+>* [Pulsante](/help/adaptive-forms/components/button.md)
+>* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
+>* [Selettore data](/help/adaptive-forms/components/date-picker.md)
+>* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
+>* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
+>* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
+>* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
+>* [Piè di pagina](/help/adaptive-forms/components/footer.md)
+>* [Intestazione](/help/adaptive-forms/components/header.md)
+>* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
+>* [Immagine](/help/adaptive-forms/components/image.md)
+>* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
+>* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
+>* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
+>* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
+>* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
+>* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
+>* [Testo](/help/adaptive-forms/components/text.md)
+>* [Titolo](/help/adaptive-forms/components/title.md)
+>* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
 
 >[!MORELIKETHIS]
 >

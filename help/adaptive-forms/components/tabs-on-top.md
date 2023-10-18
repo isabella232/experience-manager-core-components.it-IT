@@ -2,9 +2,9 @@
 title: Componente core Modulo adattivo - Schede superiori
 description: Utilizzo o personalizzazione delle schede superiori dei moduli adattivi per i componenti core.
 role: Architect, Developer, Admin, User
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '473'
 ht-degree: 100%
 
 ---
@@ -54,11 +54,14 @@ Per informazioni aggiornate sulle schede dei moduli adattivi per i componenti co
 
 Puoi personalizzare facilmente l’esperienza delle schede superiori per i visitatori tramite la finestra di dialogo per la configurazione. Puoi anche definire facilmente le opzioni delle schede superiori per un’esperienza utente semplice.
 
-## Articolo correlato {#related-article}
+<!--
 
-* [Creare un modulo adattivo in una pagina AEM Sites o in un frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
+## Related article {#related-article}
 
-* [Creare un modulo adattivo indipendente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 
 >[!MORELIKETHIS]
 >
