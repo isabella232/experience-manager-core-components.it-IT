@@ -3,10 +3,10 @@ title: Adaptive Image Servlet
 description: Scopri in che modo i componenti core sfruttano Adaptive Image Servlet per la consegna delle immagini e come ottimizzarne l’utilizzo.
 role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
-source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
+source-git-commit: 785aa82930e3bcf6ef16d7a1cdc614d230e8daa8
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ Scopri in che modo i componenti core sfruttano Adaptive Image Servlet per la con
 
 ## Adaptive Image Servlet o consegna di immagini ottimizzate per il web? {#options}
 
-Il componente core Immagine può utilizzare due metodi per la consegna delle immagini.
+Il componente core Immagine può utilizzare due metodi per distribuire le immagini.
 
 * Adaptive Image Servlet è il metodo predefinito.
 * La [consegna di immagini ottimizzate per il web](/help/developing/web-optimized-image-delivery.md) è disponibile per AEMaaCS e riduce la dimensione del download del 25% in media.
