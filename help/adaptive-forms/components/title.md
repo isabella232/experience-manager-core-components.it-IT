@@ -4,7 +4,7 @@ description: Utilizzo o personalizzazione del componente core del titolo dei mod
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
 source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
 ht-degree: 100%
 
