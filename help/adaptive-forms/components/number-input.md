@@ -4,7 +4,7 @@ description: Utilizzo o personalizzazione del componente core di inserimento num
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
 source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1834'
 ht-degree: 100%
 
