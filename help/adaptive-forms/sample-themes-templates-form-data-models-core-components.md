@@ -1,21 +1,21 @@
 ---
-title: Come si ottengono temi e modelli di esempio per i componenti core di AEM Forms?
-description: I componenti core di AEM Forms forniscono esempi di temi, modelli e modelli di dati per moduli adattivi.
+title: Come ottenere temi e modelli di esempio per i Componenti core di AEM Forms?
+description: I componenti core di AEM Forms forniscono esempi di temi per moduli adattivi, modelli e modelli di dati per i moduli.
 solution: Experience Manager Forms
 topic: Administration
 role: Admin, User
 level: Intermediate
 exl-id: aef6e88b-dcae-4777-9893-9257d7702f43
 source-git-commit: 1dd55fdd836dff89763887d88af2671ed1f9ce2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Temi, modelli e modelli dati modulo di esempio {#sample-themes-templates-and-data-models}
 
-I Componenti core di [!DNL AEM Forms] forniscono temi di esempio, modelli e modelli dati modulo pronti all’uso per creare rapidamente moduli adattivi versatili. Questi consentono inoltre agli autori dei moduli di apprendere l’estensibilità, l’adattabilità e la reattività di [Componenti core Forms adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per creare moduli semplici in poco tempo e moduli complessi in modo semplice e senza interruzioni, collegandosi al database.
+I Componenti core di [!DNL AEM Forms] forniscono temi di esempio, modelli e modelli dati modulo pronti all’uso per creare rapidamente moduli adattivi versatili. Questi consentono inoltre agli autori dei moduli di apprendere l’estensibilità, l’adattabilità e la reattività dei [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per creare moduli semplici in poco tempo e moduli complessi in modo semplice collegandosi direttamente al database.
 
 I temi, i modelli e i modelli dati modulo di esempio inclusi nel pacchetto di contenuti di riferimento sono:
 
@@ -36,20 +36,20 @@ I temi, i modelli e i modelli dati modulo di esempio inclusi nel pacchetto di co
 
 ## Temi di esempio {#Sample-Themes}
 
-I temi di esempio di riferimento consentono agli autori di utilizzare, definire e personalizzare lo stile dei moduli, mentre gli autori con conoscenze di base di CSS possono personalizzarli in base alle esigenze.
+I temi di esempio di riferimento aiutano gli autori a utilizzare, definire e personalizzare lo stile dei moduli; gli autori con conoscenze di base di CSS possono personalizzare il tema secondo le proprie esigenze.
 
-**Come ottenere questi temi?**
-Per ottenere questi temi, segui i passaggi indicati di seguito per **AEM as a Cloud Service** ambiente:
+**Come si ottengono questi temi?**
+Per ottenere questi temi, segui i passaggi indicati di seguito per l’ambiente **AEM as a Cloud Service**:
 
-1. [Abilita componenti core modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it)
-1. [Distribuire un progetto Archetipo 45 AEM nell’ambiente](https://github.com/adobe/aem-project-archetype)
+1. [Abilita i Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it)
+1. [Distribuisci un progetto AEM basato sull’Archetipo AEM nell’ambiente](https://github.com/adobe/aem-project-archetype)
 
 
-Quando si distribuisce un Archetipo AEM, è possibile utilizzare solo i temi inclusi nei moduli, Per personalizzare i temi in base alle proprie esigenze, [Utilizzare la pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it) per distribuire i temi.
+Quando distribuisci un progetto basato sull’Archetipo AEM, è possibile utilizzare solo i temi predefiniti nei moduli. Per personalizzare i temi in base alle tue esigenze, [utilizza la pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it) per distribuire i temi.
 
 >[!NOTE]
 >
-> * I temi non sono disponibili per **AEM 6.5** ambiente.
+> * I temi non sono disponibili per l’ambiente **AEM 6.5**.
 
 <!--
 
@@ -88,7 +88,7 @@ I temi **pronti all’uso** dei [Componenti core dei moduli adattivi](https://ex
 
 ### Area di lavoro {#Canvas}
 
-Il tema Area di lavoro è il tema predefinito per le maschere ed evidenzia l&#39;utilizzo di colori di base, trasparenza e icone piatte. Nella schermata seguente, è possibile visualizzare l’aspetto del tema Area di lavoro.
+Il tema Area di lavoro è il tema predefinito per i moduli e sottolinea l’utilizzo di colori di base, trasparenza e icone semplici. Nella schermata seguente, è possibile visualizzare l’aspetto del tema Area di lavoro.
 
 ![Tema Area di lavoro](/help/adaptive-forms/assets/Safety-Inspection-Theme-Canvas.png)
 
@@ -101,20 +101,20 @@ Il tema WKND è caratterizzato da un design vivace, fantasioso e coinvolgente pe
 
 ### Cavalletto {#Easel}
 
-Il tema Cavalletto consente di creare un modulo dall’aspetto accattivante e facile da impostare, personalizzato per maggiore semplicità e facilità d’uso. Il tema del cavalletto è basato sul concetto in cui uno stand portatile è utilizzato dagli artisti per sostenere una tela mentre lavorano sui loro dipinti.
+Il tema Cavalletto consente di creare un modulo dall’aspetto accattivante e facile da impostare, personalizzato per maggiore semplicità e facilità d’uso. Il tema Cavalletto è basato sull’idea del supporto portatile utilizzato dagli artisti per sostenere una tela mentre lavorano ai loro dipinti.
 
 ![Tema Cavalletto](/help/adaptive-forms/assets/Safety-Inspection-Theme-Easel.png)
 
-### FSI (Servizi finanziari e assicurativi) {#FSI}
+### FSI (Financial Services &amp; Insurance) {#FSI}
 
-Il tema FSI pone l&#39;accento sul conferire al tuo modulo un aspetto pulito e pratico. Al modulo viene applicata la tonalità lieve blu quando si applica il tema FSI, come illustrato nell&#39;immagine.
+Il tema FSI pone l’accento nel conferire al modulo un aspetto pulito e pratico. Al modulo viene applicata una tonalità leggera di blu quando si applica il tema FSI, come illustrato nell’immagine.
 
 ![Tema FSI](/help/adaptive-forms/assets/fsi-theme-new1.png)
 
 
-### Assistenza sanitaria {#Healthcare}
+### Healthcare {#Healthcare}
 
-Il tema Healthcare utilizza toni ricchi e verdanti per accentuare elementi come schede, pannelli, caselle di testo e pulsanti all’interno del modulo.
+Il tema Healthcare utilizza toni ricchi e verdeggianti per accentuare elementi come schede, pannelli, caselle di testo e pulsanti all’interno del modulo.
 
 ![Tema Healthcare](/help/adaptive-forms/assets/healthcare-new-theme.png)
 
@@ -124,7 +124,7 @@ Il tema Healthcare utilizza toni ricchi e verdanti per accentuare elementi come 
 I modelli definiscono la struttura iniziale del modulo, il contenuto e le azioni da replicare oppure utilizzano una struttura di modello simile al tuo modulo, ad esempio Modulo di consenso, Modulo di iscrizione alle prestazioni e molto altro ancora.
 
 **Come si ottengono questi modelli?**
-Per ottenere questi modelli, distribuisci un [Archetipo AEM 45](https://github.com/adobe/aem-project-archetype) al tuo **AEM Forms as a Cloud Service** ambiente o **AEM 6.5 Forms** ambiente.
+È possibile ottenere i modelli implementando un [progetto AEM basato sull’Archetipo 45](https://github.com/adobe/aem-project-archetype) nel tuo ambiente **AEM Forms as a Cloud Service** o nell’ambiente **AEM 6.5. Forms**.
 
 <!--
 
@@ -170,20 +170,20 @@ Il modello di aggiornamento dei dettagli di contatto consente agli autori di cre
 
 ### Modulo di consenso {#Consent-Form}
 
-Il modello di modulo di consenso viene utilizzato per creare un modulo per l’ottenimento di un documento legale da parte dei partecipanti che partecipano a un’attività specifica, a uno studio di ricerca, a una procedura medica o a qualsiasi situazione in cui possano essere coinvolti i loro dati o diritti personali. Il modulo garantisce la trasparenza, tutela i diritti dei partecipanti e fornisce una spiegazione chiara di ciò che l’individuo sta accettando.
+Il modello del modulo di consenso viene utilizzato per creare un modulo per l’acquisizione di un documento legale da parte di partecipanti a un’attività specifica, a uno studio di ricerca, a una procedura medica o a qualsiasi situazione in cui possano essere coinvolti dati o diritti personali. Il modulo garantisce la trasparenza, tutela i diritti dei partecipanti e fornisce una spiegazione chiara di ciò che l’individuo sta accettando.
 
 ![Modulo di consenso](/help/adaptive-forms/assets/Consent-form-desktop-view.png)
 
 ### Richiesta servizio di registro {#Log-Service-Request}
 
-Il modello di richiesta del servizio di registro consente di creare un modulo che richiede a un fornitore di servizi servizi di registrazione specifici. Il modulo funge da richiesta formale per creare un ticket per eventi, attività o registri di dati per monitorare o tenere traccia dello stato.
+Il modello di richiesta del servizio di registro consente di creare un modulo che richiede a un fornitore di servizi servizi di registrazione specifici. Il modulo funge da richiesta formale per creare un ticket per eventi, attività o registri di dati per il monitoraggio o il tracciamento dello stato.
 
 ![Modello di richiesta servizio di registro](/help/adaptive-forms/assets/Log-service-request-desktop-view.png)
 
 
 ### Invia feedback {#Give-Feedback}
 
-Il modello del modulo di feedback consente di creare un modulo per fornire un feedback costruttivo a un’altra persona o a un team. Il modulo contribuisce a garantire che il feedback sia chiaro, specifico e actionable, promuovendo una comunicazione aperta e miglioramenti.
+Il modello del modulo di feedback consente di creare un modulo per fornire un feedback costruttivo a un’altra persona o a un team. Il modulo contribuisce a garantire un feedback chiaro, specifico e utilizzabile, promuovendo una comunicazione aperta e miglioramenti.
 
 ![Modello invia feedback](/help/adaptive-forms/assets/Give-feedback-desktop-view.png)
 
@@ -203,7 +203,7 @@ Il modello del modulo Riepilogo prestazioni dei dipendenti consente di creare un
 
 ### Richiesta di estratto conto {#Request-for-Account-Statement}
 
-Un modello di richiesta di rendiconto conto consente di creare un modulo che avvia il processo di ottenimento di un rendiconto dei clienti accurato e aggiornato. L’estratto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti sulla clientela che utilizza questo modulo.
+Il modello Richiesta di estratto conto consente di creare un modulo che avvia il processo di ottenimento di un estratto accurato e aggiornato della clientela. L’estratto fornisce una registrazione dettagliata di transazioni finanziarie, attività o altre informazioni rilevanti sulla clientela che utilizza questo modulo.
 
 ![Richiesta di estratto conto](/help/adaptive-forms/assets/Request-for-account-statment.png)
 
