@@ -3,10 +3,10 @@ title: Componente core dei moduli adattivi - Contenitore di pannelli
 description: Utilizzo o personalizzazione del componente core contenitore di pannelli dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: 37ac7d3a9ae8c88d4c9be8129cfbd1eb4a7cccd1
-workflow-type: ht
-source-wordcount: '1828'
-ht-degree: 100%
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+workflow-type: tm+mt
+source-wordcount: '2036'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Può anche essere utilizzato per impostare diverse azioni basate su regole come 
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/panel-container.png)
+![esempio](/help/adaptive-forms/assets/panel-container.png)
 
 ## Utilizzo {#reasons-to-use-panel-container}
 
@@ -91,8 +91,6 @@ Puoi personalizzare facilmente l’esperienza del contenitore di pannelli per i 
         { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
      ```
 
-- **Layout**: è possibile disporre di un layout fisso (semplice) o flessibile (griglia dinamica) per la procedura guidata. Il layout semplice mantiene tutto fisso in posizione, mentre la griglia dinamica consente di regolare la posizione dei componenti in base alle proprie esigenze. Ad esempio, utilizza la griglia dinamica per allineare “Nome”, “Secondo nome” e “Cognome” in un modulo in un’unica riga.
-
 - **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
 - **Nascondi componente**: seleziona l’opzione per nascondere il componente del modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 - **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
@@ -129,50 +127,76 @@ Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore
 
 - **Ruolo di HTML per l’annuncio dell’assistente vocale**: il ruolo HTML è un attributo utilizzato per specificare lo scopo di un elemento HTML per tecnologie di assistenza come le utilità per la lettura dello schermo. L’attributo ruolo viene utilizzato per fornire ulteriore contesto e significato semantico a un elemento, facilitando l’interpretazione e la lettura del contenuto da parte delle utilità per la lettura dello schermo per l’utente. Ad esempio, in AEM Forms, l’etichetta di un campo modulo potrebbe avere il ruolo di “etichetta” e il relativo campo di input potrebbe avere il ruolo di “casella di testo”. Questo permette all’assistente vocale di comprendere la relazione tra l’etichetta e il campo di input, e di leggerli in modo corretto all’utente.
 
+## Finestra di dialogo per la progettazione {#design-dialog}
+
+La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Contenitore modulo.
+
+### Scheda Componenti Consentiti {#allowed-components-tab}
+
+![Scheda Componente consentito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-allowed-component.png)
+
+Il **Componenti consentiti** Questa scheda consente all’editor di modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente nell’editor di Forms adattivo.
+
+### Scheda Componenti predefiniti {#default-components-tab}
+
+![Scheda Componente predefinito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-default-component.png)
+
+Il **Componenti predefiniti** Questa scheda consente all’editor di modelli di specificare i componenti visibili per impostazione predefinita come elementi nel componente Contenitore modulo nell’editor di Forms adattivo.
+
+### Scheda Impostazioni reattive {#responsive-tab}
+
+![Scheda Impostazioni reattive della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-responsive-style-tab.png)
+
+Il **Impostazioni reattive** Questa scheda consente all’editor di modelli di specificare il numero di colonne nella griglia all’interno del componente Contenitore modulo nell’editor di Forms adattivo.
+
+### Scheda Impostazioni contenitore
+
+![Scheda Impostazioni contenitore](/help/adaptive-forms/assets/panel-container-container-settings.png)
+
+- **Layout**: è possibile disporre di un layout fisso (semplice) o flessibile (griglia dinamica) per la procedura guidata. Il layout semplice mantiene tutto fisso in posizione, mentre la griglia dinamica consente di regolare la posizione dei componenti in base alle proprie esigenze. Ad esempio, utilizza la griglia dinamica per allineare “Nome”, “Secondo nome” e “Cognome” in un modulo in un’unica riga.
+
+- **Disattiva layout**: seleziona questa opzione per disabilitare la selezione del layout nella finestra di dialogo per modifica di un componente.
+
+- **Abilita immagine di sfondo**: questa opzione consente all’utente di configurare le impostazioni del pannello in modo da includere uno sfondo visivo per migliorare l’aspetto visivo.
+
+- **Abilita colore di sfondo**: questa opzione consente di impostare o modificare il colore di sfondo del pannello. Questa funzione viene comunemente utilizzata nella progettazione dell&#39;interfaccia utente per personalizzare l&#39;aspetto dei pannelli all&#39;interno di un&#39;interfaccia più grande. Quando selezioni il **Abilita colore di sfondo** , l&#39;opzione **Solo campioni** viene visualizzata l&#39;opzione. Il **Solo campioni** consente di specificare o scegliere i colori per lo sfondo, il testo o altri elementi visivi all’interno del pannello utilizzando **Aggiungi** pulsante
+
+### Scheda Stili {#styles-tab}
+
+Il componente core Allegato file dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
+
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/panel-container-styles-tab.png)
+
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
+
+- **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+
+### Scheda Proprietà personalizzate
+
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/panel-container-custom-properties.png)
+
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
+
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+
+<!--
+
+## Related article {#related-article}
+
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 ## Articoli correlati {#related-articles}
 
-- [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
-- [Pulsante](/help/adaptive-forms/components/button.md)
-- [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
-- [Selettore data](/help/adaptive-forms/components/date-picker.md)
-- [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
-- [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
-- [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
-- [Allegato file](/help/adaptive-forms/components/file-attachment.md)
-- [Piè di pagina](/help/adaptive-forms/components/footer.md)
-- [Intestazione](/help/adaptive-forms/components/header.md)
-- [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
-- [Immagine](/help/adaptive-forms/components/image.md)
-- [Inserimento numero](/help/adaptive-forms/components/number-input.md)
-- [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
-- [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
-- [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
-- [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
-- [Inserimento testo](/help/adaptive-forms/components/text-input.md)
-- [Testo](/help/adaptive-forms/components/text.md)
-- [Titolo](/help/adaptive-forms/components/title.md)
-- [Procedura guidata](/help/adaptive-forms/components/wizard.md)
-
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 
-- [Creare un modulo adattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it)
-- [Aggiungere un modulo adattivo AEM a una pagina AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it)
-- [Applicare i temi a un modulo adattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it)
-- [Aggiungere componenti a un modulo adattivo di AEM](/help/adaptive-forms/introduction.md#adaptive-forms-core-components-components)
-- [Utilizzare reCAPTCHA in un modulo adattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=it)
-- [Generare la versione PDF (DoR) di un modulo adattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components.html?lang=it)
-- [Tradurre un modulo adattivo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.html?lang=it)
-- [Abilitare Adobe Analytics per il monitoraggio dell’utilizzo dei moduli con un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=it)
-- [Collegare un modulo adattivo a Microsoft SharePoint](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#create-sharepoint-configuration.html?lang=it)
-- [Collegare un modulo adattivo a Microsoft Power Automate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#microsoft-power-automate.html?lang=it)
-- [Collegare un modulo adattivo a Microsoft OneDrive](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-onedrive.html?lang=it)
-- [Collegare un modulo adattivo all’archiviazione BLOB di Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-azure-blob-storage.html?lang=it)
-- [Collegare un modulo adattivo a Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=it)
-- [Utilizzare Adobe Sign in un modulo adattivo di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=it)
-- [Aggiungere una nuova lingua per un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components.html?lang=it)
-- [Inviare dati del modulo adattivo a un database](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=it)
-- [Inviare dati del modulo adattivo a un endpoint REST](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-rest-endpoint.html?lang=it)
-- [Inviare dati del modulo adattivo al flusso di lavoro di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#invoke-an-aem-workflow.html?lang=it)
-- [Usare il portale dei moduli per elencare moduli adattivi di AEM su un sito web di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it)
-
+{{see-also}}

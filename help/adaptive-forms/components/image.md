@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Immagine
 description: Utilizzo o personalizzazione del componente core immagine dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
-workflow-type: ht
-source-wordcount: '1015'
-ht-degree: 100%
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+workflow-type: tm+mt
+source-wordcount: '1205'
+ht-degree: 81%
 
 ---
 
@@ -19,20 +19,20 @@ Per l’accessibilità, è importante specificare un **Testo alternativo** all�
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/image.png)
+![esempio](/help/adaptive-forms/assets/image.png)
 
 
 ## Utilizzo {#reasons-to-use-image-in-a-form}
 
 Ci sono diversi motivi per cui è utile includere un componente Immagine in un modulo adattivo, tra cui:
 
-* **Branding**: un’immagine può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
+- **Branding**: un’immagine può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
 
-* **Strumenti visivi**: un’immagine può essere utile per fornire un ulteriore livello di informazioni agli utenti, fornendo un supporto visivo per aiutarli a comprendere lo scopo del modulo.
+- **Strumenti visivi**: un’immagine può essere utile per fornire un ulteriore livello di informazioni agli utenti, fornendo un supporto visivo per aiutarli a comprendere lo scopo del modulo.
 
-* **Decorazione**: un’immagine può essere utilizzata per migliorare la struttura complessiva del modulo e renderlo più attraente dal punto di vista visivo.
+- **Decorazione**: un’immagine può essere utilizzata per migliorare la struttura complessiva del modulo e renderlo più attraente dal punto di vista visivo.
 
-* **Esperienza utente**: un’immagine può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilarne i campi.
+- **Esperienza utente**: un’immagine può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilarne i campi.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -60,24 +60,26 @@ Puoi personalizzare facilmente l’esperienza dell’immagine per i visitatori t
 
 ![Scheda Proprietà](/help/adaptive-forms/assets/image_properties.png)
 
-* **Nome**: puoi identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
+- **Nome**: puoi identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-* **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+- **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
 
-* **Riferimento di binding del documento di record**: questa opzione consente di associare un campo di un modulo adattivo a un campo di un documento di record. Quando l’utente immette un valore in un campo collegato di un modulo adattivo, tale valore viene visualizzato anche nel campo collegato del corrispondente documento di record. Ad esempio, è possibile utilizzare un riferimento di binding del documento di record per visualizzare il nome e l’indirizzo dell’utente in un documento di record, in base all’ID cliente immesso nel modulo. In questo modo, AEM Forms consente di generare un documento di record e offre un’esperienza utente semplice per la raccolta e la gestione dei dati.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
-* **Descrizione**: una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
+- **Riferimento di binding del documento di record**: questa opzione consente di associare un campo di un modulo adattivo a un campo di un documento di record. Quando l’utente immette un valore in un campo collegato di un modulo adattivo, tale valore viene visualizzato anche nel campo collegato del corrispondente documento di record. Ad esempio, è possibile utilizzare un riferimento di binding del documento di record per visualizzare il nome e l’indirizzo dell’utente in un documento di record, in base all’ID cliente immesso nel modulo. In questo modo, AEM Forms consente di generare un documento di record e offre un’esperienza utente semplice per la raccolta e la gestione dei dati.
 
-* **Rilascia una risorsa qui o cerca un file da caricare**: questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un sistema di file locale utilizzando il pulsante **Sfoglia**. Dopo l’aggiunta di un’immagine, nella sua parte inferiore vengono visualizzati tre pulsanti:
-   * **Modifica**: tocca o fai clic su **Modifica** per gestire i rendering della risorsa nell’editor delle risorse.
-   * **Cancella**: tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * **Scegli**: tocca o fai clic sull’opzione **Scegli** per selezionare un’altra immagine dalla cartella risorse.
+- **Descrizione**: una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
 
-* **Testo alternativo**: questa opzione viene utilizzata per inserire un testo breve e descrittivo alternativo all’immagine, che descrive l’immagine per gli utenti ipovedenti.
+- **Rilascia una risorsa qui o cerca un file da caricare**: questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un sistema di file locale utilizzando il pulsante **Sfoglia**. Dopo l’aggiunta di un’immagine, nella sua parte inferiore vengono visualizzati tre pulsanti:
+   - **Modifica**: tocca o fai clic su **Modifica** per gestire i rendering della risorsa nell’editor delle risorse.
+   - **Cancella**: tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
+   - **Scegli**: tocca o fai clic sull’opzione **Scegli** per selezionare un’altra immagine dalla cartella risorse.
 
-* **Nascondi componente**: seleziona l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+- **Testo alternativo**: questa opzione viene utilizzata per inserire un testo breve e descrittivo alternativo all’immagine, che descrive l’immagine per gli utenti ipovedenti.
 
-* **Sola lettura**: seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Nascondi componente**: seleziona l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+
+- **Sola lettura**: seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
@@ -87,45 +89,29 @@ La finestra di dialogo per la progettazione viene utilizzata per definire e gest
 
 La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core immagine dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/image_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
-**Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core immagine dei moduli adattivi.
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
 
-**Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+- **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
-<!--
+### Proprietà personalizzate
 
-## Related article {#related-article}
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
--->
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
 
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+
+## Articoli correlati {#related-articles}
+
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 

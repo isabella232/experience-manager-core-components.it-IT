@@ -3,10 +3,10 @@ title: Componente core dei moduli adattivi - Testo
 description: Utilizzo o personalizzazione del componente core di testo dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: b8de68e4-ca0d-4ae5-9a04-104cc617f1be
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+workflow-type: tm+mt
+source-wordcount: '1039'
+ht-degree: 78%
 
 ---
 
@@ -18,19 +18,19 @@ Questo consente anche di suddividere la struttura di un modulo in sezioni logich
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/text.png)
+![esempio](/help/adaptive-forms/assets/text.png)
 
 ## Utilizzo {#reasons-to-use-text-label}
 
 Esistono diversi motivi per utilizzare il testo in un modulo:
 
-* **Fornisci istruzioni**: il testo può essere utilizzato per fornire istruzioni su come compilare il modulo o quali informazioni sono necessarie.
+- **Fornisci istruzioni**: il testo può essere utilizzato per fornire istruzioni su come compilare il modulo o quali informazioni sono necessarie.
 
-* **Fornisci contesto**: il testo può essere utilizzato per fornire contesto al modulo, ad esempio per spiegare lo scopo del modulo o dell’organizzazione che raccoglie le informazioni.
+- **Fornisci contesto**: il testo può essere utilizzato per fornire contesto al modulo, ad esempio per spiegare lo scopo del modulo o dell’organizzazione che raccoglie le informazioni.
 
-* **Dividi il modulo in sezioni logiche**: il testo può essere utilizzato per dividere un modulo in sezioni logiche, facilitando agli utenti la comprensione e la compilazione del modulo.
+- **Dividi il modulo in sezioni logiche**: il testo può essere utilizzato per dividere un modulo in sezioni logiche, facilitando agli utenti la comprensione e la compilazione del modulo.
 
-* **Branding e identità**: il testo può essere utilizzato a scopo di branding e identità, ad esempio per includere nel modulo il nome dell’organizzazione.
+- **Branding e identità**: il testo può essere utilizzato a scopo di branding e identità, ad esempio per includere nel modulo il nome dell’organizzazione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -56,11 +56,12 @@ Puoi personalizzare facilmente l’esperienza di testo per i visitatori tramite 
 
 ![Scheda Base](/help/adaptive-forms/assets/text_properties.png)
 
-* **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
+- **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-* **Riferimento a un’associazione**: un riferimento a un’associazione è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
-* **Nascondi componente**: seleziona l’opzione per nascondere il componente del modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
-* **Sola lettura**: seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Riferimento a un’associazione**: un riferimento a un’associazione è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
+- **Nascondi componente**: seleziona questa opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+- **Sola lettura**: seleziona l’opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
@@ -71,44 +72,29 @@ La finestra di dialogo per la progettazione viene utilizzata per definire e gest
 
 La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core di testo dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/reset_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
-* **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core di testo dei moduli adattivi.
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
 
-* **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+- **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
-<!--
+### Proprietà personalizzate
 
-## Related article {#related-article}
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
--->
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
 
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
+
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+
+## Articoli correlati {#related-articles}
+
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 

@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Pulsante Invia
 description: Utilizzo o personalizzazione del componente core del pulsante di invio dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: e4b8e475-79b9-4c4d-9f11-a125a424d32b
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 83%
 
 ---
 
@@ -16,15 +16,19 @@ Un pulsante di invio in un modulo adattivo è un pulsante che consente agli uten
 
 Il pulsante Invia è in genere il passaggio finale del processo di compilazione del modulo e viene utilizzato per avviare il processo di invio dei dati del modulo al server.
 
+**Esempio**
+
+![Esempio di pulsante](/help/adaptive-forms/assets/example-button.png)
+
 ## Utilizzo {#reasons-to-use-submit-button}
 
 I motivi per utilizzare un pulsante di invio in un modulo adattivo sono i seguenti:
 
-* **Invio dei dati**: il pulsante di invio è il meccanismo principale per l’invio dei dati del modulo a un server per l’elaborazione.
+- **Invio dei dati**: il pulsante di invio è il meccanismo principale per l’invio dei dati del modulo a un server per l’elaborazione.
 
-* **Esperienza utente migliorata**: un pulsante di invio ben progettato può migliorare l’esperienza utente fornendo un feedback chiaro sul processo di invio del modulo e indicando quando il modulo è stato inviato correttamente.
+- **Esperienza utente migliorata**: un pulsante di invio ben progettato può migliorare l’esperienza utente fornendo un feedback chiaro sul processo di invio del modulo e indicando quando il modulo è stato inviato correttamente.
 
-* **Convalida dei dati**: il pulsante di invio può essere utilizzato per attivare i controlli di convalida dei dati, garantendo che i dati del modulo siano completi e precisi prima dell’invio al server.
+- **Convalida dei dati**: il pulsante di invio può essere utilizzato per attivare i controlli di convalida dei dati, garantendo che i dati del modulo siano completi e precisi prima dell’invio al server.
 
 
 ## Versione e compatibilità {#version-and-compatibility}
@@ -53,25 +57,26 @@ Puoi personalizzare facilmente l’esperienza del pulsante di invio per i visita
 
 ![Scheda Base](/help/adaptive-forms/assets/button_basictab.png)
 
-* **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
+- **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-* **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+- **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
 
-* **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
-* **Nascondi componente**: seleziona l’opzione per nascondere il componente del modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
-* **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
-* **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Nascondi componente**: seleziona questa opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+- **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 ### Scheda Contenuto Guida {#help-content}
 
 ![Scheda Contenuto Guida](/help/adaptive-forms/assets/button_helptab.png)
 
-* **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
+- **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
 
-* **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
+- **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
 
-* **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
+- **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
 
 ### Accessibilità {#accessibility}
 
@@ -87,45 +92,29 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core del pulsante di invio dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/reset_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
 
-* **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core del pulsante di invio dei moduli adattivi.
+- **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
-* **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+### Proprietà personalizzate
 
-<!--
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-## Related article {#related-article}
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
 
--->
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+
+## Articoli correlati {#related-articles}
+
+{{more-like-this}}
 
 
 ## Consulta anche {#see-also}

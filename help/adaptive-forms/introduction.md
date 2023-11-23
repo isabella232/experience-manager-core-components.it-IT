@@ -3,10 +3,10 @@ title: Introduzione ai componenti core dei moduli adattivi in AEM
 description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la flessibilità dei componenti core dei moduli adattivi e forniscile con l’aiuto di Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
-workflow-type: ht
-source-wordcount: '1264'
-ht-degree: 100%
+source-git-commit: 1dbbb598c0856b76c076f322cdf0210bf38ee9e8
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Questi componenti possono essere utilizzati per creare esperienze eccezionali di
 
 Inoltre, poiché questi componenti sono open-source, gli sviluppatori possono personalizzare ed estendere facilmente i componenti in base alle esigenze specifiche della propria organizzazione. Questi componenti sono inoltre basati sulla metodologia BEM, che garantisce la scalabilità e la manutenzione dei componenti.
 
-![](assets/sample-adaptive-form.png)
+![immagine modulo adattivo](assets/sample-adaptive-form.png)
 
 ## Funzioni {#features}
 

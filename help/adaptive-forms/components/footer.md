@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Piè di pagina
 description: Utilizzo o personalizzazione del componente core piè di pagina dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 99%
 
 ---
 
@@ -16,21 +16,21 @@ Un componente piè di pagina in un modulo adattivo è un’area che in genere vi
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/footer.png)
+![esempio](/help/adaptive-forms/assets/footer.png)
 
 ## Utilizzo {#reasons-to-use-footer}
 
 Includere un componente piè di pagina in un modulo è utile per vari motivi, tra cui:
 
-* **Requisiti legali**: alcuni moduli potrebbero richiedere l’inclusione di una liberatoria, un avviso di copyright o altre informazioni legali. Un piè di pagina è una posizione comoda per includere queste informazioni.
+- **Requisiti legali**: alcuni moduli potrebbero richiedere l’inclusione di una liberatoria, un avviso di copyright o altre informazioni legali. Un piè di pagina è una posizione comoda per includere queste informazioni.
 
-* **Navigazione**: un piè di pagina può fornire collegamenti ad altre pagine importanti del sito web, come ad esempio una informativa sulla privacy, termini di servizio o pagina di contatto.
+- **Navigazione**: un piè di pagina può fornire collegamenti ad altre pagine importanti del sito web, come ad esempio una informativa sulla privacy, termini di servizio o pagina di contatto.
 
-* **Branding**: un piè di pagina può essere utilizzato per includere un logo o altri elementi di branding, contribuendo a rafforzare l’identità dell’organizzazione o del sito web.
+- **Branding**: un piè di pagina può essere utilizzato per includere un logo o altri elementi di branding, contribuendo a rafforzare l’identità dell’organizzazione o del sito web.
 
-* **Coerenza**: un piè di pagina garantisce coerenza nella struttura e nel layout del modulo, rendendolo più intuitivo e semplice da navigare.
+- **Coerenza**: un piè di pagina garantisce coerenza nella struttura e nel layout del modulo, rendendolo più intuitivo e semplice da navigare.
 
-* **Contesto aggiuntivo**: un piè di pagina può fornire un contesto aggiuntivo al modulo, ad esempio un testo che lo descrive o un collegamento a risorse correlate, rendendolo più informativo e semplice da usare.
+- **Contesto aggiuntivo**: un piè di pagina può fornire un contesto aggiuntivo al modulo, ad esempio un testo che lo descrive o un collegamento a risorse correlate, rendendolo più informativo e semplice da usare.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -57,53 +57,53 @@ Puoi personalizzare facilmente l’esperienza del piè di pagina per i visitator
 
 ![Scheda Proprietà](/help/adaptive-forms/assets/footer_propertiestab.png)
 
-* **Finestra di dialogo Modifica**
+- **Finestra di dialogo Modifica**
 La finestra di dialogo Modifica fornisce strumenti di formattazione rich text standard che consentono all’utente di creare un testo per il piè di pagina.
 
-* **Grassetto**: consente di applicare il grassetto al testo selezionato o al testo inserito dopo il cursore. `Ctrl+B` è una scelta rapida della tastiera.
+- **Grassetto**: consente di applicare il grassetto al testo selezionato o al testo inserito dopo il cursore. `Ctrl+B` è una scelta rapida della tastiera.
 
-* **Corsivo**: questa opzione applica la formattazione in corsivo al testo selezionato o al testo in corsivo inserito dopo il cursore. `Ctrl+I` è una scelta rapida della tastiera.
+- **Corsivo**: questa opzione applica la formattazione in corsivo al testo selezionato o al testo in corsivo inserito dopo il cursore. `Ctrl+I` è una scelta rapida della tastiera.
 
 ![Opzioni punto elenco](/help/adaptive-forms/assets/footer_bullet.png)
 
 
-* **Punto elenco**
+- **Punto elenco**
 
-   * **Icona elenchi puntati**: formatta il testo selezionato come elenco puntato o di iniziare l’inserimento di un elenco puntato dopo il cursore. Per terminare un elenco puntato, tocca o fai clic nuovamente sul pulsante Punto elenco oppure immetti due ritorni a capo.
+   - **Icona elenchi puntati**: formatta il testo selezionato come elenco puntato o di iniziare l’inserimento di un elenco puntato dopo il cursore. Per terminare un elenco puntato, tocca o fai clic nuovamente sul pulsante Punto elenco oppure immetti due ritorni a capo.
 
-   * **Icona elenco numerato**: formatta il testo selezionato come elenco numerato o per iniziare l’inserimento di un elenco numerato dopo il cursore. Per terminare un elenco numerato, tocca o fai clic nuovamente sul pulsante Numero oppure immetti due ritorni a capo.
+   - **Icona elenco numerato**: formatta il testo selezionato come elenco numerato o per iniziare l’inserimento di un elenco numerato dopo il cursore. Per terminare un elenco numerato, tocca o fai clic nuovamente sul pulsante Numero oppure immetti due ritorni a capo.
 
-   * **Icona elimina rientro**: diminuisce il livello di rientro del testo selezionato o inserito dopo il cursore. L’opzione è attiva solo se il testo selezionato o la posizione del cursore è già rientrata.
+   - **Icona elimina rientro**: diminuisce il livello di rientro del testo selezionato o inserito dopo il cursore. L’opzione è attiva solo se il testo selezionato o la posizione del cursore è già rientrata.
 
-   * **Icona Rientro**: aumenta il livello di rientro del testo selezionato o inserito dopo il cursore.
+   - **Icona Rientro**: aumenta il livello di rientro del testo selezionato o inserito dopo il cursore.
 
 ![Opzioni collegamento ipertestuale](/help/adaptive-forms/assets/footer_link.png)
 
-* **Collegamento ipertestuale**
+- **Collegamento ipertestuale**
 
-   * **Percorso**: inserisci il percorso
+   - **Percorso**: inserisci il percorso
       1. La finestra di dialogo per selezione consente di scegliere un percorso in AEM.
       1. Se il collegamento non è in AEM, utilizza l’URL assoluto.
       1. I percorsi non assoluti vengono interpretati come relativi ad AEM.
 
-   * **Testo alternativo**: inserisci un testo descrittivo alternativo per il collegamento.
+   - **Testo alternativo**: inserisci un testo descrittivo alternativo per il collegamento.
 
-   * **Target**: scegli il comportamento del collegamento
-      * Destinazione
-      * Stessa scheda
-      * Nuova scheda
-      * Frame principale
-      * Frame superiore
+   - **Target**: scegli il comportamento del collegamento
+      - Destinazione
+      - Stessa scheda
+      - Nuova scheda
+      - Frame principale
+      - Frame superiore
 
-   * **Icona Scollega**: questa opzione rimuove un collegamento già applicato al testo selezionato. Questa opzione è attiva solo se è già selezionato il collegamento.
+   - **Icona Scollega**: questa opzione rimuove un collegamento già applicato al testo selezionato. Questa opzione è attiva solo se è già selezionato il collegamento.
 
-   * **Icona del formato paragrafo**: questa opzione consente di applicare la formattazione del paragrafo al testo selezionato. Consente inoltre di formattare il testo inserito dopo il cursore. Definisce il livello di intestazione del titolo.
+   - **Icona del formato paragrafo**: questa opzione consente di applicare la formattazione del paragrafo al testo selezionato. Consente inoltre di formattare il testo inserito dopo il cursore. Definisce il livello di intestazione del titolo.
 
-* **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel livello dati.
+- **ID**: questa opzione consente di controllare l’identificatore univoco del componente nel codice HTML e nel livello dati.
 
-   * Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
-   * Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
-   * La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
+   - Se non specificato, viene generato automaticamente un ID univoco reperibile sulla pagina risultante.
+   - Se l’ID viene specificato, è responsabilità dell’autore accertarsi che sia univoco.
+   - La modifica dell’ID può avere un impatto sul tracciamento di CSS, JS e Data Layer.
 
 <!--
 
@@ -113,31 +113,9 @@ La finestra di dialogo Modifica fornisce strumenti di formattazione rich text st
 
 -->
 
+## Articoli correlati {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
-
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 

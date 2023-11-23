@@ -3,10 +3,10 @@ title: Componente core dei moduli adattivi - Gruppo di caselle di controllo
 description: Utilizzo o personalizzazione del componente core del gruppo di caselle di controllo nei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 0026734a2e43c51c7f5af2b37492d61e8f779ac7
-workflow-type: ht
-source-wordcount: '1663'
-ht-degree: 100%
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+workflow-type: tm+mt
+source-wordcount: '1875'
+ht-degree: 87%
 
 ---
 
@@ -16,11 +16,11 @@ Un gruppo di caselle di controllo in un modulo adattivo è un insieme di caselle
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/checkbox-group.png)
+![esempio di gruppo di caselle di controllo](/help/adaptive-forms/assets/checkbox-group.png)
 
 **Finestra di dialogo Proprietà**
 
-![](/help/adaptive-forms/assets/checkbox-group-properties.png)
+![finestra di dialogo proprietà gruppo casella di controllo](/help/adaptive-forms/assets/checkbox-group-properties.png)
 
 In questo esempio, l’elemento Opzioni viene utilizzato per raggruppare le caselle di controllo. L’elemento **Testo visualizzato** viene utilizzato per fornire un’etichetta per un elemento e **Valore dati** viene utilizzato per specificare il valore inoltrato al server al momento dell’invio del modulo.
 
@@ -32,17 +32,17 @@ Inoltre, il gruppo di caselle di controllo può essere configurato in modo da av
 
 Ci sono diversi motivi per cui è utile includere un gruppo di caselle di controllo in un modulo adattivo, tra cui:
 
-* **Selezioni multiple**: un gruppo di caselle di controllo consente agli utenti di selezionare più opzioni da un elenco, il che può essere utile in situazioni in cui sono consentite o richieste selezioni multiple.
+- **Selezioni multiple**: un gruppo di caselle di controllo consente agli utenti di selezionare più opzioni da un elenco, il che può essere utile in situazioni in cui sono consentite o richieste selezioni multiple.
 
-* **Esperienza utente**: un gruppo di caselle di controllo può essere utilizzato per rendere il modulo più semplice da usare, poiché fornisce agli utenti un modo chiaro e intuitivo per selezionare più opzioni.
+- **Esperienza utente**: un gruppo di caselle di controllo può essere utilizzato per rendere il modulo più semplice da usare, poiché fornisce agli utenti un modo chiaro e intuitivo per selezionare più opzioni.
 
-* **Analisi dei dati**: un gruppo di caselle di controllo può essere utilizzato per raccogliere dati di origine diversa e analizzarli o utilizzarli come input per un’ulteriore elaborazione.
+- **Analisi dei dati**: un gruppo di caselle di controllo può essere utilizzato per raccogliere dati di origine diversa e analizzarli o utilizzarli come input per un’ulteriore elaborazione.
 
-* **Sondaggi**: un gruppo caselle di controllo può essere utilizzato nei sondaggi per selezionare più opzioni per una domanda.
+- **Sondaggi**: un gruppo caselle di controllo può essere utilizzato nei sondaggi per selezionare più opzioni per una domanda.
 
-* **Preferenze utente**: un gruppo di caselle di controllo può essere utilizzato per registrare le preferenze dell’utente tra diverse opzioni.
+- **Preferenze utente**: un gruppo di caselle di controllo può essere utilizzato per registrare le preferenze dell’utente tra diverse opzioni.
 
-* **Valore dati**: un gruppo di caselle di controllo può essere utilizzato anche per elaborare gli elementi di un gruppo di caselle di controllo.
+- **Valore dati**: un gruppo di caselle di controllo può essere utilizzato anche per elaborare gli elementi di un gruppo di caselle di controllo.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -71,51 +71,53 @@ Puoi personalizzare facilmente la tua esperienza con le caselle di controllo per
 
 ![Scheda Base](/help/adaptive-forms/assets/checkbox_basictab.png)
 
-* **Nome**: il nome identifica in modo univoco il componente nell’editor delle regole. Le stringhe di nome non consentono l’uso di caratteri e spazi speciali.
+- **Nome**: il nome identifica in modo univoco il componente nell’editor delle regole. Le stringhe di nome non consentono l’uso di caratteri e spazi speciali.
 
-* **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+- **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
 
-* **Nascondi titolo**: seleziona l’opzione per nascondere il Titolo del componente.
+- **Nascondi titolo**: seleziona l’opzione per nascondere il Titolo del componente.
 
-* **Opzioni**: è possibile aggiungere valori dati e visualizzare coppie di testo utilizzando il pulsante **Aggiungi**. Una volta aggiunta una nuova opzione, è possibile eseguire le azioni seguenti:
+- **Opzioni**: è possibile aggiungere valori dati e visualizzare coppie di testo utilizzando il pulsante **Aggiungi**. Una volta aggiunta una nuova opzione, è possibile eseguire le azioni seguenti:
 
-   * **Valore Dati**: questa opzione consente di immettere il contenuto da inviare quando viene selezionata un’opzione.
-   * **Testo visualizzato**: questa opzione consente di inserire il contenuto da visualizzare in un modulo adattivo.
-   * **Elimina**: tocca o fai clic per eliminare l’opzione di una casella di controllo.
-   * **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
+   - **Valore Dati**: questa opzione consente di immettere il contenuto da inviare quando viene selezionata un’opzione.
+   - **Testo visualizzato**: questa opzione consente di inserire il contenuto da visualizzare in un modulo adattivo.
+   - **Elimina**: tocca o fai clic per eliminare l’opzione di una casella di controllo.
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
-* **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
 
-* **Tipo di dati del valore inviato** - questa opzione specifica il tipo di dati del valore inviato quando viene selezionata un’opzione. Se il **tipo di dati del valore inviato** è impostato su `Number` e si aggiungono dati della stringa a **Valore dati** nella scheda **Opzioni**, nella schermata viene visualizzato un messaggio di errore `Value type mismatch`.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
-* **Opzioni visualizzate**: questa opzione viene utilizzata per impostare l’allineamento visivo delle caselle di controllo in un modulo adattivo. Le due opzioni supportate sono:
-   * **Orizzontale**: quando questa opzione è selezionata, le caselle di controllo vengono visualizzate da sinistra a destra in un modulo adattivo.
-   * **Verticale**: quando questa opzione è selezionata, le caselle di controllo vengono visualizzate dall’alto verso il basso in un modulo adattivo.
+- **Tipo di dati del valore inviato** - questa opzione specifica il tipo di dati del valore inviato quando viene selezionata un’opzione. Se il **tipo di dati del valore inviato** è impostato su `Number` e si aggiungono dati della stringa a **Valore dati** nella scheda **Opzioni**, nella schermata viene visualizzato un messaggio di errore `Value type mismatch`.
 
-* **Opzioni predefinite**: questa opzione consente di aggiungere valori predefiniti preselezionati al caricamento del modulo. Utilizza l’icona Elimina per rimuovere le opzioni aggiunte. Se il **tipo di dati del valore inviato** è impostato su `Number` e aggiungi una stringa di dati a **Opzioni predefinite**, la schermata mostra un messaggio di errore `Value type mismatch`.
-* **Nascondi componente**: seleziona l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
-* **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
-* **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Opzioni visualizzate**: questa opzione viene utilizzata per impostare l’allineamento visivo delle caselle di controllo in un modulo adattivo. Le due opzioni supportate sono:
+   - **Orizzontale**: quando questa opzione è selezionata, le caselle di controllo vengono visualizzate da sinistra a destra in un modulo adattivo.
+   - **Verticale**: quando questa opzione è selezionata, le caselle di controllo vengono visualizzate dall’alto verso il basso in un modulo adattivo.
+
+- **Opzioni predefinite**: questa opzione consente di aggiungere valori predefiniti preselezionati al caricamento del modulo. Utilizza l’icona Elimina per rimuovere le opzioni aggiunte. Se il **tipo di dati del valore inviato** è impostato su `Number` e aggiungi una stringa di dati a **Opzioni predefinite**, la schermata mostra un messaggio di errore `Value type mismatch`.
+- **Nascondi componente**: seleziona l’opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+- **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 ### Scheda Convalida {#validation-tab}
 
 ![Scheda Convalida](/help/adaptive-forms/assets/checkbox_validationtab.png)
 
-* **Obbligatorio**: seleziona questa opzione se desideri visualizzare il componente in un modulo adattivo. Non è possibile selezionare **Nascondi componente** o **Disattiva componente** nella scheda **Base** quando questa opzione è selezionata.
+- **Obbligatorio**: seleziona questa opzione se desideri visualizzare il componente in un modulo adattivo. Dopo aver selezionato l’opzione, è necessario effettuare una selezione prima di procedere con l’invio di un modulo. Non è possibile selezionare **Nascondi componente** o **Disattiva componente** nella scheda **Base** quando questa opzione è selezionata.
 
-* **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato se la casella di controllo **Obbligatorio** è selezionata e il campo modulo viene lasciato vuoto.
+- **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato se la casella di controllo **Obbligatorio** è selezionata e il campo modulo viene lasciato vuoto.
 
-* **Messaggio di convalida script**: questa opzione consente di inserire un messaggio da visualizzare in caso di mancata convalida dello script.
+- **Messaggio di convalida script**: questa opzione consente di inserire un messaggio da visualizzare in caso di mancata convalida dello script.
 
 ### Scheda Contenuto Guida {#helpcontent-tab}
 
 ![Scheda Contenuto Guida](/help/adaptive-forms/assets/checkbox_helptab.png)
 
-* **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
+- **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
 
-* **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
+- **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
 
-* **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
+- **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -123,7 +125,7 @@ Puoi personalizzare facilmente la tua esperienza con le caselle di controllo per
 
 **Testo per utilità per la lettura dello schermo**: il testo per le utilità per la lettura dello schermo si riferisce al testo aggiuntivo destinato specificamente ad essere letto da tecnologie di assistenza, come le utilità per la lettura dello schermo, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome del campo ed eventuali messaggi rilevanti (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di qualsiasi utente, comprese le persone ipovedenti, consentendo di comprendere appieno il campo del modulo e i relativi requisiti.
 
-    ## Finestra di dialogo per la progettazione {#design-dialog}
+## Finestra di dialogo per la progettazione {#design-dialog}
 
 La finestra di dialogo per la progettazione si usa per definire e gestire gli stili CSS per il componente Gruppo di caselle di selezione.
 
@@ -131,43 +133,29 @@ La finestra di dialogo per la progettazione si usa per definire e gestire gli st
 
 Il componente core Gruppo di caselle di controllo dei moduli adattivi supporta il [sistema di stili](/help/get-started/authoring.md#component-styling) AEM.
 
-![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox_designdialog.png)
+![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
-* **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo di caselle di selezione dei moduli adattivi.
 
-* **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+- **Stili consentiti**: puoi definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
-<!--
+### Proprietà personalizzate
 
-## Related article {#related-article}
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
--->
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
+
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+
+## Articoli correlati {#related-articles}
+
+{{more-like-this}})
 
 ## Consulta anche {#see-also}
 

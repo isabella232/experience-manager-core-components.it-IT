@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Inserimento numero di telefono
 description: Utilizzo o personalizzazione del componente core per l’inserimento del numero di telefono nei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
-workflow-type: ht
-source-wordcount: '1791'
-ht-degree: 100%
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+workflow-type: tm+mt
+source-wordcount: '2010'
+ht-degree: 85%
 
 ---
 
@@ -16,15 +16,17 @@ Il componente core per l’inserimento del numero di telefono in un modulo adatt
 
 Il campo del numero di telefono viene comunemente utilizzato nei moduli di contatto, nei moduli di registrazione e in altri moduli in cui è richiesto un numero telefonico come mezzo di contatto. Il campo del numero di telefono può essere utilizzato anche per garantire che l’utente immetta un numero di telefono valido, in quanto il browser può applicare determinati vincoli, come la lunghezza e il formato del numero di telefono, in base all’attributo “pattern”.
 
+![esempio](/help/adaptive-forms/assets/emailid-example.png)
+
 ## Utilizzo {#reasons-to-use-telephone-input}
 
 I motivi comuni per cui si utilizza un campo per il numero di telefono in un modulo adattivo sono i seguenti:
 
-* **Informazioni di contatto**: un campo per il numero di telefono viene comunemente utilizzato per memorizzare il numero di telefono di un utente come mezzo di contatto.
+- **Informazioni di contatto**: un campo per il numero di telefono viene comunemente utilizzato per memorizzare il numero di telefono di un utente come mezzo di contatto.
 
-* **Maggiore accuratezza dei dati**: utilizzando un campo per il numero di telefono, il modulo può imporre determinati vincoli al formato del numero di telefono, il che può contribuire a garantire che i dati immessi siano accurati e completi.
+- **Maggiore accuratezza dei dati**: utilizzando un campo per il numero di telefono, il modulo può imporre determinati vincoli al formato del numero di telefono, il che può contribuire a garantire che i dati immessi siano accurati e completi.
 
-* **Esperienza utente migliorata**: un campo per il numero di telefono offre agli utenti un modo chiaro e intuitivo di inserire il proprio numero di telefono e può migliorare l’esperienza dell’utente consentendo agli utenti di inserire rapidamente e facilmente le informazioni di contatto.
+- **Esperienza utente migliorata**: un campo per il numero di telefono offre agli utenti un modo chiaro e intuitivo di inserire il proprio numero di telefono e può migliorare l’esperienza dell’utente consentendo agli utenti di inserire rapidamente e facilmente le informazioni di contatto.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -50,57 +52,58 @@ Puoi personalizzare facilmente l’esperienza di immissione del numero di telefo
 
 ![Scheda Base](/help/adaptive-forms/assets/telephoneinput_basictab.png)
 
-* **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
+- **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-* **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
+- **Titolo**: con il relativo titolo è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato sopra il componente. Se non aggiungi un titolo, al posto del testo del titolo viene visualizzato il nome del componente.
 
-* **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
+- **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
 
-* **Testo segnaposto**: il testo segnaposto in un componente modulo si riferisce a un’etichetta o a un prompt brevi che vengono visualizzati all’interno di un campo di inserimento come suggerimento per l’utente sul tipo di informazioni che ci si aspetta venga immesso in quel campo. Il testo segnaposto scompare quando l’utente inizia a digitare nel campo e viene visualizzato nuovamente se il campo viene lasciato vuoto. Fornisce un suggerimento visivo all’utente, ma non funge da etichetta o valore permanente per il campo.
+- **Testo segnaposto**: il testo segnaposto in un componente modulo si riferisce a un’etichetta o a un prompt brevi che vengono visualizzati all’interno di un campo di inserimento come suggerimento per l’utente sul tipo di informazioni che ci si aspetta venga immesso in quel campo. Il testo segnaposto scompare quando l’utente inizia a digitare nel campo e viene visualizzato nuovamente se il campo viene lasciato vuoto. Fornisce un suggerimento visivo all’utente, ma non funge da etichetta o valore permanente per il campo.
 
-* **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, fornendo un’esperienza utente fluida per la raccolta e la gestione dei dati.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
-* **Nascondi componente**: seleziona l’opzione per nascondere il componente del modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
+- **Nascondi componente**: seleziona questa opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 
-* **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Disattiva componente**: seleziona questa opzione per disabilitare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
-* **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
-* **Valore predefinito** - questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
+- **Valore predefinito** - questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se **Componente disabilitato** o **Componente di sola lettura** è selezionato, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
 
 ### Scheda Convalida {#validation-tab}
 
 ![Scheda Convalida](/help/adaptive-forms/assets/telephoneinput_validationtab.png)
 
-* **Obbligatorio**: seleziona questa opzione se desideri visualizzare il componente in un modulo adattivo. Non è possibile selezionare **Nascondi componente** o **Disattiva componente** nella scheda **Base** quando questa opzione è selezionata.
+- **Obbligatorio**: seleziona questa opzione se desideri visualizzare il componente in un modulo adattivo. Dopo aver selezionato l’opzione, è necessario inserire un valore prima di procedere con l’invio di un modulo. Non è possibile selezionare **Nascondi componente** o **Disattiva componente** nella scheda **Base** quando questa opzione è selezionata.
 
-* **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato se la casella di controllo **Obbligatorio** è selezionata e il campo viene lasciato vuoto.
+- **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato se la casella di controllo **Obbligatorio** è selezionata e il campo viene lasciato vuoto.
 
-* **Messaggio di convalida script**: questa opzione consente di inserire un messaggio da visualizzare in caso di errore di convalida dello script.
+- **Messaggio di convalida script**: questa opzione consente di inserire un messaggio da visualizzare in caso di errore di convalida dello script.
 
-* **Numero massimo di caratteri**: questa opzione consente di specificare il numero massimo di caratteri consentiti nel componente. Se immetti più caratteri del valore specificato in **Numero massimo di caratteri**, sullo schermo viene visualizzato un messaggio di errore. La finestra di dialogo **Messaggio di errore relativo al numero massimo di caratteri** consente di aggiungere un messaggio di errore personalizzato.
+- **Numero massimo di caratteri**: questa opzione consente di specificare il numero massimo di caratteri consentiti nel componente. Se immetti più caratteri del valore specificato in **Numero massimo di caratteri**, sullo schermo viene visualizzato un messaggio di errore. La finestra di dialogo **Messaggio di errore relativo al numero massimo di caratteri** consente di aggiungere un messaggio di errore personalizzato.
 
-* **Messaggio di errore relativo al numero massimo di caratteri**: la finestra di dialogo **Messaggio di errore relativo al numero massimo di caratteri** ti permette di aggiungere un messaggio di errore personalizzato se si immettono caratteri superiori al valore specificato nell’opzione **Numero massimo di caratteri**.
+- **Messaggio di errore relativo al numero massimo di caratteri**: la finestra di dialogo **Messaggio di errore relativo al numero massimo di caratteri** ti permette di aggiungere un messaggio di errore personalizzato se si immettono caratteri superiori al valore specificato nell’opzione **Numero massimo di caratteri**.
 
-* **Numero minimo di caratteri**: questa opzione ti consente di specificare il numero minimo di caratteri consentiti nel campo. Se immetti caratteri inferiori al valore specificato in **Numero minimo di caratteri**, sullo schermo viene visualizzato un messaggio di errore. La finestra di testo **Messaggio di errore relativo al numero minimo caratteri** consente di aggiungere un messaggio di errore personalizzato.
+- **Numero minimo di caratteri**: questa opzione ti consente di specificare il numero minimo di caratteri consentiti nel campo. Se immetti caratteri inferiori al valore specificato in **Numero minimo di caratteri**, sullo schermo viene visualizzato un messaggio di errore. La finestra di testo **Messaggio di errore relativo al numero minimo caratteri** consente di aggiungere un messaggio di errore personalizzato.
 
-* *Messaggio di errore relativo al numero minimo dei caratteri**: la finestra di dialogo **Messaggio di errore relativo al numero minimo dei caratteri** consente di aggiungere un messaggio di errore personalizzato se inserisci meno caratteri rispetto al valore specificato nell’opzione **Numero minimo di caratteri**.
+- *Messaggio di errore relativo al numero minimo dei caratteri**: la finestra di dialogo **Messaggio di errore relativo al numero minimo dei caratteri** consente di aggiungere un messaggio di errore personalizzato se inserisci meno caratteri rispetto al valore specificato nell’opzione **Numero minimo di caratteri**.
 
 L’opzione **Pattern di convalida** consente di inserire un pattern per convalidare il numero di telefono inserito. Il numero di telefono inserito viene convalidato in base al valore inserito nell’opzione **Pattern**. Nel caso in cui il numero di telefono non venga convalidato con il valore inserito nell’opzione **Pattern**, il messaggio di errore viene visualizzato sullo schermo.
 
-* **Pattern**: questa opzione consente di inserire i pattern di verifica consentiti per il numero di telefono. Sono consentite anche espressioni regolari.
+- **Pattern**: questa opzione consente di inserire i pattern di verifica consentiti per il numero di telefono. Sono consentite anche espressioni regolari.
 
-* **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato sullo schermo se il numero di telefono inserito non viene convalidato con il valore inserito nell’opzione **Pattern**.
+- **Messaggio di errore**: questa opzione consente di inserire un messaggio visualizzato sullo schermo se il numero di telefono inserito non viene convalidato con il valore inserito nell’opzione **Pattern**.
 
 ### Scheda Contenuto Guida {#help-content-tab}
 
 ![Scheda Contenuto Guida](/help/adaptive-forms/assets/telephoneinput_helptab.png)
 
-* **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
+- **Breve descrizione**: una breve descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di un campo modulo specifico. Aiuta l’utente a capire quale tipo di dati deve essere immesso nel campo e può fornire linee guida o esempi per garantire che le informazioni immesse siano valide e soddisfino i criteri desiderati. Per impostazione predefinita, le descrizioni brevi rimangono nascoste. Abilita l’opzione **Mostra sempre una breve descrizione** per visualizzarla sotto il componente.
 
-* **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
+- **Mostra sempre una breve descrizione**: abilita l’opzione per visualizzare la descrizione breve sotto il componente.
 
-* **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
+- **Testo guida**: il testo guida si riferisce a informazioni o indicazioni aggiuntive fornite all’utente per aiutarlo a compilare correttamente un campo del modulo. Viene visualizzato quando l’utente fa clic sull’icona dell’aiuto (i) posta vicino al componente. Il testo guida fornisce informazioni più dettagliate rispetto all’etichetta o al testo segnaposto di un campo del modulo ed è progettato per consentire all’utente di comprendere i requisiti o i vincoli del campo. Può inoltre offrire suggerimenti o esempi per rendere più semplice e precisa la compilazione del modulo.
 
 ### Scheda Accessibilità {#accessibility-tab}
 
@@ -118,15 +121,35 @@ La scheda è utilizzata per definire e gestire gli stili CSS per un componente. 
 
 ![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/telephoneinput_designdialog.png)
 
-* **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core di inserimento del numero di telefono nei moduli adattivi.
+- **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core di inserimento del numero di telefono nei moduli adattivi.
 
-* **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+- **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
+
+### Proprietà personalizzate
+
+![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/telephoneinput-customproperties.png)
+
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+
+   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+
+   - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
+
+   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
 
 ### Scheda Formati {#format-tab}
 
 La scheda dei formati consente di specificare i formati numerici predefiniti e personalizzati.
 
 ![Scheda Formato](/help/adaptive-forms/assets/telephoneinput_format.png)
+
+### Scheda Pattern di convalida {#validation-patterns-tab}
+
+La scheda Pattern di convalida consente di immettere valori in un formato specifico o di soddisfare determinati criteri. Per impostazione predefinita, sono disponibili alcune opzioni che è possibile selezionare selezionando la casella di controllo corrispondente. È inoltre possibile aggiungere un formato personalizzato facendo clic sul pulsante **Aggiungi** pulsante.
+
+![ValidationTab](/help/adaptive-forms/assets/telephoneinput-validationpatterns.png)
 
 <!--
 
@@ -137,53 +160,9 @@ La scheda dei formati consente di specificare i formati numerici predefiniti e p
 -->
 
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+## Articoli correlati {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Intestazione](/help/adaptive-forms/components/header.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 

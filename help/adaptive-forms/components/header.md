@@ -3,9 +3,9 @@ title: Componente core di moduli adattivi - Intestazione
 description: Utilizzo o personalizzazione del componente core dell’ntestazione dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
-workflow-type: ht
-source-wordcount: '712'
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+workflow-type: tm+mt
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -20,15 +20,15 @@ Un componente intestazione in un modulo adattivo è una sezione nella parte supe
 
 ## Utilizzo {#reasons-to-use-header}
 
-* **Branding**: un’intestazione può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
+- **Branding**: un’intestazione può essere utilizzata per visualizzare il logo o il nome dell’organizzazione che ha creato il modulo, contribuendo a stabilire il riconoscimento e la credibilità del marchio.
 
-* **Contesto**: un’intestazione può fornire una breve descrizione dello scopo del modulo, aiutando gli utenti a comprendere il contesto in cui il modulo viene utilizzato.
+- **Contesto**: un’intestazione può fornire una breve descrizione dello scopo del modulo, aiutando gli utenti a comprendere il contesto in cui il modulo viene utilizzato.
 
-* **Navigazione**: un’intestazione può includere collegamenti o pulsanti che consentono agli utenti di passare ad altre parti del sito web o dell’applicazione.
+- **Navigazione**: un’intestazione può includere collegamenti o pulsanti che consentono agli utenti di passare ad altre parti del sito web o dell’applicazione.
 
-* **Informazioni**: un’intestazione può includere informazioni di contatto o collegamenti alle risorse di supporto, facilitando agli utenti l’assistenza in caso di necessità.
+- **Informazioni**: un’intestazione può includere informazioni di contatto o collegamenti alle risorse di supporto, facilitando agli utenti l’assistenza in caso di necessità.
 
-* **Esperienza utente**: un’intestazione può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilare i campi del modulo.
+- **Esperienza utente**: un’intestazione può essere utilizzata per rendere il modulo più semplice da usare, fornendo agli utenti un modo chiaro e intuitivo di accedere e compilare i campi del modulo.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -60,21 +60,21 @@ Questa parte dell’intestazione contiene il titolo dell’intestazione e l’im
 
 ![Scheda Immagine](/help/adaptive-forms/assets/header_image.png)
 
-* **Risorsa immagine**: questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un file system locale utilizzando il pulsante **Sfoglia**. Dopo l’aggiunta di un’immagine, nella parte inferiore della stessa vengono visualizzati tre pulsanti. Dopo l’aggiunta di un’immagine, nella sua parte inferiore vengono visualizzati tre pulsanti:
-   * **Modifica**: tocca o fai clic su **Modifica** per gestire i rendering della risorsa nell’editor delle risorse.
-   * **Cancella**: tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
-   * **Seleziona**: tocca o fai clic su **Seleziona** per selezionare un’altra immagine dalla cartella Risorse.
+- **Risorsa immagine**: questa opzione consente di rilasciare una risorsa, ad esempio un’immagine, mediante trascinamento del mouse. È inoltre possibile caricare un file da un file system locale utilizzando il pulsante **Sfoglia**. Dopo l’aggiunta di un’immagine, nella parte inferiore della stessa vengono visualizzati tre pulsanti. Dopo l’aggiunta di un’immagine, nella sua parte inferiore vengono visualizzati tre pulsanti:
+   - **Modifica**: tocca o fai clic su **Modifica** per gestire i rendering della risorsa nell’editor delle risorse.
+   - **Cancella**: tocca o fai clic su **Cancella** per deselezionare l’immagine attualmente selezionata.
+   - **Seleziona**: tocca o fai clic su **Seleziona** per selezionare un’altra immagine dalla cartella Risorse.
 
-* **Titolo**: questa opzione viene utilizzata per aggiungere l’intestazione all’intestazione. Il testo predefinito viene incluso nella finestra di dialogo e può essere modificato dall’utente.
-* **Collega a**: puoi collegare l’intestazione alla cartella utilizzando l’icona **Sfoglia**.
-* **Descrizione**: una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
-* **Dimensioni (px)**: consente di regolare la lunghezza e la larghezza dell’immagine aumentando o diminuendo i pixel.
+- **Titolo**: questa opzione viene utilizzata per aggiungere l’intestazione all’intestazione. Il testo predefinito viene incluso nella finestra di dialogo e può essere modificato dall’utente.
+- **Collega a**: puoi collegare l’intestazione alla cartella utilizzando l’icona **Sfoglia**.
+- **Descrizione**: una descrizione è una breve spiegazione testuale che fornisce informazioni aggiuntive o chiarimenti sullo scopo di una specifica immagine.
+- **Dimensioni (px)**: consente di regolare la lunghezza e la larghezza dell’immagine aumentando o diminuendo i pixel.
 
 ![Scheda Accessibilità](/help/adaptive-forms/assets/header_accessibility.png)
 
-* **Testo alternativo**: questa opzione viene utilizzata per inserire il testo che fornisce un testo alternativo breve e descrittivo per l’immagine. La descrizione dell’immagine sarà di aiuto agli utenti ipovedenti.
+- **Testo alternativo**: questa opzione viene utilizzata per inserire il testo che fornisce un testo alternativo breve e descrittivo per l’immagine. La descrizione dell’immagine sarà di aiuto agli utenti ipovedenti.
 
-* **L’immagine è decorativa**: controlla se l’immagine deve essere ignorata dalla tecnologia per l’accessibilità e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
+- **L’immagine è decorativa**: controlla se l’immagine deve essere ignorata dalla tecnologia per l’accessibilità e quindi non richiede un testo alternativo. Questo vale solo per le immagini decorative.
 
 ### Scheda Testo {#text-tab}
 
@@ -88,30 +88,9 @@ Questa sezione consente di inserire il testo da includere nell’intestazione.
 
 -->
 
+## Articoli correlati {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
->* [Pulsante](/help/adaptive-forms/components/button.md)
->* [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
->* [Selettore data](/help/adaptive-forms/components/date-picker.md)
->* [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
->* [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
->* [Contenitore modulo](/help/adaptive-forms/components/form-container.md)
->* [Allegato file](/help/adaptive-forms/components/file-attachment.md)
->* [Piè di pagina](/help/adaptive-forms/components/footer.md)
->* [Schede orizzontali](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Immagine](/help/adaptive-forms/components/image.md)
->* [Inserimento numero](/help/adaptive-forms/components/number-input.md)
->* [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
->* [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
->* [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
->* [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
->* [Inserimento telefono](/help/adaptive-forms/components/telephone-input.md)
->* [Inserimento testo](/help/adaptive-forms/components/text-input.md)
->* [Testo](/help/adaptive-forms/components/text.md)
->* [Titolo](/help/adaptive-forms/components/title.md)
->* [Procedura guidata](/help/adaptive-forms/components/wizard.md)
+{{more-like-this}}
 
 ## Consulta anche {#see-also}
 
