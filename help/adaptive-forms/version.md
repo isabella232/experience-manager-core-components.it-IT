@@ -3,10 +3,10 @@ title: Versioni dei componenti core di AEM Forms
 description: I componenti core AEM vengono pubblicati come versioni che possono contenere più di una versione degli stessi componenti core. Questo documento spiega cosa s’intende per versioni e come comprendere la compatibilità con i Componenti core e AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: f53be69df3dff9f3873a3bda6ba331f76de75487
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '885'
+ht-degree: 58%
 
 ---
 
@@ -36,7 +36,7 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 | [2.0.34](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.34) | È stato aggiunto il supporto della localizzazione per i messaggi di errore predefiniti insieme al pulsante Aggiungi/Rimuovi per il componente Ripetibile. | Continua | 8, 11 | 28 giugno 2023 |
 | [2.0.32](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.32) | Con questa versione è stato aggiunto il supporto per Captcha per Adaptive Forms. | Continua | 8, 11 | 15 giugno 2023 |
 | [2.0.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.26) | Supporto per l’aggiunta di moduli adattivi su AEM Sites. | Continua | 8, 11 | 7 giugno 2023 |
-| [2.0.18](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.18) | Con questa versione, è stato aggiunto il supporto per la ripetibilità del componente Pannello a soffietto. | Continua | 8, 11 | 5 giugno 2023 |
+| [2.0.18](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.18) | Con questa versione, è stato aggiunto il supporto per la ripetibilità del componente Pannello a soffietto. È stato aggiunto anche un nuovo componente come schede verticali. | Continua | 8, 11 | 5 giugno 2023 |
 | [2.0.10](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.10) | Con questa versione, nell’editor di Sites, viene introdotto il supporto per un componente contenitore di moduli adattivi. | Continua | 8, 11 | 17 marzo 2023 |
 | [2.0.8](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.8) | In questa versione è stata introdotta la funzione di ripetibilità per il componente della procedura guidata. | Continua | 8, 11 | 3 marzo 2023 |
 | [2.0.6](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | In questa versione vengono introdotti più formati per il componente core dell’inserimento numerico. | Continua | 8, 11 | 08 febbraio 2023 |

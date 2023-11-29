@@ -3,9 +3,9 @@ title: 'Componente core Forms adattivo: casella di controllo'
 description: Utilizzo o personalizzazione del componente core Casella di controllo Forms adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: f0b450ef93a32a56000c31d82bf92394c57b55f9
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1706'
 ht-degree: 53%
 
 ---
@@ -34,13 +34,13 @@ I motivi comuni per cui si utilizza la casella di controllo in un modulo adattiv
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Casella di controllo Forms adattivo è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.4. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla relativa documentazione:
+Il componente core Casella di controllo Forms adattivo è stato rilasciato come parte dei Componenti core 2.0.52. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla relativa documentazione:
 
 |  |  |
 |---|---|
 | Versione del componente | AEM as a Cloud Service |
 | --- | --- |
-| v1 | Compatibile con<br>[versione 2.0.4](/help/versions.md) e successive | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.0.52](/help/versions.md) e successive | Compatibile | Compatibile |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md).
 
