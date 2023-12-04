@@ -3,14 +3,14 @@ title: 'Componente core Forms adattivo: casella di controllo'
 description: Utilizzo o personalizzazione del componente core Casella di controllo Forms adattivo.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
+source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1692'
 ht-degree: 53%
 
 ---
 
-# Casella di selezione {#checkbox-component}
+# Componente casella di controllo{#checkbox-component}
 
 Una casella di controllo è un elemento dell&#39;interfaccia utente grafico comunemente utilizzato nelle applicazioni software e nei moduli per consentire agli utenti di effettuare una scelta binaria tra due opzioni: selezionata (selezionata) o deselezionata (deselezionata).
 
@@ -40,7 +40,7 @@ Il componente core Casella di controllo Forms adattivo è stato rilasciato come 
 |---|---|
 | Versione del componente | AEM as a Cloud Service |
 | --- | --- |
-| v1 | Compatibile con<br>[versione 2.0.52](/help/versions.md) e successive | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.0.52](/help/versions.md) e versioni successive | Compatibile | Compatibile |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md).
 

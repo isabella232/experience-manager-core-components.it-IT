@@ -3,14 +3,14 @@ title: 'Componente core Forms adattivo: schede verticali'
 description: Utilizzo o personalizzazione del componente core Schede verticali di Forms adattivo.
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
+source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1904'
 ht-degree: 65%
 
 ---
 
-# Schede verticali {#vertical-tabs-adaptive-forms-core-component}
+# Componente Schede verticali{#vertical-tabs-adaptive-forms-core-component}
 
 Le schede verticali in un modulo adattivo si riferiscono a un motivo di progettazione in cui più sezioni di un modulo sono raggruppate e visualizzate come schede separate, allineate verticalmente. L’utente può passare da una scheda all’altra per accedere a diverse sezioni del modulo. Ogni scheda funge da attivatore per mostrare e nascondere il relativo contenuto del modulo. Le schede verticali consentono di organizzare i moduli lunghi in sezioni gestibili e di migliorare l’esperienza di utilizzo. Le schede possono essere utili per rendere un modulo più accessibile agli utenti con disabilità, consentendo di passare da una sezione all’altra tramite la navigazione con tastiera.
 
@@ -38,7 +38,7 @@ Il componente core Schede verticali di Forms adattivo è stato rilasciato come p
 |---|---|
 | Versione del componente | AEM as a Cloud Service |
 | --- | --- |
-| v1 | Compatibile con<br>[versione 2.0.18](/help/versions.md) e successive | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.0.18](/help/versions.md) e versioni successive | Compatibile | Compatibile |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md).
 
