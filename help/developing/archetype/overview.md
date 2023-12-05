@@ -4,10 +4,10 @@ description: Un modello di progetto per applicazioni basate su AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 4d93ba2e1aac91521496ecfef127157c9bc8776c
-workflow-type: ht
-source-wordcount: '1192'
-ht-degree: 100%
+source-git-commit: b753764125b84c5256b80a949e1188b0afbbf88f
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ La dipendenza dai Componenti core viene aggiunta solo per le versioni di AEM non
 
 | Archetipo | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [43](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-43) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [47](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-47) | Continua | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Imposta l’ambiente di sviluppo locale per l’[SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) o per [versioni precedenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
