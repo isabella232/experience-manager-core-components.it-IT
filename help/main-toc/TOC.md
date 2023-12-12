@@ -6,9 +6,9 @@ feature: Core Components
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
 source-git-commit: 3e36fdf9b175930ee3a998bf91116c35b3cb6f9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,14 +107,14 @@ ht-degree: 96%
    + Componenti moduli adattivi {#adaptive-forms-components}
       + [Pannello a soffietto moduli adattivi](/help/adaptive-forms/components/accordion.md)
       + [Pulsante moduli adattivi](/help/adaptive-forms/components/button.md)
-      + [Casella di controllo Forms adattivo](/help/adaptive-forms/components/checkbox.md)
+      + [Casella di controllo per modulo adattivo](/help/adaptive-forms/components/checkbox.md)
       + [Gruppo di caselle di controllo dei moduli adattivi](/help/adaptive-forms/components/checkbox-group.md)
       + [Contenitore di moduli adattivi](/help/adaptive-forms/components/form-container.md)
       + [Selettore data moduli adattivi](/help/adaptive-forms/components/date-picker.md)
       + [Elenco a discesa moduli adattivi](/help/adaptive-forms/components/drop-down.md)
       + [Inserimento e-mail moduli adattivi](/help/adaptive-forms/components/email-input.md)
       + [Allegati file moduli adattivi](/help/adaptive-forms/components/file-attachment.md)
-      + [Schede verticali Forms adattive](/help/adaptive-forms/components/vertical-tabs.md)
+      + [Schede verticali per modulo adattivo](/help/adaptive-forms/components/vertical-tabs.md)
       + [Schede orizzontali moduli adattivi](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Immagine moduli adattivi](/help/adaptive-forms/components/image.md)
       + [Inserimento numero moduli adattivi](/help/adaptive-forms/components/number-input.md)
@@ -128,7 +128,7 @@ ht-degree: 96%
       + [Casella di testo moduli adattivi](/help/adaptive-forms/components/text-input.md)
       + [Titolo moduli adattivi](/help/adaptive-forms/components/title.md)
       + [Layout assistente virtuale moduli adattivi](/help/adaptive-forms/components/wizard.md)
-      + [Termini e condizioni di Adaptive Forms](/help/adaptive-forms/components/terms-and-conditions.md)
+      + [Termini e condizioni dei moduli adattivi](/help/adaptive-forms/components/terms-and-conditions.md)
       + [Intestazione](/help/adaptive-forms/components/header.md)
       + [Piè di pagina](/help/adaptive-forms/components/footer.md)
    + [Personalizzare i componenti core dei moduli adattivi](/help/developing/customize-adaptive-forms-core-components.md)
