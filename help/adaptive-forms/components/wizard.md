@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core della procedura gu
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
 source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2048'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Per gestire in modo efficace le sezioni ripetibili all’interno della procedura
 
 ![Scheda Elementi](/help/adaptive-forms/assets/wizard_helptab.png)
 
-Questa opzione consente di aggiungere componenti Modulo adattivo facendo clic sul pulsante Aggiungi, che viene visualizzato per impostazione predefinita quando la procedura guidata viene aggiunta in modalità di modifica.
+Questa opzione consente di aggiungere componenti del modulo adattivo facendo clic sul pulsante Aggiungi, che viene visualizzato per impostazione predefinita quando la procedura guidata è aggiunta nella modalità di modifica.
 
 ### Scheda Aiuto {#help-tab}
 
@@ -142,15 +142,15 @@ Questo permette di rendere il processo di creazione e personalizzazione dei modu
 
 ![Scheda Componenti consentiti](/help/adaptive-forms/assets/tabs-allowed-component.png)
 
-Il **Componenti consentiti** Questa scheda consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente della procedura guidata nell’editor di Forms adattivo.
+La scheda **Componenti consentiti** permette all’editor dei modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Procedura guidata nell’editor dei moduli adattivi.
 
 ### Scheda Stili {#styles-tab}
 
-La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata di Forms adattivo supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core della procedura guidata dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Scheda Stili](/help/adaptive-forms/assets/tabs-styles-tab.png)
 
-- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core della procedura guidata di Forms adattivo.
+- **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core dei moduli adattivi.
 
 - **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
@@ -158,15 +158,15 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 ![Scheda Proprietà personalizzate](/help/adaptive-forms/assets/tabs-custom-properties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 ## Articoli correlati {#related-articles}
 
