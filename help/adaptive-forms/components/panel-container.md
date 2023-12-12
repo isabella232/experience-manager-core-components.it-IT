@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core contenitore di pan
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
 source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2036'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -129,25 +129,25 @@ Per gestire in modo efficace le sezioni ripetibili all’interno del contenitore
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Contenitore modulo.
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente Contenitore modulo.
 
 ### Scheda Componenti Consentiti {#allowed-components-tab}
 
-![Scheda Componente consentito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-allowed-component.png)
+![Scheda Componente consentito della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/panel-container-allowed-component.png)
 
-Il **Componenti consentiti** Questa scheda consente all’editor di modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente nell’editor di Forms adattivo.
+La scheda **Componenti consentiti** permette all’editor dei modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente nell’editor di moduli adattivi.
 
 ### Scheda Componenti predefiniti {#default-components-tab}
 
-![Scheda Componente predefinito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-default-component.png)
+![Scheda Componente predefinito della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/panel-container-default-component.png)
 
-Il **Componenti predefiniti** Questa scheda consente all’editor di modelli di specificare i componenti visibili per impostazione predefinita come elementi nel componente Contenitore modulo nell’editor di Forms adattivo.
+La scheda **Componenti predefiniti** consente all’editor di modelli di specificare i componenti visibili per impostazione predefinita come elementi nel componente Contenitore modulo nell’editor di moduli adattivi.
 
 ### Scheda Impostazioni reattive {#responsive-tab}
 
-![Scheda Impostazioni reattive della finestra di dialogo per progettazione](/help/adaptive-forms/assets/panel-container-responsive-style-tab.png)
+![Scheda Impostazioni reattive della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/panel-container-responsive-style-tab.png)
 
-Il **Impostazioni reattive** Questa scheda consente all’editor di modelli di specificare il numero di colonne nella griglia all’interno del componente Contenitore modulo nell’editor di Forms adattivo.
+La scheda **Impostazioni reattive** consente all’editor di modelli di specificare il numero di colonne nella griglia all’interno del componente Contenitore modulo nell’editor di moduli adattivi.
 
 ### Scheda Impostazioni contenitore
 
@@ -155,11 +155,11 @@ Il **Impostazioni reattive** Questa scheda consente all’editor di modelli di s
 
 - **Layout**: è possibile disporre di un layout fisso (semplice) o flessibile (griglia dinamica) per la procedura guidata. Il layout semplice mantiene tutto fisso in posizione, mentre la griglia dinamica consente di regolare la posizione dei componenti in base alle proprie esigenze. Ad esempio, utilizza la griglia dinamica per allineare “Nome”, “Secondo nome” e “Cognome” in un modulo in un’unica riga.
 
-- **Disattiva layout**: seleziona questa opzione per disabilitare la selezione del layout nella finestra di dialogo per modifica di un componente.
+- **Disattiva layout**: seleziona questa opzione per disabilitare la selezione del layout nella finestra di dialogo di modifica di un componente.
 
-- **Abilita immagine di sfondo**: questa opzione consente all’utente di configurare le impostazioni del pannello in modo da includere uno sfondo visivo per migliorare l’aspetto visivo.
+- **Abilita immagine di sfondo**: questa opzione consente all’utente di configurare le impostazioni del pannello in modo da includere uno sfondo visivo per migliorarne l’aspetto.
 
-- **Abilita colore di sfondo**: questa opzione consente di impostare o modificare il colore di sfondo del pannello. Questa funzione viene comunemente utilizzata nella progettazione dell&#39;interfaccia utente per personalizzare l&#39;aspetto dei pannelli all&#39;interno di un&#39;interfaccia più grande. Quando selezioni il **Abilita colore di sfondo** , l&#39;opzione **Solo campioni** viene visualizzata l&#39;opzione. Il **Solo campioni** consente di specificare o scegliere i colori per lo sfondo, il testo o altri elementi visivi all’interno del pannello utilizzando **Aggiungi** pulsante
+- **Abilita colore di sfondo**: questa opzione consente di impostare o modificare il colore di sfondo del pannello. Questa funzione viene comunemente utilizzata nella progettazione dell’interfaccia utente per personalizzare l’aspetto dei pannelli all’interno di un’interfaccia più grande. Quando selezioni l’opzione **Abilita colore di sfondo**, viene visualizzata l’opzione **Solo campioni**. L’opzione **Solo campioni** consente di specificare o scegliere i colori per lo sfondo, il testo o altri elementi visivi all’interno del pannello utilizzando il pulsante **Aggiungi**
 
 ### Scheda Stili {#styles-tab}
 
@@ -175,15 +175,15 @@ Il componente core Allegato file dei moduli adattivi supporta il [Sistema di sti
 
 ![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/panel-container-custom-properties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 <!--
 
