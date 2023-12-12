@@ -4,9 +4,9 @@ description: Aggiungere un modulo adattivo a una pagina web.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
 source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1243'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -70,9 +70,9 @@ Per informazioni aggiornate sul componente core contenitore di moduli adattivi, 
 
 ![Scheda Invio](/help/adaptive-forms/assets/formcontainer_fdmtab.png)
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un&#39;origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
-- Creare uno schema JSON e caricarlo nell’ambiente
-- Creare un modello di dati modulo
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
+- Crea uno schema JSON e caricalo nell’ambiente
+- Creare un modello dati modulo
 
 ### Scheda Invio {#submission-tab}
 
@@ -90,25 +90,25 @@ Gli utenti possono configurare azioni diverse per gli invii di moduli adattivi.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Contenitore modulo.
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente Contenitore modulo.
 
 ### Scheda Componenti Consentiti {#allowed-components-tab}
 
-![Scheda Componente consentito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/formcontainer-allowedcomponents.png)
+![Scheda Componente consentito della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/formcontainer-allowedcomponents.png)
 
-Il **Componenti consentiti** Questa scheda consente all’editor di modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente nell’editor di Forms adattivo.
+La scheda **Componenti consentiti** permette all’editor dei modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente dell’editor di moduli adattivi.
 
 ### Scheda Componenti predefiniti {#default-components-tab}
 
-![Scheda Componente predefinito della finestra di dialogo per progettazione](/help/adaptive-forms/assets/formcontainer-defaultcomponents.png)
+![Scheda Componente predefinito della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/formcontainer-defaultcomponents.png)
 
-Il **Componenti predefiniti** Questa scheda consente all’editor di modelli di specificare i componenti visibili per impostazione predefinita come elementi nel componente Contenitore modulo nell’editor di Forms adattivo.
+La scheda **Componenti predefiniti** consente all’editor di modelli di specificare i componenti visibili per impostazione predefinita come elementi nel componente Contenitore modulo nell’editor moduli adattivi.
 
 ### Scheda Impostazioni reattive {#responsive-tab}
 
-![Scheda Impostazioni reattive della finestra di dialogo per progettazione](/help/adaptive-forms/assets/formcontainer-responsivestyle.png)
+![Scheda Impostazioni reattive della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/formcontainer-responsivestyle.png)
 
-Il **Impostazioni reattive** Questa scheda consente all’editor di modelli di specificare il numero di colonne nella griglia all’interno del componente Contenitore modulo nell’editor di Forms adattivo.
+La scheda **Impostazioni reattive** consente all’editor di modelli di specificare il numero di colonne nella griglia all’interno del componente Contenitore modulo nell’editor di moduli adattivi.
 
 ### Scheda Stili {#styles-tab}
 
@@ -124,15 +124,15 @@ Il componente core Allegato file dei moduli adattivi supporta il [Sistema di sti
 
 ![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/formcontainer-custompropertiestab.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 <!--
 
