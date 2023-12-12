@@ -4,9 +4,9 @@ description: Utilizza il pannello a soffietto per organizzare e semplificare un 
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
 source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2202'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -201,13 +201,13 @@ La scheda Proprietà consente agli autori del modello di impostare gli elementi 
 
 ### Scheda Componenti Consentiti {#allowed-components-tab}
 
-![Scheda Componente consentito della finestra di dialogo per progettazione](/help//adaptive-forms/assets/accordion-allowed-components.png)
+![Scheda Componente consentito della finestra di dialogo per la progettazione](/help//adaptive-forms/assets/accordion-allowed-components.png)
 
 La scheda **Componenti consentiti** consente all’editor dei modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Pannello a soffietto nell’editor dei moduli adattivi.
 
 ### Scheda Stili {#styles-tab}
 
-![Scheda Stile della finestra di dialogo per progettazione](/help/adaptive-forms/assets/accordion-styles-tab.png)
+![Scheda Proprietà della finestra di dialogo della scheda Stile](/help/adaptive-forms/assets/accordion-styles-tab.png)
 
 La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core del pannello a soffietto dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
@@ -217,17 +217,17 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 ### Proprietà personalizzate
 
-![pannello a soffietto-custom-properties-tab](/help/adaptive-forms/assets/accordion-custom-properties-tab.png)
+![accordion-custom-properties-tab](/help/adaptive-forms/assets/accordion-custom-properties-tab.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 ## Articoli correlati {#related-articles}
 
