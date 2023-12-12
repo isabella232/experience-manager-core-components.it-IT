@@ -1,20 +1,20 @@
 ---
-title: 'Componente core Forms adattivo: casella di controllo'
-description: Utilizzo o personalizzazione del componente core Casella di controllo Forms adattivo.
+title: 'Componente core dei moduli adattivi: casella di controllo'
+description: Utilizzo o personalizzazione del componente core della casella di controllo nei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
 source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 53%
+ht-degree: 97%
 
 ---
 
 # Componente casella di controllo{#checkbox-component}
 
-Una casella di controllo è un elemento dell&#39;interfaccia utente grafico comunemente utilizzato nelle applicazioni software e nei moduli per consentire agli utenti di effettuare una scelta binaria tra due opzioni: selezionata (selezionata) o deselezionata (deselezionata).
+Una casella di controllo è un elemento grafico dell’interfaccia utente comunemente utilizzato nelle applicazioni software e nei moduli per consentire agli utenti di effettuare una scelta binaria tra due opzioni: selezionata (selezionata) o deselezionata (deselezionata).
 
-Una casella di controllo viene generalmente rappresentata come un piccolo quadratino che può essere attivato o disattivato facendo clic o toccando. Quando viene selezionata una casella di controllo, viene visualizzato un segno di spunta per indicare che l&#39;opzione o la funzionalità associata è attiva o abilitata.
+Una casella di controllo viene generalmente rappresentata come un piccolo quadratino che può essere attivato o disattivato facendo clic oppure toccandolo. Quando viene selezionata una casella di controllo, viene visualizzato un segno di spunta per indicare che l’opzione o la funzione associata è attiva o abilitata.
 
 **Esempio**
 
@@ -22,15 +22,15 @@ Una casella di controllo viene generalmente rappresentata come un piccolo quadra
 
 ## Utilizzo {#reasons-to-use-checkbox}
 
-I motivi comuni per cui si utilizza la casella di controllo in un modulo adattivo sono:
+I motivi comuni per utilizzare la casella di controllo in un modulo adattivo sono i seguenti:
 
-- **Facilità d&#39;uso**: le caselle di controllo sono chiare a livello visivo e forniscono un modo semplice per effettuare scelte binarie. Sono intuitivi e facili da comprendere, grazie alla facilità d&#39;uso.
+- **Facilità d’uso**: le caselle di controllo sono chiare a livello visivo e forniscono un modo semplice per effettuare scelte binarie. Sono intuitive e facili da comprendere, grazie alla facilità d’uso.
 
-- **Consenso e accordo**: le caselle di controllo vengono utilizzate per ottenere il consenso dell’utente per vari scopi, ad esempio accettare termini e condizioni, abbonarsi alle newsletter o confermare la verifica dell’età. Indicano chiaramente che l’utente accetta attivamente qualcosa.
+- **Consenso e accordo**: le caselle di controllo vengono utilizzate per ottenere il consenso dell’utente per vari scopi, ad esempio accettare termini e condizioni, abbonarsi alle newsletter o confermare la verifica dell’età. Indicano in modo chiaro che l’utente accetta attivamente qualcosa.
 
-- **Conferma visiva**: le caselle di controllo selezionate forniscono agli utenti una conferma visiva che la selezione è stata registrata. Questo feedback aiuta a prevenire gli errori degli utenti e garantisce che sappiano che le loro scelte sono state registrate.
+- **Conferma visiva**: le caselle di controllo selezionate forniscono agli utenti una conferma visiva che la selezione è stata registrata. Questo feedback contribuisce a prevenire gli errori degli utenti e garantisce che sappiano che le loro scelte sono state registrate.
 
-- **Prevenzione degli errori**: le caselle di controllo riducono la probabilità di errori consentendo agli utenti di rivedere e confermare le scelte prima dell’invio del modulo.
+- **Prevenzione degli errori**: le caselle di controllo riducono la probabilità di errori consentendo agli utenti di rivedere e confermare le scelte prima di inviare il modulo.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -46,38 +46,38 @@ Per informazioni sulle versioni dei componenti core, consulta il documento [Vers
 
 ## Dettagli tecnici {#technical-details}
 
-Per informazioni aggiornate sul componente core Casella di controllo di Forms adattivo, consulta la documentazione tecnica su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/checkbox/v1/checkbox). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
+Puoi trovare le informazioni più recenti sul componente core della casella di controllo nei moduli adattivi nella documentazione tecnica su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/checkbox/v1/checkbox). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-Puoi personalizzare facilmente l’esperienza con la Casella di controllo per i visitatori tramite la finestra di dialogo per configurazione. Puoi anche definire le opzioni della casella di controllo con facilità per un’esperienza utente fluida.
+Puoi personalizzare facilmente la tua esperienza con le caselle di controllo per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire le opzioni delle caselle di controllo con facilità per un’esperienza utente ottimale.
 
 ![Scheda Base](/help/adaptive-forms/assets/checkbox-basic.png)
 
 - **Nome**: è possibile identificare facilmente un componente modulo con il suo nome univoco sia nel modulo che nell’editor di regole, ma il nome non deve contenere spazi o caratteri speciali.
 
-- **Titolo** - Con il relativo titolo, è possibile identificare facilmente un componente in un modulo e, per impostazione predefinita, il titolo viene visualizzato accanto al componente. Se non aggiungi un titolo, il componente non viene visualizzato.
+- **Titolo**: puoi identificare facilmente un componente in un modulo con il suo nome e, per impostazione predefinita, il titolo viene visualizzato accanto al componente. Se non aggiungi un titolo, il componente non viene visualizzato.
 
 - **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
 
 - **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, offrendo agli utenti un’esperienza utente semplice per la raccolta e la gestione dei dati.
 
-- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l’origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
 - **Tipo di dati del valore inviato**: questa opzione specifica il tipo di dati del valore inviato quando viene selezionata un’opzione. Se il **tipo di dati del valore inviato** è impostato su `Number` e si aggiungono dati stringa al **Valore dati** nella scheda **Opzioni**, nella schermata viene visualizzato il messaggio di errore `Value type mismatch`.
 
 - **Nascondi componente**: seleziona questa opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 
-- **Disabilita componente** - Seleziona l’opzione per disabilitare o bloccare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Disattiva componente**: seleziona l’opzione per disabilitare o bloccare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 - **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
-- **Se questa opzione è selezionata, viene restituito un valore** -Selezionare questa opzione per specificare il valore da associare alla casella di controllo quando è selezionata o selezionata. Si tratta dell’azione che si verifica quando si contrassegna o si contrassegna la casella di controllo.
-- **Abilita Deseleziona.**- Selezionare l&#39;opzione per abilitare o disabilitare la possibilità di deselezionare una casella di controllo precedentemente selezionata.
+- **Se selezionata, restituisce un valore**: selezionare questa opzione per specificare il valore da associare alla casella di controllo quando è verificata o selezionata. Si tratta dell’azione che si verifica quando si spunta o si contrassegna la casella di controllo.
+- **Abilita Deseleziona.**: seleziona l’opzione per abilitare o disabilitare la possibilità di deselezionare una casella di controllo selezionata in precedenza.
    - Se **Abilita Deseleziona** è abilitato o impostato su true, significa che l’utente può selezionare e deselezionare la casella di controllo a propria discrezione. Se necessario, può attivare e disattivare la casella di controllo.
 
    - Se **Abilita Deseleziona** è disabilitato o impostato su false, significa che una volta selezionata la casella di controllo, l’utente non può deselezionarla.
-- **Se questa opzione è deselezionata, viene restituito un valore** : l’opzione ti consente di specificare il valore da associare alla casella di controllo quando si trova in uno stato non selezionato o deselezionato.
+- **Se deselezionata, restituisce un valore**: questa opzione ti consente di specificare il valore da associare alla casella di controllo quando si trova in uno stato non selezionato o deselezionato.
 
-- **Valore predefinito**: questa opzione consente di aggiungere un valore predefinito in un campo modulo. Se sono selezionati il **Componente disabilitato** o il **Componente di sola lettura**, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
+- **Valore predefinito**: questa opzione consente di aggiungere un valore predefinito in un campo del modulo. Se sono selezionati il **Componente disabilitato** o il **Componente di sola lettura**, il valore predefinito viene visualizzato sullo schermo. Se l’utente non immette alcun valore nel campo modulo, questo valore viene inviato al momento dell’invio del modulo.
 
 ### Scheda Convalida {#validation-tab}
 
@@ -107,11 +107,11 @@ Puoi personalizzare facilmente l’esperienza con la Casella di controllo per i 
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Casella di controllo.
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente Casella di controllo.
 
 ### Scheda Stili {#styles-tab}
 
-Il componente core Casella di controllo Forms adattivo supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente core della casella di controllo dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
@@ -123,15 +123,15 @@ Il componente core Casella di controllo Forms adattivo supporta l’AEM [Sistema
 
 ![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 ## Articoli correlati {#related-articles}
 

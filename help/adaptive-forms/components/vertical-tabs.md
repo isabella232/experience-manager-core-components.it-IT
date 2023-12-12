@@ -1,18 +1,18 @@
 ---
-title: 'Componente core Forms adattivo: schede verticali'
-description: Utilizzo o personalizzazione del componente core Schede verticali di Forms adattivo.
+title: 'Componente core moduli adattivi: schede verticali'
+description: Utilizzo o personalizzazione del componente core delle schede verticali dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
 source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 65%
+ht-degree: 97%
 
 ---
 
 # Componente Schede verticali{#vertical-tabs-adaptive-forms-core-component}
 
-Le schede verticali in un modulo adattivo si riferiscono a un motivo di progettazione in cui più sezioni di un modulo sono raggruppate e visualizzate come schede separate, allineate verticalmente. L’utente può passare da una scheda all’altra per accedere a diverse sezioni del modulo. Ogni scheda funge da attivatore per mostrare e nascondere il relativo contenuto del modulo. Le schede verticali consentono di organizzare i moduli lunghi in sezioni gestibili e di migliorare l’esperienza di utilizzo. Le schede possono essere utili per rendere un modulo più accessibile agli utenti con disabilità, consentendo di passare da una sezione all’altra tramite la navigazione con tastiera.
+Le schede verticali in un modulo adattivo fanno riferimento a un pattern di progettazione in cui più sezioni di un modulo sono raggruppate e visualizzate come schede separate, allineate verticalmente. L’utente può passare da una scheda all’altra per accedere a diverse sezioni del modulo. Ogni scheda funge da attivatore per mostrare e nascondere il relativo contenuto del modulo. Le schede verticali consentono di organizzare i moduli lunghi in sezioni gestibili e di migliorare l’esperienza di utilizzo. Le schede possono essere utili per rendere un modulo più accessibile agli utenti con disabilità, consentendo di passare da una sezione all’altra tramite la navigazione con tastiera.
 
 Facendo clic su una scheda, il contenuto del modulo si aggiorna dinamicamente mostrando la sezione corrispondente.
 
@@ -20,15 +20,15 @@ Facendo clic su una scheda, il contenuto del modulo si aggiorna dinamicamente mo
 
 ## Utilizzo {#reasons-to-use-vertical-tabs}
 
-I motivi comuni per l’utilizzo di schede verticali in un modulo adattivo sono:
+I motivi comuni per utilizzare le schede verticali in un modulo adattivo sono i seguenti:
 
-- **Maggiore fruibilità**: le schede verticali consentono agli utenti di spostarsi più facilmente all’interno del modulo, soprattutto se il modulo include più sezioni o un numero elevato di campi.
+- **Migliore fruibilità**: le schede verticali facilitano la navigazione all’interno del modulo, soprattutto se il modulo contiene più sezioni o un numero elevato di campi.
 
-- **Gestione dello spazio**: le schede verticali consentono di risparmiare spazio sullo schermo raggruppando in schede le sezioni del modulo correlate e visualizzandone una sola alla volta.
+- **Gestione Spazio**: le schede verticali consentono di risparmiare spazio sullo schermo raggruppando le sezioni correlate del modulo in schede e visualizzando una sola sezione alla volta.
 
 - **Organizzazione migliore**: le schede forniscono una struttura chiara e organizzata per un modulo, semplificandone la comprensione e la compilazione.
 
-- **Maggiore coinvolgimento degli utenti**: le schede verticali possono rendere un modulo più attraente e coinvolgente per gli utenti, migliorando così il tasso di completamento del modulo.
+- **Maggiore coinvolgimento dell’utente**: le schede verticali possono rendere un modulo più accattivante e coinvolgente dal punto di vista visivo, migliorandone la frequenza di completamento.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
@@ -44,12 +44,12 @@ Per informazioni sulle versioni dei componenti core, consulta il documento [Vers
 
 ## Dettagli tecnici {#technical-details}
 
-Scopri le informazioni più recenti sulle schede verticali del Forms adattivo Componente core nella documentazione tecnica su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/verticaltabs/v1/verticaltabs). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
+Per informazioni aggiornate sul componente core delle schede verticali per moduli adattivi, consulta la documentazione tecnica disponibile su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/verticaltabs/v1/verticaltabs). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
 
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-Puoi personalizzare facilmente l’esperienza con le schede Verticali per i visitatori con la finestra di dialogo per configurazione. Puoi anche definire le opzioni delle schede Verticali in modo semplice, per un’esperienza utente fluida.
+Puoi personalizzare facilmente l’esperienza con le schede verticali per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire le opzioni delle schede verticali con facilità per un’esperienza di utilizzo semplice.
 
 ### Scheda Base {#basic-tab}
 
@@ -90,15 +90,15 @@ Puoi personalizzare facilmente l’esperienza con le schede Verticali per i visi
 
 ### Ripeti scheda verticale {#repeat-tabs-on-top}
 
-![Scheda Ripeti](/help/adaptive-forms/assets/vertical-tab-repeat-vertical-tab.png)
+![scheda ripeti](/help/adaptive-forms/assets/vertical-tab-repeat-vertical-tab.png)
 
-È possibile utilizzare le opzioni di ripetibilità per duplicare il componente Schede verticali e i relativi componenti figlio, definire un conteggio di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all&#39;interno di un modulo. Quando si interagisce con il componente Vertical-tabs e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
+È possibile utilizzare le opzioni di ripetibilità per duplicare il componente Schede verticali e i relativi componenti secondari, definire un numero di ripetizioni minimo e massimo e facilitare la replica di sezioni simili all’interno di un modulo. Quando si interagisce con il componente Schede verticali e si accede alle relative impostazioni, vengono visualizzate le seguenti opzioni:
 
-- **Rendi le tabulazioni verticali ripetibili**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzionalità di ripetibilità.
-- **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il componente Schede verticali può essere ripetuto. Il valore zero indica che il componente Vertical-tabs non è ripetuto. Il valore predefinito è zero.
-- **Numero massimo di ripetizioni**: imposta il numero massimo di ripetizioni del componente Schede verticali. Per impostazione predefinita, questo valore è illimitato.
+- **Rendi ripetibili le Schede verticali**: funzione di attivazione/disattivazione che consente agli utenti di abilitare o disabilitare la funzione di ripetibilità.
+- **Numero minimo di ripetizioni**: stabilisce il numero minimo di volte in cui il componente Schede verticali può essere ripetuto. Il valore zero indica che il componente Schede verticali non è ripetuto; il valore predefinito è zero.
+- **Numero massimo di ripetizioni**: imposta il numero massimo di volte in cui il componente Schede verticali può essere ripetuto. Per impostazione predefinita, questo valore è illimitato.
 
-Per gestire in modo efficace le sezioni ripetibili all’interno delle schede Verticali, segui i passaggi descritti in [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=it) articolo.
+Per gestire in modo efficace le sezioni ripetibili nelle Schede verticali, segui i passaggi descritti nell’articolo [Creazione di moduli con sezioni ripetibili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=it).
 
 ### Scheda Elementi {#items-tab}
 
@@ -108,7 +108,7 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 - **Icona**: l’icona identifica il componente del pannello nell’elenco. Passa il puntatore del mouse sull’icona per visualizzare il nome completo del componente come descrizione comando.
 - **Descrizione**: descrizione utilizzata come testo del pannello. Per impostazione predefinita, il nome del componente selezionato per il pannello.
-- **Elimina** - Tocca o fai clic per eliminare il pannello dal componente Schede verticali.
+- **Elimina**: tocca o fai clic per eliminare il pannello dal componente Schede verticali.
 - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine dei pannelli.
 
 ### Scheda Contenuto Guida {#help-content}
@@ -131,10 +131,10 @@ Il pulsante **Aggiungi** consente di selezionare un componente da aggiungere com
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Schede verticali di Forms adattivo, potete impostare quanto segue:
+La finestra di dialogo per la progettazione consente ai creatori di modelli di controllare la modalità di visualizzazione predefinita degli elementi. Per il componente Schede verticali dei moduli adattivi, è possibile impostare quanto segue:
 
-- Componenti core che un creatore di moduli può aggiungere alle schede Verticali nell’editor di Forms adattivo
-- Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo delle proprietà del componente Schede verticali nell’editor di Forms adattivo.
+- I componenti core che un creatore di moduli può aggiungere alle schede verticali nell’editor di moduli adattivi
+- Nomi semplici per gli stili (classi CSS) che possono essere applicati nella finestra di dialogo del componente Schede verticali nell’editor dei moduli adattivi.
 
 Questo permette di rendere il processo di creazione e personalizzazione dei moduli più semplice ed efficace.
 
@@ -142,15 +142,15 @@ Questo permette di rendere il processo di creazione e personalizzazione dei modu
 
 ![Scheda Componenti consentiti](/help/adaptive-forms/assets/tabs-allowed-component.png)
 
-Il **Componenti consentiti** Questa scheda consente all’editor di modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Schede verticali nell’editor di Forms adattivo.
+La scheda **Componenti consentiti** consente all’editor modelli di impostare i componenti che possono essere aggiunti come elementi ai pannelli nel componente Schede verticali nell’editor di moduli adattivi.
 
 ### Scheda Stili {#styles-tab}
 
 ![Scheda Stili](/help/adaptive-forms/assets/tabs-styles-tab.png)
 
-La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core Schede verticali del Forms adattivo supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per un componente. Il componente core delle Schede verticali nei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
-- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core Schede verticali di Forms adattivo.
+- **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core delle Schede verticali nei moduli adattivi.
 
 - **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
@@ -158,15 +158,15 @@ La finestra di dialogo per la progettazione consente di definire e gestire gli s
 
 ![Scheda Proprietà personalizzate](/help/adaptive-forms/assets/tabs-custom-properties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 ## Articoli correlati {#related-articles}
 

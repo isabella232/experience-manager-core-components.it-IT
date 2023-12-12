@@ -1,46 +1,46 @@
 ---
-title: Componente core Forms adattivo - Termini e condizioni
-description: Utilizzo o personalizzazione del componente core Termini e condizioni di Adaptive Forms.
+title: Componente core dei moduli adattivi - Termini e condizioni
+description: Utilizzo o personalizzazione del componente core Termini e condizioni dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
 source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '2639'
-ht-degree: 66%
+source-wordcount: '2633'
+ht-degree: 98%
 
 ---
 
-# Componente termini e condizioni
+# Componente Termini e condizioni
 
-A **Termini e condizioni** per componente si intende una sezione all’interno di un modulo che illustra i termini, le regole e le condizioni che gli utenti devono accettare o rispettare quando utilizzano un servizio o accedono al contenuto.
+Per componente **Termini e condizioni** si intende una sezione all’interno di un modulo che illustra i termini, le regole e le condizioni che gli utenti devono accettare o rispettare quando utilizzano un servizio o accedono al contenuto.
 
-Il **Termini e condizioni** Il componente è un componente composito costituito da componenti Testo, Casella di controllo e Collegamento. Il componente testo contiene un titolo e una breve panoramica dello scopo e dell’ambito dei termini e delle condizioni. Include inoltre una casella di controllo utilizzata per ottenere il consenso esplicito dell’utente. Puoi anche sostituire un testo di consenso con collegamenti.
+Il componente **Termini e condizioni** è un componente composito costituito dai componenti Testo, Casella di controllo e Collegamento. Il componente testo contiene un titolo e una breve panoramica dello scopo e dell’ambito dei termini e delle condizioni. Include inoltre una casella di controllo utilizzata per ottenere il consenso esplicito dell’utente. Puoi anche sostituire un testo di consenso con collegamenti.
 
 **Esempio**
 
 ![termini e condizioni](/help/adaptive-forms/assets/terms-and-conditions.png)
 
-Consulta [Componenti secondari della componente Termini e condizioni](#sub-component) per ulteriori informazioni sui diversi componenti del componente Termini e condizioni.
+Per ulteriori informazioni sui diversi componenti del componente Termini e condizioni, consulta la sezione [Componenti secondari del componente Termini e condizioni](#sub-component).
 
 ## Utilizzo {#reasons-to-use-termsandconditions}
 
-- **Accordo per l&#39;utente**: il componente funge da accordo tra il provider di servizi e l’utente. Gli utenti devono confermare e accettare i termini prima di accedere al servizio o al contenuto.
+- **Accordo per l’utente**: il componente funge da accordo tra il fornitore di servizi e l’utente. Gli utenti devono confermare e accettare i termini prima di accedere al servizio o al contenuto.
 
-- **Conformità legale**: garantisce il rispetto delle norme e la protezione del prestatore di servizi delineando i diritti, le responsabilità e le responsabilità di entrambe le parti.
+- **Conformità legale**: garantisce la conformità legale e la tutela del fornitore di servizi delineando i diritti, le responsabilità e le responsabilità di entrambe le parti.
 
-- **Processi di registrazione**: i moduli di registrazione o di iscrizione includono **Termini e condizioni** richiede agli utenti di accettare esplicitamente i termini prima di creare un account o utilizzare un servizio.
+- **Processi di registrazione**: i moduli di registrazione o di iscrizione includono il componente **Termini e condizioni** che richiede agli utenti di accettare esplicitamente i termini prima di creare un account o utilizzare un servizio.
 
-- **Transazioni di e-commerce**: i siti web online includono **Termini e condizioni** affinché gli utenti vengano invitati ad accettare i termini e le condizioni come parte del processo di pagamento prima di effettuare acquisti online.
+- **Transazioni di e-commerce**: i siti web online includono il componente **Termini e condizioni** affinché gli utenti vengano invitati ad accettare i termini e le condizioni come parte del processo di pagamento prima di effettuare acquisti online.
 
-- **Accordi sulla sicurezza e la privacy**: Il **Termini e condizioni** Il componente include dettagli su come i dati utente vengono raccolti, memorizzati e utilizzati, spesso integrati da un’informativa sulla privacy separata
+- **Accordi sulla sicurezza e la privacy**: il componente **Termini e condizioni** include dettagli su come i dati utente vengono raccolti, memorizzati e utilizzati, spesso integrati da un’informativa sulla privacy separata
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.62 per Cloud Service e i Componenti core 1.1.28 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto di Forms adattivo è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.62 per Cloud Service AEM e Componenti core 1.1.28 per il Forms 6.5.16.0 o versione successiva. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile con<br>[versione 2.0.62](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.28](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
+| v1 | Compatibile con<br>[versione 2.0.62](/help/adaptive-forms/version.md) e versioni successive | Compatibile con<br>[versione 1.1.28](/help/adaptive-forms/version.md) e più tardi ma inferiore a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -50,7 +50,7 @@ Puoi trovare le informazioni più recenti sul componente core di un gruppo di ca
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-Puoi personalizzare facilmente l’esperienza dei componenti termini e condizioni per i visitatori con la finestra di dialogo per configurazione. Puoi anche definire le opzioni di termini e condizioni con facilità, per un’esperienza utente fluida.
+Puoi personalizzare facilmente l’esperienza del componente Termini e condizioni per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire facilmente le opzioni dei Termini e condizioni per un’esperienza utente semplice.
 
 ### Scheda Base
 
@@ -62,9 +62,9 @@ Puoi personalizzare facilmente l’esperienza dei componenti termini e condizion
 
 - **Mostra opzione di approvazione** : seleziona l’opzione per visualizzare la casella di controllo relativa al consenso utilizzata per ottenere il consenso esplicito dell’utente.
 
-- **Mostra come elemento a comparsa** - Selezionare l&#39;opzione per visualizzare il componente termini e condizioni in una finestra popup.
+- **Mostra come finestra a comparsa**: seleziona l’opzione per visualizzare il componente Termini e condizioni in una finestra a comparsa.
 
-- **Sostituisci il testo del consenso con i collegamenti web**: seleziona l’opzione per sostituire un testo di consenso con un collegamento web.  Se l’opzione è deselezionata, per impostazione predefinita viene visualizzato il testo del consenso.
+- **Sostituisci il testo del consenso con collegamenti web**: seleziona l’opzione per sostituire un testo di consenso con un collegamento web.  Se l’opzione è deselezionata, per impostazione predefinita viene visualizzato il testo del consenso.
 
 - **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
 
@@ -114,12 +114,12 @@ Puoi personalizzare facilmente l’esperienza dei componenti termini e condizion
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Termini e condizioni.
+La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente Termini e condizioni.
 
 
 ### Scheda Stili {#styles-tab}
 
-La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core Termini e condizioni di Adaptive Forms supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+La scheda è utilizzata per definire e gestire gli stili CSS per un componente. Il componente core Termini e condizioni dei moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
@@ -131,26 +131,26 @@ La scheda è utilizzata per definire e gestire gli stili CSS per un componente. 
 
 ![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate si riflettono nella sezione delle proprietà della rappresentazione headless del componente. Consente di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare varie rappresentazioni di un componente Forms headless per piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
-- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzato. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzato, puoi visualizzare le seguenti opzioni:
+- **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
-   - **Coppie chiave-valore**: puoi aggiungere più nomi di proprietà personalizzate e valori di proprietà personalizzate facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
+   - **Coppie chiave-valore**: puoi aggiungere più nomi e valori della proprietà personalizzata facendo clic sul pulsante **Aggiungi** per ogni gruppo di proprietà personalizzate.
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare l’ordine del nome della proprietà personalizzata e del valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
-## Componenti secondari della componente Termini e condizioni {#sub-component}
+## Componenti secondari del componente Termini e condizioni {#sub-component}
 
-**Termini e condizioni** il componente è un componente composito che comprende i seguenti sottocomponenti:
+Il componente **Termini e condizioni** è un componente composito che comprende i seguenti componenti secondari:
 - [Componente collegamento](#link)
 - [Componente testo](#text)
 - [Componente casella di controllo](#checkbox)
 
 ### Componente collegamento{#link}
 
-Questo componente sostituisce un testo di consenso con uno o più collegamenti web. Viene utilizzato in uno scenario in cui l’utente intende offrire riferimenti a sezioni particolari, informazioni aggiuntive o documenti esterni. Puoi personalizzare facilmente il **Collegamento** singolarmente per i visitatori con la finestra di dialogo per configurazione.
+Questo componente sostituisce un testo di consenso con uno o più collegamenti web. Viene utilizzato in uno scenario in cui l’utente intende offrire riferimenti a sezioni particolari, informazioni aggiuntive o documenti esterni. Puoi personalizzare facilmente il componente **Collegamento** singolarmente per i visitatori con la finestra di dialogo Configura.
 
 #### Scheda Base
 
@@ -162,15 +162,15 @@ Questo componente sostituisce un testo di consenso con uno o più collegamenti w
 
 - **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
 
-- **Collegamenti** - Specifica il collegamento e il testo da visualizzare corrispondente al posto del testo del consenso. È possibile aggiungere più collegamenti facendo clic sul pulsante **Aggiungi** pulsante.
+- **Collegamenti**: specifica il collegamento e il testo da visualizzare corrispondente al posto del testo del consenso. È possibile aggiungere più collegamenti facendo clic sul pulsante **Aggiungi**.
 
 - **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, offrendo agli utenti un’esperienza utente semplice per la raccolta e la gestione dei dati.
 
-- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l&#39;origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
+- **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l’origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
 
 - **Nascondi componente**: seleziona questa opzione per nascondere il componente dal modulo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole. Questa funzione è utile quando devi memorizzare informazioni che non devono essere viste o modificate direttamente dall’utente.
 
-- **Disabilita componente** - Seleziona l’opzione per disabilitare o bloccare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
+- **Disattiva componente**: seleziona l’opzione per disabilitare o bloccare il componente. Il componente disabilitato non è attivo o modificabile dall’utente finale. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 - **Sola lettura**: seleziona questa opzione per rendere il componente non modificabile. L’utente può visualizzare il valore del campo, ma non può modificarlo. Il componente rimane accessibile per altri scopi, ad esempio per i calcoli nell’editor di regole.
 
 #### Scheda Convalida
@@ -201,16 +201,16 @@ Questo componente sostituisce un testo di consenso con uno o più collegamenti w
 
 ### Componente testo {#text}
 
-**Testo** Nel componente viene visualizzato il contenuto testuale che fornisce informazioni agli utenti. Questo componente include i termini e le condizioni effettive, il linguaggio legale o qualsiasi altra informazione testuale rilevante.
+Il componente **Testo** mostra il contenuto di testo che fornisce informazioni agli utenti. Questo componente include i termini e le condizioni effettive, la terminologia giuridica o qualsiasi altra informazione testuale rilevante.
 
-Puoi personalizzare facilmente il [Componente testo](/help/adaptive-forms/components/text.md) singolarmente per i visitatori con la finestra di dialogo per configurazione. Per definire facilmente le opzioni di testo per un’esperienza utente fluida, utilizza [finestra di dialogo per configurazione del componente testo](/help/adaptive-forms/components/text.md#configure-dialog).
+Puoi personalizzare facilmente il [Componente testo](/help/adaptive-forms/components/text.md) singolarmente per i visitatori con la finestra di dialogo Configura. Per definire facilmente le opzioni di testo per un’esperienza utente fluida, utilizza la [finestra di dialogo per la configurazione del componente testo](/help/adaptive-forms/components/text.md#configure-dialog).
 
 
 ### Componente casella di controllo {#checkbox}
 
-Viene utilizzata una casella di controllo per ottenere il consenso o la conferma dell’utente. Funge da indicatore visivo che l’utente ha letto e accettato i termini descritti. È necessario selezionare la casella di controllo per indicare il consenso dell’utente.
+Viene utilizzata una casella di controllo per ottenere il consenso o la conferma dell’utente. Funge da indicatore visivo per confermare che l’utente ha letto e accettato i termini descritti. È obbligatorio selezionare la casella di controllo per indicare il consenso dell’utente.
 
-Puoi personalizzare facilmente il [Componente casella di controllo](/help/adaptive-forms/components/checkbox.md) singolarmente per i visitatori con la finestra di dialogo per configurazione. Per definire le proprietà della casella di controllo per un’esperienza utente fluida, utilizza [finestra di dialogo per configurazione del componente casella di controllo](/help/adaptive-forms/components/checkbox.md#configure-dialog).
+Puoi personalizzare facilmente il [Componente casella di controllo](/help/adaptive-forms/components/checkbox.md) singolarmente per i visitatori con la finestra di dialogo Configura. Per definire le proprietà della casella di controllo per un’esperienza utente fluida, utilizza la [finestra di dialogo per la configurazione del componente casella di controllo](/help/adaptive-forms/components/checkbox.md#configure-dialog).
 
 
 ## Articoli correlati {#related-articles}
