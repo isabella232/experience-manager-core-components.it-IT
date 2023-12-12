@@ -1,8 +1,8 @@
 ---
 source-git-commit: 2b1e62dc57126316a79f22d7d9f203f7ef044dc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -59,7 +59,7 @@ ht-degree: 97%
 - [Pannello a soffietto](/help/adaptive-forms/components/accordion.md)
 - [Pulsante](/help/adaptive-forms/components/button.md)
 - [Gruppo di caselle di selezione](/help/adaptive-forms/components/checkbox-group.md)
-- [Casella di selezione](/help/adaptive-forms/components/checkbox.md)
+- [Casella di controllo](/help/adaptive-forms/components/checkbox.md)
 - [Selettore data](/help/adaptive-forms/components/date-picker.md)
 - [Elenco a discesa](/help/adaptive-forms/components/drop-down.md)
 - [Inserimento e-mail](/help/adaptive-forms/components/email-input.md)
@@ -70,8 +70,8 @@ ht-degree: 97%
 - [Immagine](/help/adaptive-forms/components/image.md)
 - [Inserimento numero](/help/adaptive-forms/components/number-input.md)
 - [Contenitore pannelli](/help/adaptive-forms/components/panel-container.md)
-- [Scheda Orizzontale](/help/adaptive-forms/components/horizontal-tabs.md)
-- [Scheda Verticale](/help/adaptive-forms/components/vertical-tabs.md)
+- [Scheda orizzontale](/help/adaptive-forms/components/horizontal-tabs.md)
+- [Scheda verticale](/help/adaptive-forms/components/vertical-tabs.md)
 - [Pulsante di scelta](/help/adaptive-forms/components/radio-button.md)
 - [Pulsante Ripristina](/help/adaptive-forms/components/reset-button.md)
 - [Pulsante Invia](/help/adaptive-forms/components/submit-button.md)
