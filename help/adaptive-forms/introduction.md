@@ -4,9 +4,9 @@ description: Crea esperienze di iscrizione accattivanti (moduli) utilizzando la 
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
 source-git-commit: 1dbbb598c0856b76c076f322cdf0210bf38ee9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1267'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Questi componenti possono essere utilizzati per creare esperienze eccezionali di
 
 Inoltre, poiché questi componenti sono open-source, gli sviluppatori possono personalizzare ed estendere facilmente i componenti in base alle esigenze specifiche della propria organizzazione. Questi componenti sono inoltre basati sulla metodologia BEM, che garantisce la scalabilità e la manutenzione dei componenti.
 
-![immagine modulo adattivo](assets/sample-adaptive-form.png)
+![immagine del modulo adattivo](assets/sample-adaptive-form.png)
 
 ## Funzioni {#features}
 
