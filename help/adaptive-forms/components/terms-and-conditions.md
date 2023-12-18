@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core Termini e condizio
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
 source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2633'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +36,11 @@ Per ulteriori informazioni sui diversi componenti del componente Termini e condi
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Pannello a soffietto di Forms adattivo è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.62 per Cloud Service AEM e Componenti core 1.1.28 per il Forms 6.5.16.0 o versione successiva. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
+Il componente core Pannello a soffietto moduli adattivi è stato rilasciato a febbraio 2023 come parte dei Componenti core 2.0.62 per Cloud Service e dei Componenti core 1.1.28 per AEM Forms 6.5.16.0 o versioni successive. Di seguito è riportata una tabella che mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla documentazione corrispondente:
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile con<br>[versione 2.0.62](/help/adaptive-forms/version.md) e versioni successive | Compatibile con<br>[versione 1.1.28](/help/adaptive-forms/version.md) e più tardi ma inferiore a 2.0.0. |
+| v1 | Compatibile con <br>[versione 2.0.62](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.28](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
