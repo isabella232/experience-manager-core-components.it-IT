@@ -4,9 +4,9 @@ description: Scopri in che modo i componenti core possono sfruttare le funzional
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
 source-git-commit: d8c8f4c3395313b21f56fd7d98175924287c367c
-workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Di seguito è riportata un’interfaccia di servizio che può essere utilizzata 
 com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String, Object> parameterMap)
 ```
 
-**Tieni presente che gli URL diretti incorporati in un’esperienza che non è generata tramite i Componenti core in esecuzione su AEM Sites CS violano i termini di licenza di Media Library.**
+**Tieni presente che l’URL diretto incorpora un’esperienza che non viene generata poiché i Componenti core in esecuzione su AEM Sites CS costituiscono una violazione dei termini di licenza di Media Library.**
 
 ### Qual è l’URL di un’immagine fornita dal nuovo servizio per immagini? {#url}
 
