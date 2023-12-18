@@ -7,9 +7,9 @@ role: Admin, User
 level: Intermediate
 exl-id: aef6e88b-dcae-4777-9893-9257d7702f43
 source-git-commit: 0f0c20c9fba6f062021721d6f48a42cc830b5a7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ I temi di esempio di riferimento aiutano gli autori a utilizzare, definire e per
 Per ottenere questi temi, segui i passaggi indicati di seguito per l’ambiente **AEM as a Cloud Service**:
 
 1. [Abilita i Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=it)
-1. [Distribuire un progetto Archetype 47 o successivo AEM nell’ambiente](https://github.com/adobe/aem-project-archetype)
+1. [Distribuisci un progetto basato sull’Archetipo 47 AEM o successivo nell’ambiente](https://github.com/adobe/aem-project-archetype)
 
 
 Quando distribuisci un progetto basato sull’Archetipo AEM, è possibile utilizzare solo i temi predefiniti nei moduli. Per personalizzare i temi in base alle tue esigenze, [utilizza la pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it) per distribuire i temi.
@@ -125,7 +125,7 @@ I modelli definiscono la struttura iniziale del modulo, il contenuto e le azioni
 
 **Come si ottengono questi modelli?**
 
-Per ottenere questi modelli, distribuisci un [AEM Archetipo 47 o successivo](https://github.com/adobe/aem-project-archetype) al tuo **AEM Forms as a Cloud Service** ambiente o **AEM 6.5 Forms** ambiente.
+È possibile ottenere i modelli implementando un [progetto AEM basato sull’Archetipo 47 o versione successiva](https://github.com/adobe/aem-project-archetype) nel tuo ambiente **AEM Forms as a Cloud Service** o **AEM 6.5 Forms**.
 
 <!--
 
