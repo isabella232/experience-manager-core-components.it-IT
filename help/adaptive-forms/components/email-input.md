@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core per l’inseriment
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
 source-git-commit: 120f8023ac2e13380e59703e199dc929176a59b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1916'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a 
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e versioni successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
+| v1 | Compatibile con <br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -96,10 +96,10 @@ Puoi personalizzare facilmente la tua esperienza di immissione e-mail per i visi
 - **Messaggio di errore relativo al numero minimo di caratteri**: la finestra di dialogo **Messaggio di errore relativo al numero minimo di caratteri** ti consente di aggiungere un messaggio di errore personalizzato se si immettono caratteri inferiori al valore specificato nell’opzione **Numero minimo di caratteri**.
 <br>
 
-Il **Pattern di convalida** consente di inserire un modello per convalidare l’ID e-mail inserito. Nel caso in cui l’ID e-mail non riesca a essere convalidato con il valore inserito in **Pattern** , viene visualizzato il messaggio di errore.
+L’opzione **Pattern di convalida** consente di inserire un pattern per convalidare l’ID e-mail immesso. Se l’ID e-mail non viene convalidato rispetto al valore inserito nell’opzione **Pattern**, viene visualizzato il messaggio di errore.
 
-- **Pattern** - Questa opzione consente di inserire i modelli di verifica consentiti per l’e-mail. Sono consentite anche espressioni regolari.
-- **Messaggio di errore** - Questa opzione consente di inserire un messaggio visualizzato sullo schermo se l’ID e-mail non viene convalidato con il valore immesso nella **Pattern** opzione
+- **Pattern**: questa opzione consente di inserire i pattern di verifica consentiti per gli indirizzi e-mail. Sono consentite anche espressioni regolari.
+- **Messaggio di errore**: questa opzione consente di inserire un messaggio che viene visualizzato se l’ID e-mail non viene convalidato rispetto al valore immesso nell’opzione **Pattern**.
 
 ### Scheda Contenuto Guida {#help-content-tab}
 
