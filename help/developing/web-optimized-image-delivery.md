@@ -4,9 +4,9 @@ description: Scopri in che modo i componenti core possono sfruttare le funzional
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
 source-git-commit: a312eb7a1dc68a264eaf0938c450a17f7cbc4506
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Il vantaggio di questa tecnica è che l’elemento `img` e i relativi attributi 
 
 ### Posso utilizzare la consegna di immagini ottimizzate per il web con un componente personalizzato?
 
-Sì, il servizio di consegna delle immagini ottimizzate per il web può essere utilizzato da componenti personalizzati, creati da [estensione del componente Immagine,](/help/developing/customizing.md)
+Sì, il servizio di consegna di immagini ottimizzate per il web può essere utilizzato con componenti personalizzati, creati [estendendo il componente Immagine,](/help/developing/customizing.md)
 
 Di seguito è riportata un’interfaccia di servizio che può essere utilizzata per generare l’URL della risorsa.
 
@@ -98,7 +98,7 @@ com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String,
 
 >[!WARNING]
 >
->Gli URL diretti incorporati in un’esperienza che non è generata tramite i Componenti core in esecuzione su AEM Sites CS violano i termini di licenza di Media Library.
+>L’URL diretto incorpora un’esperienza che non viene generata poiché i componenti core in esecuzione su AEM Sites CS costituiscono una violazione dei termini di licenza di Media Library.
 
 ### Qual è l’URL di un’immagine fornita dal nuovo servizio per immagini? {#url}
 
