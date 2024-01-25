@@ -3,9 +3,9 @@ title: Componente core moduli adattivi - Schede orizzontali
 description: Utilizzo o personalizzazione del componente core delle schede orizzontali dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: ht
-source-wordcount: '2020'
+source-wordcount: '1999'
 ht-degree: 100%
 
 ---
@@ -38,9 +38,9 @@ Il componente core delle schede orizzontali dei moduli adattivi è stato rilasci
 |---|---|
 | Versione del componente | AEM as a Cloud Service |
 | --- | --- |
-| v1 | Compatibile con<br>[versione 2.0.4](/help/versions.md) e successive | Compatibile | Compatibile |
+| v1 | Compatibile con <br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile | Compatibile |
 
-Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md).
+Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
 
 <!-- ## Sample Component Output {#sample-component-output}
