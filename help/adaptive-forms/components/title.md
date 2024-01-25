@@ -3,10 +3,10 @@ title: Componente core moduli adattivi - Titolo
 description: Utilizzo o personalizzazione del componente core del titolo dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
-workflow-type: ht
-source-wordcount: '867'
-ht-degree: 100%
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+workflow-type: tm+mt
+source-wordcount: '861'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a 
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
+| v1 | Compatibile con <br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
@@ -72,7 +72,7 @@ La finestra di dialogo per modifica consente all’autore di contenuto di defini
 
 ## Finestra di dialogo per progettazione {#design-dialog}
 
-La finestra di dialogo per la progettazione consente di definire e gestire gli stili CSS per il componente Selettore data.
+La scheda Progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Titolo.
 
 ### Titolo
 
@@ -90,7 +90,7 @@ La scheda è utilizzata per definire e gestire gli stili CSS per un componente. 
 
 ![Scheda titolo della finestra di dialogo per la progettazione](/help/adaptive-forms/assets/title_styles.png)
 
-- **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core selettore data dei moduli adattivi.
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core Titolo Forms adattivo.
 
 - **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 

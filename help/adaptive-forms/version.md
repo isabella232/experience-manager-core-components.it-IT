@@ -3,10 +3,10 @@ title: Versioni dei componenti core di AEM Forms
 description: Le versioni dei Componenti core AEM pubblicate possono contenere più di una versione degli stessi Componenti core. Questo documento spiega cosa s’intende per versioni e come comprendere la compatibilità con i Componenti core e AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
-workflow-type: ht
-source-wordcount: '821'
-ht-degree: 100%
+source-git-commit: 5ba402a0f781f73fe7eb5afc9b4beb47ba28851e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 91%
 
 ---
 
@@ -20,9 +20,10 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 
 | Versione | Descrizione | AEM as a Cloud Service | Java™ | Data di pubblicazione |
 |---|---|---|---|---|
+| [2.0.76](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.76) | Con questa versione, la scheda Stile e la scheda Proprietà personalizzate sono fisse per il componente Termini e condizioni. In questa versione è stato anche corretto il componente Pulsante di opzione per salvare il valore booleano al primo clic. | Continua | 8, 11 | 15 novembre 2023 |
 | [2.0.74](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.74) | Con questa versione l’errore di invio è stato aggiornato per l’azione Invia in AEM Forms. | Continua | 8, 11 | 15 novembre 2023 |
 | [2.0.70](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.70) | In questa versione è stato aggiunto il supporto per la gestione della lingua della pagina dei siti nel contenitore modulo. | Continua | 8, 11 | 10 novembre 2023 |
-| [2.0.64](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.64) | Supporto di testo in formato RTF per le etichette dei componenti Pulsante di scelta/Casella di controllo. Questa versione include anche correzioni per il componente Termini e condizioni. | Continua | 8, 11 | 6 novembre 2023 |
+| [2.0.64](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.64) | Supporto di testo in formato RTF per le etichette dei componenti Pulsante di scelta/Casella di controllo. Con questa versione, è stato aggiunto anche il supporto per il componente Switch. Questa versione include anche correzioni per il componente Termini e condizioni. | Continua | 8, 11 | 6 novembre 2023 |
 | [2.0.62](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.62) | Con questa versione è stato aggiunto il supporto per il componente Termini e condizioni. È stato aggiunto anche il supporto per il nome qualificato nei componenti core. | Continua | 8, 11 | 16 ottobre 2023 |
 | [2.0.60](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.60) | Questa versione include correzioni relative alla funzione delle proprietà personalizzate, alla Procedura guidata e al componente Selettore data. | Continua | 8, 11 | 12 settembre 2023 |
 | [2.0.56](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.56) | Con questa versione è stato aggiunto il supporto per le proprietà personalizzate per tutti i componenti core. | Continua | 8, 11 | 12 settembre 2023 |
@@ -49,8 +50,8 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 | Versione | Descrizione | AEM 6.4 | AEM 6.5 | Java™ | Data di pubblicazione |
 |---|---|---|---|---|---|
 | [1.1.32](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.32) | In questa versione sono state aggiornate le informazioni sul pacchetto di AEM Service Pack 6.5.18.0. | - | 6.5.16.0+ | 8, 11 | 15 ottobre 2023 |
-| [1.1.28](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.28) | Supporto di testo in formato RTF per le etichette dei componenti Pulsante di scelta/Casella di controllo. Questa versione include anche il supporto per il componente Termini e condizioni. | - | 6.5.16.0+ | 8, 11 | 15 ottobre 2023 |
-| [1.1.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.26) | Con questa versione è stato aggiunto il supporto per il componente Casella di controllo per il modulo adattivo. Include inoltre miglioramenti alle prestazioni di Lighthouse. In questa versione è stato incluso anche l’handler degli errori personalizzato che utilizza il servizio di chiamata dell’editor di regole. | - | 6.5.16.0+ | 8, 11 | 15 ottobre 2023 |
+| [1.1.28](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.28) | Supporto di testo in formato RTF per le etichette dei componenti Pulsante di scelta/Casella di controllo. Questa versione include anche il supporto per il componente Termini e condizioni e per i componenti Switch. | - | 6.5.16.0+ | 8, 11 | 15 ottobre 2023 |
+| [1.1.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.26) | Con questa versione è stato aggiunto il supporto per il componente Casella di controllo per moduli adattivi e frammenti di moduli. Include inoltre miglioramenti alle prestazioni di Lighthouse. In questa versione è stato incluso anche l’handler degli errori personalizzato che utilizza il servizio di chiamata dell’editor di regole. | - | 6.5.16.0+ | 8, 11 | 15 ottobre 2023 |
 | [1.1.24](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.24) | È stato aggiunto il supporto della localizzazione per i messaggi di errore predefiniti insieme al pulsante Aggiungi/Rimuovi per il componente ripetibile. È stato inoltre aggiunto il supporto per reCAPTCHA nei moduli adattivi. | - | 6.5.16.0+ | 8, 11 | 29 giugno 2023 |
 | [1.1.22](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.22) | Supporto per l’aggiunta di moduli adattivi in AEM Sites. È stata aggiunta la scheda Elementi nella finestra di dialogo per la modifica della procedura guidata e del componente Schede verticali. | - | 6.5.16.0+ | 8, 11 | 07 giugno 2023 |
 | [1.1.12](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12) | In questa versione viene introdotto il supporto dei componenti core per AEM Forms on-premise e AMS. | - | 6.5.16.0+ | 8, 11 | 08 febbraio 2023 |

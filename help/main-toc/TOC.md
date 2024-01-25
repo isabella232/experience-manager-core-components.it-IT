@@ -5,10 +5,10 @@ breadcrumb-title: Guida dei Componenti core
 feature: Core Components
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
-source-git-commit: 3e36fdf9b175930ee3a998bf91116c35b3cb6f9d
-workflow-type: ht
-source-wordcount: '398'
-ht-degree: 100%
+source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 98%
 
 ---
 
@@ -113,6 +113,7 @@ ht-degree: 100%
       + [Selettore data moduli adattivi](/help/adaptive-forms/components/date-picker.md)
       + [Elenco a discesa moduli adattivi](/help/adaptive-forms/components/drop-down.md)
       + [Inserimento e-mail moduli adattivi](/help/adaptive-forms/components/email-input.md)
+      + [Frammento di Forms Form adattivo](/help/adaptive-forms/components/form-fragment.md)
       + [Allegati file moduli adattivi](/help/adaptive-forms/components/file-attachment.md)
       + [Schede verticali per modulo adattivo](/help/adaptive-forms/components/vertical-tabs.md)
       + [Schede orizzontali moduli adattivi](/help/adaptive-forms/components/horizontal-tabs.md)
@@ -123,6 +124,7 @@ ht-degree: 100%
       + [Pulsante di scelta moduli adattivi](/help/adaptive-forms/components/radio-button.md)
       + [Pulsante reimpostazione moduli adattivi](/help/adaptive-forms/components/reset-button.md)
       + [Pulsante di invio moduli adattivi](/help/adaptive-forms/components/submit-button.md)
+      + [Switch Forms adattivo](/help/adaptive-forms/components/switch.md)
       + [Inserimento telefono moduli adattivi](/help/adaptive-forms/components/telephone-input.md)
       + [Testo moduli adattivi](/help/adaptive-forms/components/text.md)
       + [Casella di testo moduli adattivi](/help/adaptive-forms/components/text-input.md)
