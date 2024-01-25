@@ -4,7 +4,7 @@ description: Utilizza il pannello a soffietto per organizzare e semplificare un 
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
 source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2174'
 ht-degree: 100%
 

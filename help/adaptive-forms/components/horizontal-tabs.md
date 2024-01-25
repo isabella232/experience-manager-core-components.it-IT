@@ -4,7 +4,7 @@ description: Utilizzo o personalizzazione del componente core delle schede orizz
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
 source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 100%
 

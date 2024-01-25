@@ -4,7 +4,7 @@ description: Utilizzo o personalizzazione del componente core del selettore data
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
 source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 100%
 
