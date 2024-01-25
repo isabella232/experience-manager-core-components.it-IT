@@ -3,9 +3,9 @@ title: Componente core di moduli adattivi - Intestazione
 description: Utilizzo o personalizzazione del componente core dell’ntestazione dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: ht
-source-wordcount: '679'
+source-wordcount: '674'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ Un componente intestazione in un modulo adattivo è una sezione nella parte supe
 
 **Esempio**
 
-![](/help/adaptive-forms/assets/header.png)
+![esempio](/help/adaptive-forms/assets/header.png)
 
 ## Utilizzo {#reasons-to-use-header}
 
@@ -36,7 +36,7 @@ Il componente core Pannello a soffietto moduli adattativi è stato rilasciato a 
 
 | Versione del componente | AEM as a Cloud Service | AEM Forms 6.5.16.0 o versioni successive |
 |---|---|---|
-| v1 | Compatibile con<br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
+| v1 | Compatibile con <br>[versione 2.0.4](/help/adaptive-forms/version.md) e successive | Compatibile con <br>[versione 1.1.12](/help/adaptive-forms/version.md) e successive, ma precedenti a 2.0.0. |
 
 Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
