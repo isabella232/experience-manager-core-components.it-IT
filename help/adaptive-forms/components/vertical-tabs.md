@@ -3,7 +3,7 @@ title: 'Componente core moduli adattivi: schede verticali'
 description: Utilizzo o personalizzazione del componente core delle schede verticali dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: ht
 source-wordcount: '1904'
 ht-degree: 100%
@@ -38,9 +38,9 @@ Il componente core delle schede verticali dei moduli adattivi è stato rilasciat
 |---|---|
 | Versione del componente | AEM as a Cloud Service |
 | --- | --- |
-| v1 | Compatibile con <br>[versione 2.0.18](/help/versions.md) e successive | Compatibile | Compatibile |
+| v1 | Compatibile con <br>[versione 2.0.18](/help/adaptive-forms/version.md) e successive | Compatibile | Compatibile |
 
-Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/versions.md).
+Per informazioni sulle versioni dei componenti core, consulta il documento [Versioni dei componenti core](/help/adaptive-forms/version.md).
 
 ## Dettagli tecnici {#technical-details}
 
