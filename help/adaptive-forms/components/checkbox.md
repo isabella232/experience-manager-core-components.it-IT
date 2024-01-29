@@ -3,10 +3,10 @@ title: 'Componente core dei moduli adattivi: casella di controllo'
 description: Utilizzo o personalizzazione del componente core della casella di controllo nei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 98%
+source-wordcount: '1746'
+ht-degree: 95%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 98%
 Una casella di controllo è un elemento grafico dell’interfaccia utente comunemente utilizzato nelle applicazioni software e nei moduli per consentire agli utenti di effettuare una scelta binaria tra due opzioni: selezionata (selezionata) o deselezionata (deselezionata).
 
 Una casella di controllo viene generalmente rappresentata come un piccolo quadratino che può essere attivato o disattivato facendo clic oppure toccandolo. Quando viene selezionata una casella di controllo, viene visualizzato un segno di spunta per indicare che l’opzione o la funzione associata è attiva o abilitata.
+
+>[!NOTE]
+>
+> Per il Forms AEM 6.5, questo componente è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0). Per abilitare questo componente, accertati che siano installate le versioni necessarie dei Componenti core di Forms e dei Componenti core di WCM. Per informazioni dettagliate sulle versioni dei Componenti core di Forms adattivi, consulta [Versioni dei componenti core di Forms adattivi](/help/adaptive-forms/version.md)
 
 **Esempio**
 

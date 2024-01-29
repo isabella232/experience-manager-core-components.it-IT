@@ -3,10 +3,10 @@ title: Componente core dei moduli adattivi - Termini e condizioni
 description: Utilizzo o personalizzazione del componente core Termini e condizioni dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
 workflow-type: tm+mt
-source-wordcount: '2635'
-ht-degree: 98%
+source-wordcount: '2690'
+ht-degree: 96%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 98%
 Per componente **Termini e condizioni** si intende una sezione all’interno di un modulo che illustra i termini, le regole e le condizioni che gli utenti devono accettare o rispettare quando utilizzano un servizio o accedono al contenuto.
 
 Il componente **Termini e condizioni** è un componente composito costituito dai componenti Testo, Casella di controllo e Collegamento. Il componente testo contiene un titolo e una breve panoramica dello scopo e dell’ambito dei termini e delle condizioni. Include inoltre una casella di controllo utilizzata per ottenere il consenso esplicito dell’utente. Puoi anche sostituire un testo di consenso con collegamenti.
+
+>[!NOTE]
+>
+> Per il Forms AEM 6.5, questo componente è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0). Per abilitare questo componente, accertati che siano installate le versioni necessarie dei Componenti core di Forms e dei Componenti core di WCM. Per informazioni dettagliate sulle versioni dei Componenti core di Forms adattivi, consulta [Versioni dei componenti core di Forms adattivi](/help/adaptive-forms/version.md)
 
 **Esempio**
 

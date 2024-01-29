@@ -3,10 +3,10 @@ title: 'Componente core moduli adattivi: schede verticali'
 description: Utilizzo o personalizzazione del componente core delle schede verticali dei moduli adattivi.
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 100%
+source-wordcount: '1959'
+ht-degree: 97%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 Le schede verticali in un modulo adattivo fanno riferimento a un pattern di progettazione in cui più sezioni di un modulo sono raggruppate e visualizzate come schede separate, allineate verticalmente. L’utente può passare da una scheda all’altra per accedere a diverse sezioni del modulo. Ogni scheda funge da attivatore per mostrare e nascondere il relativo contenuto del modulo. Le schede verticali consentono di organizzare i moduli lunghi in sezioni gestibili e di migliorare l’esperienza di utilizzo. Le schede possono essere utili per rendere un modulo più accessibile agli utenti con disabilità, consentendo di passare da una sezione all’altra tramite la navigazione con tastiera.
 
 Facendo clic su una scheda, il contenuto del modulo si aggiorna dinamicamente mostrando la sezione corrispondente.
+
+>[!NOTE]
+>
+> Per il Forms AEM 6.5, questo componente è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0). Per abilitare questo componente, accertati che siano installate le versioni necessarie dei Componenti core di Forms e dei Componenti core di WCM. Per informazioni dettagliate sulle versioni dei Componenti core di Forms adattivi, consulta [Versioni dei componenti core di Forms adattivi](/help/adaptive-forms/version.md)
 
 ![esempio](/help/adaptive-forms/assets/horizontal-example.png)
 
