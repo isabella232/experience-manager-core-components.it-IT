@@ -3,12 +3,13 @@ title: Componente Schede
 description: Il componente Schede consente di creare più schede per disporre il contenuto di una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 100%
+source-wordcount: '1034'
+ht-degree: 93%
 
 ---
+
 
 # Componente Schede {#tabs-component}
 
@@ -34,7 +35,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -61,6 +62,12 @@ Per effettuare questo collegamento:
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
+
+## Scheda e design reattivo {#responsive-design}
+
+Tutti i Componenti core sono progettati per essere completamente reattivi, garantendo un’esperienza fluida su tutti i dispositivi.
+
+Alcuni componenti avanzati, come il componente Scheda, possono richiedere una considerazione specifica nel contesto del progetto di implementazione per mantenere la reattività in tutte le condizioni. Consulta il documento [Progettazione reattiva dei Componenti core](/help/responsive.md) per ulteriori informazioni.
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 

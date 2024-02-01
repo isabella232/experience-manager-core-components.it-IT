@@ -3,12 +3,13 @@ title: Componente Carosello
 description: Il componente Carosello consente all’autore di contenuto di presentare il contenuto in un carosello rotante.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: e0d3790b265ab27ac2116f0d8daf1a18ecd3d714
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 100%
+source-wordcount: '1313'
+ht-degree: 94%
 
 ---
+
 
 # Componente Carosello{#carousel-component}
 
@@ -28,7 +29,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -55,6 +56,12 @@ Per effettuare questo collegamento:
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere visualizzato per impostazione predefinita, verrà fatto scorrere automaticamente.
+
+## Carosello e design reattivo {#responsive-design}
+
+Tutti i Componenti core sono progettati per essere completamente reattivi, garantendo un’esperienza fluida su tutti i dispositivi.
+
+Alcuni componenti avanzati, come il componente Carosello, possono richiedere una considerazione specifica nel contesto del progetto di implementazione per mantenere la reattività in tutte le condizioni. Consulta il documento [Progettazione reattiva dei Componenti core](/help/responsive.md) per ulteriori informazioni.
 
 ## Finestra di dialogo per modifica {#edit-dialog}
 

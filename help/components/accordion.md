@@ -3,12 +3,13 @@ title: Componente Pannello a soffietto
 description: Il componente core Pannello a soffietto consente di creare una raccolta di pannelli inclusi in un pannello a soffietto su una pagina.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 93%
 
 ---
+
 
 # Componente Pannello a soffietto{#accordion-component}
 
@@ -30,7 +31,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
-| v1 | Compatibile  con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -57,6 +58,12 @@ Per effettuare questo collegamento:
    * Esempio `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
+
+## Pannello a soffietto e design reattivo {#responsive-design}
+
+Tutti i Componenti core sono progettati per essere completamente reattivi, garantendo un’esperienza fluida su tutti i dispositivi.
+
+Alcuni componenti avanzati, come il componente Pannello a soffietto, possono richiedere una considerazione specifica nel contesto del progetto di implementazione, al fine di mantenere la reattività in tutte le condizioni. Consulta il documento [Progettazione reattiva dei Componenti core](/help/responsive.md) per ulteriori informazioni.
 
 ## Finestra di dialogo per configurazione {#configure-dialog}
 
