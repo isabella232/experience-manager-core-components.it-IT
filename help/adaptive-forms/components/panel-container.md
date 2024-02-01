@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core contenitore di pan
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
 source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2013'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -167,7 +167,7 @@ Il componente core Allegato file dei moduli adattivi supporta il [Sistema di sti
 
 ![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/panel-container-styles-tab.png)
 
-- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core Contenitore pannello Forms adattivo.
+- **Classi CSS predefinite**: è possibile fornire una classe CSS predefinita per il componente core del contenitore di pannelli dei moduli adattivi.
 
 - **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
