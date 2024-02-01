@@ -1,40 +1,40 @@
 ---
-title: 'Componente core Forms adattivo: componente switch'
-description: Utilizzo o personalizzazione del componente core Switch Forms adattivo.
+title: 'Componente core dei moduli adattivi: componente Interruttore'
+description: Utilizzo o personalizzazione del componente core interruttore nei moduli adattivi.
 role: Architect, Developer, Admin, User
 hide: true
 hidefromToC: true
 source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1689'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# Cambia componente{#switch-adaptive-forms-core-component}
+# Componente interruttore{#switch-adaptive-forms-core-component}
 
-Il componente switch è un’interfaccia utente grafica utilizzata nei moduli che consente agli utenti di scegliere tra due opzioni. In genere si tratta di un interruttore a due stati che consente agli utenti di scegliere tra due stati, abilitando o disabilitando una funzione, un&#39;impostazione o una funzionalità. Il componente switch è progettato per rappresentare visivamente lo stato corrente e indicare se una particolare funzione è attivata o disattivata.
+Il componente Interruttore è un’interfaccia utente grafica utilizzata nei moduli che consente agli utenti di scegliere tra due opzioni. In genere si tratta di un interruttore a due stati che consente agli utenti di scegliere tra due stati, per abilitare o disabilitare una funzione, un’impostazione o una funzionalità. Il componente Interruttore è progettato per rappresentare visivamente lo stato corrente e indicare se una particolare funzione è attivata o disattivata.
 
-Il componente switch è un elemento di controllo booleano che imposta il valore su true o false. Ad esempio, viene utilizzato per attivare o disattivare una funzione, ad esempio l&#39;audio disattivato o disattivato, o per abilitare o disabilitare Bluetooth o WiFi.
+Il componente Interruttore è un elemento di controllo booleano che imposta il valore su true o false. Ad esempio, viene utilizzato per attivare o disattivare una funzione, ad esempio l’audio, o per abilitare o disabilitare il Bluetooth o il WiFi.
 
-![Esempio di switch component](/help/adaptive-forms/assets/switch-example.png)
+![Esempio di componente Interruttore](/help/adaptive-forms/assets/switch-example.png)
 
 ## Utilizzo {#reasons-to-use-switch}
 
-I motivi comuni per utilizzare il passaggio in un modulo adattivo sono:
+I motivi comuni per utilizzare l’Interruttore in un modulo adattivo sono i seguenti:
 
-- **Interazione dell’utente**: gli utenti possono interagire con il componente switch facendo clic o toccando su di esso.
+- **Interazione dell’utente**: gli utenti possono interagire con il componente Interruttore facendo clic su di esso o toccandolo.
 
-- **Stati**: il componente switch ha due stati: ON e OFF. Lo stato iniziale del componente switch dipende dall&#39;impostazione di default o dallo stato corrente della feature che controlla.
+- **Stati**: il componente Interruttore presenta due stati, attivazione e disattivazione. Lo stato iniziale del componente Interruttore dipende dall’impostazione predefinita o dallo stato corrente della funzione che controlla.
 
-- **Rappresentazione visiva**: il componente switch riflette visivamente il suo stato corrente cambiando il colore o la posizione.
+- **Rappresentazione visiva**: il componente Interruttore riflette visivamente il suo stato corrente cambiando il colore o la posizione.
 
-- **Funzionalità di controllo**: il componente switch viene utilizzato per abilitare o disabilitare funzionalità specifiche in un modulo AEM. Ad esempio, consente agli utenti di attivare o disattivare una funzione.
+- **Funzionalità di controllo**: il componente Interruttore viene utilizzato per abilitare o disabilitare funzionalità specifiche in un modulo AEM. Ad esempio, consente agli utenti di attivare o disattivare una funzione.
 
 ## Versione e compatibilità {#version-and-compatibility}
 
-Il componente core Switch Forms adattivo è stato rilasciato come parte dei Componenti core 2.0.64. Questa tabella mostra tutte le versioni supportate, la compatibilità AEM e i collegamenti alla relativa documentazione:
+Il componente core interruttore nei moduli adattivi è stato rilasciato come parte dei componenti core 2.0.64. Questa tabella mostra tutte le versioni supportate, la compatibilità con AEM e i collegamenti alla documentazione corrispondente:
 
 |  |  |
 |---|---|
@@ -46,11 +46,11 @@ Per informazioni sulle versioni dei componenti core, consulta il documento [Vers
 
 ## Dettagli tecnici {#technical-details}
 
-Per informazioni aggiornate sul componente core per switch Forms adattivo, consulta la documentazione tecnica su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/switch/v1/switch). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
+Per informazioni aggiornate sul componente core interruttore per moduli adattivi, consulta la documentazione tecnica disponibile su [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/switch/v1/switch). Per ulteriori informazioni sullo sviluppo dei componenti core, dai un’occhiata alla [documentazione per gli sviluppatori dei componenti core](/help/developing/overview.md).
 
 ## Finestra di dialogo per la configurazione {#configure-dialog}
 
-La finestra di dialogo per configurazione consente di personalizzare facilmente l’esperienza del componente Switch per i visitatori. È inoltre possibile definire facilmente le opzioni dei componenti Switch per garantire un&#39;esperienza utente ottimale.
+Puoi personalizzare facilmente l’esperienza del componente Interruttore per i visitatori tramite la finestra di dialogo Configura. Puoi anche definire le opzioni del componente Interruttore con facilità per un’esperienza di utilizzo ottimale.
 
 ### Scheda Base
 
@@ -62,12 +62,12 @@ La finestra di dialogo per configurazione consente di personalizzare facilmente 
 
 - **Nascondi titolo**: seleziona l’opzione per nascondere il titolo del componente.
 
-- **Mantieni valore stato deselezionato** - Selezionando questa opzione è possibile specificare il valore da restituire quando il componente switch non è selezionato.
-- **Opzioni** : specifica il valore dei dati e visualizza il testo per ciascuna opzione.
-   - **Su valore dati** - Specifica il valore da inviare quando il passaggio è abilitato in un modulo adattivo.
-   - **Testo visualizzato** - Specificare il testo da visualizzare come etichetta quando il parametro è abilitato in un modulo adattivo.
-   - **Valore dati disattivato** - Specifica il valore da inviare quando il passaggio non è abilitato in un modulo adattivo. Questa opzione è visibile solo se **Mantieni valore stato deselezionato** è attivato.
-   - **Testo non visualizzato** - Specificare il testo da visualizzare come etichetta quando il parametro non è abilitato in un modulo adattivo. Questa opzione è visibile solo se **Mantieni valore stato deselezionato** è attivato.
+- **Mantieni valore stato deselezionato**: selezionando questa opzione è possibile specificare il valore da restituire quando il componente interruttore non è selezionato.
+- **Opzioni**: specifica il valore dei dati e mostra il testo per ciascuna opzione.
+   - **Valore dati attivato**: specifica il valore da inviare quando l’interruttore è abilitato in un modulo adattivo.
+   - **Testo visualizzato attivato**: specifica il testo da visualizzare come etichetta quando l’interruttore è abilitato in un modulo adattivo.
+   - **Valore dati disattivato**: specifica il valore da inviare quando l’interruttore non è abilitato in un modulo adattivo. Questa opzione è visibile solo se è attivata l’opzione **Mantieni valore stato deselezionato**.
+   - **Testo visualizzato disattivato**: specifica il testo da visualizzare come etichetta quando l’interruttore non è abilitato in un modulo adattivo. Questa opzione è visibile solo se è attivata l’opzione **Mantieni valore stato deselezionato**.
 
 - **Riferimento di binding**: un riferimento di binding è un riferimento a un elemento dati memorizzato in un’origine dati esterna e utilizzato in un modulo. Il riferimento di binding consente di eseguire un binding dinamico dei dati ai campi del modulo, in modo che il modulo possa visualizzare i dati più aggiornati dell’origine dati. Ad esempio, è possibile utilizzare un riferimento di binding per visualizzare il nome e l’indirizzo di un cliente in un modulo, in base all’ID cliente immesso nel modulo. È inoltre possibile utilizzare il riferimento di binding per aggiornare l’origine dati con i dati immessi nel modulo. In questo modo, AEM Forms consente di creare moduli che interagiscono con origini dati esterne, offrendo agli utenti un’esperienza utente semplice per la raccolta e la gestione dei dati.
 - **Contrassegna come elemento modulo non associato**: seleziona l’opzione per configurare un campo modulo non collegato ad alcun schema. Questa opzione consente di salvare i dati senza aggiornare l’origine dati. Consente inoltre di gestire i dati in modo personalizzato, separato dall’integrazione standard del database.
@@ -109,21 +109,21 @@ La finestra di dialogo per configurazione consente di personalizzare facilmente 
 
 ![Scheda Stili](/help/adaptive-forms/assets/switch-styles.png)
 
-- **Nascondi etichette** - Selezionare questa opzione per nascondere le etichette del componente switch.
+- **Nascondi etichette**: seleziona questa opzione per nascondere le etichette del componente interruttore.
 
-- **Mostra etichette** - Selezionare questa opzione per visualizzare le etichette del componente switch.
+- **Mostra etichette**: seleziona questa opzione per visualizzare le etichette del componente interruttore.
 
 ## Finestra di dialogo per la progettazione {#design-dialog}
 
-La finestra di dialogo per progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Switch.
+La finestra di dialogo per la progettazione viene utilizzata per definire e gestire gli stili CSS per il componente Interruttore.
 
 ### Scheda Stili {#styles-design-tab}
 
-Il componente core Switch Forms adattivo supporta l’AEM [Sistema di stili](/help/get-started/authoring.md#component-styling).
+Il componente core interruttore per i moduli adattivi supporta il [Sistema di stili](/help/get-started/authoring.md#component-styling) di AEM.
 
 ![Finestra di dialogo per la progettazione](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core gruppo di switch Forms adattivo.
+- **Classi CSS predefinite**: puoi fornire una classe CSS predefinita per il componente core del gruppo interruttore dei moduli adattivi.
 
 - **Stili consentiti**: è possibile definire gli stili fornendo un nome e la classe CSS che rappresenta lo stile. Ad esempio, puoi creare uno stile denominato “testo in grassetto” e fornire la classe CSS “spessore carattere: grassetto”. Puoi utilizzare o applicare questi stili a un modulo adattivo nell’editor di moduli adattivi. Per applicare uno stile, nell’editor dei moduli adattivi, seleziona il componente a cui applicare lo stile, passa alla finestra di dialogo delle proprietà e seleziona lo stile desiderato dall’elenco a discesa **Stili**. Per aggiornare o modificare gli stili, è sufficiente tornare alla finestra di dialogo per la progettazione, aggiornare gli stili nella scheda Stili e salvare le modifiche.
 
@@ -131,7 +131,7 @@ Il componente core Switch Forms adattivo supporta l’AEM [Sistema di stili](/he
 
 ![Finestra di dialogo Proprietà personalizzate](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core Modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
+Le proprietà personalizzate consentono di associare attributi personalizzati (coppie chiave-valore) a un componente core del modulo adattivo utilizzando il modello di modulo. Le proprietà personalizzate vengono riflesse nella sezione delle proprietà della rappresentazione headless del componente. Consentono di creare un comportamento di modulo dinamico che si adatta in base ai valori degli attributi personalizzati. Ad esempio, gli sviluppatori possono progettare diverse rappresentazioni di un componente moduli headless su piattaforme mobili, desktop o web, migliorando in modo significativo l’esperienza utente su un’ampia gamma di dispositivi.
 
 - **Nome gruppo**: puoi fornire un nome per identificare il gruppo di proprietà personalizzate. È possibile aggiungere, eliminare o ridisporre più gruppi di proprietà personalizzate. Dopo aver aggiunto il gruppo di proprietà personalizzate, puoi visualizzare le seguenti opzioni:
 
@@ -139,7 +139,7 @@ Le proprietà personalizzate consentono di associare attributi personalizzati (c
 
    - **Elimina**: tocca o fai clic per eliminare il nome e il valore della proprietà personalizzata.
 
-   - **Ridisponi**: tocca o fai clic e trascina per modificare il nome della proprietà personalizzata e il valore della proprietà personalizzata.
+   - **Ridisponi**: tocca o fai clic e trascina per ridisporre l’ordine del nome e del valore della proprietà personalizzata.
 
 ## Articoli correlati {#related-articles}
 
