@@ -3,9 +3,9 @@ title: Consegna delle immagini ottimizzate per il web
 description: Scopri in che modo i componenti core possono sfruttare le funzionalità di AEM as a Cloud Service per la consegna delle immagini ottimizzate per il web, per fornire le immagini in modo più efficiente.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: 7325751541d463eb9744b1e4a72fd64611f74d55
+source-git-commit: eb1822cb41a849695afb5125745ed5f78e3e70a4
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1061'
 ht-degree: 54%
 
 ---
@@ -95,4 +95,5 @@ No, questo non dovrebbe mai accadere per i seguenti motivi.
 
 * In HTML, il markup non cambia quando si abilitano le immagini ottimizzate per il web, ma solo il valore `src` L&#39;attributo dell&#39;elemento immagine cambia.
 * Se il nuovo servizio per immagini non è disponibile o non è in grado di elaborare l’immagine desiderata, l’URL generato utilizzerà come [fallback Adaptive Image Servlet.](#fallback)
-* Le regole del Dispatcher possono bloccare il servizio di consegna delle immagini ottimizzate per il web. Gli URL del servizio di consegna delle immagini iniziano con `/adobe`, ed esame [registri di dispatcher per richieste rifiutate](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects) dovrebbe aiutare a risolvere eventuali errori riscontrati durante la consegna delle immagini al browser.
+
+Tuttavia, le regole del dispatcher possono bloccare il servizio di consegna delle immagini ottimizzate per il web. Gli URL del servizio di consegna delle immagini iniziano con `/adobe`, ed esame dei registri di Dispatcher per le richieste rifiutate come [descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects) dovrebbe aiutare a risolvere eventuali errori riscontrati durante la consegna delle immagini al browser.
