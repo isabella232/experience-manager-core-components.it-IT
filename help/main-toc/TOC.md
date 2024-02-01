@@ -8,7 +8,7 @@ feature-set: Experience Manager Sites
 source-git-commit: 2afcaeb90911de865814235586ea19eb21dd8126
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 97%
       + [Selettore data moduli adattivi](/help/adaptive-forms/components/date-picker.md)
       + [Elenco a discesa moduli adattivi](/help/adaptive-forms/components/drop-down.md)
       + [Inserimento e-mail moduli adattivi](/help/adaptive-forms/components/email-input.md)
-      + [Frammento di Forms Form adattivo](/help/adaptive-forms/components/form-fragment.md)
+      + [Frammento di moduli adattivi](/help/adaptive-forms/components/form-fragment.md)
       + [Allegati file moduli adattivi](/help/adaptive-forms/components/file-attachment.md)
       + [Schede verticali per modulo adattivo](/help/adaptive-forms/components/vertical-tabs.md)
       + [Schede orizzontali moduli adattivi](/help/adaptive-forms/components/horizontal-tabs.md)
@@ -125,7 +125,7 @@ ht-degree: 97%
       + [Pulsante di scelta moduli adattivi](/help/adaptive-forms/components/radio-button.md)
       + [Pulsante reimpostazione moduli adattivi](/help/adaptive-forms/components/reset-button.md)
       + [Pulsante di invio moduli adattivi](/help/adaptive-forms/components/submit-button.md)
-      + [Switch Forms adattivo](/help/adaptive-forms/components/switch.md)
+      + [Interruttore moduli adattivi](/help/adaptive-forms/components/switch.md)
       + [Inserimento telefono moduli adattivi](/help/adaptive-forms/components/telephone-input.md)
       + [Testo moduli adattivi](/help/adaptive-forms/components/text.md)
       + [Casella di testo moduli adattivi](/help/adaptive-forms/components/text-input.md)
