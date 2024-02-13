@@ -1,19 +1,19 @@
 ---
-title: Versioni dei componenti core Forms adattivi AEM
+title: Introduzione ai componenti core dei moduli adattivi in AEM
 description: Le versioni dei Componenti core AEM pubblicate possono contenere più di una versione degli stessi Componenti core. Questo documento spiega cosa s’intende per versioni e come comprendere la compatibilità con i Componenti core e AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
 source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 
-# Versioni dei componenti core di Forms adattivi {#core-components-versions}
+# Versioni dei componenti core dei moduli adattivi {#core-components-versions}
 
-Identifica le versioni precise delle dipendenze dei Componenti core Forms e dei Componenti core WCM necessarie per attivare i componenti core Forms adattivi più recenti nell’ambiente. Acquisisci inoltre familiarità con i componenti e le funzioni abilitati in ogni versione dei Componenti core adattivi di Forms.
+Identifica le versioni precise delle dipendenze dei moduli dei Componenti core e dei Componenti core WCM necessarie per attivare quelli dei moduli adattivi più recenti nell’ambiente. Acquisisci inoltre familiarità con i componenti e le funzioni abilitati in ogni versione dei Componenti core dei moduli adattivi.
 
 ## Cronologia delle versioni di AEM Forms as Cloud Service {#aem-as-cs-version-history}
 
@@ -22,62 +22,62 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 
 
 
-| Componenti core Forms | Componenti core WCM | AEM Forms as a Cloud Service | Java | Maven |
+| Componenti core di Forms | Componenti core WCM | Guida di AEM Forms as a Cloud Service | Java | Maven |
 |-----------------------|---------------------| ---------------------------- | ----- | ------ |
-| 2.0.86 | 2.23.4. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.76 | 2.23.4. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.74 | 2.23.4. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.72 | 2.23.4. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.70 | 2.23.4. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.68 | 2.23.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.66 | 2.23.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.64 | 2.23.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.62 | 2.23.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.60 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.56 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.54 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.52 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.50 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.48 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.46 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.44 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.42 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.40 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.36 | 2,23,0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.86 | 2.23.4 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.76 | 2.23.4 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.74 | 2.23.4 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.72 | 2.23.4 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.70 | 2.23.4 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.68 | 2.23.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.66 | 2.23.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.64 | 2.23.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.62 | 2.23.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.60 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.56 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.54 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.52 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.50 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.48 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.46 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.44 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.42 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.40 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.36 | 2.23.0 | Continua | 8, 11 | 3.3.9+ |
 | 2.0.26 | 2.22.12 | Continua | 8, 11 | 3.3.9+ |
 | 2.0.18 | 2.22.10 | Continua | 8, 11 | 3.3.9+ |
-| 2.0.14 | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.6. | 2.21.2. | Continua | 8, 11 | 3.3.9+ |                      |                     |                              |       |        |
-| 2.0.4. | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
-| 2.0.2. | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.1.8. | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.1.6. | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.56 | 2.21.2. | Continua | 8, 11 | 3.3.9+ |
+| 2.0.14 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.6 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |                      |                     |                              |       |        |
+| 2.0.4 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
+| 2.0.2 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.1.8 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.1.6 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.56 | 2.21.2 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.54 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.52 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.50 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.48 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.46 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.44 | 2.21.0 | Continua | 8, 11 | 3.3.9+ |
-| 1.0.42 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.40 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.38 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.36 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.34 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.30 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.28 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.26 | 2.20.8. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.24 | 2.20.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.22 | 2.20.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.20 | 2.20.2. | Continua | 8, 11 | 3.3.9+ |
-| 1.0.18 | 2.20.2. | Continua | 8, 11 | 3.3.9+ |
+| 1.0.42 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.40 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.38 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.36 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.34 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.30 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.28 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.26 | 2.20.8 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.24 | 2.20.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.22 | 2.20.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.20 | 2.20.2 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.18 | 2.20.2 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.16 | 2.19.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.14 | 2.19.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.12 | 2.19.0 | Continua | 8, 11 | 3.3.9+ |
 | 1.0.10 | 2.19.0 | Continua | 8, 11 | 3.3.9+ |
-| 1,0,8 | 2.18.0 | Continua | 8, 11 | 3.3.9+ |
-| 1.0.4. | 2.18.0 | Continua | 8, 11 | 3.3.9+ |
-| 1.0.2. | 2.10.0 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.8 | 2.18.0 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.4 | 2.18.0 | Continua | 8, 11 | 3.3.9+ |
+| 1.0.2 | 2.10.0 | Continua | 8, 11 | 3.3.9+ |
 
 <!--
 
@@ -113,17 +113,17 @@ La tabella seguente presenta un elenco delle versioni dei Componenti core compat
 La tabella seguente presenta un elenco delle versioni dei Componenti core compatibili con AEM 6.5 Form on-premise e AMS disponibili in [GitHub con dettagli completi relativi alle loro versioni](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12).
 
 
-| Componenti core Forms | Componenti core WCM | AEM 6.5 | Java | Maven |
+| Componenti core di Forms | Componenti core WCM | AEM 6.5 | Java | Maven |
 |-----------------------|---------------------|---------| ----- | ------ |
-| 1.1.32 | 2.23.2. | 6.5.18+ | 8, 11 | 3.3.9+ |
-| 1.1.28 | 2.23.2. | 6.5.19+ | 8, 11 | 3.3.9+ |
-| 1.1.26 | 2.23.2. | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.32 | 2.23.2 | 6.5.18+ | 8, 11 | 3.3.9+ |
+| 1.1.28 | 2.23.2 | 6.5.19+ | 8, 11 | 3.3.9+ |
+| 1.1.26 | 2.23.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
 | 1.1.24 | 2.22.12 | 6.5.17+ | 8, 11 | 3.3.9+ |
 | 1.1.22 | 2.22.12 | 6.5.17+ | 8, 11 | 3.3.9+ |
 | 1.1.20 | 2.22.10 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.18 | 2.21.2. | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.16 | 2.21.2. | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.12 | 2.21.2. | 6.5.16+ | 8, 11 | 3.3.9+ |
+| 1.1.18 | 2.21.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.16 | 2.21.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.12 | 2.21.2 | 6.5.16+ | 8, 11 | 3.3.9+ |
 
 
 <!-- 
