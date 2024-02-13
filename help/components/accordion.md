@@ -4,9 +4,9 @@ description: Il componente core Pannello a soffietto consente di creare una racc
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
 source-git-commit: d39fe0084522f67664203a026340b23d325c1883
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ La tabella che segue descrive tutte le versioni supportate del componente, le ve
 
 | Versione del componente | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
-| v1 | Compatibile con<br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
+| v1 | Compatibile con la <br>[versione 2.17.4](/help/versions.md) e precedenti | Compatibile | Compatibile |
 
 Per ulteriori informazioni sulle versioni e sugli aggiornamenti dei Componenti core, vedi il documento [Versioni dei Componenti core](/help/versions.md).
 
@@ -59,11 +59,11 @@ Per effettuare questo collegamento:
 
 Navigando all’URL con l’ID del pannello come ancoraggio, il browser scorre direttamente fino al componente specifico e lo visualizza. Se il pannello è configurato per non essere espanso per impostazione predefinita, viene espanso automaticamente.
 
-## Pannello a soffietto e design reattivo {#responsive-design}
+## Pannello a soffietto e progettazione reattiva {#responsive-design}
 
-Tutti i Componenti core sono progettati per essere completamente reattivi, garantendo un’esperienza fluida su tutti i dispositivi.
+Tutti i componenti core sono progettati per essere completamente reattivi, garantendo un’esperienza fluida su tutti i dispositivi.
 
-Alcuni componenti avanzati, come il componente Pannello a soffietto, possono richiedere una considerazione specifica nel contesto del progetto di implementazione, al fine di mantenere la reattività in tutte le condizioni. Consulta il documento [Progettazione reattiva dei Componenti core](/help/responsive.md) per ulteriori informazioni.
+Alcuni componenti avanzati, come il componente Pannello a soffietto, possono richiedere una considerazione specifica nel contesto del progetto di implementazione, al fine di mantenere la reattività in tutte le condizioni. Per ulteriori informazioni, consulta il documento [Progettazione reattiva dei componenti core](/help/responsive.md).
 
 ## Finestra di dialogo per configurazione {#configure-dialog}
 
