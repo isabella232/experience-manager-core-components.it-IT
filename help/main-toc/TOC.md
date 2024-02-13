@@ -6,9 +6,9 @@ feature: Core Components
 user-guide-description: Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.
 feature-set: Experience Manager Sites
 source-git-commit: 2afcaeb90911de865814235586ea19eb21dd8126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 # Aiuto dei Componenti core AEM {#using}
 
 + [Introduzione ai Componenti core](/help/introduction.md)
-+ [Design reattivo](/help/responsive.md)
++ [Progettazione reattiva](/help/responsive.md)
 + [Percorsi verso il successo](/help/developing/success.md)
 + [Libreria dei componenti](https://adobe.com/go/aem_cmp_library_it)
 + [Versioni](/help/versions.md)
