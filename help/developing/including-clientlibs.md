@@ -4,9 +4,9 @@ description: I Componenti core sono dotati di diverse librerie client e consento
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
 source-git-commit: d39fe0084522f67664203a026340b23d325c1883
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ I Componenti core sono dotati di diverse librerie client e consentono di include
 
 I Componenti core forniscono le seguenti librerie client pronte all’uso.
 
-* Il **sito** clientlibs offre il comportamento funzionale minimalista dei componenti da applicare al sito.
-   * Fungono da punto di partenza per accelerare i progetti, incoraggiando le implementazioni ad estendere e [personalizzali](/help/developing/customizing.md) per ottenere l&#39;aspetto e la funzionalità desiderati.
-* Il **editor** le clientlibs vengono applicate alla finestra di dialogo di authoring per garantirne la funzionalità e l’aspetto previsti.
-* Il **editor hook** le clientlibs vengono applicate al sito quando vengono caricate in modalità di modifica.
-   * Contengono codice JavaScript eseguito su eventi attivati dall’editor, facilitando l’inizializzazione della funzionalità dinamica.
-* Alcuni componenti possono avere clientlibs aggiuntive specifiche progettate per l’utilizzo in situazioni particolari, ad esempio quando vengono utilizzati insieme a [Dynamic Medie](/help/components/image.md#dynamic-media) ad esempio.
+* Il **sito** clientlibs fornisce il comportamento funzionale minimalista dei componenti da applicare al sito.
+   * Fungono da punto di partenza per accelerare i progetti, con implementazioni favorite all’estensione e alla [personalizzazione](/help/developing/customizing.md) per ottenere l’aspetto e la funzionalità desiderati.
+* Le clientlibs dell’**editor** vengono applicate alla finestra di dialogo di authoring per garantirne la funzionalità e l’aspetto previsti.
+* Le clientlibs dell’**editor hook** vengono applicate al sito quando vengono caricate in modalità di modifica.
+   * Contengono un codice JavaScript eseguito su eventi attivati dall’editor, facilitando l’inizializzazione della funzionalità dinamica.
+* Alcuni componenti possono avere clientlibs aggiuntive specifiche progettate per l’utilizzo in situazioni particolari, ad esempio quando vengono utilizzati insieme a [Dynamic Media](/help/components/image.md#dynamic-media).
 
 ## Inclusione delle librerie client {#including}
 
-Esistono diversi modi per includere le [librerie client](/help/developing/archetype/front-end.md#clientlibs) a seconda del caso d’uso. Di seguito sono riportati alcuni esempi di [Snippet HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) per ciascuno.
+Esistono diversi modi per includere le [librerie client](/help/developing/archetype/front-end.md#clientlibs) a seconda del caso d’uso. Di seguito sono riportati alcuni esempi di [Snippet HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) per ciascuna.
 
 ### Utilizzo predefinito consigliato {#recommended-default-usage}
 
