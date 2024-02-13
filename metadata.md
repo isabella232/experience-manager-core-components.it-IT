@@ -7,9 +7,9 @@ git-repo: https://github.com/AdobeDocs/experience-manager-core-components.it-IT
 index: y
 recommendations: noDisplay
 source-git-commit: 55e5ef9271b07d8fffc7b396c890af1637309ff3
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '101'
+ht-degree: 100%
 
 ---
 
