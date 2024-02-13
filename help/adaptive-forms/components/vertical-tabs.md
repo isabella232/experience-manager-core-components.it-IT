@@ -4,9 +4,9 @@ description: Utilizzo o personalizzazione del componente core delle schede verti
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
 source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1959'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Facendo clic su una scheda, il contenuto del modulo si aggiorna dinamicamente mo
 
 >[!NOTE]
 >
-> Per il Forms AEM 6.5, questo componente è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0). Per abilitare questo componente, accertati che siano installate le versioni necessarie dei Componenti core di Forms e dei Componenti core di WCM. Per informazioni dettagliate sulle versioni dei Componenti core di Forms adattivi, consulta [Versioni dei componenti core di Forms adattivi](/help/adaptive-forms/version.md)
+> Per AEM 6.5 Forms, questo componente è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0). Per abilitare questo componente, accertati che siano installate le versioni necessarie dei componenti core di Forms e WCM. Per informazioni dettagliate sulle versioni dei componenti core dei moduli adattivi, consulta le [Versioni dei componenti core dei moduli adattivi](/help/adaptive-forms/version.md)
 
 ![esempio](/help/adaptive-forms/assets/horizontal-example.png)
 
